@@ -1,0 +1,786 @@
+[
+  {
+    "task_id": "CodeSearch_0",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "          match1(url, r'youtube\\.com/embed/([^/?]+)') or \\\n          match1(url, r'youtube\\.com/v/([^/?]+)') or \\\n          match1(url, r'youtube\\.com/watch/([^/?]+)') or \\\n          parse_query_param(url, 'v') or \\\n          parse_query_param(parse_query_param(url, 'u'), 'v')"
+  },
+  {
+    "task_id": "CodeSearch_1",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    rawurl = []\n    dom = parseString(xml_data)\n    for node in dom.getElementsByTagName('durl'):\n        url = node.getElementsByTagName('url')[0]\n        rawurl.append(url.childNodes[0].data)\n    return rawurl"
+  },
+  {
+    "task_id": "CodeSearch_2",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    L110\"\"\"\n    strSeed = \"gGddgPfeaf_gzyr\"\n    prehash = upid + \"_\" + strSeed\n    return md5(prehash.encode('utf-8')).hexdigest()"
+  },
+  {
+    "task_id": "CodeSearch_3",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    hostname = urlparse(url).hostname\n    if not ('fc2.com' in hostname or 'xiaojiadianvideo.asia' in hostname):\n        return False\n    upid = match1(url, r'.+/content/(\\w+)')\n\n    fc2video_download_by_upid(upid, output_dir, merge, info_only)"
+  },
+  {
+    "task_id": "CodeSearch_4",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        try:\n            real_url = info[quality][1][\"url\"]\n            if real_url:\n                break\n        except KeyError:\n            pass\n\n    mime, ext, size = url_info(real_url)\n\n    print_info(site_info, title, mime, size)\n    if not info_only:\n        download_urls([real_url], title, ext, size, output_dir=output_dir, merge=merge)"
+  },
+  {
+    "task_id": "CodeSearch_5",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        d[\"_text\"]=r.text\n    for x in r.findall(\"./*\"):\n        if x.tag not in d:\n            d[x.tag]=[]\n        d[x.tag].append(dictify(x,False))\n    return d"
+  },
+  {
+    "task_id": "CodeSearch_6",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    url_lists = _ucas_get_url_lists_by_resourceID(resourceID)\n    assert url_lists, 'Cannot find any URL of such class!'\n    \n    for k, part in enumerate(url_lists):\n        part_title = title + '_' + str(k)\n        print_info(site_info, part_title, 'flv', 0)\n        if not info_only:\n            download_urls(part, part_title, 'flv', total_size=None, output_dir=output_dir, merge=merge)"
+  },
+  {
+    "task_id": "CodeSearch_7",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    parts = re.findall( r'(getplaytitle.do\\?.+)\"', html)\n    assert parts, 'No part found!'\n\n    for part_path in parts:\n        ucas_download('http://v.ucas.ac.cn/course/' + part_path, output_dir=output_dir, merge=merge, info_only=info_only)"
+  },
+  {
+    "task_id": "CodeSearch_8",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    if urls is None:\n        log.wtf(name)\n    title = name\n    print_info(site_info, title, 'flv', size)\n    if not info_only:\n        download_urls(urls, title, 'flv', size, output_dir = output_dir, merge = merge)"
+  },
+  {
+    "task_id": "CodeSearch_9",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    url = 'http://video.sina.com/v/flvideo/%s_0.flv' % vkey\n    type, ext, size = url_info(url)\n\n    print_info(site_info, title, 'flv', size)\n    if not info_only:\n        download_urls([url], title, 'flv', size, output_dir = output_dir, merge = merge)"
+  },
+  {
+    "task_id": "CodeSearch_10",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "\n    if vid is None:\n        vid = match1(video_page, r'vid:\"?(\\d+)\"?')\n    if vid:\n        #title = match1(video_page, r'title\\s*:\\s*\\'([^\\']+)\\'')\n        sina_download_by_vid(vid, output_dir=output_dir, merge=merge, info_only=info_only)\n    else:\n        vkey = match1(video_page, r'vkey\\s*:\\s*\"([^\"]+)\"')\n        if vkey is None:\n            vid = match1(url, r'#(\\d+)')\n            sina_download_by_vid(vid, output_dir=output_dir, merge=merge, info_only=info_only)\n            return\n        title = match1(video_page, r'title\\s*:\\s*\"([^\"]+)\"')\n        sina_download_by_vkey(vkey, title=title, output_dir=output_dir, merge=merge, info_only=info_only)"
+  },
+  {
+    "task_id": "CodeSearch_11",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "               match1(url, r'm\\.miaopai\\.com/show/channel/([^.]+)')\n\n    elif 'xiaokaxiu.com' in hostname:  #Xiaokaxiu\n        yixia_download_by_scid = yixia_xiaokaxiu_download_by_scid\n        site_info = \"Yixia Xiaokaxiu\"\n\n        if re.match(r'http://v.xiaokaxiu.com/v/.+\\.html', url):  #PC\n            scid = match1(url, r'http://v.xiaokaxiu.com/v/(.+)\\.html')\n        elif re.match(r'http://m.xiaokaxiu.com/m/.+\\.html', url):  #Mobile\n            scid = match1(url, r'http://m.xiaokaxiu.com/m/(.+)\\.html')\n\n    else:\n        pass\n\n    yixia_download_by_scid(scid, output_dir, merge, info_only)"
+  },
+  {
+    "task_id": "CodeSearch_12",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    elif re.match(r'http://www.veoh.com/m/watch.php\\?v=\\.*', url):\n        item_id = match1(url, r'http://www.veoh.com/m/watch.php\\?v=(\\w+)')\n    else:\n        raise NotImplementedError('Cannot find item ID')\n    veoh_download_by_id(item_id, output_dir = '.', merge = False, info_only = info_only, **kwargs)"
+  },
+  {
+    "task_id": "CodeSearch_13",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "\n    #grab title\n    title = match1(a, r'<meta property=\"og:title\" content=\"([^\"]*)\"')\n\n    type_, ext, size = url_info(url)\n    print_info(site_info, title, type_, size)\n    if not info_only:\n        download_urls([url], title, ext, total_size=None, output_dir=output_dir, merge=merge)"
+  },
+  {
+    "task_id": "CodeSearch_14",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        with the information providin within the\n        returned content of the API.\"\"\"\n\n        assert vid\n\n        self.prepare(vid = vid, title = title, **kwargs)\n\n        self.extract(**kwargs)\n\n        self.download(output_dir = output_dir, \n                    merge = merge, \n                    info_only = info_only, **kwargs)"
+  },
+  {
+    "task_id": "CodeSearch_15",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        if hit is not None:\n            return self.get_room_id_from_url(hit.group(1))\n        html = get_content(url)\n        room_id = match1(html, r'room_id\\\":(\\d+)')\n        if room_id is None:\n            log.wtf('Unknown page {}'.format(url))\n        return room_id"
+  },
+  {
+    "task_id": "CodeSearch_18",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    print_log(message, YELLOW, BOLD)\n    if exit_code is not None:\n        sys.exit(exit_code)"
+  },
+  {
+    "task_id": "CodeSearch_19",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    print_log(message, RED, BOLD)\n    if exit_code is not None:\n        sys.exit(exit_code)"
+  },
+  {
+    "task_id": "CodeSearch_20",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    elif 'linux' in syst:\n        os = 'linux'\n        # detect WSL https://github.com/Microsoft/BashOnWindows/issues/423\n        try:\n            with open('/proc/version', 'r') as f:\n                if 'microsoft' in f.read().lower():\n                    os = 'wsl'\n        except: pass\n    elif 'windows' in syst:\n        os = 'windows'\n    elif 'bsd' in syst:\n        os = 'bsd'\n\n    return os"
+  },
+  {
+    "task_id": "CodeSearch_21",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "                                        info_only=info_only, total_size=None, **kwargs)\n    title = match1(mobile_page, r'<title>((.|\\n)+?)</title>')\n    if not title:\n        title = fid\n    title = title.replace('\\n', '_')\n    ext, size = 'mp4', url_info(url)[2]\n    print_info(site_info, title, ext, size)\n    if not info_only:\n        download_urls([url], title, ext, total_size=None, output_dir=output_dir, merge=merge)"
+  },
+  {
+    "task_id": "CodeSearch_22",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    # https://vimeo.com/channels/464686\n    channel_id = match1(url, r'http://vimeo.com/channels/(\\w+)')\n    vimeo_download_by_channel_id(channel_id, output_dir, merge, info_only, **kwargs)"
+  },
+  {
+    "task_id": "CodeSearch_23",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    for i in data['data']:\n        id_list.append(match1(i['uri'], r'/videos/(\\w+)'))\n\n    for id in id_list:\n        try:\n            vimeo_download_by_id(id, None, output_dir, merge, info_only, **kwargs)\n        except urllib.error.URLError as e:\n            log.w('{} failed with {}'.format(id, e))"
+  },
+  {
+    "task_id": "CodeSearch_24",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        video_page = get_content('http://player.vimeo.com/video/%s' % id, headers=fake_headers)\n        title = r1(r'<title>([^<]+)</title>', video_page)\n        info = loads(match1(video_page, r'var t=(\\{.+?\\});'))\n\n    streams = info['request']['files']['progressive']\n    streams = sorted(streams, key=lambda i: i['height'])\n    url = streams[-1]['url']\n\n    type, ext, size = url_info(url, faker=True)\n\n    print_info(site_info, title, type, size)\n    if not info_only:\n        download_urls([url], title, ext, size, output_dir, merge=merge, faker=True)\n    '''\n    site = VimeoExtractor()\n    site.download_by_vid(id, info_only=info_only, output_dir=output_dir, merge=merge, **kwargs)"
+  },
+  {
+    "task_id": "CodeSearch_25",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "\n    #if dictify(e)['ckplayer']['info'][0]['title'][0]['_text'].strip():  #duration\n        #video_dict['title'] = dictify(e)['ckplayer']['info'][0]['title'][0]['_text'].strip()\n\n    if '_text' in dictified['video'][0]['size'][0]:  #size exists for 1 piece\n        video_dict['size'] = sum([int(i['size'][0]['_text']) for i in dictified['video']])\n\n    if '_text' in dictified['video'][0]['file'][0]:  #link exist\n        video_dict['links'] = [i['file'][0]['_text'].strip() for i in dictified['video']]\n\n    if '_text' in dictified['flashvars'][0]:\n        video_dict['flashvars'] = dictified['flashvars'][0]['_text'].strip()\n\n    return video_dict"
+  },
+  {
+    "task_id": "CodeSearch_26",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "                if e < 2048:\n                    r = unsigned_right_shitf(r, 8) ^ data[255 & (r ^ (192 | e >> 6 & 31))]\n                    r = unsigned_right_shitf(r, 8) ^ data[255 & (r ^ (128 | 63 & e))]\n                else:\n                    if 55296 <= e < 57344:\n                        e = (1023 & e) + 64\n                        i += 1\n                        o = 1023 & t.url(i)\n                        r = unsigned_right_shitf(r, 8) ^ data[255 & (r ^ (240 | e >> 8 & 7))]\n                        r = unsigned_right_shitf(r, 8) ^ data[255 & (r ^ (128 | e >> 2 & 63))]\n                        r = unsigned_right_shitf(r, 8) ^ data[255 & (r ^ (128 | o >> 6 & 15 | (3 & e) << 4))]\n                        r = unsigned_right_shitf(r, 8) ^ data[255 & (r ^ (128 | 63 & o))]\n                    else:\n                        r = unsigned_right_shitf(r, 8) ^ data[255 & (r ^ (224 | e >> 12 & 15))]\n                        r = unsigned_right_shitf(r, 8) ^ data[255 & (r ^ (128 | e >> 6 & 63))]\n                        r = unsigned_right_shitf(r, 8) ^ data[255 & (r ^ (128 | 63 & e))]\n\n        return \"https://ib.365yg.com{path}&s={param}\".format(path=path, param=unsigned_right_shitf(r ^ -1, 0))\n\n    while 1:\n        url = tmp()\n        if url.split(\"=\")[-1][0] != \"-\":  # 参数s不能为负数\n            return url"
+  },
+  {
+    "task_id": "CodeSearch_27",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        vid = match1(url, 'https?://www.mgtv.com/(?:b|l)/\\d+/(\\d+).html')\n        if not vid:\n            vid = match1(url, 'https?://www.mgtv.com/hz/bdpz/\\d+/(\\d+).html')\n        return vid"
+  },
+  {
+    "task_id": "CodeSearch_28",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        content = get_content(content['info'])  #get the REAL M3U url, maybe to be changed later?\n        segment_list = []\n        segments_size = 0\n        for i in content.split():\n            if not i.startswith('#'):  #not the best way, better we use the m3u8 package\n                segment_list.append(base_url + i)\n            # use ext-info for fast size calculate\n            elif i.startswith('#EXT-MGTV-File-SIZE:'):\n                segments_size += int(i[i.rfind(':')+1:])\n\n        return m3u_url, segments_size, segment_list"
+  },
+  {
+    "task_id": "CodeSearch_29",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        branch = ref[-1]\n        commit = open(os.path.join(repo_path, '.git', *ref), 'r').read().strip()[:7]\n        return branch, commit\n    except:\n        return None"
+  },
+  {
+    "task_id": "CodeSearch_30",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "            # Reserved in Windows VFAT\n            ord('+'): '-',\n            ord('<'): '-',\n            ord('>'): '-',\n            ord('['): '(',\n            ord(']'): ')',\n            ord('\\t'): ' ',\n        })\n    else:\n        # *nix\n        if os == 'mac':\n            # Mac OS HFS+\n            text = text.translate({\n                ord(':'): '-',\n            })\n\n        # Remove leading .\n        if text.startswith(\".\"):\n            text = text[1:]\n\n    text = text[:80] # Trim to 82 Unicode characters long\n    return text"
+  },
+  {
+    "task_id": "CodeSearch_31",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        import fcntl, termios, struct # fcntl module only available on Unix\n        return struct.unpack('hh', fcntl.ioctl(1, termios.TIOCGWINSZ, '1234'))\n    except:\n        return (40, 80)"
+  },
+  {
+    "task_id": "CodeSearch_32",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    html = get_content(url)\n    pid = match1(html, r'video\\.settings\\.pid\\s*=\\s*\\'([^\\']+)\\'')\n    title = match1(html, r'video\\.settings\\.title\\s*=\\s*\\\"([^\\\"]+)\\\"')\n\n    theplatform_download_by_pid(pid, title, output_dir=output_dir, merge=merge, info_only=info_only)"
+  },
+  {
+    "task_id": "CodeSearch_33",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "                self.p(stream_id)\n            else:\n                self.p_i(stream_id)\n\n            if stream_id in self.streams:\n                urls = self.streams[stream_id]['src']\n                ext = self.streams[stream_id]['container']\n                total_size = self.streams[stream_id]['size']\n            else:\n                urls = self.dash_streams[stream_id]['src']\n                ext = self.dash_streams[stream_id]['container']\n                total_size = self.dash_streams[stream_id]['size']\n\n            if not urls:\n                log.wtf('[Failed] Cannot extract video source.')\n            # For legacy main()\n            \n            #Here's the change!!\n            download_url_ffmpeg(urls[0], self.title, 'mp4', output_dir=kwargs['output_dir'], merge=kwargs['merge'], stream=False)\n\n            if not kwargs['caption']:\n                print('Skipping captions.')\n                return\n            for lang in self.caption_tracks:\n                filename = '%s.%s.srt' % (get_filename(self.title), lang)\n                print('Saving %s ... ' % filename, end=\"\", flush=True)\n                srt = self.caption_tracks[lang]\n                with open(os.path.join(kwargs['output_dir'], filename),\n                          'w', encoding='utf-8') as x:\n                    x.write(srt)\n                print('Done.')"
+  },
+  {
+    "task_id": "CodeSearch_34",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        yk_streams = youku_acfun_proxy(info['sourceId'], info['encode'], url)\n        seq = ['mp4hd3', 'mp4hd2', 'mp4hd', 'flvhd']\n        for t in seq:\n            if yk_streams.get(t):\n                preferred = yk_streams[t]\n                break\n#total_size in the json could be incorrect(F.I. 0)\n        size = 0\n        for url in preferred[0]:\n            _, _, seg_size = url_info(url)\n            size += seg_size\n#fallback to flvhd is not quite possible\n        if re.search(r'fid=[0-9A-Z\\-]*.flv', preferred[0][0]):\n            ext = 'flv'\n        else:\n            ext = 'mp4'\n        print_info(site_info, title, ext, size)\n        if not info_only:\n            download_urls(preferred[0], title, ext, size, output_dir=output_dir, merge=merge)\n    else:\n        raise NotImplementedError(sourceType)\n\n    if not info_only and not dry_run:\n        if not kwargs['caption']:\n            print('Skipping danmaku.')\n            return\n        try:\n            title = get_filename(title)\n            print('Downloading %s ...\\n' % (title + '.cmt.json'))\n            cmt = get_srt_json(vid)\n            with open(os.path.join(output_dir, title + '.cmt.json'), 'w', encoding='utf-8') as x:\n                x.write(cmt)\n        except:\n            pass"
+  },
+  {
+    "task_id": "CodeSearch_35",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "                log.println(\"you-get:\", log.BOLD)\n                log.println(\"    version:  {}\".format(__version__))\n                if head is not None:\n                    log.println(\"    branch:   {}\\n    commit:   {}\".format(*head))\n                else:\n                    log.println(\"    branch:   {}\\n    commit:   {}\".format(\"(stable)\", \"(tag v{})\".format(__version__)))\n\n                log.println(\"    platform: {}\".format(platform.platform()))\n                log.println(\"    python:   {}\".format(sys.version.split('\\n')[0]))\n\n            elif opt in ('-g', '--gui'):\n                # Run using GUI.\n                conf['gui'] = True\n\n            elif opt in ('-f', '--force'):\n                # Force download.\n                conf['force'] = True\n\n            elif opt in ('-l', '--playlist', '--playlists'):\n                # Download playlist whenever possible.\n                conf['playlist'] = True\n\n        if args:\n            if 'gui' in conf and conf['gui']:\n                # Enter GUI mode.\n                from .gui import gui_main\n                gui_main(*args, **conf)\n            else:\n                # Enter console mode.\n                from .console import console_main\n                console_main(*args, **conf)"
+  },
+  {
+    "task_id": "CodeSearch_36",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        ffmpeg_params += ['-c', 'copy', '-bsf:a', 'aac_adtstoasc']\n\n    if params is not None:\n        if len(params) > 0:\n            for k, v in params:\n                ffmpeg_params.append(k)\n                ffmpeg_params.append(v)\n\n    ffmpeg_params.append(output)\n\n    print(' '.join(ffmpeg_params))\n\n    try:\n        a = subprocess.Popen(ffmpeg_params, stdin= subprocess.PIPE)\n        a.communicate()\n    except KeyboardInterrupt:\n        try:\n            a.stdin.write('q'.encode('utf-8'))\n        except:\n            pass\n\n    return True"
+  },
+  {
+    "task_id": "CodeSearch_37",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        pattern = patterns[0]\n        match = re.search(pattern, text)\n        if match:\n            return match.group(1)\n        else:\n            return None\n    else:\n        ret = []\n        for pattern in patterns:\n            match = re.search(pattern, text)\n            if match:\n                ret.append(match.group(1))\n        return ret"
+  },
+  {
+    "task_id": "CodeSearch_38",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        a list if matched. empty if not.\n    \"\"\"\n\n    ret = []\n    for pattern in patterns:\n        match = re.findall(pattern, text)\n        ret += match\n\n    return ret"
+  },
+  {
+    "task_id": "CodeSearch_39",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    Returns:\n        The value of the parameter.\n    \"\"\"\n\n    try:\n        return parse.parse_qs(parse.urlparse(url).query)[param][0]\n    except:\n        return None"
+  },
+  {
+    "task_id": "CodeSearch_40",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    import gzip\n    buffer = BytesIO(data)\n    f = gzip.GzipFile(fileobj=buffer)\n    return f.read()"
+  },
+  {
+    "task_id": "CodeSearch_41",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    \"\"\"\n    import zlib\n    decompressobj = zlib.decompressobj(-zlib.MAX_WBITS)\n    return decompressobj.decompress(data)+decompressobj.flush()"
+  },
+  {
+    "task_id": "CodeSearch_42",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    data = response.read()\n\n    # Handle HTTP compression for gzip and deflate (zlib)\n    content_encoding = response.getheader('Content-Encoding')\n    if content_encoding == 'gzip':\n        data = ungzip(data)\n    elif content_encoding == 'deflate':\n        data = undeflate(data)\n\n    # Decode the response body\n    if decoded:\n        charset = match1(\n            response.getheader('Content-Type', ''), r'charset=([\\w-]+)'\n        )\n        if charset is not None:\n            data = data.decode(charset, 'ignore')\n        else:\n            data = data.decode('utf-8', 'ignore')\n\n    return data"
+  },
+  {
+    "task_id": "CodeSearch_43",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    else:\n        post_data_enc = bytes(parse.urlencode(post_data), 'utf-8')\n    response = urlopen_with_retry(req, data=post_data_enc)\n    data = response.read()\n\n    # Handle HTTP compression for gzip and deflate (zlib)\n    content_encoding = response.getheader('Content-Encoding')\n    if content_encoding == 'gzip':\n        data = ungzip(data)\n    elif content_encoding == 'deflate':\n        data = undeflate(data)\n\n    # Decode the response body\n    if decoded:\n        charset = match1(\n            response.getheader('Content-Type'), r'charset=([\\w-]+)'\n        )\n        if charset is not None:\n            data = data.decode(charset)\n        else:\n            data = data.decode('utf-8')\n\n    return data"
+  },
+  {
+    "task_id": "CodeSearch_44",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    if re.match(r'^(\\w+)://', host) is None:\n        host = \"//\" + host\n    o = parse.urlparse(host)\n    hostname = o.hostname or \"0.0.0.0\"\n    port = o.port or 0\n    return (hostname, port)"
+  },
+  {
+    "task_id": "CodeSearch_45",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        return __builtin__.print(*args, **kwargs)\n\n    # in lower pyver (e.g. 3.2.x), remove 'flush' keyword and flush it as requested\n    doFlush = kwargs.pop('flush', False)\n    ret = __builtin__.print(*args, **kwargs)\n    if doFlush:\n        kwargs.get('file', sys.stdout).flush()\n    return ret"
+  },
+  {
+    "task_id": "CodeSearch_46",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        'User-Agent': 'Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36'\n    }\n    webpage_url = 'https://www.showroom-live.com/' + room_url_key\n    html = get_content(webpage_url, headers = fake_headers_mobile)\n    roomid = match1(html, r'room\\?room_id\\=(\\d+)')\n    assert roomid\n    return roomid"
+  },
+  {
+    "task_id": "CodeSearch_47",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "\n    assert stream_url\n\n    #title\n    title = ''\n    profile_api = 'https://www.showroom-live.com/api/room/profile?room_id={room_id}'.format(room_id = room_id)\n    html = loads(get_content(profile_api))\n    try:\n        title = html['main_name']\n    except KeyError:\n        title = 'Showroom_{room_id}'.format(room_id = room_id)\n\n    type_, ext, size = url_info(stream_url)\n    print_info(site_info, title, type_, size)\n    if not info_only:\n        download_url_ffmpeg(url=stream_url, title=title, ext= 'mp4', output_dir=output_dir)"
+  },
+  {
+    "task_id": "CodeSearch_48",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "\n    return '_'.join([json_content[0]['name'],\n                    json_content[0]['Topics'][tIndex]['name'],\n                    json_content[0]['Topics'][tIndex]['Parts'][pIndex]['name']])"
+  },
+  {
+    "task_id": "CodeSearch_49",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        for pIndex in range(len(json_api_content[0]['Topics'][tIndex]['Parts'])):\n            wanmen_download_by_course_topic_part(json_api_content,\n                                                 tIndex,\n                                                 pIndex,\n                                                 output_dir=output_dir,\n                                                 merge=merge,\n                                                 info_only=info_only,\n                                                 **kwargs)"
+  },
+  {
+    "task_id": "CodeSearch_50",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "                                                  tIndex, \n                                                  pIndex)\n\n    bokeccID = _wanmen_get_boke_id_by_json_topic_part(html,\n                                                      tIndex, \n                                                     pIndex)\n\n    bokecc_download_by_id(vid = bokeccID, title = title, output_dir=output_dir, merge=merge, info_only=info_only, **kwargs)"
+  },
+  {
+    "task_id": "CodeSearch_51",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        #is this somehow related to the time? Magic....\n        fake_header_id['Accept'] ='application/json;pk=BCpkADawqM1cc6wmJQC2tvoXZt4mrB7bFfi6zGt9QnOzprPZcGLE9OMGJwspQwKfuFYuCjAAJ53JdjI8zGFx1ll4rxhYJ255AXH1BQ10rnm34weknpfG-sippyQ'\n\n        html = get_content(endpoint, headers= fake_header_id)\n        html_json = json.loads(html)\n\n        link_list = []\n\n        for i in html_json['sources']:\n            if 'src' in i:  #to avoid KeyError\n                if i['src'].startswith('https'):\n                    link_list.append((str(i['height']), i['src']))\n\n        return link_list"
+  },
+  {
+    "task_id": "CodeSearch_52",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :param task_instance: TaskInstance\n        :return: True if the task is known to this executor\n        \"\"\"\n        if task_instance.key in self.queued_tasks or task_instance.key in self.running:\n            return True"
+  },
+  {
+    "task_id": "CodeSearch_53",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        if dag_ids is None:\n            cleared_events = self.event_buffer\n            self.event_buffer = dict()\n        else:\n            for key in list(self.event_buffer.keys()):\n                dag_id, _, _, _ = key\n                if dag_id in dag_ids:\n                    cleared_events[key] = self.event_buffer.pop(key)\n\n        return cleared_events"
+  },
+  {
+    "task_id": "CodeSearch_54",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        key and specify that in the connection configuration. The connection password then becomes the\n        passphrase for the private key. If your private key file is not encrypted (not recommended), then\n        leave the password empty.\n        \"\"\"\n        private_key_file = conn.extra_dejson.get('private_key_file', None)\n        if private_key_file:\n            with open(private_key_file, \"rb\") as key:\n                passphrase = None\n                if conn.password:\n                    passphrase = conn.password.strip().encode()\n\n                p_key = serialization.load_pem_private_key(\n                    key.read(),\n                    password=passphrase,\n                    backend=default_backend()\n                )\n\n            pkb = p_key.private_bytes(encoding=serialization.Encoding.DER,\n                                      format=serialization.PrivateFormat.PKCS8,\n                                      encryption_algorithm=serialization.NoEncryption())\n\n            conn_config['private_key'] = pkb\n            conn_config.pop('password', None)\n\n        return conn_config"
+  },
+  {
+    "task_id": "CodeSearch_55",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        conn_config = self._get_conn_params()\n        uri = 'snowflake://{user}:{password}@{account}/{database}/'\n        uri += '{schema}?warehouse={warehouse}&role={role}'\n        return uri.format(**conn_config)"
+  },
+  {
+    "task_id": "CodeSearch_56",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        \"\"\"\n        conn_config = self._get_conn_params()\n        conn = snowflake.connector.connect(**conn_config)\n        return conn"
+  },
+  {
+    "task_id": "CodeSearch_57",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        if self.snowflake_conn_id:\n            connection_object = self.get_connection(self.snowflake_conn_id)\n            if 'aws_secret_access_key' in connection_object.extra_dejson:\n                aws_access_key_id = connection_object.extra_dejson.get(\n                    'aws_access_key_id')\n                aws_secret_access_key = connection_object.extra_dejson.get(\n                    'aws_secret_access_key')\n        return aws_access_key_id, aws_secret_access_key"
+  },
+  {
+    "task_id": "CodeSearch_58",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        \"\"\"\n        full_field_name = 'extra__grpc__{}'.format(field_name)\n        if full_field_name in self.extras:\n            return self.extras[full_field_name]\n        else:\n            return default"
+  },
+  {
+    "task_id": "CodeSearch_59",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        \"\"\"\n        if not os.path.isfile(filename):\n            with open(filename, 'w'):\n                pass\n\n        with open(filename, 'r+') as f:\n            with closing(self.get_conn()) as conn:\n                with closing(conn.cursor()) as cur:\n                    cur.copy_expert(sql, f)\n                    f.truncate(f.tell())\n                    conn.commit()"
+  },
+  {
+    "task_id": "CodeSearch_60",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        Loads a tab-delimited file into a database table\n        \"\"\"\n        self.copy_expert(\"COPY {table} FROM STDIN\".format(table=table), tmp_file)"
+  },
+  {
+    "task_id": "CodeSearch_61",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        Dumps a database table into a tab-delimited file\n        \"\"\"\n        self.copy_expert(\"COPY {table} TO STDOUT\".format(table=table), tmp_file)"
+  },
+  {
+    "task_id": "CodeSearch_62",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "\n        hook.upload(\n            bucket_name=self.bucket,\n            object_name=self.dst,\n            mime_type=self.mime_type,\n            filename=self.src,\n            gzip=self.gzip,\n        )"
+  },
+  {
+    "task_id": "CodeSearch_63",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "                       e.g. {'key1': 'value1', 'key2': 'value2'}.\n                       Only partitions matching all partition_key:partition_value\n                       pairs will be considered as candidates of max partition.\n    :type filter_map: map\n    :param field: the field to get the max value from. If there's only\n        one partition field, this will be inferred\n    :type field: str\n\n    >>> max_partition('airflow.static_babynames_partitioned')\n    '2015-01-01'\n    \"\"\"\n    from airflow.hooks.hive_hooks import HiveMetastoreHook\n    if '.' in table:\n        schema, table = table.split('.')\n    hh = HiveMetastoreHook(metastore_conn_id=metastore_conn_id)\n    return hh.max_partition(\n        schema=schema, table_name=table, field=field, filter_map=filter_map)"
+  },
+  {
+    "task_id": "CodeSearch_64",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    :returns: The closest date\n    :rtype: datetime.date or None\n    \"\"\"\n    fb = lambda d: target_dt - d if d <= target_dt else datetime.timedelta.max\n    fa = lambda d: d - target_dt if d >= target_dt else datetime.timedelta.max\n    fnone = lambda d: target_dt - d if d < target_dt else d - target_dt\n    if before_target is None:\n        return min(date_list, key=fnone).date()\n    if before_target:\n        return min(date_list, key=fb).date()\n    else:\n        return min(date_list, key=fa).date()"
+  },
+  {
+    "task_id": "CodeSearch_65",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    '2015-01-01'\n    \"\"\"\n    from airflow.hooks.hive_hooks import HiveMetastoreHook\n    if '.' in table:\n        schema, table = table.split('.')\n    hh = HiveMetastoreHook(metastore_conn_id=metastore_conn_id)\n    partitions = hh.get_partitions(schema=schema, table_name=table)\n    if not partitions:\n        return None\n    part_vals = [list(p.values())[0] for p in partitions]\n    if ds in part_vals:\n        return ds\n    else:\n        parts = [datetime.datetime.strptime(pv, '%Y-%m-%d')\n                 for pv in part_vals]\n        target_dt = datetime.datetime.strptime(ds, '%Y-%m-%d')\n        closest_ds = _closest_date(target_dt, parts, before_target=before)\n        return closest_ds.isoformat()"
+  },
+  {
+    "task_id": "CodeSearch_66",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        if conn.extra_dejson.get('cursor', False):\n            if (conn.extra_dejson[\"cursor\"]).lower() == 'sscursor':\n                conn_config[\"cursorclass\"] = MySQLdb.cursors.SSCursor\n            elif (conn.extra_dejson[\"cursor\"]).lower() == 'dictcursor':\n                conn_config[\"cursorclass\"] = MySQLdb.cursors.DictCursor\n            elif (conn.extra_dejson[\"cursor\"]).lower() == 'ssdictcursor':\n                conn_config[\"cursorclass\"] = MySQLdb.cursors.SSDictCursor\n        local_infile = conn.extra_dejson.get('local_infile', False)\n        if conn.extra_dejson.get('ssl', False):\n            # SSL parameter for MySQL has to be a dictionary and in case\n            # of extra/dejson we can get string if extra is passed via\n            # URL parameters\n            dejson_ssl = conn.extra_dejson['ssl']\n            if isinstance(dejson_ssl, six.string_types):\n                dejson_ssl = json.loads(dejson_ssl)\n            conn_config['ssl'] = dejson_ssl\n        if conn.extra_dejson.get('unix_socket'):\n            conn_config['unix_socket'] = conn.extra_dejson['unix_socket']\n        if local_infile:\n            conn_config[\"local_infile\"] = 1\n        conn = MySQLdb.connect(**conn_config)\n        return conn"
+  },
+  {
+    "task_id": "CodeSearch_67",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        cur = conn.cursor()\n        cur.execute(\"\"\"\n            LOAD DATA LOCAL INFILE '{tmp_file}'\n            INTO TABLE {table}\n            \"\"\".format(tmp_file=tmp_file, table=table))\n        conn.commit()"
+  },
+  {
+    "task_id": "CodeSearch_68",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "                    Illegal behavior: objects were deleted in {} between pokes.\n                    '''.format(os.path.join(self.bucket, self.prefix))\n                )\n        else:\n            if self.last_activity_time:\n                self.inactivity_seconds = (\n                    get_time() - self.last_activity_time).total_seconds()\n            else:\n                # Handles the first poke where last inactivity time is None.\n                self.last_activity_time = get_time()\n                self.inactivity_seconds = 0\n\n            if self.inactivity_seconds >= self.inactivity_period:\n                if current_num_objects >= self.min_objects:\n                    self.log.info(\n                        '''\n                        SUCCESS:\n                        Sensor found {} objects at {}.\n                        Waited at least {} seconds, with no new objects dropped.\n                        '''.format(\n                            current_num_objects,\n                            os.path.join(self.bucket, self.prefix),\n                            self.inactivity_period))\n                    return True\n\n                warn_msg = \\\n                    '''\n                    FAILURE:\n                    Inactivity Period passed,\n                    not enough objects found in {}\n                    '''.format(\n                        os.path.join(self.bucket, self.prefix))\n                self.log.warning(warn_msg)\n                return False\n            return False"
+  },
+  {
+    "task_id": "CodeSearch_69",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        code.append(\"\\n# Thread: {}({})\"\n                    .format(id_to_name.get(thread_id, \"\"), thread_id))\n        for filename, line_number, name, line in traceback.extract_stack(stack):\n            code.append('File: \"{}\", line {}, in {}'\n                        .format(filename, line_number, name))\n            if line:\n                code.append(\"  {}\".format(line.strip()))\n    print(\"\\n\".join(code))"
+  },
+  {
+    "task_id": "CodeSearch_70",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        message = api_client.trigger_dag(dag_id=args.dag_id,\n                                         run_id=args.run_id,\n                                         conf=args.conf,\n                                         execution_date=args.exec_date)\n    except IOError as err:\n        log.error(err)\n        raise AirflowException(err)\n    log.info(message)"
+  },
+  {
+    "task_id": "CodeSearch_71",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "            \"Proceed? (y/n)\").upper() == \"Y\":\n        try:\n            message = api_client.delete_dag(dag_id=args.dag_id)\n        except IOError as err:\n            log.error(err)\n            raise AirflowException(err)\n        log.info(message)\n    else:\n        print(\"Bail.\")"
+  },
+  {
+    "task_id": "CodeSearch_72",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    task = dag.get_task(task_id=args.task_id)\n    ti = TaskInstance(task, args.execution_date)\n\n    dep_context = DepContext(deps=SCHEDULER_DEPS)\n    failed_deps = list(ti.get_failed_dep_statuses(dep_context=dep_context))\n    # TODO, Do we want to print or log this\n    if failed_deps:\n        print(\"Task instance dependencies not met:\")\n        for dep in failed_deps:\n            print(\"{}: {}\".format(dep.dep_name, dep.reason))\n    else:\n        print(\"Task instance dependencies are all met.\")"
+  },
+  {
+    "task_id": "CodeSearch_73",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    \"\"\"\n    dag = get_dag(args)\n    task = dag.get_task(task_id=args.task_id)\n    ti = TaskInstance(task, args.execution_date)\n    print(ti.current_state())"
+  },
+  {
+    "task_id": "CodeSearch_74",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    running\n    \"\"\"\n    dag = get_dag(args)\n    dr = DagRun.find(dag.dag_id, execution_date=args.execution_date)\n    print(dr[0].state if len(dr) > 0 else None)"
+  },
+  {
+    "task_id": "CodeSearch_75",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "    if dag.latest_execution_date:\n        next_execution_dttm = dag.following_schedule(dag.latest_execution_date)\n\n        if next_execution_dttm is None:\n            print(\"[WARN] No following schedule can be found. \" +\n                  \"This DAG may have schedule interval '@once' or `None`.\")\n\n        print(next_execution_dttm)\n    else:\n        print(\"[WARN] Only applicable when there is execution record found for the DAG.\")\n        print(None)"
+  },
+  {
+    "task_id": "CodeSearch_76",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "            num_workers_running = get_num_workers_running(gunicorn_master_proc)\n            num_ready_workers_running = \\\n                get_num_ready_workers_running(gunicorn_master_proc)\n\n            state = '[{0} / {1}]'.format(num_ready_workers_running, num_workers_running)\n\n            # Whenever some workers are not ready, wait until all workers are ready\n            if num_ready_workers_running < num_workers_running:\n                log.debug('%s some workers are starting up, waiting...', state)\n                sys.stdout.flush()\n                time.sleep(1)\n\n            # Kill a worker gracefully by asking gunicorn to reduce number of workers\n            elif num_workers_running > num_workers_expected:\n                excess = num_workers_running - num_workers_expected\n                log.debug('%s killing %s workers', state, excess)\n\n                for _ in range(excess):\n                    gunicorn_master_proc.send_signal(signal.SIGTTOU)\n                    excess -= 1\n                    wait_until_true(lambda: num_workers_expected + excess ==\n                                    get_num_workers_running(gunicorn_master_proc),\n                                    master_timeout)\n\n            # Start a new worker by asking gunicorn to increase number of workers\n            elif num_workers_running == num_workers_expected:\n                refresh_interval = conf.getint('webserver', 'worker_refresh_interval')\n                log.debug(\n                    '%s sleeping for %ss starting doing a refresh...',\n                    state, refresh_interval\n                )\n                time.sleep(refresh_interval)\n                start_refresh(gunicorn_master_proc)\n\n            else:\n                # num_ready_workers_running == num_workers_running < num_workers_expected\n                log.error((\n                    \"%s some workers seem to have died and gunicorn\"\n                    \"did not restart them as expected\"\n                ), state)\n                time.sleep(10)\n                if len(\n                    psutil.Process(gunicorn_master_proc.pid).children()\n                ) < num_workers_expected:\n                    start_refresh(gunicorn_master_proc)\n    except (AirflowWebServerTimeout, OSError) as err:\n        log.error(err)\n        log.error(\"Shutting down webserver\")\n        try:\n            gunicorn_master_proc.terminate()\n            gunicorn_master_proc.wait()\n        finally:\n            sys.exit(1)"
+  },
+  {
+    "task_id": "CodeSearch_77",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :rtype: Client\n        \"\"\"\n        if not self._client:\n            self._client = Client(credentials=self._get_credentials())\n        return self._client"
+  },
+  {
+    "task_id": "CodeSearch_78",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "\n        :rtype: str or list\n        :returns: A list of dictionaries for each queried value. Each\n                  dictionary typically contains three keys (though not\n                  all will be present in all cases)\n\n                  * ``detectedSourceLanguage``: The detected language (as an\n                    ISO 639-1 language code) of the text.\n                  * ``translatedText``: The translation of the text into the\n                    target language.\n                  * ``input``: The corresponding input value.\n                  * ``model``: The model used to translate the text.\n\n                  If only a single value is passed, then only a single\n                  dictionary will be returned.\n        :raises: :class:`~exceptions.ValueError` if the number of\n                 values and translations differ.\n        \"\"\"\n        client = self.get_conn()\n\n        return client.translate(\n            values=values,\n            target_language=target_language,\n            format_=format_,\n            source_language=source_language,\n            model=model,\n        )"
+  },
+  {
+    "task_id": "CodeSearch_79",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "                    for sig in ('SIGPIPE', 'SIGXFZ', 'SIGXFSZ'):\n                        if hasattr(signal, sig):\n                            signal.signal(getattr(signal, sig), signal.SIG_DFL)\n                    os.setsid()\n\n                self.log.info('Running command: %s', self.bash_command)\n                sub_process = Popen(\n                    ['bash', tmp_file.name],\n                    stdout=PIPE,\n                    stderr=STDOUT,\n                    cwd=tmp_dir,\n                    env=self.env,\n                    preexec_fn=pre_exec)\n\n                self.sub_process = sub_process\n\n                self.log.info('Output:')\n                line = ''\n                for raw_line in iter(sub_process.stdout.readline, b''):\n                    line = raw_line.decode(self.output_encoding).rstrip()\n                    self.log.info(line)\n\n                sub_process.wait()\n\n                self.log.info('Command exited with return code %s', sub_process.returncode)\n\n                if sub_process.returncode:\n                    raise AirflowException('Bash command failed')\n\n        return line"
+  },
+  {
+    "task_id": "CodeSearch_80",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :type project_id: str\n        :return: A Cloud SQL instance resource.\n        :rtype: dict\n        \"\"\"\n        return self.get_conn().instances().get(\n            project=project_id,\n            instance=instance\n        ).execute(num_retries=self.num_retries)"
+  },
+  {
+    "task_id": "CodeSearch_81",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :type project_id: str\n        :return: None\n        \"\"\"\n        response = self.get_conn().instances().insert(\n            project=project_id,\n            body=body\n        ).execute(num_retries=self.num_retries)\n        operation_name = response[\"name\"]\n        self._wait_for_operation_to_complete(project_id=project_id,\n                                             operation_name=operation_name)"
+  },
+  {
+    "task_id": "CodeSearch_82",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :param project_id: Project ID of the project that contains the instance. If set\n            to None or missing, the default project_id from the GCP connection is used.\n        :type project_id: str\n        :return: None\n        \"\"\"\n        response = self.get_conn().instances().patch(\n            project=project_id,\n            instance=instance,\n            body=body\n        ).execute(num_retries=self.num_retries)\n        operation_name = response[\"name\"]\n        self._wait_for_operation_to_complete(project_id=project_id,\n                                             operation_name=operation_name)"
+  },
+  {
+    "task_id": "CodeSearch_83",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :return: None\n        \"\"\"\n        response = self.get_conn().instances().delete(\n            project=project_id,\n            instance=instance,\n        ).execute(num_retries=self.num_retries)\n        operation_name = response[\"name\"]\n        self._wait_for_operation_to_complete(project_id=project_id,\n                                             operation_name=operation_name)"
+  },
+  {
+    "task_id": "CodeSearch_84",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :type project_id: str\n        :return: A Cloud SQL database resource, as described in\n            https://cloud.google.com/sql/docs/mysql/admin-api/v1beta4/databases#resource.\n        :rtype: dict\n        \"\"\"\n        return self.get_conn().databases().get(\n            project=project_id,\n            instance=instance,\n            database=database\n        ).execute(num_retries=self.num_retries)"
+  },
+  {
+    "task_id": "CodeSearch_85",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :type project_id: str\n        :return: None\n        \"\"\"\n        response = self.get_conn().databases().insert(\n            project=project_id,\n            instance=instance,\n            body=body\n        ).execute(num_retries=self.num_retries)\n        operation_name = response[\"name\"]\n        self._wait_for_operation_to_complete(project_id=project_id,\n                                             operation_name=operation_name)"
+  },
+  {
+    "task_id": "CodeSearch_86",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :param project_id: Project ID of the project that contains the instance. If set\n            to None or missing, the default project_id from the GCP connection is used.\n        :type project_id: str\n        :return: None\n        \"\"\"\n        response = self.get_conn().databases().patch(\n            project=project_id,\n            instance=instance,\n            database=database,\n            body=body\n        ).execute(num_retries=self.num_retries)\n        operation_name = response[\"name\"]\n        self._wait_for_operation_to_complete(project_id=project_id,\n                                             operation_name=operation_name)"
+  },
+  {
+    "task_id": "CodeSearch_87",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :type project_id: str\n        :return: None\n        \"\"\"\n        response = self.get_conn().databases().delete(\n            project=project_id,\n            instance=instance,\n            database=database\n        ).execute(num_retries=self.num_retries)\n        operation_name = response[\"name\"]\n        self._wait_for_operation_to_complete(project_id=project_id,\n                                             operation_name=operation_name)"
+  },
+  {
+    "task_id": "CodeSearch_88",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        :return: None\n        \"\"\"\n        try:\n            response = self.get_conn().instances().export(\n                project=project_id,\n                instance=instance,\n                body=body\n            ).execute(num_retries=self.num_retries)\n            operation_name = response[\"name\"]\n            self._wait_for_operation_to_complete(project_id=project_id,\n                                                 operation_name=operation_name)\n        except HttpError as ex:\n            raise AirflowException(\n                'Exporting instance {} failed: {}'.format(instance, ex.content)\n            )"
+  },
+  {
+    "task_id": "CodeSearch_89",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "            operation_response = service.operations().get(\n                project=project_id,\n                operation=operation_name,\n            ).execute(num_retries=self.num_retries)\n            if operation_response.get(\"status\") == CloudSqlOperationStatus.DONE:\n                error = operation_response.get(\"error\")\n                if error:\n                    # Extracting the errors list as string and trimming square braces\n                    error_msg = str(error.get(\"errors\"))[1:-1]\n                    raise AirflowException(error_msg)\n                # No meaningful info to return from the response in case of success\n                return\n            time.sleep(TIME_TO_SLEEP_IN_SECONDS)"
+  },
+  {
+    "task_id": "CodeSearch_90",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "            self.log.info(\"Running the command: `%s`\", \" \".join(command_to_run))\n            self.sql_proxy_process = Popen(command_to_run,\n                                           stdin=PIPE, stdout=PIPE, stderr=PIPE)\n            self.log.info(\"The pid of cloud_sql_proxy: %s\", self.sql_proxy_process.pid)\n            while True:\n                line = self.sql_proxy_process.stderr.readline().decode('utf-8')\n                return_code = self.sql_proxy_process.poll()\n                if line == '' and return_code is not None:\n                    self.sql_proxy_process = None\n                    raise AirflowException(\n                        \"The cloud_sql_proxy finished early with return code {}!\".format(\n                            return_code))\n                if line != '':\n                    self.log.info(line)\n                if \"googleapi: Error\" in line or \"invalid instance name:\" in line:\n                    self.stop_proxy()\n                    raise AirflowException(\n                        \"Error when starting the cloud_sql_proxy {}!\".format(\n                            line))\n                if \"Ready for new connections\" in line:\n                    return"
+  },
+  {
+    "task_id": "CodeSearch_91",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        shutil.rmtree(self.cloud_sql_proxy_socket_directory, ignore_errors=True)\n        if self.sql_proxy_was_downloaded:\n            self.log.info(\"Removing downloaded proxy: %s\", self.sql_proxy_path)\n            # Silently ignore if the file has already been removed (concurrency)\n            try:\n                os.remove(self.sql_proxy_path)\n            except OSError as e:\n                if not e.errno == errno.ENOENT:\n                    raise\n        else:\n            self.log.info(\"Skipped removing proxy - it was not downloaded: %s\",\n                          self.sql_proxy_path)\n        if os.path.isfile(self.credentials_path):\n            self.log.info(\"Removing generated credentials file %s\",\n                          self.credentials_path)\n            # Here file cannot be delete by concurrent task (each task has its own copy)\n            os.remove(self.credentials_path)"
+  },
+  {
+    "task_id": "CodeSearch_92",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        command_to_run.extend(self._get_credential_parameters())\n        result = subprocess.check_output(command_to_run).decode('utf-8')\n        pattern = re.compile(\"^.*[V|v]ersion ([^;]*);.*$\")\n        m = pattern.match(result)\n        if m:\n            return m.group(1)\n        else:\n            return None"
+  },
+  {
+    "task_id": "CodeSearch_93",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        \"\"\"\n        connection = Connection(conn_id=self.db_conn_id)\n        uri = self._generate_connection_uri()\n        self.log.info(\"Creating connection %s\", self.db_conn_id)\n        connection.parse_from_uri(uri)\n        session.add(connection)\n        session.commit()"
+  },
+  {
+    "task_id": "CodeSearch_94",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        \"\"\"\n        self.log.info(\"Retrieving connection %s\", self.db_conn_id)\n        connections = session.query(Connection).filter(\n            Connection.conn_id == self.db_conn_id)\n        if connections.count():\n            return connections[0]\n        return None"
+  },
+  {
+    "task_id": "CodeSearch_95",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        connections = session.query(Connection).filter(\n            Connection.conn_id == self.db_conn_id)\n        if connections.count():\n            connection = connections[0]\n            session.delete(connection)\n            session.commit()\n        else:\n            self.log.info(\"Connection was already deleted!\")"
+  },
+  {
+    "task_id": "CodeSearch_96",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        if not self.use_proxy:\n            raise AirflowException(\"Proxy runner can only be retrieved in case of use_proxy = True\")\n        return CloudSqlProxyRunner(\n            path_prefix=self.sql_proxy_unique_path,\n            instance_specification=self._get_sqlproxy_instance_specification(),\n            project_id=self.project_id,\n            sql_proxy_version=self.sql_proxy_version,\n            sql_proxy_binary_path=self.sql_proxy_binary_path\n        )"
+  },
+  {
+    "task_id": "CodeSearch_97",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "            self.db_hook = PostgresHook(postgres_conn_id=self.db_conn_id,\n                                        schema=self.database)\n        else:\n            self.db_hook = MySqlHook(mysql_conn_id=self.db_conn_id,\n                                     schema=self.database)\n        return self.db_hook"
+  },
+  {
+    "task_id": "CodeSearch_98",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        if self.database_type == 'postgres':\n            if hasattr(self.db_hook,\n                       'conn') and self.db_hook.conn and self.db_hook.conn.notices:\n                for output in self.db_hook.conn.notices:\n                    self.log.info(output)"
+  },
+  {
+    "task_id": "CodeSearch_99",
+    "dim": "代码补全",
+    "bench": "CodeSearchNet",
+    "difficulty": "中等",
+    "prompt": "请补全以下Python代码：\n",
+    "expected_note": "        \"\"\"\n        self.reserved_tcp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n        self.reserved_tcp_socket.bind(('127.0.0.1', 0))\n        self.sql_proxy_tcp_port = self.reserved_tcp_socket.getsockname()[1]"
+  }
+]

@@ -1,0 +1,1602 @@
+[
+  {
+    "task_id": "PAWSX_0",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The exception was between late 2005 and 2009 when he played in Sweden with Carlstad United BK , Serbia with FK Borac Čačak and Russian FC Terek Grozny .\n句子2: The exception was between late 2005 and 2009 , when he played in Sweden with Carlstad United BK , Serbia with FK Borac Čačak and the Russian FC Terek Grozny .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_1",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Tabaci River is a tributary of the River Leurda in Romania .\n句子2: The Leurda River is a tributary of the River Tabaci in Romania .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_2",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: He played with the A-level Kane County Cougars in 1993 and the AA Portland Sea Dogs .\n句子2: He played in 1993 with the A - Level Portland Sea Dogs and the AA Kane County Cougars .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_3",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Winarsky is a member of the IEEE , Phi Beta Kappa , the ACM and Sigma Xi .\n句子2: Winarsky is a member of ACM , the IEEE , the Phi Beta Kappa and the Sigma Xi .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_4",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: In 1938 he became the government anthropologist of the anglo-Egyptian Sudan and led fieldwork with the Nuba .\n句子2: In 1938 he became the Government Anthropologist of the Egyptian-Anglo Sudan and conducted fieldwork with the Nuba .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_5",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Billy Billy Batson appeared in the first four issues of `` Black Adam '' , published between late 2008 and early 2009 .\n句子2: Black Adam appeared in the first four issues of `` Billy Batson '' , published between late 2008 and early 2009 .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_6",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The solar approach to this requirement is the use of solar panels in a conventional-powered aircraft .\n句子2: The solar approach to this requirement is the use of solar panels in a conventionally powered aircraft .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_7",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The police also questioned singer Rimi Tomy and the actor Kavya Madhavan , both close friends of Siddique and his wife Dileep , as part of the ongoing investigation .\n句子2: The police also questioned singer Rimi Tomy and actor Kavya Madhavan , both close friends of Siddique and his wife Dileep , as part of the ongoing investigation .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_8",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: They are overlaid with sparse live orchestral music and consist of vague , almost deliberately colorless sounds .\n句子2: They are overlaid with colour-free , live played music and consist of vague , almost deliberately sparse orchestral sounds .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_9",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Holly was musically influenced by Elton John .\n句子2: Holly Holly was influenced musically by Elton John .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_10",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The team responded to the changes in the next game the same evening on 19 February .\n句子2: The team responded to the changes in the same game that next February 19 evening .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_11",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Nashua Silver Knights , part of a current summer league , is the collegiate team of the city .\n句子2: The Nashua Silver Knights , part of a summer collegiate league , is the current team of the city .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_12",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The `` Fallbeil '' was used for the last time in West Germany in 1949 , in East Germany in 1966 .\n句子2: The `` Fall Beil '' was used for the last time in West Germany in 1949 , in 1966 in East Germany .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_13",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The canal is one of the oldest navigable canals in Europe and in Belgium .\n句子2: The canal is one of the oldest navigable canals in Belgium and indeed in Europe .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_14",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: In 2009 he moved back to Philadelphia and lives in New York City today .\n句子2: He moved back to Philadelphia in 2009 and now lives in New York City .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_15",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: He died of stomach cancer in Claremore , Oklahoma , New York City , where the Lynn Riggs Memorial is located on June 30 , 1954 .\n句子2: He died on June 30 , 1954 , of stomach cancer in New York City . Claremore , Oklahoma is home to the Lynn Riggs Memorial .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_16",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Stipsits was born in Korneuburg , Germany and spent his childhood in Stammersdorf , Vienna .\n句子2: Stipsits was born in Korneuburg , and spent his childhood in Stammersdorf , Vienna .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_17",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Keita dynasty ruled pre-imperial and imperial Mali from the 12th century into the early 17th century .\n句子2: The Keita dynasty ruled Mali from the 12th to the early 17th century , pre-imperial and imperial .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_18",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: `` Angel Eyes '' is a 1946 popular song composed by Matt Dennis , with lyrics by Earl Brent .\n句子2: `` Angel Eyes '' is a popular song composed by Earl Brent in 1946 , with texts by Matt Dennis .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_19",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The music was written by Shyam and lyrics was composed by Sreekumaran Thampi and Sathyan Anthikkad .\n句子2: The music was written by Shyam and the lyrics by Sreekumaran Thampi and Sathyan Anthikkad composed .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_20",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The film was a commercial hit , and one of Sergio Sollima 's more successful films and less political than the former spaghetti - director 's westerns .\n句子2: The film was a commercial hit , and one of Sergio Sollima 's more political films , and less successful than the former spaghetti - director 's westerns .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_21",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Kabir asks Sarika to reveal his plan to end Ranvir 's game .\n句子2: Kabir asks Sarika to reveal his plan to end Ranvir 's game to him .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_22",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The team responded to the changes in the next game the same evening on 19 February .\n句子2: The team responded to the changes in the same game that took place next February evening .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_23",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Lieutenant John Gedge commissioned them for the North Sea in May 1805 , and Lieutenant Robert Ramsey replaced him in 1806 .\n句子2: Lieutenant Robert Ramsey commissioned her to the North Sea in May 1805 , and Lieutenant John Gedge replaced him in 1806 .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_24",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Emma Townshend is represented by David Godwin at DGA Associates .\n句子2: David David Godwin is represented at DGA Associates by Emma Townshend .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_25",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Nashua Silver Knights , part of a summer collegiate league , is the current team of the city .\n句子2: The Nashua Silver Knights , part of a current summer league , are the city 's collegiate team .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_26",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: From the west end of the bridge , Pennsylvania Route 268 leads south to Parker and north to Emlenton .\n句子2: The Pennsylvania Route 268 leads from the west end of the bridge south to Parker and to the north to Emlenton .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_27",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: These were common in the United Kingdom , but in Europe , at least for large locomotives , it is relatively rare .\n句子2: These were rare in the United Kingdom , but in Europe , at least for large locomotives , they are relatively common .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_28",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Alston was born on December 21 , 1965 in Oxon Hill , Maryland . He attended Oxon Hill High School in New Haven , Connecticut .\n句子2: He was born on December 21 , 1965 in Oxon Hill , Maryland , and attended High School in New Haven , Connecticut .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_29",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Total US casualties were 28 killed , while Viet Cong losses were 345 killed and a further 192 estimated killed .\n句子2: In total , 28 US victims were killed , while Viet Cong losses were killed 345 and a further 192 estimated killed .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_30",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: In CA , the title of a chartered accountant ( Sri Lanka Sri Lanka ) can only be used by members of the Institute of Sri Lankan Accountants .\n句子2: In CA , the title of Chartered Accountant ( Sri Lanka Sri Lanka ) can be used by only members of the Institute of Chartered Accountants of Sri Lanka .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_31",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Simyo belongs to the Dutch telecommunications group KPN , after acquisition of the remainder of E-Plus on March 14 .\n句子2: Following the acquisition of the remainder of E-Plus on 14 March , Simyo belongs to the Dutch telecommunications group KPN .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_32",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Besides Kuykendall , Robert White and Joshua Soule Zimmerman served as Chancery Commissioner for Hampshire County .\n句子2: Robert White and Joshua Soule Zimmerman served alongside Kuykendall as a Chancery Commissioner for Hampshire County .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_33",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: These views were often expressed during the emergence of Protestant , Puritan and Evangelical movements .\n句子2: These views were often expressed during the emergence of evangelical , puritanical , and protestant movements .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_34",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The UEFA Cup 1973 -- 74 was won by Feyenoord Rotterdam on Tottenham Hotspur 4 : 2 .\n句子2: The 1973 -- 74 UEFA Cup was won by Feyenoord Rotterdam over Tottenham Hotspur 4 -- 2 on aggregate .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_35",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Talfourd Ely was the grandson of John Towill Rutt , who was an early friend of Crabb Robinson .\n句子2: Talfourd Ely was a grandson of Crabb Robinson , who was an early friend of John Towill Rutt .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_36",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: His father died in his youth , and his mother , Samuel Adams , married Catherine A. Fagan in 1842 , who two years later became the governor of Arkansas .\n句子2: His father died during his youth and his mother , Catherine A. Fagan , in 1842 married Samuel Adams , who became Governor of Arkansas two years later .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_37",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: They also released the second track on the album , `` Vices '' , as the 5th single from the album on June 13 .\n句子2: They also released the second track on the album , `` Vices '' , on 13th June as the 5th single from the album .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_38",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Sydney Water Board had taken over the water supply for Sydney from the City Council in 1888 .\n句子2: In 1888 , the Sydney Water Board took over the water supply for Sydney from the city council .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_39",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Also Cai Feng had a son , Cai Mao .\n句子2: Cai Mao also had a son , Cai Feng .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_40",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Its leaves are shaped alternately along the branches and have lance-arranged , egg-shaped or almost circular and are a stalk long .\n句子2: Its leaves are arranged alternately along the branches and are lance-shaped , egg-shaped or almost circular and have a long stem .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_41",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: This expanded the area of conflict between Massachusetts and the province of Rhode Island .\n句子2: This widened the area of conflict between Rhode Island and the province of Massachusetts .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_42",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Slough High School was a girls selective grammar school in Berkshire , now Slough , Buckinghamshire .\n句子2: Slough High School was a selective girls ' grammar school in Slough , Buckinghamshire , now Berkshire .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_43",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: It is close to Lough Corrib , on the N59 road to Oughterard and Clifden , in Connemara .\n句子2: It is near Oughterard and Clifden , on the N59 road to Lough Corrib , in Connemara .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_44",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: While the exclusion of black players was not a written rule , no African-American had played in the National Football League since 1933 .\n句子2: While the exclusion of African players was not a written rule , no black American player in the National Football League had played since 1933 .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_45",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Muawiyah came to power after the death of Ali and established a dynasty .\n句子2: After the death of Muawiyah , Ali came to power and founded a dynasty .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_46",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: In 1994 , Rodrigo Leão left the band to start a solo career , being replaced by Carlos Maria Trindade ( keyboard synthesizer ) .\n句子2: In 1994 , Rodrigo Leão left the band to start a solo career , replaced by Carlos Maria Trindade ( keyboard synthesizer ) .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_47",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: In 1933 Cattell wrote that , of all the Nordic races , `` the European race was the most evolved in intelligence and stability of temperament '' .\n句子2: In 1933 , Cattell wrote that of all the Nordic races , `` the European race in intelligence and stability of temperament was most developed '' .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_48",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Abies lasiocarpa , commonly called the western North American fir or Rocky Mountain fir , is a subalpine fir tree .\n句子2: Abies lasiocarpa , commonly known as the western North American fir or Rocky Mountain fir , is a subalpine fir tree .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_49",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: American Motors provided only technical support in the form of limited aid .\n句子2: American Motors provided only technical support in the form of limited help .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_50",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Houston Main Building ( HMB ) earlier the Prudential Building was a skyscraper at the Texas Medical Center in Houston , Texas .\n句子2: The Houston Main Building ( HMB ) formerly the Prudential Building , was a skyscraper in the Texas Medical Center , Houston , Texas .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_51",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: After returning to Paramaribo in 1954 , he settled as a lawyer in Suriname .\n句子2: After returning to Suriname in 1954 , he settled in Paramaribo as a lawyer .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_52",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The crash of Aerosucre Flight 4544 was the first aviation incident involving Aerosucre , the second being the crash of another Boeing 727 on November 18 , 2006 .\n句子2: The crash of Aerosucre Flight 4544 was the second flight incident involving Aerosucre , the first being the crash of another Boeing 727 on November 18 , 2006 .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_53",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Cabot Trail - Episode was filmed on site in Cape Breton , including Peggys Cove and the highlands of Nova Scotia , along the east coast .\n句子2: The East Coast episode was filmed on location in Nova Scotia , including Peggys Cove and the highlands of Cape Breton , along the Cabot Trail .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_54",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Another way to regulate the population of deer is to control the birth rate .\n句子2: Another way to regulate deer population is to control the birth rate .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_55",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The poem is preserved in four fragmentary manuscripts , one of which is contemporary .\n句子2: The poem is stored in four contemporary manuscripts , one of which is fragmentary :\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_56",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Manu Chao , the groups `` Air '' , Cassius , Mars IV , Les Négresses Vertes , and FFF , and Howie B also participated in the album .\n句子2: The groups '' Air `` , Howie B , Mars IV , Les Négresses Vertes and FFF and Manu Chao also participated in the album .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_57",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Hudeasa River is a tributary of the Bradu River in Romania .\n句子2: The Hudeasa River is the tributary of the Bradu River in Romania .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_58",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: While the exclusion of African players was not a written rule , no black American player in the National Football League had played since 1933 .\n句子2: While the exclusion of black players was not a written rule , since 1933 no Afro-American had played in the National Football League .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_59",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: His father Patrick Byrne was an MP , TD , Senator and Lord Mayor of Dublin . Another brother Alfie Byrne was also a TD .\n句子2: His father , Patrick Byrne , was a delegate , senator and lord mayor of Dublin , another brother Alfie Byrne was also TD .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_60",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The first series was better received by critics than the second .\n句子2: The second series was well received by the critics better than the first .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_61",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Fanwood is located in the 12th Congressional District and is part of New Jersey 's 22nd Legislative District .\n句子2: Fanwood is located in the 22nd Congressional District and is part of New Jersey 's 12th state legislative district .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_62",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Santa Cruz is situated on the banks of the Santa Cruz River which flows into the eastern part of Laguna de Bay .\n句子2: Laguna de Bay is located on the banks of the river Santa Cruz , which flows into the eastern part of Santa Cruz .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_63",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Porte de Vincennes is located where the southeast corner of the 20th arrondissement meets the northeast corner of the 12th arrondissement of Paris .\n句子2: The Porte de Vincennes is located where the north-eastern corner of the 12th arrondissement meets the south-eastern corner of the 20th arrondissement of Paris .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_64",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: On March 5 , 2011 , MTV Hive posted a streaming link to Anni Rossi , performing Rihannas '' Rude Boy `` .\n句子2: On March 5 , 2011 , MTV Hive posted a streaming link to Rihanna , performing Anni Rossi `` Rude Boy '' .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_65",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: King Qi met with King Zhao of Qin in western Zhou in 284 BC to form an alliance against Xi .\n句子2: In 284 BC , King Qi met with King Zhao of Qin in Western Zhou to form an alliance against Xi .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_66",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Chenzhou Administrative Region in the Tang Dynasty is under the administration of modern Henan in the east of Zhoukou :\n句子2: The administrative region of Chenzhou in the Tang dynasty is under the administration of modern Henan in eastern Zhoukou :\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_67",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: `` Pure '' very means simply , and `` Belter '' or `` Belta '' means great or good .\n句子2: `` Pure '' means simply very and `` Belter '' or `` Belta '' means good or big .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_68",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Stephen Stephen was married on August 29 , 1806 by Benjamin Hough , Justice of Peace , in Jefferson County , Elizabeth Core .\n句子2: `` 2 '' Benjamin Hough was married on 29 August 1806 by Stephen Ford , Justice of Peace , in Jefferson County with Elizabeth Core .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_69",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The species was first formally described by the botanist Stephan Endlicher in 1846 as part of Johann Georg Christian Lehmann 's work `` Irideae . Plantae Preissianae '' .\n句子2: The species was first formally described in 1846 by the botanist Stephan Endlicher as part of the work `` Irideae Plantae Preissianae '' by Johann Georg Christian Lehmann .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_70",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: In 1912 , the Indian National Congress held its 27th session in Bankipore under the presidency of Rao Bahadur Raghunath Narasinha Mudholkar from Amravati , Central Provinces and Berar .\n句子2: In 1912 , Indian National Congress held its 27th session at Bankipore , under the Presidency of Rao Bahadur Raghunath Narasinha Mudholkar from Central Provinces of Amravati and Berar .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_71",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The most commonly used animal fiber is wool harvested from sheep . For hand knitting and hobby knitting , thick , wool and acrylic yarns are frequently spun .\n句子2: The most frequently spun animal fiber is wool harvested from sheep . For hand knits and hobby knitting , thick wool and acrylic yarns are often used .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_72",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Tipico Co. Ltd and Tipico Casino Ltd were founded in 2004 as international trading companies in the commercial register of the Malta Financial Services Authority .\n句子2: Tipico Co. Ltd and Tipico Casino Ltd were established in 2004 as international trading companies in the Commercial Register of the Malta Financial Services Authority .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_73",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: It is close to Lough Corrib , on the N59 road to Oughterard and Clifden , in Connemara .\n句子2: It is located near Oughterard and Clifden , on the N59 road to Lough Corrib , in Connemara .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_74",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: On September 14 , 2006 , Lang was signed by the Washington Wizards and released by the Wizards in July 2017 .\n句子2: On September 14 , 2006 , Lang was signed by the Washington Wizards . In July 2017 , Lang was released by the Wizards .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_75",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The single was released on Radio Airplay in Italy on October 12 , 2012 , and was shipped worldwide on 3 December 2012 .\n句子2: The single was sent to radio airplay on October 12 , 2012 in Italy and was released worldwide on December 3 , 2012 .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_76",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: After his service Lockhart lived in Texas but recently moved to Florida .\n句子2: After his service , Lockhart lived in Florida , but moved recently to Texas .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_77",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: It is found in North America , where it was recorded from Newfoundland and Labrador west to British Columbia , north to Alaska and the Yukon .\n句子2: It is found in North America , where it has been recorded from Newfoundland and Labrador west to British Columbia , north to Alaska and the Yukon .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_78",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: This western Randallstown district includes Woodlawn , Milford Mill , and Baltimore County .\n句子2: This western randallstown district comprises Woodlawn , Milford Mill and Baltimore County .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_79",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: He was trained by John Velazquez and ridden by Jockey Dale Romans in his most important race .\n句子2: He was trained by Dale Romans and ridden by Jockey John Velazquez during his most important races .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_80",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: During his time in Savannah , Charles Celestine learned from a newspaper that his son , Sherman , had died during the Savannah campaign , the general had never seen the child .\n句子2: While in Savannah , Charles Celestine learned from a newspaper that his infant son Sherman had died during the Savannah Campaign ; the general had never seen the child .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_81",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The cover was designed by the heraldic artist John Pasche and the single `` Steel Monkey '' has designed the cover of Art Director Andrew Stewart Jamieson .\n句子2: The cover was designed by the heraldic artist Andrew Stewart Jamieson , the single `` Steel Monkey '' has designed the cover of Art Director John Pasche .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_82",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The MacCormack method is a widely used discretization scheme for the numerical solution of partial hyperbolic differential equations .\n句子2: In computational fluid dynamics , the MacCormack method is a widely used discretization scheme for the hyperbolic partial differential solution of numerical equations .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_83",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Wright moved from Chapel Hill , NC to New York .\n句子2: Wright moved to New York from Chapel Hill , NC .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_84",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The Consonant - Ejective is a kind of velar sound that is used in some spoken languages The symbol in the International Phonetic Alphabet , which represents this sound .\n句子2: The Velar - Ejective is a kind of consonantal sound that is used in some spoken languages The symbol in the International Phonetic Alphabet , which is this sound .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_85",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: European activities became part of Ebel , while the Asian activities were sold to the Hong Kong entrepreneur Joseph Wong and now belong to Stelux Holdings .\n句子2: The European activities became part of Ebel while the Asian activities were sold to Hong Kong entrepreneur Joseph Wong and are now part of Stelux Holdings .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_86",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Early advisory board members included Alistair Cooke , Saul Bellow , Walter Cronkite , Norman Cousins , Gore Vidal , Norman Podhoretz .\n句子2: Early advisory members included Walter Cronkite , Norman Vetter , Gore Vidal , Norman Podhoretz , Saul Bellow , and Alistair Cooke .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_87",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Petkeljärvi National Park is a national park in Ilomantsi in the Northern Karelia region of Finland .\n句子2: The Petkeljärvi National Park is a national park in Finland in the region of Ilomantsi in North Karelia .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_88",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: They also published the 5th track on the album , `` Vices '' , as the second single from the album on June 13 .\n句子2: They also released the 5th track on the album , `` Vices , '' on June 13 as the second single from the album .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_89",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Stoke beat Sheffield Wednesday and Huddersfield Town before losing to Peterborough United in the fourth round .\n句子2: Stoke beat Peterborough United and Huddersfield Town before losing in the fourth round against Sheffield Wednesday .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_90",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Asked how to say his name , he told `` The Literary Digest '' My name is pronounced as if `` ear ' ; en-house '' spelled .\n句子2: Asked how to say his name , he told `` The Literary Digest '' My name is spelled as if pronounced , ear 'apos ; enhouse `` .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_91",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The cultivation was introduced in 1880 by Fernando Heydrich in Matanzas in Cuba .\n句子2: In Matanzas its cultivation was introduced in 1880 , by Fernando Heydrich in Cuba .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_92",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: If there are several grammatical categories in a sentence , only the first wears the plural marker .\n句子2: If there are several grammatical categories in a sentence , only the plural wears the first marker .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_93",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: The regime left Philadelphia in October 1777 to join General George Washington 's main army outside of Boston .\n句子2: The regiment left Philadelphia in October 1777 to join General George Washington 's Main Army outside Boston .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_94",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: In 1974 Lao PDR established the Stage II fund with the help of the World Bank , the United Nations , and the Asian Development Bank .\n句子2: With the support of the World Bank , the United Nations , and the Asian Development Bank , Lao PDR founded the Stage II fund in 1974 .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_95",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: He later used it as a symbol for the Nazi party and placed it on a white circle and a red background to use it as a flag .\n句子2: He later used it as a symbol for the Nazi party and placed it on a red circle and a white background to use it as a flag .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_96",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: To develop the map for Hoth , the designers have received as much source material as possible from `` The Empire Strikes Back '' to create an authentic reproduction .\n句子2: To create the map for Hoth , the designers obtained as much source material from `` The Empire Strikes Back '' as possible so to develop an authentic reproduction .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_97",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: He is married to Elizabeth `` Betsy '' Katz . He is the father of Adam , Nathaniel and Sara Hundt .\n句子2: He is married to Elizabeth `` Betsy '' Katz , father of Adam , Nathaniel and Sara Hundt .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_98",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: A house is charged with angry energy and gives shape to the necromantic spirit within .\n句子2: A house becomes charged with necromantic energy and gives shape to the angry spirit within .\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_99",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: While Oros worked under Walker on Ford car and truck designs , Engel concentrated on Lincoln and Mercury vehicles .\n句子2: While Oros worked on Ford 's car and truck designs under Walker , Engel focused on Lincoln and Mercury vehicles .\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_0",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 2005 年末至 2009 年期间是例外，当时他效力于瑞典的卡斯塔德联队、塞尔维亚的查查克足球俱乐部和俄罗斯的格罗兹尼特里克足球俱乐部。\n句子2: 例外情况发生于 2005 年末至 2009 年期间，当时他效力于瑞典的卡斯塔德联队、塞尔维亚的查查克足球俱乐部和俄罗斯的格罗兹尼艾卡马特足球俱乐部。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_1",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Tabaci 河是罗马尼亚 Leurda 河的支流。\n句子2: Leurda 河是罗马尼亚境内 Tabaci 河的一条支流。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_2",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 1993 年，他为 A 级的坎恩郡美洲狮队和 AA 级的波特兰海狗队效力。\n句子2: 1993 年，他为 A 级球队波特兰海狗队和 AA 级球队凯恩县美洲狮队效力。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_3",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Winarsky 是 IEEE、Phi Beta Kappa、ACM 和 Sigma Xi 的成员。\n句子2: 温那斯基是 ACM、IEEE、Phi Beta Kappa 和 Sigma Xi 的成员。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_4",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 1938 年，他成为英埃苏丹的政府人类学家，并领导对努巴的实地考察工作。\n句子2: 1938 年，他成为英埃苏丹政府的人类学家，并与努巴一起从事野外工作。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_5",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 比利·比利·贝特森出现在 2008 年末至 2009 年初出版的前四期《黑亚当》中。\n句子2: 黑亚当出现在 2008 年末至 2009 年初出版的前四期《比利·贝特森》中。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_6",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 利用太阳能满足此项要求的方法是在常规动力飞机上使用太阳能板。\n句子2: 利用太阳能满足此项要求的方法是在常规动力飞机上使用太阳能板。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_7",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 在调查进行期间，警察还质询了歌手梨美·托米和演员卡薇雅·马德哈万，两人均为西迪基及其妻子迪利普的好友。\n句子2: 作为持续进行的调查的一部分，警察还询问了歌手 Rimi Tomy 和演员 Kavya Madhavan，二人都是西迪基和他的妻子迪利普的好友。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_8",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 它们被稀疏的现场管弦乐覆盖，并由模糊不清和几乎故意平淡的声音构成。\n句子2: 它们被毫无音色的现场播放的音乐覆盖，并且由模糊不清、几乎故意稀疏的管弦乐声音构成。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_9",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 霍利在音乐上受到了埃尔顿·约翰的影响。\n句子2: 霍利 霍利在音乐上受到艾尔顿·约翰的影响。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_10",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 球队在 2 月 19 日当晚对下一场比赛的变化作出了回应。\n句子2: 该队在第二天（2 月 19 日）晚上的同一场比赛中应对变化。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_11",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Nashua Silver Knights 队是当前夏季联赛的一部分，也是该市的大学体育队。\n句子2: 纳舒厄白银骑士团队加入了夏季大学联盟，是本市的现役球队。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_12",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: “断头台” 1949 年最后一次在西德使用，1966 年最后一次在东德使用。\n句子2: \"Fall Beil\" 于 1949 年最后一次在西德使用并于 1966 年在东德使用。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_13",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 此运河为比利时，乃至欧洲，历史最为悠久的可通航运河之一。\n句子2: 这条运河是比利时（确切来说是欧洲）最古老的通航运河之一。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_14",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 他在 2009 年搬回了费城，现在住在纽约市。\n句子2: 他于 2009 年搬回费城，现居住在纽约市。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_15",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 1954 年 6 月 30 日，他因胃癌于俄克拉荷马州克莱摩尔病逝，而林恩·瑞格斯纪念馆则位于纽约市。\n句子2: 1954 年 6 月 30 日，他因胃癌于纽约市病逝。而林恩·瑞格斯纪念馆则位于俄克拉荷马州克莱摩尔。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_16",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 什蒂普西奇出生于德国科恩堡，在维也纳斯塔莫斯多夫度过了他的童年。\n句子2: Stipsits 出生于科尔新堡，并在维也纳施塔莫斯多夫度过了他的童年。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_17",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 凯塔王朝从 12 世纪至 17 世纪初一直统治着前帝国及帝国时期的马里。\n句子2: 凯塔王朝在 12 世纪至 17 世纪统治了马里，在帝国成立前和帝国成立后都统治了。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_18",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: “天使之眼”是 1946 年的一首流行歌曲，由马特·丹尼斯作曲，厄尔·布伦特作词。\n句子2: 《Angel Eyes》是 1946 年的一首由 Earl Brent 作曲 Matt Dennis 作词的流行歌曲。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_19",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 作曲人是茜娅姆，作词人是 Sreekumaran Thampi 和 Sathyan Anthikkad。\n句子2: 音乐由希亚姆编写，歌词由斯列库伯兰·坦皮和 Sathyan Anthikkad 创作。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_20",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 该影片在商业上取得巨大成功，也是塞尔乔·索利马较为成功的电影之一，且政治元素比该导演之前的意大利式西部片要少。\n句子2: 该影片在商业上取得巨大成功，也是塞尔乔·索利马政治元素较多的电影之一，但不如该导演早期的意大利式西部片成功。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_21",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 迦比尔要求莎莉卡揭露其终止兰威尔比赛的计划。\n句子2: 卡比尔请求萨利卡向他透露结束兰维尔的游戏的计划。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_22",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 团队回应了 2 月 19 日同一个晚上的下一场比赛的变化。\n句子2: 团队回应了在第二年 2 月的晚上进行的同一场比赛中的变化。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_23",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 中卫约翰·盖奇在 1805 年 5 月为北海使用了它们，中尉罗伯特·拉姆齐在 1806 年取代了他。\n句子2: 1805 年 5 月，罗伯特·拉姆齐中尉将她派往北海，约翰·盖奇中尉于 1806 年接替了他。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_24",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 艾玛·汤森德由 DGA Associates 的大卫·戈德温代表。\n句子2: 艾玛·汤森是大卫·戈德温在 DGA Associates 的代表。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_25",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 纳舒厄白银骑士队属于夏季大学联盟，目前是该市的球队。\n句子2: Nashua Silver Knights 参加了本届夏季联赛，是该市的大学球队。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_26",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 从大桥的西端开始，宾夕法尼亚州 268 号公路往南延伸至帕克，往北与埃姆伦顿相接。\n句子2: 268 号宾夕法尼亚大道从帕克以南的大桥西端向北延伸至埃姆伦顿。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_27",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 这些在英国十分常见，但在欧洲其他地方相对少见，至少对于大型铁路机车来说是如此。\n句子2: 这在英国很罕见，但在欧洲，至少对于大型机车来说，它们相对常见。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_28",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 阿尔斯通于 1965 年 12 月 21 日出生在马里兰州奥克森山。他就读于康涅狄格州纽黑文市的奥克森山高中。\n句子2: 他于 1965 年 12 月 21 日出生于马里兰州奥克森山，并在康涅狄格州纽黑文上高中。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_29",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 美国总伤亡人数为 28 人，而越共的损失为 345 人死亡，另有 192 人估计死亡。\n句子2: 共有 28 名美国受害人遇害，而越南南方民族解放阵线遇害人数为 345 人，估计另有 192 人死亡。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_30",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 在 CA，特许会计师的头衔（斯里兰卡斯里兰卡）只能由斯里兰卡会计师学会的成员使用。\n句子2: 在 CA，特许会计师的职称（斯里兰卡斯里兰卡）仅限斯里兰卡特许会计师协会会员使用。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_31",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 在于 3 月 14 日收购了 E-Plus 剩余的股份后，Simyo 属于荷兰电信集团 KPN。\n句子2: 在 3 月 14 日收购 E-Plus 的剩余部分后，Simyo 属于荷兰电信集团 KPN。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_32",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 除凯肯德尔外，罗伯特·怀特和约书亚·苏尔·齐默尔曼也担任了汉普夏县的档案馆专员。\n句子2: 罗伯特·怀特和乔舒亚·索尔·齐默曼在旁协助担任汉普夏郡大法官法庭专员的库金德尔。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_33",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 新教派、清教派和福音派的运动兴起期间经常有人表达这种观点。\n句子2: 福音派、清教派和新教派的运动兴起期间经常有人表达这种观点。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_34",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 费耶诺德鹿特丹队以 4 : 2 击败托特纳姆热刺足球俱乐部，从而赢得了 1973-74 欧洲联盟杯。\n句子2: 在 1973 年至 1974 年的欧足联欧洲联赛上，费耶诺德鹿特丹队以 4 比 2 的总比分战胜了托特纳姆热刺队。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_35",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 塔尔福尔德·伊利是克拉布·罗宾逊早期好友约翰·陶威尔·拉特的孙子。\n句子2: 塔尔福尔德·伊利是克拉布·鲁滨逊的孙子，后者是约翰·陶威尔·拉特早年的一位朋友。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_36",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 他的父亲在他年少时就去世了，他的母亲塞缪尔·亚当斯于 1842 年嫁给凯瑟琳·A·费根，后者两年后成为阿肯色州州长。\n句子2: 他的父亲在他年少时去世了，而他的母亲凯瑟琳·A·费根于 1842 年嫁给塞缪尔·亚当斯， 后者在两年后成为阿肯色州州长。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_37",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 他们还发行了专辑《Vices》的第 2 首歌曲，作为 6 月 13 日发行的专辑第五首单曲。\n句子2: 他们还于 6 月 13 日发行了专辑《Vices》的第二首歌曲，作为该专辑的第五首单曲。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_38",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 悉尼水务局于 1888 年从市议会手上接管了悉尼的供水。\n句子2: 1888 年，悉尼水务局从市议会那里接管了悉尼供水事务。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_39",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 蔡讽还有一个儿子，叫蔡瑁。\n句子2: Cai Mao 也有一个儿子，他叫 Cai Feng。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_40",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: NS\n句子2: 它的叶子沿着树枝交替排列，呈长矛状、卵状或几乎呈圆形，而且有长茎。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_41",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 这扩大了马萨诸塞州和罗德岛省之间的冲突地区。\n句子2: 这扩大了罗德岛和马萨诸塞省之间的冲突地区。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_42",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 斯劳高中是伯克郡的一所精英女子语法学校，现在位于白金汉郡的斯劳。\n句子2: 斯劳中学是一所位于白金汉郡斯劳（现在为伯克郡）的女子精英学校。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_43",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 它邻近 Lough Corrib，位于康尼马拉的通往 Oughterard 和 Clifden 的 N59 公路。\n句子2: 它距离奥格特拉德和克里夫登不远，位于康尼马拉前往科里布湖方向的 N59 号公路上的。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_44",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 虽然排除黑人球员并非一项书面规定，但自 1933 年以来还没有非裔美国人曾为国家橄榄球联盟效力。\n句子2: 虽然排除非洲球员并非明文规定，但是自 1933 年以来国家橄榄球联盟中没有任何非洲裔美国球员上场踢球。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_45",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 在阿里死后，穆阿维耶上台执政，建立了一个王朝。\n句子2: 在穆阿威亚逝世后，阿里掌权并建立王朝。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_46",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 1994 年，Rodrigo Leão 离开乐队开始单飞生涯，被卡洛斯·玛丽亚·特林达德（键盘合成手）所取代。\n句子2: 1994 年，罗德里戈·里奥离开乐队单飞，由卡洛斯·玛利亚·特林达德（键盘合成器）替代。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_47",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 1933 年，卡特尔写道，在所有的北欧人种中，“欧洲人种的智力发育水平最高，性情最为稳定”。\n句子2: 卡特尔在 1933 年写道，在北欧的所有人种中，“欧洲人种的智力发育水平最高，性情最为平稳”。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_48",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 亚高山冷杉通常被称为北美西部冷杉或落基山冷杉，是一种亚高山带的冷杉树。\n句子2: 落蒺山冷杉通常被称为北美西部枞树或落基山冷杉，是一种亚高山冷杉。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_49",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 美国汽车公司仅以有限援助的形式提供技术支持。\n句子2: American Motors 仅以有限帮助的形式提供技术支持。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_50",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 休斯顿主楼 (HMB)，之前名为慎行大厦，是位于德克萨斯州休斯顿市德克萨斯医疗中心的一栋摩天大楼。\n句子2: 休斯顿主楼 (HMB) 之前称为慎行大厦，是位于得克萨斯州休斯顿的得克萨斯医学中心的一栋摩天大楼。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_51",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 于 1954 年回到帕拉马里博后，他作为一名律师在苏里南安定了下来。\n句子2: 1954 年回到苏里南后，他在帕拉马里博定居并成为了一名律师。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_52",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Aerosucre 4544 航班飞机坠毁是第一次涉及 Aerosucre 的航空事故，第二次则是 2006 年 11 月 18 日波音 727 飞机坠毁。\n句子2: Aerosucre 航班 4544 的坠毁是 Aerosucre 的第二起飞行事故，第一起是 2006 年 11 月 18 日另一架波音 727 的坠毁。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_53",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 《卡伯特公路》剧集是在布雷顿角岛现场拍摄而成，包括东海岸新斯科舍省的佩吉湾和高地。\n句子2: 《东海岸》这一集在新斯科舍省现场拍摄，包括卡伯特公路沿路的佩姬湾与布雷顿角高地。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_54",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 控制鹿群数量的另一个方法是控制出生率。\n句子2: 调节鹿群数量的另一条途径是控制出生率。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_55",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 这首诗被保存于四份残缺的手稿中，其中一份是当代手稿。\n句子2: 这首诗被保存在四本当代手稿中，其中一本是残本：\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_56",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Manu Chao、组合 “Air”、Cassius、Mars IV、Les Négresses Vertes 和 FFF 以及 Howie B 也参与了这张专辑。\n句子2: 乐队'' Air ``、Howie B、Mars IV、 Les Négresses Vertes 和 FFF 以及曼纽·潮也参与了这张专辑。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_57",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 胡达萨河是罗马尼亚布拉杜河的一条支流。\n句子2: 胡达萨河是罗马尼亚布拉杜河的支流。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_58",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 尽管将非洲球员排除在外并不是一条成文的规定，但从 1933 年以来，还没有美国黑人球员曾为国家橄榄球联盟效力。\n句子2: 虽然排除黑人球员并非明文规定，但是自 1933 年以来没有任何非洲裔美国人在国家橄榄球联盟中上场踢过球。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_59",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 他的父亲帕特里克·伯恩是国会议员、下议院议员、参议员兼都柏林市市长。另一位哥哥阿尔菲·伯恩也是下议院议员。\n句子2: 他的父亲帕特里克·伯恩是都柏林的代表、下议院议员和市长大人，另一位哥哥阿尔菲·伯恩也是下议院议员。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_60",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 第一季比第二季更受评论家的喜爱。\n句子2: 第二季比第一季更受评论家的喜爱。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_61",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 凡伍德位于第 12 个国会选区内，也是新泽西州第 22 个立法选区的一部分。\n句子2: 范伍德位于第 22 国会选区，是新泽西州第 12 州立法选区的一部分。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_62",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 圣克鲁兹座落于圣克鲁兹河畔，河水汇入贝湖东部。\n句子2: 贝湖位于流入圣克鲁斯东部的圣克鲁斯河河畔。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_63",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 文森门站位于巴黎 20 区东南角与 12 区东北角的交汇处。\n句子2: 文森门站位于巴黎第 12 区的东北角与第 20 区的东南角的交汇处。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_64",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 2011 年 3 月 5 日，MTV Hive 发布了安妮·罗西演唱蕾哈娜的《无礼男孩》的流媒体链接。\n句子2: 2011 年 3 月 5 日，MTV Hive 发布了一条关于蕾哈娜的流媒体链接，她在表演安妮·罗西的《粗鲁男孩》。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_65",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 公元前 284 年，齐王与秦昭襄王在西周会面，以建立联盟共抗僖王。\n句子2: 公元前 284 年，齐王与赵王在西周会晤，组成联盟对抗西国。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_66",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 唐朝的陈州行政区现属于河南的辖区，位于周口东部：\n句子2: 唐朝的陈州行政区现属于河南的辖区，位于周口东部：\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_67",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: \"Pure\" 的意思是简单地，而 \"Belter\" 或 \"Belta\" 的意思是很棒或很好。\n句子2: “Pure”仅意为“非常”，而“Belter”或“Belta”意为“好”或“大”。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_68",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 史蒂芬·史蒂芬于 1806 年 8 月 29 日，在治安法官本杰明·霍夫的征婚下，与伊丽莎白·科尔在杰斐逊县完婚。\n句子2: “2”1806 年 8 月 29 日，本杰明·霍夫与伊丽莎白·科尔结婚，由杰斐逊县治安法官史蒂芬·福特证婚。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_69",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 植物学家斯特凡·恩德利歇于 1846 年首次对该物种进行正式描述，作为约翰·格奥尔格·克里斯汀·莱曼创作的作品《Irideae . Plantae Preissianae》的一部分。\n句子2: 1846 年，该物种作为约翰·格奥尔格·克里斯蒂安·莱曼的成果 “Irideae Plantae Preissianae” 的一部分由史蒂芬·恩德利希尔首次正式描述。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_70",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 1912 年，在来自阿姆劳蒂、中央省和贝拉尔的 Rao Bahadur Raghunath Narasinha Mudholkar 主席的领导下，印度国民大会党在班基波举行了第 27 届会议。\n句子2: 1912 年，在来自阿姆劳蒂和贝拉尔中部省份的拉奥·巴哈杜尔·拉古纳特·那拉西纳·马霍尔卡尔的主持下，印度国民大会党在班基波举行了第 27 届会议。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_71",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 最常使用的动物纤维是从绵羊身上获得的羊毛。对于手工编织和针织爱好来说，厚实的羊毛和腈纶纱线也经常被纺成线。\n句子2: 最常用的纺织用动物纤维是从绵羊身上收割下来的羊毛。厚羊毛和腈纶纱经常被用于手工编织和编织爱好当中。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_72",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: Tipico Co. Ltd 和 Tipico Casino Ltd 于 2004 年成立，是马耳他金融服务局商业登记处的国际贸易公司。\n句子2: Tipico Co. Ltd 和 Tipico Casino Ltd 成立于 2004 年，是马耳他金融服务局商业登记处的国际贸易公司。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_73",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 它靠近克里布湖，位于通往乌克特拉德和克利夫登的 N59 公路上，地处康尼马拉。\n句子2: 它位于康尼马拉通往科里布湖方向的 N59 号公路上的奥格特拉德和克里夫登附近。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_74",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 2006 年 9 月 14 日，华盛顿奇才队签下了朗，2017 年 7 月，朗被奇才队裁掉。\n句子2: 2006 年 9 月 14 日，华盛顿奇才队签下了朗。2017 年 7 月，朗被奇才队裁掉。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_75",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 这首单曲于 2012 年 10 月 12 日在意大利 Radio Airplay 上发行并于 2012 年 12 月 3 日在全球发布。\n句子2: 这首单曲于 2012 年 10 月 12 日在意大利送到电台播放并于 2012 年 12 月 3 日全球发行。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_76",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 退役后洛哈特在得克萨斯州生活，但近期他搬到了佛罗里达州。\n句子2: 在服务完毕后，洛克哈特住在了佛罗里达州，但最近搬到了德克萨斯州。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_77",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 它在北美洲被发现，据记载其在此地从纽芬兰和拉布拉多向西延伸至不列颠哥伦比亚，向北延伸至阿拉斯加州和育空。\n句子2: 它是在北美洲被发现的，据记载其在此地从纽芬兰和拉布拉多向西延伸至不列颠哥伦比亚，向北延伸至阿拉斯加州和育空。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_78",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 这个西部的兰德尔斯敦区包括伍德劳恩、米尔福德米尔和巴尔的摩县。\n句子2: 这个 randallstown 西区包括 Woodlawn、Milford Mill 和 Baltimore County。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_79",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 他由约翰·委拉斯开兹训练，在他最重要的比赛中，他的骑师是乔基·戴尔·罗曼斯。\n句子2: 他由戴尔·罗曼斯训练，并由骑师约翰·委拉斯开兹指导参加了人生中最重要的骑马比赛。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_80",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 查尔斯·塞莱斯汀在萨瓦纳的时候，从一家报纸上了解到他的儿子谢尔曼在萨凡纳运动期间去世，将军从来没有见过这个孩子。\n句子2: 在萨凡纳的时候，查尔斯·塞莱斯廷从报纸上得知他年幼的儿子谢尔曼在萨凡纳运动中丧生；而将军从未见过这孩子。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_81",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: NS\n句子2: 封面由纹章艺术家安德鲁·斯图尔特设计，单曲《Steel Monkey》设计了艺术总监约翰·帕奇的封面。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_82",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 麦克马克方式是一种广泛使用的离散化方案，以获得双曲型偏微分方程的数值解决方案。\n句子2: 在计算流体动力学中，MacCormack 方法是一种广泛应用于数值方程双曲型偏微分解的离散格式。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_83",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 莱特从北卡罗来纳州查伯山搬到了纽约市。\n句子2: 莱特从北卡罗来纳州教堂山搬到纽约。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_84",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 挤喉音是一些口头语言中使用的一种软颚音 国际音标中代表该发音的符号。\n句子2: 软颚挤喉音是一些口头语言中使用的一种辅音。国际音标中的这一符号，即代表该发音 。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_85",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 欧洲业务归至玉宝旗下，亚洲业务被香港企业家王永平收购，现归属宝光实业。\n句子2: 欧洲业务归于玉宝旗下，而亚洲业务则卖给了香港企业家黄创增，现在隶属于宝光实业。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_86",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 早期咨询委员会成员包括阿利斯泰尔·库克、索尔·贝洛、沃尔特·克朗凯特、诺曼·卡森斯、戈尔·维达尔、诺曼·波德霍雷茨。\n句子2: 早期顾问成员包括沃尔特·克朗凯特、诺尔曼·维特、戈尔·维达尔、诺尔曼·波德霍雷茨、索尔·贝洛和阿利斯泰尔·库克。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_87",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 佩特克尔湖国家公园是位于芬兰北卡累利阿的伊洛曼齐的国家公园。\n句子2: 佩特克尔湖国家公园是芬兰的国家公园，位于北卡累利阿的伊洛曼齐地区。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_88",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 6 月 13 日，他们还在专辑《恶习》中发行第 5 首曲目，作为该专辑的第二首单曲。\n句子2: 他们还在 6 月 13 日发行了专辑“罪恶”中的第 5 首曲目，也是专辑中的第二首单曲。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_89",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 斯托克城足球俱乐部击败谢菲尔德周三足球俱乐部和哈德斯菲尔德足球俱乐部，后来在第四轮败给彼得伯勒联足球俱乐部。\n句子2: 斯托克城队击败了彼得堡联队和哈德斯菲尔德队，但在第四轮比赛中输给了谢菲尔德星期三队。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_90",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 被问及他的名字怎么读时，他告诉 The Literary Digest：“我的名字和‘ear ' ; en-house’的读音很像。”\n句子2: 被问道如何说他的名字时，他告诉“文学摘要”“我的名字在拼写时像这样的读音：ear 'apos ; enhouse”。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_91",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 费尔南多·海德里希于 1880 年在古巴马坦萨斯引进栽培技术。\n句子2: 在马坦萨斯，它的栽培技术由古巴的费尔南多·海德里希于 1880 年引入。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_92",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 如果句子中存在多个语法类别，则仅有第一个类别带复数标记。\n句子2: 如果一个句子中有多个语法类别，只有复数形式会带有第一个标记。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_93",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 该政权在 1777 年 10 月离开费城，加入了乔治·华盛顿将军在波士顿城外的主力部队。\n句子2: 1777 年 10 月，军团离开了费城，在波士顿城外加入了乔治·华盛顿将军的主力部队。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_94",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 1974 年，老挝人民民主共和国在世界银行、联合国和亚洲发展银行的帮助下设立第二阶段基金。\n句子2: 在世界银行、联合国和亚洲开发银行的支持下，老挝人民民主共和国于 1974 年设立了第二期基金。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_95",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 后来，他将它用作纳粹党的标志，并将其置于白色圆圈和红色背景之上，以此作为旗帜。\n句子2: 后来他把它作为纳粹党的象征，把它放在一个红色圆圈和一个黑色背景上，然后将它用作一面旗帜。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_96",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 为了画出霍斯的地图 , 设计者们尽可能从《帝国反击战》中获取原材料以实现真实还原。\n句子2: 为了制作霍斯的地图，设计师们从《帝国反击战》中获取了尽可能多的原始材料，以便真实再现场景。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_97",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 他娶了伊丽莎白·“贝琪”·卡茨。他是亚当·洪特、纳撒尼尔·洪特和萨拉·洪特的父亲。\n句子2: 他娶了伊丽莎白·“贝琪”·卡茨，他是亚当、纳撒尼尔和莎拉·亨德的父亲。\n请回答：是/否",
+    "expected_note": "是"
+  },
+  {
+    "task_id": "PAWSX_ZH_98",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 一座房子内充满了愤怒的能量，并于此造就出招魂精神。\n句子2: 一幢房子充满了魔力，还将屋中愤怒的魂灵赋予了形体。\n请回答：是/否",
+    "expected_note": "否"
+  },
+  {
+    "task_id": "PAWSX_ZH_99",
+    "dim": "多语言办公",
+    "bench": "PAWS-X",
+    "difficulty": "中等",
+    "prompt": "判断以下两句话是否语义等价（paraphrase）：\n句子1: 奥罗斯在沃克手下负责福特汽车和卡车的设计工作，恩格尔则专注于林肯和水星汽车。\n句子2: 当奥罗斯在沃克的带领下致力于福特汽车与卡车的设计时，恩格尔将精力主要放在林肯和水星汽车上。\n请回答：是/否",
+    "expected_note": "是"
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "task_id": "XSum_0",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nPrison Link Cymru had 1,099 referrals in 2015-16 and said some ex-offenders were living rough for up to a year before finding suitable accommodation.\nWorkers at the charity claim investment in housing would be cheaper than jailing homeless repeat offenders.\nThe Welsh Government said more people than ever were getting help to address housing problems.\nChanges to the Housing Act in Wales, introduced in 2015, removed the right for prison leavers to be given priority for accommodation.\nPrison Link Cymru, which helps people find accommodation after their release, said things were generally good for women because issues such as children or domestic violence were now considered.\nHowever, the same could not be said for men, the charity said, because issues which often affect them, such as post tra",
+    "expected_note": "There is a \"chronic\" need for more housing for prison leavers in Wales, according to a charity."
+  },
+  {
+    "task_id": "XSum_1",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nOfficers searched properties in the Waterfront Park and Colonsay View areas of the city on Wednesday.\nDetectives said three firearms, ammunition and a five-figure sum of money were recovered.\nA 26-year-old man who was arrested and charged appeared at Edinburgh Sheriff Court on Thursday.",
+    "expected_note": "A man has appeared in court after firearms, ammunition and cash were seized by police in Edinburgh."
+  },
+  {
+    "task_id": "XSum_2",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nJordan Hill, Brittany Covington and Tesfaye Cooper, all 18, and Tanishia Covington, 24, appeared in a Chicago court on Friday.\nThe four have been charged with hate crimes and aggravated kidnapping and battery, among other things.\nAn online fundraiser for their victim has collected $51,000 (Â£42,500) so far.\nDenying the four suspects bail, Judge Maria Kuriakos Ciesil asked: \"Where was your sense of decency?\"\nProsecutors told the court the beating started in a van and continued at a house, where the suspects allegedly forced the 18-year-old white victim, who suffers from schizophrenia and attention deficit disorder, to drink toilet water and kiss the floor.\nPolice allege the van was earlier stolen by Mr Hill, who is also accused of demanding $300 from the victim's mother while they held him ",
+    "expected_note": "Four people accused of kidnapping and torturing a mentally disabled man in a \"racially motivated\" attack streamed on Facebook have been denied bail."
+  },
+  {
+    "task_id": "XSum_3",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe 48-year-old former Arsenal goalkeeper played for the Royals for four years.\nHe was appointed youth academy director in 2000 and has been director of football since 2003.\nA West Brom statement said: \"He played a key role in the Championship club twice winning promotion to the Premier League in 2006 and 2012.\"",
+    "expected_note": "West Brom have appointed Nicky Hammond as technical director, ending his 20-year association with Reading."
+  },
+  {
+    "task_id": "XSum_4",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nRestoring the function of the organ - which helps control blood sugar levels - reversed symptoms of diabetes in animal experiments.\nThe study, published in the journal Cell, says the diet reboots the body.\nExperts said the findings were \"potentially very exciting\" as they could become a new treatment for the disease.\nThe experiments were on mice put on a modified form of the \"fasting-mimicking diet\".\nWhen people go on it they spend five days on a low calorie, low protein, low carbohydrate but high unsaturated-fat diet.\nIt resembles a vegan diet with nuts and soups, but with around 800 to 1,100 calories a day.\nThen they have 25 days eating what they want - so overall it mimics periods of feast and famine.\nPrevious research has suggested it can slow the pace of ageing.\nBut animal experiments",
+    "expected_note": "The pancreas can be triggered to regenerate itself through a type of fasting diet, say US researchers."
+  },
+  {
+    "task_id": "XSum_5",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nBut there certainly should be.\nThese are two of the biggest firms in the lucrative international business of making spectacles. France's Essilor is the world's number one manufacturer of lenses and contact lenses, while Italy's Luxottica is the leading frame manufacturer.\nIt is not obvious that the merger is in the public interest, though the two firms certainly think it is.\n\"The parties' activities are highly complementary and the deal would generate significant synergies and innovation and would be beneficial to customers,\" says Essilor.\nBut there seems to be growing disquiet in the industry.\nGordon Ilett, of the Association of Optometrists, says: \"This now allows the [enlarged] group to control all aspects of supply of product - from manufacture to the end user.\n\"Those businesses who re",
+    "expected_note": "Since their impending merger was announced in January, there has been remarkably little comment about the huge proposed deal to combine Essilor and Luxottica."
+  },
+  {
+    "task_id": "XSum_6",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nMedia playback is not supported on this device\nThe Olympic silver medallist accused the organisation of \"ageism\" and having \"zero regard\" for her welfare.\nShe is the latest high-profile cyclist to come forward after Jess Varnish, Nicole Cooke and Emma Pooley criticised the World Class programme.\nHouvenaghel told the BBC she felt \"vindicated\" by a leaked draft report detailing British Cycling's failures.\nThe report said British Cycling \"sanitised\" its own investigation into claims former technical director Shane Sutton used sexist language towards Varnish, who went public last April about her treatment.\nBritish Cycling subsequently admitted it did not pay \"sufficient care and attention\" to the wellbeing of staff and athletes at the expense of winning medals, an approach Houvenaghel attested",
+    "expected_note": "A \"medal at any cost\" approach created a \"culture of fear\" at British Cycling, says former rider Wendy Houvenaghel."
+  },
+  {
+    "task_id": "XSum_7",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nIt's no joke. But Kareem Badr says people did laugh in 2009 when he and two friends paid $20,000 (Â£13,000) for the Hideout in Austin, when it wasn't making money and the previous owner decided not to renew the lease.\n\"We took over a sinking ship and each brought a bucket to bail it out,\" says Mr Badr.\n\"None of us had any experience of running a business. But we loved what we were doing enough that it carried us through.\"\nThree years ago he was able to quit his day job and draw a salary from the club.\nMr Badr says it's still not as much as he used to make as a programmer (about $80,000 a year), but he now employs around 25 part time and contract workers.\nAnd he recently expanded the premises, taking over the adjoining coffee house which sells alcohol, and leasing more theatre space.\nMr Bad",
+    "expected_note": "Have you heard the one about the computer programmer who bought a failing comedy club in Texas and turned it into a million dollar a year business?"
+  },
+  {
+    "task_id": "XSum_8",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nRelieved that the giant telecoms company would not be broken up, they piled into the shares, sending them up 3% in early trading.\nBT dodged a bullet - and, as the chief executive of Ofcom, Sharon White, admitted, it was for prosaic reasons.\nShe said complications with land deals and BT's giant pension scheme meant there were \"practical obstacles\" to a break-up that would delay the process several years.\nIt's the pension scheme that probably most influenced Ofcom's thinking. BT's retirement scheme, inherited from its time as a state-owned utility, has assets of about Â£40bn and a deficit, on some measures, of about Â£10bn, even though BT has poured in billions of pounds in recent years to redress the gap.\nSenior sources at the company say that about 80% of the scheme relates to Openreach, t",
+    "expected_note": "The reaction from BT's investors told us much about media regulator Ofcom's ruling on the fate of Openreach, the BT subsidiary that provides much of the UK's broadband infrastructure."
+  },
+  {
+    "task_id": "XSum_9",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\n\"I'm really looking forward to it - the home of Scottish football,\" said Rodgers ahead of his maiden visit.\n\"I hear the pitch is good, a nice big pitch suits the speed in our team and our intensity.\n\"The technical area goes right out to the end of the pitch, but you might need a taxi to get back to your staff.\"\nThis will be Rodgers' second taste of the Old Firm derby and his experience of the fixture got off to a great start with a 5-1 league victory at Celtic Park last month.\n\"It was a brilliant performance by the players in every aspect,\" he recalled. \"Obviously this one is on a neutral ground, but we'll be looking to have a similar performance.\n\"We'll be prepared and focused. We know it's going to be a tough game. We anticipated that the last time.\"\nRodgers is also aware Celtic's visit ",
+    "expected_note": "Manager Brendan Rodgers is sure Celtic can exploit the wide open spaces of Hampden when they meet Rangers in Sunday's League Cup semi-final."
+  },
+  {
+    "task_id": "XSum_10",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe move is in response to an £8m cut in the subsidy received from the Department of Employment and Learning (DEL).\nThe cut in undergraduate places will come into effect from September 2015.\nJob losses will be among both academic and non-academic staff and Queen's says no compulsory redundancies should be required.\nThere are currently around 17,000 full-time undergraduate and postgraduate students at the university, and around 3,800 staff.\nQueen's has a current intake of around 4,500 undergraduates per year.\nThe university aims to reduce the number of student places by 1,010 over the next three years.\nThe BBC understands that there are no immediate plans to close departments or courses, but that the cuts in funding may put some departments and courses at risk.\nThe Education Minister Stephe",
+    "expected_note": "Queen's University Belfast is cutting 236 jobs and 290 student places due to a funding reduction."
+  },
+  {
+    "task_id": "XSum_11",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe leaflets said the patient had been referred for an urgent appointment as their symptoms might indicate cancer.\nEast Sussex NHS Trust has put the mix-up down to an external company that distributes its printed material.\nIt said the wrong patient information leaflets were added to hospital appointment letters sent out in March.\nIt has now contacted everyone affected to apologise and explain what went wrong.\nLiz Fellows, assistant director of operations at the trust, said: \"It was an administrative error and we apologise for any unnecessary anxiety this error may have caused.\"\nEast Sussex Healthcare NHS Trust covers Hastings, Eastbourne and Rother, and is responsible for the Conquest Hospital and Eastbourne District Hospital.\nThe trust said that due to the large number of appointment lett",
+    "expected_note": "Hospital bosses in Sussex have apologised after about 850 patients were sent leaflets in error suggesting they might have cancer."
+  },
+  {
+    "task_id": "XSum_12",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nEmily Thornberry said Labour would not \"frustrate Brexit\" even if it failed to amend the bill.\nTen shadow ministers were among 47 Labour MPs who rejected party orders to back it last week.\nShadow chancellor John McDonnell said frontbenchers would have to quit if they defied the whip at the next vote.\nThe draft legislation comes back to the Commons on Monday for three days of debate culminating in a vote on its third reading.\nSpeaking on BBC's The Andrew Marr Show, Ms Thornberry rejected a suggestion the party was \"hopelessly divided\" on the issue.\nShe said she understood colleagues not wanting to vote in favour of invoking Article 50 of the Lisbon Treaty, which begins the formal departure process, but said: \"We have said that we will not frustrate Brexit. We have got our instructions from ",
+    "expected_note": "The shadow foreign secretary has suggested Labour will continue to support legislation paving the way for Brexit as it passes through Parliament."
+  },
+  {
+    "task_id": "XSum_13",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe National League sold the Republic of Ireland midfielder to the Cherries for £175,000 in 2012 and had a 15% sell-on clause included in the deal.\nO'Kane moved for an undisclosed fee, but Nicholson says any money will go to help the cash-strapped club.\n\"I don't think I'll be getting anything,\" Nicholson told BBC Devon.\n\"There's more important things.\"\nThe Gulls are still looking for new owners having been taken over by a consortium of local business people last summer.\nThey were forced to close down the club's academy and drastically reduce the playing budget after millionaire former owner Thea Bristow left the club.",
+    "expected_note": "Torquay United boss Kevin Nicholson says none of the money from Eunan O'Kane's move to Leeds from Bournemouth will go to the playing squad."
+  },
+  {
+    "task_id": "XSum_14",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nIwan Wyn Lewis of Penygroes, Gwynedd, had been sectioned at Ysbyty Gwynedd after allegedly assaulting his mother.\nThe 36-year-old was visited by an officer in April 2016 about his bail arrangements, which a doctor said could have added to his distress.\nHis body was found in the Menai Strait on 2 May.\nMr Lewis was receiving treatment at the hospital's Hergest unit and was later moved to the Cynan ward where he received the visit from the officer.\nSpeaking at the inquest in Caernarfon on Thursday, consultant psychiatrist Dr Olufemi Adebajo said he was \"extremely unhappy\" about the visit.\n\"I don't think the police should be able to come to the ward without special permission,\" he said.\nAsked by coroner Nicola Jones whether the conversation with the officer could have added to Mr Lewis' agitat",
+    "expected_note": "North Wales Police has been criticised at an inquest for sending an officer to speak to a hospital patient with paranoid schizophrenia."
+  },
+  {
+    "task_id": "XSum_15",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe 33-year-old has featured only twice for the Foxes this term, having signed a new one-year deal with the Premier League newcomers in the summer.\nFormer Blackpool forward Taylor-Fletcher scored three goals in 23 games for his parent club last season.\nHe joined the 13th-placed Owls prior to Saturday's Championship game against Norwich City.",
+    "expected_note": "Leicester City striker Gary Taylor-Fletcher has joined Sheffield Wednesday on an initial month-long loan."
+  },
+  {
+    "task_id": "XSum_16",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nDr Waleed Abdalati told the BBC the that continued access to data is in \"everyone's best interest\".\nMany US scientists are rushing to copy information onto servers outside the control of the federal government.\nThey are afraid the Trump administration will curb access to climate and other research.\nThe President-elect has blown hot and cold on the issue of climate change, having previously tweeted about global warming being a hoax.\nOn Wednesday, one of his advisers compared scientists who support the mainstream view on global warming to flat-Earthers.\n\"There was an overwhelming science that the Earth was flat and there was an overwhelming science that we were the centre of the world,\" said Anthony Scaramucci, a member of the Trump transition committee, on CNN.\n\"We get a lot of things wrong",
+    "expected_note": "Limiting access to federal research would do an \"enormous disservice\" to the US and the world according to former Nasa chief scientist."
+  },
+  {
+    "task_id": "XSum_17",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe ska group tweeted the news: \"It is with deep regret that we say goodbye to our great friend, the world's greatest drummer, our beloved Brad. RIP.\"\nBradbury joined The Specials in 1979, and continued with the reversioned band The Special AKA, who had a top 10 hit with Free Nelson Mandela.\nBradbury took part in The Specials reunion tour in 2009. He also headed up a band called JB Allstars.\nThe band's representatives said the drummer died in England but no cause of death was given.\nIn a statement, his family said: \"It is with deepest regret that we have to announce the very sad news that our much loved husband and father John 'Brad' Bradbury passed away on Monday the 28 of December.\n\"Brad's drumming was the powerhouse behind The Specials and it was seen as a key part to the Two Tone sound",
+    "expected_note": "John \"Brad\" Bradbury, drummer with The Specials, has died at the age of 62."
+  },
+  {
+    "task_id": "XSum_18",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe 14-time major champion, playing in his first full PGA Tour event for almost 18 months, carded a level-par second round of 72, but missed the cut by four shots after his first-round 76.\nWorld number one Jason Day and US Open champion Dustin Johnson also missed the cut at Torrey Pines in San Diego.\nOvernight leader Rose carded a one-under 71 to put him on eight under.\nCanada's Adam Hadwin and USA's Brandt Snedeker are tied in second on seven under, while US PGA champion Jimmy Walker missed the cut as he finished on three over.\nWoods is playing in just his second tournament since 15 months out with a back injury.\n\"It's frustrating not being able to have a chance to win the tournament,\" said the 41-year-old, who won his last major, the US Open, at the same course in 2008.\n\"Overall today wa",
+    "expected_note": "Tiger Woods missed the cut at the Farmers Insurance Open, as England's Justin Rose maintained a one-shot lead."
+  },
+  {
+    "task_id": "XSum_19",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nMedia playback is not supported on this device\n\"If I push it, I could go backwards or end up back on medication,\" he said. \"There is also a chance of rejection.\"\nThe former Manchester United, Newcastle and Blackburn forward suffered kidney failure in 2015 after contracting an airborne virus.\nHe has just returned to his role as a United ambassador following surgery.\nThe 45-year-old is not even allowed to fly to Barcelona for a Manchester United legends game on 30 June.\nCole said: \"It is a long road ahead. It is a tough road and different to the battles I have had before.\n\"It is not like getting a football injury, when you go to the gym and work a bit harder.\"\nHis 28-year-old nephew Alexander provided the donor kidney - \"a noble job\" as Cole described it.\nCole has improved physically and has",
+    "expected_note": "Former England striker Andy Cole says he faces a \"long road ahead\" as he recovers from his recent kidney transplant."
+  },
+  {
+    "task_id": "XSum_20",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nPakistan's telecoms regulator said the ban was no longer necessary because Google, which owns YouTube, had now launched a Pakistan-specific version.\nYouTube has denied claims that the authorities can filter content.\nMany young Pakistanis have welcomed the lifting of the ban but some activists want details of the deal with Google.\nThey say there should be greater transparency of the terms agreed between Google and the government.\nA Pakistan Telecommunication Authority (PTA) official confirmed to the BBC that all internet service providers had been directed to open access to YouTube.\nThe Pakistan Telecommunication Company Ltd posted on its Facebook page on Monday: \"Welcome Back YouTube\".\nPakistan's ministry of information technology said: \"Google has provided an online web process through wh",
+    "expected_note": "Pakistan has unblocked the video sharing site, YouTube, more than three years after it was banned for posting a video deemed insulting to Islam."
+  },
+  {
+    "task_id": "XSum_21",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe 26-year-old was injured in last week's win over Exeter.\nDirector of rugby Richard Cockerill told BBC Radio Leicester: \"With eight weeks of the season to go that is probably the last we will see of him.\"\nMeanwhile, scrum-half Sam Harrison, 24, has signed a new deal, but the length of the contract has not been revealed.\nBenjamin has been plagued by injuries since signing from Worcester in 2012, suffering a serious neck injury which delayed his first-team debut by 15 months.\nHe also sustained a knee injury that ruled him out for four months last term.\nBut Cockerill said: \"It is certainly not too serious and he will make a full recovery in the next eight to 10 weeks.\"",
+    "expected_note": "Leicester Tigers winger Miles Benjamin is likely to be out for the rest of the season because of a knee injury, reports BBC Radio Leicester."
+  },
+  {
+    "task_id": "XSum_22",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nMedia playback is not supported on this device\nDoull emulated fellow Welshman Geraint Thomas, who won at the 2008 and 2012 Olympics, by helping Great Britain win team pursuit gold in world record time.\nThe 23-year-old joined record-breaking Sir Bradley Wiggins, Steven Burke and Ed Clancy to beat the world champions.\n\"That was just surreal, it feels dreamlike\" said the Cardiff rider.\nMedia playback is not supported on this device\n\"We've been in situations like that before when we've been so close and have lost so to pull it off now is unbelievable.\"\nHe had previously won silver medals at the 2015 and 2016 World Championship - this year to the Australian team - but Doull earned Olympic redemption to add to the four Welsh silver medallists in Rio.\n\"I've dreamt of this moment for so long,\" add",
+    "expected_note": "Owain Doull has won Wales' first gold of the 2016 Olympics as  he helped the Great Britain men's team pursuit defend their cycling title in Rio."
+  },
+  {
+    "task_id": "XSum_23",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe death toll doubled over the last two days as officials found more than 100 bodies once waters began receding.\nOfficials estimate that the floods have affected 450,000 people in the state.\nThis years monsoon rains have affected millions across at least 20 states in India. The north-eastern state of Assam has also seen dozens killed and hundreds of thousands displaced.\nThe government has announced aid packages for affected areas and Prime Minister Narendra Modi is due to visit Assam on Tuesday.\nHe has said the aim of his visit is to find a \"permanent solution\" to the flooding that Assam faces every year.\nThe Press Trust of India news agency quoted an official as saying that many affected people in Gujarat had begun returning to their villages.",
+    "expected_note": "Floods in the western Indian state of Gujarat have killed 218 people, government officials have confirmed."
+  },
+  {
+    "task_id": "XSum_24",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nTwo snowsports enthusiasts got married at a Scottish ski resort before sliding off down a run in their wedding attire.\nBridget and Jonathan Reid, from Moy, near Tomatin in the Highlands, tied the knot at Nevis Range, near Fort William, on Friday.\nThe couple first's date six years ago was a skiing trip, so they decided it would be appropriate to get married on skis.\nAdventure photographer Hamish Frost took their wedding snaps.\nBridget, who is a teacher, and Jonathan, who runs his own electrical automation company, benefited from recent snowfalls for their big day.\nThey got married in full Highland dress, which includes a kilt, and white wedding dress surrounded by snow-covered mountain landscape.\nThe white stuff had been lacking over winter, but last month's Storm Doris and recent spells of",
+    "expected_note": "All images copyrighted."
+  },
+  {
+    "task_id": "XSum_25",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe fine follows the conviction of former RBS trader, Shirlina Tsang, for fraud last year.\nShe was sentenced to 50 months in prison after being caught falsifying records of emerging markets trades.\nHong Kong regulators said RBS's controls were \"seriously inadequate\".\nThe Securities and Futures Commission (SFC) also said there were \"significant weaknesses in its procedures, management systems and internal controls.\"\nBut the regulator said the fine took into account the bank's speedy action in alerting the authorities once it had discovered the illegal trades, which took place in its emerging markets rates business in 2011.\n\"This deserves substantial credit and is the reason why today's sanctions are not heavier ones,\" Mark Steward, the SFC's head of enforcement, said in a statement.\nRBS res",
+    "expected_note": "Royal Bank of Scotland (RBS) has been fined HK$6m (£460,000) by Hong Kong regulators after it failed to detect a series of unauthorised transactions by one of its traders."
+  },
+  {
+    "task_id": "XSum_26",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nHere are the best bits we heard backstage at the Royal Albert Hall in London.\nIn La La Land, Emma Stone plays aspiring actress Mia Dolan.\nSo does the best actress winner think Mia could ever win a Bafta or Oscar?\nAfter a dramatic pause, she delivered her verdict.\n\"Hopefully!\"\n\"It's been like a whirlwind,\" said Spider-Man actor Tom Holland, winner of the Rising Star Award. \"I'm so happy everything seems to be working out.\"\nThe 20-year-old Brit isn't wrong there. Having made his screen debut in tsunami disaster movie The Impossible, he first appeared as Spidey in Captain America: Civil War and recently finished filming for Spider-Man: Homecoming.\nBut Tom admitted the super hero role has its drawbacks.\n\"Ever since I was a kid I've wanted to be Spider-Man. It's been so fun, but my legs are in ",
+    "expected_note": "The Bafta awards had laughter, passion and plenty of politics."
+  },
+  {
+    "task_id": "XSum_27",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nMedia playback is not supported on this device\nOf his first 30 matches in 2017, the world number one has won 21 and lost nine.\nWinning his last five tournaments of 2016 to pip Novak Djokovic to the year-end number one position in the final match of the season at London's O2 Arena was astonishing, dramatic and unforgettable.\nAnd yet it appears that relentless run of success, and the 87 matches he played over a season, has come at a price.\nMurray's straight-set defeat by world number 90 Jordan Thompson in the first round at Queen's Club was the sixth time he has lost to a player outside the top 20 this year. He has had shingles and an elbow problem, and now his left hip is proving cause for concern.\nOpting out of two scheduled exhibition matches at the Hurlingham Club in London may not be to",
+    "expected_note": "Of his last 30 matches in 2016, Andy Murray won 28 and lost just two."
+  },
+  {
+    "task_id": "XSum_28",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nMandla Hlatshwayo and his friend were shot after confronting a group of men who had robbed women of their mobile phones in a pub in Soweto.\nThe suspects were found in possession of drugs and an unlicensed gun.\nSouth Africa has one of the highest murder rates in the world with more than 50,000 cases reported every year.\n\"Police are questioning the suspects to see if they can link them to the shooting,\" says the police's Lungelo Dlamini.\nTributes are still pouring in for the star who was also a DJ on local radio station Jozi FM.\nThose who knew the 40-year-old have described him as a selfless man.",
+    "expected_note": "South African police say four people have been arrested in connection with the murder of former actor on popular local TV series Generations."
+  },
+  {
+    "task_id": "XSum_29",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nWitnesses told officers they heard a gun being fired near Anfield Road Primary School at about 09:00 GMT.\nPupils and staff there and at the nearby All Saints Catholic Primary School have been ordered to stay indoors while police investigate.\nCh Supt Mark Harrison said it \"beggars belief\" it would happen at a school.\nMembers of the public told police the shot was fired at a dark coloured car by a white man in a grey hooded top who was on foot.\nA Merseyside Police spokeswoman said local hospitals had been checked and \"no-one has sought medical attention for injuries caused by a firearm\".\nShe said officers were making house-to-house inquiries and studying CCTV footage of the area.\nCh Supt Harrison said the attack \"appears to be targeted\" and was particularly worrying as \"a child could have be",
+    "expected_note": "A shot was reportedly fired at a car outside a primary school in Liverpool as parents were taking their children inside, police have said."
+  },
+  {
+    "task_id": "XSum_30",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe Olympic champion, 29, was third overall at the end of a promising first day - traditionally her strongest - with a score of 3,928 points.\nOn Sunday she leapt a respectable 6.16m in the long jump but threw a disappointing 42.60m in the javelin.\nWith the 800m remaining, she has 5,544 points, still on course for the 6,200 needed to qualify for the Rio Olympics.\nEnnis-Hill is competing in her first heptathlon since winning gold at London 2012.\nA top-12 finish and score of 6,075 points would also secure qualification for this summer's World Championships.\nCanada's Commonwealth champion and world silver medallist Brianne Theisen-Eaton leads ahead of the final event, remarkably achieving three personal bests on her way to a 5,834 score.\nFollow latest updates and reports on the second day of t",
+    "expected_note": "Jessica Ennis-Hill has fallen from fourth to eighth place after six events at the Hypo-Meeting in Gotzis."
+  },
+  {
+    "task_id": "XSum_31",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nManor's operating company Just Racing Services has been in administration since 6 January, and FRP Advisory has been unable to find a buyer.\nJust Racing ceased trading on Friday, effectively ending the Manor team.\nThe staff were sent home on Friday and told they will be made redundant by the close of business on Tuesday after the payment of January salaries.\nFRP said there was \"no sustainable operational or financial structure in place to maintain the group as a going concern\".\nJoint administrator Geoff Rowley added the administration process \"provided a moratorium\" in the search for a buyer but \"no solution could be achieved to allow for the business to continue in its current form\".\nIt is not necessarily the end of Manor - a buyer could potentially still purchase the remnants of the team",
+    "expected_note": "The Manor team have collapsed after administrators failed to find a buyer for the stricken business."
+  },
+  {
+    "task_id": "XSum_32",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nOnly 90 will be returned to Stormont - compared to 108 from previous assembly polls.\nOut of the 228 candidates, 70 are women. The election will take place on 2 March.\nOnce again the DUP is fielding the most candidates with 38, followed by Sinn FÃ©in on 34.\nThe Ulster Unionist Party has 24 candidates, while the SDLP and Alliance have 21 each.\nThe Green Party is fielding 18 candidates, the TUV, 14, the Conservatives 13 and People Before Profit seven.\nThe Workers Party has five candidates in the race, the cross-community Labour Alternative four, the PUP and the Citizens Independent Social Thought Alliance three each and the UKIP one.\nThere are also 22 independent candidates in the field.\nWest Tyrone, East Londonderry and East Antrim have the largest number of candidates standing, with 15 goin",
+    "expected_note": "A total of 228 candidates will contest the Northern Ireland Assembly election next month - 48 fewer than last time."
+  },
+  {
+    "task_id": "XSum_33",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nWe received that question from Drew who is planning a trip to New York in December. He asked: \"Should I get my cash now or should I wait? Will there be much change between now and then?\"\nAnthony Reuben, from BBC Reality Check, had this answer: \"The BBC does not give financial advice, but here are a few things to bear in mind...\n\"The exchange rate between the pound and the dollar reflects the views of investors about the relative strengths of the two economies.\n\"Since the Brexit vote in June the pound has fallen about 18% against the dollar on the judgment that growth is likely to be stronger in the US than the UK and that UK interest rates are falling while the next movement in US rates is expected to be upwards.\n\"But it's always possible that something could happen to change that view - t",
+    "expected_note": "With the value of the pound falling dramatically since Brexit, a \"flash crash\" last week when the currency lost 6% of its value against the dollar, and news on Tuesday that the pound had fallen again, when would be a good time to change those pounds to dollars?"
+  },
+  {
+    "task_id": "XSum_34",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nMore than 300 people entered Alternative Model of the Year with the winner being decided by judges in Newcastle on Saturday.\nVintage-fan Zoe Waters, 19, from Bishop Auckland, is a student at Newcastle University.\nMs Waters said she was shocked to be declared the winner. \"I've always dressed a bit crazy,\" she said.\n\"I don't know why I wanted to be different, I guess I just always choose to wear what I like and look how I want to look rather than worrying about what's in fashion.\"\nShe said she now plans to pursue a career in modelling.\n\"I'm only 5ft 3in tall and I never wanted to look normal so I never thought I could actually be a model, I hadn't realised how big the alternative modelling world is.\"\nOrganiser Kieran Martin said: \"There is a lot of prejudice and hatred for people from sub-cu",
+    "expected_note": "A philosophy student who wears vintage clothing has won a national contest for alternative models."
+  },
+  {
+    "task_id": "XSum_35",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe Yomper statue is currently located in front of the Royal Marines Museum at Eastney.\nThe National Museum of the Royal Navy has started consulting over a proposed move to Portsmouth Historic Dockyard.\nCampaigners insist it is a local memorial to the conflict and \"belongs\" at Eastney.\nThe Yomper statue was created by Philip Jackson, depicting a royal marine marching across the islands during the 1982 conflict and was unveiled by former prime minister, Lady Thatcher, in 1992.\nThe National Museum of the Royal Navy (NMRN) is planning to relocate the Royal Marines Museum from Eastney to Portsmouth Historic Dockyard as part of a Â£13m lottery funded project and wants to take the statue with it.\nAn online petition against moving the statue has attracted more than 1,800 signatories, saying it wa",
+    "expected_note": "Plans to move a statue depicting a Royal Marine in the Falklands conflict away from Portsmouth seafront have been criticised."
+  },
+  {
+    "task_id": "XSum_36",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nIt is believed to be the first alleged breach of the Terrorism Prevention and Investigation Measures (TPim).\nThe suspect appeared at the Old Bailey accused of failing to contact a monitoring company and report to a police station twice in January.\nThe Home Office has refused to comment on the case.\nTPims replaced control orders in January 2012.\nThe suspect - who can only be referred to as BM - was one of nine British citizens subject to a TPim when the figures were last disclosed in March.\nThe BBC is not aware of anyone else who has appeared in court charged with a breach of a TPim.\nThe Home Office said: \"We do not comment on individual cases.  The police investigate all breaches of TPims and will prosecute where that is viable.\"\nThose subject to a TPim can be ordered to stay overnight at ",
+    "expected_note": "A suspected terrorist has been charged with breaching conditions imposed as part of the government's new terror monitoring powers."
+  },
+  {
+    "task_id": "XSum_37",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe 33-year-old takes over the role from Charlotte Burton, whom he assisted last season alongside his coaching commitments at Brighton College.\nSeamer Anyon took 199 wickets in 63 first-class appearances for Sussex between 2010 and 2014 and retired last year because of a knee injury.\nHe will also coach the women's under-19 and under-21 sides.\n\"This is a great opportunity to continue working with Sussex,\" he said.\n\"The women's game is fast-growing and I am looking forward to bringing my own experiences from professional cricket and using them to help the girls.\"\nAlexia Walker, Sussex's most-capped women's player and coach of the under-17 side, will take on roles with the senior, under-21 and under-19 sides.",
+    "expected_note": "Sussex have appointed former player James Anyon as head coach of their women's side."
+  },
+  {
+    "task_id": "XSum_38",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nThe 23-year-old younger brother of Sunderland's Wes Brown, had been on trial with the Shakers.\nBrown has also had spells at Bradford, Doncaster, Oldham, Coventry, Ipswich, Watford and Carlisle, making over 50 appearances in the Football League.\nHe is available for Bury's League One season opener as they travel to Doncaster on Saturday.\nFind all the latest football transfers on our dedicated page.",
+    "expected_note": "League One side Bury have signed former Barnsley defender Reece Brown on a six-month contract."
+  },
+  {
+    "task_id": "XSum_39",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nBut the latest Cinderella is bucking the trend - and seemingly appealing to audiences as a result.\nDirected by Sir Kenneth Branagh, Cinderella is a live-action version of Disney's classic 1950 animation that has taken $70m (Â£43.1m) on its opening weekend in the United States.\nYet this adaptation is completely faithful to the traditional story - including wicked stepmother, fairy godmother, glass slipper, handsome prince and happy ending.\nBritish actress Lily James, best known as Lady Rose from ITV's Downton Abbey, stars as Cinderella. Cate Blanchett plays the stepmother and Helena Bonham Carter is the fairy godmother.\n\"Keeping it classic is the twist,\" says Branagh, who started his directing career in 1989 with his adaptation of Shakespeare's Henry V.\n\"I always felt that it's better to do",
+    "expected_note": "In recent years, Hollywood remakes and re-imaginings of classic fairytales have come thick and fast - all darker, more adult versions of tales that originally appeared in cinemas."
+  },
+  {
+    "task_id": "XSum_40",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nBut one nation, Russia, was missing.\nFor the first time in Eurovision history, the host nation barred another country's singer.\nThat is because in 2015, in violation of Ukrainian border rules, Russia's Julia Samoilova performed in Crimea, the Ukrainian peninsula annexed by Russia a year earlier.\nSamoilova suffers from a neural muscular disorder and has used a wheelchair since childhood.\n\"When the rumours began I might not go, I was so sad,\" she told the BBC in Moscow. \"I thought, how come? This was my dream. When the final decision was taken I didn't believe it. But unfortunately, this is the reality.\"\n\"I think it's a stupid reaction,\" Russian MP Vitaly Milonov tells me. \"They're even afraid of such a small girl to enter Kiev.\"\nEven before Ukraine's ban, Mr Milonov had called for a Russian",
+    "expected_note": "Performers from 42 countries strode down a long red carpet near Ukraine's parliament this week, as a curtain-raiser to this year's Eurovision Song Contest."
+  },
+  {
+    "task_id": "XSum_41",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nAlex McKechnie, then 16, was in the crowd for that first show and went on to be a regular at the club:\n\"I saw The Beatles a few times in the north end of Liverpool and was working in Liverpool city centre as a messenger boy in a printing works when I heard that they were on at the Cavern in a lunchtime session.\n\"The Cavern was in the basement of a three or four storey warehouse. The public went down one flight of stone stairs and then there were three long arches.\n\"At the end of one of the long arches was a little tiny stage. That's where the Beatles performed 292 times.\n\"I remember it being very highly charged with excitement. The music sounded even more exciting [than the previous gigs] because The Cavern was this little squashed space so the music sounded a bit louder, a bit more exciti",
+    "expected_note": "It was 50 years ago today that The Beatles played their first gig at the Cavern Club in Liverpool - the venue where the band built their reputation and where Beatlemania was born."
+  },
+  {
+    "task_id": "XSum_42",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nAbout 47% of working South Africans earn less than the wage, which is being introduced to combat income poverty and inequality.\nBut critics say it could put more people out of work as employers might not be able to afford the higher wages.\nThe government says it will consult on the issue, but hopes to introduce a minimum wage within two years.\nAnnouncing the rate, which was proposed by a panel of advisers, the country's deputy president Cyril Ramaphosa said: \"We are now a step closer to finalising discussions on the national minimum wage. All social partners will now decide what their take is.\"\nHe said the panel was not endorsing the proposed figure as a living wage, but wanted to set a minimum payment for workers.\nWages are politically sensitive in the country, where the official unemploy",
+    "expected_note": "South Africa's government has proposed a national minimum wage of 3,500 rand ($242; Â£199) a month."
+  },
+  {
+    "task_id": "XSum_43",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nConcern is mounting about the potential of a vicious power struggle in Addis Ababa, triggering a negative chain reaction across the region.\nFor many of Ethiopia's Horn allies, the death has come at an awkward moment, not least because a delicate political transition in Somalia is incomplete and under serious strain, and a stand-off between South Sudan and Sudan risks dragging the region into a new armed conflagration.\nMr Meles was a complex figure, hard to pigeon-hole, much less force into a one-dimensional portrait frame.\nA mystique has over the years grown around his personality and politics, making the task to objectively assess his legacy difficult and highly fraught.\nTo use a Churchillian phrase, the man was a riddle and a mystery inside an enigma, and by extension so too the secretiv",
+    "expected_note": "The death of Ethiopian Prime Minister Meles Zenawi has thrown the populous Horn of Africa giant into a period of deep uncertainty and created a serious leadership vacuum in the region with profound geopolitical implications."
+  },
+  {
+    "task_id": "XSum_44",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nOnly 50.5 overs were possible at the MCG, but Australia still got wickets at regular intervals with Jackson Bird taking two for 53.\nAzhar's 110-ball half-century saw him pass 1,000 Test runs in 2016.\nAustralia lead the three-Test series 1-0, having beaten Pakistan by 39 runs in the opener at the Gabba.\nSami Aslam was undone by Nathan Lyon after making just nine and, after Azhar and Babar Azam batted through the remainder of the morning, Azam edged the last ball before lunch from Josh Hazlewood to give Steve Smith his second catch.\nMisbah-ul-Haq scored 11 off 13 balls with a four and a six before being brilliantly caught at short leg by Nic Maddinson off Bird.\nBird bowled Younus Khan off an inside edge to end a third-wicket stand of 51.\nThe wicket came shortly before the scheduled tea break",
+    "expected_note": "Azhar Ali's unbeaten 66 helped Pakistan to reach 142-4 against Australia on a rain-affected first day of the Boxing Day Test in Melbourne."
+  },
+  {
+    "task_id": "XSum_45",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nIt was the first time the Single Transferable Vote (STV) system had been used to select two members in the same ward in a by-election.\nThe SNP topped the vote in the Leith Walk by-election, while Scottish Labour won the second seat from the Greens.\nThe by-election was called after Deidre Brock of the SNP and Maggie Chapman of the Scottish Greens stood down.\nThe SNP's John Lewis Ritchie topped the Leith Walk poll with 2,290 votes. He was elected at stage one in the STV process with a swing in first-preference votes of 7.6% from Labour.\nLabour's Marion Donaldson received 1,623 votes, ahead of Susan Jane Rae of the Scottish Greens on 1,381.\nMs Donaldson was elected at stage 10 of the voting process after other preferences had been considered.\nThe by-election was called after Ms Brock stood do",
+    "expected_note": "Two new councillors have been elected in a by-election in the City of Edinburgh."
+  },
+  {
+    "task_id": "XSum_46",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nKremlin spokesman Dmitry Peskov said on Thursday that the Russian air force would continue its support of the Syrian armed forces.\nHe also urged Washington to deliver on a pledge to separate moderate Syrian opposition fighters from \"terrorists\".\nUS Secretary of State John Kerry warned the US was \"on the verge\" of suspending talks with Russia over Syria.\n\"It's irrational, in the context of the kind of bombing taking place, to be sitting there, trying to take things seriously,\" he told a conference in Washington.\n\"There is no notion or indication of seriousness of purpose with what is taking place right now.\"\nThe Russian foreign ministry said a US refusal to co-operate would be a gift to \"terrorists\".\nThe US and Russia have been negotiating for months to try to secure a cessation of hostilit",
+    "expected_note": "Russia has said it will carry on bombing rebel-held eastern Aleppo in Syria, defying US demands to stop."
+  },
+  {
+    "task_id": "XSum_47",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nHooker Hughes, 20, featured for Llandovery during the 2015-16 season while 19-year-old flanker Evans has played for Scarlets' Under-18 side.\nBoth players have been included in Wales' squad for June's Junior World Championship.\nWales play Ireland, Georgia and New Zealand in Pool A in Manchester.\n\"They both enjoyed a very successful Six Nations campaign and will take confidence into the forthcoming World Championships,\" Scarlets general manager of rugby Jon Daniels said.",
+    "expected_note": "Wales Under-20 Grand Slam winners Shaun Evans and Dafydd Hughes have signed their first professional contracts with Scarlets."
+  },
+  {
+    "task_id": "XSum_48",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nRussia is fuming, in the words of BBC Moscow correspondent Steve Rosenberg, but US politicians have not minced their words either.\nHere is a taster of what's being said and shared.\nTweet by Dmitry Medvedev, Russian prime minister\n\"Sad that the Obama administration, which started its life with a reset, ends it in anti-Russian death throes.\"\n\"The outgoing American administration led by Barack Obama, while accusing Russia of all deadly sins, trying to accuse us, among other things, of the failure of its foreign policy initiatives, as you know, without grounds, has brought forward additional accusations that the Russian side - at state level - was interfering with the US electoral campaign, as a result of which the Democratic candidate lost. Yesterday the US administration, without presenting ",
+    "expected_note": "The expulsion of 35 Russian diplomats from the US over the email hacking scandal has drawn a barrage of abuse from Moscow, which seems poised to respond in kind."
+  },
+  {
+    "task_id": "XSum_49",
+    "dim": "文档撰写",
+    "bench": "XSum",
+    "difficulty": "中等",
+    "prompt": "请将以下长文本总结为一段话（不超过100字）：\nInstead of fees rising to £9,250 per year in the autumn, Jeremy Corbyn is proposing a complete handbrake turn in saying that university tuition should not cost students anything.\nIt's a bolder step than Labour's previous leader, who two years ago opted for a halfway house of cutting fees to £6,000 - and then was accused of pleasing no-one.\nThis is Labour going for an all-or-nothing approach - asserting free education as a fundamental principle - and creating the starkest choice in university policy for two decades.\nIt's a direct appeal to younger voters - with surveys suggesting that students are more likely to vote Labour.\nIt makes the pitch that no-one should be deterred from university because of the cost or fear of debt.\nLabour has costed the removal of fees - and the reintroduction of",
+    "expected_note": "Scrapping tuition fees in England is the biggest and most expensive proposal in Labour's £25bn worth of pledges for education."
+  }
+]

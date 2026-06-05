@@ -1,0 +1,1652 @@
+{
+  "HumanEval/0": {
+    "deepseek-v4-flash": {
+      "output": "from typing import List\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if abs(numbers[i+1] - numbers[i]) < threshold:\n            return True\n    return False",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\"\n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i+1] - numbers[i] < threshold:\n            return True\n    return False\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\"\n    n = len(numbers)\n    for i in range(n):\n        for j in range(i + 1, n):\n            if abs(numbers[i] - numbers[j]) < threshold:\n                return True\n    return False\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\"\n    sorted_numbers = sorted(numbers)\n    for i in range(len(sorted_numbers) - 1):\n        if sorted_numbers[i + 1] - sorted_numbers[i] < threshold:\n            return True\n    return False",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/1": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    groups = []\n    current_group_chars = []\n    balance = 0\n    \n    for ch in paren_string:\n        if ch == ' ':\n            continue\n        if ch == '(':\n            balance += 1\n            current_group_chars.append(ch)\n        elif ch == ')':\n            balance -= 1\n            current_group_chars.append(ch)\n            if balance == 0:\n                groups.append(''.join(current_group_chars))\n                current_group_chars = []\n        # 其他字符不考虑，但题目说输入只包含括号和空格\n    return groups\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    separate those group into separate strings and return the list of those.\n    Separate groups are balanced (each open brace is properly closed) and not nested within each other\n    Ignore any spaces in the input string.\n    >>> separate_paren_groups('( ) (( )) (( )( ))')\n    ['()', '(())', '(()())']\n    \"\"\"\n    # Remove all spaces from the input\n    paren_string = paren_string.replace(' ', '')\n    \n    groups = []\n    current_group = []\n    depth = 0\n    \n    for char in paren_string:\n        if char == '(':\n            depth += 1\n            current_group.append(char)\n        elif char == ')':\n            depth -= 1\n            current_group.append(char)\n            # When depth returns to 0, we've completed a balanced group\n            if depth == 0:\n                groups.append(''.join(current_group))\n                current_group = []\n    \n    return groups\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    result = []\n    current_group = []\n    counter = 0\n    \n    for char in paren_string.replace(' ', ''):\n        if char == '(':\n            counter += 1\n            current_group.append(char)\n        elif char == ')':\n            counter -= 1\n            current_group.append(char)\n            \n            if counter == 0:\n                result.append(''.join(current_group))\n                current_group = []\n    \n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    separate those group into separate strings and return the list of those.\n    Separate groups are balanced (each open brace is properly closed) and not nested within each other\n    Ignore any spaces in the input string.\n    >>> separate_paren_groups('( ) (( )) (( )( ))')\n    ['()', '(())', '(()())']\n    \"\"\"\n    paren_string = paren_string.replace(\" \", \"\")\n    result = []\n    current = []\n    depth = 0\n    \n    for char in paren_string:\n        if char == '(':\n            depth += 1\n            current.append(char)\n        elif char == ')':\n            depth -= 1\n            current.append(char)\n            if depth == 0:\n                result.append(\"\".join(current))\n                current = []\n    \n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/2": {
+    "deepseek-v4-flash": {
+      "output": "def truncate_number(number: float) -> float:\n    return number - int(number)",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\ndef truncate_number(number: float) -> float:\n    \"\"\" Given a positive floating point number, it can be decomposed into\n    and integer part (largest integer smaller than given number) and decimals\n    (leftover part always smaller than 1).\n\n    Return the decimal part of the number.\n    >>> truncate_number(3.5)\n    0.5\n    \"\"\"\n    return number - int(number)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\ndef truncate_number(number: float) -> float:\n    return number - int(number)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\ndef truncate_number(number: float) -> float:\n    \"\"\" Given a positive floating point number, it can be decomposed into\n    and integer part (largest integer smaller than given number) and decimals\n    (leftover part always smaller than 1).\n\n    Return the decimal part of the number.\n    >>> truncate_number(3.5)\n    0.5\n    \"\"\"\n    return number % 1\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/3": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List\n\ndef below_zero(operations: List[int]) -> bool:\n    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef below_zero(operations: List[int]) -> bool:\n    balance = 0\n    for operation in operations:\n        balance += operation\n        if balance < 0:\n            return True\n    return False\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\n\ndef below_zero(operations: List[int]) -> bool:\n    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef below_zero(operations: List[int]) -> bool:\n    \"\"\" You're given a list of deposit and withdrawal operations on a bank account that starts with\n    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and\n    at that point function should return True. Otherwise it should return False.\n    >>> below_zero([1, 2, 3])\n    False\n    >>> below_zero([1, 2, -4, 5])\n    True\n    \"\"\"\n    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/4": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    \"\"\" For a given list of input numbers, calculate Mean Absolute Deviation\n    around the mean of this dataset.\n    Mean Absolute Deviation is the average absolute difference between each\n    element and a centerpoint (mean in this case):\n    MAD = average | x - x_mean |\n    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])\n    1.0\n    \"\"\"\n    if not numbers:\n        return 0.0\n    mean = sum(numbers) / len(numbers)\n    total_deviation = sum(abs(x - mean) for x in numbers)\n    return total_deviation / len(numbers)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    \"\"\" For a given list of input numbers, calculate Mean Absolute Deviation\n    around the mean of this dataset.\n    Mean Absolute Deviation is the average absolute difference between each\n    element and a centerpoint (mean in this case):\n    MAD = average | x - x_mean |\n    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])\n    1.0\n    \"\"\"\n    mean = sum(numbers) / len(numbers)\n    return sum(abs(x - mean) for x in numbers) / len(numbers)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    mean = sum(numbers) / len(numbers)\n    absolute_differences = [abs(x - mean) for x in numbers]\n    return sum(absolute_differences) / len(absolute_differences)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    \"\"\" For a given list of input numbers, calculate Mean Absolute Deviation\n    around the mean of this dataset.\n    Mean Absolute Deviation is the average absolute difference between each\n    element and a centerpoint (mean in this case):\n    MAD = average | x - x_mean |\n    >>> mean_absolute_deviation([1.0, 2.0, 3.0, 4.0])\n    1.0\n    \"\"\"\n    mean = sum(numbers) / len(numbers)\n    return sum(abs(x - mean) for x in numbers) / len(numbers)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/5": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\"\n    if not numbers:\n        return []\n    result = [numbers[0]]\n    for num in numbers[1:]:\n        result.append(delimeter)\n        result.append(num)\n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\"\n    result = []\n    for i, num in enumerate(numbers):\n        if i > 0:\n            result.append(delimeter)\n        result.append(num)\n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    if not numbers:\n        return []\n    \n    result = [numbers[0]]\n    for num in numbers[1:]:\n        result.append(delimeter)\n        result.append(num)\n    \n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\"\n    result = []\n    for i, num in enumerate(numbers):\n        result.append(num)\n        if i < len(numbers) - 1:\n            result.append(delimeter)\n    return result",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/6": {
+    "deepseek-v4-flash": {
+      "output": "def parse_nested_parens(paren_string: str) -> List[int]:\n    groups = paren_string.split()\n    result = []\n    for group in groups:\n        depth = 0\n        max_depth = 0\n        for ch in group:\n            if ch == '(':\n                depth += 1\n                max_depth = max(max_depth, depth)\n            elif ch == ')':\n                depth -= 1\n        result.append(max_depth)\n    return result",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    result = []\n    for group in paren_string.split():\n        max_depth = 0\n        current_depth = 0\n        for char in group:\n            if char == '(':\n                current_depth += 1\n                if current_depth > max_depth:\n                    max_depth = current_depth\n            elif char == ')':\n                current_depth -= 1\n        result.append(max_depth)\n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    groups = paren_string.split()\n    result = []\n    \n    for group in groups:\n        max_depth = 0\n        current_depth = 0\n        \n        for char in group:\n            if char == '(':\n                current_depth += 1\n                max_depth = max(max_depth, current_depth)\n            elif char == ')':\n                current_depth -= 1\n        \n        result.append(max_depth)\n    \n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    if not paren_string:\n        return []\n    \n    groups = paren_string.split()\n    depths = []\n    \n    for group in groups:\n        current_depth = 0\n        max_depth = 0\n        for char in group:\n            if char == '(':\n                current_depth += 1\n                if current_depth > max_depth:\n                    max_depth = current_depth\n            elif char == ')':\n                current_depth -= 1\n        depths.append(max_depth)\n    \n    return depths\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/7": {
+    "deepseek-v4-flash": {
+      "output": "def filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that contain given substring\n    >>> filter_by_substring([], 'a')\n    []\n    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')\n    ['abc', 'bacd', 'array']\n    \"\"\"\n    return [s for s in strings if substring in s]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that contain given substring\n    >>> filter_by_substring([], 'a')\n    []\n    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')\n    ['abc', 'bacd', 'array']\n    \"\"\"\n    return [s for s in strings if substring in s]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/8": {
+    "deepseek-v4-flash": {
+      "output": "from typing import List, Tuple\n\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    \"\"\" For a given list of integers, return a tuple consisting of a sum and a product of all the integers in a list.\n    Empty sum should be equal to 0 and empty product should be equal to 1.\n    >>> sum_product([])\n    (0, 1)\n    >>> sum_product([1, 2, 3, 4])\n    (10, 24)\n    \"\"\"\n    total_sum = sum(numbers)\n    total_product = 1\n    for n in numbers:\n        total_product *= n\n    return (total_sum, total_product)",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List, Tuple\n\n\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    \"\"\" For a given list of integers, return a tuple consisting of a sum and a product of all the integers in a list.\n    Empty sum should be equal to 0 and empty product should be equal to 1.\n    >>> sum_product([])\n    (0, 1)\n    >>> sum_product([1, 2, 3, 4])\n    (10, 24)\n    \"\"\"\n    sum_result = sum(numbers)\n    product_result = 1\n    for num in numbers:\n        product_result *= num\n    return (sum_result, product_result)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List, Tuple\n\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    total_sum = 0\n    total_product = 1\n    \n    for num in numbers:\n        total_sum += num\n        total_product *= num\n    \n    return (total_sum, total_product)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List, Tuple\n\n\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    \"\"\" For a given list of integers, return a tuple consisting of a sum and a product of all the integers in a list.\n    Empty sum should be equal to 0 and empty product should be equal to 1.\n    >>> sum_product([])\n    (0, 1)\n    >>> sum_product([1, 2, 3, 4])\n    (10, 24)\n    \"\"\"\n    total_sum = 0\n    total_product = 1\n    for num in numbers:\n        total_sum += num\n        total_product *= num\n    return total_sum, total_product\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/9": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List, Tuple\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    result = []\n    current_max = float('-inf')\n    for num in numbers:\n        if num > current_max:\n            current_max = num\n        result.append(current_max)\n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\"\n    result = []\n    current_max = float('-inf')\n    for num in numbers:\n        if num > current_max:\n            current_max = num\n        result.append(current_max)\n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    if not numbers:\n        return []\n    result = [numbers[0]]\n    current_max = numbers[0]\n    for num in numbers[1:]:\n        current_max = max(current_max, num)\n        result.append(current_max)\n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\"\n    if not numbers:\n        return []\n    \n    result = []\n    current_max = numbers[0]\n    \n    for num in numbers:\n        if num > current_max:\n            current_max = num\n        result.append(current_max)\n    \n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/10": {
+    "deepseek-v4-flash": {
+      "output": "",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\ndef is_palindrome(string: str) -> bool:\n    \"\"\" Test if given string is a palindrome \"\"\"\n    return string == string[::-1]\n\n\ndef make_palindrome(string: str) -> str:\n    \"\"\" Find the shortest palindrome that begins with a supplied string.\n    Algorithm idea is simple:\n    - Find the longest postfix of supplied string that is a palindrome.\n    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.\n    >>> make_palindrome('')\n    ''\n    >>> make_palindrome('cat')\n    'catac'\n    >>> make_palindrome('cata')\n    'catac'\n    \"\"\"\n    if not string:\n        return ''\n    \n    # Find the longest postfix that is a palindrome\n    n = len(string)\n    for i in range(n):\n        if is_palindrome(string[i:]):\n            # string[i:] is the longest palindromic suffix\n            # Append reverse of the prefix (string[:i]) to the end\n            return string + string[:i][::-1]\n    \n    return string\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\ndef is_palindrome(string: str) -> bool:\n    \"\"\" Test if given string is a palindrome \"\"\"\n    return string == string[::-1]\n\n\ndef make_palindrome(string: str) -> str:\n    \"\"\" Find the shortest palindrome that begins with a supplied string.\n    Algorithm idea is simple:\n    - Find the longest postfix of supplied string that is a palindrome.\n    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.\n    >>> make_palindrome('')\n    ''\n    >>> make_palindrome('cat')\n    'catac'\n    >>> make_palindrome('cata')\n    'catac'\n    \"\"\"\n    if not string:\n        return string\n    \n    for i in range(len(string)):\n        if is_palindrome(string[i:]):\n            return string + string[:i][::-1]\n    return string + string[:-1][::-1]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/11": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\"\n    return ''.join('1' if x != y else '0' for x, y in zip(a, b))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\"\n    return ''.join('0' if x == y else '1' for x, y in zip(a, b))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\"\n    return ''.join('1' if x != y else '0' for x, y in zip(a, b))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/12": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List, Optional\n\n\ndef longest(strings: List[str]) -> Optional[str]:\n    \"\"\" Out of list of strings, return the longest one. Return the first one in case of multiple\n    strings of the same length. Return None in case the input list is empty.\n    >>> longest([])\n\n    >>> longest(['a', 'b', 'c'])\n    'a'\n    >>> longest(['a', 'bb', 'ccc'])\n    'ccc'\n    \"\"\"\n    if not strings:\n        return None\n    longest_str = strings[0]\n    for s in strings[1:]:\n        if len(s) > len(longest_str):\n            longest_str = s\n    return longest_str\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List, Optional\n\n\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    longest_str = strings[0]\n    for s in strings[1:]:\n        if len(s) > len(longest_str):\n            longest_str = s\n    return longest_str\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List, Optional\n\ndef longest(strings: List[str]) -> Optional[str]:\n    \"\"\" Out of list of strings, return the longest one. Return the first one in case of multiple\n    strings of the same length. Return None in case the input list is empty.\n    >>> longest([])\n\n    >>> longest(['a', 'b', 'c'])\n    'a'\n    >>> longest(['a', 'bb', 'ccc'])\n    'ccc'\n    \"\"\"\n    if not strings:\n        return None\n    longest_str = strings[0]\n    max_len = len(longest_str)\n    for s in strings[1:]:\n        if len(s) > max_len:\n            longest_str = s\n            max_len = len(s)\n    return longest_str\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List, Optional\n\n\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    return max(strings, key=len)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/13": {
+    "deepseek-v4-flash": {
+      "output": "def greatest_common_divisor(a: int, b: int) -> int:\n    while b:\n        a, b = b, a % b\n    return a",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\ndef greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\ndef greatest_common_divisor(a: int, b: int) -> int:\n    while b:\n        a, b = b, a % b\n    return abs(a)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\ndef greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/14": {
+    "deepseek-v4-flash": {
+      "output": "def all_prefixes(string: str) -> List[str]:\n    return [string[:i] for i in range(1, len(string) + 1)]",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef all_prefixes(string: str) -> List[str]:\n    \"\"\" Return list of all prefixes from shortest to longest of the input string\n    >>> all_prefixes('abc')\n    ['a', 'ab', 'abc']\n    \"\"\"\n    return [string[:i] for i in range(1, len(string) + 1)]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\n\ndef all_prefixes(string: str) -> List[str]:\n    \"\"\" Return list of all prefixes from shortest to longest of the input string\n    >>> all_prefixes('abc')\n    ['a', 'ab', 'abc']\n    \"\"\"\n    return [string[:i] for i in range(1, len(string) + 1)]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef all_prefixes(string: str) -> List[str]:\n    \"\"\" Return list of all prefixes from shortest to longest of the input string\n    >>> all_prefixes('abc')\n    ['a', 'ab', 'abc']\n    \"\"\"\n    return [string[:i] for i in range(1, len(string) + 1)]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/15": {
+    "deepseek-v4-flash": {
+      "output": "```python\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n    return ' '.join(str(i) for i in range(n+1))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n    return ' '.join(map(str, range(n + 1)))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\ndef string_sequence(n: int) -> str:\n    return ' '.join(str(i) for i in range(n + 1))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "def string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n    return ' '.join(map(str, range(n + 1)))",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/16": {
+    "deepseek-v4-flash": {
+      "output": "def count_distinct_characters(string: str) -> int:\n    return len(set(string.lower()))",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\ndef count_distinct_characters(string: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> count_distinct_characters('xyzXYZ')\n    3\n    >>> count_distinct_characters('Jerry')\n    4\n    \"\"\"\n    return len(set(string.lower()))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\ndef count_distinct_characters(string: str) -> int:\n    return len(set(string.lower()))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\ndef count_distinct_characters(string: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> count_distinct_characters('xyzXYZ')\n    3\n    >>> count_distinct_characters('Jerry')\n    4\n    \"\"\"\n    return len(set(string.lower()))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/17": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List\n\ndef parse_music(music_string: str) -> List[int]:\n    tokens = music_string.split()\n    result = []\n    for token in tokens:\n        if token == 'o':\n            result.append(4)\n        elif token == 'o|':\n            result.append(2)\n        elif token == '.|':\n            result.append(1)\n        # else:  # optional: handle invalid tokens\n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef parse_music(music_string: str) -> List[int]:\n    note_to_beats = {\n        'o': 4,\n        'o|': 2,\n        '.|': 1\n    }\n    return [note_to_beats[note] for note in music_string.split()]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\ndef parse_music(music_string: str) -> List[int]:\n    note_map = {'o': 4, 'o|': 2, '.|': 1}\n    return [note_map[note] for note in music_string.split()]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef parse_music(music_string: str) -> List[int]:\n    note_map = {'o': 4, 'o|': 2, '.|': 1}\n    return [note_map[note] for note in music_string.split()]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/18": {
+    "deepseek-v4-flash": {
+      "output": "```python\ndef how_many_times(string: str, substring: str) -> int:\n    \"\"\" Find how many times a given substring can be found in the original string. Count overlaping cases.\n    >>> how_many_times('', 'a')\n    0\n    >>> how_many_times('aaa', 'a')\n    3\n    >>> how_many_times('aaaa', 'aa')\n    3\n    \"\"\"\n    if not substring:\n        return 0\n    count = 0\n    start = 0\n    while True:\n        pos = string.find(substring, start)\n        if pos == -1:\n            break\n        count += 1\n        start = pos + 1\n    return count\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\ndef how_many_times(string: str, substring: str) -> int:\n    if not substring:\n        return 0\n    count = 0\n    start = 0\n    while True:\n        pos = string.find(substring, start)\n        if pos == -1:\n            break\n        count += 1\n        start = pos + 1\n    return count\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\ndef how_many_times(string: str, substring: str) -> int:\n    if not substring:\n        return 0\n    count = 0\n    start = 0\n    while start <= len(string) - len(substring):\n        pos = string.find(substring, start)\n        if pos != -1:\n            count += 1\n            start = pos + 1\n        else:\n            break\n    return count\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\ndef how_many_times(string: str, substring: str) -> int:\n    \"\"\" Find how many times a given substring can be found in the original string. Count overlaping cases.\n    >>> how_many_times('', 'a')\n    0\n    >>> how_many_times('aaa', 'a')\n    3\n    >>> how_many_times('aaaa', 'aa')\n    3\n    \"\"\"\n    if not substring:\n        return 0\n    count = 0\n    for i in range(len(string) - len(substring) + 1):\n        if string[i:i + len(substring)] == substring:\n            count += 1\n    return count\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/19": {
+    "deepseek-v4-flash": {
+      "output": "from typing import List\n\ndef sort_numbers(numbers: str) -> str:\n    # Mapping of number words to their numeric values\n    num_map = {\n        'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4,\n        'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9\n    }\n    # Split the input string into words\n    words = numbers.split()\n    # Sort words based on their numeric value\n    sorted_words = sorted(words, key=lambda w: num_map[w])\n    # Join back into a string\n    return ' '.join(sorted_words)",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\"\n    word_to_num = {\n        'zero': 0,\n        'one': 1,\n        'two': 2,\n        'three': 3,\n        'four': 4,\n        'five': 5,\n        'six': 6,\n        'seven': 7,\n        'eight': 8,\n        'nine': 9\n    }\n    \n    if not numbers:\n        return ''\n    \n    words = numbers.split()\n    sorted_words = sorted(words, key=lambda w: word_to_num[w])\n    return ' '.join(sorted_words)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\ndef sort_numbers(numbers: str) -> str:\n    mapping = {\n        'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4,\n        'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9\n    }\n    reverse_mapping = {v: k for k, v in mapping.items()}\n    words = numbers.split()\n    sorted_words = sorted(words, key=lambda word: mapping[word])\n    return ' '.join(sorted_words)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    mapping = {\n        'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4,\n        'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9\n    }\n    return ' '.join(sorted(numbers.split(), key=lambda x: mapping[x]))\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/20": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List, Tuple\n\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    sorted_numbers = sorted(numbers)\n    min_diff = float('inf')\n    closest_pair = (sorted_numbers[0], sorted_numbers[1])\n    for i in range(len(sorted_numbers) - 1):\n        diff = sorted_numbers[i + 1] - sorted_numbers[i]\n        if diff < min_diff:\n            min_diff = diff\n            closest_pair = (sorted_numbers[i], sorted_numbers[i + 1])\n    return closest_pair\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List, Tuple\n\n\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    \"\"\" From a supplied list of numbers (of length at least two) select and return two that are the closest to each\n    other and return them in order (smaller number, larger number).\n    >>> find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.2])\n    (2.0, 2.2)\n    >>> find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0])\n    (2.0, 2.0)\n    \"\"\"\n    sorted_numbers = sorted(numbers)\n    min_diff = float('inf')\n    result = (sorted_numbers[0], sorted_numbers[1])\n    \n    for i in range(len(sorted_numbers) - 1):\n        diff = sorted_numbers[i + 1] - sorted_numbers[i]\n        if diff < min_diff:\n            min_diff = diff\n            result = (sorted_numbers[i], sorted_numbers[i + 1])\n    \n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List, Tuple\n\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    numbers_sorted = sorted(numbers)\n    min_diff = float('inf')\n    result = (0.0, 0.0)\n    \n    for i in range(len(numbers_sorted) - 1):\n        diff = numbers_sorted[i + 1] - numbers_sorted[i]\n        if diff < min_diff:\n            min_diff = diff\n            result = (numbers_sorted[i], numbers_sorted[i + 1])\n    \n    return result\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/21": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\"\n    min_val = min(numbers)\n    max_val = max(numbers)\n    range_val = max_val - min_val\n    # If all numbers are equal, range_val would be 0; but problem guarantees at least two distinct elements\n    return [(x - min_val) / range_val for x in numbers]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\"\n    min_val = min(numbers)\n    max_val = max(numbers)\n    range_val = max_val - min_val\n    return [(x - min_val) / range_val for x in numbers]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\"\n    min_num = min(numbers)\n    max_num = max(numbers)\n    if max_num == min_num:\n        return [0.0] * len(numbers)\n    return [(x - min_num) / (max_num - min_num) for x in numbers]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/22": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List, Any\n\ndef filter_integers(values: List[Any]) -> List[int]:\n    \"\"\" Filter given list of any python values only for integers\n    >>> filter_integers(['a', 3.14, 5])\n    [5]\n    >>> filter_integers([1, 2, 3, 'abc', {}, []])\n    [1, 2, 3]\n    \"\"\"\n    return [x for x in values if type(x) is int]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List, Any\n\n\ndef filter_integers(values: List[Any]) -> List[int]:\n    \"\"\" Filter given list of any python values only for integers\n    >>> filter_integers(['a', 3.14, 5])\n    [5]\n    >>> filter_integers([1, 2, 3, 'abc', {}, []])\n    [1, 2, 3]\n    \"\"\"\n    return [x for x in values if isinstance(x, int)]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List, Any\n\n\ndef filter_integers(values: List[Any]) -> List[int]:\n    \"\"\" Filter given list of any python values only for integers\n    >>> filter_integers(['a', 3.14, 5])\n    [5]\n    >>> filter_integers([1, 2, 3, 'abc', {}, []])\n    [1, 2, 3]\n    \"\"\"\n    return [x for x in values if type(x) is int]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/23": {
+    "deepseek-v4-flash": {
+      "output": "def strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n    return len(string)",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\ndef strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n    return len(string)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "def strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n    return len(string)",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\ndef strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n    return len(string)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/24": {
+    "deepseek-v4-flash": {
+      "output": "",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\ndef largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\"\n    if n <= 1:\n        return 1\n    \n    # Find the smallest prime factor of n\n    d = 2\n    while d * d <= n:\n        if n % d == 0:\n            return n // d\n        d += 1\n    \n    # If no divisor found, n is prime\n    return 1\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\ndef largest_divisor(n: int) -> int:\n    if n == 1:\n        return 1\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return n // i\n    return 1\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/25": {
+    "deepseek-v4-flash": {
+      "output": "from typing import List\n\ndef factorize(n: int) -> List[int]:\n    \"\"\"Return list of prime factors of given integer in the order from smallest to largest.\n    Each of the factors should be listed number of times corresponding to how many times it appears in factorization.\n    Input number should be equal to the product of all factors.\n    >>> factorize(8)\n    [2, 2, 2]\n    >>> factorize(25)\n    [5, 5]\n    >>> factorize(70)\n    [2, 5, 7]\n    \"\"\"\n    if n <= 1:\n        return []\n    factors = []\n    i = 2\n    while i * i <= n:\n        while n % i == 0:\n            factors.append(i)\n            n //= i\n        i += 1\n    if n > 1:\n        factors.append(n)\n    return factors",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef factorize(n: int) -> List[int]:\n    \"\"\" Return list of prime factors of given integer in the order from smallest to largest.\n    Each of the factors should be listed number of times corresponding to how many times it appeares in factorization.\n    Input number should be equal to the product of all factors\n    >>> factorize(8)\n    [2, 2, 2]\n    >>> factorize(25)\n    [5, 5]\n    >>> factorize(70)\n    [2, 5, 7]\n    \"\"\"\n    factors = []\n    d = 2\n    while d * d <= n:\n        while n % d == 0:\n            factors.append(d)\n            n //= d\n        d += 1\n    if n > 1:\n        factors.append(n)\n    return factors\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\n\ndef factorize(n: int) -> List[int]:\n    factors = []\n    d = 2\n    while d * d <= n:\n        while n % d == 0:\n            factors.append(d)\n            n //= d\n        d += 1\n    if n > 1:\n        factors.append(n)\n    return factors\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/26": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List\nfrom collections import Counter\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    \"\"\" From a list of integers, remove all elements that occur more than once.\n    Keep order of elements left the same as in the input.\n    >>> remove_duplicates([1, 2, 3, 2, 4])\n    [1, 3, 4]\n    \"\"\"\n    freq = Counter(numbers)\n    return [num for num in numbers if freq[num] == 1]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\nfrom collections import Counter\n\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    \"\"\" From a list of integers, remove all elements that occur more than once.\n    Keep order of elements left the same as in the input.\n    >>> remove_duplicates([1, 2, 3, 2, 4])\n    [1, 3, 4]\n    \"\"\"\n    counts = Counter(numbers)\n    return [num for num in numbers if counts[num] == 1]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\nfrom collections import Counter\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    count = Counter(numbers)\n    return [num for num in numbers if count[num] == 1]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\nfrom collections import Counter\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    \"\"\" From a list of integers, remove all elements that occur more than once.\n    Keep order of elements left the same as in the input.\n    >>> remove_duplicates([1, 2, 3, 2, 4])\n    [1, 3, 4]\n    \"\"\"\n    counts = Counter(numbers)\n    return [num for num in numbers if counts[num] == 1]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/27": {
+    "deepseek-v4-flash": {
+      "output": "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"\n    return string.swapcase()",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\ndef flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"\n    return string.swapcase()\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\ndef flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"\n    return string.swapcase()\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\ndef flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"\n    return string.swapcase()\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/28": {
+    "deepseek-v4-flash": {
+      "output": "```python\nfrom typing import List\n\n\ndef concatenate(strings: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> concatenate([])\n    ''\n    >>> concatenate(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(strings)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef concatenate(strings: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> concatenate([])\n    ''\n    >>> concatenate(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(strings)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\n\ndef concatenate(strings: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> concatenate([])\n    ''\n    >>> concatenate(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(strings)\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "from typing import List\n\n\ndef concatenate(strings: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> concatenate([])\n    ''\n    >>> concatenate(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(strings)",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "HumanEval/29": {
+    "deepseek-v4-flash": {
+      "output": "def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    return [s for s in strings if s.startswith(prefix)]",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nfrom typing import List\n\n\ndef filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> filter_by_prefix([], 'a')\n    []\n    >>> filter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in strings if s.startswith(prefix)]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nfrom typing import List\n\ndef filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    return [s for s in strings if s.startswith(prefix)]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nfrom typing import List\n\n\ndef filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> filter_by_prefix([], 'a')\n    []\n    >>> filter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in strings if s.startswith(prefix)]\n```",
+      "status": "success",
+      "dim": "代码生成"
+    }
+  },
+  "sql_spider_001": {
+    "deepseek-v4-flash": {
+      "output": "SELECT d.department_name, AVG(e.salary) AS avg_salary\nFROM departments d\nLEFT JOIN employees e ON d.id = e.department_id\nGROUP BY d.id, d.department_name\nORDER BY avg_salary DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "```sql\nSELECT d.department_name, AVG(e.salary) AS avg_salary\nFROM employees e\nINNER JOIN departments d ON e.department_id = d.id\nGROUP BY d.id, d.department_name\nORDER BY avg_salary DESC;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "SELECT \n    d.department_name,\n    AVG(e.salary) AS average_salary\nFROM \n    departments d\nLEFT JOIN \n    employees e ON d.id = e.department_id\nGROUP BY \n    d.department_name\nORDER BY \n    average_salary DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "```sql\nSELECT d.department_name, AVG(e.salary) AS avg_salary\nFROM employees e\nJOIN departments d ON e.department_id = d.id\nGROUP BY d.id, d.department_name\nORDER BY avg_salary DESC;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    }
+  },
+  "sql_spider_002": {
+    "deepseek-v4-flash": {
+      "output": "```sql\nSELECT c.country, \n       COUNT(o.id) AS order_total_count, \n       AVG(o.total_amount) AS avg_order_amount\nFROM orders o\nJOIN customers c ON o.customer_id = c.id\nGROUP BY c.country\nHAVING AVG(o.total_amount) > 200;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "```sql\nSELECT \n    c.country,\n    COUNT(o.id) AS total_orders,\n    AVG(o.total_amount) AS avg_order_amount\nFROM customers c\nINNER JOIN orders o ON c.id = o.customer_id\nGROUP BY c.country\nHAVING AVG(o.total_amount) > 200;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```sql\nSELECT \n    c.country,\n    COUNT(o.id) AS total_orders,\n    AVG(o.total_amount) AS avg_order_amount\nFROM \n    customers c\nJOIN \n    orders o ON c.id = o.customer_id\nGROUP BY \n    c.country\nHAVING \n    AVG(o.total_amount) > 200;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "```sql\nSELECT c.country, COUNT(o.id) AS order_count, AVG(o.total_amount) AS avg_amount\nFROM customers c\nJOIN orders o ON c.id = o.customer_id\nGROUP BY c.country\nHAVING AVG(o.total_amount) > 200;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    }
+  },
+  "sql_spider_003": {
+    "deepseek-v4-flash": {
+      "output": "SELECT p.name, p.category, p.stock, COALESCE(SUM(oi.quantity), 0) AS total_ordered\nFROM products p\nLEFT JOIN order_items oi ON p.id = oi.product_id\nWHERE p.stock < 10\nGROUP BY p.id, p.name, p.category, p.stock;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "```sql\nSELECT \n    p.name,\n    p.category,\n    p.stock,\n    COALESCE(SUM(oi.quantity), 0) AS total_order_quantity\nFROM \n    products p\nLEFT JOIN \n    order_items oi ON p.id = oi.product_id\nWHERE \n    p.stock < 10\nGROUP BY \n    p.id, p.name, p.category, p.stock;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "SELECT \n    p.name AS 名称,\n    p.category AS 类别,\n    p.stock AS 当前库存量,\n    COALESCE(SUM(oi.quantity), 0) AS 订单总量\nFROM \n    products p\nLEFT JOIN \n    order_items oi ON p.id = oi.product_id\nWHERE \n    p.stock < 10\nGROUP BY \n    p.id, p.name, p.category, p.stock;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "```sql\nSELECT \n    p.name,\n    p.category,\n    p.stock AS current_stock,\n    COALESCE(SUM(oi.quantity), 0) AS total_order_quantity\nFROM products p\nLEFT JOIN order_items oi ON p.id = oi.product_id\nWHERE p.stock < 10\nGROUP BY p.id, p.name, p.category, p.stock;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    }
+  },
+  "sql_spider_004": {
+    "deepseek-v4-flash": {
+      "output": "SELECT c.class_name, AVG(s.score) AS avg_score\nFROM classes c\nLEFT JOIN students s ON c.id = s.class_id\nGROUP BY c.id, c.class_name\nORDER BY avg_score DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "```sql\nSELECT c.class_name, AVG(s.score) AS avg_score\nFROM students s\nJOIN classes c ON s.class_id = c.id\nGROUP BY c.id, c.class_name\nORDER BY avg_score DESC;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "SELECT classes.class_name, AVG(students.score) AS avg_score\nFROM classes\nLEFT JOIN students ON classes.id = students.class_id\nGROUP BY classes.class_name\nORDER BY avg_score DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "```sql\nSELECT c.class_name, AVG(s.score) AS avg_score\nFROM classes c\nLEFT JOIN students s ON c.id = s.class_id\nGROUP BY c.id, c.class_name\nORDER BY avg_score DESC;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    }
+  },
+  "sql_spider_005": {
+    "deepseek-v4-flash": {
+      "output": "SELECT QUARTER(sale_date) AS quarter, SUM(sales_amount) AS total_sales\nFROM sales\nWHERE YEAR(sale_date) = 2025\nGROUP BY quarter\nORDER BY quarter;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "```sql\nSELECT \n    QUARTER(sale_date) AS quarter,\n    SUM(sales_amount) AS total_sales\nFROM sales\nWHERE YEAR(sale_date) = 2025\nGROUP BY QUARTER(sale_date)\nORDER BY quarter ASC;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```sql\nSELECT EXTRACT(QUARTER FROM sale_date) AS quarter, SUM(sales_amount) AS total_sales\nFROM sales\nWHERE EXTRACT(YEAR FROM sale_date) = 2025\nGROUP BY EXTRACT(QUARTER FROM sale_date)\nORDER BY quarter;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "SQL查询"
+    }
+  },
+  "sql_spider_006": {
+    "deepseek-v4-flash": {
+      "output": "SELECT u.name, COUNT(p.id) AS total_posts\nFROM users u\nJOIN posts p ON u.id = p.user_id\nGROUP BY u.id, u.name\nHAVING COUNT(p.id) > 5\nORDER BY total_posts DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "SELECT u.name, COUNT(p.id) AS post_count\nFROM users u\nJOIN posts p ON u.id = p.user_id\nGROUP BY u.id, u.name\nHAVING COUNT(p.id) > 5\nORDER BY post_count DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "SELECT users.name, COUNT(posts.id) AS post_count\nFROM users\nJOIN posts ON users.id = posts.user_id\nGROUP BY users.id, users.name\nHAVING COUNT(posts.id) > 5\nORDER BY post_count DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "```sql\nSELECT u.name, COUNT(p.id) AS post_count\nFROM users u\nJOIN posts p ON u.id = p.user_id\nGROUP BY u.id, u.name\nHAVING COUNT(p.id) > 5\nORDER BY post_count DESC;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    }
+  },
+  "sql_spider_007": {
+    "deepseek-v4-flash": {
+      "output": "SELECT category, COUNT(*) AS product_count, AVG(price) AS avg_price\nFROM products\nGROUP BY category;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "SELECT \n    category, \n    COUNT(*) AS product_count, \n    AVG(price) AS average_price\nFROM products\nGROUP BY category;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "SELECT category, COUNT(*) AS product_count, AVG(price) AS average_price\nFROM products\nGROUP BY category;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "```sql\nSELECT \n    category,\n    COUNT(*) AS product_count,\n    AVG(price) AS avg_price\nFROM \n    products\nGROUP BY \n    category;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    }
+  },
+  "sql_spider_008": {
+    "deepseek-v4-flash": {
+      "output": "SELECT m.name, COUNT(e.id) AS subordinate_count\nFROM employees m\nJOIN employees e ON m.id = e.manager_id\nGROUP BY m.id, m.name;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "SELECT \n    m.name AS manager_name,\n    COUNT(e.id) AS subordinate_count\nFROM employees m\nLEFT JOIN employees e ON e.manager_id = m.id\nGROUP BY m.id, m.name\nORDER BY subordinate_count DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "SELECT e.name AS manager_name, COUNT(s.id) AS subordinate_count\nFROM employees e\nJOIN employees s ON e.id = s.manager_id\nGROUP BY e.id, e.name;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "```sql\nSELECT m.name, COUNT(e.id) AS subordinate_count\nFROM employees m\nJOIN employees e ON m.id = e.manager_id\nGROUP BY m.id, m.name;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    }
+  },
+  "sql_spider_009": {
+    "deepseek-v4-flash": {
+      "output": "SELECT c.city, COUNT(o.id) AS order_count, AVG(o.total) AS avg_amount\nFROM customers c\nJOIN orders o ON c.id = o.customer_id\nGROUP BY c.city\nHAVING AVG(o.total) > 100;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "```sql\nSELECT \n    c.city,\n    COUNT(o.id) AS total_orders,\n    AVG(o.total) AS avg_order_amount\nFROM customers c\nJOIN orders o ON c.id = o.customer_id\nGROUP BY c.city\nHAVING AVG(o.total) > 100;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```sql\nSELECT \n    c.city,\n    COUNT(o.id) AS order_count,\n    AVG(o.total) AS avg_order_amount\nFROM \n    customers c\nJOIN \n    orders o ON c.id = o.customer_id\nGROUP BY \n    c.city\nHAVING \n    AVG(o.total) > 100;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "```sql\nSELECT c.city, COUNT(o.id) AS total_orders, AVG(o.total) AS avg_order_amount\nFROM customers c\nINNER JOIN orders o ON c.id = o.customer_id\nGROUP BY c.city\nHAVING AVG(o.total) > 100;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    }
+  },
+  "sql_spider_010": {
+    "deepseek-v4-flash": {
+      "output": "SELECT brand, COUNT(*) AS product_count, AVG(price) AS avg_price FROM products GROUP BY brand ORDER BY avg_price DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "MiniMax-m3": {
+      "output": "```sql\nSELECT brand, \n       COUNT(*) AS product_count, \n       AVG(price) AS avg_price \nFROM products \nGROUP BY brand \nORDER BY avg_price DESC;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "mimo-v2.5-pro": {
+      "output": "SELECT brand, COUNT(*) AS product_count, AVG(price) AS average_price FROM products GROUP BY brand ORDER BY average_price DESC;",
+      "status": "success",
+      "dim": "SQL查询"
+    },
+    "kimi-k2.6": {
+      "output": "```sql\nSELECT brand, COUNT(*) AS product_count, AVG(price) AS avg_price\nFROM products\nGROUP BY brand\nORDER BY avg_price DESC;\n```",
+      "status": "success",
+      "dim": "SQL查询"
+    }
+  },
+  "doc_office_001": {
+    "deepseek-v4-flash": {
+      "output": "**关于系统维护的通知**\n\n尊敬的各位同事：\n\n为了提升公司信息系统稳定性和安全性，IT部门计划于2025年6月15日（周一）00:00至06:00进行系统例行维护。届时，以下系统将暂停服务：\n\n- 邮件系统  \n- OA系统  \n- VPN  \n\n请各位同事提前做好工作安排，及时保存相关文档，以免因系统暂停造成数据丢失。如遇紧急问题，请在维护结束后通过以下方式与我们联系：\n\n联系邮箱：it-support@company.com\n\n由此带来的不便，敬请谅解。感谢大家的配合与支持！\n\nIT部门  \n2025年6月12日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "---\n\n# 系统维护通知\n\n**发文部门：** 信息技术部（IT Department）\n**发布时间：** 2024年6月10日\n**通知编号：** IT-2024-0610\n\n---\n\n## 各位同事：\n\n为提升系统服务性能与稳定性，保障业务系统持续高效运行，我部将于近期对核心办公系统进行例行维护升级。现将相关事宜通知如下，请各部门提前做好工作安排。\n\n## 一、维护时间\n\n- **维护日期：** 2024年6月15日（周一）\n- **维护时段：** 00:00 — 06:00（共6小时）\n- **预计恢复时间：** 06:00后逐步恢复服务\n\n## 二、影响范围\n\n本次维护期间，以下系统将暂时无法访问或服务受限：\n\n| 序号 | 系统名称 | 影响说明 |\n|------|----------|----------|\n| 1 | 邮件系统（Mail System） | 收发邮件、登录、附件下载等功能暂停 |\n| 2 | OA办公系统 | 流程审批、文档管理、公文处理等模块暂停 |\n| 3 | VPN远程接入 | 外部网络接入公司内网通道暂时关闭 |\n\n## 三、温馨提示\n\n1. **请于6月14日（周日）下班前**，将正在进行的相关工作文档及时保存，避免数据丢失。\n2. 维护期间如需紧急处理公务，请提前安排或联系所在部门负责人协调处理。\n3. 系统恢复后，如遇登录异常、邮件延迟等情况，请耐心等待并及时反馈。\n4. 建议提前下载并妥善保存重要文件至本地。\n\n## 四、联系方式\n\n如有任何疑问或需协助处理，请通过以下方式联系IT支持团队：\n\n- **邮箱：** it-support@company.com\n- **服务热线：** 8888-0000（内线）\n- **在线支持：** 企业内网\"IT服务台\"门户\n\n我们将对本次维护工作进行全程监控，力争在最短时间内完成升级，感谢大家的理解与配合！\n\n---\n\n**信息技术部**\n**2024年6月10日**",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**关于系统维护的通知**\n\n尊敬的各位同事：\n\n为提升系统稳定性与安全性，IT部门计划于近期对部分核心办公系统进行例行维护。现将相关事宜通知如下：\n\n**一、 维护时间**\n2024年6月15日（周一） 00:00 - 06:00\n\n**二、 影响范围**\n维护期间，以下系统将暂停服务，届时无法正常访问：\n1.  **电子邮件系统**\n2.  **OA办公自动化系统**\n3.  **VPN远程访问服务**\n\n**三、 注意事项**\n1.  请各位同事提前妥善保存好相关系统中的文件与数据，避免因维护导致未保存内容丢失。\n2.  维护结束后，系统将自动恢复正常访问。如遇特殊情况导致恢复延迟，我们将另行通知。\n\n对于此次维护可能给您工作带来的不便，我们深表歉意，敬请谅解。\n\n感谢各位的理解与支持！\n\n**技术支持与联系**\n如在维护前后遇到任何技术问题，请及时与我们联系：\n电子邮箱：it-support@company.com\n\nIT部门\n2024年6月11日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "**关于邮件系统、OA系统及VPN维护升级的通知**\n\n致：全体员工\n\n为进一步提升公司信息系统的稳定性与安全性，IT部门定于近期对核心基础设施进行维护升级。现将有关事项通知如下：\n\n**一、维护时间**\n2024年6月15日（星期一）00:00 — 06:00\n\n**二、影响范围**\n维护期间，以下系统将暂停服务：\n- 邮件系统（E-mail）\n- OA办公自动化系统\n- VPN远程接入系统\n\n**三、注意事项**\n1. 请全体员工于维护开始前，及时保存正在编辑的各类文档及业务数据，避免工作成果丢失。\n2. 维护期间上述系统将无法登录和使用，请提前安排好相关工作，合理调整业务操作时间。\n\n**四、技术支持**\n如在维护期间或恢复后遇到任何问题，请联系：\n**邮箱：it-support@company.com**\n\n因本次维护给您带来的不便，敬请谅解。感谢大家的理解与配合。\n\nIT部门\n2024年6月12日",
+      "status": "success",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_002": {
+    "deepseek-v4-flash": {
+      "output": "**2026年第一季度项目进度汇报**  \n**呈报对象：** 部门总监  \n**汇报日期：** 2026年4月10日  \n**汇报人：** [项目负责人姓名]  \n\n---\n\n### 一、项目概述  \n本季度（2026年1月1日—3月31日）项目整体按计划推进，核心目标聚焦于 **数字化转型平台二期建设** 及 **跨部门协同流程优化**。截至3月底，项目已完成关键里程碑节点4项（原计划5项），整体进度完成率为82%，处于可控范围内。项目预算使用率为73%，累计支出人民币186万元，未超出年初核定预算（255万元）。\n\n### 二、已完成工作  \n1. **系统架构升级**：完成核心业务模块从单体架构向微服务架构的迁移，成功部署6个独立服务单元，接口响应时间由平均1200ms降至480ms。  \n2. **数据中台搭建**：整合销售、供应链、财务三大域共17个数据源，建立统一数据仓库，完成数据清洗与标准化处理，数据质量达标率从68%提升至94%。  \n3. **流程自动化试点**：在采购审批、合同归档环节引入RPA机器人，实现单据处理全自动化，人工耗时减少60%，单笔审批周期由2.3天压缩至0.8天。  \n4. **团队能力建设**：组织3场技术专项培训与2次跨部门流程复盘会议，参与人数累计87人次，岗位技能考核通过率达92%。\n\n### 三、关键数据指标  \n| 指标项 | Q1目标值 | 实际完成值 | 达成率 |\n|--------|----------|------------|--------|\n| 系统可用率 | ≥99.5%  | 99.7%      | 100%   |\n| 微服务部署数 | 5个     | 6个        | 120%   |\n| 流程自动化覆盖率 | 40%   | 38%        | 95%    |\n| 数据接口故障率 | ≤2%    | 1.3%       | 100%   |\n| 用户满意度评分（满分5） | 4.2 | 4.1        | 98%    |\n| 关键任务延期天数 | 0天     | 2天（单次风险响应后恢复） | — |\n\n### 四、遇到的风险  \n1. **供应商交付延迟**：某微服务中间件供应商因自身产能问题，延迟交付核心组件2天，导致部分联调测试工作后延。已通过临时部署替代方案（自研模块）控制影响范围，整体进度滞后1个工作日，已于3月25日前追回。  \n2. **跨部门数据权限冲突**：在数据中台建设过程中，销售部与财务部对部分客户数据字段的访问权限存在争议，经3轮协调会议后，于2月中旬形成分级授权机制，目前已执行。  \n3. **关键岗位人员波动**：后端开发组一位骨干成员于2月初离职，导致部分代码审查工作积压。通过内部调岗及外部紧急招聘，已于3月第一周补充到位，目前团队人力稳定。\n\n### 五、下季度计划  \n1. **功能上线冲刺**：于4月底前完成全部8个微服务的生产环境部署，实现业务全链路打通；5月启动用户内测，6月中旬前正式发布V2.0版本。  \n2. **质量保障强化**：引入自动化测试覆盖率目标（≥85%），开展全量回归测试与性能压测；优化监控告警体系，将系统异常平均发现时间压缩至5分钟以内。  \n3. **风险应对储备**：针对供应商波动，建立二级备选供应商库；针对跨部门协作，成立专项协调小组，每周召开进度同步会。  \n4. **资源与预算规划**：Q2预计新增投入运维工程师1名，追加预算35万元（用于云资源扩容）；同时启动Q3季度需求预研，确保业务连续性。\n\n以上为2026年Q1项目进度汇报，恳请总监审阅并提出指导意见。",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 2026年Q1项目进度汇报\n\n**汇报人：** 项目管理部\n**汇报时间：** 2026年4月10日\n**汇报对象：** 部门总监\n\n---\n\n## 一、项目概述\n\n本季度重点推进\"**数字化运营平台升级项目**\"，旨在通过系统重构与流程优化，提升业务响应效率，降低运营成本。项目自2025年11月启动以来，已按计划完成需求调研、方案设计及一期开发任务。Q1阶段的核心目标为完成核心模块开发并进入联调测试，目前整体进度符合预期，关键里程碑达成率达**92%**。\n\n## 二、已完成工作\n\n1. **需求梳理与架构设计**：完成6大业务线需求调研，输出需求文档28份，系统架构方案通过技术评审。\n2. **核心模块开发**：完成用户中心、订单管理、数据看板等4个核心模块的开发，代码交付量约**12.6万行**，单元测试覆盖率达**85%**。\n3. **基础设施搭建**：完成测试环境、生产环境的部署与压力测试，系统平均响应时间由原**3.2秒**降至**0.8秒**。\n4. **跨部门协作**：与业务部门完成12次需求对齐会议，明确关键业务规则37项。\n\n## 三、关键数据指标\n\n| 指标 | 目标值 | 实际完成 | 达成率 |\n|------|--------|----------|--------|\n| 进度完成率 | 90% | 92% | ✅ 超额 |\n| 预算执行率 | 95% | 88% | ✅ 节约7% |\n| 缺陷修复率 | 95% | 93% | ⚠️ 略低 |\n| 需求变更次数 | ≤5次 | 3次 | ✅ 优于目标 |\n| 团队人均产能 | 120工时/月 | 135工时/月 | ✅ 超额12.5% |\n\n本季度项目总投入**约286万元**，较预算节约**22万元**；累计召开项目会议34次，输出各类交付物**46份**。\n\n## 四、遇到的风险\n\n1. **技术风险**：部分老旧系统接口兼容性不及预期，预计需额外投入**40-60人日**进行适配改造。\n2. **人员风险**：核心开发工程师1人于3月底提出离职，关键岗位存在**人员缺口**。\n3. **需求风险**：业务部门在3月下旬新增需求**5项**，可能影响二期开发节奏。\n4. **进度风险**：联调测试阶段发现中高优先级缺陷**18个**，需在Q2初集中修复。\n\n## 五、下季度计划\n\n1. **完成联调测试与UAT验收**：4月底前完成全部缺陷修复，5月中旬组织用户验收测试。\n2. **推进二期开发**：启动数据报表、权限管理等5个扩展模块的开发，目标完成率**80%以上**。\n3. **补齐人员缺口**：4月内完成2名高级开发工程师的招聘到岗。\n4. **建立变更管控机制**：与业务方签订需求冻结协议，Q2原则上不再接受重大需求变更。\n5. **开展培训推广**：6月组织3场用户培训，覆盖**120+**业务人员。\n\n---\n\n以上为Q1项目整体进展情况，后续将按周提交进度简报，确保项目按期高质量交付。如需进一步了解细节，请随时沟通。\n\n**汇报人：项目管理部 张XX**\n**联系方式：内线8888**",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "**2026年第一季度\"智汇一体化管理平台\"项目进度汇报**\n\n**呈报对象：** 部门总监  \n**汇报部门：** 项目管理办公室  \n**汇报日期：** 2026年3月31日  \n\n尊敬的领导：\n\n兹就\"智汇一体化管理平台\"建设项目2026年第一季度进展情况向您正式汇报。本项目旨在构建覆盖全业务链条的企业级数字化中台，计划周期12个月，预算投入800万元。目前项目处于核心开发与数据迁移关键阶段，整体推进符合预期，现将具体情况汇报如下：\n\n**一、项目概述**\n本项目自2025年第四季度启动以来，已完成前期调研、方案设计及基础架构搭建。Q1核心目标为完成底层平台开发、首批数据治理及关键系统集成，为Q2试运行奠定技术基础。\n\n**二、已完成工作**\n1. 完成系统总体架构设计及技术评审，通过外部专家论证；\n2. 完成需求调研与确认，覆盖财务、人力、供应链等5个业务部门；\n3. 交付基础平台模块（用户中心、权限管理、流程引擎），通过内部测试；\n4. 完成历史数据清洗与迁移50万条，建立主数据标准规范；\n5. 组织专项技术培训3场",
+      "status": "success",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_003": {
+    "deepseek-v4-flash": {
+      "output": "**关于新员工入职培训的通知**\n\n公司各部门、各新入职员工：\n\n为帮助新员工更好地了解公司文化、熟悉规章制度、掌握业务流程，尽快融入团队并适应岗位要求，人力资源部（HR）将组织2024年度第六期新员工入职培训。现将有关事项通知如下：\n\n一、培训时间  \n2024年6月20日（周四）至6月22日（周六），每日上午9:00—12:00，下午13:30—17:00。  \n\n二、培训地点  \n公司总部A栋3楼301会议室（地址：XX市XX区XX路XX号）。  \n\n三、培训内容  \n1. 公司文化：发展历程、使命愿景、核心价值观、企业精神。  \n2. 规章制度：考勤管理、薪酬福利、绩效考核、行为规范、保密要求等。  \n3. 业务流程：基础工作流程、常用系统操作、部门协作规范。  \n\n四、参训人员  \n2024年4月20日至6月10日期间入职且尚未参加入职培训的新员工。  \n\n五、相关要求  \n1. 请参训人员提前10分钟签到入场，不得无故缺席、迟到或早退。  \n2. 培训期间请携带本人身份证复印件一张（用于存档），遵守课堂纪律，手机调至静音或关闭状态。  \n3. 如因特殊情况无法参加，须由所在部门负责人签字同意后，至少提前一日向HR报备。  \n\n六、联系人  \n如有疑问，请联系人力资源部培训主管张老师。  \n电话：020-XXXXXXXX（分机号XXX）  \n邮箱：hr_training@company.com  \n\n特此通知。\n\n人力资源部  \n2024年6月10日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 关于新员工入职培训的通知\n\n**发布部门：** 人力资源部\n**发布时间：** 2024年6月10日\n\n---\n\n## 各位新同事：\n\n欢迎加入本公司！为帮助新员工尽快熟悉公司环境、了解企业文化、掌握岗位相关知识及业务流程，顺利融入团队，人力资源部将组织开展新员工入职培训，现将有关事项通知如下：\n\n---\n\n### 一、培训时间\n\n**2024年6月20日—6月22日（共3天）**\n\n- 6月20日（周四）上午 8:30 — 下午 17:30\n- 6月21日（周五）上午 8:30 — 下午 17:30\n- 6月22日（周六）上午 8:30 — 下午 16:00\n\n请各位新同事合理安排工作，提前十分钟到场签到。\n\n---\n\n### 二、培训地点\n\n**公司总部三楼多功能培训厅**\n\n地址：××市××区××路××号\n交通指引：地铁×号线××站B出口步行约5分钟\n\n---\n\n### 三、培训对象\n\n本期新入职员工（名单详见附件1）\n\n---\n\n### 四、培训内容\n\n| 日期 | 时间 | 培训内容 | 主讲人 |\n|------|------|----------|--------|\n| 6月20日 | 上午 | 开训典礼及公司发展历程介绍 | 总经理 |\n| 6月20日 | 下午 | **公司文化**（愿景、使命、价值观、企业精神） | 人力资源部 |\n| 6月21日 | 上午 | **规章制度**（考勤制度、薪酬福利、行为规范、保密协议） | 人力资源部 |\n| 6月21日 | 下午 | **规章制度**（安全生产、信息安全、廉洁从业） | 相关职能部门 |\n| 6月22日 | 上午 | **业务流程**（部门职责、岗位说明、业务系统操作） | 各业务部门负责人 |\n| 6月22日 | 下午 | 培训考核、交流答疑、结训典礼 | 人力资源部 |\n\n具体课程安排如有调整，以培训当天发放的《培训手册》为准。\n\n---\n\n### 五、培训要求\n\n1. 请各位新同事准时参加培训，原则上不得缺席。如确有特殊情况需请假，请提前向人力资源部提交书面申请。\n2. 培训期间请遵守课堂纪律，将手机调至静音或关闭状态。\n3. 请携带本人笔记本、笔及身份证件，培训结束后将进行统一考核。\n4. 培训考核合格者方可办理正式转正手续。\n\n---\n\n### 六、其他事项\n\n- 培训期间公司统一提供午餐与茶歇。\n- 请参训人员于6月18日前将回执（见附件2）反馈至人力资源部。\n\n---\n\n### 七、联系人\n\n如有任何疑问，请及时与人力资源部联系：\n\n- **联系人：** 张老师、李老师\n- **联系电话：** 010-××××××××（分机8012/8013）\n- **电子邮箱：** hr@company.com\n- **办公地点：** 总部办公楼三楼305室\n\n---\n\n让我们共同期待此次培训，祝各位新同事在公司开启精彩的职业旅程！\n\n**人力资源部**\n**2024年6月10日**\n\n---\n\n*附件：*\n1. 新员工入职培训名单\n2. 培训回执单\n3. 培训手册（含详细课程表）",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**人力资源部关于开展2023年新员工入职培训的通知**\n\n公司各部门及全体新入职员工：\n\n为帮助新员工全面了解公司情况，快速融入工作环境，熟悉岗位职责，人力资源部定于近期组织本年度新员工入职培训。现将具体安排通知如下：\n\n**一、培训时间**\n2023年6月20日（星期二）至6月22日（星期四），共计3天。\n\n**二、培训地点**\n公司总部大楼三楼多功能培训室。\n\n**三、培训内容**\n本次培训将涵盖以下核心内容：\n1.  **公司文化**：发展历程、核心价值观、企业愿景与战略方向。\n2.  **规章制度**：人事行政管理制度、财务报销流程、信息安全与保密要求等。\n3.  **业务流程**：核心业务板块介绍、主要工作流程与协作机制。\n\n**四、参加人员**\n2023年6月1日及之后入职的所有新员工。\n\n**五、相关要求**\n1.  请各位新员工提前合理安排工作，确保全程参加培训。无故不得缺席，如因特殊原因无法参加，须提前向部门负责人及人力资源部请假。\n2.  请参训人员携带笔记本及笔，准时到场。\n3.  培训期间请将手机调至静音状态，保持会场秩序。\n\n**六、联系人**\n人力资源部：李静\n电话：010-XXXX XXXX / 138-XXXX-XXXX\n邮箱：lijing@company.com\n\n请各部门负责人知悉并协助通知到本部门新员工。期待各位新同事的加入，并预祝培训顺利！\n\n特此通知。\n\n人力资源部\n2023年6月5日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_004": {
+    "deepseek-v4-flash": {
+      "output": "# 2026年度工作总结\n\n**致：直属上司**\n\n**提交人：[您的姓名]**\n\n**日期：2026年12月28日**\n\n---\n\n## 一、年度目标回顾\n\n2026年初，根据公司战略部署及部门年度规划，我制定了以下核心目标：\n\n1. **业务拓展**：完成新客户开发数量不低于20家，实现销售收入同比增长15%。\n2. **项目交付**：主导完成3个重点项目，确保项目按时交付率≥95%，客户满意度≥90%。\n3. **能力提升**：完成至少2项专业技能认证或培训，优化工作流程效率提升10%。\n4. **团队协作**：协助部门内3名新员工完成入职引导，提升团队整体协作效率。\n\n对照以上目标，经全年努力，各项指标基本达成，并有部分超额完成。\n\n---\n\n## 二、关键成就\n\n本年度重点成果如下（数据截至2026年12月25日）：\n\n| 关键指标 | 目标值 | 实际达成 | 完成率 |\n|---------|--------|----------|--------|\n| 新客户开发数 | 20家 | 27家 | 135% |\n| 销售收入同比增长 | 15% | 22.3% | 149% |\n| 重点项目交付数量 | 3个 | 4个 | 133% |\n| 项目按时交付率 | ≥95% | 97.6% | 103% |\n| 客户满意度评分 | ≥90分 | 92.4分 | 103% |\n| 流程优化效率提升 | 10% | 14% | 140% |\n\n**具体亮点：**\n\n1. **市场开拓方面**：成功签约行业头部企业A公司（年度合同金额500万元）及B集团（续签加新业务，合同额320万元），带动华东区域销售增长35%。\n2. **项目管理方面**：主导完成“XX智慧平台升级项目”，提前两周交付，客户验收一次性通过，并获客户书面表扬。另外，在Q3临时承接的紧急项目“XX应急响应系统”中，组织团队连续奋战20天，按时上线，获得公司内部“攻坚克难奖”。\n3. **流程改进方面**：梳理并优化了跨部门协作流程，将项目审批环节从7个缩减至4个，平均每个项目缩短工期5天。\n4. **团队贡献方面**：作为导师带教3名新员工，其中2名已能独立承担模块工作，1名获得季度优秀新人。\n\n---\n\n## 三、存在的不足\n\n在肯定成绩的同时，我也清醒认识到以下不足：\n\n1. **成本控制有待加强**：第四季度某项目因前期需求调研不够充分，导致中途增加两次变更，预算超支约8%。虽通过后续优化弥补，但暴露了需求管理环节的薄弱。\n2. **跨部门沟通效率波动**：在与其他部门协作时，偶尔出现信息传递滞后，导致进度微调不及时。尤其在Q2高峰期，有2次因沟通不畅引起重复返工。\n3. **个人知识广度局限**：面对新兴技术（如AI辅助工具在业务中的应用），自身学习速度未跟上行业前沿，未能及时为团队引入更多自动化解决方案。\n4. **风险预判能力不足**：对部分项目潜在风险识别不够全面，主要依赖事后补救，缺少前瞻性预案。\n\n---\n\n## 四、来年改进计划\n\n针对上述不足，2027年重点改进方向如下：\n\n1. **成本管控专项提升**：严格执行“需求确认—预算评审—变更控制”三步流程，所有项目立项前必须经过至少两轮需求确认会，变更须附成本影响分析表。目标将预算偏差控制在±3%以内。\n2. **建立跨部门沟通机制**：推行“项目周报+每日晨会15分钟”制度，关键节点同步使用共享看板。同时制定《跨部门协作标准手册》，明确各环节响应时限（如需求确认≤2小时，审核反馈≤4小时）。\n3. **技术能力进阶**：计划在Q1完成AI办公工具（如智能文档、数据分析自动化）系统学习，并在Q2引入至少1个自动化脚本，将重复性工作耗时降低20%。同步参加行业认证考试（如PMP或数据分析师）。\n4. **风险前置管理**：采用“风险登记册+红黄绿灯预警”工具，在项目启动阶段识别Top5风险，并制定应对预案。每两周更新风险状态。\n\n此外，2027年个人核心目标：\n- 销售业绩增长25%，新签约客户20家以上；\n- 主导项目按时交付率保持≥97%，客户满意度≥93分；\n-",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 2026年度工作总结\n\n**部门：** [所属部门]\n**姓名：** [本人姓名]\n**岗位：** [岗位名称]\n**直属上司：** [上司姓名]\n**报告日期：** 2026年12月30日\n\n---\n\n## 一、年度目标回顾\n\n根据年初制定的年度工作计划，本年度共设定5项核心目标，整体完成情况如下：\n\n| 序号 | 年度目标 | 完成情况 | 达成率 |\n|------|----------|----------|--------|\n| 1 | 销售/业务指标完成 | 已完成 | 112% |\n| 2 | 客户满意度提升 | 已完成 | 105% |\n| 3 | 新产品/项目落地 | 部分完成 | 85% |\n| 4 | 团队建设与人才培养 | 已完成 | 100% |\n| 5 | 成本控制与效率优化 | 已完成 | 108% |\n\n**综合评估：5项目标中，4项按期达成，1项部分达成，整体完成率约 102%，超额完成年度任务。**\n\n---\n\n## 二、关键成就（数据化呈现）\n\n### 1. 业绩指标方面\n- **销售/营收**：全年累计完成 **¥1,280万元**，同比增长 **18.5%**，超额完成年度指标 **12%**。\n- **新增客户**：全年开发新客户 **42 家**，其中战略级客户 **6 家**。\n- **客户续约率**：保持在 **92%**，较去年提升 **5 个百分点**。\n\n### 2. 项目交付方面\n- 全年主导并交付重点项目 **8 个**，按时交付率 **100%**。\n- 重点项目\"XX数字化平台\"提前 15 天交付，获客户书面表扬信 2 封。\n- 推动流程优化 **12 项**，平均工作效率提升 **约 25%**。\n\n### 3. 团队管理与协作方面\n- 带教新员工 **3 名**，均已独立承担业务模块。\n- 跨部门协作项目 **5 个**，被评为\"年度优秀协作团队\"成员。\n- 内部培训分享 **4 场**，累计培训人次超 **60 人**。\n\n### 4. 创新与降本方面\n- 提出并落地优化方案 **6 项**，累计节约成本约 **¥45 万元**。\n- 主导引入新工具/系统 1 套，部门数据处理时效提升 **40%**。\n\n---\n\n## 三、存在的不足\n\n在肯定成绩的同时，我也清醒地认识到工作中仍存在以下不足：\n\n1. **战略视野有待提升**\n   在制定部分方案时，更多聚焦于短期执行，对中长期战略规划思考不足，缺乏对公司整体业务链条的深度理解。\n\n2. **跨部门沟通效率仍可优化**\n   在与产品、研发等部门协作时，部分节点沟通成本较高，需求变更管控机制不够完善，曾导致 1 个项目出现小范围返工。\n\n3. **数据驱动决策能力需要加强**\n   日常工作中仍较多依赖经验判断，对数据建模、深度分析的运用不够充分，决策依据的科学性有待提高。\n\n4. **时间管理存在短板**\n   第四季度因多个项目并行，精力分配出现偏差，个别事务性工作出现延迟，影响了整体节奏。\n\n5. **行业前沿敏感度不足**\n   对行业最新政策、竞品动态及新兴技术的关注不够及时，知识储备更新速度有待加快。\n\n---\n\n## 四、2027年改进计划\n\n针对上述不足，特制定以下改进计划：\n\n### 1. 强化战略思维（Q1）\n- 每季度至少阅读 2 本管理或行业相关书籍，并撰写读书笔记。\n- 主动参与公司战略会议，提前了解公司中长期规划方向。\n\n### 2. 优化跨部门协作机制（持续）\n- 建立\"需求变更台账\"和\"项目沟通周报\"机制，确保信息透明。\n- 每季度与协作部门负责人进行 1 次深度复盘，梳理痛点并形成解决方案。\n\n### 3. 提升数据化分析能力（Q1-Q2）\n- 系统学习 Excel 高级应用、SQL 基础及 BI 工具（Power BI/Tableau）。\n- 每月输出 1 份业务数据分析报告，辅助决策。\n\n### 4. 完善个人时间管理体系（持续）\n- 引入\"四象限法则\"和\"番茄工作法\"，每日制定 Todo List 并复盘。\n- 对阶段性工作进行优先级排序，必要时主动向上级申请资源支持。\n\n### 5. 持续学习与行业洞察（持续）\n- 关注 5 个以上行业头部公众号/媒体，每周整理行业资讯摘要。\n- 争取参加 2 次以上行业峰会或专业培训，拓宽视野。\n\n---\n\n## 五、个人感悟\n\n回顾 2026 年，是充实而富有挑战的一年。在公司领导的指导和同事们的支持下，我在业务能力、团队协作、视野格局等方面都有了显著成长，也让我对工作有了更深层次的思考：\n\n**1. 结果导向，过程扎实。**\n成绩的取得不是偶然，而是源于对每一个环节的严格把控和持续打磨。未来我会继续坚持\"以终为始\"的思维，用目标倒推行动路径。\n\n**2. 主动担当，敢于突破。**\n越是困难的任务，越能锻炼人。这一年我主动承担了多个跨部门项目，虽然过程充满挑战，但也让我快速成长。新的一年，我会继续保持这种\"迎难而上\"的姿态。\n\n**3. 团队力量，共创共赢。**\n任何成绩都离不开团队的支持。我深知个人的力量有限，未来将更加注重团队协作与知识共享，努力成为一名\"既能独当一面，又能赋能他人\"的成员。\n\n**4. 持续学习，永葆空杯。**\n行业在变，市场在变，唯有持续学习才能保持竞争力。新的一年，我将以更开放的心态拥抱变化，不断迭代自己的认知和能力。\n\n---\n\n**总结：**\n2026 年是收获的一年，也是成长的一年。感恩公司提供的平台与领导同事的信任与支持。展望 2027，我将以更高的标准要求自己，在完成既定目标的基础上，勇于承担更具挑战性的任务，为公司发展贡献更大的力量。\n\n**恳请领导批评指正，我将虚心接受并持续改进！**\n\n---\n\n*此致*\n*敬礼*\n\n**报告人：** [本人姓名]\n**日期：** 2026年12月30日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_005": {
+    "deepseek-v4-flash": {
+      "output": "# 产品发布会邀请函\n\n**尊敬的合作伙伴 / 媒体朋友：**\n\n您好！\n\n感谢您长期以来对我公司的大力支持与信任。为了全面展示我司最新研发成果，进一步加强与各位合作伙伴的深度交流，兹定于 **2024年7月15日** 举办 **“创新·共赢——2024新品发布会”**。现诚挚邀请您拨冗莅临，共襄盛举！\n\n## 发布会详情\n\n- **时间**：2024年7月15日（星期一） 14:00 – 17:30  \n- **地点**：XX市国际会议中心 三楼 锦绣厅（XX路与XX大道交汇处）\n\n## 议程亮点\n\n1. **新品首发亮相**：首次公开年度战略级产品，多项核心技术与设计突破，引领行业新趋势。  \n2. **高层战略分享**：公司CEO及产品总监深度解读市场布局、产品理念与未来合作政策。  \n3. **沉浸体验与互动**：现场设置实机展示区，亲身体验新品性能；更有幸运抽奖与精美伴手礼。  \n4. **合作洽谈专区**：会后设专属交流时段，为您提供一对一深度沟通机会，共商合作新路径。\n\n## 报名方式\n\n为确保接待与服务品质，敬请于 **7月10日前** 填写回执（见附件）并回复至以下任意方式：\n\n- **邮箱**：market@xxxx.com  \n- **电话/微信**：138-0000-0000（市场部 李经理）\n\n我们将在收到回执后三个工作日内向您发送正式参会确认函及详细议程安排。\n\n期待与您携手，共鉴新品，共创未来！\n\n顺颂商祺！\n\n**XX科技股份有限公司 市场部**  \n2024年6月20日\n\n---\n\n（附件：《参会回执表》）",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 【新品耀世·共启华章】\n\n## ××品牌2024夏季新品发布会邀请函\n\n---\n\n**尊敬的_______先生/女士：**\n\n您好！\n\n**创新引领未来，匠心铸就非凡。** 在这个充满机遇与变革的时代，××品牌始终以卓越的品质与前瞻的理念，与时代同行，与伙伴共赢。历经数年潜心研发与精雕细琢，我们即将揭开全新一代旗舰产品的神秘面纱，诚邀您莅临现场，共同见证这一里程碑式的璀璨时刻！\n\n---\n\n### 📅 发布会详情\n\n**活动主题**：未来已来·××品牌2024夏季新品发布会\n\n**活动时间**：2024年7月15日（星期一） 14:00—18:00\n\n**活动地点**：××国际会议中心·宴会厅\n　　　　　（地址：××市××区××大道888号）\n\n**着装建议**：商务正装\n\n---\n\n### ✨ 议程亮点\n\n| 时间 | 环节 | 亮点速览 |\n|------|------|----------|\n| 13:30—14:00 | 嘉宾签到·红毯入场 | 沉浸式品牌体验区互动 |\n| 14:00—14:30 | 领导致辞·战略发布 | 解码品牌未来三年发展蓝图 |\n| **14:30—15:30** | **重磅新品揭幕** | **全新旗舰产品全球首发，颠覆性技术震撼登场** |\n| 15:30—16:00 | 核心技术解读 | 行业顶尖专家深度剖析产品创新亮点 |\n| 16:00—16:30 | 渠道政策发布 | 经销商专属权益、首批合作名额重磅揭晓 |\n| 16:30—17:00 | 媒体专访环节 | 高管团队现场对话，独家资讯一触即发 |\n| 17:00—18:00 | 自由交流·答谢晚宴 | 尊享精致茶歇，畅叙合作未来 |\n\n---\n\n### 🎁 尊享礼遇\n\n- **参会嘉宾**均将获赠精美品牌纪念礼包一份；\n- **现场签约经销商**可享受首发期专属优惠政策；\n- **媒体朋友**将获得独家新闻通稿及高清产品素材包。\n\n---\n\n### 📝 报名方式\n\n为确保活动现场秩序与您的尊贵体验，请于**7月10日（星期三）**前通过以下任一方式完成报名：\n\n> **方式一**：扫描下方二维码，填写参会回执信息；  \n> **方式二**：致电会务组热线 **400-××××-888**（王经理）；  \n> **方式三**：发送邮件至 **marketing@×××.com**，主题注明\"7·15发布会报名+单位+姓名\"。\n\n**（名额有限，额满即止，诚邀您尽早确认）**\n\n---\n\n### 🤝 共启新程\n\n此次发布会不仅是新品亮相的舞台，更是行业精英共商发展、同绘蓝图的高端盛会。我们相信，您的莅临将为这场盛典增辉添彩，携手共创更加辉煌的明天！\n\n**7月15日，让我们相约××，共鉴非凡！**\n\n顺颂商祺！\n\n---\n\n**××品牌市场部**\n**2024年6月25日**\n\n---\n\n*— 本邀请函最终解释权归××品牌市场部所有 —*",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**[公司名称] 市场部**\n\n**[公司地址]**\n\n**[日期]**\n\n**尊敬的合作伙伴与媒体朋友们：**\n\n您好！\n\n我们诚挚地邀请您出席由[公司名称]举办的“创新引领未来”产品发布会。本次发布会将是我们展示最新技术成果、发布年度战略产品的重要时刻，我们期待与您共同见证这一里程碑，探讨未来合作与发展的无限可能。\n\n**发布会核心信息如下：**\n\n*   **时间：** 2023年7月15日（星期六） 下午14:00 - 17:30\n*   **地点：** [城市]国际会议中心 · 三楼星空宴会厅\n*   **地址：** [详细地址]\n\n**本次发布会精彩议程亮点：**\n\n1.  **新品全球首发：** 我们将重磅揭晓年度旗舰产品——[产品名称]系列。这款产品集成了前所未有的创新技术，旨在重新定义行业标准。\n2.  **核心技术深度解析：** 公司首席技术官将亲临现场，深度解读新品背后的核心技术突破与研发理念。\n3.  **市场战略与渠道政策发布：** 市场部负责人将全面阐述新产品的市场定位、推广策略及面向经销商的全新合作政策与支持计划，为您的业务增长赋能。\n4.  **现场互动与体验区：** 特设产品互动体验区，您将有机会近距离操作、感受新品的独特魅力与强大性能。\n5.  **高层交流与答谢晚宴：** 会后将举办交流晚宴，为您提供与公司管理层、行业同仁深入沟通的宝贵机会。\n\n我们深信，此次发布会不仅是一次新产品的亮相，更是开启合作新篇章的契机。您的莅临，将是对我们最大的支持与鼓舞。\n\n**诚邀您拨冗出席！**\n\n为便于我们妥善安排接待事宜，请您于**2023年7月10日**前，通过以下方式确认出席：\n\n*   **报名电话：** [联系电话]\n*   **报名邮箱：** [联系邮箱] （请将回执发送至此邮箱）\n*   **在线报名：** 扫描下方二维码，填写电子报名表 [此处可插入二维码图片]\n\n如有任何疑问，欢迎随时与市场部[联系人姓名]先生/女士联系（电话：[手机号码]；邮箱：[邮箱地址]）。\n\n**我们盛邀您的光临，共赴这场创新与未来的盛宴！**\n\n此致\n敬礼！\n\n**[公司名称] 市场部**\n**[市场部负责人姓名/职务]**\n**[签发日期]**",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "",
+      "status": "success",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_006": {
+    "deepseek-v4-flash": {
+      "output": "# 项目立项报告大纲\n\n## 一、项目背景\n- 行业现状与市场趋势\n- 企业当前面临的问题与机遇\n- 项目提出的依据与必要性\n\n## 二、项目目标\n- 总体目标\n- 具体可量化指标（如时间、成本、质量、产出等）\n- 项目成功标准\n\n## 三、项目范围\n- 项目包含的主要工作内容\n- 项目交付物清单\n- 项目边界（明确不包含的内容）\n- 关键干系人\n\n## 四、预期收益\n- 经济效益（如收入增长、成本节约、投资回报率）\n- 社会效益（如品牌提升、客户满意度）\n- 战略效益（如市场占有率、技术领先）\n\n## 五、预算估算\n- 总预算金额\n- 分项预算明细（人力成本、设备采购、软件许可、外包服务、差旅费、其他）\n- 资金来源与筹措方式\n- 预算风险储备\n\n## 六、实施计划\n- 项目阶段划分（启动、规划、执行、监控、收尾）\n- 各阶段关键里程碑及完成时间\n- 主要活动与责任分工\n- 项目总工期\n\n## 七、风险评估\n- 主要风险识别（技术风险、市场风险、管理风险、财务风险等）\n- 风险发生概率与影响程度评估\n- 应对措施与应急预案\n- 风险责任人",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 项目立项报告大纲\n\n---\n\n## 一、项目背景\n\n- **行业现状分析**\n  - 行业发展趋势\n  - 市场痛点与机遇\n- **企业现状分析**\n  - 现有业务情况\n  - 存在的主要问题\n  - 信息化/数字化基础\n- **项目提出原因**\n  - 业务发展需求\n  - 政策支持依据\n  - 战略转型需要\n- **可行性概述**\n  - 技术可行性\n  - 经济可行性\n  - 管理可行性\n\n---\n\n## 二、项目目标\n\n- **总体目标**\n  - 项目战略定位\n  - 核心愿景描述\n- **具体目标（SMART原则）**\n  - 业务目标\n  - 技术目标\n  - 管理目标\n- **关键成果指标（KPI）**\n  - 量化指标设定\n  - 完成时间节点\n  - 衡量标准\n\n---\n\n## 三、项目范围\n\n- **项目覆盖范围**\n  - 涉及业务部门\n  - 涉及业务流程\n  - 涉及系统模块\n- **项目交付物**\n  - 软件/系统交付\n  - 文档交付\n  - 培训交付\n- **项目边界说明**\n  - 包含范围（In-Scope）\n  - 不包含范围（Out-of-Scope）\n  - 假设条件与约束条件\n- **接口与集成范围**\n  - 与现有系统对接\n  - 第三方系统集成\n\n---\n\n## 四、预期收益\n\n- **经济效益**\n  - 直接收益（成本节约、收入增长）\n  - 间接收益（效率提升）\n  - 投资回报率（ROI）分析\n  - 投资回收期估算\n- **管理效益**\n  - 流程优化\n  - 决策支持能力提升\n  - 风险管控能力增强\n- **社会效益**\n  - 品牌价值提升\n  - 行业示范效应\n  - 客户满意度提升\n- **战略价值**\n  - 核心竞争力提升\n  - 长期发展支撑\n\n---\n\n## 五、预算估算\n\n- **建设投资估算**\n  - 软件开发费用\n  - 硬件设备购置\n  - 网络与基础设施\n  - 第三方产品/服务采购\n- **实施费用估算**\n  - 咨询费用\n  - 培训费用\n  - 数据迁移费用\n  - 系统集成费用\n- **运维费用估算**\n  - 系统维护费\n  - 技术支持费\n  - 升级更新费用\n- **人力成本估算**\n  - 项目团队人员费用\n  - 外部专家费用\n- **预留费用**\n  - 不可预见费用（按10%-15%计提）\n- **资金来源**\n  - 自筹资金\n  - 专项拨款\n  - 融资方案\n\n---\n\n## 六、实施计划\n\n- **项目阶段划分**\n\n  | 阶段 | 时间周期 | 主要任务 | 里程碑 |\n  |------|---------|---------|--------|\n  | 启动阶段 | ____ | ____ | ____ |\n  | 需求阶段 | ____ | ____ | ____ |\n  | 设计阶段 | ____ | ____ | ____ |\n  | 开发阶段 | ____ | ____ | ____ |\n  | 测试阶段 | ____ | ____ | ____ |\n  | 部署阶段 | ____ | ____ | ____ |\n  | 验收阶段 | ____ | ____ | ____ |\n\n- **关键里程碑**\n  - 阶段评审节点\n  - 重要交付节点\n- **资源配置计划**\n  - 人力资源配置\n  - 设备资源调配\n- **项目组织架构**\n  - 项目领导小组\n  - 项目管理办公室（PMO）\n  - 各工作小组职责\n\n---\n\n## 七、风险评估\n\n- **风险识别**\n  - 技术风险\n  - 管理风险\n  - 财务风险\n  - 人员风险\n  - 外部环境风险\n- **风险分析矩阵**\n\n  | 风险类别 | 风险描述 | 发生概率 | 影响程度 | 风险等级 |\n  |---------|---------|---------|---------|---------|\n  | ____ | ____ | 高/中/低 | 高/中/低 | ____ |\n\n- **风险应对策略**\n  - 规避策略\n  - 转移策略\n  - 减轻策略\n  - 接受策略\n- **风险监控机制**\n  - 监控频率\n  - 预警指标\n  - 应急预案\n\n---\n\n## 八、立项建议\n\n- 项目立项必要性结论\n- 项目可行性结论\n- 建议与决策事项\n\n---\n\n## 附录\n\n- 附件1：相关批复文件\n- 附件2：技术方案概要\n- 附件3：详细预算明细表\n- 附件4：专家评审意见\n- 附件5：其他支撑材料\n\n---\n\n> **编制单位**：________\n> **编制日期**：________\n> **版本号**：V1.0",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_007": {
+    "deepseek-v4-flash": {
+      "output": "**关于调整差旅报销政策的通知**\n\n全体员工：\n\n为进一步规范公司差旅管理，合理控制费用支出，提升报销效率，经公司研究决定，对现行差旅报销政策进行优化调整。现将有关事项通知如下：\n\n一、调整原因  \n随着公司业务拓展及市场环境变化，原有差旅报销标准已不能完全适应实际需求。部分费用标准偏低导致员工出行选择受限，而发票及流程要求存在不清晰之处。为兼顾员工出行便利与财务合规性，特对政策进行修订，以统一标准、简化流程、强化监督。\n\n二、新政策要点  \n1. **报销额度调整**  \n   - 国内出差：住宿费标准根据城市类别划分为三档（一线城市、二线城市、其他地区），每人每日上限分别为600元、450元、300元；伙食补助费统一调整为每人每日120元；交通费实报实销（含市内交通及城际交通，需提供有效票据）。  \n   - 国际出差：住宿费标准按目的地国家/地区另行制定（详见附件），伙食补助及公杂费合并为每日150元人民币等值外币。  \n   - 超标部分原则上不予报销，因特殊情况需超支的，须事先经部门总监审批并附说明。\n\n2. **发票要求**  \n   - 所有报销必须提供合法有效的增值税发票或财政票据，发票抬头须为“公司全称”，税号准确。  \n   - 电子发票需打印并签署姓名日期，同一笔费用不得重复提交。  \n   - 交通票据（机票、火车票、汽车票）需提供行程单或购票凭证；住宿发票需注明入住日期、天数、单价。  \n   - 餐饮、停车、过路过桥费等其他费用，单张发票金额超过500元（含）的须附明细清单。\n\n3. **申请流程**  \n   - 出差前须通过OA系统提交《出差申请单》，经直属上级及部门负责人审批。  \n   - 出差结束后5个工作日内，在OA系统发起《差旅报销单》，上传全部票据扫描件或照片，填写实际费用明细。  \n   - 报销单须经部门负责人、财务部初审、财务总监复审后，由出纳安排付款。  \n   - 对于发票不完整、超标准未审批等情况，财务部将直接退回并通知补正。\n\n三、生效时间  \n本政策自2025年6月1日起正式执行，此前已发生的出差按原政策报销。请各部门组织学习，如有疑问可咨询财务部（分机号：8801）。\n\n特此通知。\n\n财务部  \n2025年5月20日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "---\n\n# 关于最新差旅报销政策调整的通知\n\n**发文部门：** 财务部\n**发文日期：**\n**适用对象：** 公司全体员工\n\n---\n\n## 一、致全体员工的一封信\n\n各位同事：\n\n为适应公司业务发展需要，进一步规范差旅费用管理，提升费用报销效率，财务部结合近期差旅报销审计中发现的问题及行业最佳实践，对原《差旅报销管理制度》进行了修订与完善。现将本次政策调整内容通知如下，请大家认真学习并遵照执行。\n\n---\n\n## 二、本次政策调整的背景与原因\n\n1. **合规性要求提升**\n   根据国家税务监管新规及《企业所得税税前扣除凭证管理办法》的最新要求，需对发票类型、开具规范、抵扣凭证等方面进行严格化管控。\n\n2. **降本增效管理需要**\n   近期审计发现部分差旅费用存在预算超标、票据不合规、报销周期过长等问题，亟需通过制度优化加强管控。\n\n3. **流程数字化转型**\n   公司已完成差旅报销系统（OA/e-HR）升级，支持线上全流程审批，需配套更新管理制度。\n\n4. **业务场景多元化**\n   结合近年来远程办公、跨城市出差、客户拜访等场景增多的情况，对原制度进行补充细化。\n\n---\n\n## 三、新政策核心要点\n\n### （一）差旅报销额度标准\n\n| 岗位/职级 | 住宿费上限（元/晚） | 餐补标准（元/天） | 交通补贴 | 其他 |\n|---------|------------------|----------------|---------|------|\n| 高层管理人员 | 800 | 150 | 实报实销 | 出差地市内交通实报实销 |\n| 中层管理人员 | 600 | 120 | 实报实销 | 同上 |\n| 普通员工（一线城市） | 500 | 100 | 实报实销 | 同上 |\n| 普通员工（二线及以下城市） | 400 | 80 | 实报实销 | 同上 |\n| 实习生/试用期员工 | 300 | 60 | 据实报销 | 需部门负责人审批 |\n\n**特别说明：**\n- 出差天数超过 7 天，可申请上浮 10% 住宿标准，需事前审批。\n- 同一城市连续出差，住宿费按日计算，不得拆分发票。\n- 客户陪同、业务洽谈等特殊场景，需在报销单备注并附相关证明。\n\n### （二）发票要求（重点更新）\n\n1. **发票类型**\n   - 必须开具 **增值税电子普通发票** 或 **增值税专用发票**。\n   - 原则上不再接受纸质发票，特殊情况需提供书面说明。\n\n2. **发票内容规范**\n   - 发票抬头必须为 **公司全称**，税号准确无误。\n   - \"货物或应税劳务名称\"栏须明确填写：**住宿费、餐饮费、机票款、火车票** 等具体内容。\n   - **禁止** 出现\"办公用品\"、\"礼品\"、\"日用品\"等模糊字样。\n\n3. **发票时效**\n   - 票据须在出差结束后 **15 个工作日内** 提交报销，逾期需提交情况说明并经部门负责人批准。\n   - 跨年度发票原则上不予报销（12月出差最迟于次年1月底前提交）。\n\n4. **大额支出要求**\n   - 单笔金额超过 **3000 元** 需附 **合同/协议** 或 **事前审批单**。\n   - 机票、火车票金额超过 2000 元需附行程单原件。\n\n### （三）申请与审批流程\n\n**流程总览：**\n\n```\n出差申请 → 预算审核 → 差旅执行 → 票据归集 → 系统填报 → 逐级审批 → 财务复核 → 款项支付\n```\n\n**具体步骤：**\n\n1. **出差前：出差申请**\n   - 登录 OA 系统 → 填写《出差申请单》\n   - 注明：出差事由、时间、地点、行程、预算明细\n   - 审批顺序：直接上级 → 部门负责人 → 分管领导\n\n2. **出差中：费用记录**\n   - 及时收集所有票据，拍摄电子凭证存档\n   - 每日填写差旅日志（重要项目出差必须）\n\n3. **出差后：报销提交**\n   - 出差结束后 15 个工作日内，在报销系统填写《差旅报销单》\n   - 上传发票电子版及相关附件\n   - 审批顺序：直接上级 → 部门负责人 → 财务部初审 → 财务负责人终审\n\n4. **特殊事项**\n   - 差旅变更（取消/延期/超额）需 2 个工作日内报备。\n   - 紧急出差可先口头申请，3 个工作日内补办系统审批。\n\n### （四）其他重要调整\n\n- **预支款项：** 差旅预支金额原则上不超过预算的 70%，还款须在报销时一并冲抵。\n- **违规处理：** 虚开发票、虚报金额将依据《员工奖惩管理办法》严肃处理。\n- **外币差旅：** 境外差旅需提供当日汇率截图，按报销系统汇率换算。\n- **私事绕道：** 因私绕道产生的额外费用自理，公司不予报销。\n\n---\n\n## 四、政策生效时间\n\n- **生效日期：** 自 **XXXX年XX月XX日** 起正式施行。\n- **过渡期安排：** XXXX年XX月XX日前发生的差旅，仍按原政策执行；之后发生的差旅一律按新政策办理。\n- **配套培训：** 财务部将于生效日前一周组织线上培训（具体时间另行通知），并发布《差旅报销操作手册》（电子版）。\n\n---\n\n## 五、咨询与反馈\n\n如对本次政策调整有任何疑问，请通过以下方式联系财务部：\n\n- **系统操作问题：** 报销系统客服  分机号：XXXX\n- **政策解读问题：** 财务部费用核算组  分机号：XXXX\n- **邮箱：** finance@company.com\n\n我们也将于 **XX月XX日（周三）15:00** 通过企业微信直播为大家详细解读新政策，欢迎届时参加。\n\n---\n\n**附件：**\n1. 差旅报销新政策对照表\n2. 报销系统操作指南\n3. 常见问题 FAQ（Q&A）\n\n---\n\n感谢大家的理解与配合！财务部将持续优化服务，为各项业务开展提供有力支撑。\n\n**特此通知。**\n\n**财务部**\n**XXXX年XX月XX日**\n\n---\n\n> 本通知最终解释权归公司财务部所有。",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_008": {
+    "deepseek-v4-flash": {
+      "output": "# 客户投诉处理报告\n\n**报告编号：** KS-2025-003  \n**报告日期：** 2025年4月8日  \n**报告部门：** 客户服务部  \n**涉及部门：** 生产部、质检部、物流部  \n\n---\n\n## 一、投诉概况\n\n2025年3月25日至4月5日期间，我司共受理客户投诉12起，较上月同期（8起）增长50.0%。其中重大投诉2起，一般投诉10起。投诉产品集中在A系列（7起，占58.3%）和B系列（4起，占33.3%），其余1起涉及C系列。投诉渠道分布：400客服热线6起（50.0%），在线平台4起（33.3%），邮件2起（16.7%）。全部投诉均已处理完毕，客户满意度回访结果显示，满意率91.7%，其中1起重大投诉因赔偿方案未完全达成一致，客户表示保留进一步申诉权利。\n\n---\n\n## 二、原因分析\n\n针对12起投诉进行根因分析，具体如下：\n\n| 投诉原因类别 | 数量（起） | 占比 | 主要表现 |\n|-------------|-----------|------|---------|\n| 产品质量缺陷 | 5 | 41.7% | 外观瑕疵3起、功能异常2起 |\n| 物流配送延误 | 3 | 25.0% | 超承诺时效2～5天 |\n| 包装破损 | 2 | 16.7% | 外箱变形、内件碎裂 |\n| 客服响应不及时 | 1 | 8.3% | 首次响应超4小时 |\n| 其他 | 1 | 8.3% | 产品说明书内容歧义 |\n\n**关键发现：**  \n- 5起产品质量缺陷中，4起产生于3月20日至22日期间生产批次（批次号：A32501-A32505），经查该时段生产设备临时检修，调整后参数未及时固化，导致部分产品外观及性能未达标准。  \n- 3起物流延误中，2起因承运商中转站突发分拣系统故障，1起为我司订单处理环节延迟出库。  \n- 包装破损主要集中于B系列产品，其外包装抗压强度设计值偏低（实测仅达到行业标准下限的85%）。\n\n---\n\n## 三、处理过程\n\n1. **快速响应（0.5小时内）**  \n   接诉后，客服专员均在30分钟内完成首轮电话沟通，安抚客户情绪，确认投诉事项，并承诺24小时内给出初步解决方案。\n\n2. **分级处理（1～3个工作日）**  \n   - 一般投诉由客服主管直接协调质检、物流部门，采取补发新品、补偿代金券（单笔价值50～200元）或折扣退款等方式。10起一般投诉平均处理完成时间1.8天。  \n   - 重大投诉（2起）成立专项小组，由客户服务总监牵头，生产、质检、物流负责人参与。其中1起因产品功能异常导致客户停工损失，经3轮协商达成赔偿协议：免费更换产品+赔偿工时损失5,000元。另1起因物流延误导致客户项目延期，补偿减免下季度采购金额10%，并加急配送替代产品。\n\n3. **结果反馈**  \n   所有投诉处理结果均通过书面报告形式发送至客户，附上问题分析及改进承诺。处理完毕后48小时内进行满意度回访，10位客户给予“非常满意”评价，1位“满意”，1位“一般”。\n\n---\n\n## 四、改进措施\n\n针对分析出的根因，制定并实施以下改进措施：\n\n1. **生产过程管控强化**  \n   - 即日起对所有生产批次增设质检抽样频率：单批次抽检数量由原先的每批20件提升至50件。  \n   - 设备检修后必须进行至少连续2小时试生产，经质检确认参数稳定后方可恢复量产。已完成对3月20-22日批次全数复检，剔除不合格产品127件，并予以报废处理。\n\n2. **物流配送体系优化**  \n   - 将合作承运商由3家扩增至5家，建立备用运力池，确保任一承运商故障时可24小时内切换。  \n   - 订单处理系统增加出库时效预警功能：订单确认后超过3小时未进入物流环节的，自动触发提醒至物流主管。\n\n3. **包装设计升级**  \n   - B系列产品外包装抗压强度标准由原设计值提升15%，",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 客户投诉处理报告\n\n**报告编号：CT-2024-0312**\n**报告日期：2024年3月15日**\n**报告部门：客户服务部**\n**密级：内部公开**\n\n---\n\n## 一、投诉概况\n\n### 1.1 投诉基本信息\n\n| 项目 | 内容 |\n|------|------|\n| 投诉编号 | CT-2024-0312 |\n| 投诉日期 | 2024年3月10日 |\n| 客户名称 | XX科技有限公司 |\n| 投诉渠道 | 400客服热线、官方邮箱 |\n| 投诉类型 | 产品质量与服务响应问题 |\n| 涉及产品 | A型工业控制器（订单号：PO-2024-0287） |\n| 涉及金额 | 人民币 287,500 元 |\n\n### 1.2 投诉内容摘要\n\n客户于2024年2月28日采购我司A型工业控制器50台，货值287,500元。收货后在使用过程中发现以下问题：\n\n1. **产品质量问题**：首批30台设备中，11台出现运行异常，故障率达36.67%，远超合同约定的≤2%标准；\n2. **服务响应问题**：客户于3月5日首次反馈问题后，48小时内未得到有效响应；\n3. **经济损失**：因设备故障导致客户生产线停工12小时，间接损失约15万元。\n\n### 1.3 投诉等级评估\n\n依据《客户投诉管理办法》，本次投诉定为 **A级重大投诉**（最高等级），涉及核心客户、批量质量缺陷及服务响应严重超时。\n\n---\n\n## 二、原因分析\n\n### 2.1 根本原因分析（5Why分析法）\n\n**Why 1**：为何设备故障率高达36.67%？\n→ 经技术检测，11台故障设备均存在PCB板虚焊问题。\n\n**Why 2**：为何PCB板出现批量虚焊？\n→ 生产批次PCB-2024-0215的回流焊温度参数偏离工艺标准。\n\n**Why 3**：为何回流焊温度参数偏离？\n→ 该批次生产时，操作员未按SOP要求进行首件确认，且设备温控传感器老化未及时更换。\n\n**Why 4**：为何关键质量控制点失效？\n→ 品控部巡检频率不足，生产期间仅执行了1次巡检（标准为每2小时1次）。\n\n**Why 5**：为何巡检制度未落实？\n→ 近期订单激增，品控人员配置未同步扩充，且缺乏系统性的产能-品控联动机制。\n\n### 2.2 投诉原因分类统计\n\n| 原因类别 | 占比 | 责任部门 |\n|----------|------|----------|\n| 产品质量缺陷 | 70% | 生产部、品控部 |\n| 服务响应滞后 | 20% | 客服部 |\n| 内部协同问题 | 10% | 跨部门 |\n\n### 2.3 数据对比分析\n\n| 指标 | 合同标准 | 实际数据 | 偏差 |\n|------|----------|----------|------|\n| 设备故障率 | ≤2% | 36.67% | +1,733% |\n| 首次响应时长 | ≤4小时 | 52小时 | +1,200% |\n| 问题解决时长 | ≤48小时 | 进行中 | — |\n| 客户满意度（本次事件前） | ≥90分 | 87分 | -3分 |\n\n---\n\n## 三、处理过程\n\n### 3.1 应急响应阶段（3月10日—3月11日）\n\n- **3月10日 14:00**：客服中心接到投诉，立即启动A级投诉应急预案，30分钟内上报客户服务总监；\n- **3月10日 15:00**：成立专项处理小组（组长：客服总监，成员：技术、生产、品控、销售骨干，共8人）；\n- **3月10日 16:30**：客服总监致电客户负责人，正式致歉并承诺24小时内出具初步解决方案；\n- **3月11日 09:00**：技术团队抵达客户现场，48小时内完成全部11台故障设备的检测。\n\n### 3.2 原因调查阶段（3月11日—3月13日）\n\n- **3月11日**：完成现场检测，初步锁定PCB虚焊问题；\n- **3月12日**：调取生产批次PCB-2024-0215的全流程记录，发现温度参数异常；\n- **3月13日**：组织跨部门复盘会，明确根本原因及责任归属。\n\n### 3.3 解决方案落实阶段（3月13日—3月15日）\n\n| 序号 | 处理措施 | 完成时间 | 责任人 |\n|------|----------|----------|--------|\n| 1 | 11台故障设备全部免费更换 | 3月14日 | 生产部 |\n| 2 | 剩余19台设备主动召回检测 | 3月15日 | 客服部 |\n| 3 | 客户停工损失协商补偿 | 3月15日 | 销售部 |\n| 4 | 出具书面质量分析报告 | 3月15日 | 品控部 |\n| 5 | 提交长效改进方案 | 3月15日 | 专项小组 |\n\n### 3.4 处理结果\n\n截至3月15日，本次投诉核心问题已全部闭环处理：\n\n- ✅ 50台设备100%完成检测或更换，故障设备全部修复；\n- ✅ 与客户达成补偿协议，减免本订单金额的15%（合计43,125元），并赠送下一订单10%折扣券；\n- ✅ 客户书面确认本次投诉处理结果，满意度回升至92分。\n\n---\n\n## 四、改进措施\n\n### 4.1 短期改进措施（1个月内）\n\n1. **生产环节整改**\n   - 对所有在产SMT线设备进行温控传感器专项校准，预计3月20日前完成；\n   - 严格执行首件检验制度，未通过首件确认不得批量生产；\n   - 增设生产过程双巡检机制（每2小时一次）。\n\n2. **品控环节加强**\n   - 增加2名资深品控工程师配置，缓解人员不足问题；\n   - 引入AOI自动光学检测设备，提升PCB焊接质量检测覆盖率至100%。\n\n3. **服务流程优化**\n   - 将A级投诉首次响应时长从4小时压缩至1小时；\n   - 建立客户问题\"30分钟升级\"机制，超时自动通知管理层。\n\n### 4.2 中期改进措施（3个月内）\n\n1. **质量管理体系升级**\n   - 完成ISO 9001:2015体系年度复审，补充供应商质量管理细则；\n   - 引入MES制造执行系统，实现生产参数实时监控与异常预警。\n\n2. **客户服务能力建设**\n   - 客服中心扩充至15人，建立技术型客服培养体系；\n   - 上线智能客服系统，实现7×24小时响应。\n\n3. **供应链协同优化**\n   - 对PCB供应商开展二方审核，建立来料质量追溯系统。\n\n### 4.3 长期改进措施（6—12个月）\n\n1. **推行精益生产管理**，将产品一次合格率目标提升至99.5%以上；\n2. **建立客户分级服务体系**，A级客户配置专属客户经理；\n3. **实施质量管理数字化转型**，搭建QMS质量管理平台。\n\n---\n\n## 五、预防机制\n\n### 5.1 建立三级预警机制\n\n| 预警等级 | 触发条件 | 响应措施 |\n|----------|----------|----------|\n| 黄色预警 | 单批次不良率≥5% | 暂停生产，48小时内评审 |\n| 橙色预警 | 客户投诉2起/周 | 启动专项审查，72小时输出报告 |\n| 红色预警 | 批量质量事故（本次事件） | 全面停产整顿，跨部门联动整改 |\n\n### 5.2 完善制度建设\n\n1. **修订《质量奖惩管理办法》**，将质量KPI与部门负责人绩效挂钩（权重≥30%）；\n2. **建立《客户投诉复盘机制》**，A级投诉必须30天内输出复盘报告并公示；\n3. **推行《红线管理制度》**，明确不可触碰的5条质量红线及对应处罚标准。\n\n### 5.3 强化组织保障\n\n1. **设立质量管理委员会**，由总经理直接分管，季度召开专题会议；\n2. **建立质量一票否决制**，质量问题与业绩考核、晋升、评优直接关联；\n3. **实施质量文化建设**，年度评选\"质量标兵\"，营造全员重视质量的氛围。\n\n### 5.4 数据化预防体系\n\n- 建立质量数据看板，实时监控不良率、返修率、客户投诉率等关键指标；\n- 引入预测性质量管理模型，对异常趋势提前14天预警；\n- 客户满意度月度调研，覆盖率从当前的60%提升至100%。\n\n### 5.5 闭环验证机制\n\n| 时间节点 | 验证内容 | 目标值 |\n|----------|----------|--------|\n| 1个月后 | 设备故障率回落 | ≤2% |\n| 3个月后 | 客户满意度回升 | ≥93分 |\n| 6个月后 | 批量质量事件归零 | 0起 |\n| 12个月后 | 客户续约率提升 | ≥85% |\n\n---\n\n## 六、结语\n\n本次投诉暴露出公司在产能扩张过程中，质量管控体系与服务响应机制存在明显短板。专项小组将以本次事件为契机，举一反三，全面落实改进措施与预防机制，确保整改成效落地。\n\n公司将以此次投诉为警示，始终坚持\"客户至上、质量为本\"的核心价值观，持续为客户创造价值。\n\n---\n\n**报告",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_009": {
+    "deepseek-v4-flash": {
+      "output": "# 部门会议纪要\n\n## 一、会议基本信息\n- **会议时间**：____年__月__日（星期__）__时__分 至 __时__分\n- **会议地点**：____________________\n- **主持人**：____________________\n- **记录人**：____________________\n- **出席人员**：____________________\n- **缺席人员**：____________________\n\n## 二、会议议程\n1. ________________________\n2. ________________________\n3. ________________________\n\n## 三、上会议题及讨论结果\n| 序号 | 上会议题 | 讨论情况 | 结论/结果 |\n|------|----------|----------|------------|\n| 1    |          |          |            |\n| 2    |          |          |            |\n| 3    |          |          |            |\n\n## 四、待办事项及负责人\n| 序号 | 待办事项 | 负责人 | 截止时间 |\n|------|----------|--------|----------|\n| 1    |          |        | ____年__月__日 |\n| 2    |          |        | ____年__月__日 |\n| 3    |          |        | ____年__月__日 |\n\n## 五、备注\n（其他需要记录的事项或补充说明）",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 部门会议纪要\n\n---\n\n## 一、会议基本信息\n\n| 项目 | 内容 |\n|------|------|\n| **会议名称** |  |\n| **会议时间** | 20XX年X月X日（星期X）  X:XX — X:XX |\n| **会议地点** |  |\n| **主持人** |  |\n| **记录人** |  |\n| **出席人员** |  |\n| **缺席人员** |  |\n| **会议类型** | □ 周例会  □ 月度总结  □ 专项会议  □ 其他 |\n\n---\n\n## 二、会议议程\n\n| 序号 | 议程内容 | 时长 | 负责人 |\n|------|----------|------|--------|\n| 1 |  |  |  |\n| 2 |  |  |  |\n| 3 |  |  |  |\n| 4 |  |  |  |\n| 5 |  |  |  |\n\n---\n\n## 三、上会议题及讨论结果\n\n### 议题一：XXXXXXXXX\n\n- **汇报人**：\n- **议题背景**：\n- **讨论要点**：\n  - ① \n  - ② \n  - ③ \n- **决议/结论**：\n- **遗留问题**：\n\n---\n\n### 议题二：XXXXXXXXX\n\n- **汇报人**：\n- **议题背景**：\n- **讨论要点**：\n  - ① \n  - ② \n  - ③ \n- **决议/结论**：\n- **遗留问题**：\n\n---\n\n### 议题三：XXXXXXXXX\n\n- **汇报人**：\n- **议题背景**：\n- **讨论要点**：\n  - ① \n  - ② \n  - ③ \n- **决议/结论**：\n- **遗留问题**：\n\n---\n\n## 四、待办事项跟踪表\n\n| 序号 | 待办事项 | 负责人 | 协办人 | 截止时间 | 优先级 | 状态 |\n|------|----------|--------|--------|----------|--------|------|\n| 1 |  |  |  | 20XX-XX-XX | □高 □中 □低 | □未开始 □进行中 □已完成 |\n| 2 |  |  |  | 20XX-XX-XX | □高 □中 □低 | □未开始 □进行中 □已完成 |\n| 3 |  |  |  | 20XX-XX-XX | □高 □中 □低 | □未开始 □进行中 □已完成 |\n| 4 |  |  |  | 20XX-XX-XX | □高 □中 □低 | □未开始 □进行中 □已完成 |\n| 5 |  |  |  | 20XX-XX-XX | □高 □中 □低 | □未开始 □进行中 □已完成 |\n\n---\n\n## 五、下次会议安排\n\n- **预计时间**：\n- **预计地点**：\n- **需准备事项**：\n\n---\n\n## 六、备注\n\n> \n\n---\n\n**会议纪要确认**\n\n- 主持人签字：________________　　日期：________\n- 记录人签字：________________　　日期：________\n\n---\n\n*说明：本模板可根据部门实际需求增删议题模块，灰色斜体部分为填写说明，正式存档时建议删除。*",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_010": {
+    "deepseek-v4-flash": {
+      "output": "# 供应商评估报告\n\n**报告编号：** SUP-2025-003  \n**评估日期：** 2025年4月15日  \n**评估对象：** 华创精密制造有限公司（供应商代码：HC-2023-018）  \n**评估部门：** 采购部、品质部、仓储物流部  \n\n---\n\n## 一、供应商基本信息\n\n| 项目 | 内容 |\n|------|------|\n| 公司全称 | 华创精密制造有限公司 |\n| 注册地址 | 广东省东莞市长安镇工业路88号 |\n| 统一社会信用代码 | 91441900MA5G7XK23L |\n| 法定代表人 | 张志强 |\n| 成立日期 | 2018年3月12日 |\n| 主营业务 | 精密金属零部件加工、非标自动化设备配件 |\n| 主要产品 | 电机轴、法兰盘、定位销、衬套 |\n| 合作起始时间 | 2023年6月 |\n| 资质认证 | ISO 9001:2015（有效期至2026年5月）、IATF 16949（有效期至2025年9月） |\n| 年产值 | 约1.2亿元 |\n| 主要客户 | 比亚迪、大族激光、汇川技术 |\n\n---\n\n## 二、质量评估\n\n### 2.1 评估周期\n2024年4月 – 2025年3月（共12个月）\n\n### 2.2 关键质量指标\n\n| 指标 | 数据 | 目标值 | 结果 |\n|------|------|--------|------|\n| 来料批次合格率 | 97.6% | ≥98% | **未达标** |\n| 退货率 | 2.1% | ≤1.5% | **超标** |\n| 过程异常次数 | 8次 | ≤5次 | **超标** |\n| 客户投诉次数 | 3次 | 0次 | **不合格** |\n\n### 2.3 主要质量问题\n- 2024年6月：电机轴外径超差（公差±0.02mm，实测超差0.05mm），导致客户产线停线2小时。\n- 2024年9月：法兰盘表面粗糙度Ra值1.8μm（要求≤1.6μm），退货重做。\n- 2025年1月：定位销材质硬度HRC偏低（实测HRC 52，要求HRC 58-62），整批次退回。\n\n### 2.4 改进措施反馈\n- 供应商已更换精度更高的CNC加工中心（2024年12月到货）。\n- 新增三坐标测量仪（CMM）进行全检（2025年2月起执行）。\n- 但整体质量稳定性仍需提升，建议加强过程SOP执行力度。\n\n**质量评分：72分（满分100）**\n\n---\n\n## 三、交货评估\n\n### 3.1 关键交货指标\n\n| 指标 | 数据 | 目标值 | 结果 |\n|------|------|--------|------|\n| 准时交货率 | 93.5% | ≥95% | **未达标** |\n| 订单交付周期（平均） | 12天 | ≤10天 | **超标** |\n| 短缺/错发次数 | 4次 | ≤2次 | **超标** |\n| 包装破损次数 | 2次 | 0次 | **不合格** |\n\n### 3.2 主要交货问题\n- 2024年7月：因原材料短缺延迟发货3天，导致我司生产线停工1天。\n- 2024年11月：订单数量1000件，实际到货994件，短缺6件，补货耗时5天。\n- 2025年2月：包装箱受潮导致部分产品生锈，退回重做。\n\n### 3.3 供应商解释\n- 表示已与上游材料供应商签订长期保供协议（2025年1月起生效）。\n- 将包装材料升级为防潮真空包装（2025年3月起执行）。\n\n**交货评分：68分（满分100）**\n\n---\n\n## 四、价格评估\n\n### 4.1 价格对比（主要产品）\n\n| 产品名称 | 本供应商单价（元/件） | 市场均价（元/件） | 价格优势 |\n|----------|----------------------|-------------------|----------|\n| 电机轴（45#钢） | 8.20 | 8.50 | 低3.5% |\n| 法兰盘（6061铝）",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 供应商评估报告\n\n**报告编号：** SUP-EVAL-2024-018\n**评估日期：** 2024年11月15日\n**评估部门：** 采购管理中心\n**评估周期：** 2024年8月—2024年10月\n\n---\n\n## 一、评估概述\n\n为规范供应链管理、降低采购风险，本次对**深圳市恒达精密电子有限公司**进行为期三个月的综合评估。本次评估采用定量与定性相结合的方法，从质量、交货、价格、服务四个维度进行打分，满分100分。\n\n---\n\n## 二、供应商基本信息\n\n| 项目 | 内容 |\n|------|------|\n| 公司名称 | 深圳市恒达精密电子有限公司 |\n| 成立时间 | 2012年6月 |\n| 注册资金 | 5000万元人民币 |\n| 法定代表人 | 张明华 |\n| 员工规模 | 380人 |\n| 生产面积 | 12000平方米 |\n| 主要产品 | PCB板、电子连接器、精密注塑件 |\n| 月产能 | 200万件 |\n| 资质认证 | ISO 9001:2015、ISO 14001:2015、IATF 16949 |\n| 合作历史 | 3年（原为二级供应商，2024年提升为一级） |\n| 年销售额 | 约1.8亿元 |\n| 地理位置 | 深圳市宝安区 |\n\n---\n\n## 三、质量评估（权重30%，得分85分）\n\n### 3.1 评估数据\n\n| 评估指标 | 目标值 | 实际值 | 得分 |\n|---------|--------|--------|------|\n| 来料批次合格率 | ≥99.5% | 99.2% | 22/25 |\n| 重大质量问题次数 | 0次 | 1次 | 18/25 |\n| 客户投诉率 | ≤0.1% | 0.15% | 20/25 |\n| 质量改进响应 | 48小时内 | 36小时 | 25/25 |\n| **小计** | — | — | **85/100** |\n\n### 3.2 质量分析\n\n- **优势：** 拥有独立实验室和8名专业QC人员，质量体系完善，改进响应速度快。\n- **问题：** 9月发生一起连接器镀层不良事件，导致3批次返工，影响我司产线进度2天。\n\n---\n\n## 四、交货评估（权重25%，得分88分）\n\n### 4.1 评估数据\n\n| 评估指标 | 目标值 | 实际值 | 得分 |\n|---------|--------|--------|------|\n| 按时交付率 | ≥95% | 96.8% | 28/30 |\n| 订单确认及时率 | ≥98% | 100% | 15/15 |\n| 紧急订单响应 | 24小时 | 18小时 | 30/30 |\n| 平均交付周期 | 7天 | 6.5天 | 15/15 |\n| **小计** | — | — | **88/100** |\n\n### 4.2 交付分析\n\n- **优势：** 紧急订单响应迅速，交付周期短于合同约定，具备一定弹性产能。\n- **问题：** 8月因原材料涨价出现短暂产能紧张，部分订单延迟1-2天。\n\n---\n\n## 五、价格评估（权重20%，得分90分）\n\n### 5.1 评估数据\n\n| 评估指标 | 目标值 | 实际值 | 得分 |\n|---------|--------|--------|------|\n| 价格竞争力 | 市场均价±5% | 低于均价3% | 30/35 |\n| 价格稳定性 | 季度波动≤3% | 1.8% | 30/30 |\n| 成本透明度 | 完全开放 | 完全开放 | 20/20 |\n| 付款方式灵活度 | 月结60天 | 月结90天 | 10/15 |\n| **小计** | — | — | **90/100** |\n\n### 5.2 价格分析\n\n- **优势：** 报价具备市场竞争力，原材料价格联动机制透明合理。\n- **问题：** 付款账期较长（90天），对部分原材料涨价的传导存在2%滞后。\n\n---\n\n## 六、服务与综合评估（权重25%，得分87分）\n\n| 评估指标 | 得分 |\n|---------|------|\n| 沟通配合度 | 22/25 |\n| 技术支持能力 | 20/25 |\n| 售后处理时效 | 23/25 |\n| 持续改进意愿 | 22/25 |\n| **小计** | **87/100** |\n\n---\n\n## 七、综合评分\n\n| 评估维度 | 权重 | 得分 | 加权得分 |\n|---------|------|------|---------|\n| 质量评估 | 30% | 85 | 25.5 |\n| 交货评估 | 25% | 88 | 22.0 |\n| 价格评估 | 20% | 90 | 18.0 |\n| 服务评估 | 25% | 87 | 21.75 |\n| **合计** | **100%** | — | **87.25** |\n\n**综合等级评定：★★★★ B级（良好）**\n\n---\n\n## 八、评估结论与建议\n\n### 8.1 总体结论\n\n深圳市恒达精密电子有限公司综合表现**良好**，在价格竞争力、交付弹性、服务响应方面表现突出，质量管控总体稳定。\n\n### 8.2 合作建议\n\n**✅ 推荐继续合作**，但需附带以下改进条件：\n\n1. **质量改进（必改项）：**\n   - 一个月内提交9月镀层不良的《8D改善报告》；\n   - 建议其来料检验标准从AQL 1.0提升至AQL 0.65。\n\n2. **价格优化（协商项）：**\n   - 争取在Q4大宗订单中将单价再下调1.5%—2%；\n   - 协商将付款账期由90天调整为75天。\n\n3. **产能保障（建议项）：**\n   - 要求其建立**15天安全库存**机制，减少我司紧急订单风险。\n\n4. **下一阶段安排：**\n   - 维持一级供应商资格；\n   - 设定6个月观察期，季度复评一次；\n   - 若综合评分连续两次低于85分，将启动备选供应商引入流程。\n\n---\n\n**报告编制人：** 采购管理中心 李建华\n**审核人：** 采购总监 王晓东\n**批准人：** 供应链副总 陈志远\n\n---\n\n*本报告一式三份，采购部、品质部、供应商各留存一份。*",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_011": {
+    "deepseek-v4-flash": {
+      "output": "# 关于上线“团队任务看板增强功能”的通知\n\n各位同事：\n\n为进一步提升团队协作效率，产品部近期完成了“团队任务看板”的升级迭代。新功能将于 **2025年3月10日（周一）** 正式上线。现将有关事项通知如下：\n\n## 一、功能简介\n“团队任务看板增强功能”在原看板基础上，新增任务**依赖关系标示**、**自动提醒**及**进度估算条**三大模块，帮助各团队更清晰地掌握任务流转状态，减少沟通成本。\n\n## 二、功能亮点\n1. **依赖关系可视化**：支持用箭头连接上下游任务，关键路径一目了然。\n2. **智能提醒**：当前置任务完成后，系统自动向相关成员推送“可开始执行”通知。\n3. **进度估算条**：团队成员可手动填写任务完成百分比，看板上实时显示进度条，便于管理者快速了解整体进展。\n\n## 三、使用方法\n1. 登录公司协作平台，进入任意项目面板，点击上方“看板”标签。\n2. 在卡片详情页底部新增“依赖关系”按钮，拖拽即可建立链接。\n3. 在卡片编辑区可设置“进度百分比”（0-100%），保存后看板卡片将显示对应进度条。\n4. 系统提醒默认开启，如需关闭可在个人设置中调整通知偏好。\n\n## 四、反馈渠道\n使用中如遇到问题或有任何优化建议，欢迎通过以下方式反馈：\n- 企业微信搜索“产品部助手”并留言\n- 发送邮件至 product@company.com\n- 填写在线反馈表单：[点击跳转链接]\n\n产品部将持续跟踪新功能的使用效果，并定期迭代优化。感谢大家的支持！\n\n产品部  \n2025年3月7日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 新功能上线通知\n\n**发布部门：** 产品部  \n**发布时间：** 2025年XX月XX日\n\n---\n\n各位同事：\n\n为提升工作效率、优化使用体验，产品部已完成 **XXX（功能名称）** 的开发与测试工作，现已正式上线。现将相关事项通知如下：\n\n## 一、功能简介\n\n本次上线的\"XXX\"功能，旨在解决 XXX 场景下的 XXX 问题，为用户提供 XXX 服务。功能已覆盖 Web 端/移动端/PC 客户端，登录后即可使用。\n\n## 二、功能亮点\n\n1. **高效便捷**：XX 秒内即可完成 XXX 操作，效率提升 XX%。\n2. **智能推荐**：基于 XX 算法，自动匹配最优方案，降低操作门槛。\n3. **多端协同**：支持多设备同步，数据实时互通，无缝衔接办公场景。\n4. **安全可靠**：通过 XX 级权限管控与数据加密，保障信息安全。\n\n## 三、使用方法\n\n1. 打开 XXX 平台，登录个人账号；\n2. 在首页/工作台点击\"XXX\"入口；\n3. 根据页面提示完成相关操作；\n4. 详细操作指南请查阅：[链接/附件]；\n5. 如有疑问，可联系产品部对接人：XXX（联系方式）。\n\n## 四、反馈渠道\n\n为持续打磨产品体验，欢迎大家积极试用并提出宝贵意见：\n\n- **意见反馈群**：XXX（企业微信/钉钉群号）\n- **邮箱反馈**：product@company.com\n- **在线反馈**：平台内\"帮助与反馈\"入口\n- **反馈截止时间**：2025年XX月XX日\n\n我们将定期汇总并处理各项反馈，持续迭代优化。感谢大家的支持与配合！\n\n---\n\n**产品部**  \n2025年XX月XX日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**关于“智能审批助手”功能上线的通知**\n\n致全体员工：\n\n为优化内部工作流程、提升审批效率，产品部已完成“智能审批助手”新功能的开发与测试。该功能将于**2023年11月15日**正式上线，现将有关事项通知如下：\n\n---\n\n### **一、功能简介**\n“智能审批助手”是集成在OA系统中的自动化工具，可协助员工快速填写、提交常见行政与业务审批单（如报销、请假、采购等），并通过智能识别与规则匹配，自动补充信息、预审格式与合规性，缩短审批流转时间。\n\n---\n\n### **二、功能亮点**\n1. **智能表单填写**：自动关联历史数据，减少重复输入。\n2. **实时合规检查**：提交前自动提示不符合规范的内容（如金额超限、附件缺失等）。\n3. **审批流程可视化**：清晰展示当前审批节点及预估完成时间。\n4. **移动端适配**：支持手机端便捷操作。\n\n---\n\n### **三、使用方法**\n1. 登录OA系统，进入“审批中心”页面。\n2. 选择需提交的审批类型，系统将自动调用“智能审批助手”。\n3. 根据提示填写或确认信息，完成智能检查后一键提交。\n4. 首次使用可通过页面右侧的“?”图标查看图文指引。\n\n---\n\n### **四、反馈渠道**\n如在使用过程中遇到问题或有优化建议，请通过以下方式反馈：\n- **OA内反馈**：进入“智能审批助手”页面，点击“反馈”按钮提交。\n- **邮件反馈**：发送至产品部邮箱 **product_feedback@company.com**，标题注明【智能审批助手反馈】。\n- **定期调研**：上线一周后将开展全员体验问卷调查，请留意通知。\n\n我们将持续收集意见并迭代优化，感谢各位的支持与配合！\n\n---\n\n**产品部**\n**2023年11月10日**",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_012": {
+    "deepseek-v4-flash": {
+      "output": "# 竞品分析报告框架\n\n## 一、竞品概况\n\n选取以下三款核心竞品作为分析对象：\n\n| 竞品名称 | 公司/背景 | 上线时间 | 主要版本 | 用户规模/市场份额 | 定位概述 |\n|---------|-----------|---------|----------|------------------|----------|\n| 竞品A   | 某科技公司（国内头部） | 2018年 | V3.2 | 月活5000万 | 面向中小企业的轻量级协作平台 |\n| 竞品B   | 某国际巨头 | 2015年 | V5.0 | 月活2亿 | 全行业专业级项目管理工具 |\n| 竞品C   | 某创业公司 | 2020年 | V2.1 | 月活300万 | 聚焦研发团队的敏捷管理工具 |\n\n*说明：以上数据为示例，实际分析时需注明数据来源及统计时间。*\n\n## 二、核心功能对比\n\n| 功能模块 | 竞品A | 竞品B | 竞品C | 我们的产品 |\n|---------|-------|-------|-------|-----------|\n| 任务管理 | 基本清单+看板 | 甘特图+看板+表格 | 看板+Scrum面板 | 待评估 |\n| 项目模板 | 10+行业模板 | 50+预设模板 | 仅5种 | 待评估 |\n| 实时协作 | 文档协同+评论 | 全功能在线编辑 | 简单批注 | 待评估 |\n| 移动端能力 | iOS/Android原生 | 全平台支持 | 仅有iOS | 待评估 |\n| 第三方集成 | 5个主流应用 | 200+API对接 | 无 | 待评估 |\n| 自动化工作流 | 基础触发器 | 高级IFTTT式引擎 | 无 | 待评估 |\n\n**文字总结：** 竞品B在功能完整度和生态集成上具备绝对优势，但学习成本较高；竞品A以“轻量+模板化”满足中小团队快速上手的需求；竞品C专注研发场景，在敏捷实践上深度较好，但通用性不足。我们的产品需结合自身定位，在功能覆盖广度和核心场景深度之间做出取舍。\n\n## 三、优劣势分析\n\n| 竞品 | 优势（Strengths） | 劣势（Weaknesses） |\n|------|-------------------|-------------------|\n| 竞品A | ①界面简洁，学习成本低<br>②免费版功能足够<br>③背靠大厂生态 | ①项目管理深度不足<br>②权限控制过于简单<br>③数据导出受限 |\n| 竞品B | ①功能全面，适配复杂场景<br>②强大的API和集成能力<br>③企业级安全合规 | ①价格高昂<br>②新用户上手慢<br>③移动端体验笨重 |\n| 竞品C | ①极致贴合研发流程<br>②数据统计可视化<br>③社区活跃插件丰富 | ①非研发场景几乎不可用<br>②团队规模支持有限<br>③文档功能薄弱 |\n\n**文字总结：** 竞品A“易用性”是核心武器，适合快速获客；竞品B凭借“全而专”锁定头部客户；竞品C通过“小而美”在细分赛道建立壁垒。我们的产品在起步阶段应避免与B直接竞争，可借鉴A的体验和C的场景聚焦。\n\n## 四、市场定位\n\n| 竞品 | 目标用户画像 | 核心场景 | 市场策略 |\n|------|-------------|---------|---------|\n| 竞品A | 20-50人中小型团队（互联网、广告、教育） | 日常任务协作、轻量项目管理 | 免费+增值服务、口碑传播 |\n| 竞品B | 200人以上中大型企业（金融、制造、咨询） | 复杂项目组合管理、企业级流程 | 销售驱动、大客户定制 |\n| 竞品C | 10-50人研发团队（软件、游戏、硬件） | 迭代管理、缺陷跟踪、工时统计 | 社区运营、开发者影响力",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 竞品分析报告框架\n\n**报告名称：__________________竞品分析报告**\n**编制部门：__________________**\n**编制日期：__________________**\n**版本号：V1.0**\n\n---\n\n## 一、报告概述\n\n### 1.1 分析目的\n- 明确竞品选择范围，洞察市场竞争格局\n- 识别竞品核心优势与短板，为产品策略提供依据\n- 寻找市场差异化机会，指导产品规划与迭代方向\n\n### 1.2 分析维度\n本次分析围绕\"产品功能、市场表现、商业模式\"三大维度展开，涵盖以下六大模块：**竞品概况、核心功能对比、优劣势分析、市场定位、定价策略、对我们的启示**。\n\n### 1.3 竞品选择说明\n| 序号 | 竞品名称 | 选择理由 | 竞品类型 |\n|------|----------|----------|----------|\n| 1 | 竞品A | 直接竞品，市占率前三 | 核心竞品 |\n| 2 | 竞品B | 商业模式相近，用户重叠度高 | 核心竞品 |\n| 3 | 竞品C | 行业标杆，技术领先 | 标杆竞品 |\n| 4 | 竞品D | 创新型产品，新兴代表 | 潜在竞品 |\n\n---\n\n## 二、竞品概况\n\n### 2.1 竞品基本信息表\n\n| 维度 | 竞品A | 竞品B | 竞品C | 竞品D | 我方产品 |\n|------|-------|-------|-------|-------|----------|\n| **公司名称** | | | | | |\n| **成立时间** | | | | | |\n| **融资轮次/规模** | | | | | |\n| **产品定位** | | | | | |\n| **核心目标用户** | | | | | |\n| **主要业务范围** | | | | | |\n| **用户规模/DAU** | | | | | |\n| **市场份额** | | | | | |\n| **官网/App下载量** | | | | | |\n| **核心运营城市** | | | | | |\n\n### 2.2 竞品发展历程（文字描述）\n对每款竞品的发展轨迹进行简要梳理，重点说明关键里程碑事件：\n- **竞品A**：________________________________________________\n- **竞品B**：________________________________________________\n- **竞品C**：________________________________________________\n- **竞品D**：________________________________________________\n\n### 2.3 团队与背景分析\n| 竞品 | 核心团队背景 | 资源优势 | 战略意图 |\n|------|--------------|----------|----------|\n| 竞品A | | | |\n| 竞品B | | | |\n| 竞品C | | | |\n| 竞品D | | | |\n\n---\n\n## 三、核心功能对比\n\n### 3.1 功能模块对比矩阵\n\n| 功能模块 | 核心功能点 | 我方产品 | 竞品A | 竞品B | 竞品C | 竞品D |\n|----------|-----------|----------|-------|-------|-------|-------|\n| **基础功能** | 功能1 | ✅支持 | ✅支持 | ✅支持 | ✅支持 | ❌不支持 |\n| | 功能2 | ✅支持 | ✅支持 | ❌不支持 | ✅支持 | ✅支持 |\n| | 功能3 | ⚠️部分支持 | ✅支持 | ✅支持 | ✅支持 | ❌不支持 |\n| **核心功能** | 功能4 | ✅支持 | ⚠️部分支持 | ✅支持 | ✅支持 | ⚠️部分支持 |\n| | 功能5 | ❌不支持 | ✅支持 | ✅支持 | ✅支持 | ❌不支持 |\n| **增值功能** | 功能6 | ✅支持 | ❌不支持 | ⚠️部分支持 | ✅支持 | ✅支持 |\n| | 功能7 | ⚠️部分支持 | ✅支持 | ❌不支持 | ✅支持 | ✅支持 |\n| **创新功能** | 功能8 | ❌不支持 | ❌不支持 | ❌不支持 | ⚠️部分支持 | ✅支持 |\n\n> **图例说明**：✅完全支持 ⚠️部分支持 ❌不支持\n\n### 3.2 核心功能深度分析（文字描述）\n\n**3.2.1 我方产品核心功能优势**\n详细说明我方在功能层面的核心优势，例如功能创新性、用户使用体验、场景覆盖度等。\n\n**3.2.2 竞品差异化功能亮点**\n- **竞品A**：____________________\n- **竞品B**：____________________\n- **竞品C**：____________________\n- **竞品D**：____________________\n\n**3.2.3 功能缺失与改进点**\n通过对比识别我方功能的缺失项与待优化项。\n\n---\n\n## 四、优劣势分析\n\n### 4.1 各竞品 SWOT 分析\n\n#### 4.1.1 竞品A SWOT 分析\n\n| 类别 | 内容描述 |\n|------|----------|\n| **S（优势）** | 1. ____________________<br>2. ____________________ |\n| **W（劣势）** | 1. ____________________<br>2. ____________________ |\n| **O（机会）** | 1. ____________________<br>2. ____________________ |\n| **T（威胁）** | 1. ____________________<br>2. ____________________ |\n\n#### 4.1.2 竞品B SWOT 分析\n（格式同上，按需复制）\n\n#### 4.1.3 竞品C SWOT 分析\n（格式同上，按需复制）\n\n#### 4.1.4 竞品D SWOT 分析\n（格式同上，按需复制）\n\n### 4.2 综合优劣势对比表\n\n| 评估维度 | 我方产品 | 竞品A | 竞品B | 竞品C | 竞品D |\n|----------|----------|-------|-------|-------|-------|\n| **产品功能完整度** | ★★★★ | ★★★★ | ★★★ | ★★★★★ | ★★★ |\n| **用户体验** | ★★★★ | ★★★ | ★★★★ | ★★★★★ | ★★★★ |\n| **技术能力** | ★★★ | ★★★★ | ★★★ | ★★★★★ | ★★★★ |\n| **品牌影响力** | ★★★ | ★★★★★ | ★★★★ | ★★★★★ | ★★ |\n| **运营能力** | ★★★ | ★★★★ | ★★★★ | ★★★★★ | ★★ |\n| **盈利能力** | ★★★ | ★★★★ | ★★★ | ★★★★★ | ★★ |\n| **创新能力** | ★★★★ | ★★★ | ★★★ | ★★★★ | ★★★★★ |\n\n> **评分说明**：★为1分，★越多表示该项能力越强（满分5分）\n\n---\n\n## 五、市场定位\n\n### 5.1 目标用户画像对比\n\n| 维度 | 我方产品 | 竞品A | 竞品B | 竞品C | 竞品D |\n|------|----------|-------|-------|-------|-------|\n| **用户年龄** | | | | | |\n| **用户性别** | | | | | |\n| **用户地域** | | | | | |\n| **用户收入** | | | | | |\n| **职业类型** | | | | | |\n| **使用场景** | | | | | |\n| **核心诉求** | | | | | |\n\n### 5.2 品牌定位分析\n\n| 竞品 | Slogan/品牌口号 | 品牌调性 | 核心价值主张 | 用户心智占位 |\n|------|----------------|----------|--------------|--------------|\n| 我方产品 | | | | |\n| 竞品A | | | | |\n| 竞品B | | | | |\n| 竞品C | | | | |\n| 竞品D | | | | |\n\n### 5.3 市场定位象限图（文字描述）\n\n以\"用户价格敏感度\"为横轴、\"产品高端化程度\"为纵轴，构建二维定位象限：\n\n```\n        高端化\n          ↑\n          │   竞品C ●\n          │              ● 竞品D\n          │\n          │   ● 我方产品\n          │   ● 竞品A\n          │           ● 竞品B\n          │\n        低端化 └────────────────→ 价格敏感\n              高敏感              低敏感\n```\n\n**定位解读**：\n我方产品目前位于________________象限，主要竞品分布于________________区域，建议未来向________________方向延伸。\n\n---\n\n## 六、定价策略\n\n### 6.1 定价模式对比表\n\n| 维度 | 我方产品 | 竞品A | 竞品B",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_013": {
+    "deepseek-v4-flash": {
+      "output": "**邮件主题：关于项目延期交付的通知**\n\n尊敬的各位同事/相关方：\n\n感谢大家一直以来对本项目的关注与支持。现就项目进展情况向大家作出说明。\n\n由于在项目推进过程中，部分关键技术难点在前期评估阶段未能充分预判，实际开发过程中遇到的技术难度超出预期，导致项目整体进度受到一定影响。为确保项目最终交付质量及稳定性，经项目组审慎评估，决定对原定交付时间作出调整。\n\n具体调整如下：\n\n- **原定交付日期**：2025年6月30日\n- **调整后交付日期**：2025年7月15日\n\n此次延期将对后续相关计划产生一定影响，主要包括：\n\n1. 内部测试及联调周期相应压缩，后期需要提高测试效率；\n2. 下游相关依赖部门的工作排期需同步调整；\n3. 原计划于6月底启动的下一阶段准备工作将顺延至7月中旬后开展。\n\n为最大限度降低延期带来的影响，项目组已制定以下补救措施：\n\n1. 增配开发及测试资源，集中攻坚核心技术难题；\n2. 细化每日工作节点，实行进度日报制度，确保关键里程碑按时达成；\n3. 加强跨部门沟通协调，提前准备联调环境，压缩后续联调时间；\n4. 对关键风险点提前进行预演排查，避免二次延期。\n\n我们对此次调整带来的不便深表歉意，也感谢各位的理解与支持。项目组将全力以赴，确保在7月15日前保质保量完成交付。\n\n如有任何疑问，请随时与项目组联系。\n\n顺祝工作顺利！\n\n项目组  \n2025年6月25日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 项目延期通知邮件\n\n---\n\n**邮件主题：** 【重要通知】关于\"XX项目\"交付时间调整的说明\n\n**收件人：** 项目相关方 / 各部门负责人\n\n**抄送：** 项目管理办公室、总经办\n\n**发件人：** [项目经理姓名]\n\n**发件日期：** 2024年6月25日\n\n---\n\n尊敬的各位领导、项目组成员及相关同事：\n\n大家好！\n\n首先感谢大家在本项目推进过程中付出的辛勤努力与密切配合。经项目组近期对开发进度进行全面复盘与评估，现就项目交付时间调整事宜作如下正式说明，请各位知悉并做好相应安排。\n\n## 一、延期情况说明\n\n根据原定项目计划，本项目应于 **2024年6月30日** 完成阶段性交付目标。经项目组审慎评估，结合当前实际研发进展，**现将交付时间调整至2024年7月15日**，整体延期 **15个自然日**。\n\n## 二、延期原因分析\n\n经过技术团队深入复盘，本次延期主要源于以下方面：\n\n**1. 技术难度超预期**\n项目核心模块在开发过程中遇到了若干关键技术难题，特别是 **[具体技术难点，如：系统高并发处理算法、数据迁移兼容性方案、第三方接口联调]** 等方面，实际情况远比前期评估更为复杂，导致研发周期被迫延长。\n\n**2. 前期技术调研不够充分**\n部分技术方案在原型设计阶段未能充分覆盖真实业务场景下的极端情况，在实际落地过程中出现多次方案返工，消耗了宝贵的开发时间。\n\n**3. 问题发现与解决周期较长**\n针对突发技术障碍，团队虽迅速组织技术攻关，但部分瓶颈问题需要反复验证和调优，整体解决周期超出预期。\n\n## 三、对后续计划的影响\n\n为保障延期决策的全面性，项目组已对后续工作进行系统评估，具体影响如下：\n\n| 计划事项 | 原定时间 | 调整后时间 | 影响程度 |\n|---------|---------|-----------|---------|\n| UAT 用户验收测试 | 7月1日—7月10日 | 7月16日—7月25日 | 顺延启动 |\n| 试运行阶段 | 7月11日—7月20日 | 7月26日—8月5日 | 顺延启动 |\n| 正式上线部署 | 7月21日 | 8月6日 | 顺延 |\n| 二期项目启动 | 8月1日 | 8月15日 | 适当调整 |\n\n**重要提示：**\n- 与 **[外部客户/合作方]** 约定的交付节点需重新沟通确认；\n- 二期项目启动时间将相应顺延，但 **不会影响年度整体战略目标**；\n- 各业务部门的培训及配套准备工作时间略有压缩，请提前做好协调。\n\n## 四、补救措施与改进计划\n\n为最大限度降低延期带来的影响，项目组已制定以下补救与改进措施：\n\n**▶ 立即执行的补救措施：**\n\n1. **增派技术骨干力量**：从其他项目组抽调 **[X]** 名资深工程师加入攻坚团队，并申请外部技术专家进行专项支持；\n\n2. **实行每日站会机制**：建立\"日清日结\"工作模式，每日同步进度、暴露风险、及时决策；\n\n3. **关键路径重点突破**：集中资源优先攻克阻塞性问题，砍掉或后置非核心功能需求，确保主流程优先交付；\n\n4. **加强测试前置**：安排测试团队提前介入开发环节，同步开展单元测试和集成测试，减少后期返工。\n\n**▶ 长效改进机制：**\n\n1. 完善项目立项阶段的技术可行性评估流程，建立\"技术预研 + 原型验证\"双保险机制；\n2. 引入更科学的项目工时评估模型，引入风险缓冲期（建议预留 **15%—20%**）；\n3. 建立重大技术风险预警机制，关键节点设置技术评审（TR）评审点。\n\n## 五、沟通与确认事宜\n\n为确保信息同步顺畅，项目组将采取以下沟通方式：\n\n- **每日 18:00 前** 发送《项目日报》至核心干系人；\n- **每周一 10:00** 召开项目周例会（线上），同步进度与风险；\n- 如遇重大节点变更，将第一时间以邮件形式正式通知。\n\n如各位对本次时间调整有任何疑问或建议，欢迎随时与我或项目组联系沟通（联系方式：XXX-XXXXXXXX）。我们将竭尽全力推进项目，确保按时、按质完成交付目标。\n\n再次感谢各位的理解与支持！对本次延期给各部门工作安排带来的不便，我们深表歉意。项目组将以高度负责的态度全力推进后续工作，力争将影响降至最低。\n\n顺祝商祺！\n\n---\n\n**发件人：** [项目经理姓名]\n**职务：** [项目名称] 项目经理\n**电话：** [手机号码]\n**邮箱：** [邮箱地址]\n**部门：** [所属部门]\n\n---\n\n**附件：**\n1. 修订版项目里程碑计划表\n2. 关键技术风险评估报告\n3. 资源调配及人员保障方案",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**主题：关于【XX项目】进度延期的通知**\n\n各位同事/相关合作伙伴：\n\n您好！\n\n首先，感谢您一直以来对【XX项目】的关注与支持。\n\n现就【XX项目】的进展情况做重要通知：经项目团队审慎评估，由于在系统核心模块的开发过程中，所涉及的技术集成复杂度与底层架构的调整难度超出项目初期评估预期，为确保最终交付质量与系统稳定性，我们不得不对原定项目计划做出调整。\n\n**原定计划：** 项目整体交付日期为**2023年6月30日**。\n**调整后计划：** 项目整体交付日期顺延至**2023年7月15日**。\n\n**此调整对后续主要计划的影响如下：**\n1.  **整体进度：** 项目各阶段里程碑将相应后移约两周。\n2.  **资源安排：** 部分关联的测试、部署及验收计划将同步调整，具体日程将由项目经理单独与相关方协调确认。\n3.  **交付物移交：** 相关文档、培训及知识转移等后续工作将按新时间表进行。\n\n**为最大限度减少延期影响，我们已启动以下补救措施：**\n1.  **加强技术攻坚：** 增派资深工程师组建专项攻关小组，集中资源解决技术难点。\n2.  **优化开发流程：** 在保证质量的前提下，优化并行开发与测试流程，提升效率。\n3.  **强化进度监控：** 建立更频繁的日会与进度同步机制，确保问题及时发现与解决。\n\n对于此次项目延期给您的工作安排可能带来的不便，我们深表歉意。我们深知时间计划的重要性，团队正全力以赴，确保在7月15日前交付一个高质量、稳定可靠的项目成果。\n\n如有任何疑问或需进一步沟通，请随时联系项目经理【姓名】（电话：XXX-XXXX-XXXX；邮箱：xxx@company.com）。\n\n再次感谢您的理解与支持！\n\n顺祝商祺！\n\n【您的姓名/部门】\n【公司名称】\n【日期】",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_014": {
+    "deepseek-v4-flash": {
+      "output": "# 用户研究调查报告：企业在线协作平台（WorkSync）用户体验优化研究\n\n**报告编号**：UR-2024-005  \n**提交日期**：2024年12月15日  \n**研究团队**：UX Research Team，产品设计部  \n\n---\n\n## 1. 研究背景\n\n随着远程办公与混合工作模式的普及，企业级在线协作平台已成为组织生产力的核心工具。WorkSync（内部代号）作为公司主力产品，已拥有约50万企业用户。然而，根据2024年Q3产品数据，用户周活跃度同比下降8%，任务完成率（如会议预约、文档协作、文件共享）从Q1的82%下滑至71%。为识别痛点、提升用户粘性与效率，特开展本次用户研究，旨在深入理解不同角色用户在工作场景中的行为模式、认知负荷与情感体验，为产品迭代提供数据驱动的设计建议。\n\n---\n\n## 2. 研究方法\n\n本研究采用混合研究方法（Mixed Methods），结合定量与定性数据，确保结论的广度和深度。\n\n| 方法 | 说明 | 样本量 |\n|------|------|--------|\n| **深度访谈** | 半结构化访谈，每人60分钟，涵盖工作流程、痛点、期望 | 15人 |\n| **线上问卷** | 采用李克特5点量表，测量满意度、易用性、功能重要性 | 1,200份（有效回收1,023份，有效率85.25%） |\n| **远程可用性测试** | 完成5项核心任务（创建会议、上传文件、分配任务、查看通知、搜索历史记录），记录完成率、错误次数、时间 | 30人 |\n| **后台日志分析** | 提取近6个月用户行为数据（点击流、功能使用频率、流失节点） | 50万用户脱敏数据 |\n\n---\n\n## 3. 样本描述\n\n### 3.1 人口统计学特征\n- **行业分布**：科技（32%）、金融（20%）、教育（18%）、医疗（12%）、其他（18%）\n- **岗位角色**：普通员工（45%）、项目/团队管理者（28%）、高级管理者/决策层（15%）、行政/运营支持（12%）\n- **使用年限**：<1年（25%）、1-3年（48%）、>3年（27%）\n- **日均使用时长**：≤1小时（15%）、1-3小时（52%）、>3小时（33%）\n\n### 3.2 用户画像（核心三类）\n| 画像 | 典型行为 | 代表性痛点 |\n|------|---------|----------|\n| **高效执行者**（普通员工） | 频繁查看通知、接收文件、参与会议 | “通知轰炸，找不到重点” |\n| **协调统筹者**（项目经理） | 创建任务、分配资源、追踪进度 | “跨项目信息分散，重复操作多” |\n| **战略决策者**（高管） | 审阅报告、查看日历、要求快速响应 | “数据可视化弱，汇总效率低” |\n\n---\n\n## 4. 关键发现\n\n### 发现1：信息噪音导致认知超载，通知聚合需要优化\n- 后台日志显示，用户平均每日收到通知28.7条，其中62%被用户点击后立即返回或忽略（即误触或无关通知）。\n- 可用性测试中，仅40%的用户能在5秒内找到“重要消息”与“系统消息”的切换入口。\n- 问卷中，“通知过多打扰工作”一项得分4.2/5（高困扰度），且与用户使用满意度呈显著负相关（r=-0.61, p<0.01）。\n\n**图1：通知类型与用户关注度（后台日志）**  \n| 通知类型 | 每日平均数量 | 用户关注率（点击后停留>10秒） |\n|----------|-------------|---------------------------|\n| @提及 | 6.3 | 73% |\n| 任务到期 | 4.1 | 65% |\n| 文件更新 | 7.5 | 41% |\n| 系统公告 | 10.8 | 22% |\n\n> 解析：系统",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "[API Error] Request timed out.",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    }
+  },
+  "doc_office_015": {
+    "deepseek-v4-flash": {
+      "output": "# 密码安全须知公告\n\n**发文部门**：信息技术部（IT部）  \n**发布日期**：2025年3月17日  \n**适用对象**：全体员工  \n\n---\n\n## 一、密码安全重要性\n\n密码是保护公司信息系统、核心数据及个人账号的第一道防线。近年来，针对企业系统的网络攻击、账号盗用、数据泄露事件频发，其中**弱口令、重复使用密码、长期不更换密码**是导致安全事件的主要原因。为保障公司资产安全与业务连续性，请全体员工高度重视密码管理，共同维护企业信息安全环境。\n\n---\n\n## 二、密码设置规范\n\n请务必遵循以下标准设置您的账户密码：\n\n| 项目         | 要求                                                                 |\n|--------------|----------------------------------------------------------------------|\n| **最小长度** | 不少于12个字符                                                       |\n| **复杂度**   | 必须同时包含以下四类字符中的至少三类：<br>• 大写英文字母（A-Z）<br>• 小写英文字母（a-z）<br>• 数字（0-9）<br>• 特殊字符（如 `!@#$%^&*()_+-=[]{}|;:',.<>?/`） |\n| **禁止项**   | • 不得包含用户名、姓名、工号、生日、手机号等可关联个人信息<br>• 不得使用连续键盘序列（如 `qwerty`、`123456`）<br>• 不得使用常见弱口令（如 `password`、`admin`、`12345678`） |\n\n**示例合规密码**（请勿直接照搬）：  \n`Gw8#pL2$zQv!` （12位，含大写、小写、数字、特殊字符）\n\n---\n\n## 三、定期更换建议\n\n为降低密码长期暴露带来的泄密风险，请遵守以下更换周期：\n\n- **核心业务系统**（如OA、ERP、财务系统）：每 **90天** 更换一次\n- **普通办公账号**（如邮箱、内网账号）：每 **180天** 更换一次\n- **特殊情况**：若怀疑密码已泄露（如收到异常登录提醒、设备丢失等），应立即更换密码，无需等待周期\n\n> 注意事项：新密码不得与最近5次使用过的密码相同。\n\n---\n\n## 四、密码遗忘处理方式\n\n若因遗忘密码导致无法登录系统，请按以下流程处理：\n\n1. **自助重置**：大部分系统已支持通过绑定的手机号或备用邮箱自助重置密码。请访问对应系统的登录页，点击“忘记密码”并按照提示操作。\n2. **IT服务台协助**：若自助重置失败，请联系IT服务台：\n   - 电话：**XXXX-XXXXXXX**（内线XXXX）\n   - 邮箱：**ITSupport@company.com**\n   - 工单系统：[IT服务台链接]\n3. **身份核验**：为保障账号安全，IT人员将对申请人进行身份核实（如员工工号、部门、手机验证码等），确认无误后方可执行密码重置。**严禁通过即时通讯工具（微信、QQ）将密码直接告知他人**。\n\n---\n\n## 五、其他提示\n\n- **禁止共享密码**：任何情况下不得将个人账户密码告知他人，包括IT同事（IT人员不会主动索要密码）。\n- **谨慎存储**：建议使用公司批准的密码管理器（如KeePass、1Password）记录密码，勿将密码明文记录在桌面便签、文档或邮件中。\n- **双因素认证**：对于支持双因素认证的系统（如VPN、远程桌面），请务必启用，进一步提升安全性。\n\n信息安全，人人有责。感谢大家的配合与支持！\n\n---\n\n**信息技术部**  \n2025年3月17日",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "MiniMax-m3": {
+      "output": "# 关于加强密码安全管理的通知\n\n**发文部门：信息技术部**\n**发文日期：2024年XX月XX日**\n**通知编号：IT-SEC-2024-XXX**\n\n---\n\n## 致全体员工：\n\n为加强公司信息安全管理，保障业务系统及数据资产安全，防范因密码泄露引发的网络安全风险，依据《中华人民共和国网络安全法》及公司《信息安全管理制度》相关规定，现就密码安全管理有关事项通知如下，请全体员工认真学习并严格遵守执行。\n\n---\n\n## 一、密码安全的重要性\n\n密码是保障公司信息系统、办公平台及业务数据安全的第一道防线，其重要性主要体现在以下方面：\n\n1. **保护企业核心数据**：公司客户信息、财务数据、技术资料等核心资产均依托密码访问控制，弱密码或密码泄露将直接导致数据外泄，给公司造成重大经济损失与声誉损害。\n\n2. **防范网络攻击**：暴力破解、撞库攻击、钓鱼欺诈等网络攻击手段日益猖獗，弱密码极易被攻破，进而引发账户被盗、信息被篡改等安全事件。\n\n3. **保障个人办公安全**：每位员工的账户安全不仅关系到个人，更关系到所在部门及整个公司的网络安全，一旦失守可能造成连锁性安全事件。\n\n4. **履行合规义务**：遵守密码安全规范是员工履行信息安全责任的基本要求，违反相关规定者将依据公司制度承担相应责任。\n\n---\n\n## 二、密码设置规范\n\n为确保密码强度，请全体员工严格按照以下规范设置各类系统账户密码：\n\n### （一）长度要求\n- 工作邮箱、OA系统、VPN等核心系统密码长度**不少于12位**；\n- 财务系统、源代码管理平台、数据库等高敏感系统密码长度**不少于14位**；\n- 服务器、核心网络设备管理密码长度**不少于16位**。\n\n### （二）复杂度要求\n密码须同时包含以下四类字符中的**至少三类**：\n\n| 字符类型 | 示例 |\n|---------|------|\n| 大写字母 | A、B、C……Z |\n| 小写字母 | a、b、c……z |\n| 数字 | 0、1、2……9 |\n| 特殊字符 | ! @ # $ % ^ & * ( ) _ + - = 等 |\n\n高敏感系统密码必须**同时包含四类字符**。\n\n### （三）禁止事项\n严禁出现以下情形：\n- 使用连续数字或字母（如123456、abcdef、qwerty等）；\n- 使用与本人相关的易猜信息（如生日、手机号、姓名拼音、工号、身份证号等）；\n- 使用与用户名相同或互为倒序的密码；\n- 使用公司名称、常见单词、键盘连续按键组合；\n- 多系统使用**同一密码**（核心系统密码必须单独设置）；\n- 在便签、文件、聊天记录中明文记录密码。\n\n### （四）参考示例\n**合格密码示例**：`Kj#8mP2$vL9nQ`（建议使用密码短语组合，如`Tj@2024_Coffee#Morning`）\n\n---\n\n## 三、定期更换建议\n\n为降低密码长期使用带来的安全风险，请按以下频次定期更换密码：\n\n| 系统类型 | 建议更换周期 | 强制更换周期 |\n|---------|------------|------------|\n| 普通办公系统（OA、邮件等） | 每90天 | 最长不超过180天 |\n| 业务系统、财务系统 | 每60天 | 最长不超过90天 |\n| 服务器、数据库、管理后台 | 每30天 | 最长不超过60天 |\n| 临时账户、外协账户 | 每次使用后变更 | — |\n\n**特别提醒：**\n- 系统检测到密码即将到期时，将提前15天通过邮件及系统弹窗提醒，请及时更换；\n- 任何情况下**不得将新密码告知他人**，包括IT部门同事及上级领导；\n- 新密码不得与近三次使用过的旧密码相同；\n- 如发现账户存在异常登录或疑似泄露情况，应**立即**修改密码并报备信息技术部。\n\n---\n\n## 四、密码遗忘处理方式\n\n如遇密码遗忘或锁定，请按以下流程办理：\n\n### （一）自助重置\n1. 登录公司统一身份认证平台（SSO）；\n2. 点击\"忘记密码\"链接；\n3. 通过已绑定的**手机短信验证码**或**企业微信扫码**完成身份验证；\n4. 按照系统提示设置新密码。\n\n### （二）人工协助\n如自助重置失败或未绑定验证方式，请按以下方式联系处理：\n\n- **提交工单**：登录IT服务门户（http://it.xxx.com）提交密码重置申请；\n- **电话求助**：拨打IT服务热线内线 **8888**（外线 010-XXXXXXXX）；\n- **现场办理**：携带本人**工牌**至信息技术部办公室（XX楼XX室）办理；\n- **远程支持**：通过企业微信联系\"IT技术支持\"在线处理。\n\n**办公时间：** 工作日 8:30—18:00\n**紧急联系人：** 张工（138XXXXXXXX）、李工（139XXXXXXXX）\n\n### （三）注意事项\n- 信息技术部工作人员**绝不会**通过电话、邮件、短信等方式索要您的密码，请妥善保管并定期更换；\n- 重置密码后首次登录，请立即修改为您熟知的强密码，并妥善保管；\n- 如怀疑密码已被他人知晓，请及时报备，信息技术部将协助开展安全核查。\n\n---\n\n## 五、违规责任\n\n请全体员工高度重视密码安全管理工作，对违反本通知规定的行为，公司将依据《信息安全奖惩管理办法》视情节轻重给予通报批评、扣减绩效、岗位调整等处理；因密码管理不当造成安全事故的，将依法依规追究相关人员责任，构成犯罪的将移送司法机关处理。\n\n---\n\n**信息技术部将持续开展密码安全专项检查，请各部门做好自查整改工作。** 让我们共同筑牢公司信息安全防线！\n\n如有疑问或建议，请随时与信息技术部联系。\n\n---\n\n**信息技术部**\n**2024年XX月XX日**",
+      "status": "success",
+      "dim": "文档撰写"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "文档撰写"
+    },
+    "kimi-k2.6": {
+      "output": "**关于加强密码安全管理的公告**\n\n致：公司全体员工\n\n为进一步加强公司信息安全体系建设，保障公司商业机密与核心数据安全，防范因密码泄露导致的信息安全事件，现就全员密码使用规范相关事宜公告如下。请各位员工严格遵守并执行。\n\n**一、密码安全重要性**\n\n密码是保护公司信息系统与数据资产的第一道安全屏障。弱密码、默认密码或密码使用不当，极易导致非法入侵、数据泄露、业务中断及经济损失，甚至可能引发法律风险。每一位员工都是公司信息安全的直接责任主体，规范使用密码是维护公司及个人利益的基本义务。\n\n**二、密码设置规范**\n\n1. **长度要求**：密码长度不得少于12位字符。\n2. **复杂度要求**：密码必须同时包含以下四类字符中的至少三类：\n   - 大写英文字母（A-Z）\n   - 小写英文字母（a-z）\n   - 阿拉伯数字（0-9）\n   - 特殊字符（如! @ # $ % ^ & * _ + - = [ ] { } | ; : , . < > ? / ~）\n3. **禁止使用弱密码**：严禁使用与用户名相同、姓名拼音、生日、工号、电话号码、连续数字（如123456）或连续键盘字符（如qwerty）等容易被猜测的密码。\n",
+      "status": "success",
+      "dim": "文档撰写"
+    }
+  },
+  "email_office_001": {
+    "deepseek-v4-flash": {
+      "output": "尊敬的团队：\n\n感谢你们为此次项目提供的方案。经过初步评估，我们注意到方案在某些方面还有改进空间，目前可能无法直接投入使用。为了确保最终成果符合预期目标，烦请重新梳理并优化方案内容。如有任何疑问或需要协助，请随时与我们沟通。\n\n期待你们的新一版方案。感谢配合！",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "**改写后的邮件：**\n\n尊敬的[对方姓名/团队名称]：\n\n您好！\n\n感谢贵方提交的方案及为此付出的努力。\n\n经我方认真审阅与内部讨论，认为目前方案在[具体方面，如：整体规划、可行性分析、技术路径等]仍存在较大的优化空间，与我方实际需求尚有差距，暂不满足落地实施的条件。\n\n为更好地推进项目进展，恳请贵方结合以下几点反馈意见对方案进行系统性调整与重新拟定：\n\n1. **[问题一]**：……\n2. **[问题二]**：……\n3. **[问题三]**：……\n\n期待贵方在 **[具体日期]** 前完成方案修订并反馈，以便我方进一步评估。如有需要，我方愿随时安排会议就相关细节进行深入沟通，确保方案更具针对性和可操作性。\n\n感谢贵方的理解与配合，期待再次合作。\n\n顺祝商祺！\n\n[您的姓名]\n[您的职务]\n[联系方式]\n[公司名称]\n[日期]\n\n---\n\n**改写要点说明：**\n- **去除情绪化用语**：\"太烂了\"\"根本不能用\"等表达被替换为客观、理性的描述。\n- **明确具体问题**：避免笼统否定，补充具体修改方向，便于对方改进。\n- **体现尊重与协作**：加入\"感谢付出\"\"期待合作\"等表达，维护良好的合作关系。\n- **设定明确期限与沟通渠道**：增强可执行性，体现专业素养。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "经评估，目前提交的方案在关键指标与预期目标上存在较大差距，暂未达到可落地实施的标准。建议基于以下重点方向重新调整并优化方案：[可补充具体改进方向]。期待收到修订后的版本，感谢您的配合与支持。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "感谢贵团队的辛苦付出。经审慎评估，目前提交的方案与我们的实际需求尚存一定偏差，暂不具备直接实施的条件。烦请贵团队重新调整优化，如有任何疑问欢迎随时沟通，期待贵方修订后的版本。",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_002": {
+    "deepseek-v4-flash": {
+      "output": "感谢王总参加上周产品发布会，已成立专项小组处理您提出的用户体验问题。下周一会发送详细的产品迭代计划。价格方案正在重新评估，有进展将第一时间通知您。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "感谢王总参加上周产品发布会，并表示高度重视其提出的用户体验问题；已成立专项小组推进产品迭代，预计下周一发送详细迭代计划；价格方案正在重新评估中，后续进展将第一时间同步。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "感谢您参加上周的产品发布会，我们非常重视您提出的用户体验问题。目前已成立专项小组处理，并计划于下周一发送详细的产品迭代计划。价格方案正在重新评估，如有进展会第一时间通知您。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "感谢王总出席上周的产品发布会。针对您提出的用户体验问题，我方已成立专项小组，并将于下周一发送详细的产品迭代计划。关于价格方案目前正在重新评估中，后续如有进展将第一时间通知您。",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_003": {
+    "deepseek-v4-flash": {
+      "output": "**主题：项目进度更新及后续计划**\n\n尊敬的客户，\n\n您好！\n\n感谢您一直以来对我们项目的支持与关注。现向您汇报项目当前进度、遇到的问题以及后续安排，请您知悉。\n\n**一、当前完成情况**  \n截至目前，项目已按计划成功交付5个核心模块中的3个，整体交付进度达到60%。已完成模块均通过了内部测试并稳定运行。\n\n**二、遇到的问题**  \n在推进第四个模块时，我们遇到了第三方服务接口的延期问题，原定于本月中旬交付的接口预计将推迟2周。我们已与第三方供应商积极沟通协调，并启动了应急预案以减少对整体工期的影响。\n\n**三、下一步计划**  \n1. **第四模块**：等待第三方接口到位后，立即启动集成测试，预计需要1周完成测试与修复。  \n2. **第五模块**：开发工作已完成80%，待第四模块稳定后衔接集成。  \n3. **风险应对**：我们已增配开发资源，并计划在接口到位前完成前置工作，争取压缩后续周期。\n\n**四、预计完成时间**  \n受第三方接口延期影响，原定整体交付时间预计顺延2周。优化调整后，项目全部交付时间调整为**2025年5月31日**（原为5月17日）。我们将全力追赶进度，争取提前完成。\n\n如有任何疑问或需要进一步讨论，请随时与我联系。再次感谢您的理解与支持！\n\n祝工作顺利！\n\n项目经理：[您的姓名]  \n[公司名称]  \n[联系方式]  \n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "**项目进度汇报邮件**\n\n---\n\n**主题：**【XX项目】第X期进度汇报及后续计划通知\n\n**收件人：** 客户方项目负责人\n**抄送：** 双方项目相关干系人\n**发件人：** [您的姓名] | 项目经理\n\n---\n\n尊敬的XX总/XX项目组：\n\n您好！\n\n首先感谢贵方一直以来对本项目的大力支持与配合。现就本项目当前进展情况向您做如下汇报，请查阅。\n\n## 一、项目当前完成情况\n\n截至本邮件发出之日，本项目共计规划 **5个核心模块**，目前已按计划交付 **3个模块**，整体进度完成率为 **60%**。具体交付情况如下：\n\n| 序号 | 模块名称 | 状态 | 交付时间 |\n|------|----------|------|----------|\n| 1 | 模块一：[名称] | ✅ 已完成并验收 | YYYY-MM-DD |\n| 2 | 模块二：[名称] | ✅ 已完成并验收 | YYYY-MM-DD |\n| 3 | 模块三：[名称] | ✅ 已完成并验收 | YYYY-MM-DD |\n| 4 | 模块四：[名称] | 🔄 进行中 | 预计 YYYY-MM-DD |\n| 5 | 模块五：[名称] | ⏳ 待启动 | 预计 YYYY-MM-DD |\n\n已交付模块均通过了内部质量测试，并已部署至[测试/预生产]环境供贵方使用。\n\n## 二、当前遇到的问题\n\n在项目推进过程中，我们遇到一项需要向贵方重点说明的**风险事项**：\n\n**问题描述：** 项目依赖的**第三方接口**（[接口名称/供应商名称]）交付出现延期，原计划于 [原定日期] 完成的接口联调，现**预计延期2周**交付。\n\n**影响评估：**\n- 第四模块的部分功能依赖该接口进行数据对接\n- 可能导致模块四的开发及测试周期相应顺延\n- 项目整体交付时间存在调整风险\n\n**应对措施：**\n1. 我方已与第三方供应商紧急沟通，要求其提供明确的交付时间表并加强资源投入；\n2. 我方技术团队已对模块四进行拆分，将**不依赖第三方接口**的功能优先开发，尽量降低对整体进度的影响；\n3. 我方已建立每日跟踪机制，确保第一时间获取接口交付进展。\n\n## 三、下一步工作计划\n\n为最大限度降低延期对项目整体的影响，我方制定了以下工作计划：\n\n| 时间节点 | 工作内容 | 责任人 |\n|----------|----------|--------|\n| 即日起 ~ 2周内 | 推进模块四的独立功能开发，完成内部联调 | 我方研发团队 |\n| 第3周 | 完成第三方接口对接，开展集成测试 | 我方研发+第三方 |\n| 第4周 | 启动模块五开发，进行整体系统联调 | 我方研发团队 |\n| 第5~6周 | 全量系统测试、UAT验收、问题修复 | 双方项目组 |\n| 第7周 | 正式上线部署及交付 | 双方项目组 |\n\n## 四、预计完成时间\n\n根据上述调整计划，**项目预计整体完成时间为 [YYYY-MM-DD]**，较原计划 [原定日期] 顺延约 **2周**。\n\n我方将在后续每周五向贵方同步项目进展，并就关键节点第一时间与贵方沟通。如贵方对上述计划有任何疑问或建议，敬请随时与我联系。\n\n再次感谢贵方的理解与支持！我方将全力以赴，确保项目高质量交付。\n\n顺祝商祺！\n\n---\n\n**发件人：** [您的姓名]\n**职务：** 项目经理\n**联系电话：** [手机号]\n**邮箱：** [邮箱]\n**公司：** [公司名称]\n\n---\n\n如需我针对具体行业、具体模块名称或具体时间节点进行调整，欢迎提供更多细节，我可以为您生成更贴合实际的版本。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "主题：项目进度更新邮件\n\n尊敬的客户，\n\n您好！\n\n我是项目经理[您的姓名]，特此向您汇报项目进度。\n\n当前完成情况：我们已成功交付5个模块中的3个，这些模块均通过测试并获确认。\n\n遇到的问题：在开发过程中，第三方接口延期2周，影响剩余模块的集成。我们正积极协调以尽快解决。\n\n下一步计划：我们将继续推进剩余2个模块的开发和集成，同时密切跟踪接口问题进展，并优化资源分配以确保效率。\n\n预计完成时间：鉴于接口延期，项目整体完成时间将顺延2周，新的预计完成时间为[具体日期，例如：2023年11月15日]。我们将全力以赴确保高质量交付。\n\n感谢您的理解与支持。如有任何疑问，请随时与我联系。\n\n此致  \n敬礼！\n\n[您的姓名]  \n项目经理  \n[公司名称]  \n[联系方式]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_004": {
+    "deepseek-v4-flash": {
+      "output": "**主题：关于2025年度调薪通知**\n\n各位同事：\n\n大家好！\n\n为了持续激励优秀人才，提升组织活力，公司决定启动2025年度调薪工作。本次调薪遵循“绩效导向、向一线倾斜”的原则，具体安排如下：\n\n**一、调薪政策说明**  \n- **绩效导向**：本次调薪主要依据员工2024年度绩效考核结果，表现优异者将获得更大幅度调整。  \n- **向一线倾斜**：优先支持直接创造价值的一线业务岗位，确保资源向关键贡献者及高潜人才集中。\n\n**二、申请条件**  \n1. 2024年12月31日前转正的正式员工（不含实习生、劳务派遣人员及当年退休人员）。  \n2. 上年度绩效考核等级为“B”及以上（含B、B+、A、A+）。  \n3. 无重大违纪记录或未解除的处分。\n\n**三、调薪幅度范围**  \n- **绩效B等**：调薪幅度 3%～5%  \n- **绩效B+等**：调薪幅度 5%～8%  \n- **绩效A等**：调薪幅度 8%～12%  \n- **绩效A+等**：调薪幅度 12%～15%  \n（具体比例由部门负责人结合岗位价值及市场水平综合评估）\n\n**四、生效时间**  \n本次调薪自 **2025年4月1日** 起生效，并将体现在5月工资中。\n\n**五、申请方式**  \n请各部门HRBP于 **2025年3月20日17:00前** 通过OA系统“年度调薪申请”模块提交本部门调薪名单及建议幅度。员工个人无需单独申请，如有疑问可联系所在部门HRBP或人力资源部。\n\n感谢大家的辛勤付出，期待新的一年共同进步！\n\n人力资源部  \n2025年3月12日",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "# 关于2024年度调薪的通知\n\n**各位同事：**\n\n大家好！\n\n为进一步健全公司薪酬激励机制，体现\"多劳多得、优绩优酬\"的分配原则，秉持绩效导向、价值创造、向一线倾斜的薪酬理念，公司正式启动2024年度调薪工作。现将相关事项通知如下：\n\n---\n\n## 一、调薪政策说明\n\n本次调薪遵循以下核心原则：\n\n**1. 绩效导向**\n调薪幅度与员工个人绩效结果强挂钩，优先向高绩效员工倾斜，鼓励价值创造与卓越贡献。\n\n**2. 向一线倾斜**\n为体现对一线岗位的重视与支持，本次调薪资源将适度向业务一线、生产一线、服务一线岗位倾斜，确保一线员工获得合理回报。\n\n**3. 公平公正**\n调薪过程严格依据绩效评估结果、岗位价值及个人能力贡献进行综合评定，确保过程公开透明、结果公平公正。\n\n**4. 总额控制**\n在保持公司人力成本合理预算的前提下，统筹安排调薪资源，实现个人与公司共同发展。\n\n---\n\n## 二、申请条件\n\n员工须同时满足以下条件方可纳入本次调薪范围：\n\n- 截至2024年12月31日已正式入职满6个月（含）以上；\n- 当前绩效评估周期内（2024年度）绩效结果为合格及以上等级；\n- 试用期内员工、处于纪律处分期内的员工不在本次调薪范围内；\n- 申请调薪岗位须为公司在编正式岗位。\n\n---\n\n## 三、调薪幅度范围\n\n本次调薪根据绩效等级实施差异化调整，具体参考标准如下：\n\n| 绩效等级 | 调薪幅度参考 |\n|---------|------------|\n| 优秀（A） | 8% - 15% |\n| 良好（B） | 5% - 8% |\n| 合格（C） | 2% - 5% |\n| 待改进（D） | 不予调薪 |\n\n**特别说明：**\n- 一线岗位员工在同等绩效条件下，调薪幅度上浮1-2个百分点；\n- 核心关键岗位、骨干人才、市场稀缺岗位可结合实际情况适当上浮；\n- 具体调薪金额将结合公司薪酬体系、岗位职级及个人能力综合确定。\n\n---\n\n## 四、生效时间\n\n- **申请受理时间：** 2025年1月10日至2025年1月31日\n- **审批完成时间：** 2025年2月28日前\n- **调薪生效时间：** 2025年3月1日\n- **补发说明：** 调薪生效后，2025年3月起按新标准发放，并视情况补发2025年1-2月差额（具体以审批结果为准）。\n\n---\n\n## 五、申请方式\n\n请符合申请条件的员工按以下流程办理：\n\n**第一步：个人申请**\n登录公司OA系统，进入\"人力资源-薪酬管理-调薪申请\"模块，填写《年度调薪申请表》，并上传相关佐证材料（如：绩效结果、岗位证书、突出贡献证明等）。\n\n**第二步：直属上级审核**\n员工提交后，由直属上级在5个工作日内完成初审并签署意见。\n\n**三级步：部门负责人审批**\n部门负责人在3个工作日内完成复核审批。\n\n**第四步：人力资源部终审**\nHR部薪酬专员对所有申请进行汇总审核，提交公司薪酬委员会最终审定。\n\n**第五步：结果反馈**\n审批结束后，HR将通过邮件及系统消息告知员工最终调薪结果。\n\n---\n\n## 六、咨询与反馈\n\n如对本次调薪政策有任何疑问，请通过以下方式咨询：\n\n- 📧 邮箱：hr@company.com\n- ☎️ 内线：分机8888\n- 🕘 受理时间：工作日 9:00-18:00\n\n---\n\n希望各位同事以此为契机，在新的一年里继续努力，创造更优异的成绩，与公司共同成长！\n\n感谢大家的理解与支持！\n\n**人力资源部**\n2025年1月8日",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_005": {
+    "deepseek-v4-flash": {
+      "output": "这个需求确实存在一些技术上的挑战，目前实现起来难度较大。我们是否可以一起探讨一下，看看有没有更可行的方案？也欢迎你们提出其他思路，我们再共同推进。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "以下是一种更委婉的改写方式，您可以根据实际情况进行调整：\n\n---\n\n**改写建议：**\n\n> 您好，感谢反馈此需求。\n>\n> 针对您提出的方案，我们进行了认真的评估。该需求涉及多个系统模块的联动，技术实现上确实存在较大难度，目前在现有资源和时间窗口下，团队难以按照预期完成。\n>\n> 建议我们安排一次沟通，针对以下几个方向进一步讨论：\n> 1. 是否可以拆分需求，将核心功能优先落地，次要部分后续迭代？\n> 2. 是否可以借助现有方案进行组合，减少定制开发的工作量？\n> 3. 如果时间紧迫，是否考虑引入外部资源协助推进？\n>\n> 我会全力配合寻找最佳解决路径，期待与您进一步沟通。\n>\n> 谢谢！\n\n---\n\n**委婉化的关键技巧：**\n\n| 原句问题 | 改写策略 |\n|---------|---------|\n| \"做不了\" | 改为\"评估后存在较大难度\"，避免一刀切 |\n| \"太复杂了\" | 用客观描述代替主观判断 |\n| \"你们自己想办法\" | 主动提供替代方案，体现配合意愿 |\n| 语气生硬 | 加入\"感谢\"\"配合\"\"沟通\"等软化表达 |\n\n如需根据具体场景（如对领导、对客户、对同事）进一步调整语气，请告诉我。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "关于您提出的需求，目前在技术和资源方面存在一定挑战，实现难度较大。建议我们可以共同探讨其他可能的替代方案，以便更好地满足您的核心目标。如有需要，我很乐意协助进行进一步的分析与协调。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "经初步评估，该需求在技术实现层面复杂度较高，受限于当前的资源与排期，我们暂时无法直接承接。\n\n建议安排一次 brief 的沟通，我们一起探讨是否有更轻量的替代方案，或分阶段推进的可能，以便更好地达成贵方的业务目标。",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_006": {
+    "deepseek-v4-flash": {
+      "output": "**主题：关于您反馈的故障问题的处理结果通知**\n\n尊敬的客户，\n\n您好！\n\n感谢您此前向我们反馈的系统故障问题。我们对此高度重视，并已组织技术人员进行了彻底排查和处理。现将相关情况向您汇报如下：\n\n### 一、故障原因分析\n经排查，本次故障是由于服务器内存资源突发性耗尽，导致数据库连接超时，从而引发服务中断。该问题与近期数据量激增及部分查询语句未优化有关。\n\n### 二、已采取的措施\n1. 立即重启服务并扩容了服务器内存，恢复了系统正常运行。\n2. 优化了数据库索引及慢查询语句，提升执行效率。\n3. 调整了内存监控阈值，并配置了自动告警机制。\n\n### 三、预防措施\n1. 计划在未来两周内对系统进行全面的性能评估和资源扩展。\n2. 增加定期巡检频率，对关键指标进行实时监控。\n3. 完善应急响应预案，确保类似问题能在更短时间内定位并解决。\n\n### 四、处理结果\n目前问题已彻底解决，经过24小时的持续观察，系统运行稳定，各项指标正常。我们将持续关注后续状态，确保不再发生类似情况。\n\n再次感谢您的耐心等待与理解。如您有任何疑问，请随时与我们联系。\n\n祝工作顺利！\n\n此致\n敬礼\n\n[您的姓名]\n技术支持工程师\n[公司名称]\n[联系方式]\n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "# 故障处理结果通知邮件\n\n---\n\n**主题：** 【已解决】关于贵司系统故障的处理结果反馈\n\n**收件人：** [客户邮箱]\n**抄送：** [相关商务/服务支持人员]\n**发件人：** [技术支持工程师姓名]\n**日期：** [年-月-日]\n\n---\n\n尊敬的[客户公司名称][客户联系人/职务]：\n\n您好！\n\n首先，非常感谢贵司在本次故障处理过程中给予的理解与耐心配合。现就 **[故障发生时间]** 出现的 **[故障现象简述]** 故障处理情况，向您作如下正式反馈：\n\n## 一、故障原因分析\n\n经我方技术团队现场排查与日志分析，本次故障的根因为：\n\n- **直接原因：**[例如：核心交换机端口光模块老化导致链路丢包]\n- **深层原因：**[例如：备件未按周期轮换测试，长期处于无感知的亚健康状态]\n\n## 二、已采取的处理措施\n\n1. **应急处置：** [立即切换至冗余链路，恢复业务正常运行]\n2. **根因修复：** [更换故障光模块，并完成主备链路切换测试]\n3. **数据校验：** [完成业务数据一致性比对，未发现数据丢失或损坏]\n4. **稳定性验证：** [持续观察 24/48 小时，系统各项指标均处于健康阈值内]\n\n## 三、后续预防措施\n\n为避免类似问题再次发生，我方已启动以下改进动作：\n\n- 完善**设备巡检制度**，将关键模块纳入月度健康度检查清单；\n- 建立**备件轮换机制**，定期对冗余备件进行通电测试；\n- 优化**告警阈值策略**，提前发现潜在隐患；\n- 安排专项**回访检查**（预计于 [具体日期] 进行），再次确认系统稳定性。\n\n## 四、结语\n\n再次感谢贵司团队在故障处理期间的充分信任与耐心等待。截至目前，该故障已得到**彻底解决**，系统已恢复正常稳定运行。\n\n如贵司在使用过程中遇到任何问题，或对本次服务有任何宝贵建议，欢迎随时与我或您的专属服务经理联系，我们将第一时间响应。\n\n祝工作顺利！\n\n---\n\n**[您的姓名]**\n技术支持工程师 | Technical Support Engineer\n[公司名称]\n电话：[+86-xxx-xxxx-xxxx]\n邮箱：[your.email@company.com]\n\n---\n\n> **温馨提示：** 发送前请将方括号 `[ ]` 中的内容替换为实际信息，并附上相关故障处理报告或监控截图作为附件，增强沟通的可信度与透明度。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**主题：关于贵公司系统故障的处理结果通知**  \n\n尊敬的客户：  \n\n您好！  \n\n首先，衷心感谢您在故障期间给予的理解与耐心等待。我们已收到您反馈的系统异常问题，并第一时间展开了全面排查与处理。现将具体情况汇报如下：  \n\n**一、故障原因分析**  \n经技术团队深入排查，本次故障的根本原因是：**数据库连接池配置异常，导致系统在高并发访问时出现资源竞争，进而引发服务中断**。具体表现为部分请求超时及响应延迟。  \n\n**二、已采取的措施**  \n1. **紧急修复**：已重启并优化数据库连接池参数，恢复系统正常服务；  \n2. **数据校验**：对受影响期间的数据进行完整性检查，确保未发生数据丢失或错乱；  \n3. **监控强化**：临时增加系统资源监控频率，确保服务稳定运行。  \n\n**三、预防措施**  \n为避免类似问题再次发生，我们已实施以下改进方案：  \n1. **架构优化**：调整数据库连接池策略，并增加自动扩容机制；  \n2. **定期巡检**：建立每周系统健康检查制度，提前识别潜在风险；  \n3. **应急预案**：完善故障响应流程，缩短未来问题的处理时间。  \n\n目前，系统已**彻底恢复正常运行**，所有服务功能均通过验证测试。我们将持续关注运行状态，确保为您提供更稳定的技术支持服务。  \n\n再次对此次故障给您带来的不便深表歉意！如您后续有任何疑问或需要进一步协助，请随时联系我们的技术支持团队（电话：XXX-XXXX-XXXX，邮箱：support@example.com）。  \n\n祝您工作顺利！  \n\n此致  \n敬礼  \n技术支持团队  \nXXX公司  \n2023年XX月XX日",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "**主题：** 关于业务系统故障处理完成的正式反馈\n\n尊敬的客户：\n\n您好！\n\n非常感谢您在此次故障处理过程中的耐心等待与充分理解。现正式向您通报：**截至 [具体时间]，本次故障已得到彻底解决，系统所有功能及服务均已恢复正常运行**，后续可稳定使用。\n\n**一、故障原因分析**\n经技术团队深入排查，本次故障根因是 **数据库连接池耗尽并伴随主服务器内存溢出**。在业务高峰时段，异常查询请求堆积导致连接数达到上限，进而引发核心服务响应中断，造成您在使用过程中遇到访问延迟及功能异常的情况。\n\n**二、已采取的措施**\n1. 紧急切换至备用服务器，恢复基础业务访问；\n2. 终止异常进程，释放被占用的系统资源与数据库连接；\n3. 修复导致性能瓶颈的问题 SQL 语句，优化查询逻辑；\n4. 对主服务器进行内存扩容，并重启核心服务模块；\n5. 完成全量功能回归测试，确认系统各项业务运转正常。\n\n**三、预防措施**\n为避免同类问题再次发生，我们已部署以下长效保障机制：\n1. 增设数据库连接数、服务器内存及 CPU 的实时监控告警，达到阈值时自动通知工程师；\n2. 启用弹性扩容策略，高峰期自动分配额外计算资源；\n3. 建立生产环境每周巡检制度，提前发现并消除潜在隐患；\n4. 完善故障应急预案，将同类问题的平均恢复时间（MTTR）进一步缩短。\n\n再次为此次故障给您带来的不便深表歉意，也衷心感谢您的支持与信任。如您后续在系统使用中有任何疑问，请随时联系我们的技术支持团队：\n\n- 服务热线：400-XXX-XXXX（7×24 小时）\n- 邮箱：support@company.com\n\n我们将持续为您提供更稳定、高效的技术服务。\n\n顺祝商祺！\n\n**[公司名称] 技术支持团队**  \n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_007": {
+    "deepseek-v4-flash": {
+      "output": "**主题：关于商务合作咨询的函**\n\n尊敬的[合作伙伴姓名/团队]：\n\n您好！\n\n[我方公司名称]是一家专注于[我方业务领域]的企业，在[具体行业或区域]拥有丰富的资源和经验。近年来，我们致力于[简述公司发展方向或成就，如“推动数字化转型”、“拓展绿色能源市场”等]。经过对贵方业务的深入了解，我们非常认可贵方在[对方优势领域，如“技术创新”、“市场渠道”等方面的成就]，并认为双方存在广阔的合作空间。\n\n基于此，我们希望能与贵方在以下方面探讨合作可能性：  \n[具体说明合作意向，例如：联合开发新产品、共同推广市场、共享技术或数据资源、供应链协同等]。\n\n我们期待的合作模式可以是[如：项目制合作、长期战略联盟、股权合作、利润分成等]，具体细节可根据双方需求灵活协商。我们相信，通过优势互补，能够实现共赢发展。\n\n烦请您在[具体日期，如“2024年12月15日”]前回复此邮件，或指定联系人以便进一步沟通。如您感兴趣，我们很乐意安排线上或线下会议，详细介绍我方合作方案。\n\n期待您的积极回复！\n\n此致  \n敬礼\n\n[您的姓名]  \n[职位]  \n[公司名称]  \n[联系电话]  \n[邮箱地址]  \n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "# 商务合作咨询邮件\n\n---\n\n**收件人：** [对方公司名称] 商务部\n**抄送：** [内部相关部门]\n**主题：** 关于[合作领域]合作事宜的咨询函\n\n尊敬的[对方公司名称][对方联系人/职位]：\n\n您好！\n\n我是[贵公司全称][您的姓名]，[您的职位]。冒昧来函，如有打扰，敬请见谅。鉴于贵司在[对方行业领域]的卓越成就与行业影响力，我司希望能与贵司建立友好合作关系，特此来函咨询合作事宜。\n\n## 一、合作背景介绍\n\n[贵公司全称]成立于[成立年份]，是一家专注于[贵公司主营业务]的综合性企业，总部位于[所在城市]。经过[X]年的稳健发展，公司在[核心优势/行业地位]方面积累了丰富的行业资源和成熟的运营经验，业务覆盖[主要业务范围]。\n\n在[当前行业背景描述，如\"数字化转型加速\"、\"市场需求升级\"等]的市场环境下，我司深知强强联合、优势互补是企业实现跨越式发展的重要途径。经前期调研了解，贵司在[对方优势领域]方面具有突出的技术实力和品牌优势，与我司业务存在较高的契合度。因此，我司诚挚希望能够与贵司开展深度合作，实现互利共赢。\n\n## 二、合作意向说明\n\n我司希望从以下几个方面与贵司探讨合作可能性：\n\n**1. 业务合作方向**\n- **[合作方向一]：** [具体描述，例如\"在产品联合研发方面，结合双方技术优势，共同开发适用于[目标市场]的创新产品/解决方案\"]\n- **[合作方向二]：** [具体描述，例如\"在市场拓展方面，依托贵司的[资源/渠道]与我司的[资源/渠道]，实现客户资源共享与市场联合推广\"]\n- **[合作方向三]：** [具体描述，例如\"在供应链整合方面，探索上下游协同采购与物流优化合作，降低双方运营成本\"]\n\n**2. 重点合作领域**\n[针对某一核心合作领域进行重点阐述，突出合作价值与前景]\n\n## 三、期望的合作模式\n\n为确保合作顺利推进，我司初步提出以下几种合作模式供贵司参考：\n\n| 合作模式 | 具体内容 |\n|---------|---------|\n| **战略联盟** | 签订长期战略合作协议，明确双方权利义务，建立常态化沟通机制 |\n| **项目合作** | 针对具体项目成立联合工作组，以项目制形式开展阶段性合作 |\n| **资源互换** | 基于各自优势资源进行等价互换，实现资源高效配置 |\n| **合资经营** | 共同出资设立合资公司，独立运营特定业务板块 |\n\n我司认为，最适合的合作模式应基于双方实际需求进一步商讨。我方团队可根据贵司意见，提供详细的合作方案与可行性分析报告。\n\n## 四、期待回复时间\n\n鉴于[合作的紧迫性/项目进度要求]，我司希望贵司能在**[具体时间，如\"2024年X月X日\"]**之前给予初步回复，告知合作意向。\n\n如贵司有意进一步洽谈，我方将组织专业团队前往贵司拜访，或邀请贵司莅临我司进行实地考察与深入交流。\n\n随函附上我司简介及主要业务介绍，供贵司参考。期待与贵司的合作能够顺利开展，共同开创美好未来！\n\n---\n\n**此致**\n**敬礼！**\n\n**联系人：** [您的姓名]\n**联系电话：** [联系电话]\n**电子邮箱：** [电子邮箱]\n**公司地址：** [公司地址]\n**公司网址：** [公司网址]\n\n[贵公司全称]\n[发件日期]\n\n---\n\n> **使用提示：**\n> 1. 请将所有 `[ ]` 中括号内容替换为实际信息；\n> 2. 根据实际情况增删合作方向与合作模式；\n> 3. 建议在发送前由部门主管审核把关；\n> 4. 邮件语气可根据双方关系亲疏进行调整（正式/半正式）。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**主题：关于潜在合作机会的咨询**\n\n尊敬的[合作伙伴公司名称/负责人姓名]：\n\n您好！\n\n我是[您的姓名]，来自[您的公司名称]。我司长期专注于[简述您的公司主营业务或领域]，在业内致力于[提及公司的优势或愿景]。我们一直在关注贵公司在[提及对方公司优势或业务领域]方面的卓越表现与行业口碑，认为双方在理念与资源上具有高度的互补性与协同潜力。\n\n基于此，我们诚挚地希望与贵司探讨建立商务合作关系的可能性。具体而言，我们初步设想可以在以下方面展开合作：\n1.  **合作领域**：[具体说明希望合作的方向，例如：共同开发XX行业解决方案、联合进行XX市场的品牌推广、在XX产品/服务上进行渠道分销合作、共享XX技术或数据资源等]。\n2.  **核心价值**：我们相信，此次合作将有助于双方[简要说明合作可能带来的共同价值，例如：共同拓展市场份额、提升产品竞争力、优化客户服务体验等]。\n\n关于合作模式，我们持开放态度，期待与贵司共同商议最适合的方式，例如：\n*   战略联盟与资源互换\n*   联合项目开发与运营\n*   渠道代理或分销合作\n*   其他贵司认为合适的模式\n\n我们非常期待能有机会与您或相关团队的负责人进行更深入的沟通，详细阐述我们的构想，并聆听贵司的想法与建议。\n\n若您对此提议感兴趣，恳请在**[具体日期，例如：X年X月X日]** 前安排时间进行初步会谈。您可直接回复此邮件或致电[您的联系电话]与我联系。\n\n感谢您拨冗阅读，期待您的回复，并希望能开启一段互惠共赢的合作旅程。\n\n顺祝商祺！\n\n**[您的姓名]**\n**[您的职位]**\n**[您的公司名称]**\n**[您的联系电话]**\n**[您的公司邮箱]**",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_008": {
+    "deepseek-v4-flash": {
+      "output": "**主题：跟进交流 | 探讨合作机会与免费试用邀请**\n\n尊敬的[客户姓名]，\n\n感谢您上次抽出时间与我们沟通。我们回顾了您当前在[提及具体业务场景，如“客户数据管理”或“营销自动化”]中遇到的挑战，也分享了我们的解决方案如何从[某具体方面，如“效率提升”或“成本控制”]帮助实现目标。\n\n我们深知选择合作伙伴需要深思熟虑，因此想再次强调我们的核心差异：\n- **专属行业适配**：我们的产品针对[客户行业/场景]深度优化，开箱即用，无需繁琐定制。\n- **实时数据洞察**：通过AI驱动的分析仪表盘，您能在15分钟内定位关键问题并生成行动建议。\n- **全周期服务**：客户成功团队将全程陪同，从部署到优化，确保您获得最大回报。\n\n为让您零风险体验，我们诚邀您参加 **30天免费试用计划**。您将获得：\n- 完整功能权限（无功能阉割）\n- 一对一专属实施指导\n- 试用期内无条件取消\n\n**下一步建议**：\n1. 若您方便，请告知明天[上午10点或下午3点]是否可安排15分钟电话，我将协助您快速启动试用；\n2. 或直接点击下方链接注册，即刻开始体验：[注册链接]\n\n期待与您携手验证产品的价值！\n\n祝好，\n[您的姓名]\n[职位] | [公司名称]\n[电话] | [邮箱]\n[官网链接]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "**邮件主题：跟进沟通｜[客户公司名]数字化解决方案合作机会**\n\n尊敬的[客户姓名]：\n\n您好！\n\n感谢您上次抽出宝贵时间与我交流。通过上次的沟通，我对贵司在[客户业务痛点，如\"客户管理效率提升\"或\"业务流程自动化\"]方面的需求有了更清晰的了解。以下是对我们沟通要点的简要回顾，以及后续合作的一些建议，期待能进一步推进合作。\n\n---\n\n**一、上次沟通要点回顾**\n\n1. **核心需求**：贵司目前面临[具体痛点，如\"客户数据分散、各部门协同效率低\"等]的挑战，希望通过[解决方案类型，如\"CRM系统/智能办公平台\"]实现优化升级。\n2. **关键目标**：在[时间周期，如\"未来6个月内\"]达成[具体目标，如\"客户转化率提升20%\"\"运营成本降低15%\"]。\n3. **关注重点**：方案的易用性、数据安全性，以及与现有系统[如有]的兼容性。\n\n---\n\n**二、为什么选择我们**\n\n针对贵司的需求，我们提供的解决方案具备以下独特优势：\n\n✅ **行业经验丰富**：已服务超过[X]家[行业]企业，沉淀了成熟的最佳实践，能够快速匹配贵司业务场景。\n\n✅ **定制化能力**：支持深度定制开发，灵活适配贵司的[具体业务场景]，避免\"水土不服\"。\n\n✅ **数据安全保障**：通过[ISO27001等]权威安全认证，提供银行级数据加密与全链路防护。\n\n✅ **高性价比投入**：相比同类产品，可帮助贵司节省约[X]%的总体拥有成本（TCO），投资回报周期更短。\n\n✅ **持续服务支持**：配备7×24小时专属客户成功团队，确保上线即用、用之即顺。\n\n---\n\n**三、免费试用邀请**\n\n为了让贵司更直观地体验产品价值，我们诚挚邀请您参与**为期[X]天的免费试用**：\n\n🔹 您可亲身体验产品的核心功能，包括[功能1]、[功能2]等；\n🔹 我们将安排专属顾问全程陪伴，针对贵司业务场景提供1对1场景化演示；\n🔹 试用结束后，将输出专属的《价值评估报告》，量化分析预期收益。\n\n如方便，我们可在[建议时间，如\"本周三/四下午\"]为您开通试用账号，并安排远程培训。\n\n---\n\n**四、下一步建议**\n\n为高效推进合作，建议按以下节奏进行：\n\n📌 **本周内**：确认试用开通时间，完成账号部署；\n📌 **试用期间（第1-3天）**：远程培训 + 核心场景验证；\n📌 **试用结束后（第[X]天）**：召开价值评估会议，敲定合作方案。\n\n---\n\n期待与贵司的进一步合作。如您有任何疑问，或希望调整试用计划，欢迎随时与我联系。我也将于[具体日期]主动致电跟进。\n\n祝商祺！\n\n**[您的姓名]**\n[您的职位] | 销售经理\n[公司名称]\n📞 手机：[电话号码]\n📧 邮箱：[邮箱地址]\n🌐 官网：[公司网址]\n\n*附件：《产品解决方案白皮书》《同行业案例集》*",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**主题：跟进我们上次的讨论**\n\n尊敬的[客户姓名]，\n\n希望您一切顺利。我写这封邮件是为了跟进我们上次关于[具体话题，例如：提升团队效率的解决方案]的沟通。\n\n回顾我们上次的对话，我们探讨了您在[客户痛点或需求，例如：项目管理效率]方面面临的挑战，并讨论了我们的[产品/服务名称]如何能够帮助简化流程。您特别提到了对[具体关注点，例如：集成现有工具]的需求，这让我们印象深刻。\n\n作为进一步的价值主张，我们相信选择我们是因为[公司或产品优势，例如：我们提供业界领先的客户服务、定制化解决方案和经过验证的投资回报率]。我们的解决方案不仅能够帮助您[具体好处，例如：减少操作成本20%]，还能确保无缝集成到您的现有工作流程中，从而提升整体生产力。\n\n为了让您更直观地体验我们的产品，我们诚挚邀请您参与一个免费试用。试用期间，您将获得完整功能访问权，并有我们的专属支持团队提供指导。试用期为[例如：14天]，无需任何承诺。您可以通过[链接或方式]立即开始试用。\n\n下一步，我建议我们安排一个简短的电话或会议，以讨论您的试用体验并解答任何疑问。请告知您方便的时间，或者您也可以直接回复此邮件，我们将灵活调整安排。\n\n感谢您抽出宝贵时间考虑我们的提议。期待您的回复，并希望能有机会为您的业务提供支持。\n\n祝好，  \n[您的姓名]  \n[您的职位]  \n[公司名称]  \n[联系方式，例如：电话、邮箱]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "**主题：** 关于[公司名称]解决方案的跟进及免费试用邀请\n\n尊敬的[客户姓名]，\n\n您好！感谢您上周抽出宝贵时间与我交流。回顾我们上次的沟通，我们重点探讨了贵团队在[数据管理/流程自动化/客户运营]方面面临的挑战，以及现有手动流程对业务效率造成的瓶颈。\n\n基于您的具体需求，我想进一步分享为什么[我们公司名称]是众多同行业企业的首选合作伙伴：\n• **深度适配**：我们的解决方案专为[贵行业]场景打造，平均可帮助客户提升30%以上的运营效率，同时降低人力成本；\n• **零负担集成**：支持与贵司现有的[ERP/CRM/办公系统]无缝对接，无需推倒重来，最快一周内完成部署；\n• **专属成功保障**：每位客户配备专属客户成功经理，从实施到日常使用全程护航，确保投资快速产生回报。\n\n为了让您零风险地验证我们的价值，我诚挚邀请您和团队参与**14天免费试用**（无需绑定信用卡，到期自动失效）。试用期间，您可以导入真实数据测试效果，并享有一次免费的1对1功能演示与启动支持。\n\n**下一步建议：**  \n不知您本周三或周四下午是否方便？我们可以安排一次30分钟的简短会议，我将针对您提到的[具体痛点]进行定制化演示，并现场协助开通试用环境。如果您希望先自行体验，我也可以立即将专属试用链接发送给您。\n\n期待您的回复，祝工作顺利！\n\n[您的姓名]  \n[您的职位]  \n[公司名称]  \n[电话] | [邮箱]",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_009": {
+    "deepseek-v4-flash": {
+      "output": "尊敬的[收件人姓名]：  \n\n您好！  \n对于此前发送错误文件一事，我谨向您致以诚挚的歉意。因我的疏忽，给您的工作带来了不必要的麻烦，对此我深感抱歉。  \n\n我已重新核对并准备了正确的文件，随邮件一并附上，请您查收。如您需要进一步调整或补充，请随时告知，我将立即配合处理。  \n\n再次为此次失误向您致歉，感谢您的理解与包容。  \n\n此致  \n敬礼  \n\n[您的姓名]  \n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "# 正式道歉邮件\n\n**主题：关于误发文件的致歉函**\n\n尊敬的[收件人姓名]：\n\n您好！\n\n兹就本人于[日期]误发文件一事，向您致以诚挚的歉意。由于本人的疏忽，将错误的文件发送至您处，可能对您的工作造成了困扰与不便，深感抱歉。\n\n现本人已重新核实相关文件，并于今日将正确版本重新发送至您的邮箱，请您注意查收。如您在查阅过程中发现任何问题，欢迎随时与我联系，我将第一时间予以协助处理。\n\n此次失误使本人深刻认识到工作严谨性的重要性。今后，本人将以更加审慎的态度对待每一项文件资料的传递与核对工作，杜绝类似情况再次发生。\n\n对于此次给您带来的不便，恳请予以谅解。再次为本次失误向您致歉。\n\n此致\n\n敬礼！\n\n[您的姓名]\n[所在部门]\n[联系电话]\n[日期]\n\n---\n\n**改写要点说明：**\n1. **开篇正式致歉**：使用\"致以诚挚的歉意\"等规范用语替代口语化的\"不好意思\"\n2. **明确责任**：清晰说明事件原因，体现主动担当\n3. **补救措施**：告知已重新发送正确文件，附后续支持承诺\n4. **防范承诺**：表明改进方向，避免问题重复发生\n5. **结尾礼貌得体**：采用标准商务信函格式与敬语\n\n如需进一步调整语气或篇幅，请告知具体场景（如对客户、对上司、对同事）。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**邮件主题：关于文件发送错误的致歉**\n\n尊敬的[收件人姓名]：\n\n您好！\n\n首先，就我此前误发文件一事，谨向您致以诚挚的歉意。\n\n因个人疏忽，我错误地向您发送了不正确的文件版本，这一行为给您后续的工作进程造成了不必要的干扰与不便，对此我深感抱歉。我已深刻认识到此问题的严重性，并已重新整理核对正确的文件。\n\n为避免类似情况再次发生，我已对工作流程进行了复核与调整。如需进一步协助或对后续安排有任何疑问，请随时与我联系。\n\n再次为给您带来的困扰表示深切的歉意，并衷心感谢您的理解与包容。\n\n此致  \n敬礼！\n\n[您的姓名]  \n[您的职位]  \n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "尊敬的[收件人姓名/先生/女士]：\n\n您好！\n\n对于前次发送文件时出现的严重疏忽，我谨向您致以最诚挚的歉意。由于我的工作失误，误将错误的文件发送给您，给您的工作带来了不必要的麻烦与困扰，对此我深感愧疚。\n\n正确的版本已重新整理完毕，将立即发送至您的邮箱，恳请您查收。若因此次差错造成任何后续影响，还请您不吝告知，我将全力配合补救并承担相应责任。\n\n再次为我的疏忽向您致歉。今后我定当加倍谨慎，严格核对，杜绝此类问题再次发生。\n\n顺祝商祺！\n\n[您的姓名]\n[您的职位]\n[您的联系方式]\n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_010": {
+    "deepseek-v4-flash": {
+      "output": "**主题：热烈祝贺项目成功，特别表彰[成员姓名/小组名称]的卓越贡献**\n\n亲爱的团队成员们，\n\n大家好！\n\n在我们共同完成[项目名称]项目的这一刻，我想代表部门向每一位付出努力的同事表示最诚挚的感谢。正是大家的通力协作和坚韧不拔，才使得该项目取得了圆满成功。\n\n在此，我要特别表彰[成员姓名]（或[小组名称]），他在/她在项目中的表现令人印象深刻。在项目关键阶段，面对[具体困难描述，如：时间紧迫、技术难题、资源短缺等]，他/她没有退缩，而是主动承担起[具体任务/角色]，并提出了[具体解决方案或创新方法]。例如，在[某个关键节点]，他/她通过[具体行动，如：连续加班优化方案、协调跨部门资源、攻克技术瓶颈等]，成功将[成就指标，如：项目进度提前X周、成本降低X%、客户满意度提升X]转化为现实。\n\n他/她的努力不仅直接推动了项目目标的达成，更对整个团队产生了积极的示范效应——激发了大家迎难而上的斗志，增强了团队的凝聚力，同时也为我们部门赢得了公司高层的认可与客户的赞誉。\n\n在此，我谨代表部门管理层，对[成员姓名/小组名称]的突出贡献表示衷心的感谢和热烈的祝贺！同时，我也要感谢所有团队成员在协作中给予的支持与配合。正是每个人的点滴付出，才汇聚成了今天耀眼的成果。\n\n请允许我再次感谢大家的辛勤工作。让我们继续保持这份激情与协作精神，迎接下一个挑战！\n\n祝工作愉快！\n\n[您的姓名]  \n部门经理",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "**主题：热烈祝贺【智慧办公平台升级项目】圆满成功——特别致谢王磊及其核心技术团队**\n\n各位伙伴：\n\n大家好！\n\n今天，我怀着无比激动的心情，向大家宣布一个好消息——历经6个月艰苦奋战的**【智慧办公平台升级项目】**已于本周三正式上线，并成功完成首批用户切换！系统运行稳定，反馈良好，各项核心指标均达到甚至超出预期目标！\n\n这一里程碑式的成就，离不开每一位同事的辛勤付出。在此，我特别要向**王磊及其核心技术团队（共5人）**致以最崇高的敬意和最衷心的感谢！\n\n---\n\n**一、卓越成就——用数据说话**\n\n在王磊的带领下，核心技术团队交出了一份令人惊叹的答卷：\n\n- **提前2周完成主体开发**，在保障质量的前提下将项目周期压缩了15%\n- **系统性能提升300%**，页面加载速度从原来的4.5秒降至1.2秒\n- **零重大故障上线**，连续72小时压力测试一次通过\n- **获得集团\"年度优秀项目\"推荐资格**，并被纳入总部数字化转型标杆案例\n\n---\n\n**二、攻坚克难——他们是这样一群人**\n\n成绩的背后，是常人难以想象的付出：\n\n**技术攻关层面：** 面对老旧系统与新架构兼容性差的历史遗留问题，王磊带领团队连续21天加班到深夜，先后尝试了3种技术方案，最终独创了\"渐进式数据迁移工具\"，攻克了困扰公司多年的技术难题。\n\n**资源协调层面：** 在项目关键期，恰逢两位核心成员家中突发情况，王磊主动承担了双倍工作量，同时协调外部供应商资源，确保项目进度零延误。\n\n**业务沟通层面：** 为准确理解各部门需求，王磊组织召开了12场需求研讨会，用朴实的语言向非技术同事解释复杂的技术方案，赢得了所有业务部门的高度认可。\n\n---\n\n**三、榜样力量——影响深远**\n\n这个项目的成功，不仅仅是技术层面的胜利，更是**精神层面的洗礼**：\n\n1. **树立了\"客户至上\"的标杆**——他们用行动诠释了什么叫\"以用户需求为出发点\"\n2. **诠释了\"协同作战\"的真谛**——跨部门合作无缝衔接，建立了高效协作的新范式\n3. **传递了\"精益求精\"的工匠精神**——对每一个细节的极致追求，影响了全团队的工作标准\n4. **激发了团队的创新活力**——项目过程中产出的3项技术方案正在申请公司创新专利\n\n正如业务部李总监所说：\"和王磊团队合作，让我们对技术团队有了全新的认识——他们不仅是问题的解决者，更是价值的创造者。\"\n\n---\n\n**四、表彰决定**\n\n经部门管理委员会研究决定：\n\n- 授予王磊及其团队 **\"项目金鹰奖\"** 荣誉称号\n- 王磊个人获得 **\"年度优秀项目经理\"** 推荐资格\n- 团队奖金 **10万元**（已报请HR审批）\n- 团队全体成员获得 **3天特别带薪休假**\n\n---\n\n**五、写在最后**\n\n王磊曾在项目周会上说：\"我们不是在完成一个项目，我们是在为每一位同事打造更好的工作方式。\"这句话让我深受感动。\n\n亲爱的王磊，亲爱的核心技术团队，你们用专业、汗水、智慧和担当，书写了属于我们部门的辉煌篇章。你们是当之无愧的英雄，是全体同事学习的榜样！\n\n让我们再次以最热烈的掌声，向王磊及其团队表示最诚挚的祝贺和最衷心的感谢！🎉\n\n期待我们在未来的项目中继续携手并进，再创佳绩！\n\n此致\n敬礼！\n\n**【您的姓名】**\n**部门经理**\n**2024年XX月XX日**",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "Subject: 项目成功表彰：突出贡献\n\nDear Team,\n\n我是部门经理李华，非常高兴向大家宣布，我们在ABC项目中取得了圆满成功！这离不开每一位成员的辛勤付出，特别要表彰小组X在项目中的突出贡献。\n\n小组X在项目中成功开发了关键的技术模块，优化了系统性能，使整体效率提升了30%。他们在面对时间紧迫和技术瓶颈的挑战时，通过团队协作和创新思维，克服了资源限制和复杂难题，确保了项目按时交付。这种坚韧不拔的精神为整个团队树立了榜样。\n\n他们的努力不仅提升了项目质量，还对团队产生了积极影响：激发了成员的协作热情，增强了团队凝聚力，并带动了其他小组的高效工作。小组X的贡献展示了我们团队的专业能力和合作精神。\n\n在此，我要向小组X表示最诚挚的表扬和感谢！感谢你们的付出和坚持，为项目成功奠定了坚实基础。希望我们继续携手共进，创造更多辉煌！\n\nBest regards,  \n李华  \n部门经理",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_011": {
+    "deepseek-v4-flash": {
+      "output": "**主题：关于合同签署的提醒**\n\n尊敬的[对方姓名/部门]，\n\n您好！\n\n温馨提醒，我们此前讨论的合同目前尚未完成签署。为确保后续工作顺利推进，希望您能尽快安排签署事宜。\n\n如您需要任何协助或对合同内容有疑问，请随时与我们联系，我们非常乐意为您提供支持。\n\n期待您的尽快回复，谢谢！\n\n此致  \n敬礼  \n\n[您的姓名]  \n[公司名称]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "**催促邮件（参考）**\n\n---\n\n**主题：关于合同签署事项的跟进——请尽快处理**\n\n尊敬的[对方公司/姓名]：\n\n您好！\n\n首先感谢贵司一直以来对我方工作的支持与配合。\n\n此前我方已将合同文本发送至贵司，**截至目前尚未收到签署后的回传文件**。为确保后续业务能够顺利推进，避免影响项目进度及相关工作安排，**烦请贵司尽快安排签署并回传**。\n\n如对合同内容有任何疑问或需要进一步沟通调整，欢迎随时与我联系，我方将积极配合处理。\n\n希望贵司能在**[具体日期，如：本周五（X月X日）前]**完成签署并反馈。期待您的回复，感谢理解与支持！\n\n祝商祺！\n\n[您的姓名]\n[您的职位]\n[联系电话]\n[公司名称]\n\n---\n\n**改写要点说明：**\n\n1. **明确签约状态**：礼貌地说明合同尚未签署的事实。\n2. **说明紧迫性**：点出拖延可能带来的影响（项目进度、业务推进）。\n3. **给出明确截止时间**：便于对方合理安排，提升执行效率。\n4. **保持友好语气**：以\"感谢\"\"烦请\"等表达，避免催促感过于生硬。\n5. **预留沟通空间**：表示愿意解答疑问，体现合作诚意。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "尊敬的[收件人]，\n\n您好！关于合同签署事宜，我们希望提醒您，合同目前尚未完成签署。为了确保项目顺利进行，请您尽快处理签署流程。如果您有任何疑问或需要协助，请随时告知。\n\n感谢您的及时关注与合作！\n\n此致  \n敬礼  \n[您的姓名/部门]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "主题：【催办】关于合同签署的紧急确认\n\n您好，\n\n冒昧打扰。关于此前发送的合同文件，截至目前我方尚未收到贵司的签署回执。\n\n因项目时间节点较为紧迫，为确保后续工作顺利推进，恳请贵司尽快安排合同签署并回传扫描件。如对合同条款有任何疑问或需协商调整之处，请随时与我联系。\n\n期待您的尽快回复，感谢配合！",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_012": {
+    "deepseek-v4-flash": {
+      "output": "**主题：关于付款周期调整的通知**\n\n尊敬的供应商伙伴：\n\n您好！\n\n感谢贵司长期以来对我们的支持与信任。为进一步优化现金流管理，提升整体运营效率，我司决定对现有付款周期进行调整。现将相关事宜通知如下：\n\n1. **调整原因**：基于现金流优化及资金使用效率的考虑，我司需对付款周期进行合理调整，以更好地匹配业务发展需求。\n\n2. **新付款周期**：自2025年6月1日起，原定的30天付款周期将调整为**45天**。即贵司开具的合规发票，我司将在收到发票后的45个工作日内完成付款。\n\n3. **对供应商的影响**：\n   - 付款周期延长15天，请贵司据此合理安排自身资金规划。\n   - 我司会尽力确保按新周期准时付款，避免逾期。\n   - 如有长期合作的重大项目，可单独协商付款安排。\n\n4. **联系方式**：如有任何疑问或需进一步沟通，请随时联系我司财务部：\n   - 联系人：张女士\n   - 电话：010-1234-5678\n   - 邮箱：finance@example.com\n\n再次感谢贵司的理解与配合，期待与您继续携手共赢。\n\n顺祝商祺！\n\n[您的公司名称] 财务部\n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "# 付款周期调整通知函\n\n**文件编号：财务部〔2024〕第XXX号**\n**签发日期：2024年XX月XX日**\n\n---\n\n## 致：各合作供应商\n\n尊敬的合作伙伴：\n\n您好！\n\n首先，衷心感谢贵司长期以来对我司的鼎力支持与友好合作。**为持续深化双方战略合作伙伴关系，确保供应链稳定可持续发展**，经公司管理层研究决定，现将付款周期调整事宜通知如下，敬请知悉。\n\n---\n\n### 一、调整背景与原因\n\n近期，受全球宏观经济环境及行业市场变化影响，原材料成本、运营成本持续上涨，公司面临阶段性现金流压力。为进一步**优化资金配置效率、增强企业财务韧性**，保障公司长期稳健运营及对供应商的持续履约能力，公司决定对现有付款政策进行优化调整。\n\n---\n\n### 二、具体调整内容\n\n| 调整项目 | 调整前 | **调整后** |\n|:---:|:---:|:---:|\n| 付款周期 | 货到/票到 **30天** | 货到/票到 **45天** |\n| 生效日期 | —— | **2024年X月X日起** |\n| 适用范围 | —— | 所有新增订单及未结算款项 |\n\n**特别说明：**\n- 2024年X月X日前已签订且尚未结清的合同，仍按原合同约定执行；\n- 调整后付款周期自双方对账确认无误且收到合规发票之日起计算。\n\n---\n\n### 三、对供应商可能产生的影响\n\n公司充分理解本次调整可能给贵司资金安排带来一定影响，特此说明：\n\n**1. 短期影响**\n- 贵司应收账款回款时间将延长约15天；\n- 可能对贵司短期资金周转计划产生影响。\n\n**2. 公司承诺的配套措施**\n- ✅ **确保按时足额支付**：调整后严格按45天周期付款，不无故延期；\n- ✅ **优化对账流程**：将对账周期从月度调整为半月度，加快核销效率；\n- ✅ **支持政策倾斜**：对配合度高的优质供应商，在订单分配、新品合作等方面予以优先考虑；\n- ✅ **提前预告机制**：后续如有任何付款政策调整，将至少提前30个工作日书面通知；\n- ✅ **专项扶持方案**：针对因本次调整导致资金困难的战略级供应商，可申请协商个性化结算方案。\n\n---\n\n### 四、过渡期安排\n\n为帮助贵司平稳过渡，公司设置**30天缓冲期**（即2024年X月X日至2024年X月X日），期间将保持原付款节奏不变。自2024年X月X日起，全面执行新付款周期。\n\n---\n\n### 五、联系方式\n\n如贵司对本次调整有任何疑问、建议或需要协商个性化解决方案，欢迎随时联系以下人员：\n\n| 联系人 | 职务 | 联系电话 | 电子邮箱 |\n|:---:|:---:|:---:|:---:|\n| 张XX | 财务总监 | 021-XXXXXXXX | zhangxx@company.com |\n| 李XX | 应付账款经理 | 021-XXXXXXXX | lixx@company.com |\n| 王XX | 供应商关系专员 | 021-XXXXXXXX | wangxx@company.com |\n\n**供应商服务热线**：400-XXX-XXXX（工作日 9:00-18:00）\n**供应商在线反馈平台**：[公司官网供应商专区链接]\n\n---\n\n### 六、结语\n\n公司始终秉持\"**互利共赢、长期合作**\"的理念，衷心希望贵司能够理解并支持本次调整。我们相信，通过双方的共同努力与精诚合作，定能携手共克时艰，进一步深化合作关系，共创更加稳健、可持续的未来。\n\n期待贵司的回复与持续支持！\n\n---\n\n**此致**\n\n**敬礼！**\n\n**XXX有限公司 财务部**\n**2024年XX月XX日**\n\n---\n\n**附件：**\n1. 付款周期调整实施细则\n2. 供应商对账操作指引（更新版）\n3. 协商申请函模板\n\n---\n\n> **温馨提示**：本通知一式两份，烦请贵司签收后于5个工作日内回执确认（加盖公章），并通过邮件或快递方式回传至我司财务部。如未在规定时间内回执，将视为贵司接受本次调整方案。",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**主题：关于付款周期调整的正式通知**\n\n尊敬的供应商：\n\n您好！\n\n首先，感谢贵司长期以来的合作与支持。为进一步优化公司现金流管理，提升运营效率，经公司财务部门审慎研究决定，将对与各供应商的付款周期进行调整。现将具体事宜通知如下：\n\n**一、 调整原因**\n为更好地匹配公司整体的资金规划，保障供应链的长期稳定与健康发展，我们需对现金流进行统筹优化。\n\n**二、 新付款周期**\n自 **[请填写具体生效日期，例如：2023年11月1日]** 起，公司对合格发票的付款周期将由原 **30天** 调整为 **45天**。此政策适用于所有新的采购订单及此前未结清但符合付款条件的发票。\n\n**三、 对供应商的影响**\n本次调整可能会对贵司的收款计划产生影响。我们恳请贵司理解这一基于公司长远发展考量的必要措施，并建议贵司据此相应调整财务安排。我们将继续致力于与各位供应商保持公平、及时的结算关系。\n\n**四、 联系方式**\n如对本次调整有任何疑问，或需确认具体发票的付款状态，请随时联系我部：\n*   **联系部门：** 财务部 应付账款组\n*   **联系人：** [请填写具体联系人姓名，例如：王会计]\n*   **电话：** [请填写电话号码]\n*   **邮箱：** [请填写专用邮箱地址，例如：ap@yourcompany.com]\n\n我们深知此次调整可能会给贵司带来不便，对此深表歉意，并衷心感谢各位的理解与配合。期待与贵司继续携手共进，合作愉快。\n\n顺祝商祺！\n\n[您的公司名称]\n财务部\n[通知发布日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "**主题：关于付款周期调整的重要通知**\n\n尊敬的供应商合作伙伴：\n\n您好！\n\n首先，衷心感谢贵司长期以来对我司的信任与支持。为进一步优化公司现金流管理，提升财务运营效率，确保双方合作的持续稳健发展，经公司管理层研究决定，我司将对供应商付款周期进行统一调整。具体事项通知如下：\n\n**一、调整原因**\n基于当前市场环境变化及公司内部现金流优化管理需要，为更合理地统筹资金安排，保障供应链长期稳定合作，我司决定对标准付款周期进行调整。\n\n**二、新付款周期**\n自2024年7月1日起，贵司的付款周期将由现行的**货到/票到后30天（T+30）调整为货到/票到后45天（T+45）**。具体以双方更新后的采购合同或订单条款为准。\n\n**三、对供应商的影响**\n本次调整适用于所有合作供应商。周期延长可能导致贵司资金回笼速度有所放缓，我们对此深表理解，并承诺：\n- 严格按新周期执行付款，绝不无故拖延；\n- 优先保障合作稳定、配合度高的供应商的付款计划；\n- 如有特殊情况或困难，欢迎及时与我司沟通协商。\n\n**四、联系方式**\n如对本次调整有任何疑问，或需协商具体付款安排，请联系：\n\n- **财务部**：张女士  \n  电话：010-12345678  \n  邮箱：finance@company.com\n\n- **采购部**：李先生  \n  电话：010-87654321  \n  邮箱：procurement@company.com\n\n我们珍视与贵司的合作伙伴关系，此次调整系公司整体运营策略所需，恳请理解与支持。期待双方继续携手，共创共赢。\n\n顺祝商祺！\n\n**XX公司财务部**  \n2024年6月15日",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_013": {
+    "deepseek-v4-flash": {
+      "output": "**主题：关于您投诉产品质量问题的回复**\n\n尊敬的客户：\n\n您好！\n\n感谢您与我们联系，并告知您在使用我们的产品时遇到的问题。我们已收到您关于产品质量的投诉，对此我们非常重视。\n\n首先，请允许我代表公司向您致以最诚挚的歉意。对于给您带来的不便，我们深感抱歉。您的反馈对我们至关重要，帮助我们发现并改进不足。\n\n我们已将此问题提交给质量团队进行详细调查，确保彻底查明原因。预计我们将在48小时内通过邮件或电话向您反馈调查结果及后续解决方案。\n\n再次感谢您的坦诚反馈，正是您的帮助让我们能做得更好。如您有其他疑问或需要进一步协助，请随时回复本邮件或拨打我们的客服热线。\n\n祝您生活愉快！\n\n此致  \n敬礼  \n\n[您的姓名]  \n[公司名称] 客服团队",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "**主题：关于您反馈的产品质量问题的回复**\n\n尊敬的客户：\n\n您好！\n\n首先，非常感谢您选择我们的产品，也对此次给您带来的不便表示诚挚的歉意。\n\n我们已**确认收到您关于产品质量问题的投诉**，并已第一时间将您反映的情况记录在案。对于此次给您的使用体验造成的影响，我们深感抱歉。\n\n对此问题，我们**高度重视**，并将立即采取以下措施：\n\n1. **成立专项调查小组**，对您反馈的产品批次进行全面的质量复检；\n2. **追溯生产及物流环节**，查找问题产生的根本原因；\n3. 根据调查结果，第一时间为您**提供退换货或补偿方案**。\n\n**我们承诺将于3个工作日内**完成初步调查并向您反馈处理进展。如有需要进一步核实的信息，我们的工作人员会主动与您联系。\n\n再次感谢您对我们的信任与反馈。您的意见是我们持续改进产品和服务的重要依据，我们也将以此为鉴，不断提升质量管理水平，杜绝类似问题再次发生。\n\n如您有任何疑问，欢迎随时与我们联系：\n\n- 客服热线：400-XXX-XXXX\n- 客服邮箱：service@xxx.com\n- 服务时间：周一至周日 9:00-21:00\n\n期待能尽快为您妥善解决此次问题，再次向您致以最诚挚的歉意！\n\n此致\n敬礼\n\n**客户服务部**\n**XX年XX月XX日**",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**主题：关于您反馈的产品质量问题的回复**\n\n尊敬的客户，\n\n感谢您联系我们，并就产品质量问题提出投诉。我们已收到您的反馈，并对由此给您带来的不便深感抱歉。\n\n我们非常重视您的意见，并诚挚地对产品未能满足您的期望表示歉意。我们的团队已经启动对此问题的彻底调查，以确保尽快找出根本原因并采取适当的改进措施。\n\n我们预计将在3个工作日内向您提供详细的调查结果和解决方案。期间，如果您有任何进一步的问题或需要协助，请随时通过此邮件或致电我们的客服热线与我们联系。\n\n再次感谢您抽出时间向我们反馈此问题，您的支持对我们持续提升产品质量和服务水平至关重要。\n\n此致  \n敬礼  \n客户服务团队  \n客服邮箱：support@example.com  \n客服电话：400-123-4567",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "**主题：关于您反馈的产品质量问题 - 【公司名称】客服中心**\n\n尊敬的客户：\n\n您好！\n\n感谢您联系我们的客服中心。我们已收到您关于产品质量问题的投诉，对于给您带来的使用困扰和不愉快的体验，我们深表歉意。\n\n您反馈的情况我们已详细记录，并第一时间移交至质量管理部门。我们郑重承诺将立即启动全面调查，核实问题原因并追溯相关批次情况，以确保找到妥善的解决方案。\n\n我们预计将在 **3-5个工作日** 内完成初步调查，届时会有专人通过电话或邮件与您联系，告知调查结果及后续处理安排。\n\n再次感谢您抽出宝贵时间向我们提出宝贵意见，您的反馈是我们持续改进产品质量与服务的重要依据。如您有任何补充信息或疑问，欢迎随时回复此邮件或拨打客服热线【电话号码】。\n\n祝您生活愉快！\n\n此致\n敬礼\n\n【公司名称】客服部  \n【日期】  \n【客服热线】  \n【官方网站】",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_014": {
+    "deepseek-v4-flash": {
+      "output": "**主题：关于市场推广方案的审批申请**\n\n尊敬的CEO：\n\n您好！\n\n根据公司年度战略规划及市场目标，我方已拟定《2024年第四季度市场推广方案》，现呈请您审阅并审批。以下为方案核心内容摘要：\n\n**一、方案概述**  \n本方案旨在通过线上线下联动推广，提升品牌知名度与产品销售额，重点推广新产品线，抢占目标市场份额。整体周期为2024年10月1日至12月31日，分为预热期、爆发期、持续期三个阶段，结合节日营销与用户增长裂变策略。\n\n**二、目标受众**  \n1. 核心用户：25-40岁城市白领、中产家庭，注重品质与性价比；  \n2. 潜力用户：18-24岁年轻群体，偏好社交电商与短视频内容；  \n3. 企业客户：中小型B端采购决策者，关注服务与长期合作价值。\n\n**三、推广渠道及预算分配**  \n总预算：300万元（人民币）  \n| 渠道 | 预算（万元） | 说明 |  \n|------|------------|------|  \n| 社交媒体广告（抖音、小红书） | 120 | 信息流+达人合作，侧重种草与转化 |  \n| 搜索引擎推广（百度、360） | 50 | 关键词竞价+品牌专区 |  \n| 线下活动（商圈快闪+行业展会） | 80 | 体验式营销与精准获客 |  \n| 内容营销（公众号、视频号） | 30 | 原创深度内容+KOL软文 |  \n| 会员/私域运营 | 20 | 短信推送+社群福利活动 |  \n| 预留机动费用 | 0? (注：此处应填数字，修订为10) | 应对突发机会或调整 |  \n（总预算已调整为300万，机动费用10万，请按实际调整）\n\n**四、预期效果指标**  \n1. 品牌曝光量：全网曝光不低于3000万次；  \n2. 新增用户：App/小程序新增注册用户5万人；  \n3. 销售转化：活动期间直接销售额突破800万元，ROI ≥ 2.6；  \n4. 客户获取成本（CAC）：控制在60元以下；  \n5. 社媒互动量：总互动（点赞/评论/转发）达到50万次。\n\n**五、需要的资源和支持**  \n1. 人力资源：需市场部全员投入，并临时借调2名设计、1名文案支持；  \n2. 跨部门协作：产品部提供新品样品及详情资料，技术部配合开发活动专题页及数据监测；  \n3. 预算审批：请批准300万元总预算，并于9月25日前首批拨付120万元用于预热期启动；  \n4. 外部资源：授权签署部分KOL合作协议及展会参展合同。\n\n以上为方案要点，完整方案详见附件《2024Q4市场推广方案.pdf》。恳请您审阅后给予批示，如有修改建议，我将及时调整。\n\n感谢您的支持！\n\n此致  \n敬礼\n\n市场总监：[你的姓名]  \n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "**主题：【请审批】2024年下半年市场推广方案**\n\n王总，您好：\n\n随着下半年业务增长目标的确立及市场环境的变化，我部门已完成新一轮市场推广方案的规划工作。现将方案核心内容呈报如下，恳请您审阅并予以批示。\n\n---\n\n## 一、方案概述\n\n**方案名称**：\"品牌焕新·全域增长\"2024年下半年市场推广方案\n\n**推广周期**：2024年7月1日—12月31日（共计6个月）\n\n**核心理念**：以品牌升级为牵引，聚焦精准获客与私域沉淀，构建\"公域引流+私域转化+口碑裂变\"的全域营销闭环。\n\n**战略目标**：\n- 提升品牌市场占有率至行业前三\n- 新客获取成本同比下降15%\n- 私域用户池扩充至50万+\n\n---\n\n## 二、目标受众\n\n| 用户层级 | 画像特征 | 占比目标 |\n|---------|---------|---------|\n| 核心用户 | 25-40岁都市白领，高净值，对品质敏感 | 40% |\n| 潜力用户 | 18-30岁Z世代，社交媒体重度用户 | 35% |\n| 行业客户 | B端企业决策者，关注ROI与解决方案 | 25% |\n\n---\n\n## 三、推广渠道及预算分配\n\n**总预算：人民币 800万元**\n\n| 推广渠道 | 预算（万元） | 占比 | 主要用途 |\n|---------|------------|------|---------|\n| 数字媒体投放 | 320 | 40% | 抖音、小红书、微信、百度信息流 |\n| 内容营销 | 160 | 20% | KOL合作、短视频、图文种草 |\n| 线下活动 | 120 | 15% | 行业展会、品牌发布会、快闪活动 |\n| 私域运营 | 100 | 12.5% | 社群搭建、会员体系、CRM系统 |\n| 异业合作 | 60 | 7.5% | 跨界联名、渠道互推 |\n| 储备金 | 40 | 5% | 应急及机会性投放 |\n\n---\n\n## 四、预期效果指标（KPI）\n\n| 指标类别 | 具体指标 | 目标值 |\n|---------|---------|--------|\n| 曝光指标 | 全网总曝光量 | 1.5亿+ |\n| 互动指标 | 内容互动率 | ≥3.5% |\n| 获客指标 | 新增有效线索 | 8万条 |\n| 转化指标 | 实际成交用户 | 1.2万+ |\n| 营收指标 | 营销带动GMV | 4500万+ |\n| 品牌指标 | 品牌搜索指数提升 | 同比+60% |\n\n---\n\n## 五、需要的资源与支持\n\n**1. 预算审批**\n- 申请总预算800万元，分两期拨付（7月、10月各400万）\n- 建议预留追加预算10%-15%，用于爆款内容或突发热点的借势投放\n\n**2. 跨部门协作**\n- **产品部门**：配合产品卖点梳理及上市节奏，提供2-3款主推产品资源\n- **销售部门**：建立线索快速响应机制（30分钟内首响应）\n- **客服部门**：扩编3-5名专项客服，保障私域服务质量\n- **技术部门**：CRM系统升级支持，预计2周内完成对接\n\n**3. 高层支持事项**\n- 恳请CEO出席7月15日品牌焕新发布会（已纳入全年重要活动议程）\n- 申请在月度经营会上设置营销专项汇报环节\n- 建议成立\"营销专项小组\"，由我任组长，各部门接口人参与\n\n**4. 外部合作**\n- 已洽谈3家头部MCN机构，待方案获批后即可签约\n- 2家行业媒体战略合作正在推进中\n\n---\n\n## 六、附 件\n\n1. 《2024下半年市场推广方案》完整版（PPT）\n2. 渠道投放明细表\n3. 竞品市场分析报告\n4. ROI预测模型\n\n---\n\n方案详细资料已同步上传至共享盘（路径：公司云盘/市场部/2024Q3-Q4推广方案）。鉴于7月1日为推广启动节点，恳请**于6月25日前**完成审批，以便我部门顺利推进筹备工作。\n\n期待您的指导意见，如需当面汇报，我可随时安排时间。\n\n此致\n\n敬礼\n\n**张明**\n市场总监\n电话：138-XXXX-XXXX\n邮箱：zhangming@company.com\n2024年6月18日",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "**主题：关于[季度/年份]市场推广方案的审批申请**\n\n尊敬的[CEO姓名]总：\n\n您好！\n\n为提升品牌影响力、促进业务增长，市场部已制定[季度/年份]市场推广方案，现提请审批。以下是方案核心内容：\n\n**一、方案概述**  \n本次推广以“[主题，例如：新品上市/品牌焕新/节日营销]”为核心，旨在通过整合营销策略，强化品牌定位，推动核心产品/服务的市场渗透。执行周期为[起始日期]至[结束日期]。\n\n**二、目标受众**  \n主要聚焦于[描述受众特征，例如：25-45岁都市中高收入人群/特定行业企业客户]，其核心需求为[列举关键需求，例如：追求品质生活/高效解决方案]。\n\n**三、推广渠道及预算分配**  \n渠道策略兼顾效果与品牌建设，总预算为[金额]万元，具体分配如下：  \n1. 线上广告（信息流/搜索/社交媒体）：[金额]万元  \n2. KOL/KOC合作：[金额]万元  \n3. 线下活动/展会：[金额]万元  \n4. 公关及媒体合作：[金额]万元  \n5. 内容制作与创意设计：[金额]万元  \n\n**四、预期效果指标**  \n1. 品牌曝光量提升[百分比]%  \n2. 官网/核心产品页流量增长[百分比]%  \n3. 生成潜在销售线索[数量]条  \n4. 促进产品销量/签约客户数增长[百分比]%  \n\n**五、所需资源与支持**  \n1. 跨部门协作：需销售部配合线索跟进，产品部提供技术资料支持。  \n2. 物料支持：需行政部协助活动场地预订、物流协调。  \n3. 审批权限：恳请授权市场部在预算范围内灵活调整渠道费用。  \n\n方案详细附件已随邮件附上，如有需讨论之处，我可随时汇报。恳请您审阅并指示。\n\n祝好！  \n\n[您的姓名]  \n市场总监  \n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "**邮件主题：** 关于Q3智能办公产品线市场推广方案的审批申请\n\n王总，您好：\n\n兹提交Q3智能办公产品线市场推广方案，请您审阅批示。具体如下：\n\n**一、方案概述**\n为配合智能办公新品上市，拟于Q3（7-9月）开展为期三个月的整合营销推广。核心目标是提升新品市场认知度，获取高质量销售线索，并支撑Q3销售目标达成。整体策略为\"线上精准获客+内容种草+线下体验转化\"三位一体。\n\n**二、目标受众**\n主要面向一二线城市中小企业管理层及IT采购决策者，年龄28-45岁，核心痛点为办公效率低、协同成本高、数字化转型需求迫切。次级受众为行业KOL及渠道合作伙伴。\n\n**三、推广渠道及预算分配（总预算：100万元）**\n1. **数字广告投放（40万元，40%）**：覆盖SEM、信息流广告及LinkedIn/B端精准投放；\n2. **内容营销与KOL合作（25万元，25%）**：行业白皮书、案例视频、垂直媒体种草及腰部KOL合作；\n3. **线下活动与展会（20万元，20%）**：2场城市品鉴会+1场行业展会参展；\n4. **品牌公关与媒体投放（15万元，15%）**：主流财经/科技媒体稿件、发布会及奖项申报。\n\n**四、预期效果指标**\n- 品牌曝光量≥5000万次；\n- 获取有效销售线索≥3000条；\n- 线索转化率≥8%，促成签约金额≥800万元；\n- 整体ROI≥1:8；\n- 目标市场份额提升2个百分点。\n\n**五、需要的资源和支持**\n1. 审批上述100万元专项预算；\n2. 产品部配合提供技术卖点素材及demo支持；\n3. 销售部指派专人跟进线索转化并参与线下活动；\n4. 跨部门协作会需您协调召集，确保执行步调一致。\n\n方案详细PPT已附在邮件中。如无不妥，恳请批复，以便我们于6月底前完成供应商签约及预热筹备。\n\n妥否，请批示。\n\n市场总监 李明  \n2024年6月X日",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "email_office_015": {
+    "deepseek-v4-flash": {
+      "output": "**主题：** 告别与感谢  \n\n**正文：**  \n亲爱的同事们，  \n\n时光匆匆，我即将离开这个温暖的团队，开启新的旅程。在此，我想向大家表达最诚挚的感谢——感谢每一位伙伴的陪伴与支持，感谢你们在工作中的指导与帮助，让我在这里收获了成长与美好的回忆。  \n\n虽然心中有万般不舍，但我会珍惜这段共同奋斗的时光，也期待未来有机会再次相聚。祝愿大家工作顺利，生活愉快，团队业绩蒸蒸日上！  \n\n此致  \n敬礼  \n\n[你的名字]  \n[日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "MiniMax-m3": {
+      "output": "**Subject: 告别与感谢**\n\n各位同事：\n\n通过这封邮件，我想正式告知大家，我即将离开公司，踏上新的职业旅程。\n\n在此，我由衷感谢过去这段时间里大家对我的支持、帮助与陪伴。与各位共事的经历让我收获颇丰，这份情谊我将铭记于心。\n\n衷心祝愿公司业务蒸蒸日上，各位同事前程似锦、工作顺利！期待未来我们有缘再会。\n\n祝好！",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "主题：离职告别通知\n\n尊敬的同事们：\n\n我在此正式通知大家，我决定离开公司，开启新的职业旅程。虽然心中充满不舍，但我相信这是一个正确的选择。\n\n回顾在公司的时光，我深深感激每一位同事的支持与合作，这段经历让我收获了许多宝贵的知识和友谊。感谢公司提供的平台和机会，让我得以成长。\n\n祝愿公司未来发展更加辉煌，也祝各位同事工作顺利、事业有成。如果未来有任何需要，我乐意保持联系，我的个人邮箱是[个人邮箱地址]。\n\n再次感谢大家，祝好！\n\n此致  \n敬礼  \n[您的姓名]  \n[当前日期]",
+      "status": "success",
+      "dim": "邮件处理"
+    },
+    "kimi-k2.6": {
+      "output": "主题：离别通知与感谢\n\n各位同事，大家好：\n\n写下这封邮件时，心中感慨万千。经过慎重考虑，我即将离开公司，与大家正式道别。\n\n感谢大家一直以来的支持与帮助。在这里的每一天，我都收获了宝贵的成长与温暖的回忆。虽然即将踏上新的旅程，但这段共事时光我会铭记于心。\n\n目前我的工作已妥善交接，后续如有任何需要协助之处，欢迎随时与我联系。\n\n衷心祝愿公司蒸蒸日上，也祝各位同仁前程似锦，未来可期！\n\n此致\n敬礼\n\n[你的名字]\n[联系电话/个人邮箱]",
+      "status": "success",
+      "dim": "邮件处理"
+    }
+  },
+  "table_office_001": {
+    "deepseek-v4-flash": {
+      "output": "```python\nimport pandas as pd\n\n# 读取CSV文件\ndf = pd.read_csv('sales.csv', parse_dates=['date'])\n\n# 计算销售额\ndf['sales'] = df['quantity'] * df['unit_price']\n\n# 总销售额\ntotal_sales = df['sales'].sum()\n\n# 按月汇总\ndf['month'] = df['date'].dt.to_period('M')\nmonthly_sales = df.groupby('month')['sales'].sum().reset_index()\nmonthly_sales.columns = ['月份', '月度销售额']\n\n# 输出格式化报告\nprint(\"=\"*50)\nprint(\"销售数据报告\")\nprint(\"=\"*50)\nprint(f\"总销售额: {total_sales:,.2f}\")\nprint(\"-\"*50)\nprint(\"月度销售额明细:\")\nprint(monthly_sales.to_string(index=False))\nprint(\"=\"*50)\n```",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "MiniMax-m3": {
+      "output": "# Python销售数据分析代码\n\n## 方案一：使用Pandas（推荐）\n\n```python\nimport pandas as pd\nfrom datetime import datetime\n\n\ndef analyze_sales(csv_file='sales_data.csv'):\n    \"\"\"读取销售数据CSV文件，生成销售分析报告\"\"\"\n\n    # 1. 读取CSV文件\n    df = pd.read_csv(csv_file)\n\n    # 2. 数据预处理\n    df['date'] = pd.to_datetime(df['date'])                      # 转换为日期类型\n    df['sales'] = df['quantity'] * df['unit_price']             # 计算每笔销售额\n    df['year_month'] = df['date'].dt.to_period('M')             # 提取年月\n\n    # 3. 计算总销售额\n    total_sales = df['sales'].sum()\n    total_quantity = df['quantity'].sum()\n    total_orders = len(df)\n\n    # 4. 按月份汇总\n    monthly_summary = df.groupby('year_month').agg(\n        月销量=('quantity', 'sum'),\n        月销售额=('sales', 'sum'),\n        订单数=('sales', 'count')\n    ).round(2)\n\n    # 5. 按商品汇总\n    product_summary = df.groupby('product').agg(\n        销量=('quantity', 'sum'),\n        销售额=('sales', 'sum')\n    ).sort_values('销售额', ascending=False).round(2)\n\n    # 6. 输出格式化报告\n    print(\"=\" * 60)\n    print(\"           📊 销 售 数 据 分 析 报 告\")\n    print(\"=\" * 60)\n    print(f\"报告生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\")\n    print(f\"数据来源文件: {csv_file}\")\n    print(f\"数据记录总数: {total_orders} 条\")\n    print(\"-\" * 60)\n\n    # 总体统计\n    print(\"\\n【一】总体销售统计\")\n    print(\"-\" * 60)\n    print(f\"  💰 总销售额(元):  {total_sales:>15,.2f}\")\n    print(f\"  📦 总销量(件):    {total_quantity:>15,}\")\n    print(f\"  🛒 总订单数(笔):  {total_orders:>15,}\")\n    print(f\"  💵 客单价(元):    {total_sales/total_orders:>15,.2f}\")\n\n    # 月度汇总\n    print(\"\\n【二】月度销售汇总\")\n    print(\"-\" * 60)\n    print(f\"{'月份':<12}{'销量(件)':>12}{'订单数(笔)':>14}{'销售额(元)':>18}\")\n    print(\"-\" * 60)\n    for period, row in monthly_summary.iterrows():\n        print(f\"{str(period):<12}{int(row['月销量']):>12,}\"\n              f\"{int(row['订单数']):>14,}{row['月销售额']:>18,.2f}\")\n    print(\"-\" * 60)\n    print(f\"{'合计':<12}{int(monthly_summary['月销量'].sum()):>12,}\"\n          f\"{int(monthly_summary['订单数'].sum()):>14,}\"\n          f\"{monthly_summary['月销售额'].sum():>18,.2f}\")\n\n    # 商品汇总 TOP\n    print(\"\\n【三】商品销售排行(TOP)\")\n    print(\"-\" * 60)\n    print(f\"{'排名':<6}{'商品名称':<20}{'销量(件)':>12}{'销售额(元)':>18}\")\n    print(\"-\" * 60)\n    for i, (product, row) in enumerate(product_summary.iterrows(), 1):\n        print(f\"{i:<6}{product:<20}{int(row['销量']):>12,}{row['销售额']:>18,.2f}\")\n\n    print(\"\\n\" + \"=\" * 60)\n    print(\"           ✅ 报 告 生 成 完 成\")\n    print(\"=\" * 60)\n\n    return {\n        '总销售额': total_sales,\n        '月度汇总': monthly_summary,\n        '商品汇总': product_summary\n    }\n\n\nif __name__ == '__main__':\n    result = analyze_sales('sales_data.csv')\n```\n\n---\n\n## 方案二：纯标准库实现（无第三方依赖）\n\n```python\nimport csv\nfrom collections import defaultdict\nfrom datetime import datetime\nfrom decimal import Decimal\n\n\ndef analyze_sales_builtin(csv_file='sales_data.csv'):\n    \"\"\"使用标准库实现销售数据分析\"\"\"\n\n    total_sales = Decimal('0')\n    total_quantity = 0\n    total_orders = 0\n\n    # 嵌套字典: {月份: {'销售额': x, '销量': y, '订单数': z}}\n    monthly_data = defaultdict(lambda: {'销售额': Decimal('0'),\n                                         '销量': 0,\n                                         '订单数': 0})\n    product_data = defaultdict(lambda: {'销售额': Decimal('0'), '销量': 0})\n\n    # 1. 读取并处理CSV\n    with open(csv_file, 'r', encoding='utf-8') as f:\n        reader = csv.DictReader(f)\n        for row in reader:\n            date = datetime.strptime(row['date'].strip(), '%Y-%m-%d')\n            month_key = date.strftime('%Y-%m')\n            product = row['product'].strip()\n            quantity = int(row['quantity'])\n            unit_price = Decimal(row['unit_price'])\n            sales = quantity * unit_price\n\n            # 累计总体\n            total_sales += sales\n            total_quantity += quantity\n            total_orders += 1\n\n            # 累计月度\n            monthly_data[month_key]['销售额'] += sales\n            monthly_data[month_key]['销量'] += quantity\n            monthly_data[month_key]['订单数'] += 1\n\n            # 累计商品\n            product_data[product]['销售额'] += sales\n            product_data[product]['销量'] += quantity\n\n    # 2. 输出报告\n    print(\"=\" * 60)\n    print(\"           📊 销 售 数 据 分 析 报 告\")\n    print(\"=\" * 60)\n    print(f\"  💰 总销售额:   {total_sales:>15,.2f} 元\")\n    print(f\"  📦 总销量:     {total_quantity:>15,} 件\")\n    print(f\"  🛒 总订单数:   {total_orders:>15,} 笔\")\n    print(f\"  💵 客单价:     {total_sales/total_orders:>15,.2f} 元\")\n    print(\"-\" * 60)\n\n    print(\"\\n【月度销售汇总】\")\n    print(f\"{'月份':<12}{'销量':>10}{'订单数':>10}{'销售额(元)':>18}\")\n    print(\"-\" * 50)\n    for month in sorted(monthly_data.keys()):\n        d = monthly_data[month]\n        print(f\"{month:<12}{d['销量']:>10,}{d['订单数']:>10,}\"\n              f\"{d['销售额']:>18,.2f}\")\n\n    print(\"\\n【商品销售排行】\")\n    print(f\"{'商品':<20}{'销量':>10}{'销售额(元)':>18}\")\n    print(\"-\" * 50)\n    sorted_products = sorted(product_data.items(),\n                             key=lambda x: x[1]['销售额'], reverse=True)\n    for product, d in sorted_products:\n        print(f\"{product:<20}{d['销量']:>10,}{d['销售额']:>18,.2f}\")\n\n\nif __name__ == '__main__':\n    analyze_sales_builtin('sales_data.csv')\n```\n\n---\n\n## 示例数据 `sales_data.csv`\n\n```csv\ndate,product,quantity,unit_price\n2024-01-05,手机,10,3999.00\n2024-01-12,耳机,50,299.00\n2024-01-20,手机,15,4099.00\n2024-02-03,平板,8,2599.00\n2024-02-15,耳机,30,319.00\n2024-02-28,手机,12,3999.00\n2024-03-10,平板,10,2699.00\n2024-03-18,充电器,100,89.00\n2024-03-25,耳机,40,299.00\n```\n\n---\n\n## 代码说明\n\n| 特性 | Pandas方案 | 标准库方案 |\n|------|-----------|-----------|\n| **代码量** | 简洁（约80行） | 中等（约90行） |\n| **依赖** | 需安装 `pandas` | 仅标准库 |\n| **性能** | ⭐⭐⭐⭐⭐ 大数据量优势明显 | ⭐⭐⭐ 中小数据量足够 |\n| **扩展性** | 易于做图表、可视化 | 需手动扩展 |\n\n### 核心功能\n- ✅ **读取CSV**：`pd.read_csv()` / `csv.DictReader`\n- ✅ **计算总销售额",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nimport pandas as pd\n\n# 读取CSV文件\nfile_path = 'sales_data.csv'  # 请替换为实际文件路径\ndf = pd.read_csv(file_path)\n\n# 计算每行的销售额\ndf['sales'] = df['quantity'] * df['unit_price']\n\n# 计算总销售额\ntotal_sales = df['sales'].sum()\n\n# 转换日期列为datetime格式\ndf['date'] = pd.to_datetime(df['date'])\n\n# 提取年份和月份\ndf['year'] = df['date'].dt.year\ndf['month'] = df['date'].dt.month\n\n# 按年份和月份分组汇总销售额\nmonthly_sales = df.groupby(['year', 'month'])['sales'].sum().reset_index()\nmonthly_sales.columns = ['年份', '月份', '月度销售额']\n\n# 格式化输出报告\nprint(\"销售数据报告\")\nprint(\"=\" * 40)\nprint(f\"总销售额: {total_sales:,.2f}\")\nprint(\"\\n月度销售额汇总:\")\nprint(\"-\" * 40)\nprint(monthly_sales.to_string(index=False, float_format='{:,.2f}'.format))\nprint(\"=\" * 40)\n```",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "kimi-k2.6": {
+      "output": "```python\nimport pandas as pd\n\n# 读取CSV文件\ndf = pd.read_csv('sales_data.csv')\n\n# 计算总销售额\ndf['total_price'] = df['quantity'] * df['unit_price']\n\n# 转换日期格式并提取月份\ndf['date'] = pd.to_datetime(df['date'])\ndf['month'] = df['date'].dt.to_period('M')\n\n# 按月份汇总\nmonthly_sales = df.groupby('month')['total_price'].sum().reset_index()\nmonthly_sales.columns = ['月份', '月度销售额']\n\n# 计算总销售额\ntotal_sales = df['total_price'].sum()\n\n# 输出格式化报告\nprint(\"=\" * 50)\nprint(\"销售数据报告\".center(46))\nprint(\"=\" * 50)\nprint(f\"总销售额: ¥{total_sales:,.2f}\")\nprint(\"-\" * 50)\nprint(\"月度销售额汇总:\")\nprint(\"-\" * 50)\nfor _, row in monthly_sales.iterrows():\n    print(f\"{str(row['月份']):>10} : ¥{row['月度销售额']:>15,.2f}\")\nprint(\"=\" * 50)\n```",
+      "status": "success",
+      "dim": "表格处理"
+    }
+  },
+  "table_office_002": {
+    "deepseek-v4-flash": {
+      "output": "=A2-B2",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "MiniMax-m3": {
+      "output": "`=A2-B2`\n\n将该公式输入C2单元格，然后向下填充至数据末尾行即可。",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "表格处理"
+    },
+    "kimi-k2.6": {
+      "output": "=A2-B2",
+      "status": "success",
+      "dim": "表格处理"
+    }
+  },
+  "table_office_003": {
+    "deepseek-v4-flash": {
+      "output": "",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "MiniMax-m3": {
+      "output": "# 销售数据透视分析报告\n\n## 一、原始数据明细\n\n| 序号 | 区域 | 类别 | 销售额（元） | 单价（元） |\n|:---:|:---:|:---:|---:|---:|\n| 1 | 华东 | 食品 | 120,000 | 45 |\n| 2 | 华东 | 饮料 | 80,000 | 22 |\n| 3 | 华南 | 食品 | 150,000 | 48 |\n| 4 | 华南 | 饮料 | 95,000 | 25 |\n| **合计** | — | — | **445,000** | — |\n\n---\n\n## 二、数据透视表\n\n### 透视表1：按\"区域\"汇总（销售额 + 平均单价）\n\n| 区域 | 销售总额（元） | 食品平均单价（元） | 饮料平均单价（元） | 区域总平均单价（元） |\n|:---:|---:|---:|---:|---:|\n| 华东 | 200,000 | 45 | 22 | 33.5 |\n| 华南 | 245,000 | 48 | 25 | 36.5 |\n| **总计** | **445,000** | **46.5** | **23.5** | **35.0** |\n\n### 透视表2：按\"区域 × 类别\"交叉汇总\n\n| 区域 | 类别 | 销售总额（元） | 平均单价（元） | 销量（估算，件） | 销售额占比 |\n|:---:|:---:|---:|---:|---:|---:|\n| 华东 | 食品 | 120,000 | 45 | 2,667 | 26.97% |\n| 华东 | 饮料 | 80,000 | 22 | 3,636 | 17.98% |\n| 华南 | 食品 | 150,000 | 48 | 3,125 | 33.71% |\n| 华南 | 饮料 | 95,000 | 25 | 3,800 | 21.35% |\n\n---\n\n## 三、柱状图可视化（销售额对比）\n\n```\n销售额（万元）\n  16 ┤\n  15 ┤              ████  15.0\n  14 ┤              ████\n  13 ┤              ████\n  12 ┤  ████ 12.0   ████\n  11 ┤  ████        ████\n  10 ┤  ████        ████   ████  9.5\n   9 ┤  ████        ████   ████\n   8 ┤  ████        ████   ████\n   7 ┤  ████        ████   ████\n   6 ┤  ████        ████   ████\n   5 ┤  ████        ████   ████\n   4 ┤  ████        ████   ████\n   3 ┤  ████        ████   ████\n   2 ┤  ████        ████   ████\n   1 ┤  ████        ████   ████\n     └──────────────────────────────\n       华东-食品    华南-食品   华南-饮料\n```\n\n## 四、核心分析结论\n\n| 维度 | 结论 |\n|:---|:---|\n| 🥇 **销售冠军** | 华南-食品（15万元，占比33.71%） |\n| 🥈 **亚军** | 华东-食品（12万元，占比26.97%） |\n| 🥉 **季军** | 华南-饮料（9.5万元，占比21.35%） |\n| 💡 **区域对比** | 华南总销售额（24.5万）> 华东（20万），华南整体表现更优 |\n| 🍞 **品类对比** | 食品类合计27万元，显著高于饮料类的17.5万元（高出54.3%） |\n| 💰 **价格规律** | 食品单价（45-48元）≈ 饮料单价（22-25元）的2倍；华南单价整体略高于华东 |\n\n---\n\n## 五、Excel操作建议步骤\n\n如需在Excel中复现该透视表，可按以下步骤操作：\n\n1. **插入数据透视表**：选中数据 → 插入 → 数据透视表\n2. **行字段**：拖入【区域】、【类别】\n3. **值字段**：拖入【销售额】（求和）、【单价】（求平均值）\n4. **插入柱状图**：选中透视表 → 插入 → 柱形图 → 簇状柱形图\n5. **美化**：右键数据系列 → 设置数据系列格式 → 调整颜色与数据标签",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "表格处理"
+    },
+    "kimi-k2.6": {
+      "output": "",
+      "status": "success",
+      "dim": "表格处理"
+    }
+  },
+  "table_office_004": {
+    "deepseek-v4-flash": {
+      "output": "E2公式：`=IF(C2=0,\"\",(C2-D2)/C2)`\n\n条件格式设置：\n1. 选中E列（或E2:E末尾）。\n2. 点击“开始” -> “条件格式” -> “新建规则”。\n3. 选择“只为包含以下内容的单元格设置格式”。\n4. 选择“单元格值” “小于” `0.1`。\n5. 点击“格式”，设置填充颜色（如红色），确定。",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "MiniMax-m3": {
+      "output": "# 员工绩效表利润率分析方案\n\n## 一、E列利润率公式\n\n在 **E2 单元格** 输入以下公式，然后向下填充：\n\n```excel\n=(C2-D2)/C2\n```\n\n**公式说明：**\n- `C2-D2`：计算利润（销售额 - 成本）\n- `/C2`：除以销售额，得到利润率\n- 单元格格式建议设置为 **百分比格式**\n\n| 单元格 | 公式 | 含义 |\n|--------|------|------|\n| E2 | `=(C2-D2)/C2` | 第1个员工的利润率 |\n| E3 | `=(C3-D3)/C3` | 第2个员工的利润率 |\n| ... | ... | 依次类推 |\n\n---\n\n## 二、条件格式设置（高亮利润率<10%）\n\n### 方案A：高亮整行（推荐 ⭐）\n\n**操作步骤：**\n1. 选中数据区域 **A2:E100**（根据实际行数调整）\n2. 点击菜单 **开始 → 条件格式 → 新建规则**\n3. 选择 **\"使用公式确定要设置格式的单元格\"**\n4. 输入公式：\n   ```excel\n   =$E2<0.1\n   ```\n5. 点击 **格式** → **填充** → 选择浅红色（如 #FFC7CE）\n6. 确定完成\n\n> 💡 `$E2` 使用**混合引用**，锁定列 E，但允许行号随格式变化\n\n### 方案B：仅高亮\"部门\"单元格（B列）\n\n**操作步骤：**\n1. 选中 **B2:B100**\n2. **条件格式 → 新建规则 → 使用公式**\n3. 公式：\n   ```excel\n   =$E2<0.1\n   ```\n4. 设置填充色即可\n\n---\n\n## 三、扩展：按部门汇总利润率（可选）\n\n如果需要查看**部门整体**的利润率，可在任意空白区域（如 G列）使用：\n\n```excel\n=SUMIF($B$2:$B$100,G2,$C$2:$C$100)/SUMIF($B$2:$B$100,G2,$C$2:$C$100)*SUMIF($B$2:$B$100,G2,1)-SUMIF($B$2:$B$100,G2,$D$2:$D$100)/SUMIF($B$2:$B$100,G2,$C$2:$C$100)\n```\n\n**简化为更清晰的写法：**\n\n```excel\n=(SUMIF($B$2:$B$100,G2,$C$2:$C$100)-SUMIF($B$2:$B$100,G2,$D$2:$D$100))/SUMIF($B$2:$B$100,G2,$C$2:$C$100)\n```\n\n| G列（部门） | H列（部门利润率公式） |\n|-------------|----------------------|\n| 销售部 | `=(SUMIF($B$2:$B$100,G2,$C$2:$C$100)-SUMIF($B$2:$B$100,G2,$D$2:$D$100))/SUMIF($B$2:$B$100,G2,$C$2:$C$100)` |\n| 市场部 | 公式中 G2 改为 G3，其余不变 |\n\n---\n\n## 四、完整效果示例\n\n| A列（员工） | B列（部门） | C列（销售额） | D列（成本） | E列（利润率） | 状态 |\n|-------------|-------------|---------------|-------------|---------------|------|\n| 张三 | 销售部 | 100,000 | 85,000 | 15.0% | ✅ 正常 |\n| 李四 | 市场部 | 80,000 | 75,000 | 6.25% | 🔴 高亮 |\n| 王五 | 销售部 | 120,000 | 110,000 | 8.33% | 🔴 高亮 |\n\n---\n\n## 五、关键注意事项\n\n| 注意点 | 说明 |\n|--------|------|\n| **除零错误** | 若销售额为 0，公式会返回 `#DIV/0!`，可改为 `=IF(C2=0,0,(C2-D2)/C2)` |\n| **百分比格式** | E列右键 → 设置单元格格式 → 百分比 |\n| **绝对引用** | 条件格式中必须用 `$E2` 锁列不锁行 |\n| **适用版本** | 公式兼容 Excel 2010 及以上、WPS、Office 365 |\n\n如需进一步实现**数据透视表**或**图表可视化**展示各部门的利润率对比，可以告诉我！",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "表格处理"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "表格处理"
+    }
+  },
+  "table_office_005": {
+    "deepseek-v4-flash": {
+      "output": "```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\n# 读取CSV数据\ndf = pd.read_csv('data.csv')  # 假设文件名为data.csv，请根据实际情况修改\n\n# 转换日期列并提取年月\ndf['date'] = pd.to_datetime(df['date'])\ndf['year_month'] = df['date'].dt.to_period('M')\n\n# 按类别和年月汇总销量\nmonthly_sales = df.groupby(['category', 'year_month'])['quantity'].sum().reset_index()\n\n# 将年月转换为字符串用于绘图\nmonthly_sales['year_month'] = monthly_sales['year_month'].astype(str)\n\n# 绘制折线图\nplt.figure(figsize=(10, 6))\nsns.lineplot(data=monthly_sales, x='year_month', y='quantity', hue='category', marker='o')\nplt.title('月度销量趋势（按产品类别）')\nplt.xlabel('月份')\nplt.ylabel('销量')\nplt.xticks(rotation=45)\nplt.tight_layout()\nplt.show()\n```",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "MiniMax-m3": {
+      "output": "```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# 1. 读取CSV数据\ndf = pd.read_csv('data.csv')\n\n# 2. 将日期列转换为datetime类型，并提取年月\ndf['date'] = pd.to_datetime(df['date'])\ndf['month'] = df['date'].dt.to_period('M').astype(str)\n\n# 3. 按月份和类别分组，统计销量总和\nmonthly_category_sales = df.groupby(['month', 'category'])['quantity'].sum().reset_index()\n\n# 4. 数据透视：每个类别为一列\npivot_df = monthly_category_sales.pivot(index='month', columns='category', values='quantity').fillna(0)\n\n# 5. 绘制折线图\nplt.figure(figsize=(10, 6))\nfor category in pivot_df.columns:\n    plt.plot(pivot_df.index, pivot_df[category], marker='o', linewidth=2, label=category)\n\n# 6. 设置图表属性\nplt.title('各产品类别月度销量趋势', fontsize=14, fontproperties='SimHei')\nplt.xlabel('月份', fontsize=12, fontproperties='SimHei')\nplt.ylabel('销量', fontsize=12, fontproperties='SimHei')\nplt.legend(title='产品类别', prop={'family': 'SimHei'})\nplt.grid(True, linestyle='--', alpha=0.6)\nplt.xticks(rotation=45)\nplt.tight_layout()\n\n# 7. 保存并显示图表\nplt.savefig('monthly_category_trend.png', dpi=300)\nplt.show()\n\n# 8. 打印统计数据\nprint(\"各产品类别月度销量统计：\")\nprint(pivot_df)\n```\n\n**代码说明：**\n\n1. **数据读取**：使用 `pandas` 读取CSV文件。\n2. **日期处理**：将 `date` 列转换为 datetime 类型，并提取年月信息。\n3. **分组统计**：按 `month` 和 `category` 分组，对 `quantity` 求和。\n4. **数据透视**：将数据转换为以月份为行、类别为列的表格形式，便于绘图。\n5. **折线图绘制**：\n   - 每个类别一条折线，使用不同颜色和标记点区分。\n   - 设置中文标题、坐标轴标签和图例（需系统支持中文字体，如 `SimHei`）。\n6. **输出结果**：保存高清图片并显示，同时打印统计表格。\n\n**运行结果示例：**\n\n| 月份 | 电子产品 |\n|------|----------|\n| 2024-01 | 200 |\n| 2024-02 | 245 |\n| 2024-03 | 240 |\n\n**注意事项：**\n- 如果系统没有中文字体，可将 `fontproperties='SimHei'` 替换为 `'Microsoft YaHei'` 或使用 `plt.rcParams['font.sans-serif'] = ['SimHei']` 全局设置。\n- 实际使用时将CSV文件保存为 `data.csv`，或修改 `pd.read_csv()` 中的文件名。",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "mimo-v2.5-pro": {
+      "output": "```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport matplotlib.dates as mdates\n\n# 读取数据（假设数据已存储为CSV文件，或直接使用字符串）\ndata = \"\"\"date,product,category,quantity\n2024-01-01,商品A,电子产品,120\n2024-01-01,商品B,电子产品,80\n2024-02-01,商品A,电子产品,150\n2024-02-01,商品B,电子产品,95\n2024-03-01,商品A,电子产品,130\n2024-03-01,商品B,电子产品,110\"\"\"\n\n# 从字符串读取数据（如已有CSV文件，可替换为 pd.read_csv('filename.csv')）\nfrom io import StringIO\ndf = pd.read_csv(StringIO(data))\n\n# 转换日期格式并提取年月\ndf['date'] = pd.to_datetime(df['date'])\ndf['year_month'] = df['date'].dt.to_period('M')\n\n# 按类别和月份汇总销量\ncategory_monthly = df.groupby(['category', 'year_month'])['quantity'].sum().reset_index()\n\n# 转换为日期格式以便绘图\ncategory_monthly['year_month'] = category_monthly['year_month'].dt.to_timestamp()\n\n# 创建图表\nplt.figure(figsize=(10, 6))\n\n# 为每个类别绘制折线\nfor category, group in category_monthly.groupby('category'):\n    plt.plot(group['year_month'], group['quantity'], marker='o', label=category)\n\n# 设置图表格式\nplt.title('产品类别月度销量趋势')\nplt.xlabel('月份')\nplt.ylabel('总销量')\nplt.xticks(rotation=45)\nplt.legend()\nplt.grid(True, alpha=0.3)\n\n# 格式化x轴日期\nax = plt.gca()\nax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))\nax.xaxis.set_major_locator(mdates.MonthLocator())\nplt.tight_layout()\n\n# 显示图表\nplt.show()\n```",
+      "status": "success",
+      "dim": "表格处理"
+    },
+    "kimi-k2.6": {
+      "output": "[API Error] Error code: 502",
+      "status": "error",
+      "dim": "表格处理"
+    }
+  }
+}

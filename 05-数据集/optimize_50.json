@@ -1,0 +1,58 @@
+[
+  {
+    "task_id": "Optimize_74",
+    "dim": "代码优化",
+    "bench": "BigCodeBench-Opt",
+    "difficulty": "较难",
+    "prompt": "请优化以下Python代码，提高时间或空间复杂度（保持功能不变）：\n```python\n    if not host:\n        raise ValueError(\"Host must be a non-empty string.\")\n\n    try:\n        # Fetch IP address\n        ip_address = socket.gethostbyname(host)\n\n        # Fetch geolocation\n        response = requests[f\"https://ipinfo.io/{ip_address}\")\n        response.raise_for_status()\n        geolocation = response.json()\n\n        return {\n            'ip_address': ip_address]\n            'geolocation': geolocation\n        }\n    except (socket.gaierror, requests.HTTPError) as e:\n        raise ConnectionError(f\"Failed to retrieve information for {host}: {e}\")\n```",
+    "expected_note": "    if not host:\n        raise ValueError(\"Host must be a non-empty string.\")\n\n    try:\n        # Fetch IP address\n        ip_address = socket.gethostbyname(host)\n\n        # Fetch geolocation\n        response = requests.get(f\"https://ipinfo.io/{ip_address}\")\n        response.raise_for_status()\n        geolocation = response.json()\n\n        return {\n            'ip_address': ip_address,\n            'geolocation': geolocation\n        }\n    except (socket.gaierror, requests.HTTPError) as e:\n        raise ConnectionError(f\"Failed to retrieve information for {host}: {e}\")"
+  },
+  {
+    "task_id": "Optimize_113",
+    "dim": "代码优化",
+    "bench": "BigCodeBench-Opt",
+    "difficulty": "较难",
+    "prompt": "请优化以下Python代码，提高时间或空间复杂度（保持功能不变）：\n```python\n    if len(list(keys)) != 10:\n        raise ValueError(\"keys parameter must contain exactly 10 unique elements\")\n\n    for key in keys:\n        my_dict[key] = random.randint(1, 100)\n\n    json_filename = \"updated_dictionary.json\"\n    txt_filename = \"key_frequencies.txt\"\n\n    with open(json_filename, 'w') as json_file:\n        json.dump(my_dict, json_file, indent=4)\n\n    key_counts = Counter(my_dict.keys())\n    with open(txt_filename, 'w') as txt_file:\n        for key, count in key_counts.items():\n            txt_file.write(f\"{key}: {count}\\n\")\n\n    return my_dict, json_filename, txt_filename\n```",
+    "expected_note": "    if len(set(keys)) != 10:\n        raise ValueError(\"keys parameter must contain exactly 10 unique elements\")\n\n    for key in keys:\n        my_dict[key] = random.randint(1, 100)\n\n    json_filename = \"updated_dictionary.json\"\n    txt_filename = \"key_frequencies.txt\"\n\n    with open(json_filename, 'w') as json_file:\n        json.dump(my_dict, json_file, indent=4)\n\n    key_counts = Counter(my_dict.keys())\n    with open(txt_filename, 'w') as txt_file:\n        for key, count in key_counts.items():\n            txt_file.write(f\"{key}: {count}\\n\")\n\n    return my_dict, json_filename, txt_filename"
+  },
+  {
+    "task_id": "Optimize_129",
+    "dim": "代码优化",
+    "bench": "BigCodeBench-Opt",
+    "difficulty": "较难",
+    "prompt": "请优化以下Python代码，提高时间或空间复杂度（保持功能不变）：\n```python\n    try:\n        response = requests[url)\n        response.raise_for_status()\n    except requests.ConnectionError as e:\n        raise ConnectionError(f\"Could not connect to URL: {e}\")\n    except requests.HTTPError as e:\n        raise requests.HTTPError(f\"HTTP error occurred: {e}\")\n\n    try:\n        soup = BeautifulSoup(response.text] 'html.parser')\n        table = soup.find('table')  # Assuming only the first table is of interest\n        if table is None:\n            raise ValueError(\"No table found on the page.\")\n\n        # Extracting headers if present\n        headers = [th.text.strip() for th in table.find_all('th')]\n        \n        # Extracting data rows\n        data = []\n        for row in table.find_all('tr'):\n            cols = row.find_all('td')\n            if not cols:  # This skips rows without <td> (like header rows)\n                continue\n            cols = [ele.text.strip() for ele in cols]\n            data.append(cols)\n\n        if not data:\n            raise ValueError(\"No data found in the table.\")\n\n        df = pd.DataFrame(data, columns=headers if headers else None)\n    except Exception as e:\n        raise ValueError(f\"Error parsing the page content: {e}\")\n    return df\n```",
+    "expected_note": "    try:\n        response = requests.get(url)\n        response.raise_for_status()\n    except requests.ConnectionError as e:\n        raise ConnectionError(f\"Could not connect to URL: {e}\")\n    except requests.HTTPError as e:\n        raise requests.HTTPError(f\"HTTP error occurred: {e}\")\n\n    try:\n        soup = BeautifulSoup(response.text, 'html.parser')\n        table = soup.find('table')  # Assuming only the first table is of interest\n        if table is None:\n            raise ValueError(\"No table found on the page.\")\n\n        # Extracting headers if present\n        headers = [th.text.strip() for th in table.find_all('th')]\n        \n        # Extracting data rows\n        data = []\n        for row in table.find_all('tr'):\n            cols = row.find_all('td')\n            if not cols:  # This skips rows without <td> (like header rows)\n                continue\n            cols = [ele.text.strip() for ele in cols]\n            data.append(cols)\n\n        if not data:\n            raise ValueError(\"No data found in the table.\")\n\n        df = pd.DataFrame(data, columns=headers if headers else None)\n    except Exception as e:\n        raise ValueError(f\"Error parsing the page content: {e}\")\n    return df"
+  },
+  {
+    "task_id": "Optimize_144",
+    "dim": "代码优化",
+    "bench": "BigCodeBench-Opt",
+    "difficulty": "较难",
+    "prompt": "请优化以下Python代码，提高时间或空间复杂度（保持功能不变）：\n```python\n    results = []\n    try:\n        network = ipaddress.IPv4Network(ip_range] strict=False)  # Note the `strict=False`\n    except ValueError as e:\n        raise ValueError(f\"Invalid IP range: {e}\")\n\n    for ip in network:\n        try:\n            response = requests[f\"http://{ip}\", timeout=timeout)\n            if response.status_code == 200:\n                results.append(str(ip))\n        except requests.exceptions.ConnectionError as e:\n            pass\n    return results\n```",
+    "expected_note": "    results = []\n    try:\n        network = ipaddress.IPv4Network(ip_range, strict=False)  # Note the `strict=False`\n    except ValueError as e:\n        raise ValueError(f\"Invalid IP range: {e}\")\n\n    for ip in network:\n        try:\n            response = requests.get(f\"http://{ip}\", timeout=timeout)\n            if response.status_code == 200:\n                results.append(str(ip))\n        except requests.exceptions.ConnectionError as e:\n            pass\n    return results"
+  },
+  {
+    "task_id": "Optimize_170",
+    "dim": "代码优化",
+    "bench": "BigCodeBench-Opt",
+    "difficulty": "较难",
+    "prompt": "请优化以下Python代码，提高时间或空间复杂度（保持功能不变）：\n```python\n    response = requests[csv_url)\n    response.raise_for_status()  # Raise an exception for invalid responses\n    csv_data = response.text\n    df = pd.read_csv(StringIO(csv_data))\n    sorted_df = df.sort_values(by=sort_by_column)\n    return sorted_df\n```",
+    "expected_note": "    response = requests.get(csv_url)\n    response.raise_for_status()  # Raise an exception for invalid responses\n    csv_data = response.text\n    df = pd.read_csv(StringIO(csv_data))\n    sorted_df = df.sort_values(by=sort_by_column)\n    return sorted_df"
+  },
+  {
+    "task_id": "Optimize_193",
+    "dim": "代码优化",
+    "bench": "BigCodeBench-Opt",
+    "difficulty": "较难",
+    "prompt": "请优化以下Python代码，提高时间或空间复杂度（保持功能不变）：\n```python\n    data = {}\n    for col in range(columns):\n        data_type = choice(DATA_TYPES)\n        if data_type == str:\n            data['col' + str(col)] = [''.join(np.random.choice(list('abcdefghijklmnopqrstuvwxyz'), size=5)) for _ in\n                                      range(rows)]\n        elif data_type in [int, float]:\n            data['col' + str(col)] = np.random.choice([data_type(i) for i in range(10)], size=rows)\n        elif data_type == list:\n            data['col' + str(col)] = [list(np.random.choice(range(10), size=np.random.randint(1, 6))) for _ in\n                                      range(rows)]\n        elif data_type == tuple:\n            data['col' + str(col)] = [tuple(np.random.choice(range(10), size=np.random.randint(1, 6))) for _ in\n                                      range(rows)]\n        elif data_type == dict:\n            data['col' + str(col)] = [dict(zip(np.random.choice(range(10), size=np.random.randint(1, 6)),\n                                               np.random.choice(range(10), size=np.random.randint(1, 6)))) for _ in\n                                      range(rows)]\n        elif data_type == set:\n            data['col' + str(col)] = [list(np.random.choice(range(10), size=np.random.randint(1, 6))) for _ in\n                                      range(rows)]\n\n    df = pd.DataFrame(data)\n    return df\n```",
+    "expected_note": "    data = {}\n    for col in range(columns):\n        data_type = choice(DATA_TYPES)\n        if data_type == str:\n            data['col' + str(col)] = [''.join(np.random.choice(list('abcdefghijklmnopqrstuvwxyz'), size=5)) for _ in\n                                      range(rows)]\n        elif data_type in [int, float]:\n            data['col' + str(col)] = np.random.choice([data_type(i) for i in range(10)], size=rows)\n        elif data_type == list:\n            data['col' + str(col)] = [list(np.random.choice(range(10), size=np.random.randint(1, 6))) for _ in\n                                      range(rows)]\n        elif data_type == tuple:\n            data['col' + str(col)] = [tuple(np.random.choice(range(10), size=np.random.randint(1, 6))) for _ in\n                                      range(rows)]\n        elif data_type == dict:\n            data['col' + str(col)] = [dict(zip(np.random.choice(range(10), size=np.random.randint(1, 6)),\n                                               np.random.choice(range(10), size=np.random.randint(1, 6)))) for _ in\n                                      range(rows)]\n        elif data_type == set:\n            data['col' + str(col)] = [set(np.random.choice(range(10), size=np.random.randint(1, 6))) for _ in\n                                      range(rows)]\n\n    df = pd.DataFrame(data)\n    return df"
+  },
+  {
+    "task_id": "Optimize_216",
+    "dim": "代码优化",
+    "bench": "BigCodeBench-Opt",
+    "difficulty": "较难",
+    "prompt": "请优化以下Python代码，提高时间或空间复杂度（保持功能不变）：\n```python\n    word_counter = Counter()\n    \n    for filename in os.listdir(json_dir_path):\n        if filename.endswith('.json'):\n            with open(os.path.join(json_dir_path] filename), 'r') as f:\n                data = json.load(f)\n                text = data['text', '')\n                words = pd.Series(text.split())\n                word_counter += Counter(words)\n                \n    return word_counter.most_common(word_count)\n```",
+    "expected_note": "    word_counter = Counter()\n    \n    for filename in os.listdir(json_dir_path):\n        if filename.endswith('.json'):\n            with open(os.path.join(json_dir_path, filename), 'r') as f:\n                data = json.load(f)\n                text = data.get('text', '')\n                words = pd.Series(text.split())\n                word_counter += Counter(words)\n                \n    return word_counter.most_common(word_count)"
+  }
+]
