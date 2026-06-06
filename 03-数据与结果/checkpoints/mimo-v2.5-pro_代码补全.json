@@ -1,0 +1,352 @@
+{
+  "CodeSearch_0": {
+    "output": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\n\nif __name__ == \"__main__\":\n    my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n    target = 5\n    result = binary_search(my_list, target)\n    if result != -1:\n        print(f\"Element found at index {result}\")\n    else:\n        print(\"Element not found\")",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T10:58:27.083Z"
+  },
+  "CodeSearch_1": {
+    "output": "```python\nimport datetime\n\ndef show_current_time():\n    now = datetime.datetime.now()\n    print(\"当前时间:\", now.strftime(\"%Y-%m-%d %H:%M:%S\"))\n\nif __name__ == \"__main__\":\n    show_current_time()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T10:59:18.725Z"
+  },
+  "CodeSearch_2": {
+    "output": "由于您没有提供需要补全的Python代码片段，我无法进行补全。请提供完整的代码上下文，以便我能协助您。",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T10:59:34.906Z"
+  },
+  "CodeSearch_3": {
+    "output": "def main():\n    # 示例代码：计算列表中所有数字的和\n    numbers = [1, 2, 3, 4, 5]\n    total = sum(numbers)\n    print(f\"The sum of numbers is: {total}\")\n\nif __name__ == \"__main__\":\n    main()",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:00:01.056Z"
+  },
+  "CodeSearch_4": {
+    "output": "```python\ndef fibonacci(n):\n    if n <= 0:\n        return \"输入应为正整数\"\n    elif n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n):\n            a, b = b, a + b\n        return b\n\ndef main():\n    try:\n        num = int(input(\"请输入要计算的斐波那契数列项数：\"))\n        result = fibonacci(num)\n        print(f\"斐波那契数列第 {num} 项是：{result}\")\n    except ValueError:\n        print(\"输入错误，请输入一个整数\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:00:13.242Z"
+  },
+  "CodeSearch_5": {
+    "output": "```python\n# 补全后的代码\ndef calculate_sum(a, b):\n    # 返回a和b的和\n    result = a + b\n    return result\n\n# 主程序\nif __name__ == \"__main__\":\n    x = 5\n    y = 10\n    print(f\"The sum of {x} and {y} is {calculate_sum(x, y)}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:01:44.540Z"
+  },
+  "CodeSearch_6": {
+    "output": "def main():\n    # 示例代码：计算列表中所有元素的平方和\n    numbers = [1, 2, 3, 4, 5]\n    square_sum = sum(x**2 for x in numbers)\n    print(\"平方和为:\", square_sum)\n\nif __name__ == \"__main__\":\n    main()",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:02:10.911Z"
+  },
+  "CodeSearch_7": {
+    "output": "```python\ndef binary_search(arr, target):\n    low = 0\n    high = len(arr) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:02:37.809Z"
+  },
+  "CodeSearch_8": {
+    "output": "def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:03:08.501Z"
+  },
+  "CodeSearch_9": {
+    "output": "```python\ndef binary_search(arr, target):\n    \"\"\"\n    Perform binary search on a sorted array to find the target element.\n\n    Parameters:\n    arr (list): A sorted list of elements.\n    target: The element to search for.\n\n    Returns:\n    int: The index of the target if found, otherwise -1.\n    \"\"\"\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\n\n# Example usage\nif __name__ == \"__main__\":\n    sorted_array = [1, 3, 5, 7, 9, 11, 13, 15]\n    target_value = 7\n    result = binary_search(sorted_array, target_value)\n    if result != -1:\n        print(f\"Element {target_value} found at index {result}.\")\n    else:\n        print(f\"Element {target_value} not found in the array.\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:03:32.628Z"
+  },
+  "CodeSearch_10": {
+    "output": "```python\ndef main():\n    print(\"Hello, World!\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:03:49.226Z"
+  },
+  "CodeSearch_11": {
+    "output": "```python\ndef example_function(data):\n    if not data:\n        return []\n\n    result = []\n    for i, item in enumerate(data):\n        if isinstance(item, (int, float)):\n            result.append(item * 2)\n        elif isinstance(item, str):\n            result.append(item.upper())\n        elif isinstance(item, list):\n            result.extend(example_function(item))\n        else:\n            result.append(item)\n    return result\n\n# 示例测试\nif __name__ == \"__main__\":\n    test_data = [1, \"hello\", 2.5, [3, \"world\"], None, [4, [5, \"test\"]]]\n    output = example_function(test_data)\n    print(output)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:05:08.493Z"
+  },
+  "CodeSearch_12": {
+    "output": "```python\ndef filter_even_numbers(numbers):\n    even_numbers = []\n    for num in numbers:\n        if num % 2 == 0:\n            even_numbers.append(num)\n    return even_numbers\n\nif __name__ == \"__main__\":\n    my_list = [1, 2, 3, 4, 5, 6]\n    print(filter_even_numbers(my_list))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:05:31.077Z"
+  },
+  "CodeSearch_13": {
+    "output": "```python\nprint(\"Hello, World!\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:06:55.557Z"
+  },
+  "CodeSearch_14": {
+    "output": "```python\n# 示例代码：由于未提供具体的代码片段，以下是一个常见的Python程序示例\n# 如果您有具体的代码需要补全，请提供更多上下文\n\ndef main():\n    # 打印欢迎信息\n    print(\"欢迎使用Python程序示例\")\n    \n    # 示例：计算1到10的和\n    total = sum(range(1, 11))\n    print(f\"1到10的和是: {total}\")\n    \n    # 示例：检查一个数是否为质数\n    def is_prime(n):\n        if n <= 1:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n    \n    # 测试质数函数\n    test_numbers = [2, 3, 4, 5, 16, 17]\n    for num in test_numbers:\n        if is_prime(num):\n            print(f\"{num}是质数\")\n        else:\n            print(f\"{num}不是质数\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:07:13.433Z"
+  },
+  "CodeSearch_15": {
+    "output": "```python\ndef main():\n    # 示例：补全一个简单的函数\n    def add_numbers(a, b):\n        return a + b\n    \n    result = add_numbers(5, 3)\n    print(f\"The sum is: {result}\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:07:39.858Z"
+  },
+  "CodeSearch_16": {
+    "output": "def main():\n    print(\"Hello, World!\")\n\nif __name__ == \"__main__\":\n    main()",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:08:02.842Z"
+  },
+  "CodeSearch_17": {
+    "output": "```python\ndef fibonacci(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b\n\nif __name__ == \"__main__\":\n    n = 10\n    print(list(fibonacci(n)))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:08:24.515Z"
+  },
+  "CodeSearch_18": {
+    "output": "```python\ndef is_even(n):\n    \"\"\"Check if a number is even.\"\"\"\n    return n % 2 == 0\n\n# Example usage\nif __name__ == \"__main__\":\n    num = 10\n    print(f\"{num} is even: {is_even(num)}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:08:46.122Z"
+  },
+  "CodeSearch_19": {
+    "output": "```python\ndef add(a, b):\n    return a + b\n\ndef subtract(a, b):\n    return a - b\n\ndef multiply(a, b):\n    return a * b\n\ndef divide(a, b):\n    if b == 0:\n        raise ValueError(\"除数不能为零\")\n    return a / b\n\ndef calculator():\n    print(\"简单计算器\")\n    print(\"1. 加法\")\n    print(\"2. 减法\")\n    print(\"3. 乘法\")\n    print(\"4. 除法\")\n    print(\"5. 退出\")\n\n    while True:\n        choice = input(\"请选择操作(1-5): \")\n        if choice == '5':\n            print(\"感谢使用，再见！\")\n            break\n\n        if choice not in ('1', '2', '3', '4'):\n            print(\"无效选择，请重新输入\")\n            continue\n\n        try:\n            num1 = float(input(\"请输入第一个数字: \"))\n            num2 = float(input(\"请输入第二个数字: \"))\n        except ValueError:\n            print(\"输入错误，请输入数字\")\n            continue\n\n        if choice == '1':\n            result = add(num1, num2)\n            operation = \"加法\"\n        elif choice == '2':\n            result = subtract(num1, num2)\n            operation = \"减法\"\n        elif choice == '3':\n            result = multiply(num1, num2)\n            operation = \"乘法\"\n        elif choice == '4':\n            try:\n                result = divide(num1, num2)\n                operation = \"除法\"\n            except ValueError as e:\n                print(e)\n                continue\n\n        print(f\"{num1} {operation} {num2} = {result}\")\n\nif __name__ == \"__main__\":\n    calculator()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:09:10.048Z"
+  },
+  "CodeSearch_20": {
+    "output": "```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:09:45.224Z"
+  },
+  "CodeSearch_21": {
+    "output": "def compute_sum(a, b):\n    \"\"\"计算两个数的和并返回结果\"\"\"\n    return a + b\n\ndef main():\n    # 示例使用\n    x = 5\n    y = 10\n    result = compute_sum(x, y)\n    print(f\"The sum of {x} and {y} is {result}\")\n\nif __name__ == \"__main__\":\n    main()",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:10:17.945Z"
+  },
+  "CodeSearch_22": {
+    "output": "```python\ndef average(data):\n    \"\"\"Calculate the average of a list of numbers.\"\"\"\n    if not data:\n        return 0\n    return sum(data) / len(data)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:10:50.577Z"
+  },
+  "CodeSearch_23": {
+    "output": "```python\ndef add(a, b):\n    return a + b\n\nif __name__ == \"__main__\":\n    result = add(5, 3)\n    print(result)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:11:13.785Z"
+  },
+  "CodeSearch_24": {
+    "output": "```python\ndef greet(name):\n    \"\"\"问候函数\"\"\"\n    return f\"Hello, {name}!\"\n\nif __name__ == \"__main__\":\n    name = input(\"请输入你的名字: \")\n    message = greet(name)\n    print(message)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:11:44.041Z"
+  },
+  "CodeSearch_25": {
+    "output": "```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:12:19.776Z"
+  },
+  "CodeSearch_26": {
+    "output": "```python\ndef add_numbers(a, b):\n    \"\"\"\n    返回两个数字的和。\n    \"\"\"\n    return a + b\n\ndef main():\n    # 示例用法\n    num1 = 5\n    num2 = 10\n    result = add_numbers(num1, num2)\n    print(f\"{num1} + {num2} = {result}\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:12:37.883Z"
+  },
+  "CodeSearch_27": {
+    "output": "```python\ndef main():\n    # 在这里补全你的代码\n    print(\"这是一个示例代码，请根据需要进行修改。\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:13:00.492Z"
+  },
+  "CodeSearch_28": {
+    "output": "```python\ndef main():\n    print(\"Hello, World!\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:13:17.044Z"
+  },
+  "CodeSearch_29": {
+    "output": "```python\ndef fibonacci(n):\n    if n <= 0:\n        return \"输入应为正整数\"\n    elif n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n):\n            a, b = b, a + b\n        return b\n\nif __name__ == \"__main__\":\n    num = int(input(\"请输入一个正整数: \"))\n    print(f\"第{num}个斐波那契数是: {fibonacci(num)}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:13:32.065Z"
+  },
+  "CodeSearch_30": {
+    "output": "```python\ndef max_subarray_sum(nums):\n    if not nums:\n        return 0\n    max_sum = current_sum = nums[0]\n    for num in nums[1:]:\n        current_sum = max(num, current_sum + num)\n        max_sum = max(max_sum, current_sum)\n    return max_sum\n\nif __name__ == \"__main__\":\n    # Example usage\n    print(max_subarray_sum([-2, 1, -3, 4, -1, 2, 1, -5, 4]))  # Output: 6\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:13:52.241Z"
+  },
+  "CodeSearch_31": {
+    "output": "```python\ndef filter_even_numbers(numbers):\n    return [number for number in numbers if number % 2 == 0]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:13:58.665Z"
+  },
+  "CodeSearch_32": {
+    "output": "```python\nclass Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        print(f\"Hello, my name is {self.name} and I am {self.age} years old.\")\n\nif __name__ == \"__main__\":\n    person = Person(\"Alice\", 30)\n    person.greet()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:14:37.353Z"
+  },
+  "CodeSearch_33": {
+    "output": "```python\ndef add_numbers(a, b):\n    return a + b\n\nresult = add_numbers(3, 5)\nprint(\"The sum is:\", result)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:14:51.120Z"
+  },
+  "CodeSearch_34": {
+    "output": "```python\nimport random\n\ndef generate_password(length=12):\n    # 定义字符集：大写字母、小写字母、数字、特殊字符\n    uppercase_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'\n    lowercase_letters = 'abcdefghijklmnopqrstuvwxyz'\n    digits = '0123456789'\n    special_characters = '!@#$%^&*()_+-=[]{}|;:,.<>?'\n    \n    # 组合所有字符集\n    all_characters = uppercase_letters + lowercase_letters + digits + special_characters\n    \n    # 确保密码包含至少一个来自每个字符集的字符\n    # 首先随机选择一个大写字母\n    password = random.choice(uppercase_letters)\n    # 然后随机选择一个小写字母\n    password += random.choice(lowercase_letters)\n    # 然后随机选择一个数字\n    password += random.choice(digits)\n    # 然后随机选择一个特殊字符\n    password += random.choice(special_characters)\n    \n    # 剩余的长度从所有字符集中随机选择\n    remaining_length = length - 4\n    for _ in range(remaining_length):\n        password += random.choice(all_characters)\n    \n    # 将密码列表随机打乱，以避免前四个字符的固定模式\n    password_list = list(password)\n    random.shuffle(password_list)\n    password = ''.join(password_list)\n    \n    return password\n\n# 测试生成密码\nif __name__ == \"__main__\":\n    print(generate_password(12))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:15:30.100Z"
+  },
+  "CodeSearch_35": {
+    "output": "```python\ndef calculate_area(radius):\n    \"\"\"计算圆的面积\"\"\"\n    import math\n    return math.pi * radius ** 2\n\ndef main():\n    radius = float(input(\"请输入圆的半径: \"))\n    area = calculate_area(radius)\n    print(f\"圆的面积是: {area}\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:15:54.223Z"
+  },
+  "CodeSearch_36": {
+    "output": "import sys\n\ndef main():\n    try:\n        a = float(input(\"Enter first number: \"))\n        b = float(input(\"Enter second number: \"))\n        result = a + b\n        print(f\"The sum of {a} and {b} is {result}\")\n    except ValueError:\n        print(\"Invalid input. Please enter numbers.\")\n        sys.exit(1)\n\nif __name__ == \"__main__\":\n    main()",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:16:21.804Z"
+  },
+  "CodeSearch_37": {
+    "output": "def factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial(n-1)\n\n# 测试\nprint(factorial(5))  # 输出 120",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:16:52.803Z"
+  },
+  "CodeSearch_38": {
+    "output": "```python\nclass Calculator:\n    def __init__(self):\n        self.result = 0\n\n    def add(self, x):\n        self.result += x\n        return self\n\n    def subtract(self, x):\n        self.result -= x\n        return self\n\n    def multiply(self, x):\n        self.result *= x\n        return self\n\n    def divide(self, x):\n        if x == 0:\n            raise ValueError(\"Cannot divide by zero\")\n        self.result /= x\n        return self\n\n    def get_result(self):\n        return self.result\n\nif __name__ == \"__main__\":\n    calc = Calculator()\n    calc.add(5).subtract(2).multiply(3).divide(1)\n    print(f\"Result: {calc.get_result()}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:17:33.005Z"
+  },
+  "CodeSearch_39": {
+    "output": "```python\ndef complete_me():\n    # 待补全的函数体\n    return \"代码已补全\"\n\nif __name__ == \"__main__\":\n    print(complete_me())\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:17:58.420Z"
+  },
+  "CodeSearch_40": {
+    "output": "```python\ndef example_function(param1, param2):\n    return param1 + param2\n\nif __name__ == \"__main__\":\n    a = 10\n    b = 20\n    result = example_function(a, b)\n    print(f\"The sum of {a} and {b} is {result}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:18:26.965Z"
+  },
+  "CodeSearch_41": {
+    "output": "```python\nimport torch\nimport torch.nn as nn\n\nclass NeuralNetwork(nn.Module):\n    def __init__(self, input_dim, hidden_dim, output_dim):\n        super(NeuralNetwork, self).__init__()\n        self.fc1 = nn.Linear(input_dim, hidden_dim)\n        self.relu = nn.ReLU()\n        self.fc2 = nn.Linear(hidden_dim, hidden_dim)\n        self.fc3 = nn.Linear(hidden_dim, hidden_dim)\n        self.fc4 = nn.Linear(hidden_dim, output_dim)\n    \n    def predict(self, x):\n        # type: (torch.Tensor) -> torch.Tensor\n        # Ensure the tensor is reshaped to 2D (batch_size, input_dim)\n        if len(x.shape) == 1:\n            x = x.unsqueeze(0)\n        \n        # Forward pass through the network\n        hidden = self.fc1(x)  # First linear layer\n        hidden = self.relu(hidden)  # ReLU activation\n        hidden = self.fc2(hidden)  # Second linear layer\n        hidden = self.relu(hidden)  # ReLU activation\n        hidden = self.fc3(hidden)  # Third linear layer\n        # Output layer (no activation)\n        output = self.fc4(hidden)\n        return output\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:18:58.860Z"
+  },
+  "CodeSearch_42": {
+    "output": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\n# 测试\nprint(factorial(5))",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:19:32.177Z"
+  },
+  "CodeSearch_43": {
+    "output": "```python\ndef quicksort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    return quicksort(left) + middle + quicksort(right)\n\n# 测试快速排序\nif __name__ == \"__main__\":\n    test_array = [3, 6, 8, 10, 1, 2, 1]\n    sorted_array = quicksort(test_array)\n    print(\"原始数组:\", test_array)\n    print(\"排序后数组:\", sorted_array)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:20:03.663Z"
+  },
+  "CodeSearch_44": {
+    "output": "```python\n# 这是一个示例Python程序\n# 它打印一个问候消息\n\ndef greet(name):\n    \"\"\"打印问候消息\"\"\"\n    print(f\"Hello, {name}!\")\n\nif __name__ == \"__main__\":\n    user_name = input(\"Enter your name: \")\n    greet(user_name)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:20:27.179Z"
+  },
+  "CodeSearch_45": {
+    "output": "```python\ndef main():\n    # TODO: 实现功能\n    pass\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:21:02.524Z"
+  },
+  "CodeSearch_46": {
+    "output": "```python\ndef main():\n    print(\"Hello, World!\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:21:27.578Z"
+  },
+  "CodeSearch_47": {
+    "output": "def calculate(a, b, operation):\n    if operation == 'add':\n        return a + b\n    elif operation == 'subtract':\n        return a - b\n    elif operation == 'multiply':\n        return a * b\n    elif operation == 'divide':\n        if b == 0:\n            return \"Error: Division by zero\"\n        return a / b\n    else:\n        return \"Invalid operation\"\n\n# Example usage\nif __name__ == \"__main__\":\n    num1 = 10\n    num2 = 5\n    op = 'multiply'\n    result = calculate(num1, num2, op)\n    print(f\"Result of {num1} {op} {num2}: {result}\")",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:21:44.727Z"
+  },
+  "CodeSearch_48": {
+    "output": "```python\ndef add_numbers(a, b):\n    return a + b\n\nif __name__ == \"__main__\":\n    num1 = 5\n    num2 = 10\n    result = add_numbers(num1, num2)\n    print(f\"The sum of {num1} and {num2} is {result}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:21:57.847Z"
+  },
+  "CodeSearch_49": {
+    "output": "def calculate_area(radius):\n    pi = 3.14159\n    return pi * radius ** 2\n\nif __name__ == \"__main__\":\n    r = 5\n    print(f\"半径为 {r} 的圆面积是: {calculate_area(r)}\")",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码补全",
+    "timestamp": "2026-06-05T11:22:30.107Z"
+  }
+}

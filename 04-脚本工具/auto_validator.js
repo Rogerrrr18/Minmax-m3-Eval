@@ -21,15 +21,16 @@ const RAW_PATH = path.join(BASE_DIR, '03-数据与结果/raw_outputs_v3.json');
 const TASKS_PATH = path.join(BASE_DIR, '03-数据与结果/tasks_v3.json');
 const OUTPUT_PATH = path.join(BASE_DIR, '03-数据与结果/auto_validation_v3.json');
 
-// 检测系统是否有可用 Python
+// 检测系统是否有可用 Python（Windows 上避免触发 Microsoft Store）
 function detectPython() {
-  const candidates = ['python3', 'python', 'py'];
+  const candidates = ['python3', 'py'];
   for (const cmd of candidates) {
     try {
       const ver = execSync(`${cmd} --version`, { encoding: 'utf-8', timeout: 3000 });
       if (ver.includes('Python')) return cmd;
     } catch {}
   }
+  // Windows 上 'python' 可能触发 Microsoft Store，跳过检测
   return null;
 }
 const PYTHON_CMD = detectPython();

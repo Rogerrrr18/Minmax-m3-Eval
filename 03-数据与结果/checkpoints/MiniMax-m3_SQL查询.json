@@ -1,0 +1,352 @@
+{
+  "Spider_0": {
+    "output": "```sql\nSELECT COUNT(*) FROM head WHERE age > 56;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:10:31.420Z"
+  },
+  "Spider_1": {
+    "output": "```sql\nSELECT ename, born_state, age\nFROM emp\nJOIN dept ON emp.eid = dept.head\nORDER BY age;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:13:00.452Z"
+  },
+  "Spider_2": {
+    "output": "SELECT creation_year, name, budget FROM department;",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:13:03.385Z"
+  },
+  "Spider_3": {
+    "output": "```sql\nSELECT MAX(budget) AS max_budget, MIN(budget) AS min_budget FROM departments;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:13:09.121Z"
+  },
+  "Spider_4": {
+    "output": "```sql\nWITH ranked_departments AS (\n    SELECT \n        department_id,\n        COUNT(*) AS num_employees,\n        RANK() OVER (ORDER BY COUNT(*) DESC) AS rnk\n    FROM employees\n    GROUP BY department_id\n)\nSELECT AVG(num_employees) AS avg_employees\nFROM ranked_departments\nWHERE rnk BETWEEN 10 AND 15;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:13:21.181Z"
+  },
+  "Spider_5": {
+    "output": "SELECT name FROM head WHERE born_state != 'California'",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:13:31.132Z"
+  },
+  "Spider_6": {
+    "output": "```sql\nSELECT DISTINCT d.creation_year\nFROM departments d\nJOIN employees e ON d.manager_id = e.employee_id\nWHERE e.job_title = 'secretary' AND e.birth_state = 'Alabama';\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:13:39.608Z"
+  },
+  "Spider_7": {
+    "output": "```sql\nSELECT state_name \nFROM births \nGROUP BY state_name \nHAVING COUNT(*) >= 3;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:13:59.000Z"
+  },
+  "Spider_8": {
+    "output": "```sql\nSELECT YEAR(established_date) AS establishment_year, COUNT(*) AS department_count\nFROM departments\nGROUP BY YEAR(established_date)\nORDER BY department_count DESC\nLIMIT 1;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:14:07.339Z"
+  },
+  "Spider_9": {
+    "output": "```sql\nSELECT d.department_name, COUNT(e.employee_id) AS num_employees\nFROM departments d\nJOIN heads h ON d.head_id = h.head_id\nJOIN employees e ON d.department_id = e.department_id\nWHERE h.temporary_acting = 'Yes'\nGROUP BY d.department_id, d.department_name;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:14:19.918Z"
+  },
+  "Spider_10": {
+    "output": "```sql\nSELECT COUNT(DISTINCT acting_status) AS status_count FROM actors;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:14:28.969Z"
+  },
+  "Spider_11": {
+    "output": "```sql\nSELECT COUNT(*) FROM department WHERE head_id IS NULL;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:25:00.259Z"
+  },
+  "Spider_12": {
+    "output": "SELECT DISTINCT age FROM heads WHERE position = 'Acting';",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:25:06.841Z"
+  },
+  "Spider_13": {
+    "output": "```sql\nSELECT state\nFROM secretaries\nWHERE department = 'Treasury'\nINTERSECT\nSELECT state\nFROM secretaries\nWHERE department = 'Homeland Security';\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:25:14.072Z"
+  },
+  "Spider_14": {
+    "output": "```sql\nSELECT d.id, d.name, COUNT(*) AS num_heads\nFROM department d\nJOIN head h ON d.id = h.department_id\nGROUP BY d.id, d.name\nHAVING COUNT(*) > 1;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:27:25.996Z"
+  },
+  "Spider_15": {
+    "output": "SELECT id, name FROM head WHERE name LIKE '%Ha%';",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:27:33.365Z"
+  },
+  "Spider_16": {
+    "output": "```sql\nSELECT COUNT(*) AS farm_count FROM farms;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:27:38.196Z"
+  },
+  "Spider_17": {
+    "output": "```sql\nSELECT COUNT(*) AS farm_count FROM farms;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:27:43.870Z"
+  },
+  "Spider_18": {
+    "output": "```sql\nSELECT Farm, COUNT(*) AS TotalHorses\nFROM Horse\nGROUP BY Farm\nORDER BY TotalHorses ASC;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:27:54.359Z"
+  },
+  "Spider_19": {
+    "output": "```sql\nSELECT f.farm_name, COUNT(h.horse_id) AS total_horses\nFROM farm f\nLEFT JOIN horse h ON f.farm_id = h.farm_id\nGROUP BY f.farm_id, f.farm_name\nORDER BY total_horses ASC;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:28:13.603Z"
+  },
+  "Spider_20": {
+    "output": "SELECT host FROM competitions WHERE theme <> 'Aliens';",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:28:21.144Z"
+  },
+  "Spider_21": {
+    "output": "SELECT host FROM competition WHERE theme <> 'Aliens';",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:28:25.488Z"
+  },
+  "Spider_22": {
+    "output": "SELECT theme FROM farm_competitions ORDER BY year ASC;",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:28:28.817Z"
+  },
+  "Spider_23": {
+    "output": "```sql\nSELECT theme FROM farm_competitions ORDER BY year ASC;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:28:32.069Z"
+  },
+  "Spider_24": {
+    "output": "```sql\nSELECT AVG(Number_Of_Working_Horses) FROM Farms WHERE Number_Of_Horses > 5000;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:28:43.367Z"
+  },
+  "Spider_25": {
+    "output": "```sql\nSELECT AVG(working_horses) FROM farm WHERE total_horses > 5000;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:28:49.505Z"
+  },
+  "Spider_26": {
+    "output": "```sql\nSELECT MAX(cows) AS max_cows, MIN(cows) AS min_cows FROM farms;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:28:52.354Z"
+  },
+  "Spider_27": {
+    "output": "```sql\nSELECT MAX(cows) AS max_cows, MIN(cows) AS min_cows FROM farms;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:28:57.846Z"
+  },
+  "Spider_28": {
+    "output": "```sql\nSELECT COUNT(DISTINCT status) FROM cities;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:29:01.424Z"
+  },
+  "Spider_29": {
+    "output": "```sql\nSELECT COUNT(DISTINCT status) FROM your_table;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:29:09.397Z"
+  },
+  "Spider_30": {
+    "output": "```sql\nSELECT Name FROM city ORDER BY Population DESC;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:29:15.416Z"
+  },
+  "Spider_31": {
+    "output": "```sql\nSELECT official_name FROM cities ORDER BY population DESC;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:29:22.374Z"
+  },
+  "Spider_32": {
+    "output": "```sql\nSELECT OfficialName, Status FROM city ORDER BY Population DESC LIMIT 1;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:29:34.443Z"
+  },
+  "Spider_33": {
+    "output": "```sql\nSELECT official_name, status FROM city ORDER BY population DESC LIMIT 1;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:29:42.882Z"
+  },
+  "Spider_34": {
+    "output": "SELECT c.year, ci.official_name\nFROM competitions c\nJOIN cities ci ON c.city_id = ci.id;",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:29:51.426Z"
+  },
+  "Spider_35": {
+    "output": "SELECT T2.year, T1.official_name FROM city AS T1 JOIN competition AS T2 ON T1.id = T2.city_id",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:29:59.215Z"
+  },
+  "Spider_36": {
+    "output": "```sql\nSELECT c.official_name\nFROM city AS c\nJOIN competition AS comp ON c.id = comp.city_id\nGROUP BY c.id, c.official_name\nHAVING COUNT(comp.id) > 1;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:30:08.069Z"
+  },
+  "Spider_37": {
+    "output": "SELECT city.official_name\nFROM city\nJOIN competition ON city.id = competition.city_id\nGROUP BY city.official_name\nHAVING COUNT(*) > 1;",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:30:19.742Z"
+  },
+  "Spider_38": {
+    "output": "```sql\nSELECT T1.Status\nFROM city AS T1\nJOIN competition AS T2 ON T1.City_ID = T2.City_ID\nGROUP BY T1.City_ID\nORDER BY COUNT(*) DESC\nLIMIT 1;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:30:40.671Z"
+  },
+  "Spider_39": {
+    "output": "```sql\nSELECT c.status\nFROM city c\nJOIN competition co ON c.id = co.city_id\nGROUP BY c.id, c.status\nORDER BY COUNT(co.id) DESC\nLIMIT 1;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:30:51.962Z"
+  },
+  "Spider_40": {
+    "output": "```sql\nSELECT DISTINCT T1.theme FROM competition AS T1 JOIN city AS T2 ON T1.host_city_id = T2.city_id WHERE T2.population > 1000\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:30:57.242Z"
+  },
+  "Spider_41": {
+    "output": "```sql\nSELECT DISTINCT c.theme\nFROM competitions c\nJOIN cities ci ON c.host_city_id = ci.id\nWHERE ci.population > 1000;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:31:06.590Z"
+  },
+  "Spider_42": {
+    "output": "```sql\nSELECT Status, AVG(Population) AS AveragePopulation\nFROM city\nGROUP BY Status;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:31:22.783Z"
+  },
+  "Spider_43": {
+    "output": "```sql\nSELECT status, AVG(population) AS average_population\nFROM city\nGROUP BY status;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:31:27.213Z"
+  },
+  "Spider_44": {
+    "output": "```sql\nSELECT Status, COUNT(*) AS city_count\nFROM city\nGROUP BY Status\nORDER BY city_count DESC;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:31:40.382Z"
+  },
+  "Spider_45": {
+    "output": "```sql\nSELECT Status, COUNT(*) AS Frequency FROM City GROUP BY Status ORDER BY Frequency ASC;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:31:47.850Z"
+  },
+  "Spider_46": {
+    "output": "```sql\nSELECT Status, COUNT(*) AS StatusCount\nFROM YourTableName\nGROUP BY Status\nORDER BY StatusCount DESC\nLIMIT 1;\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:31:58.354Z"
+  },
+  "Spider_47": {
+    "output": "SELECT status, COUNT(*) AS status_count\nFROM cities\nGROUP BY status\nORDER BY status_count DESC\nLIMIT 1;",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:32:04.700Z"
+  },
+  "Spider_48": {
+    "output": "```sql\nSELECT official_name FROM city WHERE id NOT IN (SELECT city_id FROM competition);\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:32:33.560Z"
+  },
+  "Spider_49": {
+    "output": "```sql\nSELECT Official_Name FROM city WHERE City_ID NOT IN (SELECT City_ID FROM farm_competition);\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "SQL查询",
+    "timestamp": "2026-06-05T06:32:54.142Z"
+  }
+}

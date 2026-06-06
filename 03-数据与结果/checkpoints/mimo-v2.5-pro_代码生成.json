@@ -1,0 +1,702 @@
+{
+  "HumanEval/0": {
+    "output": "```python\nfrom typing import List\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    numbers_sorted = sorted(numbers)\n    for i in range(len(numbers_sorted) - 1):\n        if abs(numbers_sorted[i + 1] - numbers_sorted[i]) < threshold:\n            return True\n    return False\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:47:55.705Z"
+  },
+  "HumanEval/1": {
+    "output": "```python\nfrom typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    paren_string = paren_string.replace(\" \", \"\")\n    result = []\n    current_group = \"\"\n    depth = 0\n    \n    for char in paren_string:\n        current_group += char\n        if char == \"(\":\n            depth += 1\n        elif char == \")\":\n            depth -= 1\n            if depth == 0:\n                result.append(current_group)\n                current_group = \"\"\n    \n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:48:11.675Z"
+  },
+  "HumanEval/2": {
+    "output": "```python\ndef truncate_number(number: float) -> float:\n    return number - int(number)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:48:23.820Z"
+  },
+  "HumanEval/3": {
+    "output": "```python\nfrom typing import List\n\n\ndef below_zero(operations: List[int]) -> bool:\n    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:48:29.930Z"
+  },
+  "HumanEval/4": {
+    "output": "```python\nfrom typing import List\n\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    mean = sum(numbers) / len(numbers)\n    return sum(abs(x - mean) for x in numbers) / len(numbers)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:48:34.513Z"
+  },
+  "HumanEval/5": {
+    "output": "```python\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    result = []\n    for i, num in enumerate(numbers):\n        if i > 0:\n            result.append(delimeter)\n        result.append(num)\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:48:45.289Z"
+  },
+  "HumanEval/6": {
+    "output": "```python\nfrom typing import List\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    result = []\n    for group in paren_string.split():\n        current_depth = 0\n        max_depth = 0\n        for char in group:\n            if char == '(':\n                current_depth += 1\n                if current_depth > max_depth:\n                    max_depth = current_depth\n            elif char == ')':\n                current_depth -= 1\n        result.append(max_depth)\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:48:53.588Z"
+  },
+  "HumanEval/7": {
+    "output": "```python\nfrom typing import List\n\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that contain given substring\n    >>> filter_by_substring([], 'a')\n    []\n    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')\n    ['abc', 'bacd', 'array']\n    \"\"\"\n    return [s for s in strings if substring in s]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:49:00.307Z"
+  },
+  "HumanEval/8": {
+    "output": "```python\nfrom typing import List, Tuple\n\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    total_sum = sum(numbers)\n    product = 1\n    for num in numbers:\n        product *= num\n    return (total_sum, product)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:49:07.509Z"
+  },
+  "HumanEval/9": {
+    "output": "```python\nfrom typing import List\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    if not numbers:\n        return []\n    \n    result = []\n    current_max = numbers[0]\n    \n    for num in numbers:\n        current_max = max(current_max, num)\n        result.append(current_max)\n    \n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:49:20.539Z"
+  },
+  "HumanEval/10": {
+    "output": "```python\ndef is_palindrome(string: str) -> bool:\n    \"\"\" Test if given string is a palindrome \"\"\"\n    return string == string[::-1]\n\n\ndef make_palindrome(string: str) -> str:\n    \"\"\" Find the shortest palindrome that begins with a supplied string.\n    Algorithm idea is simple:\n    - Find the longest postfix of supplied string that is a palindrome.\n    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.\n    >>> make_palindrome('')\n    ''\n    >>> make_palindrome('cat')\n    'catac'\n    >>> make_palindrome('cata')\n    'catac'\n    \"\"\"\n    if not string:\n        return string\n    \n    # Find the longest palindromic suffix\n    for i in range(len(string)):\n        if is_palindrome(string[i:]):\n            # Found the palindromic suffix, append reverse of prefix\n            return string + string[:i][::-1]\n    \n    # Should never reach here for non-empty strings, but return as fallback\n    return string\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:50:07.486Z"
+  },
+  "HumanEval/11": {
+    "output": "```python\nfrom typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\"\n    return ''.join(str(int(x) ^ int(y)) for x, y in zip(a, b))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:50:17.449Z"
+  },
+  "HumanEval/12": {
+    "output": "```python\nfrom typing import List, Optional\n\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    max_len = -1\n    result = None\n    for s in strings:\n        if len(s) > max_len:\n            max_len = len(s)\n            result = s\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:50:33.726Z"
+  },
+  "HumanEval/13": {
+    "output": "```python\ndef greatest_common_divisor(a: int, b: int) -> int:\n    a, b = abs(a), abs(b)\n    while b:\n        a, b = b, a % b\n    return a\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:50:41.710Z"
+  },
+  "HumanEval/14": {
+    "output": "from typing import List\n\ndef all_prefixes(string: str) -> List[str]:\n    return [string[:i] for i in range(1, len(string) + 1)]",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:50:47.743Z"
+  },
+  "HumanEval/15": {
+    "output": "```python\ndef string_sequence(n: int) -> str:\n    return ' '.join(str(i) for i in range(n + 1))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:51:13.289Z"
+  },
+  "HumanEval/16": {
+    "output": "```python\ndef count_distinct_characters(string: str) -> int:\n    return len(set(string.lower()))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:51:18.685Z"
+  },
+  "HumanEval/17": {
+    "output": "```python\nfrom typing import List\n\ndef parse_music(music_string: str) -> List[int]:\n    note_map = {'o': 4, 'o|': 2, '.|': 1}\n    return [note_map[note] for note in music_string.split()]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:51:35.202Z"
+  },
+  "HumanEval/18": {
+    "output": "```python\ndef how_many_times(string: str, substring: str) -> int:\n    count = 0\n    if not substring:\n        return 0\n    for i in range(len(string) - len(substring) + 1):\n        if string[i:i + len(substring)] == substring:\n            count += 1\n    return count\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:51:50.566Z"
+  },
+  "HumanEval/19": {
+    "output": "```python\nfrom typing import List\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\"\n    if not numbers:\n        return \"\"\n    \n    word_to_num = {\n        'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4,\n        'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9\n    }\n    num_to_word = {v: k for k, v in word_to_num.items()}\n    \n    words = numbers.split()\n    numbers_list = [word_to_num[word] for word in words]\n    numbers_list.sort()\n    sorted_words = [num_to_word[num] for num in numbers_list]\n    \n    return ' '.join(sorted_words)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:52:03.687Z"
+  },
+  "HumanEval/20": {
+    "output": "from typing import List, Tuple\n\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    sorted_numbers = sorted(numbers)\n    min_diff = float('inf')\n    closest_pair = (0.0, 0.0)\n    for i in range(len(sorted_numbers) - 1):\n        diff = sorted_numbers[i+1] - sorted_numbers[i]\n        if diff < min_diff:\n            min_diff = diff\n            closest_pair = (sorted_numbers[i], sorted_numbers[i+1])\n    return closest_pair",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:52:32.567Z"
+  },
+  "HumanEval/21": {
+    "output": "```python\nfrom typing import List\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    min_val = min(numbers)\n    max_val = max(numbers)\n    range_val = max_val - min_val\n    if range_val == 0:\n        return [0.5 for _ in numbers]\n    return [(num - min_val) / range_val for num in numbers]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:53:00.621Z"
+  },
+  "HumanEval/22": {
+    "output": "```python\nfrom typing import List, Any\n\ndef filter_integers(values: List[Any]) -> List[int]:\n    return [v for v in values if isinstance(v, int) and not isinstance(v, bool)]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:53:25.612Z"
+  },
+  "HumanEval/23": {
+    "output": "```python\ndef strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n    count = 0\n    for _ in string:\n        count += 1\n    return count\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:53:43.587Z"
+  },
+  "HumanEval/24": {
+    "output": "```python\nimport math\n\ndef largest_divisor(n: int) -> int:\n    if n <= 1:\n        return 1\n    for i in range(2, math.isqrt(n) + 1):\n        if n % i == 0:\n            return n // i\n    return 1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:54:16.948Z"
+  },
+  "HumanEval/25": {
+    "output": "```python\nfrom typing import List\n\n\ndef factorize(n: int) -> List[int]:\n    factors = []\n    divisor = 2\n    while divisor * divisor <= n:\n        while n % divisor == 0:\n            factors.append(divisor)\n            n //= divisor\n        divisor += 1\n    if n > 1:\n        factors.append(n)\n    return factors\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:54:34.922Z"
+  },
+  "HumanEval/26": {
+    "output": "```python\nfrom typing import List\nfrom collections import Counter\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    count = Counter(numbers)\n    return [num for num in numbers if count[num] == 1]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:55:03.638Z"
+  },
+  "HumanEval/27": {
+    "output": "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"\n    return string.swapcase()",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:55:23.695Z"
+  },
+  "HumanEval/28": {
+    "output": "```python\nfrom typing import List\n\n\ndef concatenate(strings: List[str]) -> str:\n    return ''.join(strings)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:55:29.131Z"
+  },
+  "HumanEval/29": {
+    "output": "```python\nfrom typing import List\n\ndef filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that start with a given prefix.\n    >>> filter_by_prefix([], 'a')\n    []\n    >>> filter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'a')\n    ['abc', 'array']\n    \"\"\"\n    return [s for s in strings if s.startswith(prefix)]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:55:36.367Z"
+  },
+  "MBPP_0": {
+    "output": "```python\ndef remove_first_last(s, ch):\n    first = s.find(ch)\n    last = s.rfind(ch)\n    if first == -1:  # Character not found\n        return s\n    return s[:first] + s[first+1:last] + s[last+1:]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:56:36.298Z"
+  },
+  "MBPP_1": {
+    "output": "```python\ndef sort_matrix_by_row_sum(matrix):\n    # Sort the matrix based on the sum of each row in ascending order\n    sorted_matrix = sorted(matrix, key=lambda row: sum(row))\n    return sorted_matrix\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:56:41.452Z"
+  },
+  "MBPP_2": {
+    "output": "```python\nfrom collections import Counter\n\ndef most_common_words(word_dict):\n    \"\"\"\n    Returns the most common words from a dictionary of word counts.\n    \n    Args:\n        word_dict (dict): Dictionary where keys are words and values are counts.\n    \n    Returns:\n        list: List of most common words (could be multiple if tied).\n    \"\"\"\n    if not word_dict:\n        return []\n    \n    max_count = max(word_dict.values())\n    return [word for word, count in word_dict.items() if count == max_count]\n\n# Alternative implementation if you want to specify a top_n parameter\ndef top_n_words(word_dict, n=1):\n    \"\"\"\n    Returns the top n most common words from a dictionary of word counts.\n    \n    Args:\n        word_dict (dict): Dictionary where keys are words and values are counts.\n        n (int): Number of top words to return. Default is 1.\n    \n    Returns:\n        list: List of top n words sorted by frequency in descending order.\n    \"\"\"\n    if not word_dict:\n        return []\n    \n    # Sort by count descending, then alphabetically for ties\n    sorted_words = sorted(word_dict.items(), \n                         key=lambda x: (-x[1], x[0]))\n    return [word for word, _ in sorted_words[:n]]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:57:18.289Z"
+  },
+  "MBPP_3": {
+    "output": "```python\nimport math\n\ndef volume_triangular_prism(a, b, c, h):\n    \"\"\"\n    Calculate the volume of a triangular prism.\n    \n    Parameters:\n    a, b, c : float\n        Sides of the triangular base\n    h : float\n        Height (length) of the prism\n        \n    Returns:\n    float\n        Volume of the triangular prism\n    \"\"\"\n    # Calculate semi-perimeter of the triangle\n    s = (a + b + c) / 2\n    \n    # Calculate area of the triangular base using Heron's formula\n    area = math.sqrt(s * (s - a) * (s - b) * (s - c))\n    \n    # Calculate volume (area of base times height)\n    return area * h\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:57:51.499Z"
+  },
+  "MBPP_4": {
+    "output": "```python\nimport re\n\ndef split_at_lowercase(s):\n    return re.split(r'[a-z]', s)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T07:59:17.199Z"
+  },
+  "MBPP_5": {
+    "output": "```python\nimport re\n\ndef find_sequences(s):\n    \"\"\"\n    Find sequences of lowercase letters joined with underscores.\n    Returns a list of matching sequences, or an empty list if none found.\n    \"\"\"\n    pattern = r'[a-z]+(?:_[a-z]+)*'\n    return re.findall(pattern, s)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:00:00.661Z"
+  },
+  "MBPP_6": {
+    "output": "```python\ndef square_perimeter(side):\n    return 4 * side\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:00:04.285Z"
+  },
+  "MBPP_7": {
+    "output": "```python\ndef remove_chars(first_string, second_string):\n    return ''.join(char for char in first_string if char not in second_string)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:00:12.149Z"
+  },
+  "MBPP_8": {
+    "output": "```python\ndef contains_duplicate(nums):\n    seen = set()\n    for num in nums:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:00:22.038Z"
+  },
+  "MBPP_9": {
+    "output": "```python\ndef is_woodball(n):\n    if n < 1:\n        return False\n    i = 1\n    while True:\n        woodall = i * (1 << i) - 1\n        if woodall == n:\n            return True\n        if woodall > n:\n            break\n        i += 1\n    return False\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:01:46.626Z"
+  },
+  "MBPP_10": {
+    "output": "```python\ndef find_multiples(n, m):\n    return [n * i for i in range(1, m + 1)]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:02:03.207Z"
+  },
+  "MBPP_11": {
+    "output": "```python\ndef first_duplicate(arr):\n    seen = set()\n    for num in arr:\n        if num in seen:\n            return num\n        seen.add(num)\n    return -1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:02:17.445Z"
+  },
+  "MBPP_12": {
+    "output": "```python\ndef max_sum_of_lists(list_of_lists):\n    if not list_of_lists:\n        return 0\n    return max(sum(sublist) for sublist in list_of_lists)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:02:26.300Z"
+  },
+  "MBPP_13": {
+    "output": "```python\ndef binary_to_decimal(binary_str):\n    decimal = 0\n    for bit in binary_str:\n        decimal = decimal * 2 + int(bit)\n    return decimal\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:02:54.601Z"
+  },
+  "MBPP_14": {
+    "output": "```python\nfrom collections import Counter\n\ndef product_of_non_repeated(arr):\n    freq = Counter(arr)\n    product = 1\n    found_non_repeated = False\n    \n    for num in arr:\n        if freq[num] == 1:\n            product *= num\n            found_non_repeated = True\n    \n    return product if found_non_repeated else 1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:03:01.554Z"
+  },
+  "MBPP_15": {
+    "output": "```python\ndef check_tuple_list(tuples_list, k):\n    return all(len(tup) == k for tup in tuples_list)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:03:26.034Z"
+  },
+  "MBPP_16": {
+    "output": "```python\ndef remove_digits_from_list(strings):\n    result = []\n    for s in strings:\n        result.append(''.join(char for char in s if not char.isdigit()))\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:03:35.677Z"
+  },
+  "MBPP_17": {
+    "output": "```python\ndef binomial_coefficient(n, k):\n    if k > n:\n        return 0\n    if k == 0 or k == n:\n        return 1\n    \n    # Take advantage of symmetry: C(n, k) = C(n, n-k)\n    k = min(k, n - k)\n    \n    result = 1\n    for i in range(1, k + 1):\n        result = result * (n - i + 1) // i\n    \n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:03:55.613Z"
+  },
+  "MBPP_18": {
+    "output": "```python\ndef find_odd_occurrence(arr):\n    result = 0\n    for num in arr:\n        result ^= num\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:04:03.991Z"
+  },
+  "MBPP_19": {
+    "output": "```python\nfrom collections import Counter\n\ndef count_substrings_with_same_ends(s):\n    freq = Counter(s)\n    total = 0\n    for count in freq.values():\n        total += count * (count + 1) // 2\n    return total\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:04:35.901Z"
+  },
+  "MBPP_20": {
+    "output": "```python\nimport heapq\n\ndef top_k_frequent_integers(lists, k):\n    freq = {}\n    for lst in lists:\n        for num in lst:\n            freq[num] = freq.get(num, 0) + 1\n    \n    heap = []\n    for num, count in freq.items():\n        heapq.heappush(heap, (count, num))\n        if len(heap) > k:\n            heapq.heappop(heap)\n    \n    result = []\n    while heap:\n        count, num = heapq.heappop(heap)\n        result.append(num)\n    \n    return result[::-1]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:08:42.169Z"
+  },
+  "MBPP_21": {
+    "output": "```python\ndef largest_prime_factor(n):\n    if n <= 1:\n        return n\n    \n    # Divide by 2 until n is odd\n    while n % 2 == 0:\n        last_factor = 2\n        n //= 2\n    \n    # Check odd factors starting from 3\n    factor = 3\n    max_factor = int(n**0.5) + 1\n    \n    while n > 1 and factor <= max_factor:\n        if n % factor == 0:\n            last_factor = factor\n            n //= factor\n            while n % factor == 0:\n                n //= factor\n            max_factor = int(n**0.5) + 1\n        factor += 2\n    \n    # If n is still greater than 1, then it's the largest prime factor\n    if n > 1:\n        return n\n    return last_factor\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:09:03.424Z"
+  },
+  "MBPP_22": {
+    "output": "```python\ndef decimal_to_binary(n):\n    if n == 0:\n        return \"0\"\n    \n    binary = \"\"\n    num = abs(n)\n    \n    while num > 0:\n        binary = str(num % 2) + binary\n        num //= 2\n    \n    if n < 0:\n        binary = \"-\" + binary\n    \n    return binary\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:10:03.557Z"
+  },
+  "MBPP_23": {
+    "output": "```python\ndef find_missing_number(arr):\n    low, high = 0, len(arr) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] == mid:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return low\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:10:33.952Z"
+  },
+  "MBPP_24": {
+    "output": "def rectangular_number(n):\n    return n * (n + 1)",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:10:46.166Z"
+  },
+  "MBPP_25": {
+    "output": "```python\ndef nth_digit(numerator, denominator, n):\n    \"\"\"\n    Returns the nth digit after the decimal point in the decimal expansion of numerator/denominator.\n    If the expansion terminates, returns 0 for digits beyond the termination.\n    Assumes n >= 1.\n    \"\"\"\n    if denominator == 0:\n        raise ValueError(\"Denominator cannot be zero\")\n    num = abs(numerator)\n    den = abs(denominator)\n    remainder = num % den\n    for i in range(1, n+1):\n        if remainder == 0:\n            return 0\n        remainder *= 10\n        digit = remainder // den\n        remainder %= den\n        if i == n:\n            return digit\n    return 0\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:13:37.010Z"
+  },
+  "MBPP_26": {
+    "output": "```python\ndef sort_mixed_list(mixed_list):\n    return sorted(mixed_list, key=lambda x: (isinstance(x, str), x))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:14:10.742Z"
+  },
+  "MBPP_27": {
+    "output": "```python\ndef div_first_even_odd(lst):\n    first_even = None\n    first_odd = None\n    \n    for num in lst:\n        if num % 2 == 0 and first_even is None:\n            first_even = num\n        elif num % 2 != 0 and first_odd is None:\n            first_odd = num\n        \n        if first_even is not None and first_odd is not None:\n            break\n    \n    if first_even is not None and first_odd is not None:\n        return first_even / first_odd\n    return None\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:15:17.415Z"
+  },
+  "MBPP_28": {
+    "output": "```python\nfrom collections import Counter\n\ndef can_rearrange(s: str) -> bool:\n    n = len(s)\n    if n == 0:\n        return True\n    freq = Counter(s)\n    max_freq = max(freq.values())\n    return max_freq <= (n + 1) // 2\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:15:37.158Z"
+  },
+  "MBPP_29": {
+    "output": "```python\nfrom collections import Counter\n\ndef frequency_of_elements(list_of_lists):\n    \"\"\"\n    Find frequency of elements in a list of lists using collections.Counter.\n    \n    Args:\n        list_of_lists: A list containing sublists of elements.\n        \n    Returns:\n        A Counter object with element frequencies.\n    \"\"\"\n    # Flatten the list of lists and count element frequencies\n    flat_list = [element for sublist in list_of_lists for element in sublist]\n    return Counter(flat_list)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:16:04.192Z"
+  },
+  "BigCode_0": {
+    "output": "```python\nimport itertools\nfrom random import shuffle\n\ndef task_func(numbers=list(range(1, 3))):\n    total = 0\n    count = 0\n    for perm in itertools.permutations(numbers):\n        total += sum(abs(perm[i] - perm[i+1]) for i in range(len(perm)-1))\n        count += 1\n    return total / count\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:17:15.643Z"
+  },
+  "BigCode_1": {
+    "output": "```python\nimport collections\nimport random\nimport string\n\ndef task_func(length=100):\n    if length < 0:\n        raise ValueError(\"Length cannot be negative\")\n    chars = string.ascii_letters\n    random_string = ''.join(random.choices(chars, k=length))\n    count_dict = collections.Counter(random_string)\n    return dict(count_dict)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:17:33.467Z"
+  },
+  "BigCode_2": {
+    "output": "```python\nimport random\nimport statistics\n\ndef task_func(LETTERS):\n    # Create dictionary with random lists\n    data_dict = {letter: [random.randint(1, 100) for _ in range(random.randint(1, 10))] \n                 for letter in LETTERS}\n    \n    # Sort by mean in descending order\n    sorted_dict = dict(sorted(data_dict.items(), \n                             key=lambda item: statistics.mean(item[1]), \n                             reverse=True))\n    \n    return sorted_dict\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:17:51.410Z"
+  },
+  "BigCode_3": {
+    "output": "```python\nimport random\nimport numpy as np\n\ndef task_func(LETTERS):\n    \"\"\"\n    Create a dictionary where keys are letters from the input list and values are lists of random integers.\n    Then calculate the mean of these integers for each key and return a dictionary of these means.\n    \n    Parameters:\n    LETTERS (list): A list of letters to be used as keys.\n    \n    Returns:\n    dict: A dictionary where each key is a letter from the input list and the value is the mean of\n    a randomly generated list of integers (with each list having 1 to 10 integers ranging from 0 to 100).\n    \"\"\"\n    result_dict = {}\n    for letter in LETTERS:\n        # Generate random list length between 1 and 10\n        list_length = random.randint(1, 10)\n        # Generate list of random integers between 0 and 100\n        random_ints = [random.randint(0, 100) for _ in range(list_length)]\n        # Calculate mean using numpy\n        mean_value = np.mean(random_ints)\n        result_dict[letter] = mean_value\n    return result_dict\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:18:08.041Z"
+  },
+  "BigCode_4": {
+    "output": "```python\nfrom collections import Counter\nimport itertools\n\ndef task_func(d):\n    all_integers = list(itertools.chain.from_iterable(d.values()))\n    return dict(Counter(all_integers))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:18:18.397Z"
+  },
+  "BigCode_5": {
+    "output": "```python\nimport random\nimport math\n\ndef task_func(LETTERS=[chr(i) for i in range(97, 123)]):\n    result = {}\n    for letter in LETTERS:\n        random_list = [random.randint(0, 100) for _ in range(random.randint(1, 10))]\n        if len(random_list) == 0:\n            std_dev = 0.0\n        else:\n            mean = sum(random_list) / len(random_list)\n            variance = sum((x - mean) ** 2 for x in random_list) / len(random_list)\n            std_dev = math.sqrt(variance)\n        result[letter] = std_dev\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:18:30.439Z"
+  },
+  "BigCode_6": {
+    "output": "```python\nimport os\nimport re\nimport glob\n\ndef task_func(pattern, log_dir='/var/log/'):\n    \"\"\"\n    Find the latest log file in a specified directory that matches a given regex pattern.\n\n    Parameters:\n        pattern (str): Regular expression pattern to match log file names.\n        log_dir (str): Path to the directory to search. Default is '/var/log/'.\n\n    Returns:\n        str or None: The path to the most recent log file that matches the pattern,\n                     or None if no matching files are found.\n    \"\"\"\n    # Check if the directory exists\n    if not os.path.isdir(log_dir):\n        return None\n\n    # Get all files in the directory\n    all_files = glob.glob(os.path.join(log_dir, '*'))\n    \n    # Filter files that match the regex pattern and are actual files\n    matching_files = []\n    for file_path in all_files:\n        if os.path.isfile(file_path) and re.search(pattern, os.path.basename(file_path)):\n            matching_files.append(file_path)\n    \n    # Return None if no matching files\n    if not matching_files:\n        return None\n    \n    # Find the latest file by modification time\n    latest_file = max(matching_files, key=os.path.getmtime)\n    \n    return latest_file\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:18:40.211Z"
+  },
+  "BigCode_7": {
+    "output": "```python\nimport csv\nimport collections\nimport operator\n\ndef task_func(csv_file_path):\n    \"\"\"\n    Find the best-selling product from a CSV file with sales data.\n    \n    Args:\n        csv_file_path (str): Path to the CSV file containing sales data.\n        \n    Returns:\n        str: Name of the product with the highest cumulative sales.\n    \"\"\"\n    sales_data = collections.defaultdict(int)\n    \n    with open(csv_file_path, mode='r', newline='', encoding='utf-8') as file:\n        reader = csv.DictReader(file)\n        for row in reader:\n            product = row['product']\n            quantity = int(row['quantity'])\n            sales_data[product] += quantity\n    \n    if not sales_data:\n        return \"\"\n    \n    best_product = max(sales_data.items(), key=operator.itemgetter(1))\n    return best_product[0]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:19:08.135Z"
+  },
+  "BigCode_8": {
+    "output": "```python\nfrom collections import Counter\nimport itertools\nfrom random import randint\n\ndef task_func(T1, RANGE=100):\n    # Convert elements in T1 to integers and compute sum\n    total = sum(int(x) for x in T1)\n    \n    # Generate list of random integers\n    random_numbers = [randint(0, RANGE) for _ in range(total)]\n    \n    # Count occurrences using Counter\n    return Counter(random_numbers)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:19:18.202Z"
+  },
+  "BigCode_9": {
+    "output": "```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\ndef task_func(list_of_pairs):\n    df = pd.DataFrame(list_of_pairs, columns=['Category', 'Value'])\n    \n    plt.figure(figsize=(10, 6))\n    ax = sns.barplot(x='Category', y='Value', data=df)\n    ax.set_title('Category vs Value')\n    ax.set_xlabel('Category')\n    ax.set_ylabel('Value')\n    \n    return (df, ax)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:19:25.383Z"
+  },
+  "BigCode_10": {
+    "output": "```python\nimport numpy as np\nimport itertools\nimport random\nimport statistics\nfrom collections import Counter\n\ndef task_func(T1, RANGE=100):\n    if not T1:\n        raise statistics.StatisticsError(\"T1 is empty\")\n    \n    total_size = 0\n    for item in T1:\n        total_size += int(item)\n    \n    generated_list = np.random.randint(0, RANGE, size=total_size).tolist()\n    \n    mean = statistics.mean(generated_list)\n    median = statistics.median(generated_list)\n    \n    count = Counter(generated_list)\n    max_freq = max(count.values())\n    modes = [k for k, v in count.items() if v == max_freq]\n    mode = min(modes)\n    \n    return (mean, median, mode)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:20:29.529Z"
+  },
+  "BigCode_11": {
+    "output": "```python\nimport numpy as np\nimport itertools\nimport random\n\ndef task_func(T1, max_value=100):\n    # Flatten and convert strings to integers\n    all_integers = [int(x) for x in itertools.chain.from_iterable(T1)]\n    total_size = sum(all_integers)\n    \n    # Generate list of random integers\n    random_list = [random.randint(0, max_value) for _ in range(total_size)]\n    \n    # Calculate percentiles\n    if len(random_list) > 0:\n        p25 = np.percentile(random_list, 25)\n        p50 = np.percentile(random_list, 50)\n        p75 = np.percentile(random_list, 75)\n    else:\n        p25 = p50 = p75 = 0.0\n    \n    return (p25, p50, p75)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:21:27.680Z"
+  },
+  "BigCode_12": {
+    "output": "```python\nimport subprocess\nimport os\nimport json\nfrom datetime import datetime\n\ndef task_func(script_name='backup.sh', log_file='/home/user/backup_log.json'):\n    # Check if the script file exists\n    if not os.path.isfile(script_name):\n        raise FileNotFoundError(f\"Script file '{script_name}' not found.\")\n    \n    # Record start time\n    start_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')\n    \n    try:\n        # Execute the script\n        result = subprocess.run(['bash', script_name], capture_output=True, text=True)\n        exit_status = result.returncode\n    except Exception as e:\n        raise RuntimeError(f\"Error executing script '{script_name}': {str(e)}\")\n    \n    # Record end time\n    end_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')\n    \n    # Create result dictionary\n    result_dict = {\n        'start_time': start_time,\n        'end_time': end_time,\n        'exit_status': exit_status\n    }\n    \n    # Write to log file\n    try:\n        with open(log_file, 'w') as f:\n            json.dump(result_dict, f, indent=2)\n    except Exception as e:\n        # If we can't write to log file, we still raise RuntimeError as per requirements\n        raise RuntimeError(f\"Error writing to log file '{log_file}': {str(e)}\")\n    \n    return result_dict\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:22:33.770Z"
+  },
+  "BigCode_13": {
+    "output": "```python\nimport subprocess\nimport ftplib\nimport os\n\ndef task_func(ftp_server='ftp.dlptest.com', ftp_user='dlpuser', ftp_password='rNrKYTX9g7z3RgJRmxWuGHbeu', ftp_dir='/ftp/test'):\n    try:\n        ftp = ftplib.FTP(ftp_server)\n    except ftplib.all_errors as e:\n        raise Exception(f\"Failed to connect to FTP server {ftp_server}: {str(e)}\")\n    \n    try:\n        ftp.login(ftp_user, ftp_password)\n    except ftplib.all_errors as e:\n        raise Exception(f\"Failed to log into FTP server {ftp_server} with user {ftp_user}: {str(e)}\")\n    \n    try:\n        ftp.cwd(ftp_dir)\n    except ftplib.all_errors as e:\n        raise Exception(f\"Failed to change to directory {ftp_dir} on server {ftp_server}: {str(e)}\")\n    \n    filenames = ftp.nlst()\n    ftp.quit()\n    \n    downloaded_files = []\n    for filename in filenames:\n        url = f\"ftp://{ftp_server}{ftp_dir}/{filename}\"\n        command = ['wget', '--ftp-user', ftp_user, '--ftp-password', ftp_password, url]\n        subprocess.run(command)\n        downloaded_files.append(filename)\n    \n    return downloaded_files\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:23:19.319Z"
+  },
+  "BigCode_14": {
+    "output": "```python\nimport configparser\nimport os\nimport shutil\nimport zipfile\n\ndef task_func(config_file_path, archive_dir='/home/user/archive'):\n    # Read configuration file\n    if not os.path.isfile(config_file_path):\n        raise FileNotFoundError(f\"Config file not found: {config_file_path}\")\n    \n    config = configparser.ConfigParser()\n    config.read(config_file_path)\n    \n    # Get project directory from config\n    if 'Project' not in config or 'directory' not in config['Project']:\n        raise KeyError(\"Invalid configuration: missing [Project] section or 'directory' key\")\n    \n    project_dir = config.get('Project', 'directory')\n    \n    # Validate project directory exists\n    if not os.path.isdir(project_dir):\n        raise FileNotFoundError(f\"Project directory not found: {project_dir}\")\n    \n    # Prepare archive directory\n    os.makedirs(archive_dir, exist_ok=True)\n    \n    # Create archive name from project directory basename\n    project_basename = os.path.basename(os.path.normpath(project_dir))\n    archive_path = os.path.join(archive_dir, f\"{project_basename}.zip\")\n    \n    # Create ZIP archive\n    try:\n        with zipfile.ZipFile(archive_path, 'w', zipfile.ZIP_DEFLATED) as zipf:\n            for root, dirs, files in os.walk(project_dir):\n                for file in files:\n                    file_path = os.path.join(root, file)\n                    arcname = os.path.relpath(file_path, project_dir)\n                    zipf.write(file_path, arcname)\n        return True\n    except Exception as e:\n        raise Exception(f\"Failed to create ZIP archive: {str(e)}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:23:39.279Z"
+  },
+  "BigCode_15": {
+    "output": "```python\nimport subprocess\nimport csv\nimport os\n\ndef task_func(commands_file_path, output_dir_path):\n    # Check if commands file exists\n    if not os.path.exists(commands_file_path):\n        raise FileNotFoundError(f\"Commands file not found: {commands_file_path}\")\n    \n    # Create output directory if it doesn't exist\n    os.makedirs(output_dir_path, exist_ok=True)\n    \n    # Read commands from CSV file\n    commands = []\n    with open(commands_file_path, 'r', newline='') as f:\n        reader = csv.reader(f)\n        for row in reader:\n            # Join all columns with space to handle CSV with multiple columns\n            command = ' '.join(row).strip()\n            if command:\n                commands.append(command)\n    \n    output_files = []\n    \n    # Execute each command and save output\n    for i, command in enumerate(commands):\n        output_filename = f\"command_{i}_output.txt\"\n        output_path = os.path.join(output_dir_path, output_filename)\n        \n        try:\n            # Execute command\n            result = subprocess.run(\n                command,\n                shell=True,\n                capture_output=True,\n                text=True\n            )\n            \n            # Write command output to file\n            with open(output_path, 'w') as f:\n                if result.returncode == 0:\n                    # Write stdout if command succeeded\n                    f.write(result.stdout)\n                else:\n                    # Write error message and exit code if command failed\n                    error_message = f\"Command failed with exit code {result.returncode}:\\n\"\n                    error_message += f\"Command: {command}\\n\"\n                    error_message += f\"Error output:\\n{result.stderr}\"\n                    f.write(error_message)\n        \n        except Exception as e:\n            # Handle any other exceptions during command execution\n            with open(output_path, 'w') as f:\n                error_message = f\"Exception during command execution:\\n\"\n                error_message += f\"Command: {command}\\n\"\n                error_message += f\"Exception: {str(e)}\"\n                f.write(error_message)\n        \n        output_files.append(output_path)\n    \n    return output_files\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:24:37.235Z"
+  },
+  "BigCode_16": {
+    "output": "```python\nimport os\nimport glob\nimport tarfile\n\ndef task_func(directory, backup_dir='/path/to/backup'):\n    if not os.path.exists(directory):\n        raise FileNotFoundError(f\"Directory not found: {directory}\")\n    \n    log_files = glob.glob(os.path.join(directory, '*.log'))\n    \n    if not log_files:\n        return 'No logs found to backup'\n    \n    os.makedirs(backup_dir, exist_ok=True)\n    backup_path = os.path.join(backup_dir, 'logs_backup.tar.gz')\n    \n    with tarfile.open(backup_path, 'w:gz') as tar:\n        for log_file in log_files:\n            tar.add(log_file, arcname=os.path.basename(log_file))\n    \n    for log_file in log_files:\n        os.remove(log_file)\n    \n    return backup_path\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:24:51.954Z"
+  },
+  "BigCode_17": {
+    "output": "```python\nimport subprocess\nimport psutil\nimport time\n\ndef task_func(process_name: str) -> str:\n    \"\"\"\n    Check if a process is running and take action based on its status.\n    \n    Args:\n        process_name: Name of the process to check and manage\n        \n    Returns:\n        str: Message indicating the action taken\n    \"\"\"\n    # Check if the process is running\n    process_found = False\n    for proc in psutil.process_iter(['name']):\n        try:\n            if proc.info['name'] == process_name:\n                process_found = True\n                break\n        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):\n            pass\n    \n    if process_found:\n        # Process is running - terminate and restart\n        for proc in psutil.process_iter(['name']):\n            try:\n                if proc.info['name'] == process_name:\n                    proc.terminate()\n                    try:\n                        proc.wait(timeout=5)\n                    except psutil.TimeoutExpired:\n                        proc.kill()\n            except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):\n                pass\n        \n        # Small delay to ensure process is terminated\n        time.sleep(0.5)\n        \n        # Start the process again\n        subprocess.Popen([process_name])\n        return f\"Process found. Restarting {process_name}.\"\n    else:\n        # Process is not running - start it\n        subprocess.Popen([process_name])\n        return f\"Process not found. Starting {process_name}.\"\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:25:30.365Z"
+  },
+  "BigCode_18": {
+    "output": "```python\nimport subprocess\nimport csv\nimport glob\nimport random\nimport os\n\ndef task_func(file):\n    # Check if file exists\n    if not os.path.exists(file):\n        return []\n    \n    # Check if it's a CSV file\n    if not file.endswith('.csv'):\n        return []\n    \n    try:\n        # Get the directory and base filename\n        dir_path = os.path.dirname(os.path.abspath(file))\n        base_name = os.path.basename(file)\n        \n        # Create a temporary directory for splits\n        temp_dir = os.path.join(dir_path, 'temp_splits')\n        os.makedirs(temp_dir, exist_ok=True)\n        \n        # Run the split command (10 lines per split)\n        split_prefix = os.path.join(temp_dir, 'split_')\n        result = subprocess.run(\n            ['split', '-l', '10', file, split_prefix],\n            capture_output=True,\n            text=True\n        )\n        \n        # Check if split command succeeded\n        if result.returncode != 0:\n            return []\n        \n        # Get list of split files\n        split_files = glob.glob(f'{split_prefix}*')\n        \n        # Shuffle rows in each split file\n        for split_file in split_files:\n            # Read all lines\n            with open(split_file, 'r', newline='', encoding='utf-8') as f:\n                lines = f.readlines()\n            \n            # Shuffle lines (skip header if exists)\n            if len(lines) > 1:\n                header = lines[0] if csv.Sniffer().has_header(''.join(lines)) else ''\n                data_lines = lines[1:] if header else lines\n                random.shuffle(data_lines)\n                \n                # Write back shuffled lines\n                with open(split_file, 'w', newline='', encoding='utf-8') as f:\n                    if header:\n                        f.write(header)\n                    f.writelines(data_lines)\n        \n        # Move split files to same directory as original file\n        final_paths = []\n        for split_file in split_files:\n            filename = os.path.basename(split_file)\n            new_path = os.path.join(dir_path, filename)\n            os.rename(split_file, new_path)\n            final_paths.append(new_path)\n        \n        # Remove temporary directory\n        os.rmdir(temp_dir)\n        \n        return final_paths\n    \n    except Exception:\n        return []\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:26:21.714Z"
+  },
+  "BigCode_19": {
+    "output": "```python\nimport os\nimport glob\nimport zipfile\n\ndef task_func(directory):\n    if not os.path.isdir(directory):\n        raise FileNotFoundError\n    \n    files = [f for f in glob.glob(os.path.join(directory, '*')) if os.path.isfile(f)]\n    \n    if not files:\n        return None\n    \n    zip_path = os.path.join(directory, 'files.zip')\n    \n    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:\n        for file in files:\n            zipf.write(file, os.path.basename(file))\n    \n    return zip_path\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:26:52.344Z"
+  },
+  "BigCode_20": {
+    "output": "```python\nimport ast\nimport pandas as pd\nimport seaborn as sns\n\ndef task_func(csv_file):\n    df = pd.read_csv(csv_file)\n    \n    df['dict_column'] = df['dict_column'].apply(ast.literal_eval)\n    \n    ax = sns.pairplot(df)\n    \n    return (df, ax)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:27:58.587Z"
+  },
+  "BigCode_21": {
+    "output": "```python\nimport psutil\nimport platform\n\ndef task_func():\n    os_name = platform.system()\n    architecture = platform.architecture()[0]\n    \n    memory = psutil.virtual_memory()\n    total_memory = memory.total\n    used_memory = memory.used\n    memory_percentage = (used_memory / total_memory) * 100\n    memory_usage_str = f\"{memory_percentage:.2f}%\"\n    \n    return {\n        'OS': os_name,\n        'Architecture': architecture,\n        'Memory Usage': memory_usage_str\n    }\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:28:08.587Z"
+  },
+  "BigCode_22": {
+    "output": "```python\nimport collections\nfrom itertools import zip_longest\nfrom random import choices\n\ndef task_func(l1, l2, K=10):\n    combined = []\n    for a, b in zip_longest(l1, l2, fillvalue=None):\n        if a is not None:\n            combined.append(a)\n        if b is not None:\n            combined.append(b)\n    \n    sample = choices(combined, k=K)\n    return collections.Counter(sample)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:29:05.666Z"
+  },
+  "BigCode_23": {
+    "output": "```python\nimport numpy as np\nfrom itertools import zip_longest\n\ndef task_func(l1, l2, THRESHOLD=0.5):\n    \"\"\"\n    Alternates elements from two numeric lists, calculates the absolute difference of each element\n    from a predefined threshold, and returns the element closest to this threshold.\n    \n    Parameters:\n    l1 (list): First numeric list\n    l2 (list): Second numeric list\n    THRESHOLD (float): Threshold value (default 0.5)\n    \n    Returns:\n    float: The element from the combined list that is closest to the threshold of 0.5\n    \"\"\"\n    combined = []\n    for a, b in zip_longest(l1, l2):\n        if a is not None:\n            combined.append(a)\n        if b is not None:\n            combined.append(b)\n    \n    if not combined:\n        return 0.0\n    \n    differences = [abs(x - THRESHOLD) for x in combined]\n    min_diff_idx = np.argmin(differences)\n    \n    return float(combined[min_diff_idx])\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:30:27.060Z"
+  },
+  "BigCode_24": {
+    "output": "```python\nimport base64\nimport hashlib\nimport os\n\ndef task_func(password, SALT_LENGTH=32):\n    if password is None or password == \"\":\n        raise ValueError(\"Password cannot be None or empty\")\n    \n    salt = os.urandom(SALT_LENGTH)\n    iterations = 100000\n    hash_bytes = hashlib.pbkdf2_hmac(\n        'sha256',\n        password.encode('utf-8'),\n        salt,\n        iterations\n    )\n    \n    salt_b64 = base64.b64encode(salt)\n    hash_b64 = base64.b64encode(hash_bytes)\n    \n    return (salt_b64, hash_b64)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:30:38.787Z"
+  },
+  "BigCode_25": {
+    "output": "```python\nimport base64\nimport json\nimport zlib\n\ndef task_func(data_dict):\n    json_str = json.dumps(data_dict)\n    compressed_data = zlib.compress(json_str.encode('utf-8'))\n    encoded_data = base64.b64encode(compressed_data)\n    return encoded_data.decode('utf-8')\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:30:46.432Z"
+  },
+  "BigCode_26": {
+    "output": "```python\nimport base64\nfrom cryptography.fernet import Fernet\n\ndef task_func(message, encryption_key):\n    cipher = Fernet(encryption_key)\n    encrypted_message = cipher.encrypt(message.encode('utf-8'))\n    base64_encoded = base64.b64encode(encrypted_message)\n    return base64_encoded.decode('utf-8')\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:31:10.512Z"
+  },
+  "BigCode_27": {
+    "output": "```python\nimport json\nimport base64\nfrom datetime import datetime\n\ndef task_func(data: dict, DATE_FORMAT = \"%Y-%m-%d %H:%M:%S\") -> str:\n    current_timestamp = datetime.now().strftime(DATE_FORMAT)\n    data['timestamp'] = current_timestamp\n    json_str = json.dumps(data)\n    encoded_bytes = base64.b64encode(json_str.encode('ascii'))\n    return encoded_bytes.decode('ascii')\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:31:23.523Z"
+  },
+  "BigCode_28": {
+    "output": "```python\nimport requests\nimport json\nimport base64\n\ndef task_func(data, url=\"http://your-api-url.com\"):\n    # Convert dictionary to JSON string\n    json_str = json.dumps(data)\n    \n    # Encode JSON string to base64\n    base64_bytes = base64.b64encode(json_str.encode('utf-8'))\n    base64_str = base64_bytes.decode('utf-8')\n    \n    # Send POST request with base64-encoded payload\n    response = requests.post(url, json={\"payload\": base64_str})\n    \n    return response\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:32:00.145Z"
+  },
+  "BigCode_29": {
+    "output": "```python\nfrom sklearn.preprocessing import StandardScaler\nimport numpy as np\nimport base64\n\ndef task_func(data):\n    data = np.array(data)\n    if data.ndim == 1:\n        data = data.reshape(-1, 1)\n    scaler = StandardScaler()\n    standardized_data = scaler.fit_transform(data)\n    encoded_bytes = base64.b64encode(standardized_data.tobytes())\n    encoded_string = encoded_bytes.decode('ascii')\n    return encoded_string\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:32:42.413Z"
+  },
+  "MBPP_Extra_0": {
+    "output": "```python\ndef filter_even_numbers(numbers):\n    return list(filter(lambda x: x % 2 == 0, numbers))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:32:47.485Z"
+  },
+  "MBPP_Extra_1": {
+    "output": "```python\ndef sum_of_repeated_elements(arr):\n    count_map = {}\n    for num in arr:\n        count_map[num] = count_map.get(num, 0) + 1\n    \n    total = 0\n    added = set()\n    for num in arr:\n        if count_map[num] > 1 and num not in added:\n            total += num\n            added.add(num)\n    \n    return total\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:33:37.818Z"
+  },
+  "MBPP_Extra_2": {
+    "output": "```python\nimport re\n\ndef find_lowercase_underscore_sequences(text):\n    pattern = r'[a-z]+(?:_[a-z]+)+'\n    return re.findall(pattern, text)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:36:23.319Z"
+  },
+  "MBPP_Extra_3": {
+    "output": "```python\nimport re\n\ndef match_word_beginning(word, string):\n    pattern = rf\"^{re.escape(word)}\\b\"\n    match = re.search(pattern, string)\n    return match\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:37:51.113Z"
+  },
+  "MBPP_Extra_4": {
+    "output": "```python\ndef find_gcd(arr):\n    def gcd(a, b):\n        while b:\n            a, b = b, a % b\n        return a\n    \n    result = arr[0]\n    for num in arr[1:]:\n        result = gcd(result, num)\n        if result == 1:\n            break\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:38:32.379Z"
+  },
+  "MBPP_Extra_5": {
+    "output": "```python\ndef all_unique(numbers):\n    return len(numbers) == len(set(numbers))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:38:37.020Z"
+  },
+  "MBPP_Extra_6": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T10:08:50.681Z"
+  },
+  "MBPP_Extra_7": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T10:11:58.525Z"
+  },
+  "MBPP_Extra_8": {
+    "output": "```python\ndef extract_elements(matrix, index=0):\n    \"\"\"\n    Extract elements from a two-dimensional list.\n\n    Args:\n        matrix: A two-dimensional list (list of lists)\n        index: Index of elements to extract (default 0 for first elements)\n\n    Returns:\n        A list containing the extracted elements\n    \"\"\"\n    if not matrix:\n        return []\n    \n    result = []\n    for row in matrix:\n        if row and len(row) > index:\n            result.append(row[index])\n    \n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:53:56.047Z"
+  },
+  "MBPP_Extra_9": {
+    "output": "```python\ndef min_length_list(lst):\n    return min(lst, key=lambda x: len(x))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "代码生成",
+    "timestamp": "2026-06-05T08:54:01.276Z"
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "Optimize_001": {
+    "score": 10,
+    "reason": "用set降至O(n)，简洁高效。",
+    "dim": "代码优化"
+  },
+  "Optimize_002": {
+    "score": 10,
+    "reason": "使用哈希表将时间复杂度降至O(n)，实现最优且功能等价。",
+    "dim": "代码优化"
+  },
+  "Optimize_003": {
+    "score": 9,
+    "reason": "迭代实现，空间降至O(1)，时间也显著优化",
+    "dim": "代码优化"
+  },
+  "Optimize_004": {
+    "score": 10,
+    "reason": "使用Counter降至O(n)，简洁等价。",
+    "dim": "代码优化"
+  },
+  "Optimize_005": {
+    "score": 10,
+    "reason": "利用堆归并，复杂度降至O(Nlogk)",
+    "dim": "代码优化"
+  },
+  "Optimize_006": {
+    "score": 10,
+    "reason": "使用切片最优简洁，性能和可读性均提升",
+    "dim": "代码优化"
+  },
+  "Optimize_007": {
+    "score": 8,
+    "reason": "Kadane算法降至O(n)，但空列表行为不等价。",
+    "dim": "代码优化"
+  },
+  "Optimize_008": {
+    "score": 10,
+    "reason": "降至平方根并跳过冗余因子，等价高效",
+    "dim": "代码优化"
+  },
+  "Optimize_009": {
+    "score": 10,
+    "reason": "指数递归优化为O(mn)且省空间",
+    "dim": "代码优化"
+  },
+  "Optimize_010": {
+    "score": 8,
+    "reason": "显著降低时间复杂度，但要求元素可哈希",
+    "dim": "代码优化"
+  },
+  "Optimize_011": {
+    "score": 9,
+    "reason": "指数递归优化为线性迭代，空间O(1)",
+    "dim": "代码优化"
+  },
+  "Optimize_012": {
+    "score": 9,
+    "reason": "使用内置方法，简洁高效且功能等价",
+    "dim": "代码优化"
+  },
+  "Optimize_013": {
+    "score": 8,
+    "reason": "时间复杂度明显降低，可读性好，但仍有少量冗余检查。",
+    "dim": "代码优化"
+  },
+  "Optimize_014": {
+    "score": 9,
+    "reason": "使用Counter降至线性复杂度，简洁可读，仅缺少长度预判优化。",
+    "dim": "代码优化"
+  },
+  "Optimize_015": {
+    "score": 8,
+    "reason": "快速幂降至O(log n)，但负数行为改变",
+    "dim": "代码优化"
+  },
+  "Optimize_016": {
+    "score": 10,
+    "reason": "公式法O(1)，复杂度最优且简洁。",
+    "dim": "代码优化"
+  },
+  "Optimize_017": {
+    "score": 9,
+    "reason": "指数回溯改一维DP，复杂度大降",
+    "dim": "代码优化"
+  },
+  "Optimize_018": {
+    "score": 10,
+    "reason": "时间复杂度降至O(n)，空间O(1)功能等价",
+    "dim": "代码优化"
+  },
+  "Optimize_019": {
+    "score": 10,
+    "reason": "线性DP最优，复杂度显著降低",
+    "dim": "代码优化"
+  },
+  "Optimize_020": {
+    "score": 8,
+    "reason": "更简洁高效，但非规则矩阵行为略变",
+    "dim": "代码优化"
+  },
+  "Optimize_021": {
+    "score": 5,
+    "reason": "复杂度优化明显，但空数组/重复值不等价",
+    "dim": "代码优化"
+  },
+  "Optimize_022": {
+    "score": 10,
+    "reason": "栈实现O(n)，功能等价且清晰",
+    "dim": "代码优化"
+  },
+  "Optimize_023": {
+    "score": 8,
+    "reason": "BFS显著优化复杂度，但空网格返回值不等价。",
+    "dim": "代码优化"
+  },
+  "Optimize_024": {
+    "score": 7,
+    "reason": "空间优化明显，但改为原地修改，功能不完全等价。",
+    "dim": "代码优化"
+  },
+  "Optimize_025": {
+    "score": 10,
+    "reason": "双指针降至O(n)/O(1)，实现正确清晰",
+    "dim": "代码优化"
+  },
+  "Optimize_026": {
+    "score": 10,
+    "reason": "Boyer-Moore降至O(n)/O(1)，功能等价",
+    "dim": "代码优化"
+  },
+  "Optimize_027": {
+    "score": 8,
+    "reason": "加入集合和记忆化，显著降复杂度。",
+    "dim": "代码优化"
+  },
+  "Optimize_028": {
+    "score": 7,
+    "reason": "空间复用更好，但时间复杂度仍为O(n²)。",
+    "dim": "代码优化"
+  },
+  "Optimize_029": {
+    "score": 9,
+    "reason": "时间复杂度降至O(n)，但切片有额外空间。",
+    "dim": "代码优化"
+  },
+  "Optimize_030": {
+    "score": 9,
+    "reason": "时间复杂度降至O(n)，可读性好但有切片额外空间",
+    "dim": "代码优化"
+  },
+  "Optimize_031": {
+    "score": 4,
+    "reason": "使用set早停，但与原函数不等价",
+    "dim": "代码优化"
+  },
+  "Optimize_032": {
+    "score": 10,
+    "reason": "使用set降为O(n)，修复错误且简洁。",
+    "dim": "代码优化"
+  },
+  "Optimize_033": {
+    "score": 2,
+    "reason": "改变原函数语义，且引入不可哈希问题",
+    "dim": "代码优化"
+  },
+  "Optimize_034": {
+    "score": 8,
+    "reason": "逻辑等价，代码更简洁，减少冗余遍历与存储",
+    "dim": "代码优化"
+  },
+  "Optimize_035": {
+    "score": 6,
+    "reason": "复杂度明显降低，但排除超限伴侣导致结果不等价。",
+    "dim": "代码优化"
+  },
+  "Optimize_036": {
+    "score": 4,
+    "reason": "有早停和降空间，但未保持原函数行为",
+    "dim": "代码优化"
+  },
+  "Optimize_037": {
+    "score": 9,
+    "reason": "用集合去重，时间复杂度显著降低，且修复原代码错误。",
+    "dim": "代码优化"
+  },
+  "Optimize_038": {
+    "score": 9,
+    "reason": "去除冗余转换，时间空间降为O(1)",
+    "dim": "代码优化"
+  },
+  "Optimize_039": {
+    "score": 4,
+    "reason": "改变重复元素时的原函数行为。",
+    "dim": "代码优化"
+  },
+  "Optimize_040": {
+    "score": 3,
+    "reason": "改变原函数行为，功能不等价。",
+    "dim": "代码优化"
+  },
+  "Optimize_041": {
+    "score": 8,
+    "reason": "set降为O(n)，但可读性仍一般",
+    "dim": "代码优化"
+  },
+  "Optimize_042": {
+    "score": 9,
+    "reason": "用set降为O(n)，简洁高效但不短路",
+    "dim": "代码优化"
+  },
+  "Optimize_043": {
+    "score": 9,
+    "reason": "去除冗余排序和列表构造，复杂度最优",
+    "dim": "代码优化"
+  },
+  "Optimize_044": {
+    "score": 8,
+    "reason": "使用集合推导减少冗余并修复交集操作，复杂度仍可优化有限",
+    "dim": "代码优化"
+  },
+  "Optimize_045": {
+    "score": 8,
+    "reason": "O(n)实现且可读性好，但比较顺序有轻微等价风险。",
+    "dim": "代码优化"
+  },
+  "Optimize_046": {
+    "score": 8,
+    "reason": "修正交集并简化，但仍构建中间列表",
+    "dim": "代码优化"
+  },
+  "Optimize_047": {
+    "score": 5,
+    "reason": "仅改进路径拼接和可读性，无复杂度优化",
+    "dim": "代码优化"
+  },
+  "Optimize_048": {
+    "score": 4,
+    "reason": "有缓存和解析优化，但改变异常行为且Session无效收益",
+    "dim": "代码优化"
+  },
+  "Optimize_049": {
+    "score": 6,
+    "reason": "修复语法并提升可读性，但复杂度无改进。",
+    "dim": "代码优化"
+  },
+  "Optimize_050": {
+    "score": 4,
+    "reason": "有优化意图，但缓存改变功能等价性。",
+    "dim": "代码优化"
+  }
+}

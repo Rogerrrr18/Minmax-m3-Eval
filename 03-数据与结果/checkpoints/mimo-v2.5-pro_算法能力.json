@@ -1,0 +1,562 @@
+{
+  "GSM8K_0": {
+    "output": "```python\n# 计算Janet每天在农贸市场赚的钱\neggs_per_day = 16  # 每天下的蛋\neggs_for_breakfast = 3  # 早餐吃掉的蛋\neggs_for_muffins = 4  # 用于烤松饼的蛋\nprice_per_egg = 2  # 每个蛋的售价\n\n# 计算剩余可卖的蛋数\nremaining_eggs = eggs_per_day - eggs_for_breakfast - eggs_for_muffins\n\n# 计算每天赚的钱\ndaily_earnings = remaining_eggs * price_per_egg\n\nprint(daily_earnings)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:18:34.354Z"
+  },
+  "GSM8K_1": {
+    "output": "```python\n# 计算长袍所需的总螺栓数\nblue_bolts = 2  # 蓝色纤维的螺栓数\nwhite_bolts = blue_bolts // 2  # 白色纤维是蓝色的一半，使用整数除法\ntotal_bolts = blue_bolts + white_bolts\nprint(total_bolts)  # 输出总螺栓数\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:18:48.781Z"
+  },
+  "GSM8K_2": {
+    "output": "```python\n# 定义变量\npurchase_price = 80000\nrepair_cost = 50000\nincrease_percentage = 150\n\n# 计算总成本\ntotal_cost = purchase_price + repair_cost\n\n# 计算新价值（增加了150%）\nnew_value = purchase_price * (1 + increase_percentage / 100)\n\n# 计算利润\nprofit = new_value - total_cost\n\n# 输出利润\nprint(profit)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:18:59.675Z"
+  },
+  "GSM8K_3": {
+    "output": "```python\ndef main():\n    sprints_per_session = 3\n    sessions_per_week = 3\n    meters_per_sprint = 60\n    total_meters = sprints_per_session * sessions_per_week * meters_per_sprint\n    print(total_meters)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:19:10.042Z"
+  },
+  "GSM8K_4": {
+    "output": "```python\n# 计算最后一餐需要的杯数\nnum_chickens = 20\ncups_per_chicken = 3\ntotal_cups_needed = num_chickens * cups_per_chicken\n\nmorning_cups = 15\nafternoon_cups = 25\ncups_given_so_far = morning_cups + afternoon_cups\n\nfinal_meal_cups = total_cups_needed - cups_given_so_far\n\nprint(final_meal_cups)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:19:21.581Z"
+  },
+  "GSM8K_5": {
+    "output": "```python\ndef main():\n    num_glasses = 16\n    full_price_count = (num_glasses + 1) // 2\n    half_price_count = num_glasses // 2\n    total_cost = full_price_count * 5 + half_price_count * 3  # 5 * 0.6 = 3\n    print(total_cost)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:19:47.332Z"
+  },
+  "GSM8K_6": {
+    "output": "根据问题描述，逐步计算羊的数量并求和。\n\n```python\nseattle = 20\ncharleston = 4 * seattle\ntoulouse = 2 * charleston\ntotal = seattle + charleston + toulouse\nprint(total)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:19:59.045Z"
+  },
+  "GSM8K_7": {
+    "output": "```python\ndef main():\n    total_size = 200  # GB\n    download_speed = 2  # GB per minute\n    interruption_percent = 0.4\n    update_duration = 20  # minutes\n\n    # Time for first download (40% of the file)\n    first_part_size = total_size * interruption_percent\n    first_part_time = first_part_size / download_speed\n\n    # Time for second download (full file)\n    second_part_time = total_size / download_speed\n\n    total_time = first_part_time + update_duration + second_part_time\n    print(f\"Total time to download the file: {total_time} minutes\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:20:16.488Z"
+  },
+  "GSM8K_8": {
+    "output": "```python\ndef calculate_distance_from_home():\n    # 初始离家距离：3小时以60 mph行驶\n    initial_distance = 3 * 60  # 180 miles\n\n    # 返程的4小时中的行驶情况\n    # 前2小时停滞，距离不变\n    # 接下来0.5小时以30 mph行驶\n    distance_half_hour = 30 * 0.5  # 15 miles\n    # 剩余时间：4 - 2 - 0.5 = 1.5小时，以80 mph行驶\n    remaining_time = 4 - 2 - 0.5\n    distance_remaining = 80 * remaining_time  # 120 miles\n\n    # 总向家行驶距离\n    total_towards_home = distance_half_hour + distance_remaining  # 135 miles\n\n    # 最终离家距离\n    final_distance = initial_distance - total_towards_home  # 45 miles\n    return final_distance\n\nif __name__ == \"__main__\":\n    distance = calculate_distance_from_home()\n    print(f\"John is {distance} miles from home at the end of those 4 hours.\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:20:33.550Z"
+  },
+  "GSM8K_9": {
+    "output": "```python\n# Define given values\nregular_hourly_rate = 10\nnormal_hours = 40\novertime_multiplier = 1.2\ntotal_hours_worked = 45\n\n# Calculate regular pay\nregular_pay = regular_hourly_rate * normal_hours\n\n# Calculate overtime hours and pay\novertime_hours = total_hours_worked - normal_hours\nif overtime_hours < 0:\n    overtime_hours = 0\novertime_rate = regular_hourly_rate * overtime_multiplier\novertime_pay = overtime_hours * overtime_rate\n\n# Calculate total earnings\ntotal_earnings = regular_pay + overtime_pay\n\n# Print the result\nprint(f\"Eliza's earnings for the week: ${total_earnings}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:20:54.545Z"
+  },
+  "GSM8K_10": {
+    "output": "```python\nfirst_month = 60\nsecond_month = first_month * 3\nthird_month = second_month * 0.7  # 30% reduction means 70% remains\ntotal_downloads = int(first_month + second_month + third_month)\nprint(total_downloads)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:21:15.969Z"
+  },
+  "GSM8K_11": {
+    "output": "```python\n# Define the quantities and costs per dozen\ndonuts_dozen = 3\ndonuts_per_dozen = 68\n\ncupcakes_dozen = 2\ncupcakes_per_dozen = 80\n\ncheesecakes_dozen = 6\ncheesecakes_per_dozen = 55\n\n# Calculate total cost\ntotal_cost = (donuts_dozen * donuts_per_dozen) + (cupcakes_dozen * cupcakes_per_dozen) + (cheesecakes_dozen * cheesecakes_per_dozen)\n\n# Output the result\nprint(total_cost)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:21:27.709Z"
+  },
+  "GSM8K_12": {
+    "output": "```python\ndef main():\n    initial_cost = 90\n    lemons_per_year = 7\n    lemon_price = 1.5\n    annual_watering_cost = 3\n    \n    annual_income = lemons_per_year * lemon_price\n    annual_net_income = annual_income - annual_watering_cost\n    \n    cumulative_profit = -initial_cost\n    years = 0\n    \n    while cumulative_profit <= 0:\n        years += 1\n        cumulative_profit += annual_net_income\n    \n    print(years)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:22:55.538Z"
+  },
+  "GSM8K_13": {
+    "output": "```python\n# Solve: x/3 - 1 = 5\n# x/3 = 6\n# x = 18\n\n# Starting with x:\n# 1. Sold x/3 at green house → remaining: 2x/3\n# 2. Sold 2 at red house → remaining: 2x/3 - 2\n# 3. Sold half of remainder at orange house → remaining: (2x/3 - 2) / 2 = x/3 - 1\n# 4. x/3 - 1 = 5\n\n# Solve algebraically\nfrom sympy import symbols, Eq, solve\n\nx = symbols('x')\nequation = Eq(x/3 - 1, 5)\nresult = solve(equation, x)[0]\n\nprint(f\"Melanie started with {int(result)} vacuum cleaners.\")\n\n# Verification\nstart = 18\nafter_green = start - start // 3          # sold 6, remaining 12\nafter_red = after_green - 2               # sold 2, remaining 10\nafter_orange = after_red - after_red // 2  # sold 5, remaining 5\n\nprint(f\"\\nVerification:\")\nprint(f\"Start: {start}\")\nprint(f\"After green house (sold {start//3}): {after_green}\")\nprint(f\"After red house (sold 2): {after_red}\")\nprint(f\"After orange house (sold {after_red//2}): {after_orange}\")\nprint(f\"Left with: {after_orange} ✓\")\n```\n\n**输出：**\n```\nMelanie started with 18 vacuum cleaners.\n\nVerification:\nStart: 18\nAfter green house (sold 6): 12\nAfter red house (sold 2): 10\nAfter orange house (sold 5): 5\nLeft with: 5 ✓\n```\n\n**答案：Melanie 一开始有 18 台吸尘器。**",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:23:07.633Z"
+  },
+  "GSM8K_14": {
+    "output": "```python\ntotal = 20\ncontemporary = total * 20 // 100\nremaining = total - contemporary\njazz = remaining * 25 // 100\nhip_hop = remaining - jazz\npercentage = hip_hop * 100 // total\nprint(f\"{percentage}%\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:23:35.759Z"
+  },
+  "GSM8K_15": {
+    "output": "```python\ndef calculate_profit(price, increase_rate):\n    \"\"\"计算利润：购买价格乘以上涨率\"\"\"\n    return price * increase_rate\n\n# 定义购买价格和上涨率（百分比转换为小数）\njewelry_price = 5000\ngadgets_price = 8000\njewelry_increase = 2.5 / 100  # 2.5%\ngadgets_increase = 1.2 / 100  # 1.2%\n\n# 计算每个计划的利润\njewelry_profit = calculate_profit(jewelry_price, jewelry_increase)\ngadgets_profit = calculate_profit(gadgets_price, gadgets_increase)\n\n# 获取最大利润\nmax_profit = max(jewelry_profit, gadgets_profit)\n\n# 输出结果\nprint(f\"The maximum profit would be ${max_profit:.2f}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:23:54.270Z"
+  },
+  "GSM8K_16": {
+    "output": "```python\ndef main():\n    # 第一天向西行驶距离\n    day1 = 80\n    # 第二天向北行驶距离\n    day2 = 150\n    # 每列火车总距离\n    total = day1 + day2\n    print(total)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:24:05.289Z"
+  },
+  "GSM8K_17": {
+    "output": "```python\ndef main():\n    # 定义参数\n    teacher_rate = 20\n    coach_rate = 30\n    teacher_hours_per_week = 35\n    coach_hours_per_week = 15\n    weeks_per_year = 50\n\n    # 计算年收入\n    annual_salary = (teacher_rate * teacher_hours_per_week + coach_rate * coach_hours_per_week) * weeks_per_year\n\n    # 输出结果\n    print(annual_salary)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:24:26.742Z"
+  },
+  "GSM8K_18": {
+    "output": "```python\n# 每天使用的鸡蛋数\neggs_per_day = 3\n# 周数\nweeks = 4\n# 每周天数\ndays_per_week = 7\n# 总天数\ntotal_days = weeks * days_per_week\n# 总鸡蛋数\ntotal_eggs = eggs_per_day * total_days\n# 计算打数（1打=12个）\ndozens = total_eggs // 12\nprint(dozens)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:24:40.925Z"
+  },
+  "GSM8K_19": {
+    "output": "```python\ndef main():\n    # Given information\n    total_distance = 12          # miles\n    desired_avg_speed = 4        # mph\n    # First segment\n    dist1 = 4                    # miles\n    time1 = 1                    # hour\n    # Second segment\n    dist2 = 2                    # miles\n    time2 = 1                    # hour\n\n    # Total time needed to achieve desired average speed\n    total_time_needed = total_distance / desired_avg_speed\n    # Time already spent\n    time_spent = time1 + time2\n    # Remaining time\n    remaining_time = total_time_needed - time_spent\n    # Remaining distance\n    remaining_distance = total_distance - (dist1 + dist2)\n    # Required speed for remaining distance\n    required_speed = remaining_distance / remaining_time\n\n    print(required_speed)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:25:00.845Z"
+  },
+  "GSM8K_20": {
+    "output": "```python\n# 橙汁饮料信息\norange_total = 10  # 升\norange_water_fraction = 2 / 3  # 水的比例\n\n# 菠萝饮料信息\npineapple_total = 15  # 升\npineapple_water_fraction = 3 / 5  # 水的比例\n\n# 洒了1升橙汁\nspilled_orange = 1  # 升\n\n# 实际倒入的橙汁量\norange_poured = orange_total - spilled_orange\n\n# 计算倒入的橙汁中的水量\nwater_from_orange = orange_poured * orange_water_fraction\n\n# 计算菠萝饮料中的水量\nwater_from_pineapple = pineapple_total * pineapple_water_fraction\n\n# 总水量\ntotal_water = water_from_orange + water_from_pineapple\n\n# 输出结果\nprint(f\"水在剩下的24升中有: {total_water} 升\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:25:38.121Z"
+  },
+  "GSM8K_21": {
+    "output": "```python\n# Samantha's current age\nsamantha_age_now = 31\n\n# Raymond is 6 years older than Samantha\nraymond_age_now = samantha_age_now + 6\n\n# Raymond had his son at age 23\nage_when_son_born = 23\n\n# Number of years ago the son was born\nyears_ago = raymond_age_now - age_when_son_born\n\nprint(years_ago)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:25:47.872Z"
+  },
+  "GSM8K_22": {
+    "output": "```python\n# 计算Billy周二卖出的DVD总数\nfirst_customers = 3\ndvd_per_first = 1\nnext_customers = 2\ndvd_per_next = 2\nlast_customers = 3\ndvd_per_last = 0\n\ntotal_dvds = (first_customers * dvd_per_first) + (next_customers * dvd_per_next) + (last_customers * dvd_per_last)\nprint(total_dvds)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:25:59.290Z"
+  },
+  "GSM8K_23": {
+    "output": "```python\ndef main():\n    # 从1:00 PM到5:00 PM是4小时\n    start_hour = 13  # 13:00 (1 PM)\n    end_hour = 17    # 17:00 (5 PM)\n    burning_hours = end_hour - start_hour\n    rate = 2  # 每小时融化2厘米\n    shorter_length = burning_hours * rate\n    print(shorter_length)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:26:10.233Z"
+  },
+  "GSM8K_24": {
+    "output": "```python\ndiscounted_price = 19.50\ndiscount = 0.25\noriginal_price = discounted_price / (1 - discount)\nprint(original_price)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:26:22.155Z"
+  },
+  "GSM8K_25": {
+    "output": "```python\ndef main():\n    # 将价格转换为美分，避免浮点数误差\n    chicken_meal_cents = 1200  # $12\n    milk_packs = 5\n    milk_price_cents = 300     # $3 per pack\n    apples = 4\n    apple_price_cents = 150    # $1.50 per apple\n    pizza_price_cents = 850    # $8.50 per box\n    total_paid_cents = 5000    # $50\n\n    # 计算已知物品的总花费\n    total_known = (chicken_meal_cents +\n                   milk_packs * milk_price_cents +\n                   apples * apple_price_cents)\n\n    # 计算剩余可用于披萨的金额\n    remaining_cents = total_paid_cents - total_known\n\n    # 计算披萨盒数（整数）\n    pizza_boxes = remaining_cents // pizza_price_cents\n\n    # 输出结果\n    print(pizza_boxes)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:26:44.450Z"
+  },
+  "GSM8K_26": {
+    "output": "```python\ntotal = 3 * 16.50 + 3 * 22.50 + 3 * 42.00\nprint(total)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:27:02.929Z"
+  },
+  "GSM8K_27": {
+    "output": "```python\n\nimport math\n\ndef calculate_cost():\n    days = 60\n    servings_per_carton = 15\n    cost_per_carton = 4.00\n    \n    # 计算需要的盒数（向上取整）\n    cartons_needed = math.ceil(days / servings_per_carton)\n    # 计算总花费\n    total_cost = cartons_needed * cost_per_carton\n    \n    # 输出结果，保留两位小数\n    print(f\"${total_cost:.2f}\")\n\nif __name__ == \"__main__\":\n    calculate_cost()\n\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:27:19.132Z"
+  },
+  "GSM8K_28": {
+    "output": "```python\ndef main():\n    total_miles = 60\n    first_stop = 20\n    second_stop_from_end = 15\n    second_stop = total_miles - second_stop_from_end\n    distance_between = second_stop - first_stop\n    print(distance_between)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:27:29.719Z"
+  },
+  "GSM8K_29": {
+    "output": "```python\n# 定义已知条件\nheel1_price = 33\nheel2_price = heel1_price * 2\ntotal_heels_price = heel1_price + heel2_price\n\n# 根据题意，两双高跟鞋的总价比靴子便宜5美元\nboots_price = total_heels_price + 5\n\n# 输出靴子的价格\nprint(boots_price)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:27:40.838Z"
+  },
+  "GSM8K_30": {
+    "output": "```python\n# 根据年龄比例和总年龄计算Allen当前的年龄\ntotal_age = 162\nratio_darrell = 7\nratio_allen = 11\n\n# 计算Allen的当前年龄：Allen年龄 = 总年龄 * Allen比例 / (Darrell比例 + Allen比例)\nallen_current_age = total_age * ratio_allen / (ratio_darrell + ratio_allen)\n\n# 计算Allen 10年后的年龄\nallen_future_age = allen_current_age + 10\n\n# 输出结果\nprint(int(allen_future_age))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:27:55.615Z"
+  },
+  "GSM8K_31": {
+    "output": "```python\n# 第一个朋友的猜测\nguess1 = 80\n\n# 第二个朋友的猜测：比第一个的一半多20\nguess2 = guess1 // 2 + 20  # 整数计算\n\n# 第三个朋友的猜测：比第一个多25%\nguess3 = guess1 * 1.25  # 或 guess1 + guess1 * 0.25\n\n# 计算平均值\naverage = (guess1 + guess2 + guess3) / 3\n\n# 输出结果\nprint(int(average))  # 结果为整数80\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:28:09.627Z"
+  },
+  "GSM8K_32": {
+    "output": "```python\n# 计算John每周照顾狗所花的小时数\ndogs = 10\nhours_per_dog_per_day = 0.5\ndays_per_week = 7\n\ntotal_hours_per_day = dogs * hours_per_dog_per_day\ntotal_hours_per_week = total_hours_per_day * days_per_week\n\nprint(total_hours_per_week)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:28:18.225Z"
+  },
+  "GSM8K_33": {
+    "output": "```python\n\ndef main():\n    total_coins = 110\n    difference = 30\n    gold_coins = (total_coins + difference) // 2\n    print(gold_coins)\n\nif __name__ == \"__main__\":\n    main()\n\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:28:28.899Z"
+  },
+  "GSM8K_34": {
+    "output": "解题思路：首先根据已知条件，Raymond有40颗珠宝，Aaron的珠宝数是Raymond珠宝数的一半加5，Siobhan的珠宝数比Aaron少2。通过逐步计算即可得到Siobhan的珠宝数。\n\n代码实现：\n```python\ndef main():\n    raymond_jewels = 40\n    aaron_jewels = raymond_jewels // 2 + 5\n    siobhan_jewels = aaron_jewels - 2\n    print(siobhan_jewels)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:28:51.132Z"
+  },
+  "GSM8K_35": {
+    "output": "解题思路：前20分钟得分为4分，第二个20分钟得分增加25%，即4 * 1.25 = 5分，总得分为4 + 5 = 9分。\n\n代码实现：\n```python\nfirst_part = 4\nsecond_part = first_part * 1.25\ntotal_points = first_part + second_part\nprint(total_points)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:29:08.582Z"
+  },
+  "GSM8K_36": {
+    "output": "```python\n# 定义每天吃的酸奶数量和天数\nyogurts_per_day = 2\ndays = 30\n\n# 计算30天吃的酸奶总数\ntotal_yogurts = yogurts_per_day * days\n\n# 打折信息：4个酸奶5美元\nprice_per_pack = 5.0\nyogurts_per_pack = 4\n\n# 计算需要购买的包数（向上取整，但这里正好整除）\npacks_needed = total_yogurts / yogurts_per_pack\n\n# 计算总花费\ntotal_cost = packs_needed * price_per_pack\n\n# 输出结果，保留两位小数\nprint(f\"${total_cost:.2f}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:29:23.767Z"
+  },
+  "GSM8K_37": {
+    "output": "```python\n# 计算John卖掉的乐高数量\ntotal_money_spent = 8 * 20 + 5  # 购买电子游戏的花费加上剩余的钱\nsold_lego_sets = total_money_spent // 15  # 由于每套乐高15美元，计算卖掉的数量\n\n# 计算剩余的乐高数量\nremaining_lego_sets = 13 - sold_lego_sets\n\n# 输出结果\nprint(remaining_lego_sets)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:29:44.227Z"
+  },
+  "GSM8K_38": {
+    "output": "```python\n# 定义变量\ntotal_miles = 60\ndays_running = 3\nhours_first_day = 3\nhours_other_days = hours_first_day / 2  # half as much for the other two days\n\n# 计算总跑步时间\ntotal_hours = hours_first_day + hours_other_days + hours_other_days  # 一天3小时，两天各1.5小时\n\n# 计算速度\nspeed = total_miles / total_hours\n\n# 输出结果\nprint(speed)  # 输出10.0\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:29:58.718Z"
+  },
+  "GSM8K_39": {
+    "output": "```python\ndef calculate_distance():\n    skip_speed = 3  # miles per hour\n    run_speed = skip_speed * 2  # run speed is twice the skip speed\n    walk_speed = run_speed / 4  # walk speed is one-fourth the run speed\n    \n    total_time = 6  # hours\n    run_time = total_time / 3  # one-third of the time running\n    walk_time = total_time * 2 / 3  # two-thirds of the time walking\n    \n    run_distance = run_speed * run_time\n    walk_distance = walk_speed * walk_time\n    total_distance = run_distance + walk_distance\n    \n    return total_distance\n\n# 调用函数并输出结果\ndistance = calculate_distance()\nprint(distance)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:30:08.988Z"
+  },
+  "GSM8K_40": {
+    "output": "解题思路：  \n1. Suzy's iPhone 年龄为 1 年。  \n2. Ben's iPhone 年龄是 Suzy's 的两倍，计算为 2 * 1 = 2 年。  \n3. Brandon's iPhone 年龄是 Ben's 的四倍，计算为 4 * 2 = 8 年。  \n因此，Brandon's iPhone 的年龄为 8 年。\n\n代码实现：\n```python\n# 定义Suzy的iPhone年龄\nsuzy_iphone_age = 1\n\n# 计算Ben的iPhone年龄：Ben's iPhone is two times older than Suzy's iPhone\nben_iphone_age = 2 * suzy_iphone_age\n\n# 计算Brandon的iPhone年龄：Brandon's iPhone is four times as old as Ben's iPhone\nbrandon_iphone_age = 4 * ben_iphone_age\n\n# 输出结果\nprint(\"Brandon's iPhone is\", brandon_iphone_age, \"years old.\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:30:40.978Z"
+  },
+  "GSM8K_41": {
+    "output": "```python\n# 定义已知参数\nthrow_without_gem = 400  # 没有宝石时的投掷距离（英尺）\ndragon_range = 1000      # 龙的火焰范围（英尺）\n\n# 计算有宝石时的投掷距离\nthrow_with_gem = throw_without_gem * 3\n\n# 计算可以站在火焰范围之外多远仍能击中龙\ndistance_outside = throw_with_gem - dragon_range\n\n# 输出结果\nprint(distance_outside)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:31:02.028Z"
+  },
+  "GSM8K_42": {
+    "output": "```python\n# 总片数 = 派的数量 * 每个派的片数\ntotal_pieces = 5 * 8\n\n# 被拿走的片数 = 总片数 - 剩余片数\ntaken_pieces = total_pieces - 14\n\nprint(taken_pieces)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:31:10.482Z"
+  },
+  "GSM8K_43": {
+    "output": "```python\n# 定义变量\ncalories_per_serving = 250\nbag_weight = 300\nservings_per_bag = 5\ndaily_target = 2000\nconsumed_calories = 1800\n\n# 计算剩余卡路里\nremaining_calories = daily_target - consumed_calories\n\n# 计算每份重量\nweight_per_serving = bag_weight / servings_per_bag\n\n# 计算可吃的份数\npossible_servings = remaining_calories / calories_per_serving\n\n# 计算可吃的克数\ngrams_to_eat = possible_servings * weight_per_serving\n\n# 输出结果\nprint(int(grams_to_eat))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:31:31.792Z"
+  },
+  "GSM8K_44": {
+    "output": "解题思路：\n1. 计算制作20支蜡烛所需的蜂蜡磅数：每磅蜂蜡可制作10支蜡烛，因此所需磅数 = 20 / 10 = 2磅。\n2. 计算总成本：每磅蜂蜡和灯芯的成本为10美元，因此总成本 = 2 * 10 = 20美元。\n3. 计算总收入：每支蜡烛售价2美元，因此总收入 = 20 * 2 = 40美元。\n4. 计算净利润：净利润 = 总收入 - 总成本 = 40 - 20 = 20美元。\n\n代码实现：\n\n```python\ndef main():\n    # 基本参数\n    candles_per_pound = 10      # 每磅蜂蜡制作的蜡烛数量\n    cost_per_pound = 10.0       # 每磅蜂蜡和灯芯的成本（美元）\n    price_per_candle = 2.0      # 每支蜡烛的售价（美元）\n    total_candles = 20          # 总蜡烛数量\n\n    # 计算所需蜂蜡磅数\n    pounds_needed = total_candles / candles_per_pound\n\n    # 计算总成本\n    total_cost = pounds_needed * cost_per_pound\n\n    # 计算总收入\n    total_revenue = total_candles * price_per_candle\n\n    # 计算净利润\n    net_profit = total_revenue - total_cost\n\n    # 输出结果，保留两位小数\n    print(f\"The net profit is ${net_profit:.2f}\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:31:50.827Z"
+  },
+  "GSM8K_45": {
+    "output": "```python\n\ndef calculate_total_hours():\n    # Number of articles written on Monday\n    monday_articles = 5\n    \n    # Tuesday: 2/5 times more than Monday\n    # This means Tuesday articles = Monday + (2/5)*Monday = (7/5)*Monday\n    tuesday_articles = monday_articles * (1 + 2/5)\n    \n    # Wednesday: twice the number of articles written on Tuesday\n    wednesday_articles = 2 * tuesday_articles\n    \n    # Total articles over the three days\n    total_articles = monday_articles + tuesday_articles + wednesday_articles\n    \n    # Average time per article in hours\n    hours_per_article = 4\n    total_hours = total_articles * hours_per_article\n    \n    # Since the numbers are designed to be integers, convert to int for clean output\n    return int(total_hours)\n\nif __name__ == \"__main__\":\n    result = calculate_total_hours()\n    print(f\"The total number of hours she spent writing articles in the three days is: {result}\")\n\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:32:12.283Z"
+  },
+  "GSM8K_46": {
+    "output": "```python\ndef main():\n    # 初始便利贴数量\n    initial = 80\n    # 使用的便利贴数量（每个杯子一张）\n    used = 220\n    # 剩余的便利贴数量\n    remaining = 23\n\n    # 计算购买的便利贴数量\n    purchased = remaining + used - initial\n    print(purchased)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:32:21.375Z"
+  },
+  "GSM8K_47": {
+    "output": "```python\n# 计算John在领带上的总花费\nblue_tie_cost_total = 200  # 蓝领带总花费\nblue_tie_price = 40        # 蓝领带单价\n\n# 蓝领带数量\nblue_ties = blue_tie_cost_total // blue_tie_price\n\n# 红领带数量是蓝领带的两倍\nred_ties = 2 * blue_ties\n\n# 红领带价格比蓝领带高50%\nred_tie_price = blue_tie_price * 1.5\n\n# 红领带总花费\nred_tie_cost_total = red_ties * red_tie_price\n\n# 总花费\ntotal_cost = blue_tie_cost_total + red_tie_cost_total\n\nprint(int(total_cost))  # 输出800\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:32:34.790Z"
+  },
+  "GSM8K_48": {
+    "output": "```python\ndef main():\n    # 总长度（英尺）\n    total_length_feet = 4\n    # 转换为英寸（1英尺 = 12英寸）\n    total_length_inches = total_length_feet * 12\n    # 每段长度（英寸）\n    piece_length_inches = 6\n    # 计算段数（整除）\n    number_of_pieces = total_length_inches // piece_length_inches\n    # 输出结果\n    print(number_of_pieces)\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:32:43.376Z"
+  },
+  "GSM8K_49": {
+    "output": "解题思路：\n1. 计算公寓楼的总单元数：楼层数乘以每层单元数，即 15 × 8 = 120。\n2. 已知占用比例为 3/4，则未占用比例为 1 - 3/4 = 1/4。\n3. 未占用单元数 = 总单元数 × 未占用比例，即 120 × 1/4 = 30。\n\n代码实现：\n\n```python\n# 定义参数\nfloors = 15\nunits_per_floor = 8\noccupied_fraction = 3 / 4\n\n# 计算总单元数\ntotal_units = floors * units_per_floor\n\n# 计算未占用单元数\nunoccupied_units = total_units * (1 - occupied_fraction)\n\n# 输出结果\nprint(int(unoccupied_units))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:33:03.851Z"
+  },
+  "Algo_MBPP_0": {
+    "output": "```python\ndef sort_matrix_by_row_sum(matrix):\n    \"\"\"\n    Sorts the rows of a matrix in ascending order based on the sum of each row.\n    \n    Args:\n        matrix (list of list of numbers): The input matrix.\n    \n    Returns:\n        list of list of numbers: Matrix with rows sorted by row sum.\n    \"\"\"\n    return sorted(matrix, key=lambda row: sum(row))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:33:12.925Z"
+  },
+  "Algo_MBPP_1": {
+    "output": "```python\nimport math\n\ndef volume_triangular_prism(a, b, c, h):\n    \"\"\"\n    Calculate the volume of a triangular prism.\n    \n    Parameters:\n    a, b, c (float): The sides of the triangular base.\n    h (float): The height (length) of the prism.\n    \n    Returns:\n    float: The volume of the triangular prism.\n    \"\"\"\n    # Semi-perimeter of the triangle\n    s = (a + b + c) / 2.0\n    # Area of the triangular base using Heron's formula\n    area = math.sqrt(s * (s - a) * (s - b) * (s - c))\n    # Volume = base area * prism height\n    return area * h\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:34:50.235Z"
+  },
+  "Algo_MBPP_2": {
+    "output": "```python\nimport re\n\ndef find_sequences(s):\n    \"\"\"\n    Returns a list of all maximal sequences of lowercase letters\n    joined by underscores in the input string.\n    \"\"\"\n    pattern = r'[a-z]+(?:_[a-z]+)+'\n    return re.findall(pattern, s)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:35:40.253Z"
+  },
+  "Algo_MBPP_3": {
+    "output": "To find the perimeter of a square, you need to know the length of one side. The perimeter is calculated by multiplying the side length by 4. Here's a Python function that computes this:\n\n```python\ndef perimeter_of_square(side_length):\n    return 4 * side_length\n```\n\nThis function takes the side length as input and returns the perimeter by multiplying it by 4.",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:35:45.232Z"
+  },
+  "Algo_MBPP_4": {
+    "output": "```python\nfrom typing import List\n\ndef contains_duplicate(nums: List[int]) -> bool:\n    seen = set()\n    for num in nums:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:35:52.041Z"
+  },
+  "Algo_MBPP_5": {
+    "output": "To find the first `m` multiples of `n`, you can generate the multiples by iterating from 1 to `m` and multiplying each by `n`. This can be efficiently done using a list comprehension.\n\n```python\ndef find_multiples(n, m):\n    \"\"\"\n    Return the first m multiples of n.\n    \"\"\"\n    return [n * i for i in range(1, m + 1)]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:35:57.342Z"
+  },
+  "Algo_MBPP_6": {
+    "output": "To find the first duplicate element in an array, we can use a set to track seen elements while iterating. When we encounter an element already in the set, it's the first duplicate because we process the array in order and the second occurrence is the earliest possible duplicate.\n\n```python\ndef first_duplicate(arr):\n    seen = set()\n    for num in arr:\n        if num in seen:\n            return num\n        seen.add(num)\n    return -1  # or None, depending on requirement\n```\n\n**Explanation:**\n- We iterate through each element in the array.\n- If the element is already in the set, we return it immediately (this is the first duplicate because we encounter it at its second occurrence, which is the earliest possible duplicate).\n- Otherwise, we add it to the set.\n- If no duplicate is found, we return -1 (or None, based on specification).\n\n**Time Complexity:** O(n) - Single pass through the array.  \n**Space Complexity:** O(n) - Set may store up to n elements.",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:36:19.650Z"
+  },
+  "Algo_MBPP_7": {
+    "output": "To find the maximum sum of elements in a list of lists, we iterate through each inner list, calculate its sum, and keep track of the maximum sum encountered.\n\n```python\ndef max_sum_in_list_of_lists(lists):\n    max_sum = float('-inf')  # Initialize to negative infinity\n    for inner_list in lists:\n        current_sum = sum(inner_list)\n        if current_sum > max_sum:\n            max_sum = current_sum\n    return max_sum if max_sum != float('-inf') else 0\n```\n\n**Explanation:**\n- Initialize `max_sum` to negative infinity to handle all possible sums.\n- For each inner list, compute its sum using `sum()`.\n- Update `max_sum` if the current sum is larger.\n- If the input is empty (no inner lists), return 0 to avoid returning negative infinity.\n\n**Example usage:**\n```python\nlists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nprint(max_sum_in_list_of_lists(lists))  # Output: 24 (7+8+9)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:36:28.453Z"
+  },
+  "Algo_MBPP_8": {
+    "output": "To convert a binary string to its decimal equivalent, iterate through each character of the string from left to right, updating the result by multiplying it by 2 and adding the current digit. This method efficiently accumulates the decimal value without needing explicit powers of 2.\n\n```python\ndef binary_to_decimal(binary_str):\n    decimal = 0\n    for digit in binary_str:\n        decimal = decimal * 2 + int(digit)\n    return decimal\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:36:39.380Z"
+  },
+  "Algo_MBPP_9": {
+    "output": "To find the product of non-repeated elements in an array, we need to multiply all elements that appear exactly once. Here's the solution:\n\n```python\ndef product_of_non_repeated(arr):\n    freq = {}\n    for num in arr:\n        freq[num] = freq.get(num, 0) + 1\n    \n    product = 1\n    for num, count in freq.items():\n        if count == 1:\n            product *= num\n    \n    return product\n```\n\n**Explanation:**\n1. Count the frequency of each element using a dictionary.\n2. Iterate through the dictionary, multiplying elements with a count of 1.\n3. Return the final product. If there are no non-repeated elements, the function returns 1.",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:36:49.108Z"
+  },
+  "Algo_MBPP_10": {
+    "output": "To calculate the binomial coefficient \\( C(n, k) \\), we can use an iterative approach based on the multiplicative formula:\n\n\\[\nC(n, k) = \\frac{n \\times (n-1) \\times \\cdots \\times (n-k+1)}{k \\times (k-1) \\times \\cdots \\times 1}\n\\]\n\nThis method avoids computing large factorials and is efficient with time complexity \\( O(k) \\).\n\n**Solution Code:**\n```python\ndef binomial_coefficient(n, k):\n    if k < 0 or k > n:\n        return 0\n    if k == 0 or k == n:\n        return 1\n    \n    # Take advantage of symmetry: C(n, k) = C(n, n-k)\n    k = min(k, n - k)\n    \n    result = 1\n    for i in range(1, k + 1):\n        result = result * (n - k + i) // i\n    return result\n```\n\n**Explanation:**\n1. **Edge Cases:** If \\( k \\) is negative or greater than \\( n \\), the coefficient is 0. If \\( k \\) is 0 or equals \\( n \\), the coefficient is 1.\n2. **Symmetry:** Use \\( C(n, k) = C(n, n-k) \\) to minimize the number of iterations by setting \\( k = \\min(k, n-k) \\).\n3. **Iterative Calculation:** Compute the product iteratively from 1 to \\( k \\), multiplying by \\( (n - k + i) \\) and dividing by \\( i \\) at each step. Integer division ensures an integer result.",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:37:07.623Z"
+  },
+  "Algo_MBPP_11": {
+    "output": "```python\ndef find_odd_occurrence(arr):\n    result = 0\n    for num in arr:\n        result ^= num\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:37:25.093Z"
+  },
+  "Algo_MBPP_12": {
+    "output": "```python\nimport heapq\nfrom collections import defaultdict\n\ndef top_k_frequent(lists, k):\n    \"\"\"\n    Find the top k integers that occur most frequently across the given sorted and distinct lists.\n    \n    Args:\n        lists: List of lists, each inner list is sorted and contains distinct integers.\n        k: Number of top frequent integers to return.\n    \n    Returns:\n        List of the top k integers in descending order of frequency.\n        If frequencies are equal, the integers are sorted in ascending order.\n    \"\"\"\n    if k <= 0:\n        return []\n\n    # Step 1: Count frequencies of each integer across all lists.\n    freq = defaultdict(int)\n    for lst in lists:\n        for num in lst:\n            freq[num] += 1\n\n    # Step 2: Use a min-heap of size k to track the top k frequencies.\n    heap = []\n    for num, count in freq.items():\n        heapq.heappush(heap, (count, num))\n        if len(heap) > k:\n            heapq.heappop(heap)  # Remove the smallest frequency to keep only top k.\n\n    # Step 3: Extract the integers from the heap and sort by frequency descending,\n    #         and by integer ascending for ties.\n    top_k = sorted(heap, key=lambda x: (-x[0], x[1]))\n    return [num for _, num in top_k]\n\n# Example usage:\nif __name__ == \"__main__\":\n    lists_example = [[1, 2, 3], [2, 3, 4], [3, 4, 5]]\n    k_example = 2\n    print(top_k_frequent(lists_example, k_example))  # Output: [3, 2]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:40:13.766Z"
+  },
+  "Algo_MBPP_13": {
+    "output": "To find the largest prime factor of a given number, we can iteratively divide the number by its smallest prime factors until the remaining number becomes prime. Here's the approach and implementation:\n\n**Approach:**\n1. Handle edge cases (n ≤ 1).\n2. Divide by 2 until the number becomes odd.\n3. Check odd factors from 3 up to √n. For each factor found, divide the number repeatedly.\n4. If the remaining number is greater than 2 after the loop, it is the largest prime factor.\n\n**Code:**\n```python\ndef largest_prime_factor(n):\n    if n <= 1:\n        return n\n    \n    # Remove all factors of 2\n    while n % 2 == 0:\n        n //= 2\n    \n    # Check odd factors from 3 upwards\n    factor = 3\n    while factor * factor <= n:\n        while n % factor == 0:\n            n //= factor\n        factor += 2\n    \n    return n if n > 2 else 2\n```\n\n**Explanation:**\n- The function first handles cases where n is 1 or less.\n- It then divides out all factors of 2, making the number odd.\n- It iterates over odd numbers starting from 3, dividing out each factor until the factor squared exceeds the current number.\n- The remaining value after this process is the largest prime factor, as all smaller factors have been removed. If the number was reduced to 2, then 2 is the largest prime factor.",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:40:39.327Z"
+  },
+  "Algo_MBPP_14": {
+    "output": "**思路：**  \n使用循环不断将十进制数除以2，记录每次的余数（0或1），最后将余数逆序排列得到二进制表示。注意处理0的特殊情况。\n\n**代码实现：**\n```python\ndef decimal_to_binary(n):\n    if n == 0:\n        return \"0\"\n    \n    binary = \"\"\n    num = abs(n)\n    while num > 0:\n        remainder = num % 2\n        binary = str(remainder) + binary\n        num //= 2\n    \n    return binary if n > 0 else \"-\" + binary\n\n# 测试用例\nprint(decimal_to_binary(10))   # 输出: 1010\nprint(decimal_to_binary(0))    # 输出: 0\nprint(decimal_to_binary(-5))   # 输出: -101\nprint(decimal_to_binary(1))    # 输出: 1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:40:47.458Z"
+  },
+  "Algo_MBPP_15": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:43:54.823Z"
+  },
+  "Algo_MBPP_16": {
+    "output": "To find the n-th rectangular number, we use the formula `n * (n + 1)`. This formula generates numbers that are products of two consecutive integers, forming a sequence of rectangular numbers.\n\n```python\ndef nth_rectangular_number(n: int) -> int:\n    \"\"\"\n    Return the n-th rectangular number.\n    \n    Parameters:\n    n (int): The index (starting from 1) of the rectangular number.\n    \n    Returns:\n    int: The n-th rectangular number.\n    \"\"\"\n    return n * (n + 1)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:44:02.826Z"
+  },
+  "Algo_MBPP_17": {
+    "output": "```python\ndef nth_digit(numerator: int, denominator: int, n: int) -> int:\n    \"\"\"\n    Returns the nth digit after the decimal point in the decimal expansion\n    of the fraction numerator/denominator.\n    \n    Args:\n        numerator: The numerator of the fraction (integer).\n        denominator: The denominator of the fraction (non-zero integer).\n        n: The position of the digit after the decimal point (1-indexed).\n    \n    Returns:\n        The nth digit after the decimal point.\n    \n    Raises:\n        ValueError: If denominator is zero.\n    \"\"\"\n    if denominator == 0:\n        raise ValueError(\"Denominator cannot be zero.\")\n    \n    # Work with absolute values to ignore sign\n    numerator = abs(numerator)\n    denominator = abs(denominator)\n    \n    # Start with the remainder after the integer part\n    remainder = numerator % denominator\n    \n    # Compute the nth digit by simulating long division\n    for _ in range(n):\n        remainder *= 10\n        digit = remainder // denominator\n        remainder = remainder % denominator\n    \n    return digit\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:44:38.049Z"
+  },
+  "Algo_MBPP_18": {
+    "output": "To sort a mixed list of integers and strings, we can use a custom key function in Python's `sorted()` or `.sort()` method. The key converts each element into a tuple where the first value distinguishes the type (integers before strings), and the second value ensures proper sorting within each type. This approach avoids type errors during comparisons.\n\n```python\ndef mixed_sort(lst):\n    return sorted(lst, key=lambda x: (isinstance(x, str), x if not isinstance(x, str) else x.lower()))\n```\n\n**Explanation:**\n- The key function returns a tuple:\n  - First element: `0` for integers, `1` for strings (since `isinstance(x, str)` is `False` for integers).\n  - Second element: the value itself, ensuring correct sorting within each type. For strings, we use `.lower()` to perform case-insensitive sorting if needed.\n- `sorted()` uses this key to compare elements without directly mixing integers and strings.\n\n**Example:**\n```python\nprint(mixed_sort([3, 'apple', 1, 'banana', 2, 'cherry']))\n# Output: [1, 2, 3, 'apple', 'banana', 'cherry']\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:50:53.105Z"
+  },
+  "Algo_MBPP_19": {
+    "output": "```python\ndef divide_first_even_odd(lst):\n    \"\"\"\n    Finds the first even number and the first odd number in the given list,\n    then returns their division (even / odd).\n    If either is missing, returns None.\n    \"\"\"\n    even = None\n    odd = None\n    \n    for num in lst:\n        if even is None and num % 2 == 0:\n            even = num\n        if odd is None and num % 2 != 0:\n            odd = num\n        if even is not None and odd is not None:\n            break\n    \n    if even is None or odd is None:\n        return None\n    return even / odd\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:51:16.984Z"
+  },
+  "Algo_MBPP_20": {
+    "output": "To find the frequency of elements in a list of lists using the `collections` module, you can use `Counter` from `collections` to count occurrences after flattening the nested structure.\n\n```python\nfrom collections import Counter\n\ndef frequency_of_elements(list_of_lists):\n    \"\"\"\n    Calculate the frequency of each element in a list of lists.\n    \n    Args:\n        list_of_lists (list): A list containing sublists of elements.\n    \n    Returns:\n        collections.Counter: A Counter object with element frequencies.\n    \"\"\"\n    # Flatten the list of lists into a single list\n    flat_list = [item for sublist in list_of_lists for item in sublist]\n    # Count frequencies using Counter\n    return Counter(flat_list)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:51:28.517Z"
+  },
+  "Algo_MBPP_21": {
+    "output": "```python\nfrom collections import Counter\n\ndef sum_of_repeated_elements(arr):\n    \"\"\"\n    Returns the sum of distinct elements that appear more than once in the array.\n    \"\"\"\n    freq = Counter(arr)\n    return sum(num for num, count in freq.items() if count > 1)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:52:22.465Z"
+  },
+  "Algo_MBPP_22": {
+    "output": "To find sequences of lowercase letters joined with underscores, we can use a regular expression that matches one or more lowercase letters separated by underscores. The pattern `[a-z]+(?:_[a-z]+)*` will match sequences like `hello_world`, `foo_bar_baz`, etc., where underscores only appear between letters.\n\n### Solution Code\n```python\nimport re\n\ndef find_underscore_sequences(s):\n    pattern = r'[a-z]+(?:_[a-z]+)*'\n    return re.findall(pattern, s)\n```\n\n### Explanation\n- The regex pattern `[a-z]+(?:_[a-z]+)*` breaks down as:\n  - `[a-z]+`: Matches one or more lowercase letters.\n  - `(?:_[a-z]+)*`: A non-capturing group that matches an underscore followed by one or more lowercase letters, repeated zero or more times. This allows for multiple underscore-separated segments.\n- `re.findall()` returns all non-overlapping matches of the pattern in the string.\n\n### Example Usage\n```python\nprint(find_underscore_sequences(\"hello_world foo_bar_baz test\"))  # Output: ['hello_world', 'foo_bar_baz', 'test']\nprint(find_underscore_sequences(\"no_underscore_here\"))  # Output: ['no_underscore_here']\nprint(find_underscore_sequences(\"mixed_CASE_here\"))  # Output: ['here']\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:52:39.452Z"
+  },
+  "Algo_MBPP_23": {
+    "output": "```python\ndef gcd(a, b):\n    \"\"\"Compute the greatest common divisor of a and b using the Euclidean algorithm.\"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n\ndef find_gcd(arr):\n    \"\"\"\n    Find the GCD of all elements in the given array.\n    Args:\n        arr: List of integers (non-empty)\n    Returns:\n        The greatest common divisor of all elements.\n    \"\"\"\n    if not arr:\n        return 0  # or raise ValueError for empty input\n    result = arr[0]\n    for num in arr[1:]:\n        result = gcd(result, num)\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:53:56.098Z"
+  },
+  "Algo_MBPP_24": {
+    "output": "```python\ndef all_unique(numbers):\n    \"\"\"\n    Check if all numbers in the list are distinct.\n    \n    Args:\n        numbers (list): List of numbers (integers or floats).\n    \n    Returns:\n        bool: True if all numbers are unique, False otherwise.\n    \"\"\"\n    return len(numbers) == len(set(numbers))\n\n# Example usage:\n# print(all_unique([1, 2, 3, 4, 5]))  # True\n# print(all_unique([1, 2, 3, 4, 5, 5]))  # False\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:54:03.497Z"
+  },
+  "Algo_MBPP_25": {
+    "output": "```python\n\ndef last_digit_of_factorial_division(a: int, b: int) -> int:\n    \"\"\"\n    Returns the last digit of b! / a! for b >= a.\n    For b < a, the result is undefined (here we return None).\n    \"\"\"\n    if b < a:\n        return None  # or raise ValueError(\"b must be >= a\")\n    # If the range length is at least 5, the product is always a multiple of 10.\n    if b - a >= 5:\n        return 0\n    # Otherwise compute the product modulo 10 directly (at most 4 factors).\n    result = 1\n    for i in range(a + 1, b + 1):\n        result = (result * i) % 10\n    return result\n\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:56:51.641Z"
+  },
+  "Algo_MBPP_26": {
+    "output": "Here's a function that uses a lambda function to find the list with the minimum length from a list of lists:\n\n```python\ndef find_min_length_list(lists):\n    return min(lists, key=lambda x: len(x))\n```\n\n**Example usage:**\n```python\nprint(find_min_length_list([[1, 2], [3, 4, 5], [6]]))  # Output: [6]\nprint(find_min_length_list([[1], [2, 3], [4, 5, 6]]))  # Output: [1]\n```\n\n**Explanation:**\n- The `min()` function finds the minimum item in the iterable `lists`\n- The `key=lambda x: len(x)` specifies that the comparison should be based on the length of each sublist\n- If multiple sublists have the same minimum length, the first one encountered is returned",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:57:05.848Z"
+  },
+  "Algo_MBPP_27": {
+    "output": "## Counting Sort\n\n**Algorithm:**\n1. Find the range (min and max) of the array\n2. Create a count array and count occurrences of each element\n3. Modify count array to store cumulative counts\n4. Build the output array by placing elements at correct positions\n5. Copy sorted output back to original array\n\n```python\ndef counting_sort(arr):\n    if not arr:\n        return arr\n    \n    # Find the range\n    max_val = max(arr)\n    min_val = min(arr)\n    range_val = max_val - min_val + 1\n    \n    # Create count array and output array\n    count = [0] * range_val\n    output = [0] * len(arr)\n    \n    # Count occurrences of each element\n    for num in arr:\n        count[num - min_val] += 1\n    \n    # Modify count array to store cumulative counts\n    for i in range(1, range_val):\n        count[i] += count[i - 1]\n    \n    # Build output array (traverse in reverse for stability)\n    for i in range(len(arr) - 1, -1, -1):\n        output[count[arr[i] - min_val] - 1] = arr[i]\n        count[arr[i] - min_val] -= 1\n    \n    # Copy output array back to original\n    for i in range(len(arr)):\n        arr[i] = output[i]\n    \n    return arr\n\n\n# ---------- Test ----------\narr = [4, 2, 2, 8, 3, 3, 1]\nprint(\"Original array:\", arr)\nprint(\"Sorted array:  \", counting_sort(arr))\n```\n\n**Output:**\n```\nOriginal array: [4, 2, 2, 8, 3, 3, 1]\nSorted array:   [1, 2, 2, 3, 3, 4, 8]\n```\n\n**Complexity:**\n| | Complexity |\n|---|---|\n| **Time** | O(n + k) where k is the range of input |\n| **Space** | O(n + k) |\n\n**Key Points:**\n- **Stable sort** — preserves relative order of equal elements (achieved by traversing the input in reverse when building the output)\n- Works best when the range `k` is not significantly larger than `n`\n- Uses `min_val` offset to handle negative numbers efficiently",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:57:17.723Z"
+  },
+  "Algo_MBPP_28": {
+    "output": "To find the n-th term of a geometric series, use the formula:  \n**T(n) = a * r^(n-1)**  \nwhere `a` is the first term, `r` is the common ratio, and `n` is the term number (starting from 1).\n\nHere's the implementation:\n\n```python\ndef geometric_series_nth_term(a, r, n):\n    \"\"\"\n    Calculate the n-th term of a geometric series.\n\n    Parameters:\n    a (float/int): First term of the series.\n    r (float/int): Common ratio of the series.\n    n (int): Term number (n >= 1).\n\n    Returns:\n    float/int: The n-th term.\n    \"\"\"\n    return a * (r ** (n - 1))\n```\n\n**Example usage:**\n```python\n# First term a = 2, common ratio r = 3, find 5th term\nprint(geometric_series_nth_term(2, 3, 5))  # Output: 162.0 (2 * 3^4 = 162)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:57:26.623Z"
+  },
+  "Algo_MBPP_29": {
+    "output": "```python\ndef largest_number(digits):\n    \"\"\"\n    Given a list of digits (0-9), return the largest number that can be formed by arranging them.\n    \"\"\"\n    if not digits:\n        return 0\n    # Sort digits in descending order\n    sorted_digits = sorted(digits, reverse=True)\n    # Convert each digit to string and join\n    num_str = ''.join(str(d) for d in sorted_digits)\n    # Convert string to integer (handles leading zeros by removing them)\n    return int(num_str)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T10:57:53.056Z"
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "table_office_001": {
+    "output": "```python\nimport pandas as pd\n\ndef generate_sales_report(csv_file):\n    df = pd.read_csv(csv_file)\n    df['date'] = pd.to_datetime(df['date'])\n    df['sales'] = df['quantity'] * df['unit_price']\n    \n    total_sales = df['sales'].sum()\n    \n    df['month'] = df['date'].dt.to_period('M')\n    monthly = df.groupby('month')['sales'].sum().sort_index().reset_index()\n    monthly['month'] = monthly['month'].astype(str)\n    \n    print(\"=\" * 50)\n    print(\"销售数据分析报告\".center(46))\n    print(\"=\" * 50)\n    print(f\"总销售额: ¥{total_sales:>15,.2f}\")\n    print(\"-\" * 50)\n    print(\"月度销售额汇总:\")\n    print(\"-\" * 50)\n    for _, row in monthly.iterrows():\n        print(f\"{row['month']}: ¥{row['sales']:>15,.2f}\")\n    print(\"=\" * 50)\n\nif __name__ == '__main__':\n    generate_sales_report('sales_data.csv')\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:41:28.952Z"
+  },
+  "table_office_002": {
+    "output": "=A2-B2",
+    "status": "success",
+    "truncated": true,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:41:42.641Z"
+  },
+  "table_office_003": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:45:02.225Z"
+  },
+  "table_office_004": {
+    "output": "E2公式（向下填充）：\n```excel\n=(SUMIF($B:$B,B2,$C:$C)-SUMIF($B:$B,B2,$D:$D))/SUMIF($B:$B,B2,$C:$C)\n```\n\n条件格式设置：\n- 范围：`=$E$2:$E$1000`\n- 公式：`=E2<0.1`\n- 格式：红色填充\n\n若E列需显示员工个人利润率而非部门汇总，将E2改为：\n```excel\n=(C2-D2)/C2\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:45:58.947Z"
+  },
+  "table_office_005": {
+    "output": "```python\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom io import StringIO\n\ndata = \"\"\"date,product,category,quantity\n2024-01-01,商品A,电子产品,120\n2024-01-01,商品B,电子产品,80\n2024-02-01,商品A,电子产品,150\n2024-02-01,商品B,电子产品,95\n2024-03-01,商品A,电子产品,130\n2024-03-01,商品B,电子产品,110\"\"\"\n\ndf = pd.read_csv(StringIO(data), parse_dates=['date'])\ndf['year_month'] = df['date'].dt.to_period('M').astype(str)\nmonthly_sales = df.groupby(['year_month', 'category'])['quantity'].sum().reset_index()\n\nplt.rcParams['font.sans-serif'] = ['SimHei']\nplt.rcParams['axes.unicode_minus'] = False\n\nfig, ax = plt.subplots(figsize=(8, 5))\nfor category, group in monthly_sales.groupby('category'):\n    ax.plot(group['year_month'], group['quantity'], marker='o', label=category)\n\nax.set_title('月度销量趋势')\nax.set_xlabel('月份')\nax.set_ylabel('销量')\nax.legend(title='产品类别')\nax.grid(True, linestyle='--', alpha=0.6)\nplt.tight_layout()\nplt.savefig('monthly_sales_trend.png', dpi=150)\nplt.show()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:46:14.085Z"
+  },
+  "TABLE_EXTRA_0": {
+    "output": "=D2: =B2*C2",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:46:20.903Z"
+  },
+  "TABLE_EXTRA_1": {
+    "output": "=D2公式：`=B2+C2`\n\n或：\n\n`=SUM(B2:C2)`",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:46:36.302Z"
+  },
+  "TABLE_EXTRA_2": {
+    "output": "=B2-C2",
+    "status": "success",
+    "truncated": true,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:46:42.576Z"
+  },
+  "TABLE_EXTRA_3": {
+    "output": "=(C2-B2)/B2",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:47:00.884Z"
+  },
+  "TABLE_EXTRA_4": {
+    "output": "E2单元格输入：\n```excel\n=AVERAGE(B2:D2)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:47:11.447Z"
+  },
+  "TABLE_EXTRA_5": {
+    "output": "=IF(B1<10,\"需补货\",\"充足\")",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:47:21.670Z"
+  },
+  "TABLE_EXTRA_6": {
+    "output": "假设数据从第2行开始，在C2输入并下拉：\n\n```excel\n=SUMIFS($B:$B,$A:$A,\">=\"&DATE(YEAR(A2),MONTH(A2),1),$A:$A,\"<=\"&A2)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:49:54.716Z"
+  },
+  "TABLE_EXTRA_7": {
+    "output": "```\n=B2*C2\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:50:01.283Z"
+  },
+  "TABLE_EXTRA_8": {
+    "output": "=B2-C2",
+    "status": "success",
+    "truncated": true,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:50:08.806Z"
+  },
+  "TABLE_EXTRA_9": {
+    "output": "=B1*C1",
+    "status": "success",
+    "truncated": true,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:50:22.425Z"
+  },
+  "TABLE_EXTRA_10": {
+    "output": "C2单元格输入：\n\n**整数年限：**\n```excel\n=DATEDIF(B2,DATE(2026,12,31),\"Y\")\n```\n\n**含小数的年限：**\n```excel\n=YEARFRAC(B2,DATE(2026,12,31))\n```\n\n**X年Y个月格式：**\n```excel\n=DATEDIF(B2,DATE(2026,12,31),\"Y\")&\"年\"&DATEDIF(B2,DATE(2026,12,31),\"YM\")&\"个月\"\n```\n\n向下填充即可。",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:50:34.812Z"
+  },
+  "TABLE_EXTRA_11": {
+    "output": "=IF(C2>B2,\"延期\",\"\")\n\n如需排除空白日期干扰：\n=IF(OR(B2=\"\",C2=\"\"),\"\",IF(C2>B2,\"延期\",\"\"))",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:50:56.942Z"
+  },
+  "TABLE_EXTRA_12": {
+    "output": "C2单元格输入：\n```\n=B2/SUM($B:$B)\n```\n向下填充。",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:51:27.684Z"
+  },
+  "TABLE_EXTRA_13": {
+    "output": "假设数据从第2行开始，在D2输入：\n\n```excel\n=B2/C2\n```\n\n向下填充即可。\n\n如需避免除零错误：\n\n```excel\n=IFERROR(B2/C2,0)\n```\n\n或保留为空：\n\n```excel\n=IFERROR(B2/C2,\"\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:51:51.571Z"
+  },
+  "TABLE_EXTRA_14": {
+    "output": "=B2*C2*(1-D2)",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:52:03.563Z"
+  },
+  "TABLE_EXTRA_15": {
+    "output": "```excel\n=IF(B2>50000,\"大额\",\"普通\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:52:10.141Z"
+  },
+  "TABLE_EXTRA_16": {
+    "output": "`=B2+C2`",
+    "status": "success",
+    "truncated": true,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:52:27.266Z"
+  },
+  "TABLE_EXTRA_17": {
+    "output": "```excel\n=IFERROR(C2/B2,0)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:53:02.085Z"
+  },
+  "TABLE_EXTRA_18": {
+    "output": "=C2-B2",
+    "status": "success",
+    "truncated": true,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:53:09.994Z"
+  },
+  "TABLE_EXTRA_19": {
+    "output": "=IF(A2=\"A\",B2*5%,IF(A2=\"B\",B2*3%,IF(A2=\"C\",B2*1%,0)))",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:53:35.421Z"
+  },
+  "TABLE_EXTRA_20": {
+    "output": "=B2*C2",
+    "status": "success",
+    "truncated": true,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:53:41.097Z"
+  },
+  "TABLE_EXTRA_21": {
+    "output": "=IF(B2>C2,\"亏损\",\"\")",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:54:10.089Z"
+  },
+  "TABLE_EXTRA_22": {
+    "output": "=AVERAGE(B2:B8)",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:56:55.694Z"
+  },
+  "TABLE_EXTRA_23": {
+    "output": "```excel\n=C2*10000/B2\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:57:37.128Z"
+  },
+  "TABLE_EXTRA_24": {
+    "output": "=C2/B2\n\n或（避免除零错误）：\n\n=IFERROR(C2/B2,0)",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T16:58:03.286Z"
+  },
+  "table_extra_0": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:01:11.262Z"
+  },
+  "table_extra_1": {
+    "output": "**总分（E列）：**\n```excel\n=SUM(B2:D2)\n```\n\n**平均分（F列）：**\n```excel\n=AVERAGE(B2:D2)\n```\n\n**标记（G列）：**\n```excel\n=IF(F2<60,\"不及格\",\"\")\n```\n\n**条件格式（标红平均分<60的单元格）：**\n```excel\n=F2<60\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:01:31.598Z"
+  },
+  "table_extra_2": {
+    "output": "```python\nimport pandas as pd\n\ndf = pd.read_csv('data.csv', parse_dates=['login_date'])\ndf['year_month'] = df['login_date'].dt.strftime('%Y-%m')\n\nresult = df.groupby(['user_id', 'year_month']).agg(\n    月登录次数=('login_date', 'count'),\n    平均在线时长=('duration', 'mean')\n).reset_index()\n\nresult.to_excel('user_monthly_stats.xlsx', index=False)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:02:06.917Z"
+  },
+  "table_extra_3": {
+    "output": "**库存量公式（D2单元格输入后下拉）：**\n```excel\n=B2-C2\n```\n\n**条件格式设置步骤：**\n1. 选中 D 列数据区域（如 `D2:D1000`）\n2. 点击【开始】→【条件格式】→【新建规则】→【使用公式确定要设置格式的单元格】\n3. 输入公式：\n```excel\n=D2<10\n```\n4. 点击【格式】→【填充】→选择黄色→确定\n\n**扩展公式（如存在初始库存/上期结存在 E 列）：**\n```excel\n=E2+B2-C2\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:02:35.163Z"
+  },
+  "table_extra_4": {
+    "output": "```python\nimport pandas as pd\n\norders = pd.read_excel('订单表.xlsx')\ncustomers = pd.read_excel('客户表.xlsx')\n\nmerged = pd.merge(orders, customers, on='客户ID', how='left')\nmerged['订单日期'] = pd.to_datetime(merged['订单日期'])\n\nsummary = merged.groupby(['客户ID', '客户名称']).agg(\n    订单总金额=('订单金额', 'sum'),\n    最近订单日期=('订单日期', 'max')\n).reset_index()\n\nsummary.to_excel('客户订单汇总.xlsx', index=False)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:03:01.433Z"
+  },
+  "table_extra_5": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:06:10.618Z"
+  },
+  "table_extra_6": {
+    "output": "```python\nimport pandas as pd\nimport numpy as np\n\ndf = pd.read_csv('sales.csv')\ndf['z_score'] = (df['amount'] - df['amount'].mean()) / df['amount'].std()\noutliers = df[np.abs(df['z_score']) > 3].copy()\n\nprint(outliers[['date', 'amount', 'z_score']])\noutliers[['date', 'amount', 'z_score']].to_csv('sales_outliers.csv', index=False)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:06:40.114Z"
+  },
+  "table_extra_7": {
+    "output": "**E列剩余天数公式（E2向下填充）：**\n```excel\n=IF(D2>=1,0,C2-TODAY())\n```\n\n**条件格式标记延期项目：**\n1. 选中数据区域（如 `=$A$2:$D$100`，需标记整行则选整行范围）。\n2. 新建规则 → 使用公式确定要设置格式的单元格。\n3. 输入公式：\n```excel\n=AND($D2<1,$C2<TODAY())\n```\n4. 设置格式（如红色填充）并确定。",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:08:35.990Z"
+  },
+  "table_extra_8": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:11:45.442Z"
+  },
+  "table_extra_9": {
+    "output": "**B列（类别）**\n允许：序列\n来源：`交通,餐饮,住宿,其他`\n\n**C列（金额）**\n允许：自定义\n公式：`=C2>0`\n\n**D列（发票号）**\n允许：自定义\n公式：`=COUNTIF($D$2:$D$1000,D2)=1`\n\n（假设数据从第2行开始，结束行按需调整；若整列验证，D列公式改为 `=COUNTIF($D:$D,D1)=1` 并避开标题行）",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:12:23.652Z"
+  },
+  "table_extra_10": {
+    "output": "```python\nimport pandas as pd\nimport numpy as np\n\ndf = pd.read_csv('raw_data.csv')\ndf = df.drop_duplicates()\n\nfor col in df.columns:\n    if pd.api.types.is_numeric_dtype(df[col]):\n        df[col] = df[col].fillna(df[col].median())\n    else:\n        df[col] = df[col].fillna('未知')\n        try:\n            converted = pd.to_datetime(df[col], errors='coerce')\n            if converted.notna().any():\n                df.loc[converted.notna(), col] = converted[converted.notna()].dt.strftime('%Y-%m-%d')\n        except Exception:\n            pass\n\ndf.to_csv('clean_data.csv', index=False)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:15:25.988Z"
+  },
+  "table_extra_11": {
+    "output": "**差异率公式**（假设在E2，向下填充）：\n```excel\n=IFERROR(D2/B2,0)\n```\n\n**条件格式**（选中A列科目区域，如`A2:A100`）：\n- 规则类型：使用公式确定要设置格式的单元格\n- 公式：\n```excel\n=ABS($E2)>0.1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:18:21.490Z"
+  },
+  "table_extra_12": {
+    "output": "```python\nimport pandas as pd\n\ndf = pd.read_csv('sales.csv')\ndf['month'] = pd.to_datetime(df['month'])\ndf['year'] = df['month'].dt.year\n\nannual = df.groupby(['region', 'product', 'year'])['amount'].sum().reset_index()\npivot = annual.pivot(index=['region', 'product'], columns='year', values='amount')\n\nyears = sorted(pivot.columns.tolist())\nif len(years) >= 2:\n    cy, py = years[-1], years[-2]\n    pivot['YoY_Growth_%'] = ((pivot[cy] - pivot[py]) / pivot[py] * 100).round(2)\n\npivot.to_csv('region_product_yoy.csv')\nprint(pivot)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:21:15.271Z"
+  },
+  "table_extra_13": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:24:22.751Z"
+  },
+  "table_extra_14": {
+    "output": "```python\nimport pandas as pd\n\ndf = pd.read_csv(\"stock.csv\", parse_dates=[\"date\"]).sort_values(\"date\").reset_index(drop=True)\n\nfor w in [5, 20, 60]:\n    df[f\"MA{w}\"] = df[\"price\"].rolling(window=w, min_periods=1).mean()\n\ndf[\"金叉\"] = (df[\"MA5\"] > df[\"MA20\"]) & (df[\"MA5\"].shift(1) <= df[\"MA20\"].shift(1))\ndf[\"死叉\"] = (df[\"MA5\"] < df[\"MA20\"]) & (df[\"MA5\"].shift(1) >= df[\"MA20\"].shift(1))\ndf[\"signal\"] = df[\"金叉\"].map({True: \"金叉\"}).fillna(df[\"死叉\"].map({True: \"死叉\"})).fillna(\"\")\n\ndf.to_csv(\"stock_ma_signals.csv\", index=False)\nprint(df[[\"date\",\"price\",\"MA5\",\"MA20\",\"MA60\",\"signal\"]].tail(20).to_string(index=False))\n```\n\n**输出示例**\n\n```\n        date  price         MA5        MA20        MA60 signal\n2024-01-15  12.50   12.320000   11.980000   11.250000       \n2024-01-16  12.80   12.540000   12.050000   11.320000       \n2024-01-17  13.10   12.760000   12.150000   11.400000       \n2024-01-18  13.00   12.880000   12.220000   11.480000       \n2024-01-19  13.50   12.980000   12.350000   11.580000     金叉\n2024-01-22  13.30   13.140000   12.420000   11.650000       \n2024-01-23  13.60   13.300000   12.550000   11.750000       \n...\n2024-03-08  11.20   11.680000   12.850000   12.600000     死叉\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:27:24.700Z"
+  },
+  "table_extra_15": {
+    "output": "```excel\n=(COUNTIFS(C:C,\">=9\")-COUNTIFS(C:C,\"<=6\"))/COUNT(C:C)*100\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:29:20.664Z"
+  },
+  "table_extra_16": {
+    "output": "```python\nimport pandas as pd\nimport numpy as np\nfrom scipy.stats import chi2_contingency\n\ndf = pd.read_csv('ab_test.csv')\n\nsummary = df.groupby('group')['conversion'].agg(['count', 'sum', 'mean'])\nsummary.columns = ['total', 'conversions', 'conversion_rate']\n\nz = 1.96\nsummary['se'] = np.sqrt(summary['conversion_rate'] * (1 - summary['conversion_rate']) / summary['total'])\nsummary['ci_lower'] = summary['conversion_rate'] - z * summary['se']\nsummary['ci_upper'] = summary['conversion_rate'] + z * summary['se']\n\ncontingency = pd.crosstab(df['group'], df['conversion'])\nchi2, p, dof, expected = chi2_contingency(contingency)\n\nprint(\"=\" * 60)\nprint(summary[['total', 'conversions', 'conversion_rate', 'ci_lower', 'ci_upper']].round(4))\nprint(\"=\" * 60)\nprint(f\"卡方统计量: {chi2:.4f}\")\nprint(f\"p值: {p:.4f}\")\nprint(f\"自由度: {dof}\")\nprint(\"=\" * 60)\nprint(\"差异显著\" if p < 0.05 else \"差异不显著\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:31:11.601Z"
+  },
+  "table_extra_17": {
+    "output": "**假设下次维护日期在 E 列，数据从第 2 行开始。**\n\n**E2（下次维护日期）：**\n```excel\n=B2+C2\n```\n\n**D2（状态，可选）：**\n```excel\n=IF(E2<TODAY(),\"已超期\",IF(E2<=TODAY()+7,\"即将到期\",\"正常\"))\n```\n\n**条件格式标红（选中 E2:E100，新建规则 → 使用公式）：**\n```excel\n=E2-TODAY()<=7\n```\n\n**若需整行标红（选中 A2:D100，新建规则 → 使用公式）：**\n```excel\n=$E2-TODAY()<=7\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:33:03.144Z"
+  },
+  "table_extra_18": {
+    "output": "```python\nimport pandas as pd\nfrom openpyxl.chart import LineChart, Reference\nfrom openpyxl.utils.dataframe import dataframe_to_rows\n\nfile_path = 'multi_sheet.xlsx'\noutput_path = '销售汇总报表.xlsx'\n\nxl = pd.ExcelFile(file_path)\nsummary = []\n\nfor sheet in xl.sheet_names:\n    df = pd.read_excel(xl, sheet_name=sheet)\n    col = None\n    for c in df.columns:\n        if '销售额' in str(c) or 'Sales' in str(c) or '金额' in str(c):\n            col = c\n            break\n    if col is None:\n        col = df.columns[-1]\n    total = pd.to_numeric(df[col], errors='coerce').sum()\n    summary.append({'Sheet名称': sheet, '总销售额': total})\n\ndf_summary = pd.DataFrame(summary)\n\nwith pd.ExcelWriter(output_path, engine='openpyxl') as writer:\n    df_summary.to_excel(writer, sheet_name='总表', index=False)\n    wb = writer.book\n    ws = writer.sheets['总表']\n    \n    chart = LineChart()\n    chart.title = \"各Sheet销售额趋势\"\n    chart.style = 10\n    chart.y_axis.title = '销售额'\n    chart.x_axis.title = 'Sheet'\n    chart.width = 15\n    chart.height = 10\n    \n    data = Reference(ws, min_col=2, min_row=1, max_row=len(df_summary)+1, max_col=2)\n    cats = Reference(ws, min_col=1, min_row=2, max_row=len(df_summary)+1)\n    chart.add_data(data, titles_from_data=True)\n    chart.set_categories(cats)\n    \n    s = chart.series[0]\n    s.marker.symbol = \"circle\"\n    s.graphicalProperties.line.width = 20000\n    \n    ws.add_chart(chart, \"D2\")\n\nprint(f\"报表已生成：{output_path}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:33:39.994Z"
+  },
+  "table_extra_19": {
+    "output": "**工龄（年）**  \nE2单元格：\n```excel\n=DATEDIF(C2,TODAY(),\"Y\")\n```\n\n**按部门统计平均薪资**  \n假设去重部门在G2:G10，H2单元格：\n```excel\n=AVERAGEIF($B$2:$B$1000,G2,$D$2:$D$1000)\n```\n\n**数据条可视化薪资分布**  \n1. 选中 `D2:D1000`  \n2. `开始` → `条件格式` → `数据条` → 选择颜色（推荐：实心填充-蓝色数据条）  \n3. （可选）`管理规则` → `编辑规则` → 勾选`仅显示数据条`隐藏数值",
+    "status": "success",
+    "truncated": false,
+    "dim": "表格处理",
+    "timestamp": "2026-06-05T17:35:12.160Z"
+  }
+}

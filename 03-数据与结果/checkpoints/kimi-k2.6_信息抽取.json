@@ -1,0 +1,352 @@
+{
+  "NER_0": {
+    "output": "阿里巴巴:组织名\n马云:人名\n1964年9月10日:时间\n浙江:地点\n杭州:地点\n1999年:时间\n阿里巴巴集团:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:53:14.474Z"
+  },
+  "NER_1": {
+    "output": "华为技术有限公司:组织名\n任正非:人名\n1944年10月25日:时间\n贵州省:地点\n安顺市:地点\n镇宁县:地点\n1987年:时间\n深圳:地点\n华为:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:53:57.469Z"
+  },
+  "NER_2": {
+    "output": "字节跳动:组织名\n张一鸣:人名\n1983年:时间\n福建省:地点\n龙岩市:地点\n永定区:地点\n2012年:时间\n北京:地点\n中关村:地点\n字节跳动:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:54:27.605Z"
+  },
+  "NER_3": {
+    "output": "小米集团:组织名\n雷军:人名\n1969年12月16日:时间\n湖北仙桃:地点\n2010年4月6日:时间\n北京:地点\n小米公司:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:54:49.864Z"
+  },
+  "NER_4": {
+    "output": "美团:组织名\n王兴:人名\n1979年2月18日:时间\n福建龙岩:地点\n2010年3月4日:时间\n美团网:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:55:20.695Z"
+  },
+  "NER_5": {
+    "output": "京东:组织名\n刘强东:人名\n1974年2月14日:时间\n江苏宿迁:地点\n1998年6月18日:时间\n北京:地点\n中关村:地点\n京东公司:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:55:42.048Z"
+  },
+  "NER_6": {
+    "output": "拼多多:组织名\n黄峥:人名\n1980年:时间\n浙江:地点\n杭州:地点\n2015年9月:时间\n上海:地点\n拼多多:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:56:29.623Z"
+  },
+  "NER_7": {
+    "output": "百度:组织名\n李彦宏:人名\n1968年11月17日:时间\n山西阳泉:地点\n2000年1月1日:时间\n中关村:地点\n百度:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:56:47.537Z"
+  },
+  "NER_8": {
+    "output": "蔚来汽车:组织名\n李斌:人名\n1974年6月22日:时间\n安徽:地点\n安庆:地点\n2014年11月:时间\n上海:地点",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:56:58.212Z"
+  },
+  "NER_9": {
+    "output": "比亚迪:组织名\n王传福:人名\n1966年2月15日:时间\n安徽芜湖:地点\n1995年:时间\n深圳:地点\n比亚迪:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:57:22.241Z"
+  },
+  "NER_10": {
+    "output": "理想汽车:组织名\n李想:人名\n1981年10月5日:时间\n河北石家庄:地点\n2015年7月:时间\n北京:地点\n理想汽车:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:58:06.069Z"
+  },
+  "NER_11": {
+    "output": "小鹏汽车:组织名\n何小鹏:人名\n1977年:时间\n湖北黄石:地点\n2014年:时间\n广州:地点",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:58:14.507Z"
+  },
+  "NER_12": {
+    "output": "大疆创新:组织名\n汪滔:人名\n1980年:时间\n浙江:地点\n杭州:地点\n2006年:时间\n深圳:地点\n大疆:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:58:23.664Z"
+  },
+  "NER_13": {
+    "output": "携程:组织名\n梁建章:人名\n1969年:时间\n上海:地点\n1999年:时间\n上海:地点\n携程旅行网:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:58:44.317Z"
+  },
+  "NER_14": {
+    "output": "网易:组织名\n丁磊:人名\n1971年10月1日:时间\n浙江:地点\n宁波:地点\n1997年6月:时间\n广州:地点",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:59:08.090Z"
+  },
+  "NER_EXTRA_0": {
+    "output": "字节跳动:组织名\n张一鸣:人名\n1983年:时间\n福建:地点\n龙岩:地点\n2012年:时间\n北京:地点\n字节跳动公司:组织名\n抖音:产品名\n今日头条:产品名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T14:59:57.671Z"
+  },
+  "NER_EXTRA_1": {
+    "output": "小米集团:组织名\n雷军:人名\n1969年12月16日:时间\n湖北仙桃:地点\n2010年4月6日:时间\n北京:地点\n小米公司:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:00:25.161Z"
+  },
+  "NER_EXTRA_2": {
+    "output": "美团: 组织名\n王兴: 人名\n1979年2月18日: 时间\n福建: 地点\n龙岩: 地点\n2010年3月4日: 时间\n美团网: 组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:01:24.384Z"
+  },
+  "NER_EXTRA_3": {
+    "output": "京东:组织名\n刘强东:人名\n1974年2月14日:时间\n江苏:地点\n宿迁:地点\n1998年6月18日:时间\n北京:地点\n中关村:地点\n京东公司:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:02:07.478Z"
+  },
+  "NER_EXTRA_4": {
+    "output": "拼多多:组织名\n黄峥:人名\n1980年:时间\n浙江杭州:地点\n2015年9月:时间\n上海:地点\n拼多多:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:02:59.911Z"
+  },
+  "NER_EXTRA_5": {
+    "output": "百度:组织名\n李彦宏:人名\n1968年11月17日:时间\n山西阳泉:地点\n2000年1月1日:时间\n中关村:地点\n百度:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:03:20.111Z"
+  },
+  "NER_EXTRA_6": {
+    "output": "蔚来汽车:组织名\n李斌:人名\n1974年6月22日:时间\n安徽安庆:地点\n2014年11月:时间\n上海:地点\n蔚来汽车:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:03:25.131Z"
+  },
+  "NER_EXTRA_7": {
+    "output": "比亚迪:组织名\n王传福:人名\n1966年2月15日:时间\n安徽芜湖:地点\n1995年:时间\n深圳:地点",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:03:52.555Z"
+  },
+  "NER_EXTRA_8": {
+    "output": "理想汽车:组织名\n李想:人名\n1981年10月5日:时间\n河北石家庄:地点\n2015年7月:时间\n北京:地点",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:04:30.028Z"
+  },
+  "NER_EXTRA_9": {
+    "output": "小鹏汽车:组织名\n何小鹏:人名\n1977年:时间\n湖北黄石:地点\n2014年:时间\n广州:地点\n小鹏汽车:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:04:38.189Z"
+  },
+  "NER_EXTRA_10": {
+    "output": "大疆创新:组织名\n汪滔:人名\n1980年:时间\n浙江杭州:地点\n2006年:时间\n深圳:地点\n大疆:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:04:43.427Z"
+  },
+  "NER_EXTRA_11": {
+    "output": "携程:组织名\n梁建章:人名\n1969年:时间\n上海:地点\n1999年:时间\n上海:地点\n携程旅行网:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:04:56.558Z"
+  },
+  "NER_EXTRA_12": {
+    "output": "网易:组织名\n丁磊:人名\n1971年10月1日:时间\n浙江:地点\n宁波:地点\n1997年6月:时间\n广州:地点\n网易:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:05:17.976Z"
+  },
+  "NER_EXTRA_13": {
+    "output": "搜狐:组织名\n张朝阳:人名\n1964年10月31日:时间\n陕西西安:地点\n1996年8月:时间\n北京:地点\n搜狐:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:05:29.137Z"
+  },
+  "NER_EXTRA_14": {
+    "output": "360:组织名\n周鸿祎:人名\n1970年10月4日:时间\n河南驻马店:地点\n2005年9月:时间\n北京:地点\n360公司:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:05:59.063Z"
+  },
+  "NER_30": {
+    "output": "特斯拉:组织名\n埃隆·马斯克:人名\n2022年10月27日:时间\nTwitter:组织名\nX:产品名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:06:33.155Z"
+  },
+  "NER_31": {
+    "output": "中国科学院:组织名\n钟南山:人名\n2020年1月20日:时间\n央视:组织名\n新冠病毒:病毒名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:07:17.771Z"
+  },
+  "NER_32": {
+    "output": "苹果公司:组织名\n2023年9月12日:时间\n加州:地点\n库比蒂诺:地点\n史蒂夫·乔布斯:人名\n史蒂夫·乔布斯剧院:地点\niPhone 15系列:产品名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:07:51.193Z"
+  },
+  "NER_33": {
+    "output": "贵州茅台:组织名\n2021年2月10日:时间",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:08:19.525Z"
+  },
+  "NER_34": {
+    "output": "",
+    "status": "success",
+    "truncated": true,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:09:01.686Z"
+  },
+  "NER_35": {
+    "output": "复旦大学附属华山医院:组织名\n张文宏:人名\n2023年:时间\n全国两会:会议名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:09:50.157Z"
+  },
+  "NER_36": {
+    "output": "大疆创新科技有限公司:组织名\n汪滔:人名\n1980年:时间\n浙江:地点\n杭州:地点\n2006年:时间\n深圳:地点\n大疆:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:10:35.093Z"
+  },
+  "NER_37": {
+    "output": "拜登政府:组织名\n2024年5月14日:时间\n中国:地点\n电动汽车:产品名\n太阳能电池:产品名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:10:57.586Z"
+  },
+  "NER_38": {
+    "output": "携程旅行网:组织名\n梁建章:人名\n1969年:时间\n上海:地点\n1999年:时间\n季琦:人名\n沈南鹏:人名\n范敏:人名\n携程:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:11:12.923Z"
+  },
+  "NER_39": {
+    "output": "比亚迪股份有限公司:组织名\n王传福:人名\n1966年2月15日:时间\n安徽芜湖:地点\n1995年:时间\n深圳:地点\n比亚迪:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:12:36.171Z"
+  },
+  "NER_40": {
+    "output": "OpenAI:组织名\n2022年11月30日:时间\nChatGPT:产品名\n2015年:时间\n旧金山:地点",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:12:54.181Z"
+  },
+  "NER_41": {
+    "output": "莫言:人名\n1955年2月17日:时间\n山东:地点\n高密:地点\n2012年:时间\n诺贝尔文学奖:奖项\n红高粱家族:作品",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:15:51.022Z"
+  },
+  "NER_42": {
+    "output": "美团点评:组织名\n2018年9月20日:时间\n香港联交所:组织名\n香港:地点\n王兴:人名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:16:04.611Z"
+  },
+  "NER_43": {
+    "output": "中国探月工程:组织名\n嫦娥六号:产品名\n2024年5月3日:时间\n海南:地点\n文昌:地点\n月球:地点",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:16:37.551Z"
+  },
+  "NER_44": {
+    "output": "杨振宁:人名\n1957年:时间\n诺贝尔物理学奖:奖项\n普林斯顿高等研究院:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:16:46.078Z"
+  },
+  "NER_45": {
+    "output": "蔚来汽车:组织名\n李斌:人名\n2014年11月:时间\n上海:地点\n蔚来:组织名\n2021年:时间\n361.4亿元人民币:货币",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:17:01.121Z"
+  },
+  "NER_46": {
+    "output": "京东集团:组织名\n刘强东:人名\n1974年2月14日:时间\n江苏:地点\n宿迁:地点\n1998年6月18日:时间\n北京:地点\n中关村:地点\n京东公司:组织名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:17:51.379Z"
+  },
+  "NER_47": {
+    "output": "华为:组织名\nMate 60 Pro:产品名\n2023年8月29日:时间\n麒麟9000S:产品名",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:18:12.040Z"
+  },
+  "NER_48": {
+    "output": "字节跳动:组织名\n抖音:产品名\nTikTok:产品名\n2017年5月:时间\n2023年:时间",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:18:22.874Z"
+  },
+  "NER_49": {
+    "output": "中国工程院: 组织名\n袁隆平: 人名\n1930年9月7日: 时间\n北京: 地点\n杂交水稻: 产品名\n2021年5月22日: 时间\n长沙: 地点",
+    "status": "success",
+    "truncated": false,
+    "dim": "信息抽取",
+    "timestamp": "2026-06-05T15:18:49.152Z"
+  }
+}

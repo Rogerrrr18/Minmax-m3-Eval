@@ -1,0 +1,252 @@
+{
+  "Spider_0": {
+    "score": 0,
+    "reason": "输出为空/API错误，未提供SQL",
+    "dim": "SQL查询"
+  },
+  "Spider_1": {
+    "score": 0,
+    "reason": "输出为空，未提供SQL语句。",
+    "dim": "SQL查询"
+  },
+  "Spider_2": {
+    "score": 7,
+    "reason": "逻辑正确，但列名可能与schema不符",
+    "dim": "SQL查询"
+  },
+  "Spider_3": {
+    "score": 7,
+    "reason": "聚合逻辑正确，但表名可能不符schema",
+    "dim": "SQL查询"
+  },
+  "Spider_4": {
+    "score": 7,
+    "reason": "逻辑正确，但表名/列名可能与schema不符",
+    "dim": "SQL查询"
+  },
+  "Spider_5": {
+    "score": 9,
+    "reason": "语义正确，筛选出生州非California的负责人姓名。",
+    "dim": "SQL查询"
+  },
+  "Spider_6": {
+    "score": 0,
+    "reason": "输出为空/API错误，未生成SQL",
+    "dim": "SQL查询"
+  },
+  "Spider_7": {
+    "score": 5,
+    "reason": "聚合逻辑正确，但表列不匹配",
+    "dim": "SQL查询"
+  },
+  "Spider_8": {
+    "score": 6,
+    "reason": "思路正确，但表列名及日期函数可能不兼容",
+    "dim": "SQL查询"
+  },
+  "Spider_9": {
+    "score": 0,
+    "reason": "输出为异常，未提供SQL语句。",
+    "dim": "SQL查询"
+  },
+  "Spider_10": {
+    "score": 9,
+    "reason": "语义正确，统计acting_status表记录数。",
+    "dim": "SQL查询"
+  },
+  "Spider_11": {
+    "score": 0,
+    "reason": "输出为空/API错误，无有效SQL",
+    "dim": "SQL查询"
+  },
+  "Spider_12": {
+    "score": 0,
+    "reason": "输出为空/API错误，未提供SQL。",
+    "dim": "SQL查询"
+  },
+  "Spider_13": {
+    "score": 0,
+    "reason": "输出为空，未提供SQL查询。",
+    "dim": "SQL查询"
+  },
+  "Spider_14": {
+    "score": 0,
+    "reason": "输出为空/API错误，未提供SQL。",
+    "dim": "SQL查询"
+  },
+  "Spider_15": {
+    "score": 7,
+    "reason": "逻辑正确，但id列名可能不匹配。",
+    "dim": "SQL查询"
+  },
+  "Spider_16": {
+    "score": 3,
+    "reason": "查询逻辑正确，但表名可能错误导致执行失败。",
+    "dim": "SQL查询"
+  },
+  "Spider_17": {
+    "score": 3,
+    "reason": "表名疑似错误，可能无法执行",
+    "dim": "SQL查询"
+  },
+  "Spider_18": {
+    "score": 0,
+    "reason": "输出为空/API错误，未提供SQL",
+    "dim": "SQL查询"
+  },
+  "Spider_19": {
+    "score": 0,
+    "reason": "输出为异常信息，无SQL语句。",
+    "dim": "SQL查询"
+  },
+  "Spider_20": {
+    "score": 6,
+    "reason": "逻辑正确，但表名和列名可能与schema不符。",
+    "dim": "SQL查询"
+  },
+  "Spider_21": {
+    "score": 7,
+    "reason": "逻辑正确，表名可能不符",
+    "dim": "SQL查询"
+  },
+  "Spider_22": {
+    "score": 3,
+    "reason": "表名错误会执行失败，且多选year列",
+    "dim": "SQL查询"
+  },
+  "Spider_23": {
+    "score": 7,
+    "reason": "逻辑正确，但表名可能与schema不符",
+    "dim": "SQL查询"
+  },
+  "Spider_24": {
+    "score": 7,
+    "reason": "逻辑正确，但表名可能与schema不符。",
+    "dim": "SQL查询"
+  },
+  "Spider_25": {
+    "score": 7,
+    "reason": "逻辑正确，但表名可能与schema不符",
+    "dim": "SQL查询"
+  },
+  "Spider_26": {
+    "score": 6,
+    "reason": "聚合逻辑正确，但表名可能不符schema",
+    "dim": "SQL查询"
+  },
+  "Spider_27": {
+    "score": 7,
+    "reason": "聚合逻辑正确，但表名可能与schema不符",
+    "dim": "SQL查询"
+  },
+  "Spider_28": {
+    "score": 7,
+    "reason": "逻辑正确，但表名可能不匹配 schema",
+    "dim": "SQL查询"
+  },
+  "Spider_29": {
+    "score": 4,
+    "reason": "逻辑方向正确，但使用占位表名，无法按实际schema执行。",
+    "dim": "SQL查询"
+  },
+  "Spider_30": {
+    "score": 7,
+    "reason": "语义正确，但表/列名可能与实际schema不符。",
+    "dim": "SQL查询"
+  },
+  "Spider_31": {
+    "score": 8,
+    "reason": "逻辑正确，按人口降序取官方名；可能有表/列名差异。",
+    "dim": "SQL查询"
+  },
+  "Spider_32": {
+    "score": 7,
+    "reason": "语义正确，但表名可能不符",
+    "dim": "SQL查询"
+  },
+  "Spider_33": {
+    "score": 7,
+    "reason": "查询逻辑正确，但表名可能与schema不符。",
+    "dim": "SQL查询"
+  },
+  "Spider_34": {
+    "score": 4,
+    "reason": "缺少与城市表JOIN，official_name可能不在competitions中。",
+    "dim": "SQL查询"
+  },
+  "Spider_35": {
+    "score": 7,
+    "reason": "逻辑正确，但表/列名可能与schema不符",
+    "dim": "SQL查询"
+  },
+  "Spider_36": {
+    "score": 7,
+    "reason": "逻辑正确，但表名/字段名可能与实际schema不符。",
+    "dim": "SQL查询"
+  },
+  "Spider_37": {
+    "score": 8,
+    "reason": "语义正确，可能存在列名不匹配风险。",
+    "dim": "SQL查询"
+  },
+  "Spider_38": {
+    "score": 7,
+    "reason": "逻辑正确，但表/连接列名可能不符合实际schema。",
+    "dim": "SQL查询"
+  },
+  "Spider_39": {
+    "score": 3,
+    "reason": "语义方向正确，但表名/连接列可能不符合实际schema。",
+    "dim": "SQL查询"
+  },
+  "Spider_40": {
+    "score": 9,
+    "reason": "语义正确，JOIN和筛选条件均符合题意。",
+    "dim": "SQL查询"
+  },
+  "Spider_41": {
+    "score": 7,
+    "reason": "语义正确，但表/列名可能与实际schema不符。",
+    "dim": "SQL查询"
+  },
+  "Spider_42": {
+    "score": 7,
+    "reason": "逻辑正确，但表名可能与schema不符。",
+    "dim": "SQL查询"
+  },
+  "Spider_43": {
+    "score": 6,
+    "reason": "结构基本对，但表/列名可能不符",
+    "dim": "SQL查询"
+  },
+  "Spider_44": {
+    "score": 7,
+    "reason": "逻辑正确，但表名可能与schema不符。",
+    "dim": "SQL查询"
+  },
+  "Spider_45": {
+    "score": 7,
+    "reason": "逻辑正确，表名可能不符",
+    "dim": "SQL查询"
+  },
+  "Spider_46": {
+    "score": 6,
+    "reason": "聚合逻辑正确，但表名可能不符",
+    "dim": "SQL查询"
+  },
+  "Spider_47": {
+    "score": 7,
+    "reason": "逻辑正确，但表名可能不符",
+    "dim": "SQL查询"
+  },
+  "Spider_48": {
+    "score": 7,
+    "reason": "反连接逻辑正确，但外键列名可能不符",
+    "dim": "SQL查询"
+  },
+  "Spider_49": {
+    "score": 6,
+    "reason": "逻辑正确，但表名列名可能不匹配schema。",
+    "dim": "SQL查询"
+  }
+}

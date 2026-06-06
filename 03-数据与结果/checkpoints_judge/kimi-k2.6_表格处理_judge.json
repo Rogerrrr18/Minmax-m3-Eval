@@ -1,0 +1,252 @@
+{
+  "table_office_001": {
+    "score": 9,
+    "reason": "代码正确完整，格式化输出清晰。",
+    "dim": "表格处理"
+  },
+  "table_office_002": {
+    "score": 9,
+    "reason": "公式正确，可在C2填充使用",
+    "dim": "表格处理"
+  },
+  "table_office_003": {
+    "score": 0,
+    "reason": "输出为异常，未完成任何表格处理。",
+    "dim": "表格处理"
+  },
+  "table_office_004": {
+    "score": 8,
+    "reason": "部门利润率公式正确，条件格式可用；未处理销售额为0等边界。",
+    "dim": "表格处理"
+  },
+  "table_office_005": {
+    "score": 9,
+    "reason": "代码正确统计并绘制趋势图，语法可执行，仅通用性略有限。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_0": {
+    "score": 4,
+    "reason": "意图正确，但公式含“=D2:”语法错误。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_1": {
+    "score": 9,
+    "reason": "公式正确，稍有多余文字。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_2": {
+    "score": 9,
+    "reason": "公式正确，可在D2填写并向下复制。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_3": {
+    "score": 10,
+    "reason": "公式正确简洁，可直接填充计算利润率",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_4": {
+    "score": 10,
+    "reason": "公式正确简洁，可下拉填充计算平均分。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_5": {
+    "score": 9,
+    "reason": "公式正确，能判断库存并返回对应文本。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_6": {
+    "score": 9,
+    "reason": "公式正确按年月累计至当前日期，简洁有效。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_7": {
+    "score": 10,
+    "reason": "公式正确简洁，可下拉填充。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_8": {
+    "score": 9,
+    "reason": "公式正确，可在D列向下填充。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_9": {
+    "score": 8,
+    "reason": "公式正确，但未说明向下填充。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_10": {
+    "score": 9,
+    "reason": "公式正确，满足截至2026年计算年限需求。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_11": {
+    "score": 10,
+    "reason": "公式正确且含空白处理鲁棒性高",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_12": {
+    "score": 9,
+    "reason": "公式正确，可下拉计算占比。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_13": {
+    "score": 10,
+    "reason": "公式正确，语法无误，并提供除零处理。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_14": {
+    "score": 10,
+    "reason": "公式正确简洁，可向下填充。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_15": {
+    "score": 10,
+    "reason": "公式正确简洁，可下拉填充。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_16": {
+    "score": 9,
+    "reason": "公式正确，可向下填充计算过期日期",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_17": {
+    "score": 10,
+    "reason": "公式正确且处理除零错误",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_18": {
+    "score": 9,
+    "reason": "公式正确计算实际减计划偏差，可下拉填充。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_19": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完整，可直接下拉使用。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_20": {
+    "score": 9,
+    "reason": "公式正确，可在D列向下填充",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_21": {
+    "score": 10,
+    "reason": "公式正确简洁，可直接下拉使用。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_22": {
+    "score": 7,
+    "reason": "公式基本正确，但未说明填入起始行及前6天处理。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_23": {
+    "score": 9,
+    "reason": "公式正确，单位换算合理；未处理B为0情况。",
+    "dim": "表格处理"
+  },
+  "TABLE_EXTRA_24": {
+    "score": 10,
+    "reason": "公式正确且处理除零错误",
+    "dim": "表格处理"
+  },
+  "table_extra_0": {
+    "score": 0,
+    "reason": "输出为空/API错误，未完成任务",
+    "dim": "表格处理"
+  },
+  "table_extra_1": {
+    "score": 9,
+    "reason": "公式正确，可下拉填充，略缺应用范围说明",
+    "dim": "表格处理"
+  },
+  "table_extra_2": {
+    "score": 10,
+    "reason": "代码正确简洁，统计与导出均满足要求",
+    "dim": "表格处理"
+  },
+  "table_extra_3": {
+    "score": 9,
+    "reason": "公式和条件格式正确，基本满足需求。",
+    "dim": "表格处理"
+  },
+  "table_extra_4": {
+    "score": 8,
+    "reason": "基本正确，未包含无订单客户处理",
+    "dim": "表格处理"
+  },
+  "table_extra_5": {
+    "score": 0,
+    "reason": "输出为空/API错误，未完成任务",
+    "dim": "表格处理"
+  },
+  "table_extra_6": {
+    "score": 9,
+    "reason": "实现正确，缺少零方差等边界处理",
+    "dim": "表格处理"
+  },
+  "table_extra_7": {
+    "score": 8,
+    "reason": "公式正确，略缺空值/格式兼容处理",
+    "dim": "表格处理"
+  },
+  "table_extra_8": {
+    "score": 0,
+    "reason": "输出为空/API错误，未完成任务",
+    "dim": "表格处理"
+  },
+  "table_extra_9": {
+    "score": 9,
+    "reason": "规则正确完整，发票号空值边界略欠说明。",
+    "dim": "表格处理"
+  },
+  "table_extra_10": {
+    "score": 8,
+    "reason": "基本满足需求，日期识别略粗糙且全空数值列未处理。",
+    "dim": "表格处理"
+  },
+  "table_extra_11": {
+    "score": 9,
+    "reason": "公式和条件格式正确，零预算处理略简化。",
+    "dim": "表格处理"
+  },
+  "table_extra_12": {
+    "score": 8,
+    "reason": "实现透视汇总和同比计算，缺少零值/缺失年处理。",
+    "dim": "表格处理"
+  },
+  "table_extra_13": {
+    "score": 0,
+    "reason": "输出为空/API错误，未完成任务",
+    "dim": "表格处理"
+  },
+  "table_extra_14": {
+    "score": 9,
+    "reason": "代码正确可执行，均线与信号计算合理，仅边界期处理略简化。",
+    "dim": "表格处理"
+  },
+  "table_extra_15": {
+    "score": 9,
+    "reason": "公式正确，未处理空数据除零情况",
+    "dim": "表格处理"
+  },
+  "table_extra_16": {
+    "score": 9,
+    "reason": "实现完整正确，CI未做边界裁剪。",
+    "dim": "表格处理"
+  },
+  "table_extra_17": {
+    "score": 8,
+    "reason": "公式正确，预警可用；但空行/已超期边界未处理。",
+    "dim": "表格处理"
+  },
+  "table_extra_18": {
+    "score": 9,
+    "reason": "代码正确完整，图表与汇总均满足要求",
+    "dim": "表格处理"
+  },
+  "table_extra_19": {
+    "score": 9,
+    "reason": "公式正确，步骤完整，略缺去重部门公式。",
+    "dim": "表格处理"
+  }
+}

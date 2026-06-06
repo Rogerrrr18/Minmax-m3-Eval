@@ -1,0 +1,252 @@
+{
+  "CodeSearch_0": {
+    "score": 3,
+    "reason": "代码可运行但与未知上下文无关，补全价值低",
+    "dim": "代码补全"
+  },
+  "CodeSearch_1": {
+    "score": 3,
+    "reason": "仅可执行，未完成实际补全逻辑",
+    "dim": "代码补全"
+  },
+  "CodeSearch_2": {
+    "score": 3,
+    "reason": "仅提供空函数，可运行但未实现逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_3": {
+    "score": 3,
+    "reason": "代码可运行但与题目缺失上下文无关",
+    "dim": "代码补全"
+  },
+  "CodeSearch_4": {
+    "score": 8,
+    "reason": "代码可运行，逻辑正确，但缺少上下文确认完全匹配。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_5": {
+    "score": 3,
+    "reason": "仅可运行，未体现实际补全逻辑",
+    "dim": "代码补全"
+  },
+  "CodeSearch_6": {
+    "score": 3,
+    "reason": "可执行但疑似与原上下文无关",
+    "dim": "代码补全"
+  },
+  "CodeSearch_7": {
+    "score": 0,
+    "reason": "输出为空，未补全任何代码",
+    "dim": "代码补全"
+  },
+  "CodeSearch_8": {
+    "score": 1,
+    "reason": "仅输出pass，未实现任何补全逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_9": {
+    "score": 0,
+    "reason": "未提供有效补全代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_10": {
+    "score": 3,
+    "reason": "仅可运行，未体现实际补全逻辑",
+    "dim": "代码补全"
+  },
+  "CodeSearch_11": {
+    "score": 2,
+    "reason": "仅可执行，明显未完成实际代码补全逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_12": {
+    "score": 1,
+    "reason": "仅为占位注释，未补全有效代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_13": {
+    "score": 3,
+    "reason": "代码可运行但与题目补全需求无关",
+    "dim": "代码补全"
+  },
+  "CodeSearch_14": {
+    "score": 3,
+    "reason": "仅可执行，缺乏上下文匹配性验证",
+    "dim": "代码补全"
+  },
+  "CodeSearch_15": {
+    "score": 3,
+    "reason": "仅可执行，未体现题目所需补全逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_16": {
+    "score": 1,
+    "reason": "未补全代码，仅返回提示注释。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_17": {
+    "score": 7,
+    "reason": "代码可运行且逻辑正确，但缺少上下文难确认完整性。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_18": {
+    "score": 1,
+    "reason": "未提供有效补全代码，仅为提示性注释。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_19": {
+    "score": 0,
+    "reason": "模型输出为空，未补全任何代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_20": {
+    "score": 3,
+    "reason": "仅可运行，未实现题目所需补全逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_21": {
+    "score": 3,
+    "reason": "代码可运行，但疑似与原任务无关。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_22": {
+    "score": 1,
+    "reason": "未提供有效Python补全代码，无法运行。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_23": {
+    "score": 1,
+    "reason": "未提供任何有效补全代码",
+    "dim": "代码补全"
+  },
+  "CodeSearch_24": {
+    "score": 1,
+    "reason": "未补全任何实际代码，仅有注释占位。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_25": {
+    "score": 0,
+    "reason": "输出为空，无有效Python代码结构。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_26": {
+    "score": 3,
+    "reason": "仅可执行，缺乏题目上下文，补全明显不可信。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_27": {
+    "score": 2,
+    "reason": "仅输出提示语，未补全目标代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_28": {
+    "score": 1,
+    "reason": "未提供任何有效补全代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_29": {
+    "score": 3,
+    "reason": "代码可执行，但缺少上下文，补全过于简单且可能不匹配题意。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_30": {
+    "score": 2,
+    "reason": "仅占位可运行，未实现任何补全逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_31": {
+    "score": 3,
+    "reason": "代码可运行但疑似与原任务不符，仅少量通过。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_32": {
+    "score": 3,
+    "reason": "代码可运行，但与缺失上下文无关，难判定正确性。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_33": {
+    "score": 2,
+    "reason": "未补全代码，仅提示并退出执行。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_34": {
+    "score": 3,
+    "reason": "仅可执行，未体现有效补全逻辑",
+    "dim": "代码补全"
+  },
+  "CodeSearch_35": {
+    "score": 1,
+    "reason": "仅输出注释，未补全任何有效代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_36": {
+    "score": 1,
+    "reason": "未补全代码，仅提示用户提供代码",
+    "dim": "代码补全"
+  },
+  "CodeSearch_37": {
+    "score": 1,
+    "reason": "未提供有效Python补全代码，无法运行或评测。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_38": {
+    "score": 3,
+    "reason": "仅可运行，未实现实际功能",
+    "dim": "代码补全"
+  },
+  "CodeSearch_39": {
+    "score": 1,
+    "reason": "未补全代码，仅输出注释占位。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_40": {
+    "score": 8,
+    "reason": "阶乘实现正确，但缺少负数处理。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_41": {
+    "score": 2,
+    "reason": "仅空函数可运行，未实现任何补全逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_42": {
+    "score": 2,
+    "reason": "仅空函数占位，可运行但未实现逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_43": {
+    "score": 2,
+    "reason": "仅提供空函数，未实现任何题目逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_44": {
+    "score": 3,
+    "reason": "仅可执行，未补全题目所需逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_45": {
+    "score": 3,
+    "reason": "代码可运行但与题目上下文无关",
+    "dim": "代码补全"
+  },
+  "CodeSearch_46": {
+    "score": 3,
+    "reason": "仅可执行，未实现实际补全逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_47": {
+    "score": 3,
+    "reason": "仅可执行，未体现实际补全逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_48": {
+    "score": 3,
+    "reason": "仅可执行，未体现有效补全逻辑",
+    "dim": "代码补全"
+  },
+  "CodeSearch_49": {
+    "score": 3,
+    "reason": "代码可运行，但明显与题目缺失上下文无关。",
+    "dim": "代码补全"
+  }
+}

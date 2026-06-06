@@ -1,0 +1,252 @@
+{
+  "CodeSearch_0": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少输入。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_1": {
+    "score": 1,
+    "reason": "未补全有效代码，仅提示缺失并pass。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_2": {
+    "score": 1,
+    "reason": "未提供有效补全代码，无法运行。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_3": {
+    "score": 1,
+    "reason": "未提供任何有效Python补全代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_4": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少片段。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_5": {
+    "score": 1,
+    "reason": "未补全目标代码，仅抛出错误提示。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_6": {
+    "score": 1,
+    "reason": "未补全代码，仅为注释提示。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_7": {
+    "score": 1,
+    "reason": "未补全目标代码，仅抛出异常，功能缺失。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_8": {
+    "score": 1,
+    "reason": "未补全目标代码，仅抛出异常。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_9": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少片段。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_10": {
+    "score": 1,
+    "reason": "未提供有效补全代码，仅提示缺失内容。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_11": {
+    "score": 1,
+    "reason": "未提供有效补全代码，仅为注释。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_12": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少片段。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_13": {
+    "score": 1,
+    "reason": "未补全目标代码，仅抛出错误。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_14": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少片段。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_15": {
+    "score": 3,
+    "reason": "仅可运行，未体现题目实际补全逻辑",
+    "dim": "代码补全"
+  },
+  "CodeSearch_16": {
+    "score": 1,
+    "reason": "未补全代码，仅提示用户提供片段",
+    "dim": "代码补全"
+  },
+  "CodeSearch_17": {
+    "score": 1,
+    "reason": "未补全代码，仅提示信息，无有效实现。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_18": {
+    "score": 1,
+    "reason": "未补全目标代码，仅抛出异常",
+    "dim": "代码补全"
+  },
+  "CodeSearch_19": {
+    "score": 1,
+    "reason": "未提供有效补全代码，仅提示缺少片段。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_20": {
+    "score": 1,
+    "reason": "未补全代码，仅返回错误提示。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_21": {
+    "score": 1,
+    "reason": "未补全代码，仅抛出错误。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_22": {
+    "score": 1,
+    "reason": "仅输出注释，无实际补全代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_23": {
+    "score": 1,
+    "reason": "未提供有效补全代码，任务未完成",
+    "dim": "代码补全"
+  },
+  "CodeSearch_24": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少片段。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_25": {
+    "score": 3,
+    "reason": "仅可运行，未体现实际补全逻辑",
+    "dim": "代码补全"
+  },
+  "CodeSearch_26": {
+    "score": 3,
+    "reason": "仅可运行，未完成实际补全逻辑",
+    "dim": "代码补全"
+  },
+  "CodeSearch_27": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少片段",
+    "dim": "代码补全"
+  },
+  "CodeSearch_28": {
+    "score": 1,
+    "reason": "未补全目标代码，仅抛出异常提示。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_29": {
+    "score": 0,
+    "reason": "输出为空，无有效代码补全",
+    "dim": "代码补全"
+  },
+  "CodeSearch_30": {
+    "score": 1,
+    "reason": "未补全任何Python代码，无法满足任务要求。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_31": {
+    "score": 0,
+    "reason": "输出为空，无有效Python代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_32": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少输入，无有效实现。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_33": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少片段。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_34": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少片段，无有效实现。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_35": {
+    "score": 2,
+    "reason": "泛化脚本，未针对原题补全",
+    "dim": "代码补全"
+  },
+  "CodeSearch_36": {
+    "score": 1,
+    "reason": "未提供有效补全，仅提示缺少代码。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_37": {
+    "score": 1,
+    "reason": "仅输出注释，未补全任何有效代码逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_38": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺失内容，无有效实现。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_39": {
+    "score": 1,
+    "reason": "未提供有效补全，仅为提示性注释。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_40": {
+    "score": 1,
+    "reason": "未提供有效补全代码，无法完成任务。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_41": {
+    "score": 1,
+    "reason": "未提供有效补全，仅为提示注释。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_42": {
+    "score": 3,
+    "reason": "仅提供可运行框架，未实现实际补全逻辑。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_43": {
+    "score": 1,
+    "reason": "未补全代码，仅提示缺少片段。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_44": {
+    "score": 1,
+    "reason": "未补全任何有效代码，仅提示缺少片段。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_45": {
+    "score": 1,
+    "reason": "未提供有效补全代码，仅提示错误。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_46": {
+    "score": 0,
+    "reason": "输出为空/API错误，未补全代码",
+    "dim": "代码补全"
+  },
+  "CodeSearch_47": {
+    "score": 3,
+    "reason": "仅有可运行框架，核心逻辑未实现",
+    "dim": "代码补全"
+  },
+  "CodeSearch_48": {
+    "score": 1,
+    "reason": "未补全任何有效功能代码，仅注释。",
+    "dim": "代码补全"
+  },
+  "CodeSearch_49": {
+    "score": 1,
+    "reason": "未补全代码，仅输出提示注释。",
+    "dim": "代码补全"
+  }
+}

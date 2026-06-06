@@ -1,0 +1,422 @@
+{
+  "BugFix_001": {
+    "output": "```python\ndef find_max(a, b):\n    if a > b:\n        return a\n    return b\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:05:46.423Z"
+  },
+  "BugFix_002": {
+    "output": "```python\ndef sum_list(nums):\n    total = 0\n    for i in range(len(nums)):\n        total += nums[i]\n    return total\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:05:52.793Z"
+  },
+  "BugFix_003": {
+    "output": "```python\ndef binary_search(arr, target):\n    left, right = 0, len(arr)\n    while left < right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid\n    return -1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:06:31.549Z"
+  },
+  "BugFix_004": {
+    "output": "```python\ndef is_palindrome(s):\n    return s == s[::-1]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:06:39.634Z"
+  },
+  "BugFix_005": {
+    "output": "```python\ndef quicksort(arr):\n    if len(arr) <= 1:\n        return arr\n    pivot = arr[0]\n    left = [x for x in arr[1:] if x <= pivot]\n    right = [x for x in arr[1:] if x > pivot]\n    return quicksort(left) + [pivot] + quicksort(right)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:07:00.124Z"
+  },
+  "BugFix_006": {
+    "output": "```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:07:07.537Z"
+  },
+  "BugFix_007": {
+    "output": "```python\ndef merge_dicts(d1, d2):\n    result = d1.copy()\n    for k, v in d2.items():\n        result[k] = v\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:07:23.998Z"
+  },
+  "BugFix_008": {
+    "output": "```python\ndef flatten(nested):\n    result = []\n    for item in nested:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:07:40.271Z"
+  },
+  "BugFix_009": {
+    "output": "```python\ndef remove_duplicates(lst):\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:08:01.127Z"
+  },
+  "BugFix_010": {
+    "output": "",
+    "status": "success",
+    "truncated": true,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:08:37.161Z"
+  },
+  "BugFix_011": {
+    "output": "```python\ndef read_file(filename):\n    with open(filename, 'r') as f:\n        return f.read()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:09:08.292Z"
+  },
+  "BugFix_012": {
+    "output": "```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    a, b = 0, 1\n    for _ in range(2, n + 1):\n        a, b = b, a + b\n    return b\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:09:15.504Z"
+  },
+  "BugFix_013": {
+    "output": "def count_words(text):\n    return len(text.split())",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:09:38.545Z"
+  },
+  "BugFix_014": {
+    "output": "```python\ndef find_cycle(head):\n    slow = head\n    fast = head\n    while fast and fast.next:\n        slow = slow.next\n        fast = fast.next.next\n        if slow == fast:\n            return True\n    return False\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:09:54.285Z"
+  },
+  "BugFix_015": {
+    "output": "```python\ndef safe_divide(a, b):\n    try:\n        result = a / b\n        return result\n    except ZeroDivisionError:\n        return None\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:10:10.824Z"
+  },
+  "BugFix_016": {
+    "output": "```python\ndef parse_int(s):\n    try:\n        return int(s)\n    except (ValueError, TypeError):\n        return None\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:10:21.133Z"
+  },
+  "BugFix_017": {
+    "output": "```python\ndef lcs(s1, s2):\n    m, n = len(s1), len(s2)\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if s1[i - 1] == s2[j - 1]:\n                dp[i][j] = dp[i - 1][j - 1] + 1\n            else:\n                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])\n    return dp[m][n]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:11:48.212Z"
+  },
+  "BugFix_018": {
+    "output": "```python\nimport random\n\ndef shuffle_list(lst):\n    shuffled = lst[:]\n    random.shuffle(shuffled)\n    return shuffled\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:11:52.652Z"
+  },
+  "BugFix_019": {
+    "output": "```python\ndef topo_sort(graph):\n    visited = set()\n    result = []\n    def dfs(node):\n        if node in visited:\n            return\n        visited.add(node)\n        for neighbor in graph.get(node, []):\n            dfs(neighbor)\n        result.append(node)\n    for node in graph:\n        dfs(node)\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:12:48.121Z"
+  },
+  "BugFix_020": {
+    "output": "```python\ndef swap(a, b):\n    return b, a\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:13:15.783Z"
+  },
+  "BugFix_021": {
+    "output": "```python\ndef sum_even(n):\n    total = 0\n    for i in range(n):\n        if i % 2 == 0:\n            total += i\n    return total\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:13:39.139Z"
+  },
+  "BugFix_022": {
+    "output": "```python\ndef matrix_multiply(A, B):\n    rows = len(A)\n    cols = len(B[0])\n    result = [[0] * cols for _ in range(rows)]\n    for i in range(rows):\n        for j in range(cols):\n            for k in range(len(B)):\n                result[i][j] += A[i][k] * B[k][j]\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:14:10.441Z"
+  },
+  "BugFix_023": {
+    "output": "```python\ndef unique_elements(lst):\n    return list(dict.fromkeys(lst))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:14:21.846Z"
+  },
+  "BugFix_024": {
+    "output": "```python\ndef longest_increasing_subsequence(nums):\n    if not nums:\n        return 0\n    dp = [1] * len(nums)\n    for i in range(1, len(nums)):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n    return max(dp)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:14:31.743Z"
+  },
+  "BugFix_025": {
+    "output": "```python\ndef capitalize_words(text):\n    words = text.split()\n    words = [word.capitalize() for word in words]\n    return ' '.join(words)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:14:42.266Z"
+  },
+  "BugFix_026": {
+    "output": "```python\ndef find_all_paths(graph, start, end):\n    result = []\n    def dfs(node, path):\n        path.append(node)\n        if node == end:\n            result.append(path[:])\n        else:\n            for neighbor in graph.get(node, []):\n                dfs(neighbor, path)\n        path.pop()\n    dfs(start, [])\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:14:55.609Z"
+  },
+  "BugFix_027": {
+    "output": "def average(nums):\n    if not nums:\n        return 0\n    return sum(nums) / len(nums)",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:15:38.642Z"
+  },
+  "BugFix_028": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:18:46.016Z"
+  },
+  "BugFix_029": {
+    "output": "```python\ndef sort_by_value(d):\n    return sorted(d.items(), key=lambda x: x[1])\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:19:13.148Z"
+  },
+  "BugFix_030": {
+    "output": "```python\ndef min_heapify(arr, i):\n    left = 2 * i + 1\n    right = 2 * i + 2\n    smallest = i\n    if left < len(arr) and arr[left] < arr[smallest]:\n        smallest = left\n    if right < len(arr) and arr[right] < arr[smallest]:\n        smallest = right\n    if smallest != i:\n        arr[i], arr[smallest] = arr[smallest], arr[i]\n        min_heapify(arr, smallest)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:19:51.171Z"
+  },
+  "BugFix_031": {
+    "output": "```python\ndef has_duplicate(nums):\n    seen = set()\n    for num in nums:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:19:59.046Z"
+  },
+  "BugFix_032": {
+    "output": "```python\ndef two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:20:10.919Z"
+  },
+  "BugFix_033": {
+    "output": "```python\ndef fib(n):\n    if n <= 1:\n        return n\n    a, b = 0, 1\n    for _ in range(n - 1):\n        a, b = b, a + b\n    return b\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:20:19.781Z"
+  },
+  "BugFix_034": {
+    "output": "```python\nfrom collections import Counter\n\ndef count_frequency(words):\n    return Counter(words)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:20:53.833Z"
+  },
+  "BugFix_035": {
+    "output": "```python\nimport heapq\n\ndef merge_sorted_lists(lists):\n    return list(heapq.merge(*lists))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:21:01.258Z"
+  },
+  "BugFix_036": {
+    "output": "```python\ndef reverse_string(s):\n    return s[::-1]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:21:18.573Z"
+  },
+  "BugFix_037": {
+    "output": "def max_subarray_sum(nums):\n    max_sum = float('-inf')\n    current_sum = 0\n    for num in nums:\n        current_sum = max(num, current_sum + num)\n        max_sum = max(max_sum, current_sum)\n    return max_sum",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:21:36.349Z"
+  },
+  "BugFix_038": {
+    "output": "```python\ndef is_prime(n):\n    if n < 2:\n        return False\n    if n in (2, 3):\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:21:47.773Z"
+  },
+  "BugFix_039": {
+    "output": "```python\ndef lcs(s1, s2):\n    if not s1 or not s2:\n        return 0\n    if len(s1) < len(s2):\n        s1, s2 = s2, s1\n    m, n = len(s1), len(s2)\n    dp = [0] * (n + 1)\n    for i in range(1, m + 1):\n        prev = 0\n        for j in range(1, n + 1):\n            curr = dp[j]\n            if s1[i - 1] == s2[j - 1]:\n                dp[j] = prev + 1\n            else:\n                dp[j] = max(dp[j], dp[j - 1])\n            prev = curr\n    return dp[n]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:22:39.004Z"
+  },
+  "BugFix_040": {
+    "output": "```python\ndef find_intersection(l1, l2):\n    set_l2 = set(l2)\n    seen = set()\n    result = []\n    for item in l1:\n        if item in set_l2 and item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:23:19.061Z"
+  },
+  "BugFix_041": {
+    "output": "```python\ndef climb_stairs(n):\n    if n <= 2:\n        return n\n    a, b = 1, 2\n    for _ in range(3, n + 1):\n        a, b = b, a + b\n    return b\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:23:42.366Z"
+  },
+  "BugFix_042": {
+    "output": "```python\ndef remove_spaces(text):\n    return text.replace(' ', '')\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:24:17.567Z"
+  },
+  "BugFix_043": {
+    "output": "```python\ndef longest_common_prefix(strs):\n    if not strs:\n        return \"\"\n    \n    prefix = []\n    for chars in zip(*strs):\n        if len(set(chars)) != 1:\n            break\n        prefix.append(chars[0])\n    \n    return \"\".join(prefix)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:24:38.937Z"
+  },
+  "BugFix_044": {
+    "output": "```python\nfrom collections import Counter\n\ndef is_anagram(s1, s2):\n    return Counter(s1) == Counter(s2)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:24:46.654Z"
+  },
+  "BugFix_045": {
+    "output": "```python\ndef power(x, n):\n    if n < 0:\n        x = 1 / x\n        n = -n\n    result = 1\n    while n:\n        if n & 1:\n            result *= x\n        x *= x\n        n >>= 1\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:25:05.167Z"
+  },
+  "BugFix_046": {
+    "output": "```python\ndef sum_of_squares(n):\n    return n * (n + 1) * (2 * n + 1) // 6\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:25:32.839Z"
+  },
+  "BugFix_047": {
+    "output": "```python\ndef knapsack(weights, values, capacity):\n    dp = [0] * (capacity + 1)\n    for i in range(len(weights)):\n        for w in range(capacity, weights[i] - 1, -1):\n            dp[w] = max(dp[w], dp[w - weights[i]] + values[i])\n    return dp[capacity]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:26:11.889Z"
+  },
+  "BugFix_048": {
+    "output": "```python\ndef find_missing(nums):\n    n = len(nums) + 1\n    return n * (n + 1) // 2 - sum(nums)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:26:50.902Z"
+  },
+  "BugFix_049": {
+    "output": "```python\ndef count_bits(n):\n    result = [0] * (n + 1)\n    for i in range(1, n + 1):\n        result[i] = result[i >> 1] + (i & 1)\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:27:06.267Z"
+  },
+  "BugFix_050": {
+    "output": "```python\ndef transpose(matrix):\n    return [list(row) for row in zip(*matrix)]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:27:14.318Z"
+  },
+  "BugFix_051": {
+    "output": "```python\ndef find_peak(nums):\n    if not nums:\n        return -1\n    left, right = 0, len(nums) - 1\n    while left < right:\n        mid = (left + right) // 2\n        if nums[mid] < nums[mid + 1]:\n            left = mid + 1\n        else:\n            right = mid\n    return left\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:28:04.556Z"
+  },
+  "BugFix_052": {
+    "output": "```python\ndef valid_parentheses(s):\n    stack = []\n    mapping = {')': '(', ']': '[', '}': '{'}\n    for char in s:\n        if char in mapping:\n            if not stack or stack.pop() != mapping[char]:\n                return False\n        else:\n            stack.append(char)\n    return not stack\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:28:47.315Z"
+  },
+  "BugFix_053": {
+    "output": "```python\nfrom collections import deque\n\ndef shortest_path(grid):\n    if not grid or not grid[0]:\n        return 0\n    \n    rows, cols = len(grid), len(grid[0])\n    if grid[0][0] == 1 or grid[rows-1][cols-1] == 1:\n        return -1\n    if rows == 1 and cols == 1:\n        return 1\n    \n    queue = deque([(0, 0, 1)])\n    visited = {(0, 0)}\n    directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]\n    \n    while queue:\n        r, c, dist = queue.popleft()\n        for dr, dc in directions:\n            nr, nc = r + dr, c + dc\n            if nr == rows - 1 and nc == cols - 1:\n                return dist + 1\n            if 0 <= nr < rows and 0 <= nc < cols and grid[nr][nc] == 0 and (nr, nc) not in visited:\n                visited.add((nr, nc))\n                queue.append((nr, nc, dist + 1))\n    \n    return -1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:29:29.766Z"
+  },
+  "BugFix_054": {
+    "output": "```python\ndef move_zeros(nums):\n    j = 0\n    for i in range(len(nums)):\n        if nums[i] != 0:\n            nums[j], nums[i] = nums[i], nums[j]\n            j += 1\n    return nums\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:31:28.216Z"
+  },
+  "BugFix_055": {
+    "output": "```python\ndef trap_rain(height):\n    if not height:\n        return 0\n    \n    left, right = 0, len(height) - 1\n    left_max, right_max = 0, 0\n    total = 0\n    \n    while left < right:\n        if height[left] < height[right]:\n            if height[left] >= left_max:\n                left_max = height[left]\n            else:\n                total += left_max - height[left]\n            left += 1\n        else:\n            if height[right] >= right_max:\n                right_max = height[right]\n            else:\n                total += right_max - height[right]\n            right -= 1\n    \n    return total\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:31:50.289Z"
+  },
+  "BugFix_056": {
+    "output": "```python\ndef majority_element(nums):\n    candidate = None\n    count = 0\n    for num in nums:\n        if count == 0:\n            candidate = num\n        count += 1 if num == candidate else -1\n    return candidate if nums.count(candidate) > len(nums) // 2 else None\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:33:21.314Z"
+  },
+  "BugFix_057": {
+    "output": "",
+    "status": "success",
+    "truncated": true,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:34:13.818Z"
+  },
+  "BugFix_058": {
+    "output": "```python\ndef get_row_pascal(n):\n    result = [1]\n    for k in range(1, n + 1):\n        result.append(result[-1] * (n - k + 1) // k)\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:34:49.907Z"
+  },
+  "BugFix_059": {
+    "output": "```python\ndef max_profit(prices):\n    if not prices:\n        return 0\n    min_price = float('inf')\n    max_profit = 0\n    for price in prices:\n        if price < min_price:\n            min_price = price\n        else:\n            max_profit = max(max_profit, price - min_price)\n    return max_profit\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:35:11.302Z"
+  },
+  "BugFix_060": {
+    "output": "```python\ndef rotate_array(nums, k):\n    n = len(nums)\n    if n == 0:\n        return nums\n    k %= n\n    nums[:] = nums[-k:] + nums[:-k]\n    return nums\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "错误修复",
+    "timestamp": "2026-06-05T13:35:26.673Z"
+  }
+}

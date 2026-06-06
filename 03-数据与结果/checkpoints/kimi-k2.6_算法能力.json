@@ -1,0 +1,562 @@
+{
+  "GSM8K_0": {
+    "output": "**解题思路：**\n\n1.  计算每天剩余的鸭蛋数量：总产蛋数（16）减去早餐消耗（3）和烘焙消耗（4）。\n2.  将剩余数量乘以单个售价（$2），得到每日总收入。\n\n**Python 代码：**\n\n```python\n# 定义已知条件\ntotal_eggs_per_day = 16\neggs_for_breakfast = 3\neggs_for_muffins = 4\nprice_per_egg = 2\n\n# 计算剩余可售卖的鸭蛋数量\nremaining_eggs = total_eggs_per_day - eggs_for_breakfast - eggs_for_muffins\n\n# 计算每日收入\ndaily_income = remaining_eggs * price_per_egg\n\n# 输出结果\nprint(daily_income)\n```\n\n**运行结果：**\n```\n18\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:30:16.771Z"
+  },
+  "GSM8K_1": {
+    "output": "**解题思路：**  \n蓝色纤维需要 2 卷，白色纤维是蓝色的一半，即 1 卷。总卷数 = 2 + 1 = 3 卷。\n\n**Python 代码：**\n\n```python\n# 蓝色纤维数量\nblue_bolts = 2\n\n# 白色纤维是蓝色的一半\nwhite_bolts = blue_bolts / 2\n\n# 计算总卷数\ntotal_bolts = blue_bolts + white_bolts\n\n# 输出结果\nprint(f\"蓝色纤维: {blue_bolts} 卷\")\nprint(f\"白色纤维: {white_bolts} 卷\")\nprint(f\"总共需要: {total_bolts:.0f} 卷\")\n```\n\n运行结果：\n```\n蓝色纤维: 2 卷\n白色纤维: 1.0 卷\n总共需要: 3 卷\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:30:48.853Z"
+  },
+  "GSM8K_2": {
+    "output": "**解题思路：**\n\n1. **总成本** = 购房价格 + 维修费用 = $80,000 + $50,000 = $130,000\n2. **增值后房屋价值** = 原价值 × (1 + 150%) = $80,000 × 2.5 = $200,000\n3. **利润** = 增值后价值 - 总成本 = $200,000 - $130,000 = **$70,000**\n\n```python\n# 定义已知数据\npurchase_price = 80000          # 购房价格\nrepair_cost = 50000             # 维修费用\nvalue_increase_rate = 1.50      # 房屋价值增加比例（150%）\n\n# 计算总成本\ntotal_cost = purchase_price + repair_cost\n\n# 计算维修后房屋的价值（原价值增加150%）\nnew_house_value = purchase_price * (1 + value_increase_rate)\n\n# 计算利润\nprofit = new_house_value - total_cost\n\n# 输出结果\nprint(f\"购房价格: ${purchase_price:,}\")\nprint(f\"维修费用: ${repair_cost:,}\")\nprint(f\"总成本: ${total_cost:,}\")\nprint(f\"增值后房屋价值: ${new_house_value:,.0f}\")\nprint(f\"利润: ${profit:,.0f}\")\n```\n\n**运行结果：**\n```\n购房价格: $80,000\n维修费用: $50,000\n总成本: $130,000\n增值后房屋价值: $200,000\n利润: $70,000\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:33:40.256Z"
+  },
+  "GSM8K_3": {
+    "output": "**解题思路：**\n\n1.  **明确已知条件：**\n    *   每周跑步次数：3 次\n    *   每次跑步的冲刺次数：3 个\n    *   每个冲刺的距离：60 米\n\n2.  **确定计算逻辑：**\n    *   每周总冲刺次数 = 每周跑步次数 × 每次冲刺次数\n    *   每周总距离 = 每周总冲刺次数 × 每个冲刺距离\n\n3.  **计算结果：**\n    *   3 × 3 × 60 = 540 米\n\n---\n\n**Python 代码实现：**\n\n```python\ndef calculate_weekly_running_distance():\n    \"\"\"\n    计算 James 每周跑步的总距离\n    \"\"\"\n    # 定义已知条件\n    sessions_per_week = 3      # 每周跑步 3 次\n    sprints_per_session = 3    # 每次跑 3 个冲刺\n    meters_per_sprint = 60     # 每个冲刺 60 米\n    \n    # 计算每周总距离\n    total_meters = sessions_per_week * sprints_per_session * meters_per_sprint\n    \n    # 打印详细计算过程与结果\n    total_sprints = sessions_per_week * sprints_per_session\n    print(f\"每周跑步次数: {sessions_per_week} 次\")\n    print(f\"每次冲刺次数: {sprints_per_session} 个\")\n    print(f\"每周总冲刺次数: {total_sprints} 个\")\n    print(f\"每个冲刺距离: {meters_per_sprint} 米\")\n    print(f\"James 每周总共跑: {total_meters} 米\")\n    \n    return total_meters\n\n# 执行计算\nif __name__ == \"__main__\":\n    calculate_weekly_running_distance()\n```\n\n**运行结果：**\n```\n每周跑步次数: 3 次\n每次冲刺次数: 3 个\n每周总冲刺次数: 9 个\n每个冲刺距离: 60 米\nJames 每周总共跑: 540 米\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:34:10.425Z"
+  },
+  "GSM8K_4": {
+    "output": "解题思路：\n1. 计算20只鸡每天所需饲料总量：20 × 3 = 60 杯\n2. 计算已投喂量：15（早晨）+ 25（下午）= 40 杯\n3. 计算晚间最终餐所需量：60 - 40 = 20 杯\n\n```python\n# 定义已知条件\nnum_chickens = 20          # 鸡群数量\nfeed_per_chicken = 3       # 每只鸡每天需要的饲料杯数\nmorning_feed = 15          # 早晨投喂量\nafternoon_feed = 25        # 下午投喂量\n\n# 计算每天饲料总需求\ntotal_daily_feed = num_chickens * feed_per_chicken\n\n# 计算已投喂的饲料量\ntotal_given = morning_feed + afternoon_feed\n\n# 计算晚间最终餐所需饲料量\nevening_feed = total_daily_feed - total_given\n\n# 输出结果\nprint(f\"Wendi needs to give her chickens {evening_feed} cups of feed in the final meal.\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:34:30.574Z"
+  },
+  "GSM8K_5": {
+    "output": "**解题思路：**\n\n- 16个杯子中，奇数位（第1、3、5…15个）共8个按原价 $5 购买。\n- 偶数位（第2、4、6…16个）共8个按折扣价 $5 × 0.6 = $3 购买。\n- 总价 = 8 × 5 + 8 × 3 = **$64**。\n\n下面是可直接运行的 Python 代码：\n\n```python\ndef calculate_total_cost(num_glasses, normal_price=5.0, discount_rate=0.6):\n    \"\"\"\n    计算购买杯子的总费用。\n    奇数序号的杯子按原价，偶数序号的杯子按 discount_rate 折扣。\n    \"\"\"\n    discount_price = normal_price * discount_rate\n    \n    # 奇数位个数和偶数位个数\n    odd_count = (num_glasses + 1) // 2\n    even_count = num_glasses // 2\n    \n    total = odd_count * normal_price + even_count * discount_price\n    return total\n\n# Kylar 想买 16 个杯子\nn = 16\ntotal = calculate_total_cost(n)\n\nprint(f\"Kylar needs to pay ${total:.2f} for {n} glasses.\")\n```\n\n运行结果：\n```\nKylar needs to pay $64.00 for 16 glasses.\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:36:13.088Z"
+  },
+  "GSM8K_6": {
+    "output": "**解题思路：**\n\n1. 已知 Seattle 有 20 只羊。\n2. Charleston 的羊数量是 Seattle 的 4 倍。\n3. Toulouse 的羊数量是 Charleston 的 2 倍。\n4. 将三个城市的羊数量相加即得总数。\n\n**Python 代码实现：**\n\n```python\n# 已知条件\nseattle = 20\n\n# 根据题意计算\ncharleston = 4 * seattle\ntoulouse = 2 * charleston\n\n# 计算总数\ntotal_sheep = seattle + charleston + toulouse\n\n# 输出结果\nprint(f\"Seattle: {seattle}\")\nprint(f\"Charleston: {charleston}\")\nprint(f\"Toulouse: {toulouse}\")\nprint(f\"Total: {total_sheep}\")\n```\n\n**运行结果：**\n```\nSeattle: 20\nCharleston: 80\nToulouse: 160\nTotal: 260\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:36:33.440Z"
+  },
+  "GSM8K_7": {
+    "output": "**解题思路：**\n\n1. 第一次下载到 40% 时中断：下载了 `200 × 0.4 = 80 GB`，耗时 `80 / 2 = 40` 分钟。\n2. Windows 强制重启更新：耗时 20 分钟。\n3. 从开头重新下载完整文件：200 GB，耗时 `200 / 2 = 100` 分钟。\n4. 总时间 = 40 + 20 + 100 = **160 分钟**。\n\n**Python 代码：**\n\n```python\n# 参数定义\nfile_size = 200          # 文件大小 (GB)\ndownload_speed = 2       # 下载速度 (GB/分钟)\ninterrupt_ratio = 0.40   # 中断点 (40%)\nupdate_time = 20         # 系统更新重启时间 (分钟)\n\n# 第一次下载（到40%中断）\nfirst_download_size = file_size * interrupt_ratio\nfirst_download_time = first_download_size / download_speed\n\n# 第二次下载（从头开始完整下载）\nsecond_download_time = file_size / download_speed\n\n# 总耗时\ntotal_time = first_download_time + update_time + second_download_time\n\n# 结果输出\nprint(\"=== 下载时间计算 ===\")\nprint(f\"文件大小: {file_size} GB\")\nprint(f\"下载速度: {download_speed} GB/分钟\")\nprint(f\"第一次下载: {first_download_size} GB, 耗时 {first_download_time} 分钟\")\nprint(f\"系统更新重启: {update_time} 分钟\")\nprint(f\"第二次重新下载: {file_size} GB, 耗时 {second_download_time} 分钟\")\nprint(f\"--------------------\")\nprint(f\"总耗时: {total_time} 分钟\")\n```\n\n运行结果：\n```\n=== 下载时间计算 ===\n文件大小: 200 GB\n下载速度: 2 GB/分钟\n第一次下载: 80.0 GB, 耗时 40.0 分钟\n系统更新重启: 20 分钟\n第二次重新下载: 200 GB, 耗时 100.0 分钟\n--------------------\n总耗时: 160.0 分钟\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:37:16.641Z"
+  },
+  "GSM8K_8": {
+    "output": "```python\n# 初始行驶：3小时，60 mph\ninitial_distance_from_home = 3 * 60  # 180 miles\n\n# 返程：共4小时\n# 前2小时静止\ntime_stuck = 2\nspeed_stuck = 0\ndistance_stuck = time_stuck * speed_stuck\n\n# 接下来0.5小时，30 mph\ntime_slow = 0.5\nspeed_slow = 30\ndistance_slow = time_slow * speed_slow\n\n# 剩余时间，80 mph\ntotal_return_time = 4\ntime_fast = total_return_time - time_stuck - time_slow  # 1.5 hours\nspeed_fast = 80\ndistance_fast = time_fast * speed_fast\n\n# 返程总距离\ntotal_return_distance = distance_stuck + distance_slow + distance_fast\n\n# 计算离家的距离\ndistance_from_home = initial_distance_from_home - total_return_distance\n\nprint(distance_from_home)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:37:40.348Z"
+  },
+  "GSM8K_9": {
+    "output": "```python\ndef calculate_weekly_earnings(regular_rate, regular_hours_limit, total_hours, overtime_multiplier):\n    if total_hours <= regular_hours_limit:\n        return total_hours * regular_rate\n    else:\n        regular_pay = regular_hours_limit * regular_rate\n        overtime_hours = total_hours - regular_hours_limit\n        overtime_rate = regular_rate * overtime_multiplier\n        overtime_pay = overtime_hours * overtime_rate\n        return regular_pay + overtime_pay\n\n# Problem parameters\nregular_rate = 10\nregular_hours_limit = 40\ntotal_hours = 45\novertime_multiplier = 1.2\n\nearnings = calculate_weekly_earnings(regular_rate, regular_hours_limit, total_hours, overtime_multiplier)\nprint(f\"Eliza's earnings for this week: ${earnings:.2f}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:38:02.770Z"
+  },
+  "GSM8K_10": {
+    "output": "**解题思路：**\n\n1. 第一个月下载量为 60。\n2. 第二个月下载量 = 第一个月 × 3。\n3. 第三个月下载量 = 第二个月 × (1 − 30%) = 第二个月 × 0.7。\n4. 三个月总下载量 = 第一个月 + 第二个月 + 第三个月。\n\n**Python 代码实现：**\n\n```python\n# 第一个月下载量\nmonth1 = 60\n\n# 第二个月下载量：第一个月的三倍\nmonth2 = month1 * 3\n\n# 第三个月下载量：比第二个月减少30%\nmonth3 = month2 * (1 - 0.30)\n\n# 计算三个月总下载量\ntotal_downloads = month1 + month2 + month3\n\n# 输出结果\nprint(f\"First month: {month1}\")\nprint(f\"Second month: {month2}\")\nprint(f\"Third month: {month3}\")\nprint(f\"Total downloads over the three months: {int(total_downloads)}\")\n```\n\n**运行结果：**\n```\nFirst month: 60\nSecond month: 180\nThird month: 126.0\nTotal downloads over the three months: 366\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:38:30.290Z"
+  },
+  "GSM8K_11": {
+    "output": "```python\n# 定义购买数量和单价\ndonuts_dozen = 3\ndonuts_price_per_dozen = 68\n\ncupcakes_dozen = 2\ncupcakes_price_per_dozen = 80\n\ncheesecakes_dozen = 6\ncheesecakes_price_per_dozen = 55\n\n# 计算各项花费\ndonuts_total = donuts_dozen * donuts_price_per_dozen\ncupcakes_total = cupcakes_dozen * cupcakes_price_per_dozen\ncheesecakes_total = cheesecakes_dozen * cheesecakes_price_per_dozen\n\n# 计算总花费\ntotal_cost = donuts_total + cupcakes_total + cheesecakes_total\n\n# 输出结果\nprint(f\"Donuts: {donuts_dozen} dozen × ${donuts_price_per_dozen} = ${donuts_total}\")\nprint(f\"Mini cupcakes: {cupcakes_dozen} dozen × ${cupcakes_price_per_dozen} = ${cupcakes_total}\")\nprint(f\"Mini cheesecakes: {cheesecakes_dozen} dozen × ${cheesecakes_price_per_dozen} = ${cheesecakes_total}\")\nprint(f\"Total cost: ${total_cost}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:38:46.678Z"
+  },
+  "GSM8K_12": {
+    "output": "```python\n# Constants\nplant_cost = 90\nlemons_per_year = 7\nprice_per_lemon = 1.5\nannual_cost = 3\n\n# Yearly profit\nyearly_profit = lemons_per_year * price_per_lemon - annual_cost\n\n# Find first year cumulative profit > 0\nyear = 0\ncumulative = -plant_cost\nwhile cumulative <= 0:\n    year += 1\n    cumulative += yearly_profit\n\nprint(f\"It will take {year} years before Carlos starts earning money.\")\nprint(f\"Cumulative profit at that point: ${cumulative:.2f}\")\n```\n\n输出：\n\n```\nIt will take 13 years before Carlos starts earning money.\nCumulative profit at that point: $7.50\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:38:53.534Z"
+  },
+  "GSM8K_13": {
+    "output": "设初始数量为 \\(x\\)，根据题意列方程：\n\n\\[\n\\frac{1}{2}\\left(\\frac{2x}{3} - 2\\right) = 5\n\\]\n\n解得 \\(x = 18\\)。\n\n完整 Python 代码：\n\n```python\nfrom sympy import symbols, Eq, solve\n\n# 定义初始数量\nx = symbols('x', integer=True, positive=True)\n\n# 在绿房子卖出 1/3 后剩余：2x/3\nremaining_after_green = 2 * x / 3\n\n# 在红房子卖出 2 个后剩余：2x/3 - 2\nremaining_after_red = remaining_after_green - 2\n\n# 在橙房子卖出剩余的一半后剩余：(2x/3 - 2) / 2\nremaining_after_orange = remaining_after_red / 2\n\n# 最后剩余 5 个\nequation = Eq(remaining_after_orange, 5)\n\n# 求解\nsolution = solve(equation, x)\nprint(\"Melanie 开始时有的吸尘器数量：\", solution[0])\n```\n\n运行结果：\n\n```\nMelanie 开始时有的吸尘器数量： 18\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:39:05.965Z"
+  },
+  "GSM8K_14": {
+    "output": "设全班共20人。现代舞 enrollment 为20%，即 \\(20 \\times 0.20 = 4\\) 人，剩余 \\(20 - 4 = 16\\) 人。爵士舞占剩余的25%，即 \\(16 \\times 0.25 = 4\\) 人。街舞人数为剩余部分，即 \\(16 - 4 = 12\\) 人。因此街舞占全班的比例为 \\(12 / 20 \\times 100\\% = 60\\%\\)。\n\n```python\ndef calculate_hip_hop_percentage(total_students=20, contemporary_pct=20, jazz_pct_of_remaining=25):\n    contemporary = total_students * contemporary_pct / 100\n    remaining_after_contemporary = total_students - contemporary\n    \n    jazz = remaining_after_contemporary * jazz_pct_of_remaining / 100\n    hip_hop = remaining_after_contemporary - jazz\n    \n    hip_hop_percentage = hip_hop / total_students * 100\n    \n    print(f\"Total students: {total_students}\")\n    print(f\"Contemporary dance students: {int(contemporary)}\")\n    print(f\"Jazz dance students: {int(jazz)}\")\n    print(f\"Hip-hop dance students: {int(hip_hop)}\")\n    print(f\"Percentage of entire students enrolled in hip-hop dance: {hip_hop_percentage}%\")\n    \n    return hip_hop_percentage\n\ncalculate_hip_hop_percentage()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:39:24.141Z"
+  },
+  "GSM8K_15": {
+    "output": "**解题思路：**\n\n分别计算两个购买计划一个月后的预期利润，取较大值即为最优选择。\n- 珠宝利润 = $5000 \\times 2.5\\%$\n- 电子产品利润 = $8000 \\times 1.2\\%$\n\n**Python 代码实现：**\n\n```python\ndef calculate_max_profit():\n    # 初始价值\n    jewelry_cost = 5000\n    gadgets_cost = 8000\n    \n    # 预期涨幅\n    jewelry_rate = 0.025\n    gadgets_rate = 0.012\n    \n    # 计算各自利润\n    jewelry_profit = jewelry_cost * jewelry_rate\n    gadgets_profit = gadgets_cost * gadgets_rate\n    \n    # 比较并选择最大值\n    max_profit = max(jewelry_profit, gadgets_profit)\n    best_choice = \"Jewelry\" if jewelry_profit > gadgets_profit else \"Electronic Gadgets\"\n    \n    # 输出结果\n    print(f\"Jewelry profit: ${jewelry_profit:.2f}\")\n    print(f\"Electronic Gadgets profit: ${gadgets_profit:.2f}\")\n    print(f\"Best choice: {best_choice}\")\n    print(f\"Maximum profit: ${max_profit:.2f}\")\n    \n    return max_profit\n\n# 执行计算\nmax_profit = calculate_max_profit()\n```\n\n**运行结果：**\n```\nJewelry profit: $125.00\nElectronic Gadgets profit: $96.00\nBest choice: Jewelry\nMaximum profit: $125.00\n```\n\n**答案：** 该商人应选择购买珠宝，可获得的最大利润为 **$125**。",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:39:46.350Z"
+  },
+  "GSM8K_16": {
+    "output": "**解题思路：**\n\n每列火车第一天向西行驶 80 英里，第二天向北行驶 150 英里。题目问的是每列火车在两天内**行驶的总路程**（distance covered），因此直接将两天的行驶距离相加即可。\n\n总距离 = 80 + 150 = **230 英里**\n\n---\n\n**Python 解题代码：**\n\n```python\ndef calculate_distance():\n    # 第一天向西行驶的距离（英里）\n    day1_distance = 80\n    \n    # 第二天向北行驶的距离（英里）\n    day2_distance = 150\n    \n    # 计算两天行驶的总路程\n    total_distance = day1_distance + day2_distance\n    \n    return day1_distance, day2_distance, total_distance\n\n# 执行计算\nd1, d2, total = calculate_distance()\n\n# 输出结果\nprint(\"=== 火车行驶距离计算 ===\")\nprint(f\"第一天行驶距离: {d1} miles\")\nprint(f\"第二天行驶距离: {d2} miles\")\nprint(f\"每列火车两天总行驶距离: {total} miles\")\n```\n\n**运行结果：**\n```\n=== 火车行驶距离计算 ===\n第一天行驶距离: 80 miles\n第二天行驶距离: 150 miles\n每列火车两天总行驶距离: 230 miles\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:40:31.298Z"
+  },
+  "GSM8K_17": {
+    "output": "**解题思路：**\n1. 计算每周教学收入：`35小时 × $20/小时`\n2. 计算每周教练收入：`15小时 × $30/小时`\n3. 计算每周总收入，再乘以每年工作的 `50` 周得到年薪。\n\n```python\n# 定义时薪\npay_per_hour_teaching = 20\npay_per_hour_coaching = 30\n\n# 定义工作时间\nweeks_per_year = 50\nhours_per_week_teaching = 35\nhours_per_week_coaching = 15\n\n# 计算每周收入\nweekly_teaching_pay = pay_per_hour_teaching * hours_per_week_teaching\nweekly_coaching_pay = pay_per_hour_coaching * hours_per_week_coaching\nweekly_total_pay = weekly_teaching_pay + weekly_coaching_pay\n\n# 计算年薪\nannual_salary = weekly_total_pay * weeks_per_year\n\n# 输出结果\nprint(f\"Jill's annual salary is ${annual_salary:,}\")\n```\n\n**运行结果：**\n```\nJill's annual salary is $57,500\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:41:11.316Z"
+  },
+  "GSM8K_18": {
+    "output": "**解题思路：**\n\n1. 计算总天数：4 周 × 7 天/周 = 28 天  \n2. 计算总鸡蛋数：28 天 × 3 个/天 = 84 个  \n3. 换算为打：84 个 ÷ 12 个/打 = 7 打  \n\n**Python 代码：**\n\n```python\ndef calculate_dozens_of_eggs():\n    eggs_per_day = 3\n    days_per_week = 7\n    weeks = 4\n    eggs_per_dozen = 12\n\n    total_days = weeks * days_per_week\n    total_eggs = total_days * eggs_per_day\n    total_dozens = total_eggs / eggs_per_dozen\n\n    return total_dozens\n\nresult = calculate_dozens_of_eggs()\nprint(f\"Claire will eat {result} dozen eggs in 4 weeks.\")\n```\n\n**运行结果：**\n\n```\nClaire will eat 7.0 dozen eggs in 4 weeks.\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:41:32.387Z"
+  },
+  "GSM8K_19": {
+    "output": "**解题思路**\n\n1. 总路程为 12 英里，目标平均速度为 4 英里/小时，因此目标总时间为  \n   \\(T_{\\text{总}} = \\frac{12}{4} = 3\\) 小时。\n2. 前两段已经走了 \\(4+2=6\\) 英里，用时 \\(1+1=2\\) 小时。\n3. 剩余路程为 \\(12-6=6\\) 英里，剩余可用时间为 \\(3-2=1\\) 小时。\n4. 所需速度 = 剩余路程 ÷ 剩余时间 = \\(6 / 1 = 6\\) 英里/小时。\n\n**Python 代码**\n\n```python\ndef compute_required_speed():\n    total_distance = 12          # 总路程（英里）\n    target_avg_speed = 4         # 目标平均速度（英里/小时）\n\n    # 前两段的路程与用时\n    done_distance = 4 + 2\n    done_time = 1 + 1\n\n    # 目标总时间\n    total_time_needed = total_distance / target_avg_speed\n\n    # 剩余路程与剩余时间\n    remaining_distance = total_distance - done_distance\n    remaining_time = total_time_needed - done_time\n\n    # 计算所需速度\n    required_speed = remaining_distance / remaining_time\n    return required_speed\n\n\nif __name__ == \"__main__\":\n    speed = compute_required_speed()\n    print(f\"Marissa 需要以 {speed} 英里/小时的速度走完剩余路程。\")\n```\n\n运行结果：\n```\nMarissa 需要以 6.0 英里/小时的速度走完剩余路程。\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:43:19.876Z"
+  },
+  "GSM8K_20": {
+    "output": "**解题思路：**\n\n1. 计算洒掉 1 升后剩余的橙汁量：`10 - 1 = 9` 升\n2. 剩余橙汁中的含水量：`9 × (2/3) = 6` 升\n3. 菠萝饮料中的含水量：`15 × (3/5) = 9` 升\n4. 混合后总水量：`6 + 9 = 15` 升\n5. 验证总体积：`9 + 15 = 24` 升，与题意相符\n\n```python\ndef calculate_water():\n    # 初始橙汁和菠萝饮料的量（升）\n    orange_total = 10\n    pineapple_total = 15\n    \n    # 各自含水的比例\n    orange_water_ratio = 2 / 3\n    pineapple_water_ratio = 3 / 5\n    \n    # 洒掉的橙汁量（升）\n    spilled = 1\n    \n    # 剩余橙汁量\n    remaining_orange = orange_total - spilled\n    \n    # 剩余橙汁中的水\n    orange_water = remaining_orange * orange_water_ratio\n    \n    # 菠萝饮料中的水\n    pineapple_water = pineapple_total * pineapple_water_ratio\n    \n    # 混合后总水量\n    total_water = orange_water + pineapple_water\n    \n    # 混合后总体积（验证）\n    total_volume = remaining_orange + pineapple_total\n    \n    print(f\"剩余橙汁量: {remaining_orange} 升\")\n    print(f\"橙汁中的水: {orange_water} 升\")\n    print(f\"菠萝饮料中的水: {pineapple_water} 升\")\n    print(f\"混合后总体积: {total_volume} 升\")\n    print(f\"混合后总水量: {total_water} 升\")\n    \n    return total_water\n\n# 执行计算\nwater_amount = calculate_water()\nprint(f\"\\n答案: 剩余的 24 升饮料中含有 {water_amount} 升水。\")\n```\n\n**运行结果：**\n\n```\n剩余橙汁量: 9 升\n橙汁中的水: 6.0 升\n菠萝饮料中的水: 9.0 升\n混合后总体积: 24 升\n混合后总水量: 15.0 升\n\n答案: 剩余的 24 升饮料中含有 15.0 升水。\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:43:27.158Z"
+  },
+  "GSM8K_21": {
+    "output": "```python\n# 已知条件\nsamantha_age_now = 31\nraymond_older_than_samantha = 6\nraymond_age_when_son_born = 23\n\n# 计算 Raymond 现在的年龄\nraymond_age_now = samantha_age_now + raymond_older_than_samantha\n\n# 计算 Raymond 儿子现在的年龄（即出生距今的年数）\nyears_since_son_born = raymond_age_now - raymond_age_when_son_born\n\n# 输出结果\nprint(f\"Raymond's son was born {years_since_son_born} years ago.\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:43:35.792Z"
+  },
+  "GSM8K_22": {
+    "output": "**解题思路：**\n\n将顾客分为三组，分别计算每组购买的DVD数量，然后求和。\n- 第1组：3位顾客 × 1张 = 3张\n- 第2组：2位顾客 × 2张 = 4张\n- 第3组：3位顾客 × 0张 = 0张\n- 总计：3 + 4 + 0 = 7张\n\n**Python 代码实现：**\n\n```python\n# 定义三组顾客的购买情况\n# 格式：(顾客人数, 每位顾客购买DVD数量)\ngroup1 = (3, 1)  # 前3位顾客，每人1张\ngroup2 = (2, 2)  # 接下来2位顾客，每人2张\ngroup3 = (3, 0)  # 最后3位顾客，每人0张\n\n# 计算每组销售的DVD数量并求和\ntotal_dvds = (group1[0] * group1[1] + \n              group2[0] * group2[1] + \n              group3[0] * group3[1])\n\n# 输出结果\nprint(f\"Billy sold {total_dvds} DVDs on Tuesday.\")\n```\n\n**运行结果：**\n```\nBilly sold 7 DVDs on Tuesday.\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:43:44.249Z"
+  },
+  "GSM8K_23": {
+    "output": "**解题思路：**\n1. 计算燃烧时长：从下午1:00到下午5:00，共计 **4** 小时。\n2. 每小时蜡烛缩短 **2** 厘米。\n3. 总缩短长度 = 燃烧时长 × 每小时缩短长度 = 4 × 2 = **8** 厘米。\n\n**Python 代码实现：**\n\n```python\nfrom datetime import datetime\n\n# 定义蜡烛燃烧的开始时间和结束时间\nstart_time = datetime.strptime(\"1:00 PM\", \"%I:%M %p\")\nend_time = datetime.strptime(\"5:00 PM\", \"%I:%M %p\")\n\n# 定义每小时融化的速率（厘米/小时）\nmelt_rate = 2\n\n# 计算燃烧时长（转换为小时）\nburning_duration = (end_time - start_time).total_seconds() / 3600\n\n# 计算总共缩短的长度\ntotal_shorter = burning_duration * melt_rate\n\n# 输出结果\nprint(f\"蜡烛燃烧时长: {int(burning_duration)} 小时\")\nprint(f\"蜡烛总共缩短了: {int(total_shorter)} 厘米\")\n```\n\n**运行结果：**\n```\n蜡烛燃烧时长: 4 小时\n蜡烛总共缩短了: 8 厘米\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:44:03.161Z"
+  },
+  "GSM8K_24": {
+    "output": "解题思路：\n已知折后价为 $19.50，折扣率为 25%，即折后价是原价的 75%。设原价为 $P$，则：\n$$19.50 = P \\times (1 - 0.25)$$\n$$P = \\frac{19.50}{0.75} = 26.00$$\n\nPython代码：\n```python\ndiscounted_price = 19.50\ndiscount_rate = 0.25\n\noriginal_price = discounted_price / (1 - discount_rate)\n\nprint(f\"The original price of the book was ${original_price:.2f}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:44:08.866Z"
+  },
+  "GSM8K_25": {
+    "output": "**解题思路：**\n\n设披萨盒数为 $x$，根据题意列出总花费方程：\n\n$$12 + 5 \\times 3 + 4 \\times 1.50 + 8.50x = 50$$\n\n先计算已知商品的总花费，再用总付款金额减去该值，得到披萨的总花费，最后除以每盒披萨的单价即可求出盒数。\n\n**Python 代码实现：**\n\n```python\n# 商品单价与数量\nchicken_meal_cost = 12\nmilk_packs = 5\nmilk_cost_per_pack = 3\napples = 4\napple_cost_each = 1.50\npizza_cost_each = 8.50\ntotal_paid = 50\n\n# 计算已知商品的总花费\nknown_cost = chicken_meal_cost + (milk_packs * milk_cost_per_pack) + (apples * apple_cost_each)\n\n# 计算披萨总花费\npizza_total_cost = total_paid - known_cost\n\n# 计算披萨盒数\npizza_boxes = pizza_total_cost / pizza_cost_each\n\n# 输出结果\nprint(f\"Marie ordered {int(pizza_boxes)} boxes of pizza.\")\n```\n\n运行结果：\n```\nMarie ordered 2 boxes of pizza.\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:44:20.839Z"
+  },
+  "GSM8K_26": {
+    "output": "**解题思路：**\n\n分别计算短裤、裤子和鞋的总花费，再求和得到总金额。每种商品都购买了3件，因此总花费为 $3 \\times (16.50 + 22.50 + 42)$。\n\n**Python代码实现：**\n\n```python\n# 定义购买数量和单价\nquantity = 3\nshorts_price = 16.50\npants_price = 22.50\nshoes_price = 42.00\n\n# 计算各项总花费\ntotal_shorts = quantity * shorts_price\ntotal_pants = quantity * pants_price\ntotal_shoes = quantity * shoes_price\n\n# 计算总花费\ntotal_cost = total_shorts + total_pants + total_shoes\n\n# 输出结果\nprint(f\"Shorts: ${total_shorts}\")\nprint(f\"Pants: ${total_pants}\")\nprint(f\"Shoes: ${total_shoes}\")\nprint(f\"Total spent: ${total_cost}\")\n```\n\n**运行结果：**\n```\nShorts: $49.5\nPants: $67.5\nShoes: $126.0\nTotal spent: $243.0\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:44:40.386Z"
+  },
+  "GSM8K_27": {
+    "output": "**解题思路：**\n1. 计算60天总共消耗的冰淇淋份数：每天1份 × 60天 = 60份。\n2. 计算需要购买的盒数：每盒15份，向上取整（本题中60 ÷ 15 = 4，正好整除）。\n3. 计算总花费：盒数 × 每盒4.00美元。\n\n**Python 代码：**\n\n```python\nimport math\n\n# 已知条件\nservings_per_day = 1\ndays = 60\nservings_per_carton = 15\ncost_per_carton = 4.00\n\n# 计算\ntotal_servings = servings_per_day * days\ncartons_needed = math.ceil(total_servings / servings_per_carton)\ntotal_cost = cartons_needed * cost_per_carton\n\n# 输出结果\nprint(f\"Cynthia will spend ${total_cost:.2f} on ice cream.\")\n```\n\n**运行结果：**\n```\nCynthia will spend $16.00 on ice cream.\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:45:15.316Z"
+  },
+  "GSM8K_28": {
+    "output": "**解题思路：**\n\n- 总路程为 60 英里。\n- 第一次停车发生在 20 英里处。\n- 第二次停车发生在距离终点 15 英里处，因此其位置为 60 − 15 = 45 英里。\n- 两次停车之间的骑行距离为 45 − 20 = 25 英里。\n\n**Python 代码实现：**\n\n```python\n# 定义已知条件\ntotal_distance = 60          # 总里程（英里）\nfirst_stop = 20              # 第一次停车位置（英里）\nsecond_stop_before_end = 15  # 第二次停车距离终点的英里数\n\n# 计算第二次停车的位置\nsecond_stop = total_distance - second_stop_before_end\n\n# 计算两次停车之间骑行的距离\ndistance_between_stops = second_stop - first_stop\n\n# 输出结果\nprint(f\"总里程: {total_distance} 英里\")\nprint(f\"第一次停车位置: 第 {first_stop} 英里\")\nprint(f\"第二次停车位置: 第 {second_stop} 英里\")\nprint(f\"两次停车之间骑行的距离: {distance_between_stops} 英里\")\n```\n\n**运行结果：**\n\n```\n总里程: 60 英里\n第一次停车位置: 第 20 英里\n第二次停车位置: 第 45 英里\n两次停车之间骑行的距离: 25 英里\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:45:33.632Z"
+  },
+  "GSM8K_29": {
+    "output": "```python\n# 定义已知条件\nheel_one = 33  # 第一双高跟鞋价格\nheel_two = 2 * heel_one  # 第二双高跟鞋价格是第一双的两倍\n\n# 计算两双高跟鞋总价\ntotal_heels = heel_one + heel_two\n\n# 两双高跟鞋比靴子便宜5美元，因此靴子价格等于高跟鞋总价加5\nboots_price = total_heels + 5\n\n# 输出解题过程和结果\nprint(f\"第一双高跟鞋价格: ${heel_one}\")\nprint(f\"第二双高跟鞋价格: ${heel_two}\")\nprint(f\"两双高跟鞋总价: ${total_heels}\")\nprint(f\"靴子的价格: ${boots_price}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:45:44.861Z"
+  },
+  "GSM8K_30": {
+    "output": "**解题思路：**\n\n设两人年龄的比例系数为 $x$，则 Darrell 的年龄为 $7x$，Allen 的年龄为 $11x$。根据总年龄可列方程：\n$$7x + 11x = 162$$\n解得 $x = 9$，因此 Allen 现在的年龄为 $11 \\times 9 = 99$ 岁，10 年后的年龄为 $99 + 10 = 109$ 岁。\n\n**Python 代码：**\n\n```python\n# 已知条件\nratio_darrell = 7\nratio_allen = 11\ntotal_age_now = 162\nyears_after = 10\n\n# 计算比例系数 x\ntotal_ratio = ratio_darrell + ratio_allen\nx = total_age_now / total_ratio\n\n# 计算 Allen 现在和未来的年龄\nallen_age_now = ratio_allen * x\nallen_age_future = allen_age_now + years_after\n\n# 输出结果\nprint(f\"Allen's current age: {int(allen_age_now)}\")\nprint(f\"Allen's age {years_after} years from now: {int(allen_age_future)}\")\n```\n\n**运行结果：**\n```\nAllen's current age: 99\nAllen's age 10 years from now: 109\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:46:12.899Z"
+  },
+  "GSM8K_31": {
+    "output": "**解题思路：**\n\n1. 第一个人的猜测：80\n2. 第二个人的猜测：比第一个的一半多 20，即 `80 / 2 + 20 = 60`\n3. 第三个人的猜测：比第一个多 25%，即 `80 * 1.25 = 100`\n4. 平均值：`(80 + 60 + 100) / 3 = 80.0`\n\n**Python 代码实现：**\n\n```python\n# 定义三个朋友的猜测\nguess_1 = 80\nguess_2 = guess_1 / 2 + 20\nguess_3 = guess_1 * 1.25\n\n# 计算平均值\naverage_guess = (guess_1 + guess_2 + guess_3) / 3\n\n# 输出结果\nprint(f\"第一个人的猜测: {guess_1}\")\nprint(f\"第二个人的猜测: {guess_2}\")\nprint(f\"第三个人的猜测: {guess_3}\")\nprint(f\"他们的平均猜测: {average_guess}\")\n```\n\n运行结果：\n```\n第一个人的猜测: 80\n第二个人的猜测: 60.0\n第三个人的猜测: 100.0\n他们的平均猜测: 80.0\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:46:43.714Z"
+  },
+  "GSM8K_32": {
+    "output": "**解题思路：**\n\n1. 计算每天照顾狗的总时间：10 只狗 × 0.5 小时/只 = 5 小时/天\n2. 计算每周的总时间：5 小时/天 × 7 天 = 35 小时/周\n\n**Python 代码实现：**\n\n```python\n# 定义已知条件\nnum_dogs = 10                          # 狗的数量\nhours_per_dog_per_day = 0.5            # 每只狗每天需要的照顾时间（小时）\ndays_per_week = 7                      # 每周的天数\n\n# 计算每天的总时间\ndaily_hours = num_dogs * hours_per_dog_per_day\n\n# 计算每周的总时间\nweekly_hours = daily_hours * days_per_week\n\n# 输出结果\nprint(f\"John 每天照顾狗花费的时间: {daily_hours} 小时\")\nprint(f\"John 每周照顾狗花费的时间: {weekly_hours} 小时\")\n```\n\n**运行结果：**\n```\nJohn 每天照顾狗花费的时间: 5.0 小时\nJohn 每周照顾狗花费的时间: 35.0 小时\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:46:51.134Z"
+  },
+  "GSM8K_33": {
+    "output": "**解题思路**\n\n设金币数量为 $G$，银币数量为 $S$。\n\n根据题意列出方程组：\n$$\n\\begin{cases}\nG + S = 110 \\\\\nG - S = 30\n\\end{cases}\n$$\n\n将两式相加消去 $S$：\n$$2G = 140 \\Rightarrow G = 70$$\n\n因此 Gretchen 有 **70** 枚金币。\n\n---\n\n**Python 解题代码**\n\n```python\ndef find_gold_coins(total_coins, difference):\n    \"\"\"\n    根据硬币总数和金币与银币的差值，求金币数量。\n    原理：g + s = total, g - s = difference => 2*g = total + difference\n    \"\"\"\n    gold_coins = (total_coins + difference) // 2\n    silver_coins = total_coins - gold_coins\n    \n    # 验证结果\n    assert gold_coins + silver_coins == total_coins\n    assert gold_coins - silver_coins == difference\n    \n    return gold_coins\n\n# 题目给定条件\ntotal = 110\ndiff = 30\n\ngold = find_gold_coins(total, diff)\nprint(f\"Gretchen has {gold} gold coins.\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:47:29.606Z"
+  },
+  "GSM8K_34": {
+    "output": "```python\n# 已知条件\nraymond_jewels = 40\n\n# Aaron 有 Raymond 的一半多 5 颗\naaron_jewels = raymond_jewels / 2 + 5\n\n# Siobhan 比 Aaron 少 2 颗\nsiobhan_jewels = aaron_jewels - 2\n\n# 输出结果\nprint(f\"Raymond 有 {int(raymond_jewels)} 颗珠宝\")\nprint(f\"Aaron 有 {int(aaron_jewels)} 颗珠宝\")\nprint(f\"Siobhan 有 {int(siobhan_jewels)} 颗珠宝\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:47:33.966Z"
+  },
+  "GSM8K_35": {
+    "output": "```python\n# 前20分钟得分\npoints_first_20 = 4\n\n# 后20分钟得分，比前20分钟多25%\npoints_second_20 = points_first_20 * 1.25\n\n# 计算总得分\ntotal_points = points_first_20 + points_second_20\n\n# 输出结果\nprint(f\"Mike scored a total of {int(total_points)} points.\")\n```\n\n**计算过程：**\n- 前20分钟：4分\n- 后20分钟：4 × 1.25 = 5分\n- 总分：4 + 5 = **9分**",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:47:50.576Z"
+  },
+  "GSM8K_36": {
+    "output": "**解题思路：**\n1. 计算30天总共消耗的酸奶数量：每天2个 × 30天。\n2. 计算需要购买多少组促销装：总数量 ÷ 每组4个。\n3. 计算总花费：组数 × 每组5美元。\n\n**代码实现：**\n\n```python\n# 常量定义\nyogurts_per_day = 2\ndays = 30\nyogurts_per_pack = 4\nprice_per_pack = 5.00\n\n# 计算总数量\ntotal_yogurts = yogurts_per_day * days\n\n# 计算需要购买的组数（假设必须整组购买，这里刚好整除）\ntotal_packs = total_yogurts / yogurts_per_pack\n\n# 计算总花费\ntotal_cost = total_packs * price_per_pack\n\n# 输出结果\nprint(f\"Terry 在 {days} 天内总共消耗 {total_yogurts} 个酸奶。\")\nprint(f\"需要购买 {int(total_packs)} 组促销装（每组{yogurts_per_pack}个/${price_per_pack}）。\")\nprint(f\"总花费为：${total_cost:.2f}\")\n```\n\n**运行结果：**\n```\nTerry 在 30 天内总共消耗 60 个酸奶。\n需要购买 15 组促销装（每组4个/$5.0）。\n总花费为：$75.00\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:48:14.647Z"
+  },
+  "GSM8K_37": {
+    "output": "**解题思路：**\n\n1. 先算出 John 购买 8 个单价 \\$20 的电子游戏后还剩 \\$5，一共需要多少钱：  \n   `8 × 20 + 5 = 165`（美元）。\n2. 这些钱全部来自卖乐高，每个乐高卖 \\$15，因此他实际卖掉的乐高数量为：  \n   `165 ÷ 15 = 11`（个）。\n3. 原有 13 个乐高，卖掉 11 个，剩余：  \n   `13 − 11 = 2`（个）。\n\n**Python 代码实现：**\n\n```python\n# 已知条件\ntotal_lego = 13          # 原有乐高套装数量\nlego_price = 15          # 每个乐高售价\ngames_bought = 8         # 购买游戏数量\ngame_price = 20          # 每个游戏售价\nmoney_left = 5           # 剩余金额\n\n# 计算卖乐高获得的总收入\ntotal_earned = games_bought * game_price + money_left\n\n# 计算卖掉的乐高数量\nlego_sold = total_earned // lego_price\n\n# 计算剩余乐高数量\nlego_remaining = total_lego - lego_sold\n\nprint(lego_remaining)\n```\n\n运行结果：\n```\n2\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:48:34.504Z"
+  },
+  "GSM8K_38": {
+    "output": "解题思路：\n1. 总距离为 60 英里。\n2. 第一天跑 3 小时，另外两天各跑第一天的一半，即 1.5 小时。\n3. 总时间为 3 + 1.5 + 1.5 = 6 小时。\n4. 速度 = 总距离 / 总时间 = 60 / 6 = 10 英里/小时。\n\n```python\n# 定义已知条件\ntotal_miles = 60\ndays_per_week = 3\nhours_first_day = 3\n\n# 计算另外两天每天的跑步时间\nhours_other_days = hours_first_day / 2\n\n# 计算每周总跑步时间\ntotal_hours = hours_first_day + hours_other_days * (days_per_week - 1)\n\n# 计算跑步速度（英里/小时）\nspeed = total_miles / total_hours\n\n# 输出结果\nprint(f\"John的总跑步时间: {total_hours} 小时\")\nprint(f\"John的跑步速度: {speed} 英里/小时\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:48:41.146Z"
+  },
+  "GSM8K_39": {
+    "output": "**解题思路：**\n\n1. **根据跳过速度求跑步速度**：题目说跳过速度是跑步速度的一半，因此跑步速度 = 2 × 跳过速度 = 2 × 3 = 6 mph。\n2. **根据跑步速度求走路速度**：跑步速度是走路速度的 4 倍，因此走路速度 = 跑步速度 / 4 = 6 / 4 = 1.5 mph。\n3. **计算各段所用时间**：总共 6 小时，1/3 时间跑步，2/3 时间走路。\n   - 跑步时间 = 6 × (1/3) = 2 小时\n   - 走路时间 = 6 × (2/3) = 4 小时\n4. **计算总路程**：路程 = 速度 × 时间，分别求出跑步和走路的路程再相加。\n\n---\n\n**Python 代码实现：**\n\n```python\ndef calculate_distance():\n    # 已知条件\n    skip_speed = 3  # 跳过速度，单位：mph\n    total_time = 6  # 总时间，单位：小时\n    \n    # 推导跑步速度和走路速度\n    run_speed = 2 * skip_speed      # 跳过是跑步的一半，所以跑步是跳过的2倍\n    walk_speed = run_speed / 4      # 跑步是走路的4倍\n    \n    # 时间分配\n    running_time = total_time * (1/3)\n    walking_time = total_time * (2/3)\n    \n    # 计算各段路程\n    running_distance = run_speed * running_time\n    walking_distance = walk_speed * walking_time\n    \n    # 总路程\n    total_distance = running_distance + walking_distance\n    \n    # 输出结果\n    print(f\"跳过速度: {skip_speed} mph\")\n    print(f\"跑步速度: {run_speed} mph\")\n    print(f\"走路速度: {walk_speed} mph\")\n    print(f\"跑步时间: {running_time} 小时\")\n    print(f\"走路时间: {walking_time} 小时\")\n    print(f\"跑步路程: {running_distance} 英里\")\n    print(f\"走路路程: {walking_distance} 英里\")\n    print(f\"总路程: {total_distance} 英里\")\n    \n    return total_distance\n\n# 执行计算\ndistance = calculate_distance()\n```\n\n**运行结果：**\n\n```\n跳过速度: 3 mph\n跑步速度: 6 mph\n走路速度: 1.5 mph\n跑步时间: 2.0 小时\n走路时间: 4.0 小时\n跑步路程: 12.0 英里\n走路路程: 6.0 英里\n总路程: 18.0 英里\n```\n\n**答案：18 英里。**",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:48:53.200Z"
+  },
+  "GSM8K_40": {
+    "output": "**解题思路：**\n\n设 Suzy 的 iPhone 年龄为 `S`，Ben 的为 `B`，Brandon 的为 `R`。\n\n根据题意列出关系：\n- `S = 1`\n- `B = 2 × S`\n- `R = 4 × B`\n\n代入计算：\n- `B = 2 × 1 = 2`\n- `R = 4 × 2 = 8`\n\n**Python 代码实现：**\n\n```python\n# 已知条件\nsuzy_age = 1\n\n# 逐步计算\nben_age = 2 * suzy_age\nbrandon_age = 4 * ben_age\n\n# 输出结果\nprint(f\"Suzy's iPhone: {suzy_age} year old\")\nprint(f\"Ben's iPhone: {ben_age} years old\")\nprint(f\"Brandon's iPhone: {brandon_age} years old\")\n```\n\n运行结果：\n```\nSuzy's iPhone: 1 year old\nBen's iPhone: 2 years old\nBrandon's iPhone: 8 years old\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:49:39.683Z"
+  },
+  "GSM8K_41": {
+    "output": "**解题思路：**\n\n1.  **明确已知条件：**\n    *   龙火的最大覆盖距离（`dragon_flame_range`）= 1000 英尺。\n    *   Polly 的普通投掷距离（`base_javelin_range`）= 400 英尺。\n    *   持有蓝宝石后的投掷距离倍率（`multiplier`）= 3。\n\n2.  **计算增强后的投掷距离：**\n    *   持有蓝宝石时的最大投掷距离 = 普通距离 × 3 = $400 \\times 3 = 1200$ 英尺。\n\n3.  **计算安全距离：**\n    *   为了能击中龙，Polly 必须在她的最大投掷距离内（1200 英尺）。\n    *   为了不被龙火伤到她，她又必须在龙火范围之外（> 1000 英尺）。\n    *   因此，她能站的最远有效距离是 1200 英尺。此时，她超出龙火范围的距离为：$1200 - 1000 = 200$ 英尺。\n\n**Python 代码实现：**\n\n```python\ndef calculate_safe_distance():\n    # 定义已知常量\n    dragon_flame_range = 1000  # 龙火覆盖距离（英尺）\n    base_javelin_range = 400   # 普通投掷距离（英尺）\n    multiplier = 3             # 蓝宝石的增幅倍数\n\n    # 计算持有蓝宝石后的最大投掷距离\n    enhanced_javelin_range = base_javelin_range * multiplier\n\n    # 计算超出龙火范围的安全距离\n    safe_distance_outside_flames = enhanced_javelin_range - dragon_flame_range\n\n    # 输出结果\n    print(f\"Polly 持有蓝宝石后的最大投掷距离: {enhanced_javelin_range} 英尺\")\n    print(f\"龙火的覆盖范围: {dragon_flame_range} 英尺\")\n    print(f\"Polly 可以站在龙火范围之外的安全距离: {safe_distance_outside_flames} 英尺\")\n\n    return safe_distance_outside_flames\n\n# 执行计算\nresult = calculate_safe_distance()\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:50:06.162Z"
+  },
+  "GSM8K_42": {
+    "output": "```python\n# 已知条件\ntotal_pies = 5          # 苹果派总数\npieces_per_pie = 8      # 每个派切成的块数\nremaining_pieces = 14   # 剩余块数\n\n# 计算总块数\ntotal_pieces = total_pies * pieces_per_pie\n\n# 计算被客人拿走的块数\ntaken_pieces = total_pieces - remaining_pieces\n\n# 输出结果\nprint(f\"Total pieces: {total_pieces}\")\nprint(f\"Remaining pieces: {remaining_pieces}\")\nprint(f\"Pieces taken by guests: {taken_pieces}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:50:18.462Z"
+  },
+  "GSM8K_43": {
+    "output": "**解题思路：**\n\n1. 计算剩余可摄入的卡路里：`2000 - 1800 = 200` 卡路里。\n2. 计算每份薯片的克数：`300g / 5份 = 60g/份`。\n3. 计算每克薯片的卡路里密度：`250卡路里 / 60g`。\n4. 用剩余卡路里除以卡路里密度，得到可食用的克数；或者直接按份换算：`(200 / 250) * 60 = 48g`。\n\n**Python 代码：**\n\n```python\ndef calculate_recommended_intake():\n    # 已知条件\n    calories_per_serving = 250          # 每份卡路里\n    bag_weight_grams = 300              # 一袋总克数\n    servings_per_bag = 5                # 每袋份数\n    daily_calorie_target = 2000         # 每日目标\n    calories_already_consumed = 1800    # 已摄入卡路里\n\n    # 计算剩余可摄入卡路里\n    remaining_calories = daily_calorie_target - calories_already_consumed\n\n    # 计算每份对应的克数\n    grams_per_serving = bag_weight_grams / servings_per_bag\n\n    # 计算可食用的克数\n    # 方式1：按卡路里比例换算\n    ratio = remaining_calories / calories_per_serving\n    grams_can_eat = ratio * grams_per_serving\n\n    # 输出结果\n    print(f\"剩余可摄入卡路里: {remaining_calories} cal\")\n    print(f\"每份薯片重量: {grams_per_serving} g\")\n    print(f\"你还能吃: {grams_can_eat} g 的薯片\")\n\n    return grams_can_eat\n\n# 执行计算\nresult = calculate_recommended_intake()\n```\n\n**运行结果：**\n```\n剩余可摄入卡路里: 200 cal\n每份薯片重量: 60.0 g\n你还能吃: 48.0 g 的薯片\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:50:33.330Z"
+  },
+  "GSM8K_44": {
+    "output": "**解题思路：**\n\n1. 计算制作20支蜡烛所需的蜂蜡磅数：20支 ÷ 10支/磅 = 2磅。\n2. 计算总成本：2磅 × $10.00/磅 = $20.00。\n3. 计算总销售收入：20支 × $2.00/支 = $40.00。\n4. 计算净利润：$40.00 − $20.00 = $20.00。\n\n**Python 代码实现：**\n\n```python\ndef calculate_net_profit():\n    # 已知条件\n    candles_made = 20              # 制作并销售的蜡烛数量\n    candles_per_pound = 10         # 每磅蜂蜡可制作的蜡烛数量\n    cost_per_pound = 10.00         # 每磅蜂蜡和灯芯的成本（美元）\n    selling_price = 2.00           # 每支蜡烛的售价（美元）\n    \n    # 步骤1: 计算所需蜂蜡磅数\n    pounds_needed = candles_made / candles_per_pound\n    \n    # 步骤2: 计算总成本\n    total_cost = pounds_needed * cost_per_pound\n    \n    # 步骤3: 计算总销售收入\n    total_revenue = candles_made * selling_price\n    \n    # 步骤4: 计算净利润\n    net_profit = total_revenue - total_cost\n    \n    return net_profit\n\n# 执行计算并输出结果\nprofit = calculate_net_profit()\nprint(f\"Charlie的净利润是: ${profit:.2f}\")\n```\n\n运行结果：\n```\nCharlie的净利润是: $20.00\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:50:53.917Z"
+  },
+  "GSM8K_45": {
+    "output": "```python\n# 基础数据\nhours_per_article = 4\nmonday_articles = 5\n\n# 周二的文章数：比周一多 2/5\ntuesday_articles = monday_articles * (1 + 2/5)\n\n# 周三的文章数：是周二的两倍\nwednesday_articles = tuesday_articles * 2\n\n# 总文章数\ntotal_articles = monday_articles + tuesday_articles + wednesday_articles\n\n# 总小时数\ntotal_hours = total_articles * hours_per_article\n\n# 输出结果\nprint(f\"Monday articles: {monday_articles}\")\nprint(f\"Tuesday articles: {tuesday_articles}\")\nprint(f\"Wednesday articles: {wednesday_articles}\")\nprint(f\"Total articles: {total_articles}\")\nprint(f\"Total hours spent: {total_hours}\")\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:51:03.698Z"
+  },
+  "GSM8K_46": {
+    "output": "```python\n# 设购买的那包便利贴有 x 张\n# 初始有 80 张，买了 x 张，使用了 220 张，剩余 23 张\n# 方程：80 + x - 220 = 23\n\ninitial = 80\nused = 220\nremaining = 23\n\nx = remaining + used - initial\nprint(x)\n```\n\n运行结果：\n\n```\n163\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:51:08.780Z"
+  },
+  "GSM8K_47": {
+    "output": "**解题思路：**\n\n1. 先算出蓝色领带的数量：总价 $200 ÷ 单价 $40 = 5 条。\n2. 红色领带数量是蓝色的 2 倍：5 × 2 = 10 条。\n3. 红色领带单价比蓝色贵 50%：$40 × 1.5 = $60。\n4. 红色领带总价：10 × $60 = $600。\n5. 总花费 = 蓝色领带总价 + 红色领带总价 = $200 + $600 = $800。\n\n**Python 代码：**\n\n```python\n# 已知数据\nblue_spent = 200          # 蓝色领带总花费\nblue_price = 40           # 蓝色领带单价\n\n# 1. 蓝色领带数量\nblue_count = blue_spent / blue_price\n\n# 2. 红色领带数量（蓝色的两倍）\nred_count = 2 * blue_count\n\n# 3. 红色领带单价（比蓝色贵50%）\nred_price = blue_price * 1.5\n\n# 4. 红色领带总花费\nred_spent = red_count * red_price\n\n# 5. 总花费\ntotal_spent = blue_spent + red_spent\n\nprint(f\"John spent ${total_spent:.2f} on ties.\")\n```\n\n运行结果：\n```\nJohn spent $800.00 on ties.\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:51:39.454Z"
+  },
+  "GSM8K_48": {
+    "output": "**解题思路：**\n\n1. **统一单位**：将总长度从英尺转换为英寸。1英尺 = 12英寸，因此4英尺 = 48英寸。\n2. **计算段数**：用总长度除以每段的长度，即 48 ÷ 6 = 8。\n3. **得出结果**：Tracy获得了8段铁丝。\n\n**Python代码实现：**\n\n```python\n# 定义铁丝总长度（英尺）和每段长度（英寸）\ntotal_length_feet = 4\npiece_length_inches = 6\ninches_per_foot = 12\n\n# 将英尺转换为英寸\ntotal_length_inches = total_length_feet * inches_per_foot\n\n# 计算可切成的段数\nnum_pieces = total_length_inches // piece_length_inches\n\n# 输出结果\nprint(f\"Tracy obtained {num_pieces} pieces of wire.\")\n# 输出: Tracy obtained 8 pieces of wire.\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:52:15.346Z"
+  },
+  "GSM8K_49": {
+    "output": "```python\n# 定义已知条件\ntotal_floors = 15\nunits_per_floor = 8\noccupied_ratio = 3 / 4\n\n# 计算总单元数\ntotal_units = total_floors * units_per_floor\n\n# 计算未占用单元数\nunoccupied_units = total_units * (1 - occupied_ratio)\n\n# 输出结果\nprint(int(unoccupied_units))\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:52:42.222Z"
+  },
+  "Algo_MBPP_0": {
+    "output": "**解题思路**\n1. 以每行元素之和作为排序关键字。\n2. 使用语言内置的排序函数（如 Python 的 `sorted` / `list.sort`），将 `sum` 作为 `key`，按升序排列所有行。\n3. 时间复杂度 $O(m \\cdot n \\cdot \\log m)$（$m$ 为行数，$n$ 为列数），空间复杂度 $O(m)$。\n\n**Python 代码实现（纯内置类型）**\n\n```python\ndef sort_matrix_by_row_sum(matrix):\n    \"\"\"按行和升序排序矩阵，返回新矩阵\"\"\"\n    return sorted(matrix, key=sum)\n\n\ndef sort_matrix_by_row_sum_inplace(matrix):\n    \"\"\"原地按行和升序排序矩阵\"\"\"\n    matrix.sort(key=sum)\n    return matrix\n\n\n# 示例\nif __name__ == \"__main__\":\n    mat = [\n        [3, 1, 2],\n        [1, 1],\n        [5, 5, 5, 5],\n        [0, 0]\n    ]\n    print(sort_matrix_by_row_sum(mat))\n    # 输出: [[0, 0], [1, 1], [3, 1, 2], [5, 5, 5, 5]]\n```\n\n**NumPy 版本（若输入为 `ndarray`）**\n\n```python\nimport numpy as np\n\ndef sort_matrix_by_row_sum_numpy(matrix):\n    row_sums = matrix.sum(axis=1)\n    sorted_indices = np.argsort(row_sums)\n    return matrix[sorted_indices]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:53:26.074Z"
+  },
+  "Algo_MBPP_1": {
+    "output": "The volume of a triangular prism is the area of its triangular base multiplied by its length (the distance between the two triangular faces).\n\n**Formula:** `V = 0.5 * base * height * length`\n\n```python\ndef triangular_prism_volume(base, height, length):\n    \"\"\"\n    Calculate the volume of a triangular prism.\n    \n    Args:\n        base (float): The base of the triangular face.\n        height (float): The height of the triangular face.\n        length (float): The length (depth) of the prism.\n    \n    Returns:\n        float: The volume of the triangular prism.\n    \n    Raises:\n        ValueError: If any dimension is negative.\n    \"\"\"\n    if any(dim < 0 for dim in (base, height, length)):\n        raise ValueError(\"Dimensions must be non-negative\")\n    \n    return 0.5 * base * height * length\n\n\n# Example usage\nif __name__ == \"__main__\":\n    print(triangular_prism_volume(3, 4, 10))  # Output: 60.0\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:53:36.545Z"
+  },
+  "Algo_MBPP_2": {
+    "output": "**Approach**  \nUse a regular expression to match one or more lowercase letter groups separated by underscores. The pattern `[a-z]+(?:_[a-z]+)+` ensures the match contains at least two lowercase words joined by one or more underscores.\n\n**Implementation**\n\n```python\nimport re\n\ndef find_lowercase_underscore_sequences(text: str) -> list[str]:\n    \"\"\"\n    Finds all subsequences of lowercase letters joined with underscores.\n    Example matches: 'hello_world', 'foo_bar_baz'\n    \"\"\"\n    pattern = r'[a-z]+(?:_[a-z]+)+'\n    return re.findall(pattern, text)\n\n\n# Example usage\nif __name__ == \"__main__\":\n    sample = \"Some examples: hello_world, foo_bar_baz, Not_Match, test_123, a_b.\"\n    print(find_lowercase_underscore_sequences(sample))\n    # Output: ['hello_world', 'foo_bar_baz', 'a_b']\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:54:23.105Z"
+  },
+  "Algo_MBPP_3": {
+    "output": "**解题思路**\n\n正方形四边相等，周长即为边长的 4 倍。  \n- 输入：边长 `side`  \n- 输出：`4 * side`  \n- 若需鲁棒性，可对负数输入进行校验。  \n- 时间复杂度：O(1)；空间复杂度：O(1)。\n\n**代码实现（Python）**\n\n```python\ndef square_perimeter(side):\n    if side < 0:\n        raise ValueError(\"Side length must be non-negative\")\n    return 4 * side\n```\n\n**代码实现（C++）**\n\n```cpp\n#include <stdexcept>\n\ndouble square_perimeter(double side) {\n    if (side < 0) {\n        throw std::invalid_argument(\"Side length must be non-negative\");\n    }\n    return 4 * side;\n}\n```\n\n**代码实现（JavaScript）**\n\n```javascript\nfunction squarePerimeter(side) {\n    if (side < 0) {\n        throw new Error(\"Side length must be non-negative\");\n    }\n    return 4 * side;\n}\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:54:29.866Z"
+  },
+  "Algo_MBPP_4": {
+    "output": "**解题思路**  \n使用哈希集合记录已经遍历过的元素。遍历数组时，若当前元素已存在于集合中，则立即返回存在重复；否则将其加入集合。若遍历结束未发现重复，则返回不存在。\n\n**代码实现（Python）**\n\n```python\ndef contains_duplicate(nums):\n    seen = set()\n    for num in nums:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False\n```\n\n**复杂度分析**  \n- 时间复杂度：$O(n)$，其中 $n$ 为数组长度。  \n- 空间复杂度：$O(n)$，用于存储哈希集合。",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:54:44.804Z"
+  },
+  "Algo_MBPP_5": {
+    "output": "**解题思路**\n\n要找到整数 `n` 的前 `m` 个倍数，只需遍历 `1` 到 `m`，将每个索引 `i` 与 `n` 相乘，得到序列 `n×1, n×2, ..., n×m`。  \n- 时间复杂度：O(m)  \n- 空间复杂度：O(m)（返回结果列表）\n\n**代码实现（Python）**\n\n```python\ndef find_multiples(n, m):\n    \"\"\"\n    返回 n 的前 m 个倍数。\n    如果 m <= 0，返回空列表。\n    \"\"\"\n    if m <= 0:\n        return []\n    return [n * i for i in range(1, m + 1)]\n\n\n# 示例\nprint(find_multiples(3, 5))   # 输出: [3, 6, 9, 12, 15]\nprint(find_multiples(7, 3))   # 输出: [7, 14, 21]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:55:09.014Z"
+  },
+  "Algo_MBPP_6": {
+    "output": "**Approach**\n\nScan the array from left to right while maintaining a hash set of elements already seen.  \nThe first time an element is encountered that already exists in the set, return it—this is the first duplicate (the one whose second occurrence appears earliest).  \nIf the loop finishes without finding a duplicate, return `None` (or any sentinel of your choice).\n\n- **Time complexity:** `O(n)`\n- **Space complexity:** `O(n)`\n\n```python\ndef first_duplicate(arr):\n    seen = set()\n    for num in arr:\n        if num in seen:\n            return num\n        seen.add(num)\n    return None\n\n\n# Example usage\nif __name__ == \"__main__\":\n    print(first_duplicate([2, 1, 3, 2, 5, 3]))  # Output: 2\n    print(first_duplicate([1, 2, 3, 4]))        # Output: None\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:55:21.680Z"
+  },
+  "Algo_MBPP_7": {
+    "output": "```python\ndef max_sum_of_sublists(list_of_lists):\n    \"\"\"\n    Returns the maximum sum of elements among all sublists.\n    Returns None if the input list is empty.\n    \"\"\"\n    if not list_of_lists:\n        return None\n    return max(sum(sublist) for sublist in list_of_lists)\n\n\n# Example usage\nif __name__ == \"__main__\":\n    data = [[1, 2, 3], [4, 5, 6, 7], [8, 9], [0]]\n    print(max_sum_of_sublists(data))  # Output: 22\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:55:42.628Z"
+  },
+  "Algo_MBPP_8": {
+    "output": "**解题思路**\n\n从二进制字符串的最高位开始逐位处理。维护一个累加变量 `decimal`，每读取一个新位时，将当前 `decimal` 左移一位（即乘以 2），再加上当前位的数值（0 或 1）。遍历完成后，`decimal` 即为所求的十进制结果。该算法时间复杂度为 $O(n)$，空间复杂度为 $O(1)$，其中 $n$ 为二进制位数。\n\n**代码实现（Python）**\n\n```python\ndef binary_to_decimal(binary_str):\n    \"\"\"\n    将二进制字符串转换为十进制整数。\n    \n    参数:\n        binary_str: 由 '0' 和 '1' 组成的字符串\n    返回:\n        对应的十进制整数\n    \"\"\"\n    if not binary_str:\n        return 0\n    \n    decimal = 0\n    for ch in binary_str:\n        if ch not in ('0', '1'):\n            raise ValueError(f\"非法字符 '{ch}'，输入必须为二进制字符串\")\n        decimal = decimal * 2 + (ord(ch) - 48)  # 等效于 int(ch)\n    \n    return decimal\n\n\n# 示例\nif __name__ == \"__main__\":\n    print(binary_to_decimal(\"1010\"))   # 输出: 10\n    print(binary_to_decimal(\"11111111\"))  # 输出: 255\n    print(binary_to_decimal(\"0\"))      # 输出: 0\n```\n\n**代码实现（C++）**\n\n```cpp\n#include <string>\n#include <stdexcept>\n\nlong long binaryToDecimal(const std::string& binaryStr) {\n    if (binaryStr.empty()) return 0;\n    \n    long long decimal = 0;\n    for (char ch : binaryStr) {\n        if (ch != '0' && ch != '1') {\n            throw std::invalid_argument(\"Input must be a binary string\");\n        }\n        decimal = (decimal << 1) | (ch - '0');\n    }\n    return decimal;\n}\n```\n\n**代码实现（JavaScript）**\n\n```javascript\nfunction binaryToDecimal(binaryStr) {\n    if (!binaryStr) return 0;\n    \n    let decimal = 0;\n    for (let i = 0; i < binaryStr.length; i++) {\n        const ch = binaryStr[i];\n        if (ch !== '0' && ch !== '1') {\n            throw new Error(`Invalid character '${ch}' in binary string`);\n        }\n        decimal = (decimal << 1) | (ch & 1);\n    }\n    return decimal;\n}\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:56:22.154Z"
+  },
+  "Algo_MBPP_9": {
+    "output": "```python\nfrom collections import Counter\n\ndef product_of_non_repeated(arr):\n    \"\"\"\n    Returns the product of elements that appear exactly once in the array.\n    Returns 1 if there are no non-repeated elements (empty product).\n    Time: O(n), Space: O(n)\n    \"\"\"\n    freq = Counter(arr)\n    product = 1\n    for num, count in freq.items():\n        if count == 1:\n            product *= num\n    return product\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:57:17.535Z"
+  },
+  "Algo_MBPP_10": {
+    "output": "```python\ndef binomial_coefficient(n, k):\n    \"\"\"\n    Compute the binomial coefficient C(n, k) = n! / (k! * (n-k)!).\n    \n    Args:\n        n: Total number of items (non-negative integer).\n        k: Number of items to choose (non-negative integer).\n    \n    Returns:\n        The binomial coefficient as an integer.\n        Returns 0 if k < 0 or k > n.\n    \"\"\"\n    if k < 0 or k > n:\n        return 0\n    if k == 0 or k == n:\n        return 1\n    \n    # Take advantage of symmetry: C(n, k) == C(n, n-k)\n    k = min(k, n - k)\n    \n    result = 1\n    for i in range(1, k + 1):\n        result = result * (n - i + 1) // i\n    \n    return result\n\n\n# Alternative one-liner using the standard library (Python 3.8+)\nimport math\n\ndef binomial_coefficient_math(n, k):\n    \"\"\"Compute binomial coefficient using math.comb.\"\"\"\n    if k < 0 or k > n:\n        return 0\n    return math.comb(n, k)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:57:29.514Z"
+  },
+  "Algo_MBPP_11": {
+    "output": "**思路 1：哈希计数（通用，适用于找出所有出现奇数次的元素）**\n遍历数组统计频次，筛选出计数为奇数的元素。时间复杂度 $O(n)$，空间复杂度 $O(n)$。\n\n```python\nfrom collections import Counter\n\ndef find_odd_occurrences(arr):\n    \"\"\"返回所有出现奇数次的元素列表\"\"\"\n    return [x for x, cnt in Counter(arr).items() if cnt % 2 == 1]\n```\n\n**思路 2：异或运算（最优，仅适用于恰好一个元素出现奇数次）**\n利用异或的性质 `a ^ a = 0` 和 `a ^ 0 = a`，将所有元素异或起来，偶数次出现的元素会相互抵消，最终结果就是那个出现奇数次的元素。时间复杂度 $O(n)$，空间复杂度 $O(1)$。\n\n```python\ndef find_odd_occurrence(arr):\n    \"\"\"假设恰好有一个元素出现奇数次，返回该元素\"\"\"\n    result = 0\n    for num in arr:\n        result ^= num\n    return result\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T11:57:47.142Z"
+  },
+  "Algo_MBPP_12": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:00:55.643Z"
+  },
+  "Algo_MBPP_13": {
+    "output": "```python\ndef largest_prime_factor(n):\n    if n <= 1:\n        return None\n    \n    largest = -1\n    \n    while n % 2 == 0:\n        largest = 2\n        n //= 2\n    \n    i = 3\n    while i * i <= n:\n        while n % i == 0:\n            largest = i\n            n //= i\n        i += 2\n    \n    if n > 2:\n        largest = n\n    \n    return largest\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:02:35.877Z"
+  },
+  "Algo_MBPP_14": {
+    "output": "**思路：**  \n通过不断将十进制数除以 2，记录每次的余数（0 或 1），直到商为 0。最后将所有余数按相反顺序拼接，即为对应的二进制字符串。特殊情况处理：输入为 0 时直接返回 \"0\"；若支持负数，则先记录符号，对绝对值进行转换，最后再加上负号。\n\n**代码实现：**\n\n```python\ndef decimal_to_binary(n):\n    if n == 0:\n        return \"0\"\n    \n    is_negative = n < 0\n    n = abs(n)\n    bits = []\n    \n    while n > 0:\n        bits.append(str(n % 2))\n        n //= 2\n    \n    result = ''.join(reversed(bits))\n    return '-' + result if is_negative else result\n\n\n# 示例\nprint(decimal_to_binary(10))   # 输出: 1010\nprint(decimal_to_binary(0))    # 输出: 0\nprint(decimal_to_binary(-7))   # 输出: -111\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:02:59.606Z"
+  },
+  "Algo_MBPP_15": {
+    "output": "**思路**：利用二分查找（$O(\\log n)$）。对于从 `0` 开始的有序连续数组，正常应满足 `arr[i] == i`。若 `arr[mid] == mid`，说明缺失值在右半区；否则在左半区。最终 `left` 指针即为缺失数字。若数组完整，则缺失 `len(arr)`。\n\n```python\ndef find_missing_number(arr):\n    left, right = 0, len(arr) - 1\n    \n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] != mid:\n            right = mid - 1\n        else:\n            left = mid + 1\n            \n    return left\n```\n\n**说明**：\n- 时间复杂度：$O(\\log n)$\n- 空间复杂度：$O(1)$\n- 适用场景：数组为 $0, 1, 2, \\dots, n$ 中缺失一个数的严格递增序列。若序列从 `1` 开始，将判断条件改为 `arr[mid] != mid + 1` 并返回 `left + 1` 即可。",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:03:34.241Z"
+  },
+  "Algo_MBPP_16": {
+    "output": "**解题思路**\n\n矩形数（Rectangular / Pronic / Oblong number）指可以排成相邻两个整数边长矩形的点数，第 $n$ 个矩形数的公式为：\n\n$$R(n) = n \\times (n + 1)$$\n\n直接在 $O(1)$ 时间内计算即可。\n\n**代码实现（Python）**\n\n```python\ndef nth_rectangular(n: int) -> int:\n    \"\"\"\n    返回第 n 个矩形数（rectangular / pronic number）。\n    公式：n * (n + 1)\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"n must be a non-negative integer\")\n    return n * (n + 1)\n\n\n# 示例\nif __name__ == \"__main__\":\n    for i in range(6):\n        print(f\"R({i}) = {nth_rectangular(i)}\")\n    # 输出: 0, 2, 6, 12, 20, 30\n```\n\n**复杂度分析**\n\n- 时间复杂度：$O(1)$\n- 空间复杂度：$O(1)$",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:04:08.924Z"
+  },
+  "Algo_MBPP_17": {
+    "output": "```python\ndef nth_decimal_digit(numerator: int, denominator: int, n: int) -> int:\n    \"\"\"\n    Returns the nth digit after the decimal point in the fraction numerator/denominator.\n    Assumes 1-based indexing for n (n=1 is the first decimal digit).\n    Works for any fraction by using modulo to isolate the fractional part.\n    \"\"\"\n    if denominator == 0:\n        raise ValueError(\"Denominator cannot be zero\")\n    if n <= 0:\n        raise ValueError(\"n must be a positive integer\")\n\n    # Isolate the fractional part\n    remainder = numerator % denominator\n\n    # Perform long division n times\n    for _ in range(n):\n        remainder *= 10\n        digit = remainder // denominator\n        remainder = remainder % denominator\n\n    return digit\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:05:57.458Z"
+  },
+  "Algo_MBPP_18": {
+    "output": "**思路**  \nPython 3 中整数和字符串不能直接比较。利用 `sorted` 的 `key` 参数，将每个元素映射为一个元组 `(类型顺序, 元素值)`：整数对应 `(0, x)`，字符串对应 `(1, x)`。排序时先按类型分组（整数在前，字符串在后），同类型内部再按值升序排列。\n\n**代码实现**\n\n```python\ndef sort_mixed_list(mixed_list):\n    \"\"\"\n    Sort a mixed list of integers and strings.\n    Returns a new list with integers first (ascending), followed by strings (alphabetically).\n    \"\"\"\n    return sorted(mixed_list, key=lambda x: (isinstance(x, str), x))\n```\n\n如果需要原地修改原列表，可改用：\n\n```python\ndef sort_mixed_list(mixed_list):\n    mixed_list.sort(key=lambda x: (isinstance(x, str), x))\n    return mixed_list\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:06:27.843Z"
+  },
+  "Algo_MBPP_19": {
+    "output": "**解题思路**  \n1. 遍历列表一次，分别定位第一个偶数和第一个奇数。  \n2. 若两者均存在，返回偶数除以奇数的结果；默认返回浮点除法，可选项支持整数除法。  \n3. 若缺少偶数或奇数，返回 `None`（或可根据需要抛出异常）。\n\n**代码实现（Python）**\n\n```python\ndef divide_first_even_odd(nums, integer_division=False):\n    \"\"\"\n    Returns the division of the first even number by the first odd number in the list.\n    \n    Args:\n        nums: List of integers.\n        integer_division: If True, uses // (floor division); otherwise uses / (true division).\n    \n    Returns:\n        float or int: first_even / first_odd (or //). \n        None: if there is no even or no odd number in the list.\n    \"\"\"\n    first_even = None\n    first_odd = None\n\n    for num in nums:\n        if first_even is None and num % 2 == 0:\n            first_even = num\n        if first_odd is None and num % 2 != 0:\n            first_odd = num\n        if first_even is not None and first_odd is not None:\n            break\n\n    if first_even is None or first_odd is None:\n        return None\n\n    if integer_division:\n        return first_even // first_odd\n    return first_even / first_odd\n\n\n# 示例\nif __name__ == \"__main__\":\n    data = [3, 5, 8, 10, 7, 2]\n    print(divide_first_even_odd(data))          # 8 / 7 ≈ 1.142857...\n    print(divide_first_even_odd(data, True))    # 8 // 7 = 1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:09:17.167Z"
+  },
+  "Algo_MBPP_20": {
+    "output": "**思路**  \n1. 将嵌套的列表扁平化为单个可迭代对象。  \n2. 使用 `collections.Counter` 对扁平化后的元素进行频次统计。  \n\n```python\nfrom collections import Counter\nfrom itertools import chain\n\ndef element_frequency(list_of_lists):\n    \"\"\"\n    Returns a Counter with the frequency of each element \n    across all sublists.\n    \"\"\"\n    return Counter(chain.from_iterable(list_of_lists))\n\n\n# Example usage\nif __name__ == \"__main__\":\n    data = [[1, 2, 2], [3, 1, 4], [2, 3, 1]]\n    print(element_frequency(data))  \n    # Output: Counter({1: 3, 2: 3, 3: 2, 4: 1})\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:09:44.680Z"
+  },
+  "Algo_MBPP_21": {
+    "output": "**思路**: Count the frequency of each element in the array, then sum the values of elements that appear more than once (each repeated value counted only once).\n\n**Code**:\n\n```python\ndef sum_of_repeated(arr):\n    \"\"\"\n    Returns the sum of elements that appear more than once in the array.\n    Each repeated element is counted only once in the sum.\n    \"\"\"\n    freq = {}\n    for x in arr:\n        freq[x] = freq.get(x, 0) + 1\n    return sum(x for x, count in freq.items() if count > 1)\n\n\n# Example usage:\nif __name__ == \"__main__\":\n    arr = [1, 2, 2, 3, 3, 3, 4, 5, 5]\n    print(sum_of_repeated(arr))  # Output: 10 (2 + 3 + 5)\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:11:21.963Z"
+  },
+  "Algo_MBPP_22": {
+    "output": "```python\nimport re\n\ndef find_lowercase_underscore_sequences(text):\n    \"\"\"\n    Find all sequences of lowercase letters joined with an underscore.\n    Example: 'hello_world', 'foo_bar_baz'\n    \"\"\"\n    pattern = r'[a-z]+(?:_[a-z]+)+'\n    return re.findall(pattern, text)\n\n\n# Example usage\nif __name__ == \"__main__\":\n    sample = \"These are some snake_case words, like hello_world and foo_bar_baz, but Not_This or _invalid.\"\n    print(find_lowercase_underscore_sequences(sample))\n    # Output: ['hello_world', 'foo_bar_baz']\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:13:03.909Z"
+  },
+  "Algo_MBPP_23": {
+    "output": "**解题思路**\n\n1. 使用欧几里得算法（辗转相除法）实现两数求最大公约数 `gcd(a, b)`。\n2. 将数组第一个元素作为初始结果，依次与后面每个元素求 GCD，逐步累积得到整个数组的 GCD。\n3. 空数组可返回 `0`（或根据需求抛异常）；若数组只有一个元素，其 GCD 即为自身。\n\n**Python 实现**\n\n```python\ndef gcd_two(a, b):\n    \"\"\"欧几里得算法求两数最大公约数\"\"\"\n    while b:\n        a, b = b, a % b\n    return a\n\ndef find_gcd(arr):\n    \"\"\"求数组所有元素的最大公约数\"\"\"\n    if not arr:\n        return 0\n    result = arr[0]\n    for num in arr[1:]:\n        result = gcd_two(result, num)\n        if result == 1:          # 1 是最小可能的 GCD，提前退出\n            break\n    return result\n\n# 示例\nif __name__ == \"__main__\":\n    print(find_gcd([24, 36, 48]))  # 输出: 12\n    print(find_gcd([5, 10, 15]))   # 输出: 5\n    print(find_gcd([7, 13]))       # 输出: 1\n```\n\n**C++ 实现**\n\n```cpp\n#include <bits/stdc++.h>\nusing namespace std;\n\nint gcdTwo(int a, int b) {\n    while (b != 0) {\n        int temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n\nint findGcd(vector<int>& arr) {\n    if (arr.empty()) return 0;\n    int result = arr[0];\n    for (int i = 1; i < arr.size(); ++i) {\n        result = gcdTwo(result, arr[i]);\n        if (result == 1) break;\n    }\n    return result;\n}\n\n// 示例\nint main() {\n    vector<int> arr = {24, 36, 48};\n    cout << findGcd(arr) << endl;  // 输出: 12\n    return 0;\n}\n```\n\n**复杂度分析**\n\n- 时间复杂度：`O(n · log M)`，其中 `n` 为数组长度，`M` 为数组中的最大值。每次两数 GCD 计算耗时 `O(log M)`。\n- 空间复杂度：`O(1)`，仅使用常数额外空间。",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:13:13.239Z"
+  },
+  "Algo_MBPP_24": {
+    "output": "**Approach**\nCompare the length of the input sequence with the length of a set created from it. If they are equal, all elements are unique (time complexity O(n), space complexity O(n)). For early exit when duplicates appear at the beginning, use a hash set and iterate.\n\n**Code**\n```python\ndef all_different(numbers):\n    \"\"\"Return True if all numbers are distinct, else False.\"\"\"\n    return len(numbers) == len(set(numbers))\n\n\n# Early-exit version (faster when duplicates are found early)\ndef all_different_early_exit(numbers):\n    seen = set()\n    for num in numbers:\n        if num in seen:\n            return False\n        seen.add(num)\n    return True\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:13:47.526Z"
+  },
+  "Algo_MBPP_25": {
+    "output": "[Exception] fetch failed",
+    "status": "error",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:16:54.975Z"
+  },
+  "Algo_MBPP_26": {
+    "output": "**解题思路**\n\n使用 Python 内置函数 `min()`，将 `key` 参数设为一个 lambda 函数 `lambda x: len(x)`，使 `min()` 按照每个子列表的长度进行比较，从而直接返回长度最短的列表。若输入为空，返回 `None` 避免异常。\n\n**代码实现**\n\n```python\ndef find_min_length_list(lists):\n    \"\"\"Return the list with the minimum length from a list of lists.\"\"\"\n    return min(lists, key=lambda x: len(x)) if lists else None\n\n\n# 示例\nif __name__ == \"__main__\":\n    data = [[1, 2, 3], [4, 5], [6, 7, 8, 9], [10]]\n    result = find_min_length_list(data)\n    print(result)  # 输出: [10]\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:17:01.938Z"
+  },
+  "Algo_MBPP_27": {
+    "output": "**解题思路**\n1. 遍历数组找到最小值和最大值，确定数据范围，申请等长的计数数组（通过最小值偏移可同时支持负数）。\n2. 再次遍历原数组，将每个元素对应到计数数组中的位置，统计出现频次。\n3. 按计数数组下标从小到大的顺序展开，将对应元素写回结果数组或原数组。\n\n**代码实现（Python）**\n\n```python\ndef counting_sort(arr):\n    if not arr:\n        return []\n    \n    min_val = min(arr)\n    max_val = max(arr)\n    size = max_val - min_val + 1\n    count = [0] * size\n    \n    for num in arr:\n        count[num - min_val] += 1\n    \n    sorted_arr = []\n    for i in range(size):\n        if count[i]:\n            sorted_arr.extend([i + min_val] * count[i])\n    \n    return sorted_arr\n\n\n# 原地修改版本\ndef counting_sort_inplace(arr):\n    if not arr:\n        return\n    \n    min_val = min(arr)\n    max_val = max(arr)\n    size = max_val - min_val + 1\n    count = [0] * size\n    \n    for num in arr:\n        count[num - min_val] += 1\n    \n    idx = 0\n    for i in range(size):\n        while count[i] > 0:\n            arr[idx] = i + min_val\n            idx += 1\n            count[i] -= 1\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:17:22.732Z"
+  },
+  "Algo_MBPP_28": {
+    "output": "**解题思路**\n\n几何级数（等比数列）第 `n` 项的通项公式为：\n\n\\[\na_n = a \\cdot r^{(n-1)}\n\\]\n\n其中：\n- `a`：首项（第 1 项）\n- `r`：公比（相邻两项的比值）\n- `n`：要求的项数（`n ≥ 1`）\n\n直接使用幂运算即可，时间复杂度 **O(1)**。\n\n---\n\n**代码实现（Python）**\n\n```python\ndef geometric_term(a: float, r: float, n: int) -> float:\n    \"\"\"\n    返回几何级数的第 n 项。\n    \n    参数:\n        a: 首项\n        r: 公比\n        n: 项数 (1-based)\n    \n    返回:\n        第 n 项的值\n    \"\"\"\n    if n < 1:\n        raise ValueError(\"n must be a positive integer (>= 1)\")\n    return a * (r ** (n - 1))\n\n\n# 示例\nif __name__ == \"__main__\":\n    print(geometric_term(2, 3, 5))   # 2 * 3^4 = 162\n    print(geometric_term(5, 0.5, 4)) # 5 * 0.5^3 = 0.625\n    print(geometric_term(1, -2, 3))  # 1 * (-2)^2 = 4\n```\n\n---\n\n**代码实现（C++）**\n\n```cpp\n#include <cmath>\n#include <stdexcept>\n\ndouble geometric_term(double a, double r, int n) {\n    if (n < 1) {\n        throw std::invalid_argument(\"n must be a positive integer (>= 1)\");\n    }\n    return a * std::pow(r, n - 1);\n}\n\n// 示例\n// int main() {\n//     std::cout << geometric_term(2, 3, 5) << std::endl;   // 162\n//     std::cout << geometric_term(5, 0.5, 4) << std::endl; // 0.625\n//     return 0;\n// }\n```\n\n---\n\n**代码实现（JavaScript）**\n\n```javascript\nfunction geometricTerm(a, r, n) {\n    if (n < 1 || !Number.isInteger(n)) {\n        throw new Error(\"n must be a positive integer (>= 1)\");\n    }\n    return a * Math.pow(r, n - 1);\n}\n\n// 示例\n// console.log(geometricTerm(2, 3, 5));   // 162\n// console.log(geometricTerm(5, 0.5, 4)); // 0.625\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:17:33.001Z"
+  },
+  "Algo_MBPP_29": {
+    "output": "**Approach:** Convert the digits to strings, sort them in descending order, join them, and convert back to an integer to automatically drop any leading zeros.\n\n```python\ndef largest_number(digits):\n    \"\"\"\n    Forms the largest possible number from the given digits.\n    \n    Args:\n        digits: A list of digits (0-9) or a string of digits.\n        \n    Returns:\n        int: The largest number that can be formed.\n    \"\"\"\n    # Normalize integer input to string\n    if isinstance(digits, int):\n        digits = str(digits)\n    \n    if not digits:\n        return 0\n    \n    # Sort descending, join, and convert to int\n    return int(''.join(sorted(str(d) for d in digits, reverse=True)))\n\n\n# Examples\nprint(largest_number([3, 1, 4, 1]))      # 4311\nprint(largest_number(\"905\"))             # 950\nprint(largest_number([0, 0, 1]))         # 100\nprint(largest_number(23009))             # 93200\n```",
+    "status": "success",
+    "truncated": false,
+    "dim": "算法能力",
+    "timestamp": "2026-06-05T12:18:02.665Z"
+  }
+}
