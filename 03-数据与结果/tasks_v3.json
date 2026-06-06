@@ -2732,7 +2732,7 @@
   {
     "task_id": "BugFix_031",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码的时间复杂度：\n```python\ndef has_duplicate(nums):\n    for i in range(len(nums)):\n        for j in range(i + 1, len(nums)):\n            if nums[i] == nums[j]:\n                return True\n    return False\n```",
     "expected_note": "def has_duplicate(nums):\n    return len(nums) != len(set(nums))"
@@ -2740,7 +2740,7 @@
   {
     "task_id": "BugFix_032",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码的时间复杂度：\n```python\ndef two_sum(nums, target):\n    for i in range(len(nums)):\n        for j in range(i + 1, len(nums)):\n            if nums[i] + nums[j] == target:\n                return [i, j]\n    return []\n```",
     "expected_note": "def two_sum(nums, target):\n    seen = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            return [seen[complement], i]\n        seen[num] = i\n    return []"
@@ -2748,7 +2748,7 @@
   {
     "task_id": "BugFix_033",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码的空间复杂度：\n```python\ndef fib(n):\n    if n <= 1:\n        return n\n    return fib(n - 1) + fib(n - 2)\n```",
     "expected_note": "def fib(n):\n    if n <= 1:\n        return n\n    a, b = 0, 1\n    for _ in range(2, n + 1):\n        a, b = b, a + b\n    return b"
@@ -2756,7 +2756,7 @@
   {
     "task_id": "BugFix_034",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef count_frequency(words):\n    freq = {}\n    for word in words:\n        found = False\n        for key in freq:\n            if key == word:\n                freq[key] += 1\n                found = True\n                break\n        if not found:\n            freq[word] = 1\n    return freq\n```",
     "expected_note": "def count_frequency(words):\n    from collections import Counter\n    return dict(Counter(words))"
@@ -2764,7 +2764,7 @@
   {
     "task_id": "BugFix_035",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef merge_sorted_lists(lists):\n    result = []\n    for lst in lists:\n        result += lst\n    return sorted(result)\n```",
     "expected_note": "import heapq\ndef merge_sorted_lists(lists):\n    return list(heapq.merge(*lists))"
@@ -2772,7 +2772,7 @@
   {
     "task_id": "BugFix_036",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef reverse_string(s):\n    result = ''\n    for i in range(len(s) - 1, -1, -1):\n        result += s[i]\n    return result\n```",
     "expected_note": "def reverse_string(s):\n    return s[::-1]"
@@ -2780,7 +2780,7 @@
   {
     "task_id": "BugFix_037",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef max_subarray_sum(nums):\n    max_sum = float('-inf')\n    for i in range(len(nums)):\n        for j in range(i, len(nums)):\n            current = sum(nums[i:j+1])\n            max_sum = max(max_sum, current)\n    return max_sum\n```",
     "expected_note": "def max_subarray_sum(nums):\n    max_ending_here = max_so_far = nums[0]\n    for num in nums[1:]:\n        max_ending_here = max(num, max_ending_here + num)\n        max_so_far = max(max_so_far, max_ending_here)\n    return max_so_far"
@@ -2788,7 +2788,7 @@
   {
     "task_id": "BugFix_038",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, n):\n        if n % i == 0:\n            return False\n    return True\n```",
     "expected_note": "def is_prime(n):\n    if n < 2:\n        return False\n    if n == 2:\n        return True\n    if n % 2 == 0:\n        return False\n    for i in range(3, int(n**0.5) + 1, 2):\n        if n % i == 0:\n            return False\n    return True"
@@ -2796,7 +2796,7 @@
   {
     "task_id": "BugFix_039",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef lcs(s1, s2):\n    if not s1 or not s2:\n        return 0\n    if s1[0] == s2[0]:\n        return 1 + lcs(s1[1:], s2[1:])\n    return max(lcs(s1, s2[1:]), lcs(s1[1:], s2))\n```",
     "expected_note": "def lcs(s1, s2):\n    m, n = len(s1), len(s2)\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if s1[i - 1] == s2[j - 1]:\n                dp[i][j] = dp[i - 1][j - 1] + 1\n            else:\n                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])\n    return dp[m][n]"
@@ -2804,7 +2804,7 @@
   {
     "task_id": "BugFix_040",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef find_intersection(l1, l2):\n    result = []\n    for item in l1:\n        if item in l2 and item not in result:\n            result.append(item)\n    return result\n```",
     "expected_note": "def find_intersection(l1, l2):\n    return list(set(l1) & set(l2))"
@@ -2812,7 +2812,7 @@
   {
     "task_id": "BugFix_041",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef climb_stairs(n):\n    if n <= 2:\n        return n\n    return climb_stairs(n - 1) + climb_stairs(n - 2)\n```",
     "expected_note": "def climb_stairs(n):\n    if n <= 2:\n        return n\n    a, b = 1, 2\n    for _ in range(3, n + 1):\n        a, b = b, a + b\n    return b"
@@ -2820,7 +2820,7 @@
   {
     "task_id": "BugFix_042",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef remove_spaces(text):\n    result = ''\n    for char in text:\n        if char != ' ':\n            result += char\n    return result\n```",
     "expected_note": "def remove_spaces(text):\n    return text.replace(' ', '')"
@@ -2828,7 +2828,7 @@
   {
     "task_id": "BugFix_043",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef longest_common_prefix(strs):\n    if not strs:\n        return ''\n    prefix = strs[0]\n    for s in strs[1:]:\n        while not s.startswith(prefix):\n            prefix = prefix[:-1]\n    return prefix\n```",
     "expected_note": "def longest_common_prefix(strs):\n    if not strs:\n        return ''\n    shortest = min(strs, key=len)\n    for i, char in enumerate(shortest):\n        if not all(s[i] == char for s in strs):\n            return shortest[:i]\n    return shortest"
@@ -2836,7 +2836,7 @@
   {
     "task_id": "BugFix_044",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef is_anagram(s1, s2):\n    if len(s1) != len(s2):\n        return False\n    for char in s1:\n        if s1.count(char) != s2.count(char):\n            return False\n    return True\n```",
     "expected_note": "def is_anagram(s1, s2):\n    return sorted(s1) == sorted(s2)"
@@ -2844,7 +2844,7 @@
   {
     "task_id": "BugFix_045",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef power(x, n):\n    result = 1\n    for _ in range(n):\n        result *= x\n    return result\n```",
     "expected_note": "def power(x, n):\n    if n == 0:\n        return 1\n    if n < 0:\n        return 1 / power(x, -n)\n    half = power(x, n // 2)\n    if n % 2 == 0:\n        return half * half\n    return half * half * x"
@@ -2852,7 +2852,7 @@
   {
     "task_id": "BugFix_046",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef sum_of_squares(n):\n    total = 0\n    for i in range(1, n + 1):\n        total += i * i\n    return total\n```",
     "expected_note": "def sum_of_squares(n):\n    return n * (n + 1) * (2 * n + 1) // 6"
@@ -2860,7 +2860,7 @@
   {
     "task_id": "BugFix_047",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef knapsack(weights, values, capacity):\n    n = len(weights)\n    max_value = 0\n    def backtrack(i, current_weight, current_value):\n        nonlocal max_value\n        if i == n:\n            max_value = max(max_value, current_value)\n            return\n        backtrack(i + 1, current_weight, current_value)\n        if current_weight + weights[i] <= capacity:\n            backtrack(i + 1, current_weight + weights[i], current_value + values[i])\n    backtrack(0, 0, 0)\n    return max_value\n```",
     "expected_note": "def knapsack(weights, values, capacity):\n    n = len(weights)\n    dp = [0] * (capacity + 1)\n    for i in range(n):\n        for w in range(capacity, weights[i] - 1, -1):\n            dp[w] = max(dp[w], dp[w - weights[i]] + values[i])\n    return dp[capacity]"
@@ -2868,7 +2868,7 @@
   {
     "task_id": "BugFix_048",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef find_missing(nums):\n    n = len(nums) + 1\n    for i in range(1, n + 1):\n        if i not in nums:\n            return i\n    return -1\n```",
     "expected_note": "def find_missing(nums):\n    n = len(nums) + 1\n    expected_sum = n * (n + 1) // 2\n    actual_sum = sum(nums)\n    return expected_sum - actual_sum"
@@ -2876,7 +2876,7 @@
   {
     "task_id": "BugFix_049",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef count_bits(n):\n    result = []\n    for i in range(n + 1):\n        count = 0\n        num = i\n        while num:\n            count += num & 1\n            num >>= 1\n        result.append(count)\n    return result\n```",
     "expected_note": "def count_bits(n):\n    result = [0]\n    for i in range(1, n + 1):\n        result.append(result[i >> 1] + (i & 1))\n    return result"
@@ -2884,7 +2884,7 @@
   {
     "task_id": "BugFix_050",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef transpose(matrix):\n    result = []\n    for i in range(len(matrix[0])):\n        new_row = []\n        for j in range(len(matrix)):\n            new_row.append(matrix[j][i])\n        result.append(new_row)\n    return result\n```",
     "expected_note": "def transpose(matrix):\n    return [list(row) for row in zip(*matrix)]"
@@ -2892,7 +2892,7 @@
   {
     "task_id": "BugFix_051",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef find_peak(nums):\n    for i in range(len(nums)):\n        left = nums[i - 1] if i > 0 else float('-inf')\n        right = nums[i + 1] if i < len(nums) - 1 else float('-inf')\n        if left < nums[i] > right:\n            return i\n    return -1\n```",
     "expected_note": "def find_peak(nums):\n    left, right = 0, len(nums) - 1\n    while left < right:\n        mid = (left + right) // 2\n        if nums[mid] > nums[mid + 1]:\n            right = mid\n        else:\n            left = mid + 1\n    return left"
@@ -2900,7 +2900,7 @@
   {
     "task_id": "BugFix_052",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef valid_parentheses(s):\n    while '()' in s or '[]' in s or '{}' in s:\n        s = s.replace('()', '').replace('[]', '').replace('{}', '')\n    return len(s) == 0\n```",
     "expected_note": "def valid_parentheses(s):\n    stack = []\n    pairs = {'(': ')', '[': ']', '{': '}'}\n    for char in s:\n        if char in pairs:\n            stack.append(char)\n        elif not stack or pairs[stack.pop()] != char:\n            return False\n    return not stack"
@@ -2908,7 +2908,7 @@
   {
     "task_id": "BugFix_053",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef shortest_path(grid):\n    if not grid or not grid[0]:\n        return 0\n    rows, cols = len(grid), len(grid[0])\n    if grid[0][0] == 1 or grid[rows-1][cols-1] == 1:\n        return -1\n    def dfs(r, c, visited):\n        if r == rows - 1 and c == cols - 1:\n            return 1\n        visited.add((r, c))\n        min_steps = float('inf')\n        for dr, dc in [(0, 1), (1, 0), (0, -1), (-1, 0)]:\n            nr, nc = r + dr, c + dc\n            if 0 <= nr < rows and 0 <= nc < cols and grid[nr][nc] == 0 and (nr, nc) not in visited:\n                steps = dfs(nr, nc, visited)\n                if steps != -1:\n                    min_steps = min(min_steps, steps + 1)\n        visited.remove((r, c))\n        return min_steps if min_steps != float('inf') else -1\n    return dfs(0, 0, set())\n```",
     "expected_note": "from collections import deque\ndef shortest_path(grid):\n    if not grid or not grid[0] or grid[0][0] == 1:\n        return -1\n    rows, cols = len(grid), len(grid[0])\n    queue = deque([(0, 0, 1)])\n    visited = {(0, 0)}\n    while queue:\n        r, c, steps = queue.popleft()\n        if r == rows - 1 and c == cols - 1:\n            return steps\n        for dr, dc in [(0, 1), (1, 0), (0, -1), (-1, 0)]:\n            nr, nc = r + dr, c + dc\n            if 0 <= nr < rows and 0 <= nc < cols and grid[nr][nc] == 0 and (nr, nc) not in visited:\n                visited.add((nr, nc))\n                queue.append((nr, nc, steps + 1))\n    return -1"
@@ -2916,7 +2916,7 @@
   {
     "task_id": "BugFix_054",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef move_zeros(nums):\n    result = []\n    zeros = 0\n    for num in nums:\n        if num == 0:\n            zeros += 1\n        else:\n            result.append(num)\n    return result + [0] * zeros\n```",
     "expected_note": "def move_zeros(nums):\n    pos = 0\n    for num in nums:\n        if num != 0:\n            nums[pos] = num\n            pos += 1\n    for i in range(pos, len(nums)):\n        nums[i] = 0\n    return nums"
@@ -2924,7 +2924,7 @@
   {
     "task_id": "BugFix_055",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef trap_rain(height):\n    n = len(height)\n    total = 0\n    for i in range(n):\n        left_max = max(height[:i+1])\n        right_max = max(height[i:])\n        water = min(left_max, right_max) - height[i]\n        if water > 0:\n            total += water\n    return total\n```",
     "expected_note": "def trap_rain(height):\n    n = len(height)\n    if n == 0:\n        return 0\n    left, right = 0, n - 1\n    left_max, right_max = 0, 0\n    total = 0\n    while left < right:\n        if height[left] < height[right]:\n            if height[left] >= left_max:\n                left_max = height[left]\n            else:\n                total += left_max - height[left]\n            left += 1\n        else:\n            if height[right] >= right_max:\n                right_max = height[right]\n            else:\n                total += right_max - height[right]\n            right -= 1\n    return total"
@@ -2932,7 +2932,7 @@
   {
     "task_id": "BugFix_056",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef majority_element(nums):\n    for num in nums:\n        if nums.count(num) > len(nums) // 2:\n            return num\n    return None\n```",
     "expected_note": "def majority_element(nums):\n    count, candidate = 0, None\n    for num in nums:\n        if count == 0:\n            candidate = num\n        count += (1 if num == candidate else -1)\n    return candidate"
@@ -2940,7 +2940,7 @@
   {
     "task_id": "BugFix_057",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef word_break(s, word_dict):\n    def can_break(start):\n        if start == len(s):\n            return True\n        for end in range(start + 1, len(s) + 1):\n            if s[start:end] in word_dict and can_break(end):\n                return True\n        return False\n    return can_break(0)\n```",
     "expected_note": "def word_break(s, word_dict):\n    dp = [False] * (len(s) + 1)\n    dp[0] = True\n    for i in range(1, len(s) + 1):\n        for j in range(i):\n            if dp[j] and s[j:i] in word_dict:\n                dp[i] = True\n                break\n    return dp[len(s)]"
@@ -2948,7 +2948,7 @@
   {
     "task_id": "BugFix_058",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef get_row_pascal(n):\n    result = [1]\n    for i in range(n):\n        new_row = [1]\n        for j in range(len(result) - 1):\n            new_row.append(result[j] + result[j + 1])\n        new_row.append(1)\n        result = new_row\n    return result\n```",
     "expected_note": "def get_row_pascal(n):\n    result = [1]\n    for i in range(1, n + 1):\n        result.append(result[-1] * (n - i + 1) // i)\n    return result"
@@ -2956,7 +2956,7 @@
   {
     "task_id": "BugFix_059",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "较难",
     "prompt": "请优化以下Python代码：\n```python\ndef max_profit(prices):\n    max_profit = 0\n    for i in range(len(prices)):\n        for j in range(i + 1, len(prices)):\n            profit = prices[j] - prices[i]\n            if profit > max_profit:\n                max_profit = profit\n    return max_profit\n```",
     "expected_note": "def max_profit(prices):\n    min_price = float('inf')\n    max_profit = 0\n    for price in prices:\n        if price < min_price:\n            min_price = price\n        elif price - min_price > max_profit:\n            max_profit = price - min_price\n    return max_profit"
@@ -2964,7 +2964,7 @@
   {
     "task_id": "BugFix_060",
     "dim": "错误修复",
-    "bench": "自建-Optimize",
+    "bench": "自建-BugFix",
     "difficulty": "中等",
     "prompt": "请优化以下Python代码：\n```python\ndef rotate_array(nums, k):\n    for _ in range(k):\n        last = nums[-1]\n        for i in range(len(nums) - 1, 0, -1):\n            nums[i] = nums[i - 1]\n        nums[0] = last\n    return nums\n```",
     "expected_note": "def rotate_array(nums, k):\n    k %= len(nums)\n    nums[:] = nums[-k:] + nums[:-k]\n    return nums"

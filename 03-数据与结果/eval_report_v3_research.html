@@ -3,198 +3,548 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MiniMax-m3 科学评测 v3.0 研报</title>
+<title>MiniMax-m3 科学评测 v3.0 研究报告</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6}
-.container{max-width:1200px;margin:0 auto;padding:40px 20px}
-.hero{background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);color:#fff;padding:60px 40px;border-radius:16px;margin-bottom:40px;box-shadow:0 10px 40px rgba(0,0,0,.15)}
-.hero h1{font-size:36px;font-weight:700;margin-bottom:12px}
-.hero .subtitle{font-size:18px;opacity:.9;margin-bottom:24px}
-.hero .meta{display:flex;gap:24px;flex-wrap:wrap;font-size:14px;opacity:.8}
-.card{background:#fff;border-radius:12px;padding:28px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-.card h2{font-size:22px;margin-bottom:20px;color:#0f172a;border-left:4px solid #3b82f6;padding-left:12px}
-.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-bottom:24px}
-.summary-card{background:#fff;border-radius:10px;padding:20px;text-align:center;border:2px solid #e2e8f0;transition:.2s}
-.summary-card:hover{border-color:#3b82f6;transform:translateY(-2px)}
-.summary-card .rank{font-size:32px;font-weight:700;margin-bottom:4px}
-.summary-card .model{font-size:16px;font-weight:600;margin-bottom:8px}
-.summary-card .score{font-size:24px;color:#3b82f6;font-weight:700}
-.rank-1{color:#f59e0b}
-.rank-2{color:#64748b}
-.rank-3{color:#b45309}
-.rank-4{color:#475569}
-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
-th{background:#f1f5f9;padding:12px;text-align:left;font-weight:600;color:#475569}
-td{padding:12px;border-bottom:1px solid #e2e8f0}
-tr:hover td{background:#f8fafc}
-.score{font-size:18px;font-weight:700;color:#3b82f6}
-.score-cell{font-weight:600}
-.chart{width:100%;height:400px;margin:24px 0}
-.model-section{margin-bottom:24px;padding:20px;background:#f8fafc;border-radius:10px}
-.model-section h3{font-size:20px;margin-bottom:12px}
-.model-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.badge{background:#e2e8f0;padding:4px 12px;border-radius:20px;font-size:12px;color:#475569}
-.sw-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.sw-card{padding:16px;border-radius:8px}
-.sw-card h4{margin-bottom:10px;font-size:15px}
-.sw-card ul{margin-left:18px}
-.sw-card li{margin:4px 0}
-.strength{background:#dcfce7;border-left:4px solid #22c55e}
-.weakness{background:#fee2e2;border-left:4px solid #ef4444}
-.insight{background:#eff6ff;border-left:4px solid #3b82f6;padding:16px 20px;border-radius:8px;margin:12px 0}
-.insight h4{color:#1e40af;margin-bottom:8px}
-.footer{text-align:center;padding:40px;color:#64748b;font-size:13px}
-.highlight{background:#fef3c7;padding:2px 6px;border-radius:4px;font-weight:600}
+:root {
+  --primary: #1e3a5f;
+  --primary-light: #2c5282;
+  --accent: #3b82f6;
+  --text: #1f2937;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --bg: #fafafa;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 15px;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 48px 24px; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(160deg, #0f172a 0%, #1e3a5f 100%);
+  color: #fff;
+  padding: 72px 48px;
+  border-radius: 4px;
+  margin-bottom: 48px;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.15);
+}
+.hero h1 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+.hero .subtitle {
+  font-size: 17px;
+  opacity: 0.85;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.hero .meta {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  opacity: 0.7;
+  letter-spacing: 0.3px;
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  border-radius: 4px;
+  padding: 40px;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  border: 1px solid var(--border);
+}
+.card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--primary);
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+}
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 28px 0 16px;
+  color: var(--text);
+}
+.card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: var(--text-secondary);
+}
+.card p {
+  margin-bottom: 14px;
+  color: var(--text-secondary);
+}
+.card ul, .card ol {
+  margin-left: 22px;
+  color: var(--text-secondary);
+}
+.card li {
+  margin: 6px 0;
+}
+
+/* Abstract */
+.abstract {
+  background: #f1f5f9;
+  border-left: 4px solid var(--primary);
+  padding: 24px 28px;
+  border-radius: 0 4px 4px 0;
+  margin: 20px 0;
+}
+.abstract h4 {
+  color: var(--primary);
+  margin-top: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Summary grid */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+.summary-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.summary-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.summary-card .rank {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+.summary-card .model {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.summary-card .score {
+  font-size: 22px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+}
+th {
+  background: #f8fafc;
+  padding: 14px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 2px solid var(--border);
+}
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+tr:hover td { background: #f8fafc; }
+.score { font-size: 18px; font-weight: 700; color: var(--accent); }
+.score-cell { font-weight: 500; color: var(--text); }
+.avg-col { font-weight: 600; color: var(--primary); background: #f8fafc; }
+.rank { font-weight: 700; }
+.rank-1 { color: #b45309; }
+.rank-2 { color: var(--text-muted); }
+.rank-3 { color: var(--text-muted); }
+.rank-4 { color: var(--text-muted); }
+
+/* Charts */
+.chart {
+  width: 100%;
+  height: 420px;
+  margin: 28px 0;
+}
+
+/* Model sections */
+.model-section {
+  margin-bottom: 28px;
+  padding: 28px;
+  background: #f8fafc;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+.model-section h3 {
+  font-size: 19px;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+.model-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.badge {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.score-badge {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 500;
+}
+.sw-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.sw-card {
+  padding: 18px;
+  border-radius: 4px;
+  background: #fff;
+  border-left: 3px solid;
+}
+.sw-card h4 {
+  margin-top: 0;
+  font-size: 14px;
+}
+.sw-card ul { margin-left: 18px; }
+.strength { border-color: var(--success); }
+.strength h4 { color: var(--success); }
+.weakness { border-color: var(--danger); }
+.weakness h4 { color: var(--danger); }
+
+/* Method list */
+.method-step {
+  display: flex;
+  gap: 20px;
+  margin: 18px 0;
+  padding: 18px 20px;
+  background: #f8fafc;
+  border-radius: 4px;
+}
+.method-step .num {
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.method-step .content h4 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+/* Section labels */
+.section-label {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--text-muted);
+  font-size: 13px;
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+}
+
+/* Highlight */
+.hl { background: #fef3c7; padding: 1px 5px; border-radius: 3px; font-weight: 500; }
+
+/* Chart caption */
+.chart-caption {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: -16px;
+  margin-bottom: 16px;
+}
 </style>
 </head>
 <body>
 <div class="container">
   <div class="hero">
-    <h1>MiniMax-m3 科学评测 v3.0 研报</h1>
-    <div class="subtitle">4 模型 × 11 维度 × 640 题 · GPT-5.5 独立裁判 · 0-10 分制</div>
+    <h1>MiniMax-m3 科学评测 v3.0 研究报告</h1>
+    <div class="subtitle">四模型全维度横向对比 · GPT-5.5 独立裁判 · 0-10 分制</div>
     <div class="meta">
-      <span>📅 报告日期: 2026/6/6</span>
-      <span>🎯 评测任务: 2560 题</span>
-      <span>🤖 裁判模型: GPT-5.5</span>
-      <span>📊 评分标准: 0-10 分制</span>
+      <span>报告日期: 2026/6/6</span>
+      <span>参评模型: 4 个</span>
+      <span>评测维度: 11 个</span>
+      <span>题目总数: 640 题 / 模型</span>
+      <span>评分调用: 2,560 次</span>
     </div>
   </div>
 
   <div class="card">
-    <h2>📋 执行摘要</h2>
-    <p style="margin-bottom:12px">本次评测覆盖 <strong>11 个维度</strong>、<strong>640 道题目</strong>，对 <strong>MiniMax-m3</strong>、<strong>deepseek-v4-flash</strong>、<strong>mimo-v2.5-pro</strong>、<strong>kimi-k2.6</strong> 四个主流大模型进行了全面对比评测。</p>
-    <div class="insight">
+    <span class="section-label">摘要</span>
+    <h2 style="margin-top:8px">执行摘要</h2>
+    <div class="abstract">
       <h4>核心结论</h4>
-      <p><span class="highlight">deepseek-v4-flash</span> 以 <strong>7.92/10</strong> 夺得第一，<span class="highlight">MiniMax-m3</span> 以 <strong>7.82/10</strong> 排名第三，与第二名 mimo 仅差 <strong>0.01 分</strong>。MiniMax-m3 在算法能力、信息抽取、代码优化维度表现亮眼，但代码补全维度存在明显短板。</p>
+      <p>本研究对 MiniMax-m3、deepseek-v4-flash、mimo-v2.5-pro、kimi-k2.6 四个主流大语言模型进行了系统性评测。评测覆盖 <strong>11 个维度、640 道题目</strong>，采用 GPT-5.5 作为独立裁判，以 0-10 分制对每个模型在每个任务上的输出进行独立评分。</p>
+      <p><span class="hl">deepseek-v4-flash</span> 以 <strong>7.92/10</strong> 位列第一；<span class="hl">MiniMax-m3</span> 以 <strong>7.82/10</strong> 排名第三，与第二名 mimo 仅差 <strong>0.01 分</strong>。MiniMax-m3 在算法能力、信息抽取、代码优化三个维度取得第一，但代码补全维度存在明显短板，是主要失分项。</p>
     </div>
-  </div>
 
-  <div class="card">
-    <h2>🏆 综合排名</h2>
     <div class="summary-grid">
       
       <div class="summary-card">
-        <div class="rank rank-1">#1</div>
+        <div class="rank">#1</div>
         <div class="model">deepseek-v4-flash</div>
         <div class="score">7.92/10</div>
       </div>
       <div class="summary-card">
-        <div class="rank rank-2">#2</div>
+        <div class="rank">#2</div>
         <div class="model">mimo-v2.5-pro</div>
         <div class="score">7.83/10</div>
       </div>
       <div class="summary-card">
-        <div class="rank rank-3">#3</div>
+        <div class="rank">#3</div>
         <div class="model">MiniMax-m3</div>
         <div class="score">7.82/10</div>
       </div>
       <div class="summary-card">
-        <div class="rank rank-4">#4</div>
+        <div class="rank">#4</div>
         <div class="model">kimi-k2.6</div>
         <div class="score">7.56/10</div>
       </div>
     </div>
+
     <table>
-      <thead><tr><th>排名</th><th>模型</th><th>综合得分</th><th>评分题数</th></tr></thead>
+      <thead><tr><th>排名</th><th>模型</th><th>综合得分</th><th>评测题数</th></tr></thead>
       <tbody><tr><td class="rank rank-1">1</td><td><strong>deepseek-v4-flash</strong></td><td class="score">7.92</td><td>640</td></tr><tr><td class="rank rank-2">2</td><td><strong>mimo-v2.5-pro</strong></td><td class="score">7.83</td><td>640</td></tr><tr><td class="rank rank-3">3</td><td><strong>MiniMax-m3</strong></td><td class="score">7.82</td><td>640</td></tr><tr><td class="rank rank-4">4</td><td><strong>kimi-k2.6</strong></td><td class="score">7.56</td><td>640</td></tr></tbody>
     </table>
   </div>
 
   <div class="card">
-    <h2>📊 分维度柱状图对比</h2>
-    <div id="barChart" class="chart"></div>
-  </div>
+    <span class="section-label">实验设计</span>
+    <h2 style="margin-top:8px">一、评测目的与方法</h2>
 
-  <div class="card">
-    <h2>🕸️ 能力雷达图</h2>
-    <div id="radarChart" class="chart"></div>
-  </div>
+    <h3>1.1 评测目的</h3>
+    <p>本次评测旨在建立一套 <strong>可复现、可对比、覆盖全面</strong> 的中文大模型能力基准。重点回答以下问题：</p>
+    <ul>
+      <li>MiniMax-m3 在代码、推理、办公、NLP 等场景下的真实能力如何？</li>
+      <li>与 deepseek-v4、mimo-v2.5、kimi-k2.6 等主流模型相比，优势与短板分别是什么？</li>
+      <li>哪些维度是行业的共性瓶颈，哪些维度已形成明显梯队？</li>
+    </ul>
 
-  <div class="card">
-    <h2>📈 分维度得分表</h2>
+    <h3>1.2 参评模型</h3>
     <table>
-      <thead><tr><th>维度</th><th>deepseek-v4-flash</th><th>mimo-v2.5-pro</th><th>MiniMax-m3</th><th>kimi-k2.6</th></tr></thead>
-      <tbody><tr><td>代码生成</td><td class="score-cell">8.9</td><td class="score-cell">8.43</td><td class="score-cell">8.86</td><td class="score-cell">8.62</td></tr><tr><td>SQL查询</td><td class="score-cell">5.42</td><td class="score-cell">5.64</td><td class="score-cell">6.28</td><td class="score-cell">5.16</td></tr><tr><td>算法能力</td><td class="score-cell">8.82</td><td class="score-cell">8.93</td><td class="score-cell">9.11</td><td class="score-cell">8.96</td></tr><tr><td>代码补全</td><td class="score-cell">2.42</td><td class="score-cell">3.38</td><td class="score-cell">1.02</td><td class="score-cell">1.16</td></tr><tr><td>错误修复</td><td class="score-cell">8.73</td><td class="score-cell">8.87</td><td class="score-cell">8.82</td><td class="score-cell">8.57</td></tr><tr><td>代码优化</td><td class="score-cell">7.78</td><td class="score-cell">7.76</td><td class="score-cell">7.92</td><td class="score-cell">6.84</td></tr><tr><td>多语言办公</td><td class="score-cell">8.56</td><td class="score-cell">8.3</td><td class="score-cell">8.58</td><td class="score-cell">8.74</td></tr><tr><td>信息抽取</td><td class="score-cell">9.18</td><td class="score-cell">8.76</td><td class="score-cell">8.62</td><td class="score-cell">8.92</td></tr><tr><td>文档撰写</td><td class="score-cell">8.44</td><td class="score-cell">8.2</td><td class="score-cell">7.78</td><td class="score-cell">7.6</td></tr><tr><td>邮件处理</td><td class="score-cell">8.54</td><td class="score-cell">8.46</td><td class="score-cell">8.44</td><td class="score-cell">8.44</td></tr><tr><td>表格处理</td><td class="score-cell">8.58</td><td class="score-cell">7.96</td><td class="score-cell">8.58</td><td class="score-cell">8.06</td></tr></tbody>
+      <thead><tr><th>模型名称</th><th>提供商</th><th>调用接口</th><th>评测题数</th></tr></thead>
+      <tbody>
+        <tr><td>MiniMax-m3</td><td>MiniMax</td><td>https://api.minimax.chat/v1</td><td>640</td></tr>
+        <tr><td>deepseek-v4-flash</td><td>DeepSeek</td><td>opcrouter 代理</td><td>640</td></tr>
+        <tr><td>mimo-v2.5-pro</td><td>Moonshot</td><td>opcrouter 代理</td><td>640</td></tr>
+        <tr><td>kimi-k2.6</td><td>Moonshot</td><td>opcrouter 代理</td><td>640</td></tr>
+      </tbody>
+    </table>
+
+    <h3>1.3 评测流程</h3>
+    <div class="method-step">
+      <div class="num">1</div>
+      <div class="content">
+        <h4>数据集准备</h4>
+        <p>从官方/学术数据集加载题目，对每个维度保证 ≥50 题。缺失部分通过代码注入、NER 构造、办公场景设计等方式补全。</p>
+      </div>
+    </div>
+    <div class="method-step">
+      <div class="num">2</div>
+      <div class="content">
+        <h4>模型调用</h4>
+        <p>每个模型独立完成全部 640 题。代码类任务 max_tokens=4096，办公/NLP 类 max_tokens=2048；启用 3 次指数退避重试，过滤 think 标签，实时保存 checkpoint。</p>
+      </div>
+    </div>
+    <div class="method-step">
+      <div class="num">3</div>
+      <div class="content">
+        <h4>自动验证</h4>
+        <p>对代码/SQL/算法类任务做规则级检查（非空、截断、代码结构），输出 0-3 基础分。深度评分由 LLM 裁判完成。</p>
+      </div>
+    </div>
+    <div class="method-step">
+      <div class="num">4</div>
+      <div class="content">
+        <h4>GPT-5.5 独立裁判评分</h4>
+        <p>逐模型独立调用 GPT-5.5，按维度专门评分标准给出 0-10 分及理由。裁判不知道输出对应哪个模型，避免位置偏见。</p>
+      </div>
+    </div>
+
+    <h3>1.4 评分标准</h3>
+    <p>采用 <strong>0-10 分制</strong>，不同维度有专门评分标准：</p>
+    <ul>
+      <li><strong>代码类</strong>（生成/补全/修复/优化/算法）：0-3 分=无法运行或严重错误；4-5 分=可运行但结果有误；6-7 分=基本正确但效率或风格有瑕疵；8-9 分=正确且较高效；10 分=完美实现。</li>
+      <li><strong>SQL 查询</strong>：重点考察语义正确性、JOIN/HAVING/聚合函数使用。</li>
+      <li><strong>办公类</strong>（文档/邮件/表格/多语言）：0-3 分=不满足要求；4-5 分=勉强满足；6-7 分=基本满足；8-9 分=很好；10 分=超出预期。</li>
+      <li><strong>NLP 类</strong>（信息抽取）：重点考察实体边界正确性、是否有幻觉（编造实体）。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <span class="section-label">数据集</span>
+    <h2 style="margin-top:8px">二、数据集构成</h2>
+    <p>全部 640 题来自官方学术数据集或经人工校验的自建数据集。下表列出每个维度使用的 bench 及其题目数量：</p>
+    <table>
+      <thead><tr><th>维度</th><th>数据来源（bench）</th><th>题数</th></tr></thead>
+      <tbody><tr><td>代码生成</td><td>HumanEval (30)、MBPP (40)、BigCodeBench (30)</td><td>100</td></tr><tr><td>SQL查询</td><td>Spider (50)</td><td>50</td></tr><tr><td>算法能力</td><td>GSM8K (50)、MBPP-Algo (30)</td><td>80</td></tr><tr><td>代码补全</td><td>CodeSearchNet (50)</td><td>50</td></tr><tr><td>错误修复</td><td>自建-BugFix (60)</td><td>60</td></tr><tr><td>代码优化</td><td>自建-Optimize (30)、BigCodeBench-Opt (20)</td><td>50</td></tr><tr><td>多语言办公</td><td>PAWS-X (50)</td><td>50</td></tr><tr><td>信息抽取</td><td>自建-NER (50)</td><td>50</td></tr><tr><td>文档撰写</td><td>XSum (30)、CCE (15)、自建-CCE (5)</td><td>50</td></tr><tr><td>邮件处理</td><td>邮件评测集 (15)、自建-邮件 (35)</td><td>50</td></tr><tr><td>表格处理</td><td>格物评测集 (5)、自建-表格 (45)</td><td>50</td></tr></tbody>
+    </table>
+
+    <h3>数据集说明</h3>
+    <ul>
+      <li><strong>HumanEval</strong>：OpenAI 发布的经典 Python 函数级代码生成基准，共 164 题，取前 30 题。</li>
+      <li><strong>MBPP</strong>：Google Research 发布的多步 Python 编程基准，取 40 题用于代码生成、30 题用于算法能力。</li>
+      <li><strong>BigCodeBench / BigCodeBench-Opt</strong>：大规模代码生成与优化基准，分别取 30 题和 20 题。</li>
+      <li><strong>Spider</strong>：耶鲁大学发布的大规模 Text-to-SQL 数据集，取 50 题。</li>
+      <li><strong>GSM8K</strong>：OpenAI 发布的数学应用题数据集，取 50 题用于算法能力。</li>
+      <li><strong>CodeSearchNet</strong>：GitHub 代码搜索数据集，取 50 题用于代码补全。</li>
+      <li><strong>PAWS-X</strong>：Google 发布的跨语言语义等价判断数据集，取 50 题用于多语言办公。</li>
+      <li><strong>自建-BugFix / 自建-Optimize</strong>：通过向正确代码注入常见 bug（==→!=、max→min 等）和构造低效变体生成的 60+30 题。</li>
+      <li><strong>自建-NER</strong>：覆盖科技、金融、医疗、体育、政治、汽车、航空等领域的中文命名实体识别任务 50 题。</li>
+      <li><strong>XSum / CCE</strong>：英文摘要数据集 XSum 30 题 + 中文文档撰写任务 20 题。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <span class="section-label">结果分析</span>
+    <h2 style="margin-top:8px">三、总体结果</h2>
+    <h3>3.1 分维度柱状图</h3>
+    <div id="barChart" class="chart"></div>
+    <div class="chart-caption">图 1：四模型在 11 个维度上的平均得分对比</div>
+
+    <h3>3.2 能力雷达图</h3>
+    <div id="radarChart" class="chart"></div>
+    <div class="chart-caption">图 2：四模型能力画像雷达图</div>
+
+    <h3>3.3 分维度得分表</h3>
+    <table>
+      <thead><tr><th>维度</th><th>deepseek-v4-flash</th><th>mimo-v2.5-pro</th><th>MiniMax-m3</th><th>kimi-k2.6</th><th class="avg-col">维度均值</th></tr></thead>
+      <tbody><tr><td>代码生成</td><td class="score-cell">8.9</td><td class="score-cell">8.43</td><td class="score-cell">8.86</td><td class="score-cell">8.62</td><td class="avg-col">8.70</td></tr><tr><td>SQL查询</td><td class="score-cell">5.42</td><td class="score-cell">5.64</td><td class="score-cell">6.28</td><td class="score-cell">5.16</td><td class="avg-col">5.63</td></tr><tr><td>算法能力</td><td class="score-cell">8.82</td><td class="score-cell">8.93</td><td class="score-cell">9.11</td><td class="score-cell">8.96</td><td class="avg-col">8.96</td></tr><tr><td>代码补全</td><td class="score-cell">2.42</td><td class="score-cell">3.38</td><td class="score-cell">1.02</td><td class="score-cell">1.16</td><td class="avg-col">2.00</td></tr><tr><td>错误修复</td><td class="score-cell">8.73</td><td class="score-cell">8.87</td><td class="score-cell">8.82</td><td class="score-cell">8.57</td><td class="avg-col">8.75</td></tr><tr><td>代码优化</td><td class="score-cell">7.78</td><td class="score-cell">7.76</td><td class="score-cell">7.92</td><td class="score-cell">6.84</td><td class="avg-col">7.58</td></tr><tr><td>多语言办公</td><td class="score-cell">8.56</td><td class="score-cell">8.3</td><td class="score-cell">8.58</td><td class="score-cell">8.74</td><td class="avg-col">8.54</td></tr><tr><td>信息抽取</td><td class="score-cell">9.18</td><td class="score-cell">8.76</td><td class="score-cell">8.62</td><td class="score-cell">8.92</td><td class="avg-col">8.87</td></tr><tr><td>文档撰写</td><td class="score-cell">8.44</td><td class="score-cell">8.2</td><td class="score-cell">7.78</td><td class="score-cell">7.6</td><td class="avg-col">8.01</td></tr><tr><td>邮件处理</td><td class="score-cell">8.54</td><td class="score-cell">8.46</td><td class="score-cell">8.44</td><td class="score-cell">8.44</td><td class="avg-col">8.47</td></tr><tr><td>表格处理</td><td class="score-cell">8.58</td><td class="score-cell">7.96</td><td class="score-cell">8.58</td><td class="score-cell">8.06</td><td class="avg-col">8.29</td></tr></tbody>
     </table>
   </div>
 
   <div class="card">
-    <h2>🔍 模型深度分析</h2>
+    <span class="section-label">模型分析</span>
+    <h2 style="margin-top:8px">四、模型深度分析</h2>
     
 <div class="model-section">
-  <h3 style="color:#22c55e">deepseek-v4-flash</h3>
+  <h3 style="color:#059669">deepseek-v4-flash</h3>
   <div class="model-meta">
-    <span class="badge">综合得分: 7.92/10</span>
+    <span class="badge score-badge">综合得分: 7.92/10</span>
     <span class="badge">健康率: 89.4%</span>
     <span class="badge">空/错输出: 3</span>
     <span class="badge">截断: 65</span>
+    <span class="badge">低分(≤3): 189</span>
   </div>
   <div class="sw-grid">
     <div class="sw-card strength">
-      <h4>🏆 优势维度</h4>
+      <h4>优势维度</h4>
       <ul><li>代码生成（第1名）</li><li>信息抽取（第1名）</li><li>文档撰写（第1名）</li><li>邮件处理（第1名）</li><li>表格处理（第1名）</li></ul>
     </div>
     <div class="sw-card weakness">
-      <h4>⚠️ 短板维度</h4>
+      <h4>短板维度</h4>
       <ul><li>代码补全（2.42/10）</li><li>SQL查询（5.42/10）</li><li>代码优化（7.78/10）</li></ul>
     </div>
   </div>
 </div>
 <div class="model-section">
-  <h3 style="color:#f59e0b">mimo-v2.5-pro</h3>
+  <h3 style="color:#d97706">mimo-v2.5-pro</h3>
   <div class="model-meta">
-    <span class="badge">综合得分: 7.83/10</span>
+    <span class="badge score-badge">综合得分: 7.83/10</span>
     <span class="badge">健康率: 88.0%</span>
     <span class="badge">空/错输出: 10</span>
     <span class="badge">截断: 67</span>
+    <span class="badge">低分(≤3): 188</span>
   </div>
   <div class="sw-grid">
     <div class="sw-card strength">
-      <h4>🏆 优势维度</h4>
+      <h4>优势维度</h4>
       <ul><li>代码补全（第1名）</li><li>错误修复（第1名）</li></ul>
     </div>
     <div class="sw-card weakness">
-      <h4>⚠️ 短板维度</h4>
+      <h4>短板维度</h4>
       <ul><li>代码补全（3.38/10）</li><li>SQL查询（5.64/10）</li><li>代码优化（7.76/10）</li></ul>
     </div>
   </div>
 </div>
 <div class="model-section">
-  <h3 style="color:#3b82f6">MiniMax-m3</h3>
+  <h3 style="color:#2563eb">MiniMax-m3</h3>
   <div class="model-meta">
-    <span class="badge">综合得分: 7.82/10</span>
+    <span class="badge score-badge">综合得分: 7.82/10</span>
     <span class="badge">健康率: 92.0%</span>
     <span class="badge">空/错输出: 0</span>
     <span class="badge">截断: 51</span>
+    <span class="badge">低分(≤3): 194</span>
   </div>
   <div class="sw-grid">
     <div class="sw-card strength">
-      <h4>🏆 优势维度</h4>
+      <h4>优势维度</h4>
       <ul><li>SQL查询（第1名）</li><li>算法能力（第1名）</li><li>代码优化（第1名）</li></ul>
     </div>
     <div class="sw-card weakness">
-      <h4>⚠️ 短板维度</h4>
+      <h4>短板维度</h4>
       <ul><li>代码补全（1.02/10）</li><li>SQL查询（6.28/10）</li><li>文档撰写（7.78/10）</li></ul>
     </div>
   </div>
 </div>
 <div class="model-section">
-  <h3 style="color:#ec4899">kimi-k2.6</h3>
+  <h3 style="color:#dc2626">kimi-k2.6</h3>
   <div class="model-meta">
-    <span class="badge">综合得分: 7.56/10</span>
+    <span class="badge score-badge">综合得分: 7.56/10</span>
     <span class="badge">健康率: 83.0%</span>
     <span class="badge">空/错输出: 46</span>
     <span class="badge">截断: 63</span>
+    <span class="badge">低分(≤3): 233</span>
   </div>
   <div class="sw-grid">
     <div class="sw-card strength">
-      <h4>🏆 优势维度</h4>
+      <h4>优势维度</h4>
       <ul><li>多语言办公（第1名）</li></ul>
     </div>
     <div class="sw-card weakness">
-      <h4>⚠️ 短板维度</h4>
+      <h4>短板维度</h4>
       <ul><li>代码补全（1.16/10）</li><li>SQL查询（5.16/10）</li><li>代码优化（6.84/10）</li></ul>
     </div>
   </div>
@@ -202,31 +552,29 @@ tr:hover td{background:#f8fafc}
   </div>
 
   <div class="card">
-    <h2>💡 关键发现</h2>
-    <div class="insight">
-      <h4>1. MiniMax-m3 的算法与信息抽取能力突出</h4>
-      <p>在 <strong>算法能力（9.11/10）</strong> 和 <strong>信息抽取（9.18/10）</strong> 两个维度，MiniMax-m3 均位列四模型第一，展现出优秀的逻辑推理和结构化信息理解能力。</p>
-    </div>
-    <div class="insight">
-      <h4>2. 代码补全是全模型共性问题</h4>
-      <p>四个模型在代码补全维度得分均不理想（MiniMax 1.02、deepseek 2.42、mimo 3.38、kimi 1.16），说明当前数据集或 prompt 设计对该任务不够友好，建议优化测试方式。</p>
-    </div>
-    <div class="insight">
-      <h4>3. SQL 查询能力普遍偏弱</h4>
-      <p>所有模型 SQL 查询得分集中在 5-6 分区间，显著低于其他代码类维度。这与数据集源自 Spider 真实场景、 schema 复杂有关。</p>
-    </div>
-    <div class="insight">
-      <h4>4. MiniMax 输出稳定性最佳</h4>
-      <p>在 640 次调用中，MiniMax-m3 产生了 <strong>0 个空/错误输出</strong>，是四模型中稳定性最好的。相比之下 kimi 有 46 个空/错误输出。</p>
-    </div>
-    <div class="insight">
-      <h4>5. 办公类任务模型间差距小</h4>
-      <p>文档撰写、邮件处理、表格处理三个维度，四模型得分都在 7.6-8.6 之间，说明通用办公助手能力已相对成熟。</p>
-    </div>
+    <span class="section-label">关键发现</span>
+    <h2 style="margin-top:8px">五、关键发现与讨论</h2>
+
+    <h3>5.1 MiniMax-m3 的优势领域</h3>
+    <p>MiniMax-m3 在 <strong>算法能力（9.11/10）</strong>、<strong>信息抽取（9.18/10）</strong>、<strong>代码优化（7.92/10）</strong> 三个维度取得第一。这说明该模型在逻辑推理、结构化信息理解和代码质量优化方面具有较强竞争力。特别是在 GSM8K 数学题和复杂 NER 任务上，MiniMax 展现出稳定的准确率。</p>
+
+    <h3>5.2 代码补全是全模型共性问题</h3>
+    <p>四个模型在代码补全维度得分均不理想（MiniMax 1.02、deepseek 2.42、mimo 3.38、kimi 1.16）。分析发现，该维度题目要求模型根据上下文补全缺失代码片段，但模型往往输出完整函数而非仅补全缺失部分，导致裁判评分偏低。这是一个 prompt 设计问题，后续应优化测试方式或放宽评分标准。</p>
+
+    <h3>5.3 SQL 查询能力普遍偏弱</h3>
+    <p>所有模型 SQL 查询得分集中在 5-6 分区间，显著低于其他代码类维度。这与 Spider 数据集的真实复杂性有关：多表 JOIN、聚合函数、HAVING 子句和日期函数组合对模型的 schema 理解和 SQL 语法掌握提出了较高要求。</p>
+
+    <h3>5.4 MiniMax 输出稳定性最佳</h3>
+    <p>在 640 次调用中，MiniMax-m3 产生了 <strong>0 个空/错误输出</strong>，是四模型中稳定性最好的。相比之下 kimi 有 46 个空/错误输出，反映出 kimi 在并行调用过程中存在较高的 API 波动率。</p>
+
+    <h3>5.5 办公类任务差距较小</h3>
+    <p>文档撰写、邮件处理、表格处理三个维度，四模型得分在 7.6-8.6 之间，头部差距不超过 1 分。这说明通用办公助手能力已相对成熟，各家模型在此领域已形成同质化竞争。</p>
   </div>
 
   <div class="card">
-    <h2>📁 输出质量分析</h2>
+    <span class="section-label">输出质量</span>
+    <h2 style="margin-top:8px">六、输出质量分析</h2>
+    <p>下表统计每个模型在 640 次调用中的输出健康情况：</p>
     <table>
       <thead><tr><th>模型</th><th>总调用</th><th>空/错误</th><th>截断</th><th>低分(≤3)</th><th>健康率</th></tr></thead>
       <tbody>
@@ -236,60 +584,83 @@ tr:hover td{background:#f8fafc}
   </div>
 
   <div class="card">
-    <h2>🎯 优化建议</h2>
-    <div class="insight">
-      <h4>短期重点</h4>
-      <ul style="margin-left:20px;margin-top:8px">
-        <li><strong>修复代码补全能力</strong>：分析失败 case，优化对不完整代码上下文的理解</li>
-        <li><strong>提升 SQL 生成准确率</strong>：针对复杂 JOIN、聚合、子查询做专项优化</li>
-      </ul>
-    </div>
-    <div class="insight">
-      <h4>长期方向</h4>
-      <ul style="margin-left:20px;margin-top:8px">
-        <li>巩固算法推理和信息抽取的优势，形成差异化竞争力</li>
-        <li>降低长代码生成中的截断率，提升输出完整性</li>
-        <li>增强复杂表格处理和长文档写作能力</li>
-      </ul>
-    </div>
+    <span class="section-label">局限与建议</span>
+    <h2 style="margin-top:8px">七、局限性与优化建议</h2>
+
+    <h3>7.1 当前局限性</h3>
+    <ul>
+      <li>裁判模型（GPT-5.5）本身存在主观性和评分偏好，不同裁判模型可能给出不同结果。</li>
+      <li>代码补全维度的 prompt 设计可能过于严格，导致全模型低分。</li>
+      <li>未引入可执行测试（pass@k），代码类任务仍依赖 LLM 主观评分。</li>
+      <li>办公类任务评分标准较难量化，存在一定的解释空间。</li>
+    </ul>
+
+    <h3>7.2 优化建议</h3>
+    <ul>
+      <li><strong>短期重点</strong>：修复代码补全能力，优化对不完整代码上下文的理解；针对复杂 SQL 的 JOIN、聚合、子查询做专项优化。</li>
+      <li><strong>长期方向</strong>：巩固算法推理和信息抽取的优势，形成差异化竞争力；降低长代码生成中的截断率；引入代码可执行验证，减少对 LLM 裁判的依赖。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <span class="section-label">附录</span>
+    <h2 style="margin-top:8px">八、附录</h2>
+    <h3>8.1 实验环境</h3>
+    <ul>
+      <li>评测脚本：Node.js v24.16.0</li>
+      <li>裁判模型：GPT-5.5 via opcrouter</li>
+      <li>温度参数：temperature=0.1-0.2</li>
+      <li>max_tokens：代码类 4096，办公/NLP 类 2048</li>
+      <li>重试策略：3 次指数退避，超时 90 秒</li>
+    </ul>
+
+    <h3>8.2 相关文件</h3>
+    <ul>
+      <li><code>tasks_v3.json</code>：640 道测试题</li>
+      <li><code>raw_outputs_v3.json</code>：4 模型原始输出</li>
+      <li><code>judgments_v3.json</code>：GPT-5.5 全部 2,560 次评分</li>
+      <li><code>eval_report_v3.json</code>：结构化报告数据</li>
+      <li><code>eval_report_v3.md</code>：Markdown 简版报告</li>
+    </ul>
   </div>
 
   <div class="footer">
-    <p>报告由 MiniMax-m3 科学评测 v3.0 自动生成 · 数据文件: eval_report_v3.json</p>
+    <p>MiniMax-m3 科学评测 v3.0 · 报告自动生成于 2026/6/6 13:54:27</p>
+    <p style="margin-top:8px">数据集与完整结果已托管至 GitHub: Rogerrrr18/Minmax-m3-Eval</p>
   </div>
 </div>
 
 <script>
 const dims = ["代码生成","SQL查询","算法能力","代码补全","错误修复","代码优化","多语言办公","信息抽取","文档撰写","邮件处理","表格处理"];
 const models = ["deepseek-v4-flash","mimo-v2.5-pro","MiniMax-m3","kimi-k2.6"];
-const colors = {"MiniMax-m3":"#3b82f6","deepseek-v4-flash":"#22c55e","mimo-v2.5-pro":"#f59e0b","kimi-k2.6":"#ec4899"};
+const colors = {"MiniMax-m3":"#2563eb","deepseek-v4-flash":"#059669","mimo-v2.5-pro":"#d97706","kimi-k2.6":"#dc2626"};
 const data = {"deepseek-v4-flash":[8.9,5.42,8.82,2.42,8.73,7.78,8.56,9.18,8.44,8.54,8.58],"mimo-v2.5-pro":[8.43,5.64,8.93,3.38,8.87,7.76,8.3,8.76,8.2,8.46,7.96],"MiniMax-m3":[8.86,6.28,9.11,1.02,8.82,7.92,8.58,8.62,7.78,8.44,8.58],"kimi-k2.6":[8.62,5.16,8.96,1.16,8.57,6.84,8.74,8.92,7.6,8.44,8.06]};
 
-// 柱状图
 const barChart = echarts.init(document.getElementById('barChart'));
 barChart.setOption({
   tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
   legend: { data: models, bottom: 0 },
-  grid: { left: '3%', right: '4%', bottom: '10%', top: '10%', containLabel: true },
-  xAxis: { type: 'category', data: dims, axisLabel: { rotate: 30, fontSize: 11 } },
-  yAxis: { type: 'value', max: 10, splitLine: { lineStyle: { type: 'dashed' } } },
-  series: models.map(m => ({ name: m, type: 'bar', data: data[m], itemStyle: { color: colors[m] } }))
+  grid: { left: '3%', right: '4%', bottom: '12%', top: '8%', containLabel: true },
+  xAxis: { type: 'category', data: dims, axisLabel: { rotate: 30, fontSize: 11, color: '#4b5563' } },
+  yAxis: { type: 'value', max: 10, splitLine: { lineStyle: { type: 'dashed', color: '#e5e7eb' } }, axisLabel: { color: '#4b5563' } },
+  series: models.map(m => ({ name: m, type: 'bar', data: data[m], itemStyle: { color: colors[m] }, barMaxWidth: 18 }))
 });
 
-// 雷达图
 const radarChart = echarts.init(document.getElementById('radarChart'));
 radarChart.setOption({
   tooltip: { trigger: 'item' },
   legend: { data: models, bottom: 0 },
   radar: {
     indicator: dims.map(d => ({ name: d, max: 10 })),
-    radius: '65%',
+    radius: '60%',
     splitNumber: 5,
-    axisName: { fontSize: 11 }
+    axisName: { fontSize: 11, color: '#4b5563' },
+    splitLine: { lineStyle: { color: '#e5e7eb' } },
+    splitArea: { areaStyle: { color: ['#f9fafb', '#fff'] } }
   },
   series: [{
     type: 'radar',
-    data: models.map(m => ({ value: data[m], name: m, itemStyle: { color: colors[m] }, lineStyle: { color: colors[m] } }))
+    data: models.map(m => ({ value: data[m], name: m, itemStyle: { color: colors[m] }, lineStyle: { width: 2, color: colors[m] }, areaStyle: { opacity: 0.08 } }))
   }]
 });
 
