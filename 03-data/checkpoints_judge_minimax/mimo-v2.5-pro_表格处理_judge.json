@@ -1,0 +1,302 @@
+{
+  "table_office_001": {
+    "score": 9,
+    "reason": "代码功能完整，逻辑正确，输出格式清晰。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_002": {
+    "score": 9,
+    "reason": "<think>\nThe user wants me to evaluate a model's ou",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_003": {
+    "score": 0,
+    "reason": "模型无输出，未完成任务",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_004": {
+    "score": 10,
+    "reason": "able",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_005": {
+    "score": 9,
+    "reason": "代码完整可执行，正确聚合并绘制折线图，标签和图例齐全。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_0": {
+    "score": 9,
+    "reason": "公式正确，B2*C2即单价×销量，但未说明需向下填充至所有行。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_1": {
+    "score": 9,
+    "reason": "公式语法正确，计算逻辑无误，仅缺少向下填充的说明。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_2": {
+    "score": 10,
+    "reason": "公式=B2-C2完全正确，净收入=收入-支出。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_3": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完全符合利润率计算要求。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_4": {
+    "score": 9,
+    "reason": "<think>\nThe user wants me to evaluate a table proc",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_5": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑完全符合要求，仅B2引用需按实际行调整。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_6": {
+    "score": 2,
+    "reason": "<think>\nThe task is to create a formula in column ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_7": {
+    "score": 9,
+    "reason": "公式正确计算了部门总产值（员工人数×人均产值），语法无误，适用于D2单元格。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_8": {
+    "score": 10,
+    "reason": "公式完全正确，逻辑清晰，使用相对引用可自动适应各行。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_9": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑正确计算折后价，引用B2和C2符合实际数据结构。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_10": {
+    "score": 9,
+    "reason": "able for \"as of 2026\"",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_11": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑准确，比较C2与B2判断延期，输出\"延期\"，符合要求。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_12": {
+    "score": 9,
+    "reason": "<think>\nThe task asks to create a formula in colum",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_13": {
+    "score": 9,
+    "reason": "公式正确，计算逻辑无误。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_14": {
+    "score": 10,
+    "reason": "公式语法正确，引用了正确的单元格，完全满足题目要求。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_15": {
+    "score": 9,
+    "reason": "公式语法正确，IF判断逻辑无误",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_16": {
+    "score": 9,
+    "reason": "公式完全正确，B2+C2实现日期加天数计算过期日期。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_17": {
+    "score": 1,
+    "reason": "<think>\nThe task is to generate a formula in colum",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_18": {
+    "score": 9,
+    "reason": "公式正确，C2-B2计算实际减计划，语法无误。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_19": {
+    "score": 9,
+    "reason": "公式逻辑正确，语法无误，覆盖所有等级。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_20": {
+    "score": 9,
+    "reason": "<think>\nThe task asks to generate a formula in col",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_21": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑符合要求，使用空字符串代替FALSE也合理，几乎完美。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_22": {
+    "score": 0,
+    "reason": "未提供任何公式或代码，完全没有回答。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_23": {
+    "score": 9,
+    "reason": "公式正确，单位换算无误。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_24": {
+    "score": 9,
+    "reason": "公式语法正确，正确处理了B2=0的边界情况，避免除零错误。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_0": {
+    "score": 0,
+    "reason": "模型未输出任何公式或代码，完全无响应。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_1": {
+    "score": 9,
+    "reason": "三个公式语法正确，完整实现了总分、平均分和不及格标记的功能，仅未展示向下填充。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_2": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate this Python pandas code fo",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_3": {
+    "score": 9,
+    "reason": "公式和条件格式设置均正确，描述清晰完整。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_4": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a Python code solu",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_5": {
+    "score": 9,
+    "reason": "<think>\nThe user wants me to evaluate a model outp",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_6": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate the Python code for anomal",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_7": {
+    "score": 1,
+    "reason": "able but might not be the most intuitive. Actually, for completed projects (100%), remaining days could still be useful info, but returning 0 is a valid approach. A more complete formula might be `=C2-TODAY()` for all projects, or `=IF(C2<TODAY(), 0, C2-TODAY())` for days remaining (not negative). The model chose to return 0 for completed projects, which is a reasonable design choice.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_8": {
+    "score": 8,
+    "reason": "代码完整可执行，图表生成正确，但假设score>=60为达标未经说明，且savefig后show顺序可优化。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_9": {
+    "score": 1,
+    "reason": "<think>\nThe user wants me to evaluate the model's ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_10": {
+    "score": 1,
+    "reason": "able approach to detect date columns ✓",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_11": {
+    "score": 1,
+    "reason": "able",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_12": {
+    "score": 0,
+    "reason": "模型未输出任何代码或解决方案，完全没有回答题目。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_13": {
+    "score": 0,
+    "reason": "模型输出为空，未提供任何公式或代码。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_14": {
+    "score": 9,
+    "reason": "代码完整正确，滚动计算和交叉信号逻辑均无误。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_15": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑符合NPS计算，可正确执行。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_16": {
+    "score": 9,
+    "reason": "代码完整正确，含转化率、置信区间、卡方检验，逻辑清晰，输出规范。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_17": {
+    "score": 1,
+    "reason": "able approach to mark dates within 7 days from today",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_18": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze this Python code for the ta",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_19": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate the model's response to th",
+    "dim": "表格处理",
+    "judge": "minimax"
+  }
+}

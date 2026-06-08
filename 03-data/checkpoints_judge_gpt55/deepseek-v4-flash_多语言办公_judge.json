@@ -1,0 +1,302 @@
+{
+  "PAWSX_0": {
+    "score": 10,
+    "reason": "判断正确，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_1": {
+    "score": 10,
+    "reason": "判断正确，语义关系相反。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_2": {
+    "score": 10,
+    "reason": "判断正确，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_3": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_4": {
+    "score": 2,
+    "reason": "应为否，专名顺序改变语义不等价",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_5": {
+    "score": 10,
+    "reason": "判断正确，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_6": {
+    "score": 10,
+    "reason": "判断正确，语义等价，回答格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_7": {
+    "score": 10,
+    "reason": "判断正确，句义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_8": {
+    "score": 10,
+    "reason": "判断正确，语义修饰关系不同。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_9": {
+    "score": 2,
+    "reason": "句2多出“Holly”，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_10": {
+    "score": 10,
+    "reason": "判断正确，输出简洁规范。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_11": {
+    "score": 0,
+    "reason": "判断错误，二句语义不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_12": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_13": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_14": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_15": {
+    "score": 10,
+    "reason": "判断正确，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_16": {
+    "score": 10,
+    "reason": "判断正确，回答格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_17": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_18": {
+    "score": 10,
+    "reason": "判断正确，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_19": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_20": {
+    "score": 10,
+    "reason": "判断正确，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_21": {
+    "score": 0,
+    "reason": "判断错误，正确答案应为“否”。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_22": {
+    "score": 10,
+    "reason": "判断正确，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_23": {
+    "score": 10,
+    "reason": "判断正确，角色互换导致语义不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_24": {
+    "score": 10,
+    "reason": "判断正确，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_25": {
+    "score": 10,
+    "reason": "判断正确，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_26": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_27": {
+    "score": 10,
+    "reason": "判断正确，语义相反，非等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_28": {
+    "score": 10,
+    "reason": "判断正确，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_29": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_30": {
+    "score": 10,
+    "reason": "判断正确，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_31": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_32": {
+    "score": 10,
+    "reason": "判断正确，语义等价，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_33": {
+    "score": 10,
+    "reason": "判断正确，语义不完全等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_34": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_35": {
+    "score": 10,
+    "reason": "判断正确，格式简洁符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_36": {
+    "score": 10,
+    "reason": "判断正确，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_37": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_38": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_39": {
+    "score": 10,
+    "reason": "判断正确，语义关系相反，非等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_40": {
+    "score": 0,
+    "reason": "判断错误，应为“否”。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_41": {
+    "score": 0,
+    "reason": "判断错误，两句不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_42": {
+    "score": 10,
+    "reason": "判断正确，地点归属不同，非等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_43": {
+    "score": 10,
+    "reason": "判断正确，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_44": {
+    "score": 10,
+    "reason": "判断正确，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_45": {
+    "score": 10,
+    "reason": "判断正确，格式符合要求。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_46": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_47": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_48": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  },
+  "PAWSX_49": {
+    "score": 10,
+    "reason": "判断正确，语义等价。",
+    "dim": "多语言办公",
+    "judge": "gpt55"
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "XSum_0": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_1": {
+    "score": 10,
+    "reason": "完全满足要求，信息完整准确，语言简洁流畅，字数合规。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_2": {
+    "score": 8,
+    "reason": "总结准确，要素齐全，字数合规，但具体细节（如嫌疑人姓名、罪名细节）可稍丰富。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_3": {
+    "score": 10,
+    "reason": "准确完整概括原文所有要素，字数符合，语言简洁流畅。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_4": {
+    "score": 9,
+    "reason": "总结准确完整，涵盖核心发现和机制，字数符合要求，语法流畅。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_5": {
+    "score": 9,
+    "reason": "准确概括原文核心信息，要素完整，语言简练，符合场景要求。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_6": {
+    "score": 9,
+    "reason": "准确概括核心事件，要点全面，语言简洁流畅，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_7": {
+    "score": 9,
+    "reason": "准确概括核心信息，语言简洁流畅，字数接近要求，略超但无大的偏离。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_8": {
+    "score": 9,
+    "reason": "准确概括核心内容，字数符合，信息完整，表达清晰。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_9": {
+    "score": 9,
+    "reason": "准确覆盖原文关键信息，简洁流畅，字数合规。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_001": {
+    "score": 10,
+    "reason": "完全满足所有要素，语气正式规范，格式清晰，无遗漏。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_002": {
+    "score": 10,
+    "reason": "完全满足所有要求，结构清晰、数据具体、语气正式，字数充足。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_003": {
+    "score": 9,
+    "reason": "完整包含所有要素，格式规范，语气恰当，额外细节合理。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_004": {
+    "score": 9,
+    "reason": "文档完整覆盖所有要素，数据化清晰，语气正式，适合上司审阅，仅缺具体姓名占位符。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_005": {
+    "score": 10,
+    "reason": "完全满足所有要素，格式规范，语气正式且有吸引力，要素齐全。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_006": {
+    "score": 10,
+    "reason": "所有要求要素齐全，Markdown格式规范，内容结构清晰完整。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_007": {
+    "score": 9,
+    "reason": "内容完整覆盖所有要素，格式规范，语气恰当，仅缺失对超标流程的详细说明。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_008": {
+    "score": 9,
+    "reason": "格式规范，",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_009": {
+    "score": 9,
+    "reason": "包含所有要求要素，格式规范，语气专业，结构清晰，仅略有额外信息。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_010": {
+    "score": 10,
+    "reason": "文档完整包含所有要求要素，数据具体，建议合理，格式专业，语气符合企业场景。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_011": {
+    "score": 10,
+    "reason": "完全包含所有要素，语言简洁清晰，格式规范，符合通知场景。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_012": {
+    "score": 2,
+    "reason": "缺失“对我们的启示”要素，定价策略不完整，未满足题目全部要求。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_013": {
+    "score": 10,
+    "reason": "完全包含所有要素，语气正式得体，格式规范清晰，无任何遗漏或问题。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_014": {
+    "score": 5,
+    "reason": "缺少关键发现（未达5个）及设计建议，结构不完整；虽有图表但内容不达标。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "doc_office_015": {
+    "score": 10,
+    "reason": "要素齐全，格式规范，语气专业，完全符合题目要求。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "DOC_EXTRA_0": {
+    "score": 9,
+    "reason": "结构完整，覆盖所有要素，内容具体详实，语气专业，仅略缺数据来源说明。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "DOC_EXTRA_1": {
+    "score": 9,
+    "reason": "完整覆盖所有要素，结构清晰，语气得体，仅缺具体细节但符合模板要求。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "DOC_EXTRA_2": {
+    "score": 10,
+    "reason": "完美涵盖所有必要部分，结构清晰，语言易懂，符合用户场景。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "DOC_EXTRA_3": {
+    "score": 9,
+    "reason": "文档结构完整，涵盖所有要素，内容详实规范，语气正式，仅附录日期未具体填写。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "DOC_EXTRA_4": {
+    "score": 9,
+    "reason": "要素齐全，格式规范，语气恰当，事迹具体，略有套话但整体很好。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_0": {
+    "score": 9,
+    "reason": "摘要准确、简洁，涵盖核心信息且未超字数，语气客观。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_1": {
+    "score": 10,
+    "reason": "完全符合题目要求，准确摘要关键信息，字数合规，语气客观。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_2": {
+    "score": 9,
+    "reason": "摘要准确全面，关键要素齐备，语言简洁流畅，符合要求。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_3": {
+    "score": 10,
+    "reason": "摘要精准覆盖所有关键信息，字数符合要求，语言简洁流畅。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_4": {
+    "score": 9,
+    "reason": "摘要完整准确，包含关键要素，字数符合要求，语气客观，仅未提及延缓衰老细节。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_5": {
+    "score": 8,
+    "reason": "摘要准确涵盖了合并双方、互补观点及行业担忧，但未提及“公众利益”疑问，略不完全。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_6": {
+    "score": 9,
+    "reason": "摘要准确、完整，覆盖关键信息且不超过100字，语言简洁客观。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_7": {
+    "score": 7,
+    "reason": "摘要要素完整，但略超100字（约111字），可更精简。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_8": {
+    "score": 6,
+    "reason": "摘要内容准确，但超过100字限制，未完全符合要求。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_9": {
+    "score": 8,
+    "reason": "摘要准确完整，语言流畅，字数合规，但遗漏了技术区趣味的细节。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_10": {
+    "score": 10,
+    "reason": "摘要准确、简洁，充分覆盖关键信息，字数合规，语气客观。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_11": {
+    "score": 9,
+    "reason": "摘要准确简练，涵盖核心事件和致歉，字数合规，语气专业。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_12": {
+    "score": 9,
+    "reason": "摘要准确全面，覆盖关键信息，字数合规，语气客观。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_13": {
+    "score": 9,
+    "reason": "摘要完整准确，提取了关键要素，语言简洁流畅，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_14": {
+    "score": 8,
+    "reason": "摘要准确全面，字数合规，但遗漏\"涉嫌\"一词，语气略失严谨。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_15": {
+    "score": 9,
+    "reason": "摘要准确、简洁，包含所有关键信息，字数符合要求，语气恰当。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_16": {
+    "score": 9,
+    "reason": "摘要简洁准确，覆盖核心要素，完全符合字数要求，语气客观。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_17": {
+    "score": 9,
+    "reason": "摘要准确完整，语气客观，字数符合要求，仅略缺家属声明细节。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_18": {
+    "score": 8,
+    "reason": "摘要准确凝练，包含关键信息且不超过100字，但未提及原文末句\"Overall today was\"后续内容。",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  },
+  "XSum_Doc_19": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "文档撰写",
+    "judge": "deepseek"
+  }
+}

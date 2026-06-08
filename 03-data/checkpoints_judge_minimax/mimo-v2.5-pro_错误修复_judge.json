@@ -1,0 +1,362 @@
+{
+  "BugFix_001": {
+    "score": 10,
+    "reason": "正确将小于号改为大于号，修复了返回最小值的bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_002": {
+    "score": 10,
+    "reason": "正确将赋值改为累加，完全修复bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_003": {
+    "score": 9,
+    "reason": "正确修复了二分搜索方向错误和区间更新逻辑，算法完整正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_004": {
+    "score": 9,
+    "reason": "正确用切片反转修复了reverse方法不适用于字符串的bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_005": {
+    "score": 9,
+    "reason": "正确将left改为right，修复了主bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_006": {
+    "score": 10,
+    "reason": "完全正确修复阶乘基线条件bug，无新问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_007": {
+    "score": 9,
+    "reason": "正确修复了原字典被修改的bug，使用copy避免副作用。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_008": {
+    "score": 9,
+    "reason": "正确修复了`return result[1:]`丢第一个元素的bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_009": {
+    "score": 9,
+    "reason": "正确使用set+list保持顺序，修复了原bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_010": {
+    "score": 9,
+    "reason": "正确将push改为append，实现了后进先出，修复正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_011": {
+    "score": 9,
+    "reason": "正确使用with语句修复了文件未关闭的资源泄漏问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_012": {
+    "score": 2,
+    "reason": "<think>\nLet me analyze the original code and the f",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_013": {
+    "score": 10,
+    "reason": "正确改用无参split，完美处理连续空格问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_014": {
+    "score": 9,
+    "reason": "正确将fast改为两步移动，完全修复Floyd环检测算法。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_015": {
+    "score": 9,
+    "reason": "正确捕获ZeroDivisionError并返回None，修复完整。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_016": {
+    "score": 9,
+    "reason": "正确捕获ValueError和TypeError并返回None，修复完整。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_017": {
+    "score": 9,
+    "reason": "Correct DP fix, O(mn) time. No space optimization.",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_018": {
+    "score": 9,
+    "reason": "正确修复了random.shuffle返回None的bug，shuffle后返回lst。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_019": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the original buggy code and",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_020": {
+    "score": 9,
+    "reason": "正确添加return语句修复了Python值传递问题，完整正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_021": {
+    "score": 9,
+    "reason": "正确修复了奇偶判断条件，功能与函数名一致，无额外问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_022": {
+    "score": 9,
+    "reason": "正确修复列表引用bug，未做多余修改。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_023": {
+    "score": 10,
+    "reason": "正确使用dict.fromkeys去重并保持顺序，无副作用。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_024": {
+    "score": 9,
+    "reason": "正确修复了dp[i]应+1的bug，未做额外优化。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_025": {
+    "score": 9,
+    "reason": "用列表推导式正确修复了循环修改变量不更新列表的bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_026": {
+    "score": 9,
+    "reason": "正确修复了路径共享引用bug，创建新列表避免修改。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_027": {
+    "score": 9,
+    "reason": "正确处理了空列表的边界情况，修复了ZeroDivisionError，错误信息清晰。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_028": {
+    "score": 0,
+    "reason": "<think>\nLet me analyze the original code and the f",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_029": {
+    "score": 9,
+    "reason": "正确按键值排序，但建议返回dict以保持类型一致。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_030": {
+    "score": 9,
+    "reason": "正确将递归调用参数从i改为smallest，修复了核心bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_031": {
+    "score": 10,
+    "reason": "正确使用set将O(n²)优化为O(n)，完全修复且实现简洁。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_032": {
+    "score": 9,
+    "reason": "用哈希表将O(n²)优化为O(n)，逻辑正确，无冗余。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_033": {
+    "score": 9,
+    "reason": "迭代法正确实现，空间复杂度降为O(1)，时间也优化为O(n)。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_034": {
+    "score": 9,
+    "reason": "正确简化逻辑，用dict.get替代手动查找，效率提升且无bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_035": {
+    "score": 9,
+    "reason": "使用heapq.merge实现高效合并，时间复杂度从O(NlogN)优化到O(Nlogk)。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_036": {
+    "score": 8,
+    "reason": "正确使用切片优化代码，简洁高效，符合Python惯用法。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_037": {
+    "score": 10,
+    "reason": "用Kadane算法正确修复，O(n)时间复杂度，完全正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_038": {
+    "score": 2,
+    "reason": "<think>\nThe original code is a simple primality te",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_039": {
+    "score": 10,
+    "reason": "完美修复，用动态规划将指数复杂度优化为O(mn)，逻辑完全正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_040": {
+    "score": 2,
+    "reason": "<think>\nThe original code is supposed to find the ",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_041": {
+    "score": 9,
+    "reason": "正确改为迭代DP，时间复杂度从O(2^n)降为O(n)，实现简洁无误。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_042": {
+    "score": 10,
+    "reason": "使用replace方法，简洁高效，完美优化。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_043": {
+    "score": 0,
+    "reason": "<think>\nLet me analyze the original code and the f",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_044": {
+    "score": 9,
+    "reason": "用Counter优化时间复杂度至O(n)，逻辑正确且代码更简洁。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_045": {
+    "score": 9,
+    "reason": "正确改用快速幂算法，时间复杂度从O(n)优化为O(log n)，无bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_046": {
+    "score": 9,
+    "reason": "able.",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_047": {
+    "score": 9,
+    "reason": "正确将指数级回溯改为O(n*capacity)动态规划，完全正确且高效。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_048": {
+    "score": 8,
+    "reason": "将列表查找转为集合查找，将O(n²)优化为O(n)，正确修复性能问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_049": {
+    "score": 10,
+    "reason": "完全正确，O(n log n)优化为O(n)动态规划，逻辑正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_050": {
+    "score": 0,
+    "reason": "<think>\nThe original code is a manual implementati",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_051": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the original code and the m",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_052": {
+    "score": 1,
+    "reason": "<think>\nThe original code had a bug: it used itera",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_053": {
+    "score": 10,
+    "reason": "BFS完全正确修复了DFS的指数复杂度问题，逻辑无误。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_054": {
+    "score": 8,
+    "reason": "功能正确，逻辑等价，使用列表推导式更简洁，但无本质改进。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_055": {
+    "score": 9,
+    "reason": "正确实现O(n)前缀最大值算法，完全修复了时间复杂度过高的问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_056": {
+    "score": 9,
+    "reason": "正确使用Boyer-Moore算法优化至O(n)时间复杂度，验证步骤也正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_057": {
+    "score": 10,
+    "reason": "完美优化，将指数递归改为O(n²)DP，使用set提升查找效率，逻辑正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_058": {
+    "score": 0,
+    "reason": "<think>\nThe original code returns row n (0-indexed",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_059": {
+    "score": 10,
+    "reason": "空列表处理正确，单次遍历O(n)最优解，逻辑完全正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_060": {
+    "score": 1,
+    "reason": "<think>\nThe original code rotates the array by k p",
+    "dim": "错误修复",
+    "judge": "minimax"
+  }
+}

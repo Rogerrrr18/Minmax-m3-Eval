@@ -1,0 +1,302 @@
+{
+  "Spider_0": {
+    "score": 10,
+    "reason": "正确查询年龄大于56的部门负责人数量。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_1": {
+    "score": 10,
+    "reason": "完全符合题意，语法正确，逻辑无误。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_2": {
+    "score": 10,
+    "reason": "完全符合题意，语法正确，查询所有部门的创建年份、名称和预算。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_3": {
+    "score": 10,
+    "reason": "语法正确，完全符合查询最大最小预算的要求。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_4": {
+    "score": 10,
+    "reason": "语法正确，语义完全符合题目要求，查询排名10-15部门的平均员工数。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_5": {
+    "score": 10,
+    "reason": "语法正确，语义完全符合题目要求。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_6": {
+    "score": 10,
+    "reason": "完全正确，使用DISTINCT去重，连接和筛选条件准确符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_7": {
+    "score": 10,
+    "reason": "语法正确，逻辑准确，满足题目要求。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_8": {
+    "score": 10,
+    "reason": "语法正确，逻辑完整，正确找出成立部门最多的年份，无缺陷。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_9": {
+    "score": 9,
+    "reason": "语法正确，逻辑清晰，正确使用LEFT JOIN处理无员工部门，符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_10": {
+    "score": 10,
+    "reason": "查询正确，直接统计表行数，完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_11": {
+    "score": 10,
+    "reason": "完全正确，语法逻辑均符合",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_12": {
+    "score": 10,
+    "reason": "查询语义完全正确，语法无误，满足题目要求。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_13": {
+    "score": 10,
+    "reason": "完全正确，使用INTERSECT高效查询同时满足两条件的出生州。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_14": {
+    "score": 10,
+    "reason": "完全正确，语法语义均符合题意，无缺陷。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_15": {
+    "score": 10,
+    "reason": "语法正确，逻辑准确，完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_16": {
+    "score": 10,
+    "reason": "查询正确统计农场总数，完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_17": {
+    "score": 10,
+    "reason": "语法正确，语义完全符合题意，无缺陷。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_18": {
+    "score": 9,
+    "reason": "查询正确统计各农场马匹数并升序排列，语法逻辑无缺陷。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_19": {
+    "score": 10,
+    "reason": "语法正确，逻辑完整，完全满足题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_20": {
+    "score": 9,
+    "reason": "查询正确，联结表并筛选主题非\"Aliens\"，语义完全符合要求。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_21": {
+    "score": 10,
+    "reason": "查询正确返回非Aliens主题的比赛主办方，语法语义无误。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_22": {
+    "score": 9,
+    "reason": "语义正确，ORDER BY year ASC符合要求，多输出了year但无影响。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_23": {
+    "score": 10,
+    "reason": "完全正确，语法无误，按题意返回主题并按年份升序排序。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_24": {
+    "score": 10,
+    "reason": "查询语义完全正确，语法无误，直接满足题目要求。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_25": {
+    "score": 10,
+    "reason": "语法正确，逻辑完全符合题意，查询表达精准无误。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_26": {
+    "score": 10,
+    "reason": "正确使用聚合函数计算最大最小值，语法语义完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_27": {
+    "score": 10,
+    "reason": "完全正确，语法和语义均符合题目要求",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_28": {
+    "score": 9,
+    "reason": "正确统计不同status数量，语义完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_29": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_30": {
+    "score": 9,
+    "reason": "语法语义完全正确，仅无显式字段限定，但无实质缺陷。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_31": {
+    "score": 9,
+    "reason": "语法正确，语义完全符合题意，仅差细节优化如列别名。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_32": {
+    "score": 10,
+    "reason": "查询完全正确，按人口降序取第一行，符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_33": {
+    "score": 10,
+    "reason": "语法正确，逻辑清晰，完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_34": {
+    "score": 10,
+    "reason": "语义完全正确，表连接和字段选择准确。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_35": {
+    "score": 10,
+    "reason": "正确连接表，返回年份和官方名称，完全符合要求。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_36": {
+    "score": 10,
+    "reason": "完全正确，查询逻辑清晰，语法无误。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_37": {
+    "score": 9,
+    "reason": "完全正确，仅分组略有冗余，无其他问题。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_38": {
+    "score": 4,
+    "reason": "分组错误，未先求城市总比赛数，导致可能漏掉状态。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_39": {
+    "score": 9,
+    "reason": "正确使用了子查询统计比赛最多的城市ID，语法逻辑无误，仅未处理并列情况。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_40": {
+    "score": 10,
+    "reason": "语法正确，语义完全符合题意，连接与筛选条件准确。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_41": {
+    "score": 9,
+    "reason": "查询语法正确，逻辑准确，符合题意。使用DISTINCT合理，无缺陷。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_42": {
+    "score": 10,
+    "reason": "查询正确，使用GROUP BY按status分组计算平均人口，完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_43": {
+    "score": 10,
+    "reason": "查询正确按status分组计算平均人口，完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_44": {
+    "score": 10,
+    "reason": "正确分组计数并按数量降序排序，完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_45": {
+    "score": 10,
+    "reason": "语法正确，语义完全符合题意，输出按频率升序。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_46": {
+    "score": 10,
+    "reason": "正确找出每个城市最常见的status，语法无误。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_47": {
+    "score": 4,
+    "reason": "使用了占位符表名，未指定具体数据表，无法执行查询。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_48": {
+    "score": 10,
+    "reason": "语法正确，逻辑完全符合题意，查询没有举办过比赛的城市官方名称。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  },
+  "Spider_49": {
+    "score": 10,
+    "reason": "查询逻辑正确，语法准确，完全符合题目要求。",
+    "dim": "SQL查询",
+    "judge": "deepseek"
+  }
+}

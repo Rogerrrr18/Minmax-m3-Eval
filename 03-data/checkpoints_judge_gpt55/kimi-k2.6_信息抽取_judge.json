@@ -1,0 +1,302 @@
+{
+  "NER_0": {
+    "score": 9,
+    "reason": "实体基本全对，地点拆分可接受。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_1": {
+    "score": 9,
+    "reason": "实体基本完整正确，地点拆分可接受。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_2": {
+    "score": 9,
+    "reason": "实体基本全对，地点拆分可接受。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_3": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_4": {
+    "score": 10,
+    "reason": "实体完整准确，无边界错误或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_5": {
+    "score": 9,
+    "reason": "实体基本完整准确，边界合理。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_6": {
+    "score": 9,
+    "reason": "基本正确，浙江杭州边界可商榷。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_7": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_8": {
+    "score": 8,
+    "reason": "基本正确，安徽安庆边界可合并。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_9": {
+    "score": 9,
+    "reason": "实体完整且正确，重复输出比亚迪。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_10": {
+    "score": 10,
+    "reason": "实体齐全，类型和边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_11": {
+    "score": 10,
+    "reason": "实体完整准确，边界和类型均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_12": {
+    "score": 9,
+    "reason": "基本全对，浙江杭州边界略可商榷",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_13": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_14": {
+    "score": 8,
+    "reason": "基本正确，浙江宁波边界可合并。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_0": {
+    "score": 9,
+    "reason": "基本全对，福建龙岩边界可商榷。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_1": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_2": {
+    "score": 8,
+    "reason": "基本正确，福建龙岩被拆分边界略有问题。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_3": {
+    "score": 8,
+    "reason": "实体基本全，地点边界有拆分问题",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_4": {
+    "score": 10,
+    "reason": "实体完整准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_5": {
+    "score": 10,
+    "reason": "实体完整准确，无遗漏幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_6": {
+    "score": 10,
+    "reason": "实体完整准确，无幻觉，边界正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_7": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_8": {
+    "score": 10,
+    "reason": "实体完整准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_9": {
+    "score": 10,
+    "reason": "实体完整准确，无边界错误或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_10": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_11": {
+    "score": 10,
+    "reason": "实体完整，边界和类型均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_12": {
+    "score": 8,
+    "reason": "实体基本全，浙江宁波边界拆分不佳。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_13": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_14": {
+    "score": 9,
+    "reason": "实体基本完整准确，360类型略有歧义。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_30": {
+    "score": 8,
+    "reason": "主要实体正确，遗漏金额，X类型略偏。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_31": {
+    "score": 10,
+    "reason": "实体完整准确，边界和类型正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_32": {
+    "score": 8,
+    "reason": "基本正确，含嵌套人名误抽和产品边界略短。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_33": {
+    "score": 7,
+    "reason": "主要实体正确，遗漏金额/市值数值。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_34": {
+    "score": 0,
+    "reason": "未抽取任何实体，完全遗漏。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_35": {
+    "score": 8,
+    "reason": "主要实体正确，遗漏感染科部门实体。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_36": {
+    "score": 9,
+    "reason": "基本全对，浙江杭州边界略可商榷。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_37": {
+    "score": 8,
+    "reason": "基本正确，遗漏“180亿美元”金额实体。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_38": {
+    "score": 10,
+    "reason": "实体完整准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_39": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_40": {
+    "score": 10,
+    "reason": "实体完整准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_41": {
+    "score": 8,
+    "reason": "基本正确，地点边界应为山东高密。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_42": {
+    "score": 7,
+    "reason": "主要实体正确，误抽香港，漏69港元。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_43": {
+    "score": 7,
+    "reason": "大部分正确，部分实体边界不准。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_44": {
+    "score": 9,
+    "reason": "实体基本完整准确，可能遗漏“35岁”年龄。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_45": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_46": {
+    "score": 8,
+    "reason": "实体基本齐全，地点边界略有拆分。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_47": {
+    "score": 8,
+    "reason": "基本正确，遗漏价格，产品边界略不完整。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_48": {
+    "score": 9,
+    "reason": "实体基本完整准确，边界可接受。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_49": {
+    "score": 8,
+    "reason": "基本正确，“杂交水稻”类型略不当。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  }
+}

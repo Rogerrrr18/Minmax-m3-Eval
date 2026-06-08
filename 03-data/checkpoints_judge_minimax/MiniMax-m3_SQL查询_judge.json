@@ -1,0 +1,302 @@
+{
+  "Spider_0": {
+    "score": 10,
+    "reason": "完全正确，COUNT配合WHERE条件正确统计了年龄大于56的部门负责人数量。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_1": {
+    "score": 9,
+    "reason": "逻辑正确，通过emp和dept表的eid与head连接查找部门负责人，字段和排序均符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_2": {
+    "score": 10,
+    "reason": "查询语法正确，完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_3": {
+    "score": 10,
+    "reason": "正确查询了部门预算的最大值和最小值，语法和逻辑均正确。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_4": {
+    "score": 9,
+    "reason": "逻辑正确，先按部门分组计数再排名筛选，最后求平均，符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_5": {
+    "score": 9,
+    "reason": "语义正确，使用!=等效于<>，逻辑完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_6": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze this SQL query against the ",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_7": {
+    "score": 9,
+    "reason": "逻辑正确，GROUP BY+COUNT过滤满足题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_8": {
+    "score": 9,
+    "reason": "逻辑正确，能正确返回成立年份最多的部门数量对应的年份。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_9": {
+    "score": 9,
+    "reason": "逻辑正确，连接和过滤均符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_10": {
+    "score": 8,
+    "reason": "ably high.",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_11": {
+    "score": 9,
+    "reason": "逻辑正确，IS NULL准确表达了\"未被提及\"的含义。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_12": {
+    "score": 9,
+    "reason": "语义正确，SELECT DISTINCT age配合WHERE position='Acting'准确对应题意，逻辑无误。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_13": {
+    "score": 9,
+    "reason": "INTERSECT正确实现\"两者都在\"语义，逻辑和语法均正确。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_14": {
+    "score": 8,
+    "reason": "语义正确，JOIN+GROUP BY+HAVING逻辑清晰；\"at a time\"可考虑时间段重叠，但常规理解可接受。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_15": {
+    "score": 9,
+    "reason": "逻辑完全正确，LIKE子句使用恰当。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_16": {
+    "score": 10,
+    "reason": "语法正确，语义完全匹配，标准COUNT(*)统计行数。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_17": {
+    "score": 10,
+    "reason": "完全正确，统计farms表行数符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_18": {
+    "score": 9,
+    "reason": "able. The ORDER BY ASC is correct.",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_19": {
+    "score": 9,
+    "reason": "逻辑正确，LEFT JOIN含无马农场，GROUP BY和ORDER BY均正确，可省略f.farm_id分组。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_20": {
+    "score": 10,
+    "reason": "语义完全正确，逻辑无误。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_21": {
+    "score": 9,
+    "reason": "语义正确，使用<>排除Aliens主题，结果准确。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_22": {
+    "score": 10,
+    "reason": "正确选择theme列并按year升序排列，语义完全匹配。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_23": {
+    "score": 10,
+    "reason": "完全正确，语义和语法均符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_24": {
+    "score": 10,
+    "reason": "语义完全正确，AVG+WHERE条件准确匹配题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_25": {
+    "score": 10,
+    "reason": "语法正确，逻辑完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_26": {
+    "score": 10,
+    "reason": "完全正确，MAX/MIN逻辑清晰，语法无误。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_27": {
+    "score": 9,
+    "reason": "able assumption. The query is correct.",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_28": {
+    "score": 10,
+    "reason": "正确统计城市表中的不同状态数。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_29": {
+    "score": 9,
+    "reason": "逻辑正确，使用COUNT(DISTINCT)计数不同status值，表名通用合理。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_30": {
+    "score": 9,
+    "reason": "<think>\nThe question asks to list official names o",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_31": {
+    "score": 10,
+    "reason": "完全正确，列名和排序方向均正确。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_32": {
+    "score": 10,
+    "reason": "正确查询人口最多城市的官方名称和状态。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_33": {
+    "score": 9,
+    "reason": "able for \"residents\". The result is semantically correct.",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_34": {
+    "score": 9,
+    "reason": "逻辑正确，连接和字段选择完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_35": {
+    "score": 9,
+    "reason": "正确连接city和competition表，选取year和official_name，逻辑正确。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_36": {
+    "score": 9,
+    "reason": "语义正确，逻辑完整，仅表名/列名可能有细微差异。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_37": {
+    "score": 9,
+    "reason": "语义正确，JOIN和GROUP BY逻辑正确，用official_name分组可能有重复但不影响结果。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_38": {
+    "score": 9,
+    "reason": "逻辑正确，JOIN+GROUP BY+ORDER BY+LIMIT实现正确，GROUP BY未包含Status列存在小瑕疵。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_39": {
+    "score": 9,
+    "reason": "逻辑正确，JOIN+GROUP BY+ORDER BY+LIMIT 1 正确找出举办比赛最多的城市及其状态。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_40": {
+    "score": 9,
+    "reason": "语义正确，JOIN和WHERE条件均符合题意，逻辑无误。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_41": {
+    "score": 9,
+    "reason": "逻辑正确，JOIN和过滤条件均正确，SELECT DISTINCT使用合理。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_42": {
+    "score": 10,
+    "reason": "逻辑完全正确，按Status分组并计算平均人口。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_43": {
+    "score": 10,
+    "reason": "完全正确，按status分组并计算平均人口，逻辑清晰无瑕疵。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_44": {
+    "score": 9,
+    "reason": "语义正确，逻辑完整，按城市数量降序排列符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_45": {
+    "score": 9,
+    "reason": "正确分组统计并升序排列，结果符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_46": {
+    "score": 8,
+    "reason": "逻辑正确，GROUP BY+ORDER BY+LIMIT 1能正确找出最常见Status。表名占位符略扣分。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_47": {
+    "score": 8,
+    "reason": "逻辑正确，查询最常见status并返回计数。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_48": {
+    "score": 9,
+    "reason": "逻辑正确，使用NOT IN子查询排除举办过比赛的城市，符合题意。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  },
+  "Spider_49": {
+    "score": 9,
+    "reason": "逻辑正确，使用NOT IN实现反连接，语法无误。",
+    "dim": "SQL查询",
+    "judge": "minimax"
+  }
+}

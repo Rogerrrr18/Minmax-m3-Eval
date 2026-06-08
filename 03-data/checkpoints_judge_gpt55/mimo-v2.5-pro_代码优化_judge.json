@@ -1,0 +1,302 @@
+{
+  "Optimize_001": {
+    "score": 10,
+    "reason": "使用集合降至O(n)，效果最优",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_002": {
+    "score": 9,
+    "reason": "哈希降至O(n)，多解时结果可能不同",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_003": {
+    "score": 10,
+    "reason": "迭代实现，空间降至O(1)且功能等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_004": {
+    "score": 9,
+    "reason": "利用字典查找，时间复杂度显著降低",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_005": {
+    "score": 7,
+    "reason": "减少中间列表内存，但未利用已排序特性。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_006": {
+    "score": 10,
+    "reason": "使用切片反转，简洁高效且功能等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_007": {
+    "score": 10,
+    "reason": "Kadane算法，O(n)最优且功能等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_008": {
+    "score": 9,
+    "reason": "降至平方根并跳过偶数，优化明显。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_009": {
+    "score": 9,
+    "reason": "指数递归改为DP，时间大幅优化。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_010": {
+    "score": 8,
+    "reason": "时间复杂度显著降低，但要求元素可哈希。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_011": {
+    "score": 9,
+    "reason": "指数递归降为线性迭代，空间O(1)",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_012": {
+    "score": 10,
+    "reason": "功能等价，使用内置方法高效简洁。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_013": {
+    "score": 6,
+    "reason": "增加空前缀提前返回，优化有限",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_014": {
+    "score": 9,
+    "reason": "复杂度降至线性，简洁且功能等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_015": {
+    "score": 7,
+    "reason": "O(log n)优化明显，但负数n行为改变",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_016": {
+    "score": 10,
+    "reason": "公式法O(1)，功能等价且最优。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_017": {
+    "score": 9,
+    "reason": "指数回溯改为一维DP，效率显著提升",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_018": {
+    "score": 9,
+    "reason": "时间复杂度降至O(n)，功能在有效输入下等价。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_019": {
+    "score": 10,
+    "reason": "动态规划降至O(n)，功能等价。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_020": {
+    "score": 7,
+    "reason": "简洁高效，但空/不规则矩阵行为不同",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_021": {
+    "score": 7,
+    "reason": "O(n)降至O(logn)，但空数组/重复值不等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_022": {
+    "score": 9,
+    "reason": "栈实现线性复杂度，功能等价，优化明显。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_023": {
+    "score": 9,
+    "reason": "DFS改BFS，复杂度大幅降低且功能等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_024": {
+    "score": 7,
+    "reason": "更简洁且可能更快，但需len限制泛化性。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_025": {
+    "score": 10,
+    "reason": "双指针O(n)且O(1)空间，功能等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_026": {
+    "score": 10,
+    "reason": "Boyer-Moore线性时间且功能等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_027": {
+    "score": 8,
+    "reason": "加入集合与记忆化，显著降复杂度。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_028": {
+    "score": 10,
+    "reason": "功能等价，时间复杂度降至O(n)。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_029": {
+    "score": 9,
+    "reason": "时间复杂度降至O(n)，功能等价；切片略耗内存。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_030": {
+    "score": 9,
+    "reason": "时间降至O(n)，原地更新；负k语义略异。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_031": {
+    "score": 0,
+    "reason": "改变功能，原代码始终返回False",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_032": {
+    "score": 10,
+    "reason": "用set将查重降为O(n)，且修复add错误。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_033": {
+    "score": 1,
+    "reason": "改变语义，重复元素时结果不同",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_034": {
+    "score": 9,
+    "reason": "单遍双向映射，降空间且等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_035": {
+    "score": 5,
+    "reason": "有优化但边界功能不等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_036": {
+    "score": 2,
+    "reason": "改变原函数行为，功能不等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_037": {
+    "score": 9,
+    "reason": "用set去重，时间复杂度明显降低",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_038": {
+    "score": 8,
+    "reason": "明显降复杂度，但非完全等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_039": {
+    "score": 2,
+    "reason": "改变原函数行为，且不支持不可哈希元素",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_040": {
+    "score": 2,
+    "reason": "改变原函数行为，非功能等价。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_041": {
+    "score": 9,
+    "reason": "用集合查重，时间复杂度降至O(n)。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_042": {
+    "score": 9,
+    "reason": "用set查重，时间复杂度降至O(n)",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_043": {
+    "score": 9,
+    "reason": "降为O(1)，但异常行为略不等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_044": {
+    "score": 8,
+    "reason": "使用集合求交，修复错误且空间更优。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_045": {
+    "score": 7,
+    "reason": "空间时间有优化，但重复自对称元素结果不等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_046": {
+    "score": 7,
+    "reason": "修复错误并保持线性复杂度，但空间仍可优化。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_047": {
+    "score": 2,
+    "reason": "make_archive参数错误，功能不等价",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_048": {
+    "score": 5,
+    "reason": "使用lxml有潜在提速，但等价性和优化有限",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_049": {
+    "score": 3,
+    "reason": "仅修复语法，无性能优化，异常处理仍有问题",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  },
+  "Optimize_050": {
+    "score": 4,
+    "reason": "缓存减少请求但改变实时语义。",
+    "dim": "代码优化",
+    "judge": "gpt55"
+  }
+}

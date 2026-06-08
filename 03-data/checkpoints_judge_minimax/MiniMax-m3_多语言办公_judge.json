@@ -1,0 +1,302 @@
+{
+  "PAWSX_0": {
+    "score": 10,
+    "reason": "<think>\nThe task is to determine if two sentences ",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_1": {
+    "score": 10,
+    "reason": "正确判断两句话主从关系相反，答案\"否\"准确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_2": {
+    "score": 10,
+    "reason": "两句中各队所属级别互换，语义不同，模型回答正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_3": {
+    "score": 10,
+    "reason": "语义等价判断正确，答案准确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_4": {
+    "score": 1,
+    "reason": "able from a strict paraphrase perspective, though the entity name",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_5": {
+    "score": 10,
+    "reason": "正确答案，两句主语和出版物名互换，语义不同。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_6": {
+    "score": 10,
+    "reason": "正确判断两句语义等价，仅形容词形式差异。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_7": {
+    "score": 10,
+    "reason": "两句仅\"the\"有无之差，语义完全等价，模型判断正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_8": {
+    "score": 1,
+    "reason": "<think>\nThe question asks whether two sentences ar",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_9": {
+    "score": 1,
+    "reason": "第二句多出\"Holly\"，结构差异明显，不应判定为等价，模型判断错误。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_10": {
+    "score": 10,
+    "reason": "ing visible.",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_11": {
+    "score": 1,
+    "reason": "两句语义等价，模型判断错误，应答\"是\"。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_12": {
+    "score": 9,
+    "reason": "答案正确，两句语义等价，回答\"是\"无误。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_13": {
+    "score": 10,
+    "reason": "两句语义完全等价，仅词序和修饰词不同，判断正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_14": {
+    "score": 10,
+    "reason": "两句语义完全等价，模型回答正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_15": {
+    "score": 1,
+    "reason": "<think>\nThe model says \"是\" (Yes), but let me analy",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_16": {
+    "score": 8,
+    "reason": "两句含事实差异（Germany应为Austria），判否合理。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_17": {
+    "score": 10,
+    "reason": "两句语义完全等价，模型判断正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_18": {
+    "score": 9,
+    "reason": "答案正确，两句的作曲者和词作者互换了，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_19": {
+    "score": 1,
+    "reason": "<think>\nThe task is to judge whether two sentences",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_20": {
+    "score": 10,
+    "reason": "正确判断两句话语义相反，两处属性（成功/政治）互换，回答\"否\"完全正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_21": {
+    "score": 1,
+    "reason": "<think>\nThe task is to judge whether two sentences",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_22": {
+    "score": 1,
+    "reason": "<think>\nThe task is to judge whether two sentences",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_23": {
+    "score": 10,
+    "reason": "两句主语、宾语代词、介词均不同，答案\"否\"正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_24": {
+    "score": 8,
+    "reason": "判断正确，两句主客体关系互换，语义不等价，回答\"否\"准确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_25": {
+    "score": 10,
+    "reason": "两句关键修饰语不同（\"summer collegiate\" vs \"current summer\"），模型判断\"",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_26": {
+    "score": 10,
+    "reason": "语义判断正确，两句确为同义改写，模型准确回答\"是\"。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_27": {
+    "score": 10,
+    "reason": "两句含义完全相反，模型判断\"否\"完全正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_28": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the two sentences to determ",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_29": {
+    "score": 9,
+    "reason": "两句语义一致，模型回答正确。仅句2有轻微语法瑕疵但不影响语义判断。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_30": {
+    "score": 1,
+    "reason": "<think>\nThe question asks whether two sentences ar",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_31": {
+    "score": 9,
+    "reason": "判断正确，两句语义一致，格式规范。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_32": {
+    "score": 10,
+    "reason": "判断正确，两句语义等价，\"bes",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_33": {
+    "score": 0,
+    "reason": "两句语义等价，模型判断错误。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_34": {
+    "score": 10,
+    "reason": "两句语义等价，模型判断正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_35": {
+    "score": 10,
+    "reason": "正确判断两句话关系不同（grandson和friend对象互换），非语义等价。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_36": {
+    "score": 1,
+    "reason": "<think>\nThe task is to judge whether two sentences",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_37": {
+    "score": 9,
+    "reason": "判断正确，两句语义等价，仅日期格式不同。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_38": {
+    "score": 10,
+    "reason": "两句语义完全等价，模型判断正确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_39": {
+    "score": 10,
+    "reason": "回答正确，两句主谓关系相反，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_40": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate whether two senten",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_41": {
+    "score": 10,
+    "reason": "语义完全等价，\"expanded\"与\"widened\"同义，实体交换不影响语义。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_42": {
+    "score": 1,
+    "reason": "两句语义相同应为\"是\"，模型判断错误。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_43": {
+    "score": 1,
+    "reason": "<think>\nThe task is to judge whether two sentences",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_44": {
+    "score": 9,
+    "reason": "<think>\nThe task is to judge whether two sentences",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_45": {
+    "score": 10,
+    "reason": "正确判断两句话主语与死亡关系互换，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_46": {
+    "score": 10,
+    "reason": "两句语义等价，模型正确判断。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_47": {
+    "score": 10,
+    "reason": "判断正确，两句语义等价，仅用词和语序微调。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_48": {
+    "score": 10,
+    "reason": "正确判断两句话语义等价，答案准确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  },
+  "PAWSX_49": {
+    "score": 10,
+    "reason": "正确判断语义等价，\"aid\"与\"help\"语义相同，结论准确。",
+    "dim": "多语言办公",
+    "judge": "minimax"
+  }
+}

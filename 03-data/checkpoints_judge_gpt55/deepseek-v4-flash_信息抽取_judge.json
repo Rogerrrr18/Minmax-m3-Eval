@@ -1,0 +1,302 @@
+{
+  "NER_0": {
+    "score": 10,
+    "reason": "实体完整准确，无边界错误或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_1": {
+    "score": 10,
+    "reason": "实体完整准确，边界无误，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_2": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_3": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_4": {
+    "score": 9,
+    "reason": "实体完整准确，类型基本合理。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_5": {
+    "score": 8,
+    "reason": "基本正确，遗漏开头“京东”实体。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_6": {
+    "score": 10,
+    "reason": "实体完整准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_7": {
+    "score": 10,
+    "reason": "实体完整准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_8": {
+    "score": 9,
+    "reason": "实体完整且类型正确，重复实体未列出但影响很小。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_9": {
+    "score": 10,
+    "reason": "实体齐全，类型和边界均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_10": {
+    "score": 10,
+    "reason": "实体完整准确，边界合理，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_11": {
+    "score": 10,
+    "reason": "实体完整准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_12": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_13": {
+    "score": 9,
+    "reason": "实体基本完整，第二个上海未重复列出。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_14": {
+    "score": 10,
+    "reason": "实体完整准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_0": {
+    "score": 10,
+    "reason": "实体完整，类型和边界均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_1": {
+    "score": 10,
+    "reason": "实体完整准确，边界和类型均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_2": {
+    "score": 10,
+    "reason": "实体完整，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_3": {
+    "score": 8,
+    "reason": "基本正确，地点边界略有争议。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_4": {
+    "score": 9,
+    "reason": "实体基本完整准确，地点边界可更细。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_5": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_6": {
+    "score": 10,
+    "reason": "实体完整准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_7": {
+    "score": 10,
+    "reason": "实体完整准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_8": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_9": {
+    "score": 10,
+    "reason": "实体完整准确，无边界错误或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_10": {
+    "score": 10,
+    "reason": "实体完整准确，边界和类型均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_11": {
+    "score": 8,
+    "reason": "基本正确，遗漏“携程”组织名。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_12": {
+    "score": 10,
+    "reason": "实体完整准确，类型和边界均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_13": {
+    "score": 9,
+    "reason": "实体完整准确，仅搜狐重复出现未体现。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_14": {
+    "score": 8,
+    "reason": "主要实体正确，遗漏开头“360”实体。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_30": {
+    "score": 9,
+    "reason": "实体基本完整准确，X类型略有争议。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_31": {
+    "score": 8,
+    "reason": "实体基本全，错将新冠病毒标为产品名",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_32": {
+    "score": 9,
+    "reason": "实体基本全对，产品边界略少“手机”。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_33": {
+    "score": 7,
+    "reason": "主要实体正确，遗漏两处金额实体",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_34": {
+    "score": 8,
+    "reason": "基本正确，略漏2024年时间实体",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_35": {
+    "score": 7,
+    "reason": "主要实体正确，“全国两会”类型错误，漏感染科。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_36": {
+    "score": 10,
+    "reason": "实体完整准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_37": {
+    "score": 8,
+    "reason": "基本正确，遗漏金额“180亿美元”。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_38": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_39": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_40": {
+    "score": 10,
+    "reason": "实体完整准确，无边界错误或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_41": {
+    "score": 7,
+    "reason": "实体基本全，诺奖类型误标且重复。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_42": {
+    "score": 8,
+    "reason": "主要实体正确，遗漏69港元和11.4%",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_43": {
+    "score": 8,
+    "reason": "大多正确，嫦娥六号边界不完整。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_44": {
+    "score": 8,
+    "reason": "实体基本完整，但“诺贝尔物理学奖”类型误标为产品名。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_45": {
+    "score": 8,
+    "reason": "基本正确，遗漏金额实体“361.4亿元人民币”。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_46": {
+    "score": 10,
+    "reason": "实体完整准确，类型和边界均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_47": {
+    "score": 8,
+    "reason": "主要实体正确，遗漏金额6999元。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_48": {
+    "score": 8,
+    "reason": "基本正确，遗漏“抖音”产品名。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_49": {
+    "score": 8,
+    "reason": "大部分正确，“杂交水稻之父”类型错误。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  }
+}

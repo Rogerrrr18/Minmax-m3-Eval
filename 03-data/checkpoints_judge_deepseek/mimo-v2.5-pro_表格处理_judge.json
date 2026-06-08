@@ -1,0 +1,302 @@
+{
+  "table_office_001": {
+    "score": 10,
+    "reason": "代码正确完整，可执行，符合所有要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_office_002": {
+    "score": 10,
+    "reason": "公式语法正确，完全符合要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_office_003": {
+    "score": 0,
+    "reason": "未输出任何内容，完全未完成任务。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_office_004": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_office_005": {
+    "score": 10,
+    "reason": "代码完全正确，可执行且完美实现要求的功能。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_0": {
+    "score": 10,
+    "reason": "公式正确，语法无误，准确计算总销售额。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_1": {
+    "score": 10,
+    "reason": "公式语法正确，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_2": {
+    "score": 10,
+    "reason": "公式正确，符合题目要求，语法无误且可向下填充。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_3": {
+    "score": 10,
+    "reason": "公式完全正确，语法无误，直接满足题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_4": {
+    "score": 10,
+    "reason": "公式语法正确，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_5": {
+    "score": 10,
+    "reason": "公式完全正确，逻辑清晰，符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_6": {
+    "score": 10,
+    "reason": "公式完全正确，动态计算当月累计销售额，逻辑严谨。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_7": {
+    "score": 10,
+    "reason": "公式正确，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_8": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完全符合要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_9": {
+    "score": 10,
+    "reason": "公式完全正确，语法无误，直接实现了折后价的计算。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_10": {
+    "score": 8,
+    "reason": "公式正确，日期用年底合理，无语法错误。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_11": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完全符合要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_12": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑精确，完全满足题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_13": {
+    "score": 9,
+    "reason": "公式语法正确，直接计算完成率，但未处理除零错误。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_14": {
+    "score": 10,
+    "reason": "公式完全正确，语法无误，符合Excel计算逻辑。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_15": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑符合要求，完美。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_16": {
+    "score": 10,
+    "reason": "公式正确，直接实现生产日期加保质期天数。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_17": {
+    "score": 10,
+    "reason": "公式正确，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_18": {
+    "score": 10,
+    "reason": "公式正确，符合偏差天数=实际-计划的要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_19": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑清晰，完全符合题目要求，完美实现分级返点计算。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_20": {
+    "score": 10,
+    "reason": "公式正确，完全符合任务要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_21": {
+    "score": 10,
+    "reason": "公式精准实现判断逻辑，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_22": {
+    "score": 0,
+    "reason": "模型输出为空，未提供任何公式。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_23": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_24": {
+    "score": 10,
+    "reason": "公式正确，处理了除零错误，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_0": {
+    "score": 0,
+    "reason": "模型未输出任何公式或代码。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_1": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_2": {
+    "score": 10,
+    "reason": "代码语法正确，逻辑清晰，完全满足题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_3": {
+    "score": 4,
+    "reason": "公式仅计算单次净入库，未考虑初始库存或累积，不满足\"实时计算\"要求。条件格式化正确。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_4": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_5": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_6": {
+    "score": 10,
+    "reason": "代码正确实现Z-score异常检测，输出要求字段。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_7": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_8": {
+    "score": 10,
+    "reason": "代码完整准确，正确读取数据、计算达标率并生成柱状图与饼图，考虑中文显示和标签。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_9": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_10": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_11": {
+    "score": 10,
+    "reason": "公式和条件格式完全正确，符合题目要求，无任何错误或遗漏。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_12": {
+    "score": 0,
+    "reason": "模型未输出任何内容，完全未完成任务。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_13": {
+    "score": 0,
+    "reason": "模型输出为空，未提供任何公式或代码。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_14": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_15": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑清晰，准确计算NPS得分。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_16": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_17": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_18": {
+    "score": 9,
+    "reason": "代码正确实现所有要求，可执行，仅趋势图可用于分类",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_19": {
+    "score": 10,
+    "reason": "所有公式正确，步骤完整，完全符合要求",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  }
+}

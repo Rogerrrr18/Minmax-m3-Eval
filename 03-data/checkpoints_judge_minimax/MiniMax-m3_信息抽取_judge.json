@@ -1,0 +1,302 @@
+{
+  "NER_0": {
+    "score": 10,
+    "reason": "所有实体边界和类型均正确，无遗漏，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_1": {
+    "score": 8,
+    "reason": "",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_2": {
+    "score": 9,
+    "reason": "所有实体均正确",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_3": {
+    "score": 9,
+    "reason": "<think>\nLet me evaluate the entity extraction resu",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_4": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型准确，无遗漏无幻觉，完全正确。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_5": {
+    "score": 2,
+    "reason": "<think>\nLet me analyze the model's extraction agai",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_6": {
+    "score": 9,
+    "reason": "able. Complete and correct.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_7": {
+    "score": 9,
+    "reason": "所有实体边界和类型均正确，漏抽末尾\"百度\"重复实体。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_8": {
+    "score": 10,
+    "reason": "所有实体抽取正确，边界准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_9": {
+    "score": 9,
+    "reason": "实体识别准确，遗漏了第二次出现的\"比亚迪\"实例。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_10": {
+    "score": 10,
+    "reason": "所有实体抽取完整，边界和类型均正确，无遗漏和幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_11": {
+    "score": 9,
+    "reason": "<think>\nLet me analyze the named entity extraction",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_12": {
+    "score": 8,
+    "reason": "边界正确无幻觉",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_13": {
+    "score": 9,
+    "reason": "所有实体抽取正确，边界准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_14": {
+    "score": 10,
+    "reason": "全部7个实体正确抽取，边界和类型均准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_0": {
+    "score": 10,
+    "reason": "9个实体全部正确抽取，边界准确，类型无误，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_1": {
+    "score": 9,
+    "reason": "<think>\nLet me analyze the entity extraction resul",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_2": {
+    "score": 9,
+    "reason": "able. This is a perfect or near-perfect extraction.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_3": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型准确",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_4": {
+    "score": 9,
+    "reason": "<think>\nLet me evaluate the model's extraction aga",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_5": {
+    "score": 9,
+    "reason": "able to list it once as an organization. All 6 entities are correctly extracted with correct boundaries and no hallucination.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_6": {
+    "score": 6,
+    "reason": "<think>\nLet me evaluate the entity extraction resu",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_7": {
+    "score": 8,
+    "reason": "漏抽\"1995年\"这一时间实体，其余实体类型与边界均正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_8": {
+    "score": 9,
+    "reason": "<think>\nLet me evaluate the entity extraction resu",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_9": {
+    "score": 10,
+    "reason": "所有实体识别完整，边界与类型均正确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_10": {
+    "score": 9,
+    "reason": "实体完整，边界正确，无幻觉",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_11": {
+    "score": 8,
+    "reason": "able. \"携程\" could be considered 组织名 (organization) since it's a company, but 产品名 (product) is also acceptable. \"携程旅行网\" is the full product/website name.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_12": {
+    "score": 10,
+    "reason": "全部实体抽取正确，边界准确，类型无误，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_13": {
+    "score": 10,
+    "reason": "able. \"陕西西安\" could be considered as \"陕西西安:地点\" as a combined entity, but splitting them is also acceptable.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_14": {
+    "score": 10,
+    "reason": "<think>\nLet me analyze the model's output against ",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_30": {
+    "score": 10,
+    "reason": "able classification)",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_31": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the NER extraction results.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_32": {
+    "score": 9,
+    "reason": "<think>\nLet me analyze the model's output against ",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_33": {
+    "score": 4,
+    "reason": "正确提取贵州茅台和日期，但遗漏价格2608.59元和市值3.2万亿元。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_34": {
+    "score": 7,
+    "reason": "able, though \"2024年巴黎奥运会\" is the full event name)",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_35": {
+    "score": 7,
+    "reason": "主要实体抽取正确，缺少\"教授\"头衔，无幻觉，感染科单独列出略冗余。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_36": {
+    "score": 10,
+    "reason": "所有实体边界和类型均正确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_37": {
+    "score": 9,
+    "reason": "主要实体均正确抽取，边界准确，无幻觉，略缺\"拜登\"人名。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_38": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_39": {
+    "score": 10,
+    "reason": "所有实体边界和类型均正确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_40": {
+    "score": 8,
+    "reason": "<think>\nLet me evaluate the NER extraction results",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_41": {
+    "score": 9,
+    "reason": "able）",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_42": {
+    "score": 9,
+    "reason": "实体抽取完整且边界正确，无幻觉，仅\"69\"略可补充。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_43": {
+    "score": 5,
+    "reason": "able.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_44": {
+    "score": 7,
+    "reason": "主要实体基本正确",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_45": {
+    "score": 9,
+    "reason": "六类实体均正确抽取且边界准确，无幻觉；仅遗漏",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_46": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型无误，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_47": {
+    "score": 8,
+    "reason": "able but could be argued as one entity.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_48": {
+    "score": 5,
+    "reason": "<think>\nLet me analyze the text and the model's ou",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_49": {
+    "score": 9,
+    "reason": "able (could also be 技术, but 产品名 is acceptable since 杂交水稻之父 implies it as a product/achievement).",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  }
+}

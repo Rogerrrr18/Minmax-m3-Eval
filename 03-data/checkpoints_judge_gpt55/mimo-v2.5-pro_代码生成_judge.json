@@ -1,0 +1,602 @@
+{
+  "HumanEval/0": {
+    "score": 10,
+    "reason": "正确高效，边界处理良好",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/1": {
+    "score": 10,
+    "reason": "正确忽略空格并按深度分组，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/2": {
+    "score": 10,
+    "reason": "正确返回正浮点数小数部分。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/3": {
+    "score": 10,
+    "reason": "实现正确，逻辑简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/4": {
+    "score": 10,
+    "reason": "正确简洁实现MAD，复杂度合理。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/5": {
+    "score": 10,
+    "reason": "逻辑正确，处理空列表，效率和实现均良好。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/6": {
+    "score": 10,
+    "reason": "实现正确简洁，符合题意。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/7": {
+    "score": 10,
+    "reason": "实现简洁正确，覆盖题意。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/8": {
+    "score": 10,
+    "reason": "正确处理空列表，逻辑简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/9": {
+    "score": 10,
+    "reason": "完全正确，处理空列表，时间复杂度O(n)。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/10": {
+    "score": 10,
+    "reason": "正确实现，逻辑清晰高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/11": {
+    "score": 10,
+    "reason": "正确实现二进制异或，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/12": {
+    "score": 10,
+    "reason": "正确处理空列表和并列最长首个。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/13": {
+    "score": 10,
+    "reason": "欧几里得算法正确高效，处理负数和零。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/14": {
+    "score": 10,
+    "reason": "完全正确，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/15": {
+    "score": 10,
+    "reason": "完全符合要求，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/16": {
+    "score": 10,
+    "reason": "实现简洁正确，忽略大小写统计 distinct 字符。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/17": {
+    "score": 10,
+    "reason": "完全符合题意，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/18": {
+    "score": 10,
+    "reason": "正确统计重叠出现次数，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/19": {
+    "score": 10,
+    "reason": "实现正确，简洁高效，覆盖空输入。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/20": {
+    "score": 10,
+    "reason": "排序后相邻比较，正确高效处理重复值。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/21": {
+    "score": 9,
+    "reason": "实现正确高效，仅等值情况处理与规格略不一致。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/22": {
+    "score": 10,
+    "reason": "正确过滤整数并排除bool，简洁高效",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/23": {
+    "score": 10,
+    "reason": "正确实现字符串长度计算。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/24": {
+    "score": 9,
+    "reason": "逻辑正确高效，边界n<=1略存疑",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/25": {
+    "score": 10,
+    "reason": "正确返回有序质因数，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/26": {
+    "score": 10,
+    "reason": "正确统计频次并保序过滤唯一元素",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/27": {
+    "score": 10,
+    "reason": "正确使用swapcase，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/28": {
+    "score": 10,
+    "reason": "正确简洁，完美实现字符串列表拼接。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "HumanEval/29": {
+    "score": 10,
+    "reason": "完全正确，简洁高效，符合题意。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_0": {
+    "score": 9,
+    "reason": "逻辑正确，边界情况处理较好。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_1": {
+    "score": 9,
+    "reason": "正确按行和升序排序，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_2": {
+    "score": 4,
+    "reason": "函数名和返回格式不符",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_3": {
+    "score": 8,
+    "reason": "公式正确且通用，但参数定义可能与常见测试签名不符。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_4": {
+    "score": 7,
+    "reason": "基本可行，但连续小写会产生多余空串。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_5": {
+    "score": 5,
+    "reason": "可运行，但会匹配无下划线片段。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_6": {
+    "score": 10,
+    "reason": "实现正确简洁，符合题意。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_7": {
+    "score": 9,
+    "reason": "功能正确，未用集合优化效率",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_8": {
+    "score": 10,
+    "reason": "正确高效，使用集合检测重复，时间复杂度O(n)。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_9": {
+    "score": 9,
+    "reason": "正确判断Woodall数，效率良好。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_10": {
+    "score": 10,
+    "reason": "正确返回n的前m个倍数。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_11": {
+    "score": 9,
+    "reason": "实现正确高效，边界处理合理；题意若按首次出现重复则满分。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_12": {
+    "score": 9,
+    "reason": "实现正确简洁，空列表处理合理。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_13": {
+    "score": 8,
+    "reason": "正确高效，但仅支持字符串输入。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_14": {
+    "score": 9,
+    "reason": "逻辑正确，使用Counter高效简洁。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_15": {
+    "score": 9,
+    "reason": "逻辑正确，简洁高效，空列表语义略不明。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_16": {
+    "score": 10,
+    "reason": "实现正确，简洁高效，符合题意",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_17": {
+    "score": 9,
+    "reason": "实现正确高效，未处理负数输入。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_18": {
+    "score": 10,
+    "reason": "异或实现正确高效，符合题意。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_19": {
+    "score": 9,
+    "reason": "逻辑正确且高效，函数名可能与测试期望不一致。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_20": {
+    "score": 8,
+    "reason": "功能正确且使用堆，平局顺序可能不符预期。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_21": {
+    "score": 9,
+    "reason": "实现正确高效，边界n<=1略不严谨",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_22": {
+    "score": 9,
+    "reason": "实现正确，支持0和负数，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_23": {
+    "score": 6,
+    "reason": "仅适用于从0开始的连续数组",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_24": {
+    "score": 10,
+    "reason": "正确实现第n个矩形数公式，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_25": {
+    "score": 9,
+    "reason": "逻辑正确高效，处理终止小数和零分母，函数名可能与预期不一致。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_26": {
+    "score": 10,
+    "reason": "正确区分并排序整数与字符串，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_27": {
+    "score": 9,
+    "reason": "逻辑正确高效，函数名可能不匹配。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_28": {
+    "score": 9,
+    "reason": "逻辑正确高效，函数名可能不符",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_29": {
+    "score": 9,
+    "reason": "正确使用Counter统计，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_0": {
+    "score": 7,
+    "reason": "核心平均计算正确，但未按要求shuffle。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_1": {
+    "score": 10,
+    "reason": "完全符合要求，简洁正确。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_2": {
+    "score": 9,
+    "reason": "实现正确，使用statistics排序；仅随机键理解略简化。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_3": {
+    "score": 10,
+    "reason": "完全符合要求，简洁正确。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_4": {
+    "score": 9,
+    "reason": "功能正确，略有不必要列表化开销",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_5": {
+    "score": 10,
+    "reason": "完全符合要求，计算正确。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_6": {
+    "score": 9,
+    "reason": "实现正确高效，仅隐藏文件可能遗漏。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_7": {
+    "score": 10,
+    "reason": "实现正确，简洁高效，符合要求。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_8": {
+    "score": 9,
+    "reason": "实现正确高效，仅有未使用导入。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_9": {
+    "score": 10,
+    "reason": "完全符合要求，返回正确DataFrame和柱状图。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_10": {
+    "score": 7,
+    "reason": "基本正确，但随机源可能不符，均值/中位数未保证float。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_11": {
+    "score": 9,
+    "reason": "实现正确，边界处理略不确定",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_12": {
+    "score": 9,
+    "reason": "功能完整，异常处理合理，日志正确；非零退出是否应抛异常略有歧义。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_13": {
+    "score": 8,
+    "reason": "基本正确，异常处理符合要求，但未检查wget失败且资源清理不完善。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_14": {
+    "score": 7,
+    "reason": "参数名不符，关键字调用会失败",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_15": {
+    "score": 8,
+    "reason": "基本正确，CSV拼接和失败输出细节可能不完全符合预期。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_16": {
+    "score": 9,
+    "reason": "功能正确高效，仅未按要求导入subprocess。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_17": {
+    "score": 9,
+    "reason": "功能正确，处理较完善，仅细节略欠。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_18": {
+    "score": 0,
+    "reason": "代码被截断，语法不完整无法运行",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_19": {
+    "score": 8,
+    "reason": "基本正确，但可能打包已有files.zip。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_20": {
+    "score": 9,
+    "reason": "实现正确简洁，缺少异常/缺失值处理。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_21": {
+    "score": 10,
+    "reason": "完全符合要求，正确获取系统信息并格式化内存使用率。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_22": {
+    "score": 8,
+    "reason": "基本正确，但会丢失列表中的None元素。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_23": {
+    "score": 9,
+    "reason": "实现正确，空列表返回值略不确定",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_24": {
+    "score": 9,
+    "reason": "功能正确，随机盐和PBKDF2实现规范。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_25": {
+    "score": 10,
+    "reason": "完全符合要求，序列化压缩编码均正确。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_26": {
+    "score": 10,
+    "reason": "完全符合要求，正确加密并Base64编码。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_27": {
+    "score": 10,
+    "reason": "完全符合要求，实现正确简洁。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_28": {
+    "score": 10,
+    "reason": "完全符合要求，正确序列化、base64编码并POST payload。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "BigCode_29": {
+    "score": 9,
+    "reason": "正确标准化并Base64编码，处理一维输入，整体实现良好。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_0": {
+    "score": 10,
+    "reason": "正确使用lambda过滤偶数，简洁高效。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_1": {
+    "score": 9,
+    "reason": "正确统计重复元素并去重求和。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_2": {
+    "score": 8,
+    "reason": "正确使用正则查找，边界处理略不足",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_3": {
+    "score": 7,
+    "reason": "可匹配指定词开头，但接口偏离题意。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_4": {
+    "score": 9,
+    "reason": "正整数数组正确高效，未处理空数组/负数。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_5": {
+    "score": 10,
+    "reason": "实现简洁正确，效率高。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_6": {
+    "score": 0,
+    "reason": "未提供可运行代码。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_7": {
+    "score": 0,
+    "reason": "未提供可运行代码，无法完成任务",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_8": {
+    "score": 9,
+    "reason": "功能正确，支持默认和指定索引。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  },
+  "MBPP_Extra_9": {
+    "score": 10,
+    "reason": "正确使用lambda按长度取最短列表。",
+    "dim": "代码生成",
+    "judge": "gpt55"
+  }
+}

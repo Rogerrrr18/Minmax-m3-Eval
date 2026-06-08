@@ -1,0 +1,302 @@
+{
+  "CodeSearch_0": {
+    "score": 0,
+    "reason": "模型输出与题目无关，未基于任何上下文进行补全，完全错误。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_1": {
+    "score": 2,
+    "reason": "题目无上下文，输出与任务无关，无法正确补全。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_2": {
+    "score": 0,
+    "reason": "题目内容为空，模型输出无关空函数，无任何有效代码补全。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_3": {
+    "score": 2,
+    "reason": "题目未",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_4": {
+    "score": 10,
+    "reason": "完全正确的斐波那契生成器实现，代码简洁高效，与上下文衔接良好。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_5": {
+    "score": 2,
+    "reason": "缺少上下文，输出与题目无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_6": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_7": {
+    "score": 0,
+    "reason": "模型输出为空，未进行任何补全。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_8": {
+    "score": 0,
+    "reason": "无代码上下文，输出\"pass\"完全不相关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_9": {
+    "score": 0,
+    "reason": "模型未补全任何代码，仅要求提供代码，完全不符合题目要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_10": {
+    "score": 0,
+    "reason": "题目未提供任何代码上下文，模型输出无关内容。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_11": {
+    "score": 1,
+    "reason": "题目内容为空，模型输出无关的打印语句，无法正确补全。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_12": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，输出仅为注释占位符。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_13": {
+    "score": 2,
+    "reason": "题目未提供原始代码上下文，无法判断补",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_14": {
+    "score": 0,
+    "reason": "无上下文对应，模型输出无法验证其正确性。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_15": {
+    "score": 0,
+    "reason": "题目未提供需补全的代码，模型输出不相关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_16": {
+    "score": 0,
+    "reason": "模型未补全代码，反而请求提供代码片段，与任务无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_17": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_18": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，而是要求提供代码，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_19": {
+    "score": 0,
+    "reason": "模型输出为空，未完成代码补全任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_20": {
+    "score": 0,
+    "reason": "题目内容为空，模型输出无关的main函数，未补全任何代码。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_21": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_22": {
+    "score": 0,
+    "reason": "模型未补全代码，仅要求用户提供代码，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_23": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，反而要求用户提供代码，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_24": {
+    "score": 0,
+    "reason": "模型未补全代码，反而要求提供代码，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_25": {
+    "score": 0,
+    "reason": "模型输出为空，未进行任何代码补全。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_26": {
+    "score": 0,
+    "reason": "题目内容为空，模型输出与题目无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_27": {
+    "score": 0,
+    "reason": "未提供有效补全，仅输出提示信息。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_28": {
+    "score": 0,
+    "reason": "未输出任何补全内容，而是要求用户提供代码片段，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_29": {
+    "score": 0,
+    "reason": "题目未提供上下文，模型输出与空白无关，无法验证正确性。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_30": {
+    "score": 0,
+    "reason": "题目未提供待补全代码，模型输出仅为占位符，未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_31": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_32": {
+    "score": 0,
+    "reason": "题目未提供待补全",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_33": {
+    "score": 0,
+    "reason": "未补全代码，仅输出错误提示，不符合任务要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_34": {
+    "score": 0,
+    "reason": "题目无代码片段，模型输出与需求无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_35": {
+    "score": 0,
+    "reason": "模型输出未补全代码，仅请求提供代码，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_36": {
+    "score": 0,
+    "reason": "模型未提供任何补全代码，仅请求提供代码，完全错误。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_37": {
+    "score": 0,
+    "reason": "模型未提供代码补全，而是要求提供代码内容，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_38": {
+    "score": 1,
+    "reason": "题目无上下文，输出通用模板与要求无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_39": {
+    "score": 0,
+    "reason": "模型未补全代码，仅输出注释要求提供代码，与任务无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_40": {
+    "score": 2,
+    "reason": "缺少原始代码上下文，无法判断补全是否正确",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_41": {
+    "score": 0,
+    "reason": "未补全任何代码，仅输出空函数模板。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_42": {
+    "score": 0,
+    "reason": "未提供上下文，模型输出无意义空函数，完全错误。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_43": {
+    "score": 0,
+    "reason": "模型未补全任何代码，仅输出默认模板，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_44": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_45": {
+    "score": 1,
+    "reason": "模型输出与题目无关（题目无上下文），随机输出加法函数。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_46": {
+    "score": 0,
+    "reason": "模型输出未针对任何代码上下文，与题目要求无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_47": {
+    "score": 0,
+    "reason": "缺少待补全代码上下文，输出无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_48": {
+    "score": 0,
+    "reason": "题目未提供任何代码上下文，模型输出与题目无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_49": {
+    "score": 2,
+    "reason": "无上下文，补全内容与题目无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  }
+}

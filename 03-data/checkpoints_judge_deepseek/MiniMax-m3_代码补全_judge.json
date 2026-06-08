@@ -1,0 +1,302 @@
+{
+  "CodeSearch_0": {
+    "score": 0,
+    "reason": "模型未理解任务，要求用户提供代码，未进行任何补全。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_1": {
+    "score": 0,
+    "reason": "未输出任何补全代码，直接指出输入问题，未完成补全任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_2": {
+    "score": 0,
+    "reason": "模型未进行代码补全，反而要求用户提供代码，完全不符合任务要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_3": {
+    "score": 0,
+    "reason": "模型未补全任何代码，而是要求用户提供代码，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_4": {
+    "score": 0,
+    "reason": "模型未补全代码，而是要求用户提供代码，完全不符合任务要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_5": {
+    "score": 0,
+    "reason": "模型未输出补全代码，而是请求提供代码，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_6": {
+    "score": 0,
+    "reason": "模型未补全代码，而是请求用户提供代码，完全不符合任务要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_7": {
+    "score": 10,
+    "reason": "代码完整、逻辑清晰、功能齐全，符合题目要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_8": {
+    "score": 0,
+    "reason": "模型未提供补全代码，仅要求提供题目代码内容，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_9": {
+    "score": 0,
+    "reason": "模型未补全代码，反而要求提供代码，与任务完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_10": {
+    "score": 0,
+    "reason": "模型未补全代码，错误要求用户提供内容，完全脱离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_11": {
+    "score": 0,
+    "reason": "模型未补全代码，仅要求提供输入，未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_12": {
+    "score": 0,
+    "reason": "模型未进行代码补全，仅要求提供代码，未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_13": {
+    "score": 10,
+    "reason": "模型识别出输入缺少代码，合理要求提供代码，符合逻辑。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_14": {
+    "score": 0,
+    "reason": "模型未尝试补全代码，直接要求用户提供代码，完全错误。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_15": {
+    "score": 0,
+    "reason": "模型未输出任何代码补全，而是要求提供代码片段，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_16": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_17": {
+    "score": 0,
+    "reason": "未补全任何代码，仅要求提供输入，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_18": {
+    "score": 0,
+    "reason": "模型未提供任何补全代码，而是要求用户提供代码，完全偏离任务要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_19": {
+    "score": 0,
+    "reason": "未输出任何补全代码，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_20": {
+    "score": 0,
+    "reason": "模型未进行代码补全，仅返回请求提供代码的提示，与任务无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_21": {
+    "score": 0,
+    "reason": "Score: 0\nReason",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_22": {
+    "score": 0,
+    "reason": "未提供任何代码补全，仅要求补充信息，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_23": {
+    "score": 0,
+    "reason": "模型未补全代码，而是要求用户提供代码，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_24": {
+    "score": 0,
+    "reason": "模型未补全代码，反而请求提供代码，与任务无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_25": {
+    "score": 0,
+    "reason": "模型未补全代码，直接要求用户输入，不符合任务要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_26": {
+    "score": 8,
+    "reason": "模型正确识别到输入缺失并请求提供代码，合理且负责任。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_27": {
+    "score": 0,
+    "reason": "模型未执行补全任务，反而要求用户提供代码，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_28": {
+    "score": 0,
+    "reason": "模型未补全任何代码，而是要求提供代码，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_29": {
+    "score": 0,
+    "reason": "未输出任何补全代码，直接请求输入，不符合任务要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_30": {
+    "score": 0,
+    "reason": "模型未补全代码，而是要求用户输入，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_31": {
+    "score": 0,
+    "reason": "模型未补全代码，反而要求用户提供代码，完全错误。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_32": {
+    "score": 0,
+    "reason": "模型未给出任何代码补全，仅请求输入，不符合任务要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_33": {
+    "score": 0,
+    "reason": "模型未输出补全代码，反而要求提供题目，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_34": {
+    "score": 0,
+    "reason": "未提供任何代码补全，仅要求用户提供代码，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_35": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，反而要求用户提供代码，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_36": {
+    "score": 0,
+    "reason": "模型未提供代码补全，而是要求用户提供代码，与任务完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_37": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，而是要求用户提供代码，与任务无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_38": {
+    "score": 0,
+    "reason": "模型未进行代码补全，而是要求用户提供代码，完全不符合要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_39": {
+    "score": 0,
+    "reason": "模型未输出任何补全代码，仅请求输入，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_40": {
+    "score": 0,
+    "reason": "未输出任何代码补全，直接要求提供代码，未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_41": {
+    "score": 0,
+    "reason": "模型未补全代码，而是要求用户提供代码，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_42": {
+    "score": 0,
+    "reason": "模型未进行代码补全，仅要求提供代码，未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_43": {
+    "score": 0,
+    "reason": "模型要求用户提供代码，未完成补全任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_44": {
+    "score": 0,
+    "reason": "模型未补全代码，反问用户需补全内容，完全未执行任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_45": {
+    "score": 0,
+    "reason": "模型未补全代码，反而要求用户提供代码，完全无关任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_46": {
+    "score": 0,
+    "reason": "模型未提供任何补全代码，仅请求输入，与任务无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_47": {
+    "score": 0,
+    "reason": "模型未输出任何代码补全，直接要求输入，未完成任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_48": {
+    "score": 0,
+    "reason": "模型未识别到代码内容，未提供任何补全，完全偏离任务。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_49": {
+    "score": 0,
+    "reason": "模型未补全代码，而是请求用户输入，完全不符合题目要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "GSM8K_0": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且正确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_1": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，输出准确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_2": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_3": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且可运行，符合完美解答标准。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_4": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且有注释，完美解答。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_5": {
+    "score": 9,
+    "reason": "答案正确，思路清晰，",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_6": {
+    "score": 10,
+    "reason": "解题思路正确，代码清晰完整，结果准确无误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_7": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，输出规范。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_8": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_9": {
+    "score": 10,
+    "reason": "代码完全正确，计算准确，逻辑清晰且可复用。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_10": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，并输出正确结果。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_11": {
+    "score": 10,
+    "reason": "代码正确计算总成本，思路清晰，输出完整。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_12": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_13": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_14": {
+    "score": 10,
+    "reason": "答案正确，代码完整清晰，思路严谨，符合完美解答标准。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_15": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且输出格式规范。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_16": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码简洁，完全符合题目要求。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_17": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_18": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且运行结果无误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_19": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整有效，无任何错误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_20": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，符合题意。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_21": {
+    "score": 10,
+    "reason": "代码逻辑正确，计算结果准确，思路清晰完整。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_22": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且运行结果无误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_23": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码实现无误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_24": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且准确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_25": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，运行结果无误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_26": {
+    "score": 10,
+    "reason": "代码正确，思路清晰，结果准确，完全符合要求。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_27": {
+    "score": 10,
+    "reason": "答案正确，代码清晰，逻辑完整。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_28": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，运行结果无误，符合完美解答标准。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_29": {
+    "score": 10,
+    "reason": "代码正确计算靴子价格104，思路清晰，输出完整。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_30": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，输出结果无误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_31": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整无误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_32": {
+    "score": 10,
+    "reason": "答案正确，代码完整，过程清晰简洁。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_33": {
+    "score": 10,
+    "reason": "答案完全正确，思路清晰，代码完整且包含验证。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_34": {
+    "score": 10,
+    "reason": "代码正确实现逻辑，输出结果23，清晰简洁。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_35": {
+    "score": 10,
+    "reason": "答案正确，代码完整清晰，计算过程准确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_36": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_37": {
+    "score": 10,
+    "reason": "答案正确，推理清晰，代码完全正确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_38": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且逻辑无误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_39": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，完美解答。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_40": {
+    "score": 10,
+    "reason": "答案正确，解题逻辑清晰，代码完整简洁。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_41": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且执行无误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_42": {
+    "score": 10,
+    "reason": "代码完全正确，思路清晰，注释完整，输出结果准确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_43": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，完美解答。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_44": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_45": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_46": {
+    "score": 10,
+    "reason": "答案正确，代码逻辑清晰，结果准确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_47": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_48": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整且无错误。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "GSM8K_49": {
+    "score": 10,
+    "reason": "代码正确，计算清晰，直接给出正确答案30。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_0": {
+    "score": 10,
+    "reason": "答案正确、思路清晰、代码完整，包含多种实现和复杂度分析。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_1": {
+    "score": 10,
+    "reason": "正确实现三角棱柱体积公式，代码完整，含文档和错误处理。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_2": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_3": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，多语言实现并考虑边界情况，完美解答。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_4": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，复杂度分析准确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_5": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码简洁，覆盖边界情况。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_6": {
+    "score": 10,
+    "reason": "完美解答，算法正确，复杂度分析合理，代码清晰。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_7": {
+    "score": 10,
+    "reason": "代码正确、简洁，处理边界条件，使用生成器高效，完美符合题目要求。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_8": {
+    "score": 10,
+    "reason": "Score: 10",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_9": {
+    "score": 10,
+    "reason": "代码正确，高效使用Counter统计频率，逻辑清晰，复杂度O(n)。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_10": {
+    "score": 10,
+    "reason": "代码正确，包含两种实现，逻辑清晰，处理了边界情况，完全符合要求。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_11": {
+    "score": 10,
+    "reason": ":",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_12": {
+    "score": 0,
+    "reason": "模型输出异常信息，未提供任何有效解答。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_13": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_14": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整，处理了0和负数。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_15": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，复杂度最优，代码简洁且涵盖边界情况。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_16": {
+    "score": 10,
+    "reason": "答案正确，公式清晰，代码实现完整，复杂度分析准确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_17": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_18": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_19": {
+    "score": 10,
+    "reason": "完美实现，思路清晰，代码正确，考虑了边界情况。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_20": {
+    "score": 10,
+    "reason": "完全正确，思路清晰，代码简洁，正确使用了collections模块。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_21": {
+    "score": 10,
+    "reason": "代码正确，思路清晰，复杂度分析恰当，示例验证准确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_22": {
+    "score": 10,
+    "reason": "正则准确，代码完整，示例输出正确。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_23": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，提供多语言实现和复杂度分析，完美解答。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_24": {
+    "score": 10,
+    "reason": "答案正确，提供两种方案，思路清晰，复杂度分析恰当。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_25": {
+    "score": 0,
+    "reason": "模型输出异常，未给出任何有效解答。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_26": {
+    "score": 10,
+    "reason": "答案正确，代码简洁高效，使用lambda和min，思路清晰，完美满足题目要求。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_27": {
+    "score": 10,
+    "reason": "思路清晰，代码正确，支持负数范围，复杂度分析隐含正确，完全满足题目要求。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_28": {
+    "score": 10,
+    "reason": "公式正确，多语言实现清晰，含错误处理与示例，完美解答。",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  },
+  "Algo_MBPP_29": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "算法能力",
+    "judge": "deepseek"
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "XSum_0": {
+    "score": 8,
+    "reason": "内容准确全面，但略超100字限制。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_1": {
+    "score": 9,
+    "reason": "信息完整准确，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_2": {
+    "score": 7,
+    "reason": "信息完整准确，但超过100字限制。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_3": {
+    "score": 7,
+    "reason": "基本完整，但误称助西布朗升超。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_4": {
+    "score": 8,
+    "reason": "内容准确完整，但略超100字限制。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_5": {
+    "score": 9,
+    "reason": "要点完整，概括准确，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_6": {
+    "score": 8,
+    "reason": "内容准确完整，但略超100字且“欣慰”不准",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_7": {
+    "score": 8,
+    "reason": "内容准确完整，但略超100字限制。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_8": {
+    "score": 8,
+    "reason": "概括准确，但略超100字且细节偏多",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_9": {
+    "score": 9,
+    "reason": "准确精炼，覆盖要点，个别译名小误。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_001": {
+    "score": 9,
+    "reason": "要素齐全，语气正式，略有额外信息。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_002": {
+    "score": 10,
+    "reason": "要素完整，数据具体，语气正式得体。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_003": {
+    "score": 9,
+    "reason": "要素齐全，格式规范，地点电话略占位。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_004": {
+    "score": 7,
+    "reason": "要素齐全语气得体，但数据多为占位且结尾截断。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_005": {
+    "score": 8,
+    "reason": "要素齐全、语气得体，但地点等信息为占位符。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_006": {
+    "score": 10,
+    "reason": "要素完整，结构清晰，语气专业。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_007": {
+    "score": 9,
+    "reason": "要素齐全，语气正式，少量占位符未完善",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_008": {
+    "score": 8,
+    "reason": "要素较全、数据充分，个别数量不一致。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_009": {
+    "score": 9,
+    "reason": "要素齐全，结构清晰，语气正式适用。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_010": {
+    "score": 6,
+    "reason": "内容详实但截断，关键评估缺失",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_011": {
+    "score": 9,
+    "reason": "要素完整，结构清晰，语气得体。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_012": {
+    "score": 9,
+    "reason": "要素齐全，表文结合，结构专业清晰。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_013": {
+    "score": 9,
+    "reason": "要素完整、语气专业，仅少量占位符未替换。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_014": {
+    "score": 5,
+    "reason": "内容被截断，关键发现与建议缺失",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_015": {
+    "score": 9,
+    "reason": "要素齐全、规范专业，遗忘流程略被截断。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_0": {
+    "score": 7,
+    "reason": "要素齐全，但内容偏模板化且有截断。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_1": {
+    "score": 8,
+    "reason": "要素齐全，语气得体，但模板化且结尾截断",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_2": {
+    "score": 9,
+    "reason": "要素完整，结构清晰，语气友好；末尾略截断。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_3": {
+    "score": 9,
+    "reason": "要素完整，结构规范，语气正式。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_4": {
+    "score": 8,
+    "reason": "要素齐全，事迹略不完整且有小错字",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_0": {
+    "score": 7,
+    "reason": "要点较全，但明显超100字。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_1": {
+    "score": 10,
+    "reason": "准确完整概括要点，字数合规。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_2": {
+    "score": 9,
+    "reason": "要点完整准确，表述简洁，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_3": {
+    "score": 6,
+    "reason": "信息较全，但超字数且姓名臆造。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_4": {
+    "score": 8,
+    "reason": "信息准确完整，但超过100字限制。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_5": {
+    "score": 9,
+    "reason": "准确概括合并及竞争担忧，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_6": {
+    "score": 7,
+    "reason": "内容准确完整，但超过100字限制。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_7": {
+    "score": 9,
+    "reason": "信息完整准确，语言简洁，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_8": {
+    "score": 9,
+    "reason": "准确概括核心信息，略偏长。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_9": {
+    "score": 8,
+    "reason": "要点完整，表述清晰，略缺中立场信息。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_10": {
+    "score": 8,
+    "reason": "内容准确全面，但略超100字且稍冗余。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_11": {
+    "score": 9,
+    "reason": "内容准确完整，简洁符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_12": {
+    "score": 8,
+    "reason": "内容准确完整，但略超100字且职务有误。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_13": {
+    "score": 7,
+    "reason": "内容准确全面，但超过100字限制。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_14": {
+    "score": 8,
+    "reason": "摘要准确完整，但略超字数且有轻微推断过度。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_15": {
+    "score": 6,
+    "reason": "基本概括，但姓名和上赛季效力球队有误。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_16": {
+    "score": 8,
+    "reason": "内容准确完整，但超过100字限制。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_17": {
+    "score": 7,
+    "reason": "基本准确，但超字数且有年龄信息未给出。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_18": {
+    "score": 7,
+    "reason": "要点较全，但超100字且表述略冗长。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_19": {
+    "score": 9,
+    "reason": "要点完整准确，字数合规，表述流畅。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "Spider_0": {
+    "score": 10,
+    "reason": "查询条件与计数均正确。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_1": {
+    "score": 2,
+    "reason": "表名列名与目标库不符，无法执行。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_2": {
+    "score": 10,
+    "reason": "完全符合题意，查询正确。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_3": {
+    "score": 10,
+    "reason": "正确查询部门预算最大值和最小值",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_4": {
+    "score": 2,
+    "reason": "误将ranking字段理解为员工数排名，且表不符。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_5": {
+    "score": 10,
+    "reason": "查询条件与目标完全匹配。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_6": {
+    "score": 4,
+    "reason": "逻辑大致匹配，但表和字段疑似不符合Spider原schema。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_7": {
+    "score": 2,
+    "reason": "表和字段错误，无法对应heads出生州。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_8": {
+    "score": 8,
+    "reason": "逻辑正确，按年份计数取最大；函数/列名可能不匹配。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_9": {
+    "score": 2,
+    "reason": "表/字段关系错误，应通过management筛选并取部门员工数。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_10": {
+    "score": 9,
+    "reason": "统计不同acting_status数量，符合题意。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_11": {
+    "score": 2,
+    "reason": "列不存在且误解题意，应用management表条件。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_12": {
+    "score": 2,
+    "reason": "表和条件字段错误，未关联acting信息",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_13": {
+    "score": 10,
+    "reason": "使用INTERSECT求两部门出生州交集，语义正确。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_14": {
+    "score": 2,
+    "reason": "缺少management表，连接字段错误。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_15": {
+    "score": 9,
+    "reason": "逻辑正确，能筛选含“Ha”的head并列出id和name。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_16": {
+    "score": 2,
+    "reason": "表名应为farm，查询无法执行。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_17": {
+    "score": 2,
+    "reason": "表名错误，应为 farm，查询无法执行",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_18": {
+    "score": 2,
+    "reason": "使用不存在/错误表，且应查询Total_Horses并排序。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_19": {
+    "score": 2,
+    "reason": "使用不存在的horse表，逻辑不符。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_20": {
+    "score": 10,
+    "reason": "查询条件和返回字段完全正确。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_21": {
+    "score": 10,
+    "reason": "语义完全正确，筛选非Aliens主题并返回host。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_22": {
+    "score": 3,
+    "reason": "表名应为farm_competition，当前无法执行。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_23": {
+    "score": 2,
+    "reason": "表名错误，执行会失败",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_24": {
+    "score": 9,
+    "reason": "语义正确，筛选总马数>5000并求工作马平均数。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_25": {
+    "score": 10,
+    "reason": "查询逻辑完全正确，筛选并计算平均值。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_26": {
+    "score": 3,
+    "reason": "表名错误，应为farm，无法执行",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_27": {
+    "score": 10,
+    "reason": "正确计算所有农场奶牛数最大最小值",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_28": {
+    "score": 10,
+    "reason": "正确统计城市不同状态数量。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_29": {
+    "score": 3,
+    "reason": "使用占位表名，无法在目标库执行",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_30": {
+    "score": 3,
+    "reason": "应选Official_Name，Name列可能不存在",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_31": {
+    "score": 10,
+    "reason": "正确查询官方名称并按人口降序排序。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_32": {
+    "score": 9,
+    "reason": "查询逻辑正确，能返回人口最大城市信息。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_33": {
+    "score": 10,
+    "reason": "正确按人口降序取最多居民城市并返回名称和状态。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_34": {
+    "score": 9,
+    "reason": "语义正确，连接比赛与主办城市并取年份和官方名。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_35": {
+    "score": 9,
+    "reason": "正确连接比赛与城市并返回所需字段",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_36": {
+    "score": 9,
+    "reason": "逻辑正确，分组筛选多次举办城市。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_37": {
+    "score": 8,
+    "reason": "逻辑正确，列名可能不完全匹配，按名称分组略有风险。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_38": {
+    "score": 9,
+    "reason": "逻辑正确，仅未处理并列情况。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_39": {
+    "score": 9,
+    "reason": "逻辑正确，能按举办次数取最多城市状态。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_40": {
+    "score": 2,
+    "reason": "表名错误，应为farm_competition。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_41": {
+    "score": 9,
+    "reason": "语义正确，DISTINCT不影响结果。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_42": {
+    "score": 10,
+    "reason": "正确按状态分组并计算平均人口",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_43": {
+    "score": 9,
+    "reason": "按status分组求平均人口，语义正确。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_44": {
+    "score": 9,
+    "reason": "逻辑正确，额外返回计数列。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_45": {
+    "score": 8,
+    "reason": "排序与分组正确，但多返回频次列。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_46": {
+    "score": 3,
+    "reason": "使用占位表名，无法执行；逻辑方向正确。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_47": {
+    "score": 9,
+    "reason": "正确按状态计数并取最高值。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_48": {
+    "score": 9,
+    "reason": "逻辑正确，能筛出未举办比赛城市。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_49": {
+    "score": 2,
+    "reason": "子查询列名错误，应为主办城市ID。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  }
+}

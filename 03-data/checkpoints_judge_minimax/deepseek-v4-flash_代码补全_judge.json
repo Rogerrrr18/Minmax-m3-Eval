@@ -1,0 +1,302 @@
+{
+  "CodeSearch_0": {
+    "score": 3,
+    "reason": "无原题代码上下文，补全内容无法验证正确性，属随意猜测。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_1": {
+    "score": 1,
+    "reason": "无代码上下文，模型仅输出通用Hello World，无法判断正确性。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_2": {
+    "score": 0,
+    "reason": "仅返回空函数stub，未完成任何实际代码补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_3": {
+    "score": 3,
+    "reason": "题目未提供原始代码，无法判断补全是否正确，输出可能与预期不符。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_4": {
+    "score": 8,
+    "reason": "able and correct implementation, I'll give it a reasonable score. The function is complete and correct. Without the original context, I'll assume this is acceptable.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_5": {
+    "score": 2,
+    "reason": "题目内容为空，无法验证正确性；模型仅输出通用Hello World模板，不符合CodeSearchNet补全任务要求。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_6": {
+    "score": 6,
+    "reason": "able. The task type is \"CodeSearchNet (medium)\" which typically involves completing a function based on context.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_7": {
+    "score": 0,
+    "reason": "模型输出为空，未提供任何代码补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_8": {
+    "score": 0,
+    "reason": "输出仅为pass，无任何有效补全内容。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_9": {
+    "score": 0,
+    "reason": "模型未补全任何代码，仅返回了请求信息，属于完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_10": {
+    "score": 2,
+    "reason": "输出为通用Hello World模板，未针对具体CodeSearchNet任务进行补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_11": {
+    "score": 0,
+    "reason": "输出与CodeSearchNet代码补全任务完全无关，仅为通用Hello World语句。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_12": {
+    "score": 0,
+    "reason": "未提供任何有效代码补全，仅返回占位注释。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_13": {
+    "score": 5,
+    "reason": "题目未提供原始代码，无法判断补全是否匹配预期，但输出代码本身语法正确。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_14": {
+    "score": 8,
+    "reason": "补全正确，逻辑清晰，但缺少类型提示和文档字符串。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_15": {
+    "score": 1,
+    "reason": "题目未提供待补全的代码上下文，模型输出与实际需求无关。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_16": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅返回占位符注释。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_17": {
+    "score": 10,
+    "reason": "正确实现偶数判断，逻辑无误，代码简洁完整。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_18": {
+    "score": 0,
+    "reason": "模型未尝试补全，反而要求提供代码，完全没有完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_19": {
+    "score": 0,
+    "reason": "题目内容和模型输出均为空，无法评判。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_20": {
+    "score": 0,
+    "reason": "输出与代码搜索任务完全无关，未补全任何有效代码。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_21": {
+    "score": 9,
+    "reason": "able and correct completion.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_22": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅要求提供代码片段。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_23": {
+    "score": 0,
+    "reason": "模型未输出任何补全代码，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_24": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅返回了一个注释，无实际内容。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_25": {
+    "score": 0,
+    "reason": "模型输出为空，未提供任何代码补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_26": {
+    "score": 1,
+    "reason": "题目未提供原代码，无法判断补全是否正确，输出为通用加法函数，可能无关。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_27": {
+    "score": 0,
+    "reason": "未补全任何代码，输出与任务无关。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_28": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_29": {
+    "score": 3,
+    "reason": "原题未提供待补全代码，无法验证补全正确性。模型输出仅为合理猜测，缺乏上下文依据。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_30": {
+    "score": 0,
+    "reason": "仅返回占位符函数，未完成任何实际代码补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_31": {
+    "score": 0,
+    "reason": "able",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_32": {
+    "score": 5,
+    "reason": "<think>\nThe user is asking me to evaluate a code c",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_33": {
+    "score": 0,
+    "reason": "未补全任何有效代码，输出为提示信息而非代码补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_34": {
+    "score": 0,
+    "reason": "无题目上下文，模型仅输出无关的Hello World，完全无法判断正确性。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_35": {
+    "score": 0,
+    "reason": "模型未补全任何代码，仅返回占位注释。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_36": {
+    "score": 0,
+    "reason": "未补全任何代码，无实质输出",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_37": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，仅要求提供代码内容，任务未完成。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_38": {
+    "score": 0,
+    "reason": "输出为完全无关的通用模板代码，未针对任何具体问题进行补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_39": {
+    "score": 0,
+    "reason": "未提供任何代码补全，仅输出占位注释。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_40": {
+    "score": 6,
+    "reason": "able guess for a code completion task.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_41": {
+    "score": 0,
+    "reason": "仅返回空函数框架，无任何实际逻辑，未完成代码补全任务",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_42": {
+    "score": 1,
+    "reason": "通用空函数占位符，未提供任何实质性补全内容。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_43": {
+    "score": 1,
+    "reason": "仅返回空函数骨架，无任何实际逻辑补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_44": {
+    "score": 2,
+    "reason": "题目未提供待补全代码，模型输出无关的通用程序，无法判断正确性。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_45": {
+    "score": 1,
+    "reason": "able guess for a code completion task, but without the original context, I cannot verify if it matches.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_46": {
+    "score": 0,
+    "reason": "输出为通用占位符，未尝试任何实际代码补全，完全无关。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_47": {
+    "score": 2,
+    "reason": "able guess but not useful for code search tasks.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_48": {
+    "score": 0,
+    "reason": "输出与代码补全任务无关，完全错误。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_49": {
+    "score": 3,
+    "reason": "able guess for an unknown problem. But since there's no specific context to match, this is essentially a random guess.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  }
+}

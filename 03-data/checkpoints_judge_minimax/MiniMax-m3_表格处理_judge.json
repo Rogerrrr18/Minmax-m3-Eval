@@ -1,0 +1,302 @@
+{
+  "table_office_001": {
+    "score": 9,
+    "reason": "功能完整，含数据校验、月度汇总、格式化输出和Excel导出，略优于题目要求。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_002": {
+    "score": 9,
+    "reason": "公式正确，符合要求。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_003": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate the model's output for thi",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_004": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate the model's response to th",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_005": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the Python code fo",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_0": {
+    "score": 8,
+    "reason": "公式正确，但未",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_1": {
+    "score": 9,
+    "reason": "公式完全正确，语法无误，下拉填充操作说明清晰。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_2": {
+    "score": 9,
+    "reason": "公式正确，语法无误，还提供了进阶写法处理空白单元格，考虑周全。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_3": {
+    "score": 10,
+    "reason": "公式完全正确，语法无误，建议百分比格式也很专业。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_4": {
+    "score": 9,
+    "reason": "公式`=AVERAGE(B2:D2)`语法正确，使用说明清晰，还提供了多种等价写法，非常完善。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_5": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完全符合要求，额外提供了防空值和条件格式的进阶方案。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_6": {
+    "score": 9,
+    "reason": "公式正确，逻辑清晰，语法无误，解析详尽。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_7": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑正确，引用B列和C列相乘计算总产值。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_8": {
+    "score": 9,
+    "reason": "公式正确，还提供了MAX防负数方案，考虑周全。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_9": {
+    "score": 10,
+    "reason": "公式语法正确，正确计算折后价（原价×(1-折扣率)）。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_10": {
+    "score": 9,
+    "reason": "able interpretation.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_11": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑完整，额外处理了未完成和按时情况，略超题目要求但无错误。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_12": {
+    "score": 9,
+    "reason": "able choice and the model notes it can be adjusted. Using SUM($B:$B) would include the header if B1 contains text - actually SUM ignores text, so it would work but might be unconventional.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_13": {
+    "score": 9,
+    "reason": "公式正确，含错误处理，解释清晰，可选百分比格式建议实用。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_14": {
+    "score": 9,
+    "reason": "<think>\nThe task is to create a formula in column ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_15": {
+    "score": 9,
+    "reason": "able assumption for a template formula. Some might argue it should start at C1 with B1, but typically the header row is skipped. This is standard practice.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_16": {
+    "score": 9,
+    "reason": "公式正确，思路清晰，增强版处理空值考虑周到。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_17": {
+    "score": 9,
+    "reason": "公式`=C2/B2`完全正确，逻辑清晰，额外建议百分比格式也很实用。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_18": {
+    "score": 9,
+    "reason": "able as a supplementary option.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_19": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完全匹配要求，还提供了多种等价写法。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_20": {
+    "score": 9,
+    "reason": "公式正确，逻辑清晰，扩展场景为加分项。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_21": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑完全符合需求，简洁明了。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_22": {
+    "score": 7,
+    "reason": "<think>\nThe task asks for a formula to calculate a",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_23": {
+    "score": 9,
+    "reason": "able for a different unit.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_24": {
+    "score": 9,
+    "reason": "公式正确，额外提供IFERROR和TEXT进阶建议，超出要求且实用。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_0": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate this answer carefully.\n\nTh",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_1": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑完整，示例清晰，进阶版略有重复计算但不影响正确",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_2": {
+    "score": 10,
+    "reason": "逻辑正确，语法无误，含透视表增强功能，可直接执行。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_3": {
+    "score": 1,
+    "reason": "able approach - it sums all入库量 (incoming) minus 出库量 (outgoing) for the same product name. However, there's a potential issue: this assumes the formula is in a single row, but it might be more appropriate to use a simple `=B2-C2` if the data is structured as one row per product.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_4": {
+    "score": 9,
+    "reason": "代码完整可执行，逻辑正确，聚合和合并均无误，输出格式合理。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_5": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the model's response to the",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_6": {
+    "score": 1,
+    "reason": "able",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_7": {
+    "score": 9,
+    "reason": "公式语法正确，条件格式引用合理，剩余天数计算准确，仅`<1`可写为`<100%`更直观。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_8": {
+    "score": 9,
+    "reason": "代码结构完整，逻辑正确，包含数据校验、达标率计算和可视化，截断处无明显错误。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_9": {
+    "score": 1,
+    "reason": "<think>\nThe task asks for Excel data validation ru",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_10": {
+    "score": 1,
+    "reason": "able heuristic but may miss columns that are dates but don't have these keywords",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_11": {
+    "score": 10,
+    "reason": "<think>\nThe task asks for Excel formulas to calcul",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_12": {
+    "score": 1,
+    "reason": "able",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_13": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate the model's response for t",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_14": {
+    "score": 5,
+    "reason": "able for not having NaN issues)",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_15": {
+    "score": 9,
+    "reason": "<think>\nLet me evaluate the model's output for the",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_16": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a Python code solu",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_17": {
+    "score": 1,
+    "reason": "<think>\nThe user wants me to evaluate the model's ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_18": {
+    "score": 1,
+    "reason": "<think>\nThe user wants me to evaluate the model's ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_19": {
+    "score": 9,
+    "reason": "三个需求均正确实现，公式语法正确，还提供多种替代方案，内容全面且实用。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  }
+}

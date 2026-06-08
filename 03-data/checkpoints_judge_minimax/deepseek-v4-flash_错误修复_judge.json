@@ -1,0 +1,362 @@
+{
+  "BugFix_001": {
+    "score": 10,
+    "reason": "正确将小于号改为大于号，完全修复了求最大值的逻辑，无冗余修改。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_002": {
+    "score": 9,
+    "reason": "正确将赋值改为累加，完全修复bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_003": {
+    "score": 9,
+    "reason": "完全修复了左右边界更新和循环条件两处bug，标准闭区间二分查找。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_004": {
+    "score": 9,
+    "reason": "正确使用s[::-1]替代s.reverse()，完全修复了bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_005": {
+    "score": 10,
+    "reason": "正确将第二个quicksort(left)改为quicksort(right)，bug已完全修复。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_006": {
+    "score": 10,
+    "reason": "正确将阶乘基础情形从0改为1，递归逻辑无其他问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_007": {
+    "score": 8,
+    "reason": "正确使用.copy()避免修改原字典，修复了主要bug，但非最优解法。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_008": {
+    "score": 10,
+    "reason": "正确移除了多余的切片[1:]，完全修复bug且无新问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_009": {
+    "score": 9,
+    "reason": "正确使用set+list保持顺序修复bug，标准且高效。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_010": {
+    "score": 10,
+    "reason": "正确将insert(0)改为append，实现后进先出。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_011": {
+    "score": 9,
+    "reason": "用with语句正确修复了文件未关闭的问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_012": {
+    "score": 9,
+    "reason": "使用lru_cache正确将指数复杂度降为线性，完全解决慢的问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_013": {
+    "score": 9,
+    "reason": "正确使用无参split()，完美修复连续空格问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_014": {
+    "score": 9,
+    "reason": "正确修复了快指针移动步长bug，算法完全正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_015": {
+    "score": 8,
+    "reason": "able fix, though returning None might not be ideal (could raise an exception or return float('inf')), but it's a valid approach.",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_016": {
+    "score": 6,
+    "reason": "只处理了ValueError，TypeError未处理。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_017": {
+    "score": 9,
+    "reason": "用标准DP替换递归，时间复杂度从指数级降至O(mn)，修复正确且为最佳方案。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_018": {
+    "score": 9,
+    "reason": "修复了返回None的bug，并避免修改原列表，完全正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_019": {
+    "score": 9,
+    "reason": "增加了三状态环检测，正确处理孤立邻居节点，拓扑排序逻辑完整。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_020": {
+    "score": 9,
+    "reason": "<think>\nThe original code has a bug where it tries",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_021": {
+    "score": 9,
+    "reason": "修复了取偶数判断条件，功能与函数名一致。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_022": {
+    "score": 9,
+    "reason": "正确修复了浅拷贝bug，列表生成式创建独立行。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_023": {
+    "score": 9,
+    "reason": "正确使用set+list保留原始顺序，标准解法。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_024": {
+    "score": 9,
+    "reason": "正确添加了dp[j] + 1，修复了LIS递推公式错误。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_025": {
+    "score": 9,
+    "reason": "用列表推导式正确修复了原bug，方案简洁有效。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_026": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the bug and the fix.\n\nOrigi",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_027": {
+    "score": 9,
+    "reason": "正确修复了空列表除零的bug，处理逻辑合理。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_028": {
+    "score": 1,
+    "reason": "<think>\nThe original code has a bug where it's ext",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_029": {
+    "score": 9,
+    "reason": "正确使用key=d.get按键值排序，修复完全正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_030": {
+    "score": 9,
+    "reason": "正确修复了递归调用参数，应传递smallest而非i。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_031": {
+    "score": 10,
+    "reason": "正确使用集合实现O(n)时间复杂度，完美修复。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_032": {
+    "score": 3,
+    "reason": "<think>\nThe task is to evaluate the model's output",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_033": {
+    "score": 2,
+    "reason": "<think>\nThe original code is a recursive Fibonacci",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_034": {
+    "score": 9,
+    "reason": "用dict.get()优化了原代码，去除冗余逻辑，性能更优。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_035": {
+    "score": 1,
+    "reason": "<think>\nThe original code is a simple function tha",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_036": {
+    "score": 10,
+    "reason": "使用切片[::-1]完美优化，是Pythonic最佳写法。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_037": {
+    "score": 10,
+    "reason": "完美优化为Kadane算法O(n)，边界处理正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_038": {
+    "score": 9,
+    "reason": "正确优化为sqrt(n)判断+偶数筛选，逻辑完整且效率显著提升。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_039": {
+    "score": 10,
+    "reason": "正确添加记忆化，逻辑完全正确，效率大幅提升。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_040": {
+    "score": 9,
+    "reason": "用set优化查找复杂度至O(n+m)，保持顺序和去重，完全正确。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_041": {
+    "score": 9,
+    "reason": "改用迭代DP，时间复杂度O(n)，空间O(1)，修复正确且高效。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_042": {
+    "score": 9,
+    "reason": "正确使用replace方法优化了原循环代码，效率高且无bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_043": {
+    "score": 0,
+    "reason": "<think>\nLet me analyze the original code and the m",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_044": {
+    "score": 10,
+    "reason": "正确使用Counter修复了原代码漏检s",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_045": {
+    "score": 10,
+    "reason": "修复正确，O(n)优化为O(log n)，且支持负指数边界情况。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_046": {
+    "score": 9,
+    "reason": "使用数学公式优化到O(1)，正确且高效。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_047": {
+    "score": 9,
+    "reason": "正确改用标准一维DP，时间复杂度从指数级优化到O(nW)。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_048": {
+    "score": 9,
+    "reason": "able optimization.",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_049": {
+    "score": 1,
+    "reason": "<think>\nThe original code is a straightforward bit",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_050": {
+    "score": 0,
+    "reason": "<think>\nThe task is to evaluate the fix. The origi",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_051": {
+    "score": 1,
+    "reason": "<think>\nThe original code finds a peak element by ",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_052": {
+    "score": 9,
+    "reason": "栈算法正确高效，逻辑完全正确，无额外优化。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_053": {
+    "score": 0,
+    "reason": "<think>\nThe original code uses DFS which is expone",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_054": {
+    "score": 8,
+    "reason": "原代码无bug，新版改用原地修改，更高效但非必要修复。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_055": {
+    "score": 9,
+    "reason": "时间复杂度从O(n²)优化为O(n)，双指针方案正确高效，无bug。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_056": {
+    "score": 9,
+    "reason": "采用Boyer-Moore算法优化至O(n)，并添加验证步骤，完美解决原O(n²)性能问题。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_057": {
+    "score": 9,
+    "reason": "完整修复：加入集合O(1)查找和lru_cache记忆化，消除指数级重复计算。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_058": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the original code and the m",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_059": {
+    "score": 9,
+    "reason": "O(n²)优化为O(n)遍历，逻辑正确并增加了空列表保护。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  },
+  "BugFix_060": {
+    "score": 10,
+    "reason": "用切片赋值优化至O(n)，处理空列表边界，使用模运算处理k>n情况。",
+    "dim": "错误修复",
+    "judge": "minimax"
+  }
+}

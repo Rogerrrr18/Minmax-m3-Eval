@@ -1,0 +1,482 @@
+{
+  "GSM8K_0": {
+    "score": 10,
+    "reason": "代码正确，计算清晰，结果为18美元",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_1": {
+    "score": 10,
+    "reason": "代码正确计算总数为3 bolts",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_2": {
+    "score": 10,
+    "reason": "答案正确，代码清晰计算利润。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_3": {
+    "score": 10,
+    "reason": "代码正确，计算结果为540米",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_4": {
+    "score": 10,
+    "reason": "代码正确，答案为20杯。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_5": {
+    "score": 10,
+    "reason": "代码正确计算偶数杯60%价格，总价64美元。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_6": {
+    "score": 10,
+    "reason": "计算逻辑正确，代码完整可运行。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_7": {
+    "score": 10,
+    "reason": "计算逻辑和代码均正确，答案160分钟。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_8": {
+    "score": 10,
+    "reason": "计算正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_9": {
+    "score": 10,
+    "reason": "计算正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_10": {
+    "score": 10,
+    "reason": "计算逻辑正确，代码完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_11": {
+    "score": 10,
+    "reason": "代码正确，计算总价为694美元。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_12": {
+    "score": 10,
+    "reason": "答案正确，代码清晰，逻辑完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_13": {
+    "score": 10,
+    "reason": "逆推正确，代码完整，答案为18。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_14": {
+    "score": 10,
+    "reason": "计算逻辑与代码均正确，输出60%。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_15": {
+    "score": 10,
+    "reason": "计算正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_16": {
+    "score": 10,
+    "reason": "计算正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_17": {
+    "score": 10,
+    "reason": "思路清晰，代码正确，答案为57500。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_18": {
+    "score": 10,
+    "reason": "计算正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_19": {
+    "score": 10,
+    "reason": "计算逻辑正确，代码完整输出6 mph",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_20": {
+    "score": 10,
+    "reason": "计算正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_21": {
+    "score": 10,
+    "reason": "计算逻辑正确，代码完整清晰。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_22": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整可运行。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_23": {
+    "score": 10,
+    "reason": "答案正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_24": {
+    "score": 10,
+    "reason": "答案正确，代码清晰，计算原价为26美元。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_25": {
+    "score": 9,
+    "reason": "思路正确，代码完整，仅输出为浮点数。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_26": {
+    "score": 10,
+    "reason": "代码正确，计算总价为243美元。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_27": {
+    "score": 10,
+    "reason": "计算正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_28": {
+    "score": 10,
+    "reason": "代码正确，思路清晰，答案为25。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_29": {
+    "score": 10,
+    "reason": "代码正确，答案为104美元。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_30": {
+    "score": 10,
+    "reason": "计算正确，代码简洁完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_31": {
+    "score": 10,
+    "reason": "计算与代码均正确。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_32": {
+    "score": 10,
+    "reason": "代码正确计算10*0.5*7=35小时。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_33": {
+    "score": 10,
+    "reason": "方程建模正确，代码输出金币70枚。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_34": {
+    "score": 10,
+    "reason": "代码正确，计算过程清晰，结果为23。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_35": {
+    "score": 10,
+    "reason": "计算正确，代码清晰输出9。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_36": {
+    "score": 10,
+    "reason": "计算与代码均正确，结果为75美元。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_37": {
+    "score": 10,
+    "reason": "计算正确，代码清晰简洁。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_38": {
+    "score": 10,
+    "reason": "思路正确，代码完整，结果为10 mph",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_39": {
+    "score": 10,
+    "reason": "计算逻辑和代码均正确，结果为18英里。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_40": {
+    "score": 10,
+    "reason": "代码正确，计算结果为8岁。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_41": {
+    "score": 9,
+    "reason": "计算正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_42": {
+    "score": 10,
+    "reason": "答案正确，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_43": {
+    "score": 10,
+    "reason": "计算正确，代码完整清晰。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_44": {
+    "score": 10,
+    "reason": "代码正确，利润计算无误。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_45": {
+    "score": 10,
+    "reason": "计算逻辑正确，代码完整可运行。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_46": {
+    "score": 10,
+    "reason": "方程正确，代码清晰，答案163。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_47": {
+    "score": 10,
+    "reason": "计算逻辑正确，代码完整，答案为800。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_48": {
+    "score": 10,
+    "reason": "转换单位正确，计算结果为8。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "GSM8K_49": {
+    "score": 10,
+    "reason": "代码正确计算总数、占用数和空置数，结果为30。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_0": {
+    "score": 10,
+    "reason": "正确按行和升序排序，简洁有效。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_1": {
+    "score": 10,
+    "reason": "公式正确，函数实现简洁清晰。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_2": {
+    "score": 5,
+    "reason": "匹配含无下划线序列，结果不严谨",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_3": {
+    "score": 10,
+    "reason": "答案正确，函数实现简洁清晰。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_4": {
+    "score": 10,
+    "reason": "正确使用哈希集合检测重复，时间O(n)，空间O(n)。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_5": {
+    "score": 10,
+    "reason": "答案正确，逻辑清晰，复杂度合理",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_6": {
+    "score": 10,
+    "reason": "正确使用集合遍历，返回首个重复元素。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_7": {
+    "score": 10,
+    "reason": "思路正确，代码简洁，处理空输入。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_8": {
+    "score": 9,
+    "reason": "算法正确清晰，复杂度O(n)",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_9": {
+    "score": 10,
+    "reason": "正确统计唯一元素并求积，复杂度合理。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_10": {
+    "score": 10,
+    "reason": "正确高效，处理边界并利用对称优化。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_11": {
+    "score": 9,
+    "reason": "思路正确，代码简洁；默认仅一个奇数次元素。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_12": {
+    "score": 8,
+    "reason": "思路正确，复杂度合理；未处理并列和k=0细节。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_13": {
+    "score": 9,
+    "reason": "n≥2时正确高效，未处理1/0边界。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_14": {
+    "score": 9,
+    "reason": "思路正确，复杂度合理；未处理负数情形。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_15": {
+    "score": 4,
+    "reason": "假设从0开始，通用样例会失败",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_16": {
+    "score": 10,
+    "reason": "公式正确，代码简洁有效。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_17": {
+    "score": 0,
+    "reason": "未提供任何解法或代码。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_18": {
+    "score": 10,
+    "reason": "正确分组并升序排序，简洁有效。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_19": {
+    "score": 9,
+    "reason": "思路正确，代码简洁，边界处理合理。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_20": {
+    "score": 9,
+    "reason": "正确使用Counter统计，思路清晰。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_21": {
+    "score": 9,
+    "reason": "正确统计频次并求重复元素和，清晰高效。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_22": {
+    "score": 8,
+    "reason": "正则思路正确，可匹配目标序列；但未限制边界/整串匹配。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_23": {
+    "score": 9,
+    "reason": "思路正确，代码完整高效，处理空数组和负数。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_24": {
+    "score": 9,
+    "reason": "实现正确高效，签名可能与预期不完全一致。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_25": {
+    "score": 9,
+    "reason": "思路正确，边界基本处理，复杂度好。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_26": {
+    "score": 10,
+    "reason": "正确使用lambda按长度取最小列表。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_27": {
+    "score": 10,
+    "reason": "实现正确，支持负数且稳定排序。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_28": {
+    "score": 10,
+    "reason": "公式正确，边界处理合理。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  },
+  "Algo_MBPP_29": {
+    "score": 8,
+    "reason": "思路正确，能处理常见情况；返回类型可能不符。",
+    "dim": "算法能力",
+    "judge": "gpt55"
+  }
+}

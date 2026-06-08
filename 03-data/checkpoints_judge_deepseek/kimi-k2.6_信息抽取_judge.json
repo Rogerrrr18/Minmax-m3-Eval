@@ -1,0 +1,302 @@
+{
+  "NER_0": {
+    "score": 10,
+    "reason": "全部实体正确抽取，边界准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_1": {
+    "score": 10,
+    "reason": "模型正确抽取了所有命名实体，边界准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_2": {
+    "score": 10,
+    "reason": "完整正确抽取所有实体，类型准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_3": {
+    "score": 10,
+    "reason": "全部实体正确抽取，边界准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_4": {
+    "score": 10,
+    "reason": "完全正确抽取所有实体，边界精确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_5": {
+    "score": 10,
+    "reason": "所有实体抽取正确且边界准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_6": {
+    "score": 10,
+    "reason": "所有实体正确抽取，边界准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_7": {
+    "score": 10,
+    "reason": "所有实体均正确抽取，无遗漏无幻觉，边界准确。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_8": {
+    "score": 10,
+    "reason": "完全正确抽取所有实体，边界准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_9": {
+    "score": 10,
+    "reason": "所有命名实体均正确抽取，无遗漏、无幻觉，边界准确。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_10": {
+    "score": 10,
+    "reason": "所有实体抽取正确，边界准确，无遗漏无幻觉，完全符合要求。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_11": {
+    "score": 10,
+    "reason": "所有实体均正确抽取，边界精准，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_12": {
+    "score": 10,
+    "reason": "所有实体正确抽取，边界准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_13": {
+    "score": 10,
+    "reason": "所有实体正确抽取，边界准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_14": {
+    "score": 10,
+    "reason": "正确抽取所有实体，边界准确，无遗漏和幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_0": {
+    "score": 8,
+    "reason": "实体抽取完整，但“福建龙岩”拆分为两个，边界小误差。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_1": {
+    "score": 10,
+    "reason": "所有实体正确完整，边界准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_2": {
+    "score": 10,
+    "reason": "所有实体正确抽取，无遗漏无幻觉，边界准确，格式规范。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_3": {
+    "score": 10,
+    "reason": "所有实体正确抽取，边界准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_4": {
+    "score": 10,
+    "reason": "完全正确抽取所有实体，边界准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_5": {
+    "score": 10,
+    "reason": "完全正确抽取所有实体，无遗漏无幻觉，边界和类型准确。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_6": {
+    "score": 10,
+    "reason": "完全正确，无遗漏无幻觉，实体边界准确，重复输出不影响评分。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_7": {
+    "score": 10,
+    "reason": "所有实体准确抽取，边界正确，类型无误，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_8": {
+    "score": 10,
+    "reason": "所有实体正确抽取，边界准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_9": {
+    "score": 10,
+    "reason": "所有实体正确抽取，类型准确，无遗漏无幻觉，完美。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_10": {
+    "score": 10,
+    "reason": "所有实体正确抽取，类型准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_11": {
+    "score": 10,
+    "reason": "全部实体正确抽取，边界准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_12": {
+    "score": 10,
+    "reason": "完全正确抽取所有实体，边界准确，无遗漏和幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_13": {
+    "score": 10,
+    "reason": "所有实体正确抽取，边界准确，无遗漏无幻觉，格式规范。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_EXTRA_14": {
+    "score": 10,
+    "reason": "所有实体正确抽取，边界准确，",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_30": {
+    "score": 8,
+    "reason": "所有实体正确，但X的类型应为组织名而非产品名。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_31": {
+    "score": 10,
+    "reason": "完全正确，无遗漏、无幻觉，实体边界与类型均准确。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_32": {
+    "score": 10,
+    "reason": "实体抽取完整且正确，边界准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_33": {
+    "score": 6,
+    "reason": "抽取了组织名和时间，但遗漏了金额实体，部分正确但遗漏较多。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_34": {
+    "score": 0,
+    "reason": "未输出任何实体。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_35": {
+    "score": 8,
+    "reason": "主要实体均正确，遗漏\"感染科\"，无幻觉，边界准确。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_36": {
+    "score": 10,
+    "reason": "完整正确抽取所有实体，无遗漏无幻觉，边界精确。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_37": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_38": {
+    "score": 10,
+    "reason": "所有实体均正确抽取，无遗漏或幻觉，完美。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_39": {
+    "score": 10,
+    "reason": "完全抽取所有实体，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_40": {
+    "score": 9,
+    "reason": "所有实体正确抽取，边界准确，无遗漏和幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_41": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_42": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_43": {
+    "score": 10,
+    "reason": "全部实体正确抽取",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_44": {
+    "score": 10,
+    "reason": "实体完整正确，边界清晰，无幻觉，符合任务要求。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_45": {
+    "score": 10,
+    "reason": "所有实体正确抽取，边界准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_46": {
+    "score": 10,
+    "reason": "完美抽取所有实体，类型正确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_47": {
+    "score": 10,
+    "reason": "Score: 10",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_48": {
+    "score": 9,
+    "reason": "完全正确抽取所有关键实体，边界准确，无幻觉，仅缺少“15亿”但非必要。",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  },
+  "NER_49": {
+    "score": 10,
+    "reason": "所有实体均正确抽取，边界准确，无",
+    "dim": "信息抽取",
+    "judge": "deepseek"
+  }
+}

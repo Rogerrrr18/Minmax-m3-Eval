@@ -1,0 +1,302 @@
+{
+  "CodeSearch_0": {
+    "score": 2,
+    "reason": "未补全代码，仅请求补充信息",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_1": {
+    "score": 0,
+    "reason": "未补全代码，输出无关提示",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_2": {
+    "score": 1,
+    "reason": "未补全任何代码，仅请求提供题目内容。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_3": {
+    "score": 0,
+    "reason": "未补全任何代码，无法满足任务要求",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_4": {
+    "score": 0,
+    "reason": "未补全代码，仅请求提供片段",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_5": {
+    "score": 0,
+    "reason": "未提供任何代码补全内容。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_6": {
+    "score": 0,
+    "reason": "未提供任何代码补全内容。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_7": {
+    "score": 1,
+    "reason": "缺少上下文，输出疑似无关补全",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_8": {
+    "score": 0,
+    "reason": "未提供任何代码补全，无法满足任务。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_9": {
+    "score": 0,
+    "reason": "未提供任何代码补全内容，无法满足任务要求。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_10": {
+    "score": 0,
+    "reason": "未提供任何代码补全内容。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_11": {
+    "score": 0,
+    "reason": "未提供任何补全代码，任务未完成",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_12": {
+    "score": 0,
+    "reason": "未提供任何补全代码，无法满足任务要求。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_13": {
+    "score": 2,
+    "reason": "未补全代码，仅请求更多信息",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_14": {
+    "score": 8,
+    "reason": "题目缺失，提示补充代码合理",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_15": {
+    "score": 8,
+    "reason": "题目无代码，回复合理但未补全",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_16": {
+    "score": 8,
+    "reason": "题目缺少代码，回应合理但未补全代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_17": {
+    "score": 0,
+    "reason": "未补全任何代码，未完成任务",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_18": {
+    "score": 0,
+    "reason": "未补全代码，仅请求提供内容。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_19": {
+    "score": 0,
+    "reason": "未补全任何代码，无法满足任务。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_20": {
+    "score": 0,
+    "reason": "未提供任何有效代码补全。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_21": {
+    "score": 0,
+    "reason": "未补全代码，仅请求提供代码。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_22": {
+    "score": 0,
+    "reason": "未补全任何代码，无法满足任务。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_23": {
+    "score": 0,
+    "reason": "未补全任何代码，无法满足任务要求",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_24": {
+    "score": 0,
+    "reason": "未提供任何补全代码，无法满足任务要求",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_25": {
+    "score": 0,
+    "reason": "未提供任何补全代码。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_26": {
+    "score": 8,
+    "reason": "题干缺失代码，回复合理但未补全。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_27": {
+    "score": 0,
+    "reason": "未提供任何补全代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_28": {
+    "score": 0,
+    "reason": "未补全代码，未提供有效答案",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_29": {
+    "score": 0,
+    "reason": "未提供任何代码补全，无法满足任务要求。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_30": {
+    "score": 0,
+    "reason": "未补全任何代码，无法满足任务。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_31": {
+    "score": 0,
+    "reason": "未补全任何代码，无法衔接上下文",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_32": {
+    "score": 0,
+    "reason": "未补全任何代码，未完成任务",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_33": {
+    "score": 0,
+    "reason": "未补全任何代码。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_34": {
+    "score": 0,
+    "reason": "未补全任何代码，无法评测正确性",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_35": {
+    "score": 0,
+    "reason": "未补全任何代码，无法满足任务要求",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_36": {
+    "score": 0,
+    "reason": "未提供任何代码补全，无法满足任务要求",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_37": {
+    "score": 0,
+    "reason": "未提供任何补全代码，无法完成任务",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_38": {
+    "score": 0,
+    "reason": "未提供任何代码补全内容。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_39": {
+    "score": 0,
+    "reason": "未提供任何补全代码，无法满足任务。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_40": {
+    "score": 0,
+    "reason": "未给出任何代码补全内容",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_41": {
+    "score": 0,
+    "reason": "未补全任何代码，未满足任务要求",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_42": {
+    "score": 0,
+    "reason": "未提供任何代码补全内容",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_43": {
+    "score": 0,
+    "reason": "未补全任何代码，无法满足任务。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_44": {
+    "score": 0,
+    "reason": "未补全任何代码，无法满足任务要求",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_45": {
+    "score": 0,
+    "reason": "未补全任何代码，未完成任务",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_46": {
+    "score": 2,
+    "reason": "未提供任何补全代码，无法满足任务。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_47": {
+    "score": 0,
+    "reason": "未提供任何代码补全，无法满足任务要求。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_48": {
+    "score": 0,
+    "reason": "未提供任何代码补全内容",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_49": {
+    "score": 0,
+    "reason": "未提供任何代码补全内容。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  }
+}

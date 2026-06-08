@@ -1,0 +1,302 @@
+{
+  "email_office_001": {
+    "score": 6,
+    "reason": "ably addressed.",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_002": {
+    "score": 3,
+    "reason": "<think>\nThe task is to evaluate the model's output",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_003": {
+    "score": 9,
+    "reason": "结构清晰，覆盖所有要求项，语气专业得体，收件人",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_004": {
+    "score": 1,
+    "reason": "<think>\nThe email needs to be evaluated as an HR a",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_005": {
+    "score": 9,
+    "reason": "ing",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_006": {
+    "score": 9,
+    "reason": "分析 (Fault cause analysis) - ✓ Present, section 一",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_007": {
+    "score": 9,
+    "reason": "内容完整涵盖四项要求，结构清晰，语气专业得体，具体合作方向明确，期待回复时间合理。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_008": {
+    "score": 1,
+    "reason": "<think>\nThe user wants me to evaluate a sales foll",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_009": {
+    "score": 9,
+    "reason": "格式规范，正式得体，收件人意识明确，内容完整，含歉意、原因、改进措施，略有模板化痕迹。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_010": {
+    "score": 8,
+    "reason": "结构完整，覆盖所有要素，语气恰当热情，表彰内容具体详实；略冗长且有占位符未替换。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_011": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the model's output",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_012": {
+    "score": 8,
+    "reason": "(cash flow optimization) ✓ - \"为优化公司现金流管理\"",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_013": {
+    "score": 9,
+    "reason": "涵盖全部要求要素，结构清晰，语气得体，包含具体回复时间，收件人意识明确，几乎无瑕疵。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_014": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate this email carefully again",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_office_015": {
+    "score": 9,
+    "reason": "for leaving (personal career development)",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_0": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a business email a",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_1": {
+    "score": 0,
+    "reason": "(within 30 characters).",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_2": {
+    "score": 1,
+    "reason": ", dates, work arrangement)",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_3": {
+    "score": 6,
+    "reason": "结构和语气良好，但大量占位符未填写，缺乏具体产品信息和针对性回复。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_4": {
+    "score": 8,
+    "reason": "内容温馨得体，涵盖感谢、祝福和展望，结构完整；略有模板化痕迹，用词可更个性化。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_5": {
+    "score": 1,
+    "reason": "<think>\nThe email is a payment reminder to a suppl",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_6": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate this email carefully again",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_7": {
+    "score": 9,
+    "reason": "内容完整、结构清晰，包含时间地点等关键信息，语气专业，但年份为2023稍显过时。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_8": {
+    "score": 7,
+    "reason": "(system upgrade/flow adjustment)",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_9": {
+    "score": 9,
+    "reason": "结构完整、问题清晰、语气礼貌专业，收件人意识明确。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_10": {
+    "score": 9,
+    "reason": "ing (team fit, position requirements)",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_11": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate this email against the tas",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_12": {
+    "score": 5,
+    "reason": "结构完整、格式规范，但内容均为占位符模板，缺乏具体事件细节，作为汇报邮件实用性不足。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_13": {
+    "score": 9,
+    "reason": "结构完整、语气专业、收件人意识清晰，含续约草案、回复期限和联系方式，仅个别占位符待替换。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "EMAIL_EXTRA_14": {
+    "score": 8,
+    "reason": "格式清晰",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_0": {
+    "score": 8,
+    "reason": "结构完整、语气专业，有明确的收件人意识和行动指引，但缺少具体合作方案细节，略显笼统。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_1": {
+    "score": 8,
+    "reason": "结构完整、覆盖全部要点，语气专业且收件人意识明确；扣分因占位符过多，未填充实际内容。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_2": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a rewritten email ",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_3": {
+    "score": 1,
+    "reason": "<think>\nThe user wants me to evaluate this email a",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_4": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a rewritten email ",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_5": {
+    "score": 9,
+    "reason": "结构完整、要素齐全、语气专业得体，涵盖重要性、截止日期、后果、联系方式，收件人意识清晰。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_6": {
+    "score": 6,
+    "reason": "able for a template but the task is to \"改写\" (rewrite) the original message, not create a template.",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_7": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate this email carefully again",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_8": {
+    "score": 9,
+    "reason": "语气专业礼貌，结构完整，包含提醒、说明、联系方式和落款，完全满足改写要求。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_9": {
+    "score": 8,
+    "reason": "for relocation, new address info, timeline, commute impact and subsidies, and Q&A channels. The tone is appropriate, professional, and shows care for employees. However, the placeholders ([请在此处填写...], [年][月]日, etc.) indicate it's a template, not a final sent email. This is a significant issue for a \"sent\" email. But the structure and content are comprehensive and thoughtful.",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_10": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a model's output t",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_11": {
+    "score": 9,
+    "reason": "四项任务全部覆盖，结构清晰，措辞专业，有明确收件人意识，模板完整实用。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_12": {
+    "score": 8,
+    "reason": "(产品战略调整)",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_13": {
+    "score": 9,
+    "reason": "结构完整，四大模块齐全，内容详实专业，收件人意识明确；仅日期未填等",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_14": {
+    "score": 8,
+    "reason": "<think>\nThe task is to rewrite a vacation notice i",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_15": {
+    "score": 1,
+    "reason": "<think>\nThe email is a quality rectification notic",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_16": {
+    "score": 9,
+    "reason": "格式规范，语气正式，内容完整，包含交接、报到、联系方式等关键要素。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_17": {
+    "score": 9,
+    "reason": "涵盖所有要素，收件人意识明确，结构清晰，语气专业；略有冗长但不影响整体质量。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_18": {
+    "score": 1,
+    "reason": "able",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  },
+  "email_extra_19": {
+    "score": 9,
+    "reason": "结构完整，涵盖所有要求项，语气得体，格式清晰；日期稍旧，略扣1分。",
+    "dim": "邮件处理",
+    "judge": "minimax"
+  }
+}

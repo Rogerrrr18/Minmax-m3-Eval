@@ -1,0 +1,302 @@
+{
+  "PAWSX_0": {
+    "score": 10,
+    "reason": "正确识别语义等价，仅冠词差异不影响意义，格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_1": {
+    "score": 10,
+    "reason": "正确判断语义不等价，输出符合格式要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_2": {
+    "score": 10,
+    "reason": "正确判断语义不等价，球队与级别对调，语言准确无误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_3": {
+    "score": 10,
+    "reason": "回答正确，语义等价，格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_4": {
+    "score": 9,
+    "reason": "语义等价判断正确，无语言错误，格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_5": {
+    "score": 10,
+    "reason": "正确判断语义不等价，符合题目要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_6": {
+    "score": 10,
+    "reason": "正确判断语义等价，语言准确无误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_7": {
+    "score": 10,
+    "reason": "答案正确，仅冠词差异不影响语义等价，格式完全符合要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_8": {
+    "score": 10,
+    "reason": "正确识别了语义不等价，修饰词对象不同。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_9": {
+    "score": 2,
+    "reason": "模型输出判断错误，句子2中“Holly”重复，",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_10": {
+    "score": 10,
+    "reason": "正确识别两句话语义不等价，语言判断精准无误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_11": {
+    "score": 10,
+    "reason": "模型输出正确，准确地判断出两句语义不等价，语言无误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_12": {
+    "score": 10,
+    "reason": "语义完全等价，拼写和语序差异不影响理解，回答正确。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_13": {
+    "score": 10,
+    "reason": "正确判断语义等价，语言准确，完全符合要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_14": {
+    "score": 10,
+    "reason": "语义等价判断正确，语言规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_15": {
+    "score": 10,
+    "reason": "模型输出正确判断语义不等价，理由充分，语言及格式无误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_16": {
+    "score": 10,
+    "reason": "正确识别句子语义不等价（地点信息差异），输出格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_17": {
+    "score": 10,
+    "reason": "输出正确，语义等价判断准确，格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_18": {
+    "score": 10,
+    "reason": "正确判断语义不等价，作曲人/作词人互换，完全符合要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_19": {
+    "score": 10,
+    "reason": "正确判断语义不等价，语法错误导致句意不同，格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_20": {
+    "score": 10,
+    "reason": "正确判断语义不等价，输出格式规范，符合要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_21": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_22": {
+    "score": 10,
+    "reason": "正确判断语义不等价，句子时间与比赛指代不同。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_23": {
+    "score": 10,
+    "reason": "模型回答正确，符合语义不等价的判断，语言简练无误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_24": {
+    "score": 10,
+    "reason": "正确识别语义不等价，主语和宾语关系完全相反。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_25": {
+    "score": 0,
+    "reason": "模型判断错误，两句语义等价应回答\"是\"。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_26": {
+    "score": 10,
+    "reason": "模型回答正确，符合语义等价判断，格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_27": {
+    "score": 10,
+    "reason": "正确识别语义不等价，判断准确且简洁。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_28": {
+    "score": 9,
+    "reason": "正确识别具体校名缺失，语义不等价。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_29": {
+    "score": 8,
+    "reason": "Score: 8",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_30": {
+    "score": 10,
+    "reason": "正确识别两句因机构名称不同导致语义不等价，答案准确。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_31": {
+    "score": 10,
+    "reason": "语义等价判断完全正确，符合要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_32": {
+    "score": 9,
+    "reason": "语义等价，判断正确，语言和格式均符合要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_33": {
+    "score": 2,
+    "reason": "错误判断语义等价，实际应回答“是”。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_34": {
+    "score": 10,
+    "reason": "模型准确判断两句话语义等价，语言正确，格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_35": {
+    "score": 10,
+    "reason": "判断正确，语义不等价，且输出格式规范简洁。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_36": {
+    "score": 10,
+    "reason": "模型准确判断两句话语义不等价，因句子1人名和关系错误，句子2正确，回答无误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_37": {
+    "score": 10,
+    "reason": "判断完全正确，语义等价，无语言错误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_38": {
+    "score": 10,
+    "reason": "准确判断语义等价，语言正确格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_39": {
+    "score": 10,
+    "reason": "答案正确，语义理解准确，完全符合要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_40": {
+    "score": 10,
+    "reason": "正确判断语义等价，输出简洁规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_41": {
+    "score": 10,
+    "reason": "输出正确且简洁，完全满足任务要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_42": {
+    "score": 10,
+    "reason": "模型正确识别语义不等价，答案准确无误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_43": {
+    "score": 10,
+    "reason": "正确判断语义不等价，符合题目要求，无错误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_44": {
+    "score": 10,
+    "reason": "判断准确，正确识别了语义不等价，且格式规范。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_45": {
+    "score": 10,
+    "reason": "正确识别语义反转，无语言错误，完全满足要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_46": {
+    "score": 10,
+    "reason": "模型输出正确，句子语义等价，语言规范无误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_47": {
+    "score": 10,
+    "reason": "正确判断语义等价，语言和格式均符合规范",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_48": {
+    "score": 10,
+    "reason": "回答完全正确，语言简洁，直接命中题目要求。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  },
+  "PAWSX_49": {
+    "score": 10,
+    "reason": "判断完全正确，句子语义等价，仅同义词替换，无语言错误。",
+    "dim": "多语言办公",
+    "judge": "deepseek"
+  }
+}

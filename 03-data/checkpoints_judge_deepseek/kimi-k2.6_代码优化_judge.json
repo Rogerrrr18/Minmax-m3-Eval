@@ -1,0 +1,302 @@
+{
+  "Optimize_001": {
+    "score": 10,
+    "reason": "将O(n²)暴力法优化为O(n)集合查找，高效简洁。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_002": {
+    "score": 9,
+    "reason": "时间复杂度从O(n²)降为O(n)，哈希表实现线性查找，是经典最优解法。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_003": {
+    "score": 10,
+    "reason": "递归改迭代，空间复杂度从O(n)降至O(1)，最优实现。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_004": {
+    "score": 10,
+    "reason": "使用dict.get替代嵌套循环，复杂度从O(n²)降至O(n)，功能等价且简洁高效。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_005": {
+    "score": 9,
+    "reason": "使用heapq.merge利用输入已排序特性，时间复杂度从O(N log N)降至O(N log",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_006": {
+    "score": 10,
+    "reason": "使用切片s[::-1]实现，简洁高效，是Python反转字符串的最优解。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_007": {
+    "score": 10,
+    "reason": "从O(n³)暴力法优化为O(n)的Kadane算法，最高效实现。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_008": {
+    "score": 10,
+    "reason": "排除偶数和仅检查到平方根，复杂度从O(n)降至O(√n)，是最优实现。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_009": {
+    "score": 10,
+    "reason": "显著优化时间和空间，从指数级递归降为O(mn)动态规划。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_010": {
+    "score": 9,
+    "reason": "使用集合和字典优化时间复杂度，保持顺序与去重，代码简洁高效。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_011": {
+    "score": 10,
+    "reason": "将指数级递归优化为线性迭代，时间和空间利用率显著提升，完全等价。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_012": {
+    "score": 10,
+    "reason": "使用内建replace方法，性能最优且代码简洁。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_013": {
+    "score": 9,
+    "reason": "采用最短字符串+逐字符比较，避免重复切片，效率明显提升。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_014": {
+    "score": 9,
+    "reason": "使用Counter，时间复杂度从O(n^2)降至O(n)，代码简洁高效。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_015": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_016": {
+    "score": 10,
+    "reason": "使用数学公式，时间复杂度从O(n)降至O(1)，代码简洁高效。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_017": {
+    "score": 10,
+    "reason": "使用动态规划替代回溯，时间复杂度从指数级优化为多项式级，且代码简洁高效。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_018": {
+    "score": 10,
+    "reason": "使用等差数列",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_019": {
+    "score": 10,
+    "reason": "动态规划最优解，O(n)时间复杂度，简洁高效。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_020": {
+    "score": 10,
+    "reason": "使用zip和列表推导式，简洁高效，完全等价，是Pythonic最优实现。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_021": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_022": {
+    "score": 10,
+    "reason": "从O(n²)优化到O(n)，使用栈匹配括号，简洁高效。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_023": {
+    "score": 0,
+    "reason": "模型输出异常，未提供任何优化后的代码。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_024": {
+    "score": 1,
+    "reason": "改变了原地修改的语义，未保持功能等价。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_025": {
+    "score": 10,
+    "reason": "从O(n^2)优化到O(n)双指针，时间空间效率显著提升。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_026": {
+    "score": 10,
+    "reason": "从O(n^2)优化到O(n)，",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_027": {
+    "score": 0,
+    "reason": "模型输出异常，未提供优化代码，无法评分。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_028": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_029": {
+    "score": 10,
+    "reason": "从O(n²)优化到O(n)，算法最优，且正确性高。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_030": {
+    "score": 10,
+    "reason": "时间复杂度从O(n*k)降至O(n)，代码更简洁高效，且正确处理了k%n。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_031": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_032": {
+    "score": 9,
+    "reason": "修正了原代码列表错误，使用集合将时间从O(n²)优化",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_033": {
+    "score": 0,
+    "reason": "模型输出异常，无优化代码。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_034": {
+    "score": 0,
+    "reason": "未提供优化后的代码，无法评估优化效果。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_035": {
+    "score": 0,
+    "reason": "模型输出异常，未提供优化代码。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_036": {
+    "score": 0,
+    "reason": "模型输出异常，未",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_037": {
+    "score": 10,
+    "reason": "修复原始代码bug，使用set实现O(1)查找，大幅提升效率。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_038": {
+    "score": 10,
+    "reason": "去除了不必要的list转换，直接返回元组，简洁高效。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_039": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_040": {
+    "score": 0,
+    "reason": "模型未输出有效优化代码。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_041": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_042": {
+    "score": 10,
+    "reason": "优化将O(n²)改为O(n)，使用set去重，正确简洁。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_043": {
+    "score": 10,
+    "reason": "直接返回长度，完全等价，消除了不必要的排序和类型转换。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_044": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_045": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_046": {
+    "score": 0,
+    "reason": "模型输出异常，未提供任何优化代码。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_047": {
+    "score": 0,
+    "reason": "模型输出异常，未提供任何优化代码。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_048": {
+    "score": 6,
+    "reason": "修复了语法错误，使用getattr使代码更简洁，但未提升时间/空间复杂度。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_049": {
+    "score": 0,
+    "reason": "模型输出异常，未提供优化代码。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  },
+  "Optimize_050": {
+    "score": 0,
+    "reason": "模型输出异常，未提供有效优化代码。",
+    "dim": "代码优化",
+    "judge": "deepseek"
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "CodeSearch_0": {
+    "score": 2,
+    "reason": "缺少上下文，输出疑似无关补全",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_1": {
+    "score": 0,
+    "reason": "缺少题目代码，输出无法匹配上下文",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_2": {
+    "score": 1,
+    "reason": "未提供任何补全代码，无法满足代码补全要求。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_3": {
+    "score": 0,
+    "reason": "输出为无关示例，未补全目标代码。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_4": {
+    "score": 0,
+    "reason": "无原始上下文，输出为无关自造代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_5": {
+    "score": 0,
+    "reason": "缺少原始上下文，输出为无关臆造代码。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_6": {
+    "score": 0,
+    "reason": "缺少原代码上下文，输出与任务无关",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_7": {
+    "score": 2,
+    "reason": "缺少原始上下文，补全疑似无关。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_8": {
+    "score": 2,
+    "reason": "缺少上下文，补全内容疑似无关。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_9": {
+    "score": 2,
+    "reason": "缺少上下文，泛化实现难以衔接",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_10": {
+    "score": 0,
+    "reason": "未依据题目上下文补全，输出无关Hello World代码。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_11": {
+    "score": 0,
+    "reason": "未依据题目上下文，属无关臆造代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_12": {
+    "score": 0,
+    "reason": "缺少上下文，输出为无关示例代码。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_13": {
+    "score": 0,
+    "reason": "输出无关，未补全目标代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_14": {
+    "score": 0,
+    "reason": "未补全目标代码，输出无关示例。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_15": {
+    "score": 0,
+    "reason": "输出与题目无关，未补全目标代码。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_16": {
+    "score": 0,
+    "reason": "输出与补全任务无关，缺少上下文逻辑。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_17": {
+    "score": 1,
+    "reason": "缺少原代码上下文，输出疑似无关。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_18": {
+    "score": 0,
+    "reason": "未提供题目上下文，输出为无关示例代码。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_19": {
+    "score": 0,
+    "reason": "缺少题目上下文，输出疑似无关代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_20": {
+    "score": 0,
+    "reason": "缺少上下文且输出与题目补全无关。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_21": {
+    "score": 0,
+    "reason": "无上下文依据，输出为无关示例代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_22": {
+    "score": 0,
+    "reason": "缺少上下文，补全内容无法验证且疑似无关",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_23": {
+    "score": 0,
+    "reason": "缺少题目上下文，输出明显无关。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_24": {
+    "score": 0,
+    "reason": "输出与缺失代码上下文无关，无法判定为有效补全。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_25": {
+    "score": 2,
+    "reason": "缺少原代码上下文，无法确认补全匹配。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_26": {
+    "score": 0,
+    "reason": "无上下文且补全为无关示例代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_27": {
+    "score": 0,
+    "reason": "未补全目标代码，内容无关。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_28": {
+    "score": 0,
+    "reason": "输出与缺失代码无关，无法完成补全任务。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_29": {
+    "score": 2,
+    "reason": "缺少上下文，输出疑似无关补全。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_30": {
+    "score": 0,
+    "reason": "无原始代码，输出属无关自造函数",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_31": {
+    "score": 2,
+    "reason": "无上下文匹配，代码虽可运行但疑似无关",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_32": {
+    "score": 0,
+    "reason": "完全脱离题目上下文，无法衔接。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_33": {
+    "score": 0,
+    "reason": "缺少上下文，输出与题目无关，无法判定为有效补全。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_34": {
+    "score": 8,
+    "reason": "功能完整，长度小于4未处理",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_35": {
+    "score": 0,
+    "reason": "无上下文依据，输出与题目无法对应。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_36": {
+    "score": 0,
+    "reason": "与题目上下文无关，无法补全原代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_37": {
+    "score": 0,
+    "reason": "无原代码上下文，补全内容明显无关",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_38": {
+    "score": 0,
+    "reason": "与题目上下文无关，无法衔接。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_39": {
+    "score": 0,
+    "reason": "未针对题目代码补全，输出占位函数无关。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_40": {
+    "score": 0,
+    "reason": "输出与缺失代码无关，无法衔接上下文",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_41": {
+    "score": 2,
+    "reason": "缺少上下文匹配，疑似自行臆造代码",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_42": {
+    "score": 0,
+    "reason": "缺少上下文，输出与题目无关",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_43": {
+    "score": 2,
+    "reason": "泛化快排实现，无法确认与原代码衔接。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_44": {
+    "score": 0,
+    "reason": "输出与题目代码补全无关。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_45": {
+    "score": 0,
+    "reason": "未补全目标代码，内容无关。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_46": {
+    "score": 0,
+    "reason": "与题目上下文无关，未完成补全",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_47": {
+    "score": 0,
+    "reason": "与缺失上下文无关，无法无缝衔接",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_48": {
+    "score": 0,
+    "reason": "无原题上下文，输出与任务无关",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  },
+  "CodeSearch_49": {
+    "score": 0,
+    "reason": "无上下文且补全内容明显臆造。",
+    "dim": "代码补全",
+    "judge": "gpt55"
+  }
+}

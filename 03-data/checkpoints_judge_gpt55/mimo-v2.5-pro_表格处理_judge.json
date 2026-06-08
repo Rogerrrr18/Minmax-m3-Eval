@@ -1,0 +1,302 @@
+{
+  "table_office_001": {
+    "score": 10,
+    "reason": "代码可执行，计算与月度汇总正确。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_002": {
+    "score": 9,
+    "reason": "公式正确，可填充至利润列。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_003": {
+    "score": 0,
+    "reason": "未提供任何透视表或图表结果。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_004": {
+    "score": 9,
+    "reason": "公式和条件格式正确，缺少零销售处理",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_005": {
+    "score": 9,
+    "reason": "代码正确可执行，聚合并绘制趋势图。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_0": {
+    "score": 9,
+    "reason": "公式正确，可向下填充计算各行总销售额。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_1": {
+    "score": 10,
+    "reason": "公式正确，可在D列填充计算总工资",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_2": {
+    "score": 9,
+    "reason": "公式正确，可填充整列。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_3": {
+    "score": 10,
+    "reason": "公式正确计算利润率，可下拉填充",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_4": {
+    "score": 10,
+    "reason": "公式正确计算B到D列平均分",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_5": {
+    "score": 9,
+    "reason": "公式正确，可下拉填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_6": {
+    "score": 10,
+    "reason": "公式语法正确，可按月累计销售额。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_7": {
+    "score": 10,
+    "reason": "公式正确，可在D列向下填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_8": {
+    "score": 9,
+    "reason": "公式正确，可在D2向下填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_9": {
+    "score": 10,
+    "reason": "公式正确，可下拉填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_10": {
+    "score": 8,
+    "reason": "公式基本正确，日期文本不如DATE函数稳健。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_11": {
+    "score": 10,
+    "reason": "公式语法正确，判断逻辑完全符合要求。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_12": {
+    "score": 9,
+    "reason": "公式正确，可下拉计算占比。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_13": {
+    "score": 9,
+    "reason": "公式正确，可下拉填充计算完成率",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_14": {
+    "score": 10,
+    "reason": "公式正确，可填充计算最终金额",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_15": {
+    "score": 9,
+    "reason": "公式正确，引用行号视起始行调整",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_16": {
+    "score": 9,
+    "reason": "公式正确，可下拉填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_17": {
+    "score": 9,
+    "reason": "公式正确，可下拉填充；未处理除零情况。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_18": {
+    "score": 9,
+    "reason": "公式正确计算实际与计划偏差。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_19": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完全符合要求。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_20": {
+    "score": 10,
+    "reason": "公式正确，可在D列按行填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_21": {
+    "score": 10,
+    "reason": "公式正确，满足亏损判断要求",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_22": {
+    "score": 0,
+    "reason": "未提供任何公式，无法完成任务。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_23": {
+    "score": 9,
+    "reason": "公式正确，单位换算合理。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_24": {
+    "score": 10,
+    "reason": "公式正确且处理销量为0情况",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_0": {
+    "score": 0,
+    "reason": "未提供任何公式或实现。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_1": {
+    "score": 9,
+    "reason": "公式正确，可向下填充计算每位学生。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_2": {
+    "score": 10,
+    "reason": "代码正确完成分组统计并输出Excel",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_3": {
+    "score": 10,
+    "reason": "公式与条件格式均正确。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_4": {
+    "score": 8,
+    "reason": "代码可执行，逻辑正确，未保留客户信息。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_5": {
+    "score": 9,
+    "reason": "公式正确，跨年需加年份条件",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_6": {
+    "score": 9,
+    "reason": "代码正确可执行，基本满足异常检测需求",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_7": {
+    "score": 9,
+    "reason": "公式与条件格式正确，剩余天数可能为负。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_8": {
+    "score": 8,
+    "reason": "代码可执行，统计和图表完整；达标阈值为假设。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_9": {
+    "score": 9,
+    "reason": "规则基本正确，发票号公式需注意起始行。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_10": {
+    "score": 8,
+    "reason": "基本正确，日期列缺失处理略有瑕疵",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_11": {
+    "score": 9,
+    "reason": "公式和条件格式正确，未处理预算为0情况。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_12": {
+    "score": 0,
+    "reason": "未提供任何Python实现或结果。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_13": {
+    "score": 0,
+    "reason": "未提供任何公式或解答。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_14": {
+    "score": 8,
+    "reason": "基本正确，未按日期排序略有缺陷",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_15": {
+    "score": 10,
+    "reason": "公式正确计算推荐者与贬损者占比差。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_16": {
+    "score": 7,
+    "reason": "主要流程正确，但置信区间算法不严谨。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_17": {
+    "score": 9,
+    "reason": "公式正确，预警条件合理，未考虑状态字段。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_18": {
+    "score": 9,
+    "reason": "代码正确可执行，完整汇总并生成图表。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_19": {
+    "score": 9,
+    "reason": "公式正确，步骤清晰，范围假设合理。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  }
+}

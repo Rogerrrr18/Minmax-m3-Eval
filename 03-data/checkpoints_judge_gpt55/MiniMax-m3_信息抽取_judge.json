@@ -1,0 +1,302 @@
+{
+  "NER_0": {
+    "score": 9,
+    "reason": "实体基本完整正确，浙江杭州边界可商榷。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_1": {
+    "score": 8,
+    "reason": "基本正确，华为类型误标，地点边界可议。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_2": {
+    "score": 8,
+    "reason": "实体基本正确，但地点边界偏拆分。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_3": {
+    "score": 8,
+    "reason": "基本正确，湖北仙桃边界拆分不当。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_4": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_5": {
+    "score": 9,
+    "reason": "实体基本完整，地点边界略可商榷",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_6": {
+    "score": 9,
+    "reason": "实体基本完整正确，边界合理，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_7": {
+    "score": 10,
+    "reason": "实体完整准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_8": {
+    "score": 10,
+    "reason": "实体完整准确，无边界错误或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_9": {
+    "score": 10,
+    "reason": "实体完整准确，无遗漏或幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_10": {
+    "score": 10,
+    "reason": "实体完整，类型与边界均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_11": {
+    "score": 9,
+    "reason": "实体基本全对，湖北黄石边界略可议。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_12": {
+    "score": 8,
+    "reason": "大部分正确，遗漏时间“2006年”。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_13": {
+    "score": 9,
+    "reason": "实体完整，边界正确，类型基本准确",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_14": {
+    "score": 9,
+    "reason": "基本完整正确，地点边界可合并。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_0": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_1": {
+    "score": 9,
+    "reason": "实体基本全对，湖北仙桃边界略可合并。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_2": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_3": {
+    "score": 9,
+    "reason": "实体基本全对，地点边界略可商榷。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_4": {
+    "score": 10,
+    "reason": "实体完整，边界和类型均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_5": {
+    "score": 10,
+    "reason": "实体完整，类型和边界均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_6": {
+    "score": 9,
+    "reason": "基本全对，地点边界略可商榷。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_7": {
+    "score": 8,
+    "reason": "漏抽时间“1995年”，其余正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_8": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_9": {
+    "score": 10,
+    "reason": "实体完整，类型和边界均正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_10": {
+    "score": 8,
+    "reason": "大部分正确，“大疆”类型应为组织名。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_11": {
+    "score": 8,
+    "reason": "实体基本完整，携程类型略不准，上海少一次。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_12": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_13": {
+    "score": 9,
+    "reason": "实体基本完整，陕西西安边界可合并。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_EXTRA_14": {
+    "score": 8,
+    "reason": "基本完整，360类型及地点边界略有争议。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_30": {
+    "score": 8,
+    "reason": "基本正确，Twitter边界略缺，X类型存疑。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_31": {
+    "score": 8,
+    "reason": "基本正确，新冠病毒类型误标为产品名。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_32": {
+    "score": 7,
+    "reason": "大部分正确，但多抽人名，产品边界不完整。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_33": {
+    "score": 7,
+    "reason": "已抽取主要实体，但遗漏金额实体。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_34": {
+    "score": 7,
+    "reason": "关键实体基本有，赛事边界错误且有泛化实体。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_35": {
+    "score": 8,
+    "reason": "基本正确，感染科边界略有争议。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_36": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_37": {
+    "score": 8,
+    "reason": "基本正确，遗漏“180亿美元”金额实体。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_38": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_39": {
+    "score": 8,
+    "reason": "基本正确，遗漏时间“1995年”。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_40": {
+    "score": 8,
+    "reason": "实体基本完整，“全球”类型存疑。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_41": {
+    "score": 10,
+    "reason": "实体完整准确，边界和类型均正确。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_42": {
+    "score": 8,
+    "reason": "主要实体正确，遗漏/截断“69港元”。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_43": {
+    "score": 8,
+    "reason": "主要实体正确，月球地点边界不完整。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_44": {
+    "score": 8,
+    "reason": "实体基本完整，奖项类型标注不准",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_45": {
+    "score": 8,
+    "reason": "实体基本正确，遗漏金额实体。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_46": {
+    "score": 10,
+    "reason": "实体完整准确，边界正确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_47": {
+    "score": 8,
+    "reason": "主要实体正确，产品边界略有偏差。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_48": {
+    "score": 8,
+    "reason": "基本正确，产品边界略有争议。",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  },
+  "NER_49": {
+    "score": 8,
+    "reason": "核心实体全，杂交水稻类型存疑",
+    "dim": "信息抽取",
+    "judge": "gpt55"
+  }
+}

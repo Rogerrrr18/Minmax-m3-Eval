@@ -1,0 +1,302 @@
+{
+  "XSum_0": {
+    "score": 1,
+    "reason": "(within 30 characters)",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_1": {
+    "score": 9,
+    "reason": "准确涵盖所有关键信息，语言简练，符合摘要要求。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_2": {
+    "score": 6,
+    "reason": "涵盖主要指控",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_3": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a document summary",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_4": {
+    "score": 1,
+    "reason": "<think>\nThe task is to summarize a long text into ",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_5": {
+    "score": 9,
+    "reason": "<think>\nThe task is to summarize a long text into ",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_6": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_7": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the model's summar",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_8": {
+    "score": 1,
+    "reason": "s",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_9": {
+    "score": 5,
+    "reason": "<think>\nThe task is to summarize a long text into ",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_001": {
+    "score": 9,
+    "reason": "要素齐全，格式规范，语气正式，略加落款日期为假设。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_002": {
+    "score": 9,
+    "reason": "要素齐全，数据具体详实，格式专业规范，语气正式得体，逻辑清晰。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_003": {
+    "score": 10,
+    "reason": "要素齐全，格式规范，语气正式，专业完整，无任何缺漏。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_004": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate this document carefully ag",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_005": {
+    "score": 9,
+    "reason": "要素齐全，格式规范，语气正式有吸引力，稍有模板感可更精炼。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_006": {
+    "score": 9,
+    "reason": "七大要素齐全，结构清晰，Markdown格式规范，子项内容详实，略缺总结章节。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_007": {
+    "score": 9,
+    "reason": "- ✓ Provided in section 一",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_008": {
+    "score": 1,
+    "reason": "分析 ✓ - Section 二",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_009": {
+    "score": 9,
+    "reason": "要素齐全，表格清晰，格式专业，超出要求的\"缺席人员\"\"备注\"等更实用。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_010": {
+    "score": 3,
+    "reason": "要素齐全，结构清晰，数据具体，加权评分合理，建议可行，语气专业规范。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_011": {
+    "score": 9,
+    "reason": "结构清晰，四要素齐全，语气正式专业，亮点突出，格式规范，几乎无瑕疵。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_012": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a document that is",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_013": {
+    "score": 9,
+    "reason": "(technical difficulty exceeded expectations) ✓",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_014": {
+    "score": 7,
+    "reason": "已",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "doc_office_015": {
+    "score": 9,
+    "reason": "要素齐全，结构清晰，格式规范，语气正式，符合IT部门公告要求，内容详尽具体。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "DOC_EXTRA_0": {
+    "score": 9,
+    "reason": "结构完整，要素齐全，数据具体，措辞专业，逻辑清晰。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "DOC_EXTRA_1": {
+    "score": 9,
+    "reason": "四要素齐全，",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "DOC_EXTRA_2": {
+    "score": 9,
+    "reason": "结构完整，涵盖全部要素；步骤清晰，FAQ实用；语气友好，符合用户文档标准。TWS部分略有模糊。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "DOC_EXTRA_3": {
+    "score": 9,
+    "reason": "结构完整，要素齐全，条款具体可执行，语气规范专业，细节到位。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "DOC_EXTRA_4": {
+    "score": 9,
+    "reason": "四要素齐全，结构规范，事迹具体数据详实，语气庄重；仅表彰名单仅列10人，完整性稍欠。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_0": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the model's summar",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_1": {
+    "score": 1,
+    "reason": "<think>\nThe task is to summarize a news article in",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_2": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the model's summar",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_3": {
+    "score": 9,
+    "reason": "准确涵盖所有关键信息，语言流畅，篇幅适中，略",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_4": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a document summary",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_5": {
+    "score": 8,
+    "reason": "涵盖核心要素（双方背景、立场、担忧），语言简洁准确，篇幅合规。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_6": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a summary of a new",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_7": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a document summary",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_8": {
+    "score": 3,
+    "reason": "<think>\nThe task is to summarize a news article in",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_9": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a document summary",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_10": {
+    "score": 5,
+    "reason": "£8",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_11": {
+    "score": 8,
+    "reason": "简洁准确，涵盖主要事件、责任方和补救措施，表述流畅。",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_12": {
+    "score": 1,
+    "reason": "able.",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_13": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a Chinese summary ",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_14": {
+    "score": 1,
+    "reason": "<think>\nThe user wants me to evaluate a document s",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_15": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate this summary against the o",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_16": {
+    "score": 8,
+    "reason": "涵盖主要要素，语言简洁，逻辑清晰，准确概括了科学家担忧",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_17": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate this summary against the r",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_18": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a summary of a gol",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  },
+  "XSum_Doc_19": {
+    "score": 8,
+    "reason": "准确涵盖核心信息（肾衰竭、侄子捐肾、重返大使岗位、康复漫长",
+    "dim": "文档撰写",
+    "judge": "minimax"
+  }
+}

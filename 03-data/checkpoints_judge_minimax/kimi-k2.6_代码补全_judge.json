@@ -1,0 +1,302 @@
+{
+  "CodeSearch_0": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，直接回复无有效输出。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_1": {
+    "score": 0,
+    "reason": "模型未进行任何有效代码补全，仅输出pass占位。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_2": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，直接拒绝回答。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_3": {
+    "score": 1,
+    "reason": "<think>\nThe user is asking me to evaluate a model'",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_4": {
+    "score": 1,
+    "reason": "模型未提供任何代码补全，仅指出缺少代码，未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_5": {
+    "score": 0,
+    "reason": "模型未补全任何代码，仅返回错误提示信息，完全无助于完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_6": {
+    "score": 0,
+    "reason": "未补全任何代码，仅返回提示信息。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_7": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅返回了错误提示信息。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_8": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，仅返回错误提示。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_9": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅返回错误提示。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_10": {
+    "score": 0,
+    "reason": "题目内容为空，模型未完成任何补全任务，无实质输出。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_11": {
+    "score": 0,
+    "reason": "模型未输出任何有效补全代码，仅返回占位注释。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_12": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅回复未收到代码，属于完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_13": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅返回错误提示，完全无法使用。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_14": {
+    "score": 0,
+    "reason": "模型未补全任何代码，未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_15": {
+    "score": 1,
+    "reason": "题目未提供待补全代码，输出为通用模板，无实际补全内容。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_16": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，仅返回了无意义的提示信息。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_17": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，输出无意义的占位说明。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_18": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，直接抛出错误，完全没有完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_19": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，仅返回提示信息，无法与上下文衔接。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_20": {
+    "score": 0,
+    "reason": "未提供任何代码补全，仅返回错误信息，任务完全未完成。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_21": {
+    "score": 1,
+    "reason": "able response if the input was truly empty, but it doesn't actually complete any code.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_22": {
+    "score": 0,
+    "reason": "模型未输出任何补全代码，仅返回提示性注释。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_23": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，输出无意义的提示信息。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_24": {
+    "score": 0,
+    "reason": "模型未尝试补全代码，仅返回错误提示，完全没有回答问题。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_25": {
+    "score": 2,
+    "reason": "题目未提供待补全代码，模型仅输出通用模板，无法评判补全正确性。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_26": {
+    "score": 1,
+    "reason": "无原始代码上下文，输出通用模板，无实质补全",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_27": {
+    "score": 0,
+    "reason": "模型未补全任何代码，直接返回错误信息。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_28": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅返回错误提示，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_29": {
+    "score": 0,
+    "reason": "模型输出为空，完全没有提供任何代码补全内容。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_30": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_31": {
+    "score": 0,
+    "reason": "模型输出为空，未提供任何代码补全内容。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_32": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，仅返回提示信息，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_33": {
+    "score": 0,
+    "reason": "未进行任何代码补全，仅返回提示信息。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_34": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，仅返回错误提示，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_35": {
+    "score": 1,
+    "reason": "<think>\nThe user wants me to evaluate the model's ",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_36": {
+    "score": 0,
+    "reason": "模型未提供任何有效代码补全，直接拒绝任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_37": {
+    "score": 0,
+    "reason": "模型仅返回占位注释，未提供任何实际代码补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_38": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅输出提示信息。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_39": {
+    "score": 0,
+    "reason": "未提供任何代码补全，仅回复要求提供代码，未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_40": {
+    "score": 1,
+    "reason": "able response to missing input, but it doesn't demonstrate any code completion ability.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_41": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，仅返回错误信息。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_42": {
+    "score": 1,
+    "reason": "题目未提供需补全的代码，模型仅输出通用模板，无实际补全内容。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_43": {
+    "score": 0,
+    "reason": "模型拒绝回答，未提供任何代码补全，任务完全未完成。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_44": {
+    "score": 0,
+    "reason": "模型未提供任何补全代码，输出为无意义的占位回复。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_45": {
+    "score": 0,
+    "reason": "模型未能补全任何代码，仅返回错误信息，无实质性输出。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_46": {
+    "score": 0,
+    "reason": "模型输出异常信息，未提供任何有效代码补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_47": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the model's output",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_48": {
+    "score": 1,
+    "reason": "able. But typically in these tasks, the model should still attempt something or the problem should have had code.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_49": {
+    "score": 0,
+    "reason": "模型未提供任何代码补全，仅输出了占位注释。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  }
+}

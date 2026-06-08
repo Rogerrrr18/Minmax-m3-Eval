@@ -1,0 +1,302 @@
+{
+  "table_office_001": {
+    "score": 4,
+    "reason": "代码被截断，语法不完整；思路正确",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_002": {
+    "score": 9,
+    "reason": "公式正确可用，但包含多余说明。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_003": {
+    "score": 9,
+    "reason": "透视表统计正确，代码可执行并生成柱状图。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_004": {
+    "score": 5,
+    "reason": "误算为个人利润率，部门汇总公式错误。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_005": {
+    "score": 8,
+    "reason": "逻辑正确，但依赖外部CSV文件",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_0": {
+    "score": 9,
+    "reason": "公式正确，可下拉填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_1": {
+    "score": 10,
+    "reason": "公式正确，可向下填充计算总工资。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_2": {
+    "score": 10,
+    "reason": "公式正确，说明清晰，可直接填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_3": {
+    "score": 10,
+    "reason": "公式正确，操作说明完整。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_4": {
+    "score": 9,
+    "reason": "公式正确，仅E1/E2表述略混淆",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_5": {
+    "score": 9,
+    "reason": "公式正确，可下拉填充；仅行号需按实际表头调整。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_6": {
+    "score": 9,
+    "reason": "公式正确，可计算当月累计销售额。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_7": {
+    "score": 10,
+    "reason": "公式正确，可计算每部门总产值",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_8": {
+    "score": 10,
+    "reason": "公式正确，符合未收账款计算逻辑。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_9": {
+    "score": 9,
+    "reason": "公式正确，可在D2填入后向下填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_10": {
+    "score": 9,
+    "reason": "主公式正确可用，仅截止日期理解略有歧义。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_11": {
+    "score": 9,
+    "reason": "公式正确，且提供简化版符合要求",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_12": {
+    "score": 9,
+    "reason": "公式正确，范围需按实际调整",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_13": {
+    "score": 10,
+    "reason": "公式正确，兼顾除零错误处理。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_14": {
+    "score": 10,
+    "reason": "公式正确，可向下填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_15": {
+    "score": 10,
+    "reason": "公式正确，可下拉填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_16": {
+    "score": 10,
+    "reason": "公式正确，说明清晰可直接使用",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_17": {
+    "score": 9,
+    "reason": "公式正确，可下填；未处理人数为0情况。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_18": {
+    "score": 10,
+    "reason": "公式正确，可向下填充计算实际与计划偏差。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_19": {
+    "score": 10,
+    "reason": "公式正确，逻辑完整，可直接填充使用",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_20": {
+    "score": 10,
+    "reason": "公式正确，说明清晰可直接填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_21": {
+    "score": 10,
+    "reason": "公式语法正确，判断逻辑完全符合要求。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_22": {
+    "score": 7,
+    "reason": "含正确方案，但方案一方向错误",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_23": {
+    "score": 8,
+    "reason": "主公式正确，但万元/人说明错误",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_24": {
+    "score": 10,
+    "reason": "公式正确且考虑除零错误。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_0": {
+    "score": 4,
+    "reason": "有思路但月度汇总公式维度和SUMIFS用法错误",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_1": {
+    "score": 10,
+    "reason": "公式正确完整，可直接填充使用",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_2": {
+    "score": 9,
+    "reason": "代码正确完成统计并导出Excel。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_3": {
+    "score": 8,
+    "reason": "主方案正确，增强公式有错误。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_4": {
+    "score": 9,
+    "reason": "代码可执行，合并统计输出正确，仅未覆盖无订单客户。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_5": {
+    "score": 8,
+    "reason": "主公式正确，部分扩展公式有范围/月年缺陷",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_6": {
+    "score": 9,
+    "reason": "代码正确可执行，异常检测完整。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_7": {
+    "score": 9,
+    "reason": "公式正确，条件格式设置合理。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_8": {
+    "score": 9,
+    "reason": "实现完整，阈值假设略主观",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_9": {
+    "score": 9,
+    "reason": "规则正确完整，仅有少量应用说明瑕疵",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_10": {
+    "score": 9,
+    "reason": "代码可执行，清洗流程完整，日期列识别略依赖列名。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_11": {
+    "score": 9,
+    "reason": "公式和条件格式正确，预置规则略漏负差异。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_12": {
+    "score": 7,
+    "reason": "思路正确，但交叉表结构不完全符合且输出被截断。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_13": {
+    "score": 7,
+    "reason": "核心公式基本正确，但M定义牵强且部分公式无效",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_14": {
+    "score": 9,
+    "reason": "代码正确可执行，信号逻辑合理。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_15": {
+    "score": 8,
+    "reason": "核心公式正确，但整列引用变体有括号和分母错误。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_16": {
+    "score": 9,
+    "reason": "分析完整正确，仅组顺序假设略不严谨",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_17": {
+    "score": 9,
+    "reason": "公式正确，条件格式基本完整。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_18": {
+    "score": 2,
+    "reason": "代码截断且语法错误，无法执行。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_19": {
+    "score": 8,
+    "reason": "核心公式正确，数据条进阶描述略不准",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  }
+}

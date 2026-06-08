@@ -1,0 +1,302 @@
+{
+  "XSum_0": {
+    "score": 8,
+    "reason": "要点完整，略超字数且遗漏政府回应",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_1": {
+    "score": 10,
+    "reason": "信息完整准确，字数符合要求，表述简洁。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_2": {
+    "score": 9,
+    "reason": "要点全面，字数合规，表述略有不顺。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_3": {
+    "score": 7,
+    "reason": "字数合规，但误将升超球队写成西布朗。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_4": {
+    "score": 7,
+    "reason": "内容准确完整，但超过100字限制。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_5": {
+    "score": 9,
+    "reason": "准确概括核心，简洁符合字数要求",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_6": {
+    "score": 9,
+    "reason": "准确概括核心信息，字数合规。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_7": {
+    "score": 9,
+    "reason": "要点完整，简洁准确，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_8": {
+    "score": 9,
+    "reason": "要点完整，简洁准确，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_9": {
+    "score": 9,
+    "reason": "要点完整，字数合规，表述准确。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_001": {
+    "score": 9,
+    "reason": "要素齐全、语气正式，年份略多余。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_002": {
+    "score": 9,
+    "reason": "要素齐全、数据具体、语气正式，结构清晰。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_003": {
+    "score": 10,
+    "reason": "要素齐全，格式规范，语气得体。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_004": {
+    "score": 8,
+    "reason": "要素完整、语气得体，但含占位符，个性化不足。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_005": {
+    "score": 9,
+    "reason": "要素完整，正式有吸引力，少量占位符需替换。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_006": {
+    "score": 10,
+    "reason": "要素齐全，结构清晰，Markdown规范。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_007": {
+    "score": 10,
+    "reason": "要素齐全，结构清晰，语气正式得体",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_008": {
+    "score": 8,
+    "reason": "要素较全、数据充分，预防机制未见",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_009": {
+    "score": 10,
+    "reason": "要素齐全，结构清晰，语气正式适用。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_010": {
+    "score": 8,
+    "reason": "要素完整数据充分，部分评分口径不一致。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_011": {
+    "score": 9,
+    "reason": "要素齐全，结构清晰，语气得体。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_012": {
+    "score": 8,
+    "reason": "要素齐全，框架清晰，末尾略不完整。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_013": {
+    "score": 9,
+    "reason": "要素完整，语气专业，安排清晰。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_014": {
+    "score": 6,
+    "reason": "内容专业但截断，缺发现与建议",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "doc_office_015": {
+    "score": 10,
+    "reason": "要素完整，规范清晰，语气正式适宜",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_0": {
+    "score": 9,
+    "reason": "要素齐全，结构清晰，语气正式得体。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_1": {
+    "score": 9,
+    "reason": "要素完整，语气得体，略依赖占位符。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_2": {
+    "score": 9,
+    "reason": "要素完整，结构清晰，语气适合用户。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_3": {
+    "score": 10,
+    "reason": "要素完整，结构清晰，语气规范。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "DOC_EXTRA_4": {
+    "score": 8,
+    "reason": "要素齐全、语气正式，但名单事迹不完整。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_0": {
+    "score": 8,
+    "reason": "内容准确全面，但略超100字。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_1": {
+    "score": 9,
+    "reason": "准确简洁，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_2": {
+    "score": 9,
+    "reason": "要点完整，语言简洁，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_3": {
+    "score": 8,
+    "reason": "信息完整精炼，但“俱乐部”指代略含糊。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_4": {
+    "score": 9,
+    "reason": "信息准确全面，字数合规，表述流畅。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_5": {
+    "score": 9,
+    "reason": "要点完整，简洁准确，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_6": {
+    "score": 9,
+    "reason": "要点完整，表述准确，字数合规。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_7": {
+    "score": 9,
+    "reason": "要点完整，简洁准确，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_8": {
+    "score": 9,
+    "reason": "要点完整，字数合规，表达清晰。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_9": {
+    "score": 8,
+    "reason": "概括准确简洁，但“客场”表述有误。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_10": {
+    "score": 7,
+    "reason": "概括完整，但补贴金额误写为80万。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_11": {
+    "score": 9,
+    "reason": "准确简洁，涵盖原因、影响和道歉处理。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_12": {
+    "score": 9,
+    "reason": "准确精炼，涵盖要点，符合字数要求。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_13": {
+    "score": 5,
+    "reason": "关键事实错误，且略超字数。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_14": {
+    "score": 9,
+    "reason": "信息完整准确，字数合规，表述清晰。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_15": {
+    "score": 8,
+    "reason": "基本准确简洁，但“租借至母队”表述有误。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_16": {
+    "score": 9,
+    "reason": "要点完整准确，字数合规，表达简洁。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_17": {
+    "score": 9,
+    "reason": "信息准确完整，字数合规，略少背景细节。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_18": {
+    "score": 9,
+    "reason": "要点完整准确，表述简洁，个别译名略生硬。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  },
+  "XSum_Doc_19": {
+    "score": 8,
+    "reason": "要点较全，个别细节略泛化。",
+    "dim": "文档撰写",
+    "judge": "gpt55"
+  }
+}

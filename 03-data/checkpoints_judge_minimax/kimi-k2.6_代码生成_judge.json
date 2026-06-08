@@ -1,0 +1,602 @@
+{
+  "HumanEval/0": {
+    "score": 10,
+    "reason": "正确且高效的排序解法，逻辑完全正确。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/1": {
+    "score": 9,
+    "reason": "逻辑正确，处理空格和嵌套，风格清晰，效率良好。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/2": {
+    "score": 10,
+    "reason": "简洁正确，一行代码实现功能，效率高。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/3": {
+    "score": 10,
+    "reason": "逻辑正确，简洁高效，完全符合要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/4": {
+    "score": 10,
+    "reason": "简洁正确，完全符合题意。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/5": {
+    "score": 9,
+    "reason": "逻辑正确，边界处理完善，代码简洁。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/6": {
+    "score": 10,
+    "reason": "逻辑正确，代码简洁高效，完美实现需求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/7": {
+    "score": 10,
+    "reason": "简洁正确，使用列表推导式，完美实现。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/8": {
+    "score": 10,
+    "reason": "逻辑正确，简洁高效，符合要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/9": {
+    "score": 9,
+    "reason": "逻辑正确，实现简洁高效，符合要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/10": {
+    "score": 9,
+    "reason": "逻辑正确，边界情况已处理，代码简洁。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/11": {
+    "score": 10,
+    "reason": "代码简洁正确，高效实现字符串XOR。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/12": {
+    "score": 10,
+    "reason": "正确处理空列表和并列情况，代码简洁高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/13": {
+    "score": 10,
+    "reason": "Correct Euclidean algorithm implementation, efficient and clean.",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/14": {
+    "score": 9,
+    "reason": "正确且简洁，列表推导式高效，边界情况由range自然处理。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/15": {
+    "score": 10,
+    "reason": "简洁高效，完全符合需求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/16": {
+    "score": 10,
+    "reason": "简洁正确，高效利用set和lower()。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/17": {
+    "score": 10,
+    "reason": "逻辑正确，简洁高效，完美实现。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/18": {
+    "score": 9,
+    "reason": "逻辑正确，处理了空子串边界情况，代码简洁。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/19": {
+    "score": 9,
+    "reason": "逻辑正确，实现简洁高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/20": {
+    "score": 9,
+    "reason": "排序后遍历相邻元素，逻辑正确高效，代码简洁。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/21": {
+    "score": 8,
+    "reason": "实现正确高效，但未处理max==min的边界情况。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/22": {
+    "score": 9,
+    "reason": "正确实现，排除bool类型更严谨。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/23": {
+    "score": 10,
+    "reason": "正确高效，使用内置len实现，完全符合要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/24": {
+    "score": 9,
+    "reason": "正确高效，从n//2递减查找，逻辑正确。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/25": {
+    "score": 10,
+    "reason": "逻辑正确，效率高，标准实现。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/26": {
+    "score": 10,
+    "reason": "逻辑正确，代码简洁高效，完美实现。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/27": {
+    "score": 10,
+    "reason": "使用swapcase()完美实现，简洁高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/28": {
+    "score": 10,
+    "reason": "使用''.join简洁高效，完全符合题目要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "HumanEval/29": {
+    "score": 10,
+    "reason": "简洁正确，列表推导式高效实现。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_0": {
+    "score": 10,
+    "reason": "逻辑正确，边界处理完善，代码简洁高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_1": {
+    "score": 9,
+    "reason": "able, though slightly different from what might be expected (like `sort_matrix`), but the problem just says \"write a function\" without specifying a name.",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_2": {
+    "score": 9,
+    "reason": "实现简洁正确，类型注解完善，逻辑无瑕疵。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_3": {
+    "score": 9,
+    "reason": "公式正确，实现简洁，参数命名合理，附有docstring。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_4": {
+    "score": 4,
+    "reason": "<think>\nThe task is to write a function to split a",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_5": {
+    "score": 8,
+    "reason": "正则模式正确匹配小写字母加下划再加小写字母，符合MBPP",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_6": {
+    "score": 10,
+    "reason": "公式正确，代码简洁，含类型提示，完美实现。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_7": {
+    "score": 10,
+    "reason": "代码简洁高效，使用set优化查找，完全正确。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_8": {
+    "score": 9,
+    "reason": "正确高效，O(n)时间复杂度，代码简洁规范。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_9": {
+    "score": 2,
+    "reason": "<think>\nThe problem is asking to check if a given ",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_10": {
+    "score": 10,
+    "reason": "逻辑正确，简洁高效，用列表推导式完美实现需求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_11": {
+    "score": 9,
+    "reason": "正确高效，O(n)时间复杂度，代码简洁清晰。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_12": {
+    "score": 1,
+    "reason": "<think>\nThe problem asks to write a Python functio",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_13": {
+    "score": 8,
+    "reason": "简洁正确，对字符串输入有效；若输入为整数则结果错误。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_14": {
+    "score": 1,
+    "reason": "able.",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_15": {
+    "score": 8,
+    "reason": "able interpretation of \"check if the given tuple list has all k elements.\"",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_16": {
+    "score": 1,
+    "reason": "<think>\nThe task is to write a function to remove ",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_17": {
+    "score": 9,
+    "reason": "正确高效，边界处理完善，略有风格可优化处。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_18": {
+    "score": 9,
+    "reason": "用集合异或思路实现，O(n)高效简洁，假设只有一个奇数次元素。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_19": {
+    "score": 1,
+    "reason": "able name. Let me verify with an example: \"abc\" - all characters have frequency 1, so 1*(1+1)/2 = 1 for each, total = 3. The substrings are \"a\", \"b\", \"c\" - all start and end with same character. ✓",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_20": {
+    "score": 1,
+    "reason": "<think>\nThe problem asks to find the top k integer",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_21": {
+    "score": 9,
+    "reason": "able.",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_22": {
+    "score": 9,
+    "reason": "正确处理0、负数和正数转换，逻辑清晰高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_23": {
+    "score": 1,
+    "reason": "<think>\nThe problem is to find the missing number ",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_24": {
+    "score": 10,
+    "reason": "公式n*(n+1)完全正确，实现简洁。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_25": {
+    "score": 1,
+    "reason": "<think>\nThe task is to find the nth digit in the p",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_26": {
+    "score": 8,
+    "reason": "able interpretation of \"sort a mixed list.\"",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_27": {
+    "score": 8,
+    "reason": "逻辑正确，处理了边界情况，代码清晰。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_28": {
+    "score": 9,
+    "reason": ":",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_29": {
+    "score": 10,
+    "reason": "使用Counter高效简洁，逻辑正确，代码风格良好。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_0": {
+    "score": 0,
+    "reason": "代码未生成，仅返回异常信息，无法运行。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_1": {
+    "score": 10,
+    "reason": "完全正确，逻辑清晰，异常处理得当，符合所有要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_2": {
+    "score": 8,
+    "reason": "able interpretation",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_3": {
+    "score": 9,
+    "reason": "逻辑正确，代码简洁高效，符合要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_4": {
+    "score": 10,
+    "reason": "代码简洁高效，正确使用Counter和itertools实现需求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_5": {
+    "score": 9,
+    "reason": "正确实现需求，逻辑清晰，代码简洁高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_6": {
+    "score": 9,
+    "reason": "逻辑正确，错误处理完善，效率合理。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_7": {
+    "score": 9,
+    "reason": "逻辑正确、简洁高效，仅缺少空文件异常处理。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_8": {
+    "score": 9,
+    "reason": "逻辑正确，实现简洁；仅多余导入itertools未使用。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_9": {
+    "score": 9,
+    "reason": "逻辑正确，实现简洁，标题设置正确，符合所有要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_10": {
+    "score": 0,
+    "reason": "无代码输出，仅有异常信息。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_11": {
+    "score": 9,
+    "reason": "逻辑正确，代码简洁高效；轻微瑕疵：返回numpy标量而非原生float。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_12": {
+    "score": 9,
+    "reason": "正确处理异常、读写日志、返回字典，逻辑完整，代码质量高。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_13": {
+    "score": 0,
+    "reason": "未提供任何代码，完全未完成任务。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_14": {
+    "score": 8,
+    "reason": "代码逻辑正确，异常处理到位，shutil.make_archive使用得当；",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_15": {
+    "score": 9,
+    "reason": "正确实现所有需求，错误处理和文件命名规范，逻辑清晰高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_16": {
+    "score": 9,
+    "reason": "正确实现所有需求，逻辑清晰，使用-C参数避免路径嵌套，略缺异常处理细节。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_17": {
+    "score": 9,
+    "reason": "逻辑正确，异常处理完善，效率良好。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_18": {
+    "score": 0,
+    "reason": "模型未生成任何代码，仅返回异常信息。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_19": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate the code based on the requ",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_20": {
+    "score": 9,
+    "reason": "逻辑正确，代码简洁高效，符合要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_21": {
+    "score": 9,
+    "reason": "代码正确，功能完整，输出格式符合要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_22": {
+    "score": 9,
+    "reason": "正确交替合并两列表，使用sentinel避免fillvalue冲突，逻辑正确高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_23": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the code:\n\n1. The task is t",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_24": {
+    "score": 9,
+    "reason": "正确实现PBKDF2 HMAC SHA-256，含盐生成和base64编码，异常处理完善，风格良好。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_25": {
+    "score": 10,
+    "reason": "正确实现，逻辑清晰，符合所有要求。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_26": {
+    "score": 9,
+    "reason": "正确实现，类型处理完善，简洁高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_27": {
+    "score": 10,
+    "reason": "实现完整正确，逻辑清晰，代码简洁规范。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_28": {
+    "score": 9,
+    "reason": "able approach.",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "BigCode_29": {
+    "score": 9,
+    "reason": "逻辑正确，简洁高效，正确处理1D数组并base64编码。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_0": {
+    "score": 9,
+    "reason": "正确使用lambda实现偶数过滤，简洁高效。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_1": {
+    "score": 9,
+    "reason": "逻辑正确，使用Counter高效简洁，命名清晰，示例完整。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_2": {
+    "score": 1,
+    "reason": "<think>\nThe problem asks to write a function to fi",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_3": {
+    "score": 0,
+    "reason": "able solution. It correctly identifies a word at the beginning of a string. The use of `^` is redundant since `re.match` already anchors to the start, but this is a minor style issue.",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_4": {
+    "score": 9,
+    "reason": "正确高效地使用reduce和math.gcd，代码简洁。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_5": {
+    "score": 9,
+    "reason": "简洁正确，高效利用set去重比较。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_6": {
+    "score": 0,
+    "reason": "模型未生成任何代码，仅返回异常信息。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_7": {
+    "score": 0,
+    "reason": "模型未输出代码，仅返回异常信息，无法完成任何功能。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_8": {
+    "score": 8,
+    "reason": "ably well.",
+    "dim": "代码生成",
+    "judge": "minimax"
+  },
+  "MBPP_Extra_9": {
+    "score": 9,
+    "reason": "简洁正确，使用min+lambda是标准解法，效率高且代码清晰。",
+    "dim": "代码生成",
+    "judge": "minimax"
+  }
+}

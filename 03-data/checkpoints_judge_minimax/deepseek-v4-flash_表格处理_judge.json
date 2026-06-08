@@ -1,0 +1,302 @@
+{
+  "table_office_001": {
+    "score": 9,
+    "reason": "代码逻辑正确，完整实现读取、计算、汇总和格式化输出，仅缺少文件名参数化。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_002": {
+    "score": 9,
+    "reason": "<think>\nThe user wants me to evaluate the model's ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_003": {
+    "score": 8,
+    "reason": "<think>\nThe task is to evaluate the model's output",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_004": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the task and the model's ou",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_office_005": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the Python code th",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_0": {
+    "score": 2,
+    "reason": "<think>\nThe task is to evaluate a model's output f",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_1": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑正确，但未说明需向下填充。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_2": {
+    "score": 9,
+    "reason": "able (assuming row 1 has headers)",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_3": {
+    "score": 9,
+    "reason": ":",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_4": {
+    "score": 9,
+    "reason": "公式完全正确，使用AVERAGE函数对B2:D2求平均，符合要求。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_5": {
+    "score": 10,
+    "reason": "公式语法完全正确，逻辑准确满足题意。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_6": {
+    "score": 9,
+    "reason": "逻辑正确，语法无误，实现当月累计求和。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_7": {
+    "score": 9,
+    "reason": "公式正确，使用相对引用，逻辑无误。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_8": {
+    "score": 10,
+    "reason": "公式=B2-C2完全正确，从B列减C列计算未收账款，引用行号合理。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_9": {
+    "score": 1,
+    "reason": "<think>\nThe task is to generate a formula in colum",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_10": {
+    "score": 1,
+    "reason": "<think>\nThe task is to calculate work years (工作年限)",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_11": {
+    "score": 10,
+    "reason": "able for non-delayed cases",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_12": {
+    "score": 9,
+    "reason": "公式正确计算地区占比，语法正确，逻辑无误，可用性高。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_13": {
+    "score": 7,
+    "reason": "able completion rate formula. However, completion rate is typically expressed as a percentage, so it might need to be formatted as a percentage. But the basic formula =B2/C2 is correct for calculating the ratio of sales to target.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_14": {
+    "score": 10,
+    "reason": "公式完全正确，引用B2、C2、D2准确计算数量×单价×(1-折扣)。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_15": {
+    "score": 9,
+    "reason": "<think>\nThe task is to create a formula in column ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_16": {
+    "score": 9,
+    "reason": "公式正确，将保质期天数加到生产日期即可得出过期日期",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_17": {
+    "score": 8,
+    "reason": "公式正确，含错误处理；未格式化为百分比略有不足。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_18": {
+    "score": 9,
+    "reason": "<think>\nThe task is to evaluate a formula for calc",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_19": {
+    "score": 10,
+    "reason": "公式语法正确，嵌套IF完整覆盖A/B/C三个等级及默认情况。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_20": {
+    "score": 9,
+    "reason": "able and correct formula for calculating performance salary (绩效工资 = 基本工资 × 绩效系数).",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_21": {
+    "score": 9,
+    "reason": "<think>\nThe user wants me to evaluate the model's ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_22": {
+    "score": 7,
+    "reason": "<think>\nLet me analyze the formula: =IF(ROW()<7,\"\"",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_23": {
+    "score": 8,
+    "reason": "公式正确，亿转元与万转人抵消后结果正确。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "TABLE_EXTRA_24": {
+    "score": 9,
+    "reason": "able since row 1 is typically the header)",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_0": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze this Excel formula for calc",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_1": {
+    "score": 2,
+    "reason": "三个公式语法正确，逻辑完整，准确实现总分、平均分和低于60标记功能。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_2": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the Python pandas ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_3": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the model's output against ",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_4": {
+    "score": 8,
+    "reason": "able. The code is executable and follows the requirements.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_5": {
+    "score": 9,
+    "reason": "able approach but not explicitly stated in the task. However, it's a valid approach.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_6": {
+    "score": 9,
+    "reason": "Z-score异常检测逻辑完整，语法正确，阈值合理，输出清晰。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_7": {
+    "score": 1,
+    "reason": "<think>\nLet me evaluate the model's response to th",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_8": {
+    "score": 1,
+    "reason": "able assumption",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_9": {
+    "score": 10,
+    "reason": "三个验证规则均正确，序列、大于0、自定义公式去重逻辑无误。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_10": {
+    "score": 1,
+    "reason": "able",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_11": {
+    "score": 10,
+    "reason": "<think>\nLet me evaluate the table processing resul",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_12": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze this Python code for creati",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_13": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the Excel formulas for calc",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_14": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the Python code fo",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_15": {
+    "score": 9,
+    "reason": "<think>\nThe NPS score is calculated as: %Promoters",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_16": {
+    "score": 8,
+    "reason": "代码完整可执行，统计方法正确，仅`round(p*n)`取计数略显粗糙。",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_17": {
+    "score": 1,
+    "reason": "able interpretation.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_18": {
+    "score": 8,
+    "reason": "able.",
+    "dim": "表格处理",
+    "judge": "minimax"
+  },
+  "table_extra_19": {
+    "score": 9,
+    "reason": "<think>\nLet me evaluate the model's response to th",
+    "dim": "表格处理",
+    "judge": "minimax"
+  }
+}

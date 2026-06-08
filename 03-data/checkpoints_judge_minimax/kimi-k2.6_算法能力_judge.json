@@ -1,0 +1,482 @@
+{
+  "GSM8K_0": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码简洁完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_1": {
+    "score": 10,
+    "reason": "答案正确，代码清晰，思路完整，输出格式规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_2": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码规范完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_3": {
+    "score": 10,
+    "reason": "答案正确，代码清晰，思路完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_4": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_5": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码简洁可运行。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_6": {
+    "score": 10,
+    "reason": "答案完全正确，思路清晰，代码简洁。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_7": {
+    "score": 10,
+    "reason": "ing is correct.",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_8": {
+    "score": 10,
+    "reason": "答案45英里正确，代码逻辑清晰，步骤完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_9": {
+    "score": 10,
+    "reason": "代码逻辑正确，计算结果$460无误，结构清晰。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_10": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码规范完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_11": {
+    "score": 10,
+    "reason": "答案正确，代码清晰，计算无误。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_12": {
+    "score": 10,
+    "reason": "逻辑正确，计算准确，13年时累计盈利$7.50>0，答案完全正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_13": {
+    "score": 10,
+    "reason": "答案18正确，方程建立和代码实现均无误。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_14": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_15": {
+    "score": 10,
+    "reason": "计算正确，珠宝利润$125大于电子产品$96，代码清晰，答案准确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_16": {
+    "score": 10,
+    "reason": "答案正确，总路程80+150=230英里，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_17": {
+    "score": 10,
+    "reason": "答案正确，代码清晰，步骤完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_18": {
+    "score": 10,
+    "reason": "答案正确（7打），思路清晰，代码简洁规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_19": {
+    "score": 10,
+    "reason": "解题思路清晰，答案正确，代码简洁规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_20": {
+    "score": 10,
+    "reason": "答案正确（15升），代码清晰，逻辑完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_21": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码简洁。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_22": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码规范简洁。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_23": {
+    "score": 9,
+    "reason": "ing is clear.",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_24": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码简洁规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_25": {
+    "score": 10,
+    "reason": "答案正确，代码清晰完整，逻辑无误。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_26": {
+    "score": 10,
+    "reason": "答案$243正确，代码清晰简洁，思路和计算完全正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_27": {
+    "score": 10,
+    "reason": "思路清晰，代码正确，60天正好4盒，总花费$16.00，结果完全正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_28": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_29": {
+    "score": 10,
+    "reason": "逻辑正确，代码清晰，答案104正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_30": {
+    "score": 10,
+    "reason": "解题思路正确，代码清晰，答案109正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_31": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码规范，过程完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_32": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_33": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码含验证，完美解答。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_34": {
+    "score": 10,
+    "reason": "计算正确，答案23，代码清晰完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_35": {
+    "score": 10,
+    "reason": "答案正确，计算过程清晰，代码简洁完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_36": {
+    "score": 10,
+    "reason": "答案正确，代码清晰，逻辑完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_37": {
+    "score": 9,
+    "reason": "ing, good code.",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_38": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_39": {
+    "score": 10,
+    "reason": "思路清晰，推导正确，代码完整，答案18英里无误。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_40": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码简洁完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_41": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_42": {
+    "score": 10,
+    "reason": "答案正确（40-14=26），代码清晰简洁。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_43": {
+    "score": 10,
+    "reason": "答案正确（48g），思路清晰，代码规范完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_44": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_45": {
+    "score": 9,
+    "reason": "答案正确，思路清晰，代码简洁规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_46": {
+    "score": 10,
+    "reason": "方程正确，计算无误，答案163正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_47": {
+    "score": 10,
+    "reason": "答案$800正确，思路清晰，代码规范完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_48": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，代码完整规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "GSM8K_49": {
+    "score": 10,
+    "reason": "答案正确，代码清晰，逻辑无误。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_0": {
+    "score": 10,
+    "reason": "思路清晰，答案正确，包含纯Python和NumPy两种实现，复杂度分析准确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_1": {
+    "score": 10,
+    "reason": "公式正确，代码清晰，含输入验证和示例，完全正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_2": {
+    "score": 8,
+    "reason": "正",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_3": {
+    "score": 9,
+    "reason": "答案正确，思路清晰，提供了多语言实现并包含输入校验，超出题目要求。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_4": {
+    "score": 10,
+    "reason": "思路清晰，代码正确，复杂度分析准确，标准哈希解法。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_5": {
+    "score": 10,
+    "reason": "思路清晰，代码正确，处理了边界情况，复杂度合理。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_6": {
+    "score": 9,
+    "reason": "思路正确，O(n)时间空间复杂度，代码清晰，示例验证正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_7": {
+    "score": 10,
+    "reason": "答案正确，思路清晰，简洁高效。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_8": {
+    "score": 10,
+    "reason": "算法正确，思路清晰，O(n)复杂度，多语言实现完善，含输入校验和边界处理。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_9": {
+    "score": 9,
+    "reason": "able. If the array contains 0 as a non-repeated element, the product would be 0, which is correct.",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_10": {
+    "score": 9,
+    "reason": "答案正确，思路清晰，包含手动实现和math.comb两种方法，边界处理完善。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_11": {
+    "score": 9,
+    "reason": "思路清晰，两种解法正确，但未明确指出题目通常的约束。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_12": {
+    "score": 0,
+    "reason": "模型仅输出异常错误，未提供任何解答。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_13": {
+    "score": 9,
+    "reason": "算法正确，O(√n)复杂度，边界处理得当，仅注释略缺。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_14": {
+    "score": 9,
+    "reason": "able for binary representation.",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_15": {
+    "score": 0,
+    "reason": "<think>\nLet me analyze this algorithm solution for",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_16": {
+    "score": 10,
+    "reason": "公式正确，代码简洁清晰，包含输入验证和示例，复杂度分析完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_17": {
+    "score": 1,
+    "reason": "<think>\nThe problem asks to find the nth digit in ",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_18": {
+    "score": 9,
+    "reason": "思路清晰，利用元组key分离类型与值，代码简洁正确，兼顾原地修改。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_19": {
+    "score": 9,
+    "reason": "思路清晰，代码正确处理边界情况，功能完善，答案正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_20": {
+    "score": 10,
+    "reason": "思路清晰，使用Counter和chain.from_iterable正确高效，代码简洁正确。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_21": {
+    "score": 1,
+    "reason": "<think>\nThe problem asks to find the sum of repeat",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_22": {
+    "score": 9,
+    "reason": "正则表达式正确，代码简洁清晰，输出符合预期。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_23": {
+    "score": 9,
+    "reason": "思路正确，欧几里得算法实现清晰，含优化和复杂度分析，多语言实现完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_24": {
+    "score": 9,
+    "reason": "两种解法均正确，思路清晰，时间复杂度O(n)，包含提前退出优化，代码简洁完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_25": {
+    "score": 0,
+    "reason": "模型未给出任何解答，仅返回异常信息。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_26": {
+    "score": 9,
+    "reason": "思路正确，代码简洁，用min+lambda实现，边界处理完善，仅注释可更详细。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_27": {
+    "score": 9,
+    "reason": "思路清晰，代码正确，支持负数，考虑了边界情况，复杂度O(n+k)，实现规范。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_28": {
+    "score": 9,
+    "reason": "公式正确，多语言实现清晰，边界检查完整。",
+    "dim": "算法能力",
+    "judge": "minimax"
+  },
+  "Algo_MBPP_29": {
+    "score": 0,
+    "reason": "<think>\n\nThe problem is to find the largest number",
+    "dim": "算法能力",
+    "judge": "minimax"
+  }
+}

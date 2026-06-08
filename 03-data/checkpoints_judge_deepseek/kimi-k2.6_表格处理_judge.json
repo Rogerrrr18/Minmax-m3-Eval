@@ -1,0 +1,302 @@
+{
+  "table_office_001": {
+    "score": 10,
+    "reason": "代码语法正确，可执行，完整实现所有要求，输出格式规范。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_office_002": {
+    "score": 10,
+    "reason": "公式正确，语法无误，可直接在Excel中使用并填充。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_office_003": {
+    "score": 0,
+    "reason": "模型输出异常，未生成任何分析内容。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_office_004": {
+    "score": 10,
+    "reason": "部门利润率公式准确，条件格式设置正确，且给出个人利润率备选，无缺陷。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_office_005": {
+    "score": 10,
+    "reason": ":",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_0": {
+    "score": 4,
+    "reason": "公式意图正确，但输出格式有误，不应包含\"D2:\"。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_1": {
+    "score": 10,
+    "reason": "公式完全正确，两种写法均能正确计算总工资，符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_2": {
+    "score": 10,
+    "reason": "公式正确计算净收入（B2-C2），语法无误且直接符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_3": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完全符合题目要求，无任何缺陷。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_4": {
+    "score": 10,
+    "reason": "公式正确，语法无误，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_5": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑清晰，完全满足要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_6": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑清晰，准确实现当月累计销售额。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_7": {
+    "score": 10,
+    "reason": "公式正确计算总产值，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_8": {
+    "score": 10,
+    "reason": "公式正确计算未收账款，语法无误，完全符合要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_9": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑清晰，能正确计算折后价。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_10": {
+    "score": 10,
+    "reason": "公式正确，提供多种年限计算方式完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_11": {
+    "score": 10,
+    "reason": "公式正确直接实现判断逻辑，并提供空白处理优化，完全符合要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_12": {
+    "score": 10,
+    "reason": "公式正确，使用绝对引用计算占比，可向下填充，完美符合要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_13": {
+    "score": 10,
+    "reason": "公式正确，语法无误，提供了基础版和错误处理版本。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_14": {
+    "score": 10,
+    "reason": "公式完全正确，直接满足题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_15": {
+    "score": 10,
+    "reason": "公式完全正确，逻辑与题目要求一致。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_16": {
+    "score": 10,
+    "reason": "公式完全正确，直接加天数得未来日期，语法无误。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_17": {
+    "score": 9,
+    "reason": "公式语法正确，正确",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_18": {
+    "score": 10,
+    "reason": "公式准确计算实际天数与计划天数的偏差，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_19": {
+    "score": 10,
+    "reason": "公式完全正确，逻辑清晰，语法无误，完美符合要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_20": {
+    "score": 10,
+    "reason": "公式正确，符合绩效工资计算要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_21": {
+    "score": 10,
+    "reason": "公式完全正确，语法无误，逻辑匹配题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_22": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_23": {
+    "score": 10,
+    "reason": "公式正确转换单位，完美计算人均GDP。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "TABLE_EXTRA_24": {
+    "score": 10,
+    "reason": "公式正确计算退货率，并提供了IFERROR防除零错误。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_0": {
+    "score": 0,
+    "reason": "输出错误异常，未提供任何公式或代码。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_1": {
+    "score": 10,
+    "reason": "公式完全正确且符合要求，条件格式作为补充更完善。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_2": {
+    "score": 10,
+    "reason": "代码完全正确，功能完整，无错误。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_3": {
+    "score": 10,
+    "reason": "公式正确，条件格式设置完整，扩展考虑周全，完全符合题目要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_4": {
+    "score": 8,
+    "reason": "代码正确实现合并与聚合，",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_5": {
+    "score": 0,
+    "reason": "无有效输出，仅返回错误信息。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_6": {
+    "score": 10,
+    "reason": "代码正确完整，实现了Z-score异常检测并输出保存，无缺陷。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_7": {
+    "score": 10,
+    "reason": "公式与条件格式完全符合题意，语法正确，逻辑清晰，可实际应用。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_8": {
+    "score": 0,
+    "reason": "代码未执行，仅返回异常信息，无有效输出。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_9": {
+    "score": 10,
+    "reason": "规则完全正确，覆盖所有要求，且给出合理建议。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_10": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_11": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_12": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_13": {
+    "score": 0,
+    "reason": "模型输出异常，未给出任何公式或代码。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_14": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_15": {
+    "score": 10,
+    "reason": "公式正确计算了NPS，逻辑清晰，语法无误，完全符合要求。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_16": {
+    "score": 10,
+    "reason": "代码完全正确，无语法错误，实现了转化率、置信区间和卡方检验，输出清晰。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_17": {
+    "score": 10,
+    "reason": "Excel公式正确，实现日期计算、状态判断和条件格式预警，无错误。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_18": {
+    "score": 9,
+    "reason": "逻辑正确，代码可执行，仅缺少异常处理。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  },
+  "table_extra_19": {
+    "score": 9,
+    "reason": "公式与操作步骤均正确，仅缺下拉填充等细节提示。",
+    "dim": "表格处理",
+    "judge": "deepseek"
+  }
+}

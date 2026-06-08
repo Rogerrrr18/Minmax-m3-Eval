@@ -1,0 +1,602 @@
+{
+  "HumanEval/0": {
+    "score": 10,
+    "reason": "排序后检查相邻",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/1": {
+    "score": 10,
+    "reason": "代码正确、简洁高效，完美实现功能。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/2": {
+    "score": 10,
+    "reason": "代码完全正确，简洁高效，直接返回小数部分。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/3": {
+    "score": 10,
+    "reason": "正确实现功能，逻辑清晰简洁，无冗余代码。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/4": {
+    "score": 10,
+    "reason": "正确实现MAD，代码简洁高效，完全符合要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/5": {
+    "score": 10,
+    "reason": "简洁正确，高效实现插值功能，无冗余。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/6": {
+    "score": 10,
+    "reason": "正确实现，逻辑清晰，高效简洁。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/7": {
+    "score": 10,
+    "reason": "实现简洁正确，完全符合要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/8": {
+    "score": 10,
+    "reason": "正确实现功能，代码简洁高效，符合Python风格。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/9": {
+    "score": 10,
+    "reason": "正确实现滚动最大值，代码简洁高效，完全符合题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/10": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/11": {
+    "score": 10,
+    "reason": "正确使用zip和生成器，简洁高效，完全符合要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/12": {
+    "score": 10,
+    "reason": "代码简洁正确，完全满足题目要求，包括空列表处理和相同长度返回第一个。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/13": {
+    "score": 10,
+    "reason": "正确实现欧几里得算法，简洁高效。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/14": {
+    "score": 10,
+    "reason": "代码完全正确，简洁高效，符合题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/15": {
+    "score": 10,
+    "reason": "完美实现，代码简洁高效，符合所有要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/16": {
+    "score": 10,
+    "reason": "完美实现需求，简洁高效。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/17": {
+    "score": 10,
+    "reason": "代码简洁正确，完全符合题目要求，无任何瑕疵。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/18": {
+    "score": 10,
+    "reason": "功能完全正确，简洁高效，正确处理重叠和空子串。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/19": {
+    "score": 10,
+    "reason": "代码正确实现了排序功能，使用字典映射和lambda排序，简洁高效且符合规范。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/20": {
+    "score": 10,
+    "reason": "代码正确、高效，按序返回最接近的一对，风格清晰。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/21": {
+    "score": 10,
+    "reason": "代码正确实现线性变换，简洁高效，完全符合题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/22": {
+    "score": 10,
+    "reason": "代码简洁正确，使用类型检查精确过滤整数，符合题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/23": {
+    "score": 10,
+    "reason": "代码完全正确，简洁高效，符合题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/24": {
+    "score": 10,
+    "reason": "正确高效，从n//2递减找到最大真因数，完全符合要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/25": {
+    "score": 10,
+    "reason": "正确实现质因数分解，算法高效，完全符合题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/26": {
+    "score": 10,
+    "reason": "正确使用Counter，简洁高效，完全符合题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/27": {
+    "score": 10,
+    "reason": "直接使用swapcase()，正确高效，完美符合要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/28": {
+    "score": 10,
+    "reason": "完美实现，使用join高效且简洁，通过所有测试用例。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "HumanEval/29": {
+    "score": 10,
+    "reason": "完美实现，简洁高效，完全符合题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_0": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_1": {
+    "score": 10,
+    "reason": "简洁正确，按行和升序",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_2": {
+    "score": 5,
+    "reason": "代码可运行但主要函数输入为字符串而非字典，偏离题目要求，逻辑部分正确。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_3": {
+    "score": 10,
+    "reason": "正确实现了三棱柱体积公式，代码简洁准确。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_4": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_5": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_6": {
+    "score": 10,
+    "reason": "函数定义正确，逻辑清晰，返回4*边长，完美符合题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_7": {
+    "score": 10,
+    "reason": "代码简洁高效，完美实现功能，无错误或冗余。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_8": {
+    "score": 10,
+    "reason": "简洁高效，正确使用set去重判断重复。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_9": {
+    "score": 8,
+    "reason": "正确判断Woodall数，逻辑清晰，但缺少输入类型检查和边界优化。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_10": {
+    "score": 10,
+    "reason": "代码完全正确，简洁高效，完美实现题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_11": {
+    "score": 10,
+    "reason": "简洁高效，正确实现功能，无瑕疵。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_12": {
+    "score": 10,
+    "reason": "代码简洁高效，正确找到并返回和最大的子列表，完美实现功能。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_13": {
+    "score": 10,
+    "reason": "简洁高效，利用内置函数完美实现需求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_14": {
+    "score": 10,
+    "reason": "代码简洁正确，用Counter高效统计并计算唯一元素乘积，边界处理合理",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_15": {
+    "score": 2,
+    "reason": "误解题目，仅比较长度，未实现检查所有k个元素的功能。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_16": {
+    "score": 10,
+    "reason": "正确简洁，使用列表推导和isdigit过滤。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_17": {
+    "score": 10,
+    "reason": "正确实现了二项式系数，算法高效，包含迭代和递归两种方法，代码清晰且处理了边界条件。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_18": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_19": {
+    "score": 10,
+    "reason": "正确且高效，利用频率组合计数。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_20": {
+    "score": 9,
+    "reason": "正确实现，使用堆算法，逻辑清晰，仅排序输出略低效。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_21": {
+    "score": 10,
+    "reason": "完全正确，算法高效，边界处理得当，代码简洁清晰。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_22": {
+    "score": 10,
+    "reason": "代码正确、简洁，处理了边界情况，高效实现十进制转二进制。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_23": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_24": {
+    "score": 10,
+    "reason": "完美实现矩形数公式 n(n+1)，简洁正确。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_25": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_26": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_27": {
+    "score": 9,
+    "reason": "代码正确实现功能，边界处理完善，风格清晰；可优化为单次遍历。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_28": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_29": {
+    "score": 10,
+    "reason": "代码正确使用Counter，简洁高效，完美满足题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_0": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_1": {
+    "score": 10,
+    "reason": "完全正确，逻辑清晰，简洁高效，符合所有要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_2": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_3": {
+    "score": 10,
+    "reason": "代码完全正确，功能完整，简洁高效。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_4": {
+    "score": 10,
+    "reason": "完美实现，简洁高效，正确使用标准库。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_5": {
+    "score": 10,
+    "reason": "代码正确实现功能，",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_6": {
+    "score": 9,
+    "reason": "代码正确实现功能，简洁高效，仅未处理可能的权限异常。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_7": {
+    "score": 9,
+    "reason": "正确高效，简洁实现，欠缺对空文件或异常输入的处理。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_8": {
+    "score": 10,
+    "reason": "完全满足任务要求",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_9": {
+    "score": 10,
+    "reason": "代码完全正确，简洁高效，完美实现了题目要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_10": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_11": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_12": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_13": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_14": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_15": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_16": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_17": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_18": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_19": {
+    "score": 10,
+    "reason": "正确实现所有功能，逻辑清晰，无瑕疵。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_20": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_21": {
+    "score": 10,
+    "reason": "完全正确，高效简洁，格式规范。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_22": {
+    "score": 7,
+    "reason": "代码逻辑基本正确，但使用None作为哨兵可能误判包含None的元素。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_23": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_24": {
+    "score": 10,
+    "reason": "完全符合题目要求，逻辑正确，异常处理完善，返回类型正确，代码简洁高效。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_25": {
+    "score": 10,
+    "reason": "完美实现，步骤正确且简洁高效，输出符合要求。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_26": {
+    "score": 10,
+    "reason": "完美实现，正确使用Fernet加密和base64编码，返回字符串。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_27": {
+    "score": 10,
+    "reason": "完全符合要求，代码简洁正确，无瑕疵。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_28": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "BigCode_29": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_0": {
+    "score": 10,
+    "reason": "功能正确，使用lambda按要求实现，简洁高效。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_1": {
+    "score": 10,
+    "reason": "正确简洁，高效使用Counter计算出重复元素的和。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_2": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_3": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_4": {
+    "score": 10,
+    "reason": "简洁高效，正确使用内置函数和reduce实现数组元素GCD。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_5": {
+    "score": 10,
+    "reason": "代码正确简洁，利用set去重后比较长度，完美实现功能。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_6": {
+    "score": 10,
+    "reason": "逻辑正确，高效处理大整数模10，提前终止，完美实现。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_7": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_8": {
+    "score": 8,
+    "reason": "代码简洁正确，但缺少对索引越界的健壮处理。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  },
+  "MBPP_Extra_9": {
+    "score": 10,
+    "reason": "正确使用lambda作为key找到最短列表，简洁高效。",
+    "dim": "代码生成",
+    "judge": "deepseek"
+  }
+}

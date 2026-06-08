@@ -1,0 +1,302 @@
+{
+  "NER_0": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_1": {
+    "score": 10,
+    "reason": "<think>\nThe task is to extract all named entities ",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_2": {
+    "score": 9,
+    "reason": "实体抽取完整准确，类型正确，仅\"字节跳动\"重复出现。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_3": {
+    "score": 10,
+    "reason": "所有实体边界、类型均正确，无遗漏无幻觉",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_4": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_5": {
+    "score": 10,
+    "reason": "8个实体全部正确抽取，边界准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_6": {
+    "score": 9,
+    "reason": "<think>\nLet me analyze the entity extraction resul",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_7": {
+    "score": 9,
+    "reason": "所有实体抽取正确，边界准确，无幻觉，仅\"百度\"重复出现一次。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_8": {
+    "score": 9,
+    "reason": "<think>\nLet me analyze the model's output against ",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_9": {
+    "score": 2,
+    "reason": "<think>\nLet me analyze the model's output against ",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_10": {
+    "score": 10,
+    "reason": "<think>\nLet me evaluate the entity extraction resu",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_11": {
+    "score": 10,
+    "reason": "所有实体及类型均正确抽取，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_12": {
+    "score": 10,
+    "reason": "全部实体识别正确，边界与类型均准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_13": {
+    "score": 10,
+    "reason": "七个实体全部正确抽取，边界和类型准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_14": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_0": {
+    "score": 9,
+    "reason": "所有实体抽取完整，边界正确，无幻觉，类型准确。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_1": {
+    "score": 9,
+    "reason": "able. \"创始人\" is not an entity but a role, so omitting it is correct.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_2": {
+    "score": 9,
+    "reason": "实体抽取完整，边界和类型均正确，无遗漏和幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_3": {
+    "score": 2,
+    "reason": "<think>\nLet me evaluate the model's output against",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_4": {
+    "score": 9,
+    "reason": "<think>\nLet me evaluate the model's extraction aga",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_5": {
+    "score": 9,
+    "reason": "实体识别完整准确，类型正确，仅\"百度\"重复输出一次。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_6": {
+    "score": 6,
+    "reason": "<think>\nLet me evaluate the entity extraction resu",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_7": {
+    "score": 10,
+    "reason": "全部实体正确识别，边界准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_8": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_9": {
+    "score": 9,
+    "reason": "全部实体",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_10": {
+    "score": 10,
+    "reason": "所有实体抽取完整，类型正确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_11": {
+    "score": 9,
+    "reason": "实体全部正确，仅上海重复。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_12": {
+    "score": 9,
+    "reason": "抽取完整正确，\"浙江\"和\"宁波\"分开合理，\"网易\"重复",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_13": {
+    "score": 9,
+    "reason": "所有实体边界和类型",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_EXTRA_14": {
+    "score": 10,
+    "reason": "<think>\nLet me analyze the text and the model's ou",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_30": {
+    "score": 10,
+    "reason": "<think>\nLet me analyze the named entity extraction",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_31": {
+    "score": 9,
+    "reason": "able. No hallucination.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_32": {
+    "score": 9,
+    "reason": "所有实体抽取完整，类型正确，边界准确，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_33": {
+    "score": 2,
+    "reason": "<think>\nLet me analyze the named entity extraction",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_34": {
+    "score": 0,
+    "reason": "模型未输出任何实体，完全没有进行抽取。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_35": {
+    "score": 7,
+    "reason": "able type)",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_36": {
+    "score": 9,
+    "reason": "able interpretation. No hallucination, all entities are present.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_37": {
+    "score": 5,
+    "reason": "<think>\nLet me analyze the entity extraction resul",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_38": {
+    "score": 10,
+    "reason": "所有实体均正确抽取，边界准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_39": {
+    "score": 10,
+    "reason": "全部实体抽取正确，边界准确，类型无误，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_40": {
+    "score": 9,
+    "reason": "五个实体全部正确识别，边界准确，无幻觉，分类恰当。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_41": {
+    "score": 8,
+    "reason": "able.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_42": {
+    "score": 7,
+    "reason": "主体实体",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_43": {
+    "score": 9,
+    "reason": "",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_44": {
+    "score": 8,
+    "reason": "<think>\nLet me evaluate the named entity extractio",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_45": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_46": {
+    "score": 10,
+    "reason": "实体边界、类型完全正确，无遗漏，无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_47": {
+    "score": 9,
+    "reason": "四个主要实体全部正确抽取，边界与类型准确，无",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_48": {
+    "score": 10,
+    "reason": "所有实体边界正确，类型准确，无遗漏无幻觉。",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  },
+  "NER_49": {
+    "score": 9,
+    "reason": "able.",
+    "dim": "信息抽取",
+    "judge": "minimax"
+  }
+}

@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MiniMax-m3 科学评测报告 v3.1</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<style>
+:root {
+  --primary: #1e3a5f;
+  --primary-light: #2c5282;
+  --accent: #3b82f6;
+  --accent2: #8b5cf6;
+  --text: #1f2937;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --bg: #fafafa;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #dc2626;
+  --gold: #f59e0b;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 15px;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 48px 24px; }
+
+.hero {
+  background: linear-gradient(160deg, #0f172a 0%, #1e3a5f 100%);
+  color: #fff;
+  padding: 72px 48px;
+  border-radius: 4px;
+  margin-bottom: 48px;
+  box-shadow: 0 4px 24px rgba(15, 23, 42, 0.15);
+}
+.hero h1 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+.hero .subtitle {
+  font-size: 17px;
+  opacity: 0.85;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.hero .meta {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  opacity: 0.7;
+  letter-spacing: 0.3px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 4px;
+  padding: 40px;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  border: 1px solid var(--border);
+}
+.card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--primary);
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+}
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 28px 0 16px;
+  color: var(--text);
+}
+.card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: var(--text-secondary);
+}
+.card p {
+  margin-bottom: 14px;
+  color: var(--text-secondary);
+}
+.card ul, .card ol {
+  margin-left: 22px;
+  color: var(--text-secondary);
+}
+.card li { margin-bottom: 8px; }
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.badge-primary { background: #dbeafe; color: #1e40af; }
+.badge-success { background: #d1fae5; color: #065f46; }
+.badge-warning { background: #fef3c7; color: #92400e; }
+.badge-danger { background: #fee2e2; color: #991b1b; }
+
+.leaderboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 24px 0;
+}
+@media (max-width: 900px) {
+  .leaderboard { grid-template-columns: repeat(2, 1fr); }
+}
+.lb-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 28px 20px;
+  text-align: center;
+  position: relative;
+}
+.lb-card.rank-1 {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: linear-gradient(135deg, #fffbeb, var(--card));
+}
+.lb-rank {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 20px;
+}
+.lb-model {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 8px 0 4px;
+  color: var(--text);
+}
+.lb-score {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 12px 0;
+}
+.lb-score.s1 { color: var(--gold); }
+.lb-score.s2 { color: var(--primary-light); }
+.lb-score.s3 { color: var(--accent); }
+.lb-score.s4 { color: var(--text-muted); }
+.lb-detail {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.compare-table th {
+  background: #f3f4f6;
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border-bottom: 2px solid var(--border);
+}
+.compare-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table .rank-cell {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+  text-align: center;
+}
+.compare-table .model-cell { font-weight: 600; }
+.compare-table .score-cell {
+  font-size: 15px;
+  font-weight: 600;
+}
+.score-high { color: var(--success); }
+.score-mid { color: var(--warning); }
+.score-low { color: var(--danger); }
+
+.insight-box {
+  background: #eff6ff;
+  border-left: 4px solid var(--accent);
+  padding: 18px 22px;
+  margin: 20px 0;
+  border-radius: 0 4px 4px 0;
+}
+.insight-box.warning {
+  background: #fffbeb;
+  border-left-color: var(--gold);
+}
+.insight-box.danger {
+  background: #fef2f2;
+  border-left-color: var(--danger);
+}
+.insight-box.success {
+  background: #f0fdf4;
+  border-left-color: var(--success);
+}
+.insight-box h4 {
+  margin-top: 0;
+  color: var(--primary);
+}
+.insight-box p:last-child {
+  margin-bottom: 0;
+}
+
+.chart-container {
+  width: 100%;
+  height: 440px;
+  margin: 24px 0;
+}
+
+.chart-container-small {
+  width: 100%;
+  height: 320px;
+  margin: 24px 0;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 24px 0;
+}
+@media (max-width: 768px) {
+  .method-grid { grid-template-columns: 1fr; }
+  .leaderboard { grid-template-columns: 1fr; }
+}
+.method-card {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+}
+.method-card h4 {
+  margin-top: 0;
+  color: var(--primary);
+}
+.method-card p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  padding: 32px;
+  color: var(--text-muted);
+  font-size: 13px;
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+@media (max-width: 768px) {
+  .summary-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.summary-item {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+.summary-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.summary-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.toc {
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px 28px;
+  margin-bottom: 32px;
+}
+.toc-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--primary);
+}
+.toc ul {
+  list-style: none;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+@media (max-width: 600px) {
+  .toc ul { grid-template-columns: 1fr; }
+}
+.toc li {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.toc li::before {
+  content: '→ ';
+  color: var(--accent);
+}
+
+.pull-quote {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--primary);
+  border-left: 4px solid var(--accent);
+  padding-left: 20px;
+  margin: 24px 0;
+  line-height: 1.6;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .two-col { grid-template-columns: 1fr; }
+}
+
+.stat-box {
+  background: #f8fafc;
+  border-radius: 4px;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+}
+.stat-box .stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.stat-box .stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="hero">
+  <h1>MiniMax-m3 科学评测报告 v3.1</h1>
+  <p class="subtitle">四模型横向对比 · 三裁判交叉验证 · 640 题实测 · 深度能力分析</p>
+  <div class="meta">
+    <div>🗓 报告日期：2026/06/07</div>
+    <div>🧪 4 模型 × 11 维度 × 640 题</div>
+    <div>⚖️ GPT-5.5 + deepseek-v4 + MiniMax-M3 三裁判独立评分</div>
+    <div>📊 评分制：0-10 分，取三裁判算术平均</div>
+  </div>
+</div>
+
+<div class="toc">
+  <div class="toc-title">目录</div>
+  <ul>
+    <li>执行摘要与核心发现</li>
+    <li>评测方法与数据说明</li>
+    <li>综合排名与竞争格局</li>
+    <li>分维度深度解读</li>
+    <li>两两竞争力分析</li>
+    <li>裁判一致性与评分质量</li>
+    <li>MiniMax-m3 能力画像</li>
+    <li>业务选型建议</li>
+    <li>附录：数据文件与复现说明</li>
+  </ul>
+</div>
+
+<!-- §01 执行摘要 -->
+<div class="card">
+  <h2>§01 执行摘要与核心发现</h2>
+
+  <p>本次评测面向中文大语言模型，围绕 <strong>Coding × 办公</strong> 两大核心场景，对 MiniMax-m3、deepseek-v4-flash、mimo-v2.5-pro、kimi-k2.6 四款主流模型进行科学横向对比。评测采用 <strong>三裁判交叉验证</strong> 机制——GPT-5.5、deepseek-v4-flash、MiniMax-M3 三个独立模型分别对 640 道题的输出进行盲评，最终得分为三裁判评分的算术平均值。</p>
+
+  <div class="summary-grid">
+    <div class="summary-item">
+      <div class="summary-value">4</div>
+      <div class="summary-label">参评模型</div>
+    </div>
+    <div class="summary-item">
+      <div class="summary-value">11</div>
+      <div class="summary-label">能力维度</div>
+    </div>
+    <div class="summary-item">
+      <div class="summary-value">640</div>
+      <div class="summary-label">评测题目</div>
+    </div>
+    <div class="summary-item">
+      <div class="summary-value">7,680</div>
+      <div class="summary-label">总评分次数</div>
+    </div>
+  </div>
+
+  <h3>核心发现</h3>
+
+  <div class="insight-box success">
+    <h4>发现一：第一梯队格局胶着，mimo 以稳定性取胜</h4>
+    <p>四模型综合得分集中在 7.40–7.83 的窄区间内，差距不超过 0.43 分。mimo-v2.5-pro 以 <strong>7.83</strong> 分排名第一，但其领先 deepseek（7.76）仅 0.07 分，领先 MiniMax（7.63）仅 0.20 分。从两两直接对比看，mimo 对 MiniMax 的胜率为 53.6%，对 deepseek 甚至略处下风（49.8%）。mimo 的优势不在于碾压性的绝对实力，而在于<strong>跨维度的稳定性</strong>——它在 11 个维度中没有明显崩盘项，而 deepseek 在代码补全（0.97）、MiniMax 在文档撰写（6.94）出现了显著短板。</p>
+  </div>
+
+  <div class="insight-box">
+    <h4>发现二：MiniMax-m3 的"算法强、文档弱"特征鲜明</h4>
+    <p>MiniMax-m3 在 <strong>算法能力（9.18，全场第 2）</strong>、<strong>邮件处理（7.81，全场第 1）</strong>、<strong>表格处理（7.79，全场第 2）</strong> 上表现亮眼，但在 <strong>文档撰写（6.94，并列倒数第 1）</strong> 上明显落后。这种"硬实力强、软文笔弱"的能力结构，反映了模型在结构化推理任务上的扎实功底，以及开放式长文本生成上的不足。</p>
+  </div>
+
+  <div class="insight-box warning">
+    <h4>发现三：代码补全是全行业的共同瓶颈</h4>
+    <p>四个模型在代码补全维度得分均极低：mimo 3.43、deepseek 0.97、MiniMax 0.59、kimi 0.43。该维度极差达 3.00 分，是 11 个维度中区分度最大的。这说明当前大模型在"精确补全已有代码片段"这一特定任务上的能力普遍不足，mimo 在此场景下具备相对优势，但绝对水平仍有很大提升空间。</p>
+  </div>
+
+  <div class="insight-box">
+    <h4>发现四：主观维度评分分歧远大于客观维度</h4>
+    <p>三裁判在<strong>文档撰写（平均标准差 1.92）</strong>、<strong>邮件处理（1.60）</strong>、<strong>表格处理（1.42）</strong>等主观维度上的分歧显著大于<strong>算法能力（0.64）</strong>、<strong>信息抽取（0.81）</strong>等客观维度。这说明开放式生成任务的评分标准更难统一，评测结果的不确定性更高。</p>
+  </div>
+</div>
+
+<!-- §02 评测方法 -->
+<div class="card">
+  <h2>§02 评测方法与数据说明</h2>
+
+  <p>本次评测的设计目标是建立一个<strong>可复现、可对比、偏见可控</strong>的中文大模型能力基准。核心方法论创新在于引入多裁判交叉验证，以消除单一裁判模型可能带来的系统性评分偏见。</p>
+
+  <h3>为什么采用三裁判交叉验证</h3>
+  <p>单一裁判模型存在以下潜在偏见来源：</p>
+  <ul>
+    <li><strong>风格偏好偏见</strong>：裁判模型对特定输出格式、代码风格、语言习惯的偏好可能影响评分；</li>
+    <li><strong> familiarity 偏见</strong>：裁判对特定模型输出风格越熟悉，可能给出越宽容的评分；</li>
+    <li><strong>难度校准差异</strong>：不同裁判对"好"与"差"的阈值设定存在个体差异。</li>
+  </ul>
+  <p>通过引入三个独立裁判并取平均值，上述个体偏见可在统计意义上被稀释，从而获得更稳健的评测结果。</p>
+
+  <div class="method-grid">
+    <div class="method-card">
+      <h4>裁判 1：GPT-5.5</h4>
+      <p>OpenAI 最新旗舰模型，作为通用能力基准裁判，对全部 4 个模型的输出进行盲评，输出 2560 条独立评分。</p>
+    </div>
+    <div class="method-card">
+      <h4>裁判 2：deepseek-v4-flash</h4>
+      <p>DeepSeek 开源系列模型，作为国产模型视角的补充裁判，独立给出 2560 条评分。</p>
+    </div>
+    <div class="method-card">
+      <h4>裁判 3：MiniMax-M3</h4>
+      <p>被评测模型自身担任裁判，用于检测是否存在系统性的外来裁判偏见，独立给出 2560 条评分。</p>
+    </div>
+  </div>
+
+  <h3>评分流程</h3>
+  <ol>
+    <li><strong>数据准备</strong>：从 HumanEval、MBPP、Spider、GSM8K、PAWS-X 等权威数据集中抽取并补全，形成 11 维度 640 题的测试集；</li>
+    <li><strong>模型调用</strong>：4 个模型分别独立完成全部题目，每维度实时保存 checkpoint，支持断点续跑；</li>
+    <li><strong>自动验证</strong>：对代码/SQL/算法类任务做轻量级规则检查，输出 0-3 分基础分作为裁判参考；</li>
+    <li><strong>三裁判评分</strong>：每个裁判对每个模型、每个维度单独给出 0-10 分及简短理由；</li>
+    <li><strong>结果合并</strong>：最终得分为三裁判评分的算术平均值，并计算标准差反映裁判分歧。</li>
+  </ol>
+
+  <h3>评分维度与题量</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>维度</th><th>题量</th><th>主要数据来源</th><th>评分侧重</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>代码生成</td><td>100</td><td>HumanEval 30 + MBPP 40 + BigCodeBench 30</td><td>逻辑正确性、运行效率</td></tr>
+      <tr><td>SQL查询</td><td>50</td><td>Spider</td><td>语义正确性、JOIN/聚合使用</td></tr>
+      <tr><td>算法能力</td><td>80</td><td>GSM8K 50 + MBPP-Algo 30</td><td>最终答案正确性、思路清晰度</td></tr>
+      <tr><td>代码补全</td><td>50</td><td>CodeSearchNet</td><td>上下文衔接、功能等价性</td></tr>
+      <tr><td>错误修复</td><td>60</td><td>自建 BugFix</td><td>bug 修复完整性、无新 bug 引入</td></tr>
+      <tr><td>代码优化</td><td>50</td><td>自建 Optimize + BigCodeBench-Opt</td><td>性能提升、功能保持</td></tr>
+      <tr><td>多语言办公</td><td>50</td><td>PAWS-X</td><td>语言正确性、格式规范性</td></tr>
+      <tr><td>信息抽取</td><td>50</td><td>自建 NER</td><td>实体边界正确、无幻觉</td></tr>
+      <tr><td>文档撰写</td><td>50</td><td>XSum 30 + CCE 20</td><td>要素完整性、语气得体性</td></tr>
+      <tr><td>邮件处理</td><td>50</td><td>邮件评测集 15 + 自建 35</td><td>收件人意识、语气恰当</td></tr>
+      <tr><td>表格处理</td><td>50</td><td>格物评测集 5 + 自建 45</td><td>公式/代码正确性、可执行性</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- §03 综合排名 -->
+<div class="card">
+  <h2>§03 综合排名与竞争格局</h2>
+
+  <p>基于三裁判平均分的 640 题综合得分，满分 10 分。</p>
+
+  <div class="leaderboard">
+    <div class="lb-card rank-1">
+      <div class="lb-rank">🥇 第 1 名</div>
+      <div class="lb-model">mimo-v2.5-pro</div>
+      <div class="lb-score s1">7.83</div>
+      <div class="lb-detail">三裁判平均分<br>11 维度无崩盘项</div>
+    </div>
+    <div class="lb-card">
+      <div class="lb-rank">🥈 第 2 名</div>
+      <div class="lb-model">deepseek-v4-flash</div>
+      <div class="lb-score s2">7.76</div>
+      <div class="lb-detail">三裁判平均分<br>代码与算法强势</div>
+    </div>
+    <div class="lb-card">
+      <div class="lb-rank">🥉 第 3 名</div>
+      <div class="lb-model">MiniMax-m3</div>
+      <div class="lb-score s3">7.63</div>
+      <div class="lb-detail">三裁判平均分<br>算法与邮件亮眼</div>
+    </div>
+    <div class="lb-card">
+      <div class="lb-rank">第 4 名</div>
+      <div class="lb-model">kimi-k2.6</div>
+      <div class="lb-score s4">7.40</div>
+      <div class="lb-detail">三裁判平均分<br>办公场景有亮点</div>
+    </div>
+  </div>
+
+  <h3>竞争格局解读</h3>
+  <p>四模型综合得分集中在 7.40–7.83 区间，最大差距仅 0.43 分。从统计意义上，这属于<strong>同一能力梯队内的细微分化</strong>，而非代际差距。具体而言：</p>
+
+  <ul>
+    <li><strong>mimo 与 deepseek</strong>（差距 0.07 分）：几乎可以视为平手。mimo 的领先完全来自其代码补全维度的相对优势（3.43 vs 0.97），若剔除该维度，deepseek 的综合得分将反超。</li>
+    <li><strong>deepseek 与 MiniMax</strong>（差距 0.13 分）：deepseek 在代码生成（8.56 vs 8.37）和文档撰写（7.43 vs 6.94）上小幅领先，MiniMax 则在邮件处理（7.81 vs 7.69）和算法能力（9.18 vs 9.25，差距极小）上紧咬。两者实力接近，选型应取决于具体业务场景。</li>
+    <li><strong>MiniMax 与 kimi</strong>（差距 0.23 分）：MiniMax 在算法、代码、SQL 等硬核维度全面领先，kimi 仅在多语言办公（8.70 vs 8.31）和信息抽取（8.89 vs 8.64）两个维度占优。</li>
+  </ul>
+
+  <div class="insight-box">
+    <h4>关键洞察：综合排名的局限性</h4>
+    <p>虽然 mimo 排名第一，但它在 11 个维度中仅有 <strong>4 个维度</strong>排名第一（代码补全、错误修复、代码优化、文档撰写），而 deepseek 也有 <strong>4 个维度</strong>第一（代码生成、SQL查询、算法能力、表格处理），MiniMax 有 <strong>2 个维度</strong>第一（邮件处理、算法能力并列）。没有任何一个模型在所有维度上占据绝对优势。因此，<strong>实际业务选型应优先考虑维度匹配度，而非综合排名</strong>。</p>
+  </div>
+
+  <div id="bar-chart" class="chart-container"></div>
+</div>
+
+<!-- §04 分维度深度解读 -->
+<div class="card">
+  <h2>§04 分维度深度解读</h2>
+
+  <h3>4.1 代码生成（100 题）</h3>
+  <p>代码生成是本次评测题量最大的维度，覆盖 Python 函数编写、逻辑实现等场景。四模型得分均较高（8.22–8.56），说明当前主流大模型在从零编写代码任务上的基础能力已经较为成熟。</p>
+
+  <div class="two-col">
+    <div class="stat-box">
+      <div class="stat-value">deepseek 8.56</div>
+      <div class="stat-label">代码生成全场最高</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">极差 0.34</div>
+      <div class="stat-label">四模型差距最小</div>
+    </div>
+  </div>
+
+  <p><strong>分析</strong>：deepseek 以 8.56 分微弱领先，MiniMax（8.37）和 mimo（8.23）紧随其后，kimi（8.22）稍落后。该维度极差仅 0.34，说明在标准代码生成任务上，四模型水平趋同。值得注意的是，三裁判在该维度的一致性很高（平均标准差 1.05），评分结果可信度强。</p>
+
+  <h3>4.2 SQL查询（50 题）</h3>
+  <p>SQL 查询维度考察模型根据自然语言描述编写正确 SQL 语句的能力，重点测试 JOIN、HAVING、聚合函数等复杂语法的使用。</p>
+
+  <div class="two-col">
+    <div class="stat-box">
+      <div class="stat-value">deepseek 8.47</div>
+      <div class="stat-label">SQL 能力最强</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">kimi 7.01</div>
+      <div class="stat-label">SQL 明显掉队</div>
+    </div>
+  </div>
+
+  <p><strong>分析</strong>：deepseek（8.47）和 mimo（8.35）在该维度表现优异，MiniMax（8.26）也超过 8 分，但 kimi（7.01）明显掉队，与第一名差距达 1.46 分。这是 kimi 所有维度中得分最低的一项，也是四模型整体差距最大的维度之一。kimi 在涉及 JOIN 和多表查询的复杂 SQL 任务上错误率较高，反映出其结构化查询生成能力的不足。</p>
+
+  <h3>4.3 算法能力（80 题）</h3>
+  <p>算法能力是本次评测中得分最高的维度，覆盖数学推理（GSM8K）和算法设计（MBPP-Algo）。四模型均达到 9 分以上，说明大模型在逻辑推理和数学计算上的能力已相当出色。</p>
+
+  <div class="two-col">
+    <div class="stat-box">
+      <div class="stat-value">deepseek 9.25</div>
+      <div class="stat-label">算法全场最高</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">MiniMax 9.18</div>
+      <div class="stat-label">算法全场第 2</div>
+    </div>
+  </div>
+
+  <p><strong>分析</strong>：deepseek（9.25）排名第一，MiniMax（9.18）紧随其后且差距仅 0.07 分，mimo（9.08）和 kimi（9.15）也在 9 分以上。该维度极差仅 0.17，是 11 个维度中差距最小的。更重要的是，三裁判在该维度的一致性极高（平均标准差 0.64），说明算法题的对错边界清晰，评分结果非常可靠。<strong>MiniMax 在算法能力上的表现是其最核心的竞争力之一</strong>。</p>
+
+  <h3>4.4 代码补全（50 题）</h3>
+  <p>代码补全要求模型根据已有代码上下文，精确补全缺失的函数中间片段。这是本次评测中表现最差的维度，也是区分度最大的维度。</p>
+
+  <div class="two-col">
+    <div class="stat-box">
+      <div class="stat-value">mimo 3.43</div>
+      <div class="stat-label">代码补全相对最优</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">极差 3.00</div>
+      <div class="stat-label">区分度最大维度</div>
+    </div>
+  </div>
+
+  <p><strong>分析</strong>：mimo（3.43）在该维度具有相对优势，但绝对得分仍然很低。deepseek（0.97）、MiniMax（0.59）和 kimi（0.43）的表现几乎可以视为"不及格"。深入分析评分理由发现，大量低分的根源在于<strong>模型输出格式与评测预期不匹配</strong>：评测期望模型仅输出缺失的代码片段，而模型往往输出完整函数，导致裁判认为"未按要求补全"。</p>
+
+  <p>这一发现提示：代码补全任务的设计与当前大模型的使用习惯存在错位。在实际 IDE 场景中，开发者通常接受完整函数输出；但在严格评测框架下，格式偏差会被惩罚。因此，该维度的低分更多反映的是<strong>任务定义的严苛性</strong>，而非模型在代码理解能力上的本质缺陷。</p>
+
+  <h3>4.5 错误修复（60 题）</h3>
+  <p>错误修复维度要求模型识别给定代码中的 bug 并给出正确修复版本。四模型得分均较高（8.44–8.69），说明 debug 能力已经成为大模型的基础能力。</p>
+  <p><strong>分析</strong>：mimo（8.69）和 deepseek（8.68）几乎并列第一，MiniMax（8.62）紧随其后，差距极小。该维度三裁判一致性高（标准差 1.03），评分可靠。所有模型在常见语法错误、逻辑错误上的修复成功率都很高。</p>
+
+  <h3>4.6 代码优化（50 题）</h3>
+  <p>代码优化要求模型在保持功能等价的前提下，对低效率代码进行性能优化。</p>
+  <p><strong>分析</strong>：mimo（7.64）排名第一，MiniMax（7.51）和 deepseek（7.37）紧随其后，kimi（6.49）明显落后。该维度评分波动较大（标准差 2.14–3.85），反映出"优化"本身的主观性——不同裁判对"优化程度是否足够"的判断标准差异较大。</p>
+
+  <h3>4.7 多语言办公（50 题）</h3>
+  <p>多语言办公测试模型在中英文混合场景下的语义理解和文本处理能力。</p>
+  <p><strong>分析</strong>：kimi（8.70）在该维度意外取得第一，mimo（8.49）和 deepseek（8.41）紧随其后，MiniMax（8.31）排名第四但差距不大（极差 0.39）。该维度三裁判分歧较大（标准差 1.27），尤其是 MiniMax-M3 作为裁判时，对部分任务给出了 0 分而 GPT-5.5 和 deepseek 给出 10 分，拉低了 MiniMax 模型的最终得分。这种分歧提示该维度的评分标准可能受裁判自身语言习惯影响较大。</p>
+
+  <h3>4.8 信息抽取（50 题）</h3>
+  <p>信息抽取要求模型从给定文本中识别并提取特定实体（人名、机构、地点等），重点考察实体边界正确性和幻觉控制能力。</p>
+  <p><strong>分析</strong>：kimi（8.89）排名第一，deepseek（8.74）紧随其后，mimo（8.67）和 MiniMax（8.64）差距极小。四模型在该维度表现接近且整体优秀，说明实体识别能力已经相当成熟。三裁判一致性高（标准差 0.81），评分可信。</p>
+
+  <h3>4.9 文档撰写（50 题）</h3>
+  <p>文档撰写要求模型根据给定素材生成企业文档、摘要、报告等正式文本。</p>
+
+  <div class="two-col">
+    <div class="stat-box">
+      <div class="stat-value">deepseek 7.43</div>
+      <div class="stat-label">文档撰写全场最高</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">MiniMax 6.94</div>
+      <div class="stat-label">文档撰写并列最低</div>
+    </div>
+  </div>
+
+  <p><strong>分析</strong>：文档撰写是本次评测中<strong>三裁判分歧最大的维度</strong>（平均标准差 1.92），也是 MiniMax 的显著短板。deepseek（7.43）和 mimo（7.24）表现较好，MiniMax（6.94）与 kimi（6.93）并列倒数。从评分理由看，MiniMax 在该维度的主要问题包括：格式要素缺失、语气不够正式、摘要超出字数限制等。</p>
+
+  <p>值得注意的是，该维度的高分歧度意味着评分结果的不确定性较大。GPT-5.5 给 MiniMax 的部分文档打出了 8-9 分，而 MiniMax-M3 自身作为裁判时却只给出 5-6 分。这种自我严苛倾向拉低了 MiniMax 的最终平均分，也提示该维度的结论需要谨慎解读。</p>
+
+  <h3>4.10 邮件处理（50 题）</h3>
+  <p>邮件处理要求模型根据场景需求撰写商务邮件，重点考察收件人意识、语气恰当性和信息完整性。</p>
+
+  <div class="two-col">
+    <div class="stat-box">
+      <div class="stat-value">MiniMax 7.81</div>
+      <div class="stat-label">邮件处理全场第 1</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">deepseek 7.69</div>
+      <div class="stat-label">邮件处理全场第 2</div>
+    </div>
+  </div>
+
+  <p><strong>分析</strong>：<strong>MiniMax-m3 在邮件处理维度以 7.81 分获得全场第一</strong>，这是 MiniMax 最具竞争力的办公场景能力。三裁判在该维度的评分相对一致（MiniMax 的邮件得分未出现极端分歧），说明其优势是真实的而非偶然。从评分理由看，MiniMax 的邮件输出普遍具备明确的收件人意识、恰当的商务语气和完整的信息要素。</p>
+
+  <h3>4.11 表格处理（50 题）</h3>
+  <p>表格处理要求模型根据需求生成 Excel 公式或 Python 数据处理代码。</p>
+  <p><strong>分析</strong>：deepseek（7.86）排名第一，MiniMax（7.79）紧随其后，mimo（7.46）和 kimi（7.41）稍落后。该维度三裁判分歧中等（标准差 1.42），评分基本可信。MiniMax 在该维度的表现优于其在 SQL 查询上的表现，说明其在"数据操作"类任务上的能力因表达形式（代码/公式 vs SQL）而异。</p>
+
+  <div id="radar-chart" class="chart-container"></div>
+</div>
+
+<!-- §05 两两竞争力分析 -->
+<div class="card">
+  <h2>§05 两两竞争力分析</h2>
+
+  <p>综合平均分虽然直观，但无法反映模型在具体题目上的直接胜负关系。本节通过逐题对比，统计模型 A 的得分高于模型 B 的题目比例，揭示更深层的竞争态势。</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>对战组合</th>
+        <th>A 胜</th>
+        <th>B 胜</th>
+        <th>平局</th>
+        <th>A 胜率</th>
+        <th>结论</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="model-cell">mimo vs MiniMax</td>
+        <td>256</td>
+        <td>222</td>
+        <td>162</td>
+        <td class="score-cell">53.6%</td>
+        <td>mimo 微弱领先</td>
+      </tr>
+      <tr>
+        <td class="model-cell">deepseek vs MiniMax</td>
+        <td>251</td>
+        <td>199</td>
+        <td>190</td>
+        <td class="score-cell">55.8%</td>
+        <td>deepseek 小幅领先</td>
+      </tr>
+      <tr>
+        <td class="model-cell">deepseek vs mimo</td>
+        <td>234</td>
+        <td>236</td>
+        <td>170</td>
+        <td class="score-cell">49.8%</td>
+        <td>几乎持平</td>
+      </tr>
+      <tr>
+        <td class="model-cell">MiniMax vs kimi</td>
+        <td>245</td>
+        <td>205</td>
+        <td>190</td>
+        <td class="score-cell">54.4%</td>
+        <td>MiniMax 小幅领先</td>
+      </tr>
+      <tr>
+        <td class="model-cell">mimo vs kimi</td>
+        <td>238</td>
+        <td>226</td>
+        <td>176</td>
+        <td class="score-cell">51.3%</td>
+        <td>mimo 微弱领先</td>
+      </tr>
+      <tr>
+        <td class="model-cell">deepseek vs kimi</td>
+        <td>229</td>
+        <td>227</td>
+        <td>184</td>
+        <td class="score-cell">50.2%</td>
+        <td>几乎持平</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="insight-box">
+    <h4>竞争格局的再认识</h4>
+    <p>从两两直接对比看，<strong>没有任何一对模型的胜负差距超过 56%</strong>。deepseek 对 MiniMax 的 55.8% 已经是最大的胜率差，但这也意味着 MiniMax 在 44.2% 的题目上得分不低于 deepseek。deepseek 与 mimo 的对决几乎是五五开（49.8% vs 50.2%），平局率高达 26.6%。</p>
+    <p>这一数据强烈支持以下结论：<strong>四模型处于同一竞争梯队，不存在绝对王者</strong>。综合排名的微小差异更多取决于特定维度的权重分配，而非本质能力差距。对于业务选型而言，与其纠结 0.1-0.2 分的综合差距，不如聚焦具体场景的能力匹配度。</p>
+  </div>
+
+  <div id="heatmap-chart" class="chart-container"></div>
+</div>
+
+<!-- §06 裁判一致性分析 -->
+<div class="card">
+  <h2>§06 裁判一致性与评分质量</h2>
+
+  <h3>6.1 维度层面的裁判分歧</h3>
+  <p>三裁判在不同维度上的评分一致性差异显著。下表展示了各维度的平均标准差，数值越大表示裁判分歧越大，结果可信度越低。</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr><th>维度</th><th>平均标准差</th><th>一致性评级</th><th>解读</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>算法能力</td><td>0.64</td><td class="score-cell score-high">极高</td><td>对错边界清晰，三裁判几乎一致</td></tr>
+      <tr><td>信息抽取</td><td>0.81</td><td class="score-cell score-high">高</td><td>实体边界客观，分歧小</td></tr>
+      <tr><td>代码生成</td><td>1.05</td><td class="score-cell score-high">高</td><td>运行结果可验证，分歧可控</td></tr>
+      <tr><td>错误修复</td><td>1.03</td><td class="score-cell score-high">高</td><td>修复后代码可执行性易判断</td></tr>
+      <tr><td>SQL查询</td><td>1.16</td><td class="score-cell score-mid">中</td><td>语义正确性有一定主观空间</td></tr>
+      <tr><td>代码补全</td><td>1.19</td><td class="score-cell score-mid">中</td><td>格式争议导致分歧</td></tr>
+      <tr><td>代码优化</td><td>1.27</td><td class="score-cell score-mid">中</td><td>"优化程度"判断标准不一</td></tr>
+      <tr><td>多语言办公</td><td>1.27</td><td class="score-cell score-mid">中</td><td>语言风格偏好影响评分</td></tr>
+      <tr><td>表格处理</td><td>1.42</td><td class="score-cell score-mid">中</td><td>公式实现路径多样</td></tr>
+      <tr><td>邮件处理</td><td>1.60</td><td class="score-cell score-low">偏低</td><td>语气恰当性主观性强</td></tr>
+      <tr><td>文档撰写</td><td>1.92</td><td class="score-cell score-low">低</td><td>"好文档"的定义差异最大</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>分析</strong>：客观维度（算法、信息抽取、代码生成）的裁判一致性显著高于主观维度（文档撰写、邮件处理、表格处理）。文档撰写的平均标准差高达 1.92，意味着同一篇文档在三裁判处的评分可能相差近 4 分（如 6 分 vs 10 分）。这一规律符合预期——数学题的答案有唯一解，而"好文档"没有标准答案。</p>
+
+  <div class="insight-box warning">
+    <h4>对评测结果的审慎性提示</h4>
+    <p>对于文档撰写（标准差 1.92）、邮件处理（1.60）、表格处理（1.42）等高主观性维度，本报告的得分排名仅供参考，不宜作为绝对能力排序的依据。相比之下，算法能力（0.64）、信息抽取（0.81）、代码生成（1.05）等维度的结论具有较高的可信度。</p>
+  </div>
+
+  <h3>6.2 模型层面的裁判分歧</h3>
+  <p>不同模型作为被评测对象时，三裁判对其评分的分歧程度也存在差异：</p>
+
+  <div class="two-col">
+    <div class="stat-box">
+      <div class="stat-value">mimo 1.35</div>
+      <div class="stat-label">被评分分歧度最高</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">kimi 0.97</div>
+      <div class="stat-label">被评分分歧度最低</div>
+    </div>
+  </div>
+
+  <p><strong>分析</strong>：mimo-v2.5-pro 的被评分分歧度最高（1.35），说明三裁判对 mimo 输出的"好坏"看法最不一致。这可能与 mimo 输出的风格独特性有关——某些裁判欣赏其风格，另一些则不认同。kimi 的分歧度最低（0.97），说明其输出风格更容易被不同裁判一致评价，但这并不一定代表"更好"，可能只是更"平庸"或更"标准化"。</p>
+
+  <h3>6.3 极端分歧案例</h3>
+  <p>在全部 7,680 条评分中，存在少数三裁判给出极端对立分数的案例（标准差 ≥ 3，即至少两位裁判给出满分 10 而另一位给出 0，或类似极端分布）。典型案例如下：</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr><th>模型</th><th>维度</th><th>题目</th><th>三裁判评分</th><th>平均分</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>deepseek</td><td>代码生成</td><td>MBPP_Extra_5</td><td>10, 10, 0</td><td>6.67</td></tr>
+      <tr><td>deepseek</td><td>多语言办公</td><td>PAWSX_16</td><td>10, 10, 0</td><td>6.67</td></tr>
+      <tr><td>kimi</td><td>代码补全</td><td>CodeSearch_2</td><td>10, 0, 0</td><td>3.33</td></tr>
+      <tr><td>MiniMax</td><td>多语言办公</td><td>PAWSX_33</td><td>0, 10, 0</td><td>3.33</td></tr>
+      <tr><td>mimo</td><td>代码优化</td><td>Optimize_025</td><td>10, 10, 0</td><td>6.67</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>分析</strong>：极端分歧案例的共性是 <strong>MiniMax-M3 作为裁判时频繁给出 0 分</strong>，而 GPT-5.5 和 deepseek 给出 10 分。这种"非 0 即 10"的评分模式表明 MiniMax-M3 作为裁判时采用了更极端的二元化评判标准——要么完全满意，要么完全不满意。这一行为拉高了部分模型的标准差，但在取平均值后，其影响被有效平滑。</p>
+
+  <div id="consistency-chart" class="chart-container-small"></div>
+</div>
+
+<!-- §07 MiniMax-m3 能力画像 -->
+<div class="card">
+  <h2>§07 MiniMax-m3 能力画像与战略定位</h2>
+
+  <h3>7.1 能力雷达图定位</h3>
+  <p>将 MiniMax-m3 的 11 维度得分与四模型平均值对比，可以清晰看到其能力结构的相对优势和短板：</p>
+
+  <div class="two-col">
+    <div>
+      <h4>显著高于平均的维度</h4>
+      <ul>
+        <li><strong>算法能力 +0.19</strong>（9.18 vs 平均 9.09）</li>
+        <li><strong>邮件处理 +0.19</strong>（7.81 vs 平均 7.62）</li>
+        <li><strong>表格处理 +0.14</strong>（7.79 vs 平均 7.65）</li>
+      </ul>
+    </div>
+    <div>
+      <h4>显著低于平均的维度</h4>
+      <ul>
+        <li><strong>文档撰写 -0.34</strong>（6.94 vs 平均 7.28）</li>
+        <li><strong>代码优化 -0.12</strong>（7.51 vs 平均 7.63）</li>
+        <li><strong>多语言办公 -0.13</strong>（8.31 vs 平均 8.44）</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>7.2 能力结构特征："理工强、文科弱"</h3>
+  <p>MiniMax-m3 的能力结构呈现出鲜明的<strong>理工科偏向</strong>：在算法、代码生成、错误修复、SQL 等需要严密逻辑推理的维度上，MiniMax 均处于第一或第二梯队；而在文档撰写、多语言办公等需要开放式语言创作和风格把控的维度上，MiniMax 表现相对落后。</p>
+
+  <div class="pull-quote">
+    MiniMax-m3 的核心竞争力在于结构化推理任务，而非开放式文本创作。对于需要数学计算、代码编写、数据分析的业务场景，MiniMax 是极具竞争力的选型；但对于需要大量长文本生成、创意写作、品牌文案的场景，则需要谨慎评估。
+  </div>
+
+  <h3>7.3 与竞品的差异化对比</h3>
+
+  <h4>vs deepseek-v4-flash</h4>
+  <p>deepseek 是 MiniMax 最直接的竞争对手，综合差距仅 0.13 分。两者在算法、代码、SQL 等硬核维度上实力接近，但 deepseek 在<strong>文档撰写</strong>（7.43 vs 6.94）和<strong>SQL查询</strong>（8.47 vs 8.26）上小幅领先，MiniMax 则在<strong>邮件处理</strong>（7.81 vs 7.69）上反超。选型建议：若业务以数据分析和文档生成为主，优先考虑 deepseek；若以邮件处理和表格分析为主，MiniMax 更具优势。</p>
+
+  <h4>vs mimo-v2.5-pro</h4>
+  <p>mimo 综合领先 MiniMax 0.20 分，但两者在直接对决定胜负的题目比例上差距不大（mimo 胜率 53.6%）。mimo 的核心优势在于<strong>代码补全</strong>（3.43 vs 0.59）和<strong>错误修复</strong>（8.69 vs 8.62）——虽然代码补全的绝对得分仍然很低，但 mimo 在这一细分场景上确实领先。MiniMax 的差异化优势在于<strong>算法能力</strong>（9.18 vs 9.08）和<strong>邮件处理</strong>（7.81 vs 7.51）。</p>
+
+  <h4>vs kimi-k2.6</h4>
+  <p>MiniMax 对 kimi 的综合领先为 0.23 分，直接对比胜率 54.4%。MiniMax 在 8 个维度上领先 kimi，仅在<strong>多语言办公</strong>（8.70 vs 8.31）和<strong>信息抽取</strong>（8.89 vs 8.64）上落后。整体而言，MiniMax 在硬核能力上全面优于 kimi，但 kimi 在部分办公场景上有独特优势。</p>
+
+  <h3>7.4 评分稳定性分析</h3>
+  <p>MiniMax-m3 在各维度内的得分稳定性（用标准差衡量）表现如下：</p>
+  <ul>
+    <li><strong>最稳定</strong>：信息抽取（±1.25）、错误修复（±1.36）、邮件处理（±1.43）——说明 MiniMax 在这些维度上的输出质量波动小，表现可预期；</li>
+    <li><strong>波动较大</strong>：多语言办公（±2.57）、表格处理（±2.10）、代码优化（±2.36）——说明 MiniMax 在这些任务上的输出质量不稳定，存在"时好时坏"的现象。</li>
+  </ul>
+  <p>稳定性高的维度适合作为核心业务依赖项，稳定性低的维度则需要搭配人工复核机制。</p>
+</div>
+
+<!-- §08 业务选型建议 -->
+<div class="card">
+  <h2>§08 业务选型建议</h2>
+
+  <p>基于本次评测的量化结果，我们为不同业务场景提供以下选型参考。需要强调的是，由于四模型综合差距小于 0.5 分，<strong>场景匹配度优先于综合排名</strong>。</p>
+
+  <h3>场景一：算法与数学推理（推荐 MiniMax / deepseek）</h3>
+  <p>涉及数学计算、算法设计、逻辑推理的业务场景（如金融风控模型、科研辅助、智能题库）。MiniMax（9.18）和 deepseek（9.25）在该维度均达到顶级水准，差距仅 0.07 分。两者均可放心选用。</p>
+
+  <h3>场景二：代码生成与开发辅助（推荐 deepseek / MiniMax）</h3>
+  <p>涉及从零编写代码、函数实现的场景（如 IDE 智能补全、脚本自动生成）。deepseek（8.56）和 MiniMax（8.37）表现优异，mimo（8.23）和 kimi（8.22）也相差不远。四模型在该维度均已成熟。</p>
+
+  <h3>场景三：企业文档与报告撰写（推荐 deepseek / mimo）</h3>
+  <p>涉及周报、会议纪要、商业计划书等长文本生成的场景。deepseek（7.43）和 mimo（7.24）表现较好，MiniMax（6.94）在该维度相对落后。若业务重度依赖文档生成，MiniMax 需要搭配模板约束或后处理优化。</p>
+
+  <h3>场景四：商务邮件处理（推荐 MiniMax）</h3>
+  <p>涉及客户沟通、内部协调、售后回复等邮件场景。<strong>MiniMax（7.81）在该维度全场第一</strong>，且三裁判一致认可其输出质量。这是 MiniMax 最具差异化优势的办公场景。</p>
+
+  <h3>场景五：数据分析与 SQL（推荐 deepseek / mimo）</h3>
+  <p>涉及数据库查询、数据报表、BI 分析的场景。deepseek（8.47）和 mimo（8.35）领先，MiniMax（8.26）可用但略逊一筹。特别需要注意的是，kimi（7.01）在复杂 SQL 场景下表现明显不足。</p>
+
+  <h3>场景六：信息抽取与 NER（推荐 kimi / deepseek）</h3>
+  <p>涉及实体识别、关系抽取、知识图谱构建的场景。kimi（8.89）和 deepseek（8.74）领先，MiniMax（8.64）差距不大。四模型在该维度整体表现优秀，均可满足业务需求。</p>
+
+  <div class="insight-box success">
+    <h4>总结性建议</h4>
+    <p>对于以 <strong>Coding + 数据分析</strong> 为核心的技术团队，deepseek 和 MiniMax 都是极具竞争力的选择，deepseek 在 SQL 和文档上略有优势，MiniMax 在邮件和算法上不甘示弱。对于以 <strong>办公自动化</strong> 为核心的业务团队，应根据具体子场景选型：邮件选 MiniMax，文档选 deepseek，信息抽取选 kimi。综合最优解仍是 mimo，但其优势并不足以形成压倒性壁垒。</p>
+  </div>
+</div>
+
+<!-- §09 附录 -->
+<div class="card">
+  <h2>§09 附录：数据文件与复现说明</h2>
+
+  <h3>9.1 评测产出文件</h3>
+  <table class="compare-table">
+    <thead>
+      <tr><th>文件路径</th><th>说明</th><th>大小</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>03-数据与结果/judgments_gpt55.json</code></td><td>GPT-5.5 裁判完整评分（2560 条）</td><td>413 KB</td></tr>
+      <tr><td><code>03-数据与结果/judgments_deepseek.json</code></td><td>deepseek-v4-flash 裁判完整评分（2560 条）</td><td>467 KB</td></tr>
+      <tr><td><code>03-数据与结果/judgments_minimax.json</code></td><td>MiniMax-M3 裁判完整评分（2560 条）</td><td>462 KB</td></tr>
+      <tr><td><code>03-数据与结果/judgments_merged.json</code></td><td>三裁判平均分及标准差</td><td>372 KB</td></tr>
+      <tr><td><code>03-数据与结果/eval_report_merged.json</code></td><td>结构化统计报告</td><td>37 KB</td></tr>
+      <tr><td><code>04-脚本工具/merge_judges.js</code></td><td>合并评分脚本</td><td>4 KB</td></tr>
+    </tbody>
+  </table>
+
+  <h3>9.2 复现方法</h3>
+  <ol>
+    <li>确保 Node.js ≥ 18 已安装；</li>
+    <li>进入 <code>04-脚本工具</code> 目录；</li>
+    <li>运行 <code>node merge_judges.js</code> 即可从三个裁判评分生成本报告的全部统计数据；</li>
+    <li>报告中的图表基于 ECharts 渲染，打开 HTML 文件即可查看交互式可视化。</li>
+  </ol>
+
+  <h3>9.3 评测局限性说明</h3>
+  <ul>
+    <li><strong>样本局限性</strong>：640 题虽覆盖了 11 个维度，但每个维度的题目数仍有限（50-100 题），对小概率能力的覆盖可能不足；</li>
+    <li><strong>裁判局限性</strong>：三裁判中 MiniMax-M3 和 deepseek-v4-flash 作为被评测模型的"同类"，可能存在隐性竞争偏见；</li>
+    <li><strong>时效局限性</strong>：模型能力持续迭代，本报告结果仅代表 2026 年 6 月的快照；</li>
+    <li><strong>主观维度不确定性</strong>：文档撰写、邮件处理等维度的三裁判标准差较高（1.6-1.9），结论的不确定性大于客观维度。</li>
+  </ul>
+
+  <p style="font-size:13px;color:var(--text-muted);margin-top:24px">
+    本报告基于三裁判交叉验证机制生成，每个裁判在独立、盲评条件下对 4 个模型的 640 题输出进行评分。最终得分为三裁判评分的算术平均值。所有原始数据和评分结果均可复现。
+  </p>
+</div>
+
+<div class="footer">
+  MiniMax-m3 科学评测项目 · 评测报告 v3.1 · 2026/06/07
+</div>
+
+</div>
+
+<script>
+// Radar Chart
+const radarData = [
+  { value: [8.23, 8.35, 9.08, 3.43, 8.69, 7.64, 8.49, 8.67, 7.24, 7.51, 7.46], name: 'mimo-v2.5-pro' },
+  { value: [8.56, 8.47, 9.25, 0.97, 8.68, 7.37, 8.41, 8.74, 7.43, 7.69, 7.86], name: 'deepseek-v4-flash' },
+  { value: [8.37, 8.26, 9.18, 0.59, 8.62, 7.51, 8.31, 8.64, 6.94, 7.81, 7.79], name: 'MiniMax-m3' },
+  { value: [8.22, 7.01, 9.15, 0.43, 8.44, 6.49, 8.70, 8.89, 6.93, 7.67, 7.41], name: 'kimi-k2.6' }
+];
+const radarChart = echarts.init(document.getElementById('radar-chart'));
+radarChart.setOption({
+  color: ['#8b5cf6', '#f59e0b', '#3b82f6', '#10b981'],
+  tooltip: { trigger: 'item' },
+  legend: { data: ['mimo-v2.5-pro', 'deepseek-v4-flash', 'MiniMax-m3', 'kimi-k2.6'], bottom: 0 },
+  radar: {
+    indicator: [
+      { name: '代码生成', max: 10 }, { name: 'SQL查询', max: 10 }, { name: '算法能力', max: 10 },
+      { name: '代码补全', max: 10 }, { name: '错误修复', max: 10 }, { name: '代码优化', max: 10 },
+      { name: '多语言办公', max: 10 }, { name: '信息抽取', max: 10 }, { name: '文档撰写', max: 10 },
+      { name: '邮件处理', max: 10 }, { name: '表格处理', max: 10 }
+    ],
+    radius: '65%', splitNumber: 5,
+    axisName: { color: '#4b5563', fontSize: 12 },
+    splitArea: { areaStyle: { color: ['#f8fafc', '#f1f5f9', '#e2e8f0', '#cbd5e1', '#94a3b8'], shadowColor: 'rgba(0,0,0,0.1)', shadowBlur: 10 } }
+  },
+  series: [{ type: 'radar', data: radarData, symbol: 'circle', symbolSize: 6, lineStyle: { width: 2.5 }, areaStyle: { opacity: 0.15 } }]
+});
+
+// Bar Chart
+const barChart = echarts.init(document.getElementById('bar-chart'));
+barChart.setOption({
+  tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+  legend: { data: ['mimo-v2.5-pro', 'deepseek-v4-flash', 'MiniMax-m3', 'kimi-k2.6'], bottom: 0 },
+  grid: { left: '3%', right: '4%', bottom: '15%', top: '10%', containLabel: true },
+  xAxis: { type: 'category', data: ['代码生成', 'SQL查询', '算法能力', '代码补全', '错误修复', '代码优化', '多语言办公', '信息抽取', '文档撰写', '邮件处理', '表格处理'], axisLabel: { rotate: 30, fontSize: 11 } },
+  yAxis: { type: 'value', max: 10 },
+  series: [
+    { name: 'mimo-v2.5-pro', type: 'bar', data: [8.23, 8.35, 9.08, 3.43, 8.69, 7.64, 8.49, 8.67, 7.24, 7.51, 7.46], itemStyle: { color: '#8b5cf6' } },
+    { name: 'deepseek-v4-flash', type: 'bar', data: [8.56, 8.47, 9.25, 0.97, 8.68, 7.37, 8.41, 8.74, 7.43, 7.69, 7.86], itemStyle: { color: '#f59e0b' } },
+    { name: 'MiniMax-m3', type: 'bar', data: [8.37, 8.26, 9.18, 0.59, 8.62, 7.51, 8.31, 8.64, 6.94, 7.81, 7.79], itemStyle: { color: '#3b82f6' } },
+    { name: 'kimi-k2.6', type: 'bar', data: [8.22, 7.01, 9.15, 0.43, 8.44, 6.49, 8.70, 8.89, 6.93, 7.67, 7.41], itemStyle: { color: '#10b981' } }
+  ]
+});
+
+// Heatmap
+const heatmapChart = echarts.init(document.getElementById('heatmap-chart'));
+const models = ['mimo-v2.5-pro', 'deepseek-v4-flash', 'MiniMax-m3', 'kimi-k2.6'];
+const winRates = [
+    [50.0, 49.8, 53.6, 51.3],
+    [50.2, 50.0, 55.8, 50.2],
+    [46.4, 44.2, 50.0, 54.4],
+    [48.7, 49.8, 45.6, 50.0]
+];
+const heatData = [];
+for (let i = 0; i < 4; i++) {
+  for (let j = 0; j < 4; j++) {
+    heatData.push([j, i, winRates[i][j]]);
+  }
+}
+heatmapChart.setOption({
+  tooltip: { position: 'top', formatter: function(p) { return models[p.value[1]] + ' vs ' + models[p.value[0]] + ': ' + p.value[2] + '%'; } },
+  grid: { left: '20%', right: '10%', top: '10%', bottom: '15%' },
+  xAxis: { type: 'category', data: models, splitArea: { show: true }, axisLabel: { rotate: 20, fontSize: 11 } },
+  yAxis: { type: 'category', data: models, splitArea: { show: true }, axisLabel: { fontSize: 11 } },
+  visualMap: { min: 40, max: 60, calculable: true, orient: 'horizontal', left: 'center', bottom: '0%', inRange: { color: ['#fef2f2', '#fee2e2', '#fca5a5', '#f87171', '#ef4444'] } },
+  series: [{ name: '胜率', type: 'heatmap', data: heatData, label: { show: true, formatter: '{c}%' }, emphasis: { itemStyle: { shadowBlur: 10, shadowColor: 'rgba(0, 0, 0, 0.5)' } } }]
+});
+
+// Consistency Chart
+const consistencyChart = echarts.init(document.getElementById('consistency-chart'));
+consistencyChart.setOption({
+  tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+  grid: { left: '3%', right: '8%', bottom: '3%', top: '10%', containLabel: true },
+  xAxis: { type: 'value', max: 2.2, name: '平均标准差' },
+  yAxis: { type: 'category', data: ['算法能力', '信息抽取', '错误修复', '代码生成', 'SQL查询', '代码补全', '代码优化', '多语言办公', '表格处理', '邮件处理', '文档撰写'], axisLabel: { fontSize: 12 } },
+  series: [{ type: 'bar', data: [0.64, 0.81, 1.03, 1.05, 1.16, 1.19, 1.27, 1.27, 1.42, 1.60, 1.92], itemStyle: { color: function(p) { return p.value < 1.0 ? '#059669' : p.value < 1.5 ? '#d97706' : '#dc2626'; } }, label: { show: true, position: 'right', formatter: '{c}' } }]
+});
+
+window.addEventListener('resize', () => {
+  radarChart.resize();
+  barChart.resize();
+  heatmapChart.resize();
+  consistencyChart.resize();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+{
+  "Optimize_001": {
+    "score": 10,
+    "reason": "O(n²)优化为O(n)，用set实现，功能等价且最优。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_002": {
+    "score": 10,
+    "reason": "O(n²)降至O(n)，哈希表标准最优解，功能完全等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_003": {
+    "score": 10,
+    "reason": "迭代法将空间复杂度从O(n)降至O(1)，为最优实现。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_004": {
+    "score": 9,
+    "reason": "用in操作符替代手动遍历，时间复杂度从O(n²)降至O(n)，优化明显。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_005": {
+    "score": 8,
+    "reason": "使用chain.from_iterable更内存高效，逻辑等价，显著优化。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_006": {
+    "score": 10,
+    "reason": "使用切片[::-1]实现字符串反转，最简洁高效的Pythonic写法，功能完全等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_007": {
+    "score": 10,
+    "reason": "Kadane算法，O(n)最优解，功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_008": {
+    "score": 9,
+    "reason": "经典优化：排除偶数+sqrt截断，时间复杂度O(n)→O(√n)，功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_009": {
+    "score": 9,
+    "reason": "标准DP优化，时间从指数级降至O(mn)，正确且高效，仍可空间压缩至1D。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_010": {
+    "score": 8,
+    "reason": "将l2转set+seen集合，时间复杂度从O(n*m)降至O(n+m)，功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_011": {
+    "score": 2,
+    "reason": "<think>\nThe original code is a recursive implement",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_012": {
+    "score": 10,
+    "reason": "使用str.replace内置方法，O(n)高效实现，等价且最优。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_013": {
+    "score": 8,
+    "reason": "增加了prefix为空时提前返回的判断，避免无限循环，优化合理有效。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_014": {
+    "score": 9,
+    "reason": "用Counter将O(n²)降为O(n)，保留长度提前判断，简洁高效。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_015": {
+    "score": 9,
+    "reason": "采用快速幂算法将O(n)优化为O(log n)，并处理了负指数和边界情况。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_016": {
+    "score": 1,
+    "reason": "<think>\nThe user wants me to evaluate an optimized",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_017": {
+    "score": 10,
+    "reason": "暴力回溯转DP，时间复杂度从O(2^n)降至O(n·W)，实现正确且高效。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_018": {
+    "score": 9,
+    "reason": "改用求和公式，O(n²)→O(n)，明显优化且功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_019": {
+    "score": 10,
+    "reason": "O(n log n)降至O(n)，利用dp递推，经典最优解。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_020": {
+    "score": 9,
+    "reason": "使用zip(*matrix)实现转置，简洁高效，符合Python惯用法。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_021": {
+    "score": 1,
+    "reason": "<think>\nThe original code is a simple O(n) linear ",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_022": {
+    "score": 9,
+    "reason": "栈替代字符串替换，O(n)时间复杂度，优化明显且功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_023": {
+    "score": 9,
+    "reason": "DFS改BFS，时间复杂度从指数级降至O(mn)，实现正确高效。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_024": {
+    "score": 6,
+    "reason": "列表推导式更Pythonic且略快，逻辑等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_025": {
+    "score": 0,
+    "reason": "<think>\nLet me analyze the optimization.\n\nOriginal",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_026": {
+    "score": 9,
+    "reason": "改用Boyer-Moore算法，时间复杂度O(n)→O(n²)，优化显著。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_027": {
+    "score": 8,
+    "reason": "使用集合加速查找并加入记忆化，从O(2^n)优化到O(n²)，功能等价，标准优化方案。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_028": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the original code and the o",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_029": {
+    "score": 9,
+    "reason": "O(n²)降为O(n)，逻辑正确，功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_030": {
+    "score": 9,
+    "reason": "用切片实现O(n)旋转，效率显著提升，功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_031": {
+    "score": 8,
+    "reason": "提前返回避免全量扫描，省去不必要的列表拷贝，空间复杂度优化明显。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_032": {
+    "score": 9,
+    "reason": "用set替代list，修复bug的同时将查找复杂度从O(n)降至O(1)。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_033": {
+    "score": 10,
+    "reason": "修复了原代码bug，O(n)时间复杂度，正确实现去重检测。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_034": {
+    "score": 1,
+    "reason": "<think>\nThe original code creates lists for each p",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_035": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the original code and the o",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_036": {
+    "score": 1,
+    "reason": "<think>\nThe original code has a bug: the anti-diag",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_037": {
+    "score": 9,
+    "reason": "修复bug并将list改为set，查找复杂度从O(n)降至O(1)。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_038": {
+    "score": 9,
+    "reason": "避免了不必要的list转换，直接切片复制更高效且代码更简洁。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_039": {
+    "score": 9,
+    "reason": "修正了原代码永远返回True的逻辑错误，且时间复杂度从错误但本质O(n)提升到正确的O(n)。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_040": {
+    "score": 0,
+    "reason": "<think>\nLet me analyze the original code and the o",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_041": {
+    "score": 8,
+    "reason": "用set替代list查找，时间复杂度从O(n²)降为O(n)，逻辑等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_042": {
+    "score": 9,
+    "reason": "用set替代list查找，O(n)→O(1)，同时修复了原代码的bug。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_043": {
+    "score": 10,
+    "reason": "完全等价，去除了冗余的排序和包装操作，时间空间复杂度从O(nklogk)降至O(1)。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_044": {
+    "score": 1,
+    "reason": "<think>\nThe original code computes `list(...) & se",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_045": {
+    "score": 1,
+    "reason": "<think>\nThe original code computes symmetric pairs",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_046": {
+    "score": 8,
+    "reason": "用set交集替代list&set，复杂度从O(n²)降至O(n+m)，明显优化。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_047": {
+    "score": 8,
+    "reason": "able: using the return value avoids string manipulation, `os.path.join` is more portable, and `compresslevel=1` speeds up compression. The function name changed from `archieve_dir` to `archive_dir` (typo fix).",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_048": {
+    "score": 7,
+    "reason": "able optimization.",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_049": {
+    "score": 4,
+    "reason": "修复了原代码语法错误，未做实质性能优化。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_050": {
+    "score": 1,
+    "reason": "able.",
+    "dim": "代码优化",
+    "judge": "minimax"
+  }
+}

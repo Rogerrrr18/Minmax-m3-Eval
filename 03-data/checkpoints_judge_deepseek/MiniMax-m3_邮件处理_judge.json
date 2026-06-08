@@ -1,0 +1,302 @@
+{
+  "email_office_001": {
+    "score": 10,
+    "reason": "完全满足专业礼貌要求，反馈具体且有建设性，结构清晰，收件人意识强。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_002": {
+    "score": 5,
+    "reason": "内容完整但未按题目要求分三句话，仅有两句话。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_003": {
+    "score": 10,
+    "reason": "结构完整，信息清晰，语气专业，完全符合商务邮件要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_004": {
+    "score": 9,
+    "reason": "内容完整、结构清晰，涵盖所有要求要素，语气专业得体，无遗漏或不当。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_005": {
+    "score": 9,
+    "reason": "语气委婉，解释清晰，提供替代方案，专业礼貌，仅略正式。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_006": {
+    "score": 10,
+    "reason": "邮件结构完整，内容全面，语气专业，明确满足所有要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_007": {
+    "score": 9,
+    "reason": "结构完整，要素齐全，语气专业，收件人意识明确，仅缺少个性化细节。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_008": {
+    "score": 10,
+    "reason": "完全满足所有要求，结构清晰，语气专业，价值主张具体，下一步建议明确。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_009": {
+    "score": 10,
+    "reason": "语气诚恳，结构完整，要素齐全，符合正式道歉规范。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_010": {
+    "score": 10,
+    "reason": "内容丰富全面，结构清晰，激励性强，完美符合表彰邮件要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_011": {
+    "score": 9,
+    "reason": "语气礼貌且催促意图明确，正式得体。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_012": {
+    "score": 9,
+    "reason": "内容完整，结构清晰，语气得体，仅生效日期占位符略减分。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_013": {
+    "score": 9,
+    "reason": "完全满足所有要求，结构清晰，语气专业，唯一小瑕疵是略显模板化。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_014": {
+    "score": 10,
+    "reason": "内容完整、结构清晰、专业得体，完全满足审批邮件要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_office_015": {
+    "score": 9,
+    "reason": "内容完整得体，语气礼貌专业，但略显模板化。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_0": {
+    "score": 6,
+    "reason": "语气礼貌专业，建议具体，但缺少具体收件人，未明确提及迟到后果。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_1": {
+    "score": 8,
+    "reason": "格式完整，语气得体，但使用占位符缺乏个性化，略显模板化。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_2": {
+    "score": 6,
+    "reason": "邮件结构完整但未替换占位符，缺乏具体收件人信息。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_3": {
+    "score": 6,
+    "reason": "结构完整但模板化，缺乏对客户具体问题的针对性回复。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_4": {
+    "score": 8,
+    "reason": "情感真挚，结构完整，但占位符和部分表达略显冗长，适当精简可更完美。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_5": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_6": {
+    "score": 9,
+    "reason": "结构完整，语气得体，信息清晰，但略模板化。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_7": {
+    "score": 9,
+    "reason": "内容完整清晰，格式规范，语气恰当，仅活动时间与傍晚环节略有冲突。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_8": {
+    "score": 8,
+    "reason": "结构完整，语气诚恳，但占位符未替换，略显模板化。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_9": {
+    "score": 9,
+    "reason": "邮件格式规范，问题全面具体，语气礼貌得体，完全满足咨询社保问题的要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_10": {
+    "score": 10,
+    "reason": "邮件礼貌专业，结构完整，体现尊重与鼓励，完全符合未通过面试通知要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_11": {
+    "score": 9,
+    "reason": "结构清晰，信息完整，语气专业礼貌，完全满足产品升级通知要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_12": {
+    "score": 8,
+    "reason": "结构完整、语气得当，但内容较为模板化，缺少具体细节。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_13": {
+    "score": 9,
+    "reason": "邮件专业完整，结构清晰，符合续约邀请要求，略缺个性化但无实质问题。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "EMAIL_EXTRA_14": {
+    "score": 9,
+    "reason": "结构清晰、信息完整、语气得当，仅缺少具体审批人细节，整体非常优秀。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_0": {
+    "score": 9,
+    "reason": "邮件结构完整专业，说服力强，收件人意识明确，仅需补充具体公司名称即可。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_1": {
+    "score": 9,
+    "reason": "邮件结构完整，内容全面，语气专业礼貌，满足所有要求，仅因占位符略减。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_2": {
+    "score": 10,
+    "reason": "内容完整符合GDPR要求，结构清晰，收件人明确，语气规范，完美转换。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_3": {
+    "score": 10,
+    "reason": "完整覆盖所有要求要素，结构清晰，语气专业且细致周到。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_4": {
+    "score": 2,
+    "reason": "未针对原句改写，仅输出占位符模板，缺乏具体内容。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_5": {
+    "score": 9,
+    "reason": "语气专业，结构完整，内容全面，仅截止日期和收件人未具体化。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_6": {
+    "score": 8,
+    "reason": "邮件正式完整，但占用位符未明确下周二具体日期，稍欠精准。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_7": {
+    "score": 10,
+    "reason": "邮件结构清晰，内容详尽，全面回应疑问并附验收标准，语气专业礼貌，完全符合高质量商务邮件要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_8": {
+    "score": 10,
+    "reason": "完全满足专业改写要求，语气得体，结构完整，无问题。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_9": {
+    "score": 8,
+    "reason": "内容完整，结构清晰，语气得当，但有多处占位符未填，略欠具体细节。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_10": {
+    "score": 9,
+    "reason": "邮件将模糊反馈转为具体、积极的发展建议，结构完整，语气恰当，高度符合要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_11": {
+    "score": 10,
+    "reason": "结构完整，要素齐全，语气恰当，细节丰富，完全满足所有要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_12": {
+    "score": 10,
+    "reason": "语气礼貌友好，结构清晰，提供替代方案和贴心支持，完美符合要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_13": {
+    "score": 10,
+    "reason": "邮件结构完整，涵盖所有要求，收件人意识明确，语气专业且内容实用，无任何缺陷。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_14": {
+    "score": 10,
+    "reason": "完全满足要求，正式得体，客户关怀到位，业务衔接明确。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_15": {
+    "score": 9,
+    "reason": "结构完整，条款清晰，语气专业，满足所有要求，仅略微缺乏个性化细节。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_16": {
+    "score": 9,
+    "reason": "邮件格式规范，语气正式，内容全面，仅占位符未具体化，基本完美。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_17": {
+    "score": 9,
+    "reason": "邮件结构完整、要素齐全、语气专业，仅缺少具体培训名称和截止日期细节。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_18": {
+    "score": 9,
+    "reason": "邮件完整融入企业文化，格式规范，语气恰当，收件人明确，仅稍显模板化。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  },
+  "email_extra_19": {
+    "score": 10,
+    "reason": "内容完整，结构清晰，语气得当，完全满足所有要求。",
+    "dim": "邮件处理",
+    "judge": "deepseek"
+  }
+}

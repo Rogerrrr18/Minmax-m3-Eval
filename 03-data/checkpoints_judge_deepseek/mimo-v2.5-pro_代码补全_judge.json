@@ -1,0 +1,302 @@
+{
+  "CodeSearch_0": {
+    "score": 10,
+    "reason": "正确实现二分查找，包含完整逻辑和测试，完美补全。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_1": {
+    "score": 10,
+    "reason": "模型输出完整且正确，功能明确，符合Python代码规范。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_2": {
+    "score": 0,
+    "reason": "模型未补全代码，仅请求更多上下文，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_3": {
+    "score": 0,
+    "reason": "题目未提供待补全代码，模型输出为无关示例，无法评分。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_4": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_5": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_6": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_7": {
+    "score": 10,
+    "reason": "标准二分查找实现正确，逻辑完整，无上下文冲突。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_8": {
+    "score": 10,
+    "reason": "正确实现斐波那契数列",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_9": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_10": {
+    "score": 2,
+    "reason": ":",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_11": {
+    "score": 9,
+    "reason": "代码逻辑正确，递归处理嵌套列表，类型判断明确，与题目补全要求高度匹配。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_12": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_13": {
+    "score": 2,
+    "reason": "缺少原代码，输出无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_14": {
+    "score": 0,
+    "reason": "未完成代码补全任务，输出无关示例，与题目要求完全不符。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_15": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_16": {
+    "score": 9,
+    "reason": "补全代码正确，符合常见Python入口结构，衔接自然。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_17": {
+    "score": 10,
+    "reason": "代码正确实现斐波那契数列，生成器写法高效，完整无误。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_18": {
+    "score": 9,
+    "reason": "代码功能完全正确，逻辑清晰，可作为独立函数",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_19": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_20": {
+    "score": 10,
+    "reason": "补全的斐波那契函数完全正确，递归实现清晰，与常见代码片段无缝衔接。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_21": {
+    "score": 1,
+    "reason": "题目内容缺失，模型输出无法与上下文衔接，完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_22": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_23": {
+    "score": 0,
+    "reason": "模型输出未基于任何上下文，与空题目无关联。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_24": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_25": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_26": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_27": {
+    "score": 3,
+    "reason": "题目内容缺失，模型输出通用结构，未针对具体逻辑补全，无法验证正确性。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_28": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_29": {
+    "score": 10,
+    "reason": "完美补全，代码正确实现斐波那契函数，逻辑清晰，格式规范。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_30": {
+    "score": 10,
+    "reason": "代码正确实现了Kadane算法，逻辑清晰，无错误，完美补全。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_31": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_32": {
+    "score": 0,
+    "reason": "题目无代码上下文，模型输出与补全任务完全无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_33": {
+    "score": 0,
+    "reason": "没有提供需补全的原始代码，模型输出与题目要求无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_34": {
+    "score": 10,
+    "reason": "完美补全，代码逻辑正确且完整，符合随机生成密码要求。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_35": {
+    "score": 10,
+    "reason": "代码正确完整，逻辑清晰，可直接运行。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_36": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_37": {
+    "score": 10,
+    "reason": "代码完全正确，逻辑清晰，衔接良好。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_38": {
+    "score": 10,
+    "reason": "代码完整正确，功能完善，链式调用优雅。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_39": {
+    "score": 1,
+    "reason": "输入未提供待补全代码，模型输出与题目无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_40": {
+    "score": 0,
+    "reason": "题目未提供待补全代码，模型输出无对应上下文，无法判断正确性。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_41": {
+    "score": 9,
+    "reason": "代码正确完整，符合PyTorch规范，逻辑清晰，与常见代码补全任务高度吻合。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_42": {
+    "score": 10,
+    "reason": "补全代码完全正确，逻辑清晰",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_43": {
+    "score": 10,
+    "reason": "代码正确实现快速排序，逻辑清晰，输出完整且可运行。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_44": {
+    "score": 0,
+    "reason": "题目无代码内容，模型输出无关内容。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_45": {
+    "score": 2,
+    "reason": "无题目代码，输出通用框架，未实现有效补全。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_46": {
+    "score": 2,
+    "reason": "题目无上下文，输出通用示例，与补全要求无关。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_47": {
+    "score": 10,
+    "reason": "完美实现了算术运算函数，包含错误处理，代码完整且可直接运行。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_48": {
+    "score": 10,
+    "reason": "代码功能正确，结构完整，符合常见Python脚本规范。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  },
+  "CodeSearch_49": {
+    "score": 10,
+    "reason": "补全代码正确、逻辑清晰，与上下文无缝衔接，完美实现圆面积计算功能。",
+    "dim": "代码补全",
+    "judge": "deepseek"
+  }
+}

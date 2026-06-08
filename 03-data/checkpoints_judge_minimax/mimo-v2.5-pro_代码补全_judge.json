@@ -1,0 +1,302 @@
+{
+  "CodeSearch_0": {
+    "score": 9,
+    "reason": "二分查找实现正确完整，逻辑清晰，与上下文衔接良好。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_1": {
+    "score": 3,
+    "reason": "题目无原始代码，模型自行编造功能，与实际补全任务无关。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_2": {
+    "score": 0,
+    "reason": "模型未进行任何代码补全，仅要求用户提供代码，完全未完成任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_3": {
+    "score": 1,
+    "reason": "<think>\nThe user wants me to evaluate a model's co",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_4": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze this code completion task. ",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_5": {
+    "score": 5,
+    "reason": "able guess but can't be verified against specific requirements. The code is syntactically correct and logically sound, but it's essentially a generic example without knowing what the original template was.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_6": {
+    "score": 1,
+    "reason": "<think>\nThe user is asking me to evaluate a code c",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_7": {
+    "score": 8,
+    "reason": "二分查找实现正确，逻辑无误，与上下文衔接良好。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_8": {
+    "score": 6,
+    "reason": "able fibonacci function. It's correct logically but we can't verify if it matches the expected context. The function is a standard, correct implementation of fibonacci.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_9": {
+    "score": 10,
+    "reason": "经典二分查找实现完全正确，逻辑清晰，与上下文衔接良好。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_10": {
+    "score": 3,
+    "reason": "无具体上下文，模型仅输出通用Hello World，属于无依据的默认猜测。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_11": {
+    "score": 3,
+    "reason": "able function that:",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_12": {
+    "score": 9,
+    "reason": "able, correct, and complete solution. The code is functionally correct, well-structured, and includes a demonstration in the main block.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_13": {
+    "score": 1,
+    "reason": "输出与CodeSearchNet补全任务无关，完全不正确。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_14": {
+    "score": 0,
+    "reason": "未提供具体代码片段，模型未完成任何补全任务，仅生成了无关的示例程序。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_15": {
+    "score": 0,
+    "reason": "无原始代码上下文，模型输出无关的通用示例，未完成任何实际补全任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_16": {
+    "score": 2,
+    "reason": "输出为通用Hello World程序，与代码补全任务无关，无实际补全内容。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_17": {
+    "score": 0,
+    "reason": "able and correct solution.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_18": {
+    "score": 6,
+    "reason": "able completion.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_19": {
+    "score": 6,
+    "reason": "able and correct as a standalone piece.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_20": {
+    "score": 1,
+    "reason": "able. The function is correct:",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_21": {
+    "score": 4,
+    "reason": "able but generic Python code, I should evaluate based on what's available.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_22": {
+    "score": 8,
+    "reason": "able approach.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_23": {
+    "score": 5,
+    "reason": "able Python program, I need to consider this carefully. The model seems to have generated a plausible completion, but without the original prompt/context, I can't verify correctness.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_24": {
+    "score": 1,
+    "reason": "able completion for a typical greet function.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_25": {
+    "score": 8,
+    "reason": "冒泡排序实现正确，但无原题代码参照，扣分。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_26": {
+    "score": 7,
+    "reason": "able, complete, working implementation. However, without context of what was being completed, it's hard to say if it matches expectations.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_27": {
+    "score": 0,
+    "reason": "<think>\nThe user wants me to evaluate a model's co",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_28": {
+    "score": 1,
+    "reason": "题目内容为空，模型输出通用代码，未对应任何具体补全任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_29": {
+    "score": 6,
+    "reason": "斐波那契逻辑正确，但无原题上下文，无法判断衔接性。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_30": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the code completio",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_31": {
+    "score": 7,
+    "reason": "able, correct implementation of filtering even numbers from a list.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_32": {
+    "score": 8,
+    "reason": "able answer. The code is well-structured, follows Python conventions, and the logic is correct.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_33": {
+    "score": 3,
+    "reason": "题目未提供原代码，模型自创了无关的简单函数，未完成真正的补全任务。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_34": {
+    "score": 1,
+    "reason": "able completion for a \"password generator\" task (which seems to be the implied task)",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_35": {
+    "score": 7,
+    "reason": "able and correct for a general \"calculate area\" task.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_36": {
+    "score": 8,
+    "reason": "able completion.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_37": {
+    "score": 6,
+    "reason": "able response to a missing problem.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_38": {
+    "score": 7,
+    "reason": "able. Since the task is from CodeSearchNet, the original code likely had a specific structure that needed completion.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_39": {
+    "score": 0,
+    "reason": "题目内容缺失，模型仅输出无关的占位函数，未完成任何有效补全。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_40": {
+    "score": 3,
+    "reason": "题目未提供待补全代码，模型输出为随意编造的内容，无法评估补全正确性。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_41": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a code completion.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_42": {
+    "score": 6,
+    "reason": "able guess but without seeing the original code template, it's hard to know if it matches the context.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_43": {
+    "score": 9,
+    "reason": "快速排序实现正确，逻辑清晰，含测试代码，但未指定题目上下文略有随意。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_44": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate a model's code com",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_45": {
+    "score": 1,
+    "reason": "题目无具体上下文，但模型仅输出通用模板，未尝试补全任何实际逻辑。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_46": {
+    "score": 1,
+    "reason": "输出为通用Hello World程序，未针对具体题目要求补全，缺少上下文，完全无关。",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_47": {
+    "score": 7,
+    "reason": "able implementation. The code is correct and functional.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_48": {
+    "score": 4,
+    "reason": "able guess. However, the quality is questionable because:",
+    "dim": "代码补全",
+    "judge": "minimax"
+  },
+  "CodeSearch_49": {
+    "score": 1,
+    "reason": "able score.",
+    "dim": "代码补全",
+    "judge": "minimax"
+  }
+}

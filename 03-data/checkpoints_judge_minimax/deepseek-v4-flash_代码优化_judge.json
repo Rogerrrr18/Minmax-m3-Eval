@@ -1,0 +1,302 @@
+{
+  "Optimize_001": {
+    "score": 10,
+    "reason": "O(n²)优化为O(n)，功能完全等价，最优解。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_002": {
+    "score": 10,
+    "reason": "O(n²)→O(n)，最优解。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_003": {
+    "score": 9,
+    "reason": "迭代",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_004": {
+    "score": 9,
+    "reason": "用dict.get替代手动查找，将O(n²)优化为O(n)，实现简洁高效。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_005": {
+    "score": 10,
+    "reason": "利用堆合并，时间复杂度从O(n log n)优化至O(n log k)，功能完全等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_006": {
+    "score": 10,
+    "reason": "使用s[::-1]切片，最简洁高效的Python惯用法，C底层实现，功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_007": {
+    "score": 10,
+    "reason": "Kadane算法，O(n)最优解，功能等价，标准最优实现。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_008": {
+    "score": 9,
+    "reason": "经典素数优化，sqrt+偶数跳过，时间复杂度从O(n)降至O(√n)。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_009": {
+    "score": 9,
+    "reason": "经典自底向上DP，将指数复杂度降至O(mn)，可进一步优化空间至O(min(m,n))。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_010": {
+    "score": 9,
+    "reason": "将l2转set实现O(1)查找，用seen去重，复杂度从O(n*m)降为O(n+m)，明显优化。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_011": {
+    "score": 9,
+    "reason": "递归转迭代，O(2^n)降为O(n)，经典优化。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_012": {
+    "score": 10,
+    "reason": "完美替换循环拼接，str.replace更简洁高效，功能完全等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_013": {
+    "score": 1,
+    "reason": "<think>\nThe original code finds the longest common",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_014": {
+    "score": 9,
+    "reason": "用Counter实现O(n)对比，原O(n²)，功能等价，显著优化。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_015": {
+    "score": 0,
+    "reason": "<think>\nThe original code computes x^n using a sim",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_016": {
+    "score": 10,
+    "reason": "经典闭式公式实现，时间复杂度从O(n)降到O(1)，最优解。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_017": {
+    "score": 9,
+    "reason": "指数回溯改为动态规划，时间复杂度大幅降低。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_018": {
+    "score": 9,
+    "reason": "able assumption for this problem. The optimization is clear and correct for the intended use case.",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_019": {
+    "score": 10,
+    "reason": "采用经典动态规划递推，O(n)时间复杂度，达到最优实现。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_020": {
+    "score": 10,
+    "reason": "使用zip(*matrix)最Pythonic，简洁高效，功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_021": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the optimization o",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_022": {
+    "score": 9,
+    "reason": "栈法将O(n²)替换优化为O(n)，算法层面明显改进，标准最优解。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_023": {
+    "score": 9,
+    "reason": "DFS改BFS，时间复杂度从指数级降至O(mn)，正确且高效。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_024": {
+    "score": 0,
+    "reason": "<think>\nThe original code is O(n) time and O(n) sp",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_025": {
+    "score": 10,
+    "reason": "经典双指针O(n)解法，时间空间复杂度均为最优，功能完全等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_026": {
+    "score": 10,
+    "reason": "Boyer-Moore投票算法，O(n)时间O(1)空间，标准最优解。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_027": {
+    "score": 8,
+    "reason": "加入@lru_cache记忆化和集合查找，从O(2^n)优化到O(n²)，效果显著。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_028": {
+    "score": 1,
+    "reason": "<think>\nThe original code iteratively builds Pasca",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_029": {
+    "score": 10,
+    "reason": "O(n)单次遍历，最优解法，功能完全等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_030": {
+    "score": 10,
+    "reason": "三次反转法，O(n)时间复杂度，最优解法。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_031": {
+    "score": 0,
+    "reason": "直接返回False破坏了原函数的功能，不等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_032": {
+    "score": 9,
+    "reason": "将list改为set，查找从O(n)降为O(1)，显著提升时间复杂度。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_033": {
+    "score": 9,
+    "reason": "用set替代list转换，时间空间复杂度均更优。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_034": {
+    "score": 1,
+    "reason": "<think>\nThe original code has O(n) time and O(n) s",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_035": {
+    "score": 0,
+    "reason": "模型未提供任何优化代码，无输出。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_036": {
+    "score": 0,
+    "reason": "<think>\nThe problem asks me to evaluate the optimi",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_037": {
+    "score": 9,
+    "reason": "用set替代list查找，复杂度从O(n²)降到O(n)，功能等价。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_038": {
+    "score": 7,
+    "reason": "消除了多余的list转换，代码更简洁高效，但函数本身功能无意义。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_039": {
+    "score": 9,
+    "reason": "正确实现去重检查，去除冗余list转换，简洁高效。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_040": {
+    "score": 0,
+    "reason": "<think>\nLet me analyze the original code and the o",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_041": {
+    "score": 9,
+    "reason": "用set替代list查找，时间复杂度从O(n²)降为O(n)。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_042": {
+    "score": 9,
+    "reason": "用set替代list查找，O(n)→O(1)，修复原代码list.add()的bug。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_043": {
+    "score": 6,
+    "reason": "able micro-optimization.",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_044": {
+    "score": 1,
+    "reason": "<think>\nLet me analyze the original code and the o",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_045": {
+    "score": 1,
+    "reason": "<think>\nThe original code uses two set operations ",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_046": {
+    "score": 1,
+    "reason": "<think>\nThe original code:\n```python\ndef same_orde",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_047": {
+    "score": 7,
+    "reason": "able optimization that improves readability and slightly improves performance. However, the core logic is the same. The time complexity isn't really changed significantly since `shutil.make_archive` is the bottleneck.",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_048": {
+    "score": 1,
+    "reason": "<think>\nThe task is to evaluate the optimization o",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_049": {
+    "score": 2,
+    "reason": "仅修正语法错误，无任何性能优化（无缓存/并发/重试等）。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  },
+  "Optimize_050": {
+    "score": 7,
+    "reason": "Session复用连接、添加超时和错误处理，但Session在`__init__`中实例化会随请求重建，丢失连接池优势。",
+    "dim": "代码优化",
+    "judge": "minimax"
+  }
+}

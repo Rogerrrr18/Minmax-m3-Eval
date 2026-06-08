@@ -1,0 +1,362 @@
+{
+  "BugFix_001": {
+    "score": 9,
+    "reason": "正确返回较大值，修复完整。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_002": {
+    "score": 9,
+    "reason": "正确累加元素，修复主要逻辑错误",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_003": {
+    "score": 9,
+    "reason": "正确修复边界和方向错误。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_004": {
+    "score": 9,
+    "reason": "正确用切片反转字符串，修复bug。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_005": {
+    "score": 9,
+    "reason": "正确修复递归右分区错误。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_006": {
+    "score": 9,
+    "reason": "正确修复0阶乘返回值，递归逻辑正确。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_007": {
+    "score": 9,
+    "reason": "正确避免修改原字典，修复到位",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_008": {
+    "score": 9,
+    "reason": "正确去除错误切片，扁平化结果完整",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_009": {
+    "score": 9,
+    "reason": "正确去重并保持顺序，适用于可哈希元素",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_010": {
+    "score": 10,
+    "reason": "正确实现后进先出，且push更高效。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_011": {
+    "score": 9,
+    "reason": "使用with正确关闭文件，修复资源泄露。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_012": {
+    "score": 9,
+    "reason": "迭代实现，正确且大幅提升性能",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_013": {
+    "score": 9,
+    "reason": "使用split()正确处理连续空格及首尾空白。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_014": {
+    "score": 9,
+    "reason": "正确使用快慢指针检测环，无新问题",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_015": {
+    "score": 9,
+    "reason": "正确处理除零异常，返回合理值。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_016": {
+    "score": 9,
+    "reason": "正确捕获无效输入并返回None",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_017": {
+    "score": 9,
+    "reason": "正确改为动态规划，显著提速；空间仍可优化。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_018": {
+    "score": 9,
+    "reason": "正确返回打乱后的列表，修复主要问题",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_019": {
+    "score": 8,
+    "reason": "修复重复访问和顺序，未检测环路",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_020": {
+    "score": 9,
+    "reason": "正确返回交换后的两个值。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_021": {
+    "score": 9,
+    "reason": "正确将奇数判断修为偶数求和",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_022": {
+    "score": 9,
+    "reason": "正确修复浅拷贝行共享问题。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_023": {
+    "score": 9,
+    "reason": "正确去重并保持原始顺序。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_024": {
+    "score": 9,
+    "reason": "正确修复状态转移，结果正确。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_025": {
+    "score": 9,
+    "reason": "正确修复未更新列表的问题，无新bug。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_026": {
+    "score": 7,
+    "reason": "修复路径共享问题，但未处理环导致递归死循环",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_027": {
+    "score": 9,
+    "reason": "正确处理空列表，避免除零错误",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_028": {
+    "score": 8,
+    "reason": "加了记忆化和替换操作，但默认可变参数且仍递归切片。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_029": {
+    "score": 9,
+    "reason": "按值排序已修复，返回项列表合理",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_030": {
+    "score": 9,
+    "reason": "正确递归到交换后的子节点，修复核心bug。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_031": {
+    "score": 10,
+    "reason": "用集合将时间复杂度降至O(n)，逻辑正确。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_032": {
+    "score": 9,
+    "reason": "哈希表降为O(n)，逻辑正确，处理重复元素正常。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_033": {
+    "score": 10,
+    "reason": "正确改为迭代，空间O(1)且结果正确",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_034": {
+    "score": 10,
+    "reason": "正确简洁，性能更优，无新问题",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_035": {
+    "score": 9,
+    "reason": "正确高效，利用堆合并有序列表。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_036": {
+    "score": 10,
+    "reason": "正确简洁，性能更优，无新问题",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_037": {
+    "score": 10,
+    "reason": "正确实现Kadane算法，复杂度降至O(n)",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_038": {
+    "score": 10,
+    "reason": "正确且高效，平方根范围并跳过偶数。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_039": {
+    "score": 9,
+    "reason": "正确改为DP，显著优化性能。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_040": {
+    "score": 9,
+    "reason": "优化查找效率并保持结果顺序，但要求元素可哈希",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_041": {
+    "score": 9,
+    "reason": "正确改为迭代，性能大幅优化。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_042": {
+    "score": 10,
+    "reason": "功能等价且更简洁高效。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_043": {
+    "score": 9,
+    "reason": "正确实现并优化效率，逻辑简洁。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_044": {
+    "score": 10,
+    "reason": "正确且高效优化计数逻辑",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_045": {
+    "score": 9,
+    "reason": "快速幂优化正确，但未支持负指数",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_046": {
+    "score": 9,
+    "reason": "公式优化正确，未处理负数语义差异",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_047": {
+    "score": 10,
+    "reason": "正确改为一维DP，显著优化效率。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_048": {
+    "score": 9,
+    "reason": "正确优化查找效率，逻辑保持一致",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_049": {
+    "score": 10,
+    "reason": "正确优化为DP，时间复杂度更优且结果一致。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_050": {
+    "score": 9,
+    "reason": "修复空矩阵问题，简洁正确。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_051": {
+    "score": 7,
+    "reason": "优化为二分，但重复元素时结果错误",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_052": {
+    "score": 10,
+    "reason": "栈实现正确高效，覆盖非法字符。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_053": {
+    "score": 7,
+    "reason": "BFS修复效率，但路径长度少1。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_054": {
+    "score": 10,
+    "reason": "功能等价，代码更简洁高效。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_055": {
+    "score": 9,
+    "reason": "正确降至O(n)，空间可再优化",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_056": {
+    "score": 10,
+    "reason": "正确使用投票法，复杂度降至O(n)。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_057": {
+    "score": 9,
+    "reason": "正确修复性能问题，DP+集合优化，缺少长度剪枝。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_058": {
+    "score": 10,
+    "reason": "正确生成第n行且时间复杂度优化至O(n)",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_059": {
+    "score": 10,
+    "reason": "线性时间正确实现，处理空列表。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  },
+  "BugFix_060": {
+    "score": 10,
+    "reason": "正确处理空数组和取模，O(n)原地旋转。",
+    "dim": "错误修复",
+    "judge": "gpt55"
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "table_office_001": {
+    "score": 10,
+    "reason": "代码完整可执行，汇总与格式化正确",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_002": {
+    "score": 10,
+    "reason": "公式正确，符合Excel语法。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_003": {
+    "score": 0,
+    "reason": "未生成透视表或图表，任务失败",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_004": {
+    "score": 9,
+    "reason": "公式正确，条件格式范围略保守。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_office_005": {
+    "score": 9,
+    "reason": "代码正确统计并绘制趋势图，基本完美。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_0": {
+    "score": 5,
+    "reason": "意图正确，但公式格式不合法",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_1": {
+    "score": 8,
+    "reason": "公式正确，但输出含多余文本。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_2": {
+    "score": 9,
+    "reason": "公式正确，可在D2填入并下拉。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_3": {
+    "score": 10,
+    "reason": "公式正确，可向下填充计算利润率",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_4": {
+    "score": 10,
+    "reason": "公式正确，可直接计算平均分",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_5": {
+    "score": 9,
+    "reason": "公式正确，可下拉应用。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_6": {
+    "score": 9,
+    "reason": "公式正确，能按月份累计至当前日期。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_7": {
+    "score": 10,
+    "reason": "公式正确，可下拉计算各部门总产值",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_8": {
+    "score": 9,
+    "reason": "公式正确，可在D2填入并下拉。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_9": {
+    "score": 8,
+    "reason": "公式正确，行号需按实际数据调整",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_10": {
+    "score": 9,
+    "reason": "公式正确，截止日期假设合理。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_11": {
+    "score": 10,
+    "reason": "公式正确，并考虑空白日期情况。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_12": {
+    "score": 9,
+    "reason": "公式正确，可向下填充计算占比。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_13": {
+    "score": 10,
+    "reason": "公式正确，可下拉填充且考虑除零错误。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_14": {
+    "score": 10,
+    "reason": "公式正确，可填充E列。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_15": {
+    "score": 10,
+    "reason": "公式语法正确，判断逻辑完全符合要求。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_16": {
+    "score": 9,
+    "reason": "公式正确，可下拉填充计算到期日",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_17": {
+    "score": 9,
+    "reason": "公式正确，可下拉计算及格率。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_18": {
+    "score": 9,
+    "reason": "公式正确计算实际与计划偏差天数。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_19": {
+    "score": 10,
+    "reason": "公式语法正确，逻辑完整。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_20": {
+    "score": 10,
+    "reason": "公式正确，可在D2输入并下拉填充。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_21": {
+    "score": 10,
+    "reason": "公式正确，可下拉填充判断亏损。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_22": {
+    "score": 8,
+    "reason": "公式正确，但未说明起始行和填充方式",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_23": {
+    "score": 10,
+    "reason": "公式正确，单位换算无误。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "TABLE_EXTRA_24": {
+    "score": 10,
+    "reason": "公式正确，并考虑除零错误。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_0": {
+    "score": 0,
+    "reason": "输出异常，无公式或有效结果。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_1": {
+    "score": 10,
+    "reason": "公式正确完整，可向下填充使用",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_2": {
+    "score": 10,
+    "reason": "代码正确完成分组统计并导出Excel",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_3": {
+    "score": 10,
+    "reason": "公式和条件格式均正确。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_4": {
+    "score": 9,
+    "reason": "代码正确可执行，完成合并与汇总输出。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_5": {
+    "score": 0,
+    "reason": "未提供任何公式或处理方法。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_6": {
+    "score": 9,
+    "reason": "代码可执行，Z-score检测并输出异常列表。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_7": {
+    "score": 9,
+    "reason": "公式语法正确，逻辑基本完整。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_8": {
+    "score": 0,
+    "reason": "未提供任何可执行代码或结果。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_9": {
+    "score": 9,
+    "reason": "规则正确，假设范围合理，空值处理未说明",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_10": {
+    "score": 8,
+    "reason": "基本正确，去重顺序略有瑕疵。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_11": {
+    "score": 9,
+    "reason": "公式正确，条件格式设置合理。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_12": {
+    "score": 9,
+    "reason": "实现正确，缺少零值同比处理。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_13": {
+    "score": 0,
+    "reason": "未提供任何公式或有效解答",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_14": {
+    "score": 9,
+    "reason": "代码可执行，均线和5/20金死叉正确，略未说明其他交叉。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_15": {
+    "score": 9,
+    "reason": "公式正确计算推荐者减贬损者占比。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_16": {
+    "score": 9,
+    "reason": "实现完整正确，置信区间方法略简化",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_17": {
+    "score": 9,
+    "reason": "公式正确，条件格式可用；空白行可能误标红。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_18": {
+    "score": 9,
+    "reason": "功能完整，汇总和折线图生成正确。",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  },
+  "table_extra_19": {
+    "score": 9,
+    "reason": "公式正确，部门去重需手动准备",
+    "dim": "表格处理",
+    "judge": "gpt55"
+  }
+}

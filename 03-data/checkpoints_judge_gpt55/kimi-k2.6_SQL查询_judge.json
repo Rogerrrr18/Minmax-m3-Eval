@@ -1,0 +1,302 @@
+{
+  "Spider_0": {
+    "score": 0,
+    "reason": "未生成SQL，执行失败。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_1": {
+    "score": 0,
+    "reason": "未提供SQL语句，无法满足查询要求。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_2": {
+    "score": 10,
+    "reason": "完全符合题意，查询字段和表正确。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_3": {
+    "score": 10,
+    "reason": "正确查询部门预算最大值和最小值。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_4": {
+    "score": 9,
+    "reason": "语义正确，范围与聚合均符合题意。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_5": {
+    "score": 10,
+    "reason": "语义正确，筛选出生州非California的负责人姓名。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_6": {
+    "score": 0,
+    "reason": "未提供SQL，执行失败。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_7": {
+    "score": 9,
+    "reason": "正确按出生州分组并筛选至少3人。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_8": {
+    "score": 3,
+    "reason": "表/字段及EXTRACT用法不符合Spider schema",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_9": {
+    "score": 0,
+    "reason": "未给出SQL，执行失败。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_10": {
+    "score": 10,
+    "reason": "正确统计acting_status表记录数。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_11": {
+    "score": 0,
+    "reason": "未生成SQL，执行失败。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_12": {
+    "score": 0,
+    "reason": "未提供可执行SQL，查询失败。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_13": {
+    "score": 0,
+    "reason": "未提供SQL语句，无法完成查询。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_14": {
+    "score": 0,
+    "reason": "查询执行失败，无有效SQL。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_15": {
+    "score": 9,
+    "reason": "语义正确，能筛选含Ha的负责人并列出ID和姓名。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_16": {
+    "score": 2,
+    "reason": "表名应为farm，farms不存在。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_17": {
+    "score": 10,
+    "reason": "正确统计farms表记录数。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_18": {
+    "score": 0,
+    "reason": "未生成SQL，执行失败。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_19": {
+    "score": 0,
+    "reason": "未提供SQL，执行失败。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_20": {
+    "score": 10,
+    "reason": "查询条件与目标完全一致。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_21": {
+    "score": 10,
+    "reason": "语义正确，筛选非Aliens主题并返回host。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_22": {
+    "score": 2,
+    "reason": "表名错误，且多返回year列",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_23": {
+    "score": 10,
+    "reason": "正确返回主题并按年份升序排序",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_24": {
+    "score": 3,
+    "reason": "表名应为farm，逻辑正确但不可执行",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_25": {
+    "score": 10,
+    "reason": "语义完全正确，筛选并计算平均值。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_26": {
+    "score": 9,
+    "reason": "正确求出奶牛数最大值和最小值。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_27": {
+    "score": 10,
+    "reason": "正确查询所有农场奶牛数最大最小值",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_28": {
+    "score": 10,
+    "reason": "正确统计城市状态去重数量。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_29": {
+    "score": 5,
+    "reason": "聚合逻辑正确，但表名占位不可执行。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_30": {
+    "score": 10,
+    "reason": "正确选择官方名并按人口降序排序",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_31": {
+    "score": 10,
+    "reason": "查询字段和排序均完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_32": {
+    "score": 8,
+    "reason": "查询逻辑正确，若表名为cities则完全符合题意。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_33": {
+    "score": 9,
+    "reason": "语义正确，按人口降序取城市官方名和状态。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_34": {
+    "score": 2,
+    "reason": "缺少城市表连接，official_name列不在competitions中",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_35": {
+    "score": 9,
+    "reason": "正确连接比赛与城市并返回年份和官方名",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_36": {
+    "score": 9,
+    "reason": "逻辑正确，能筛选举办多次比赛城市。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_37": {
+    "score": 10,
+    "reason": "正确连接分组并筛选多次举办城市。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_38": {
+    "score": 9,
+    "reason": "逻辑正确，未处理并列最多情况。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_39": {
+    "score": 9,
+    "reason": "逻辑正确，按举办次数降序取城市状态。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_40": {
+    "score": 9,
+    "reason": "语义正确，连接和筛选条件准确。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_41": {
+    "score": 8,
+    "reason": "逻辑正确，列名/表名可能不符。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_42": {
+    "score": 9,
+    "reason": "按状态分组求平均人口，符合题意。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_43": {
+    "score": 6,
+    "reason": "语法正确，但按城市和状态分组，可能粒度错误。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_44": {
+    "score": 8,
+    "reason": "逻辑正确，但多返回了计数字段。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_45": {
+    "score": 10,
+    "reason": "正确按状态分组并按频次升序排序。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_46": {
+    "score": 3,
+    "reason": "表名错误，应查询城市表按Status计数。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_47": {
+    "score": 8,
+    "reason": "逻辑正确，若表名为cities则无误。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_48": {
+    "score": 2,
+    "reason": "表和关联列名不符合实际schema，无法执行。",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  },
+  "Spider_49": {
+    "score": 7,
+    "reason": "反连接逻辑正确，但表/字段名可能不符",
+    "dim": "SQL查询",
+    "judge": "gpt55"
+  }
+}

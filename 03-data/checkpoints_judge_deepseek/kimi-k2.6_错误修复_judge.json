@@ -1,0 +1,362 @@
+{
+  "BugFix_001": {
+    "score": 9,
+    "reason": "正确修复了返回最小值的bug，改为返回最大值，代码简洁正确。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_002": {
+    "score": 9,
+    "reason": "原代码赋值而非累加，修复后正确累加，完全修复。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_003": {
+    "score": 10,
+    "reason": "正确修复了左右指针移动方向及区间边界，代码实现无误。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_004": {
+    "score": 10,
+    "reason": "完美修复，使用字符串切片正确反转。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_005": {
+    "score": 10,
+    "reason": "完美修复了递归调用错误，将第二个`quicksort(left)`改为`quicksort(right)`。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_006": {
+    "score": 10,
+    "reason": "正确修复了0!为1的核心bug，无需额外优化。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_007": {
+    "score": 9,
+    "reason": "修复了直接引用原字典的bug，使用copy()创建副本，正确且简洁。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_008": {
+    "score": 10,
+    "reason": "正确移除错误切片，直接返回完整扁平化结果。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_009": {
+    "score": 10,
+    "reason": "完全正确修复了顺序保持问题，代码简洁高效。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_010": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_011": {
+    "score": 10,
+    "reason": "原代码未关闭文件，修复后使用with语句自动关闭，且代码更简洁。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_012": {
+    "score": 10,
+    "reason": "完美修复，使用迭代避免了指数时间复杂度，正确高效。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_013": {
+    "score": 10,
+    "reason": "完美修复bug，使用split()自动处理连续空格。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_014": {
+    "score": 10,
+    "reason": "原代码快指针移动一步，修复后移动两步，正确实现快慢指针检测环。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_015": {
+    "score": 9,
+    "reason": "正确添加异常处理捕获除零错误，完全修复原bug。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_016": {
+    "score": 9,
+    "reason": "正确捕获ValueError和TypeError，完全修复bug。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_017": {
+    "score": 10,
+    "reason": "使用动态规划修复了原递归指数级性能问题，代码正确且高效。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_018": {
+    "score": 10,
+    "reason": "修复了返回None的问题，使用副本避免修改原列表，代码正确且优化。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_019": {
+    "score": 9,
+    "reason": "添加访问检查，修复无限递归与重复节点问题，无环图正确。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_020": {
+    "score": 9,
+    "reason": "Score: 9",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_021": {
+    "score": 9,
+    "reason": "代码正确将奇数条件改为偶数条件，完全修复了求和逻辑错误。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_022": {
+    "score": 10,
+    "reason": "正确修复了列表引用共享bug，使用列表推导式创建独立行。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_023": {
+    "score": 9,
+    "reason": "使用dict.fromkeys保持原始顺序，正确修复了bug。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_024": {
+    "score": 10,
+    "reason": "完美修复了dp更新缺失+1的关键错误。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_025": {
+    "score": 10,
+    "reason": "完美修复了原代码未修改列表元素的bug，使用列表推导式简洁正确。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_026": {
+    "score": 10,
+    "reason": "完美修复了路径共享和回溯问题，实现正确无误。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_027": {
+    "score": 8,
+    "reason": "修复了空列表除零错误，返回0是常见处理，但未考虑更合理做法。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_028": {
+    "score": 0,
+    "reason": "模型未提供任何修复，输出异常。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_029": {
+    "score": 9,
+    "reason": "正确修复为按值排序，使用items()和lambda表达式，完全符合要求。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_030": {
+    "score": 10,
+    "reason": "正确修复了递归调用参数，改为对子节点堆化，完全修正bug。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_031": {
+    "score": 10,
+    "reason": "正确使用集合将时间复杂度优化为O(n)，无bug且简洁高效。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_032": {
+    "score": 10,
+    "reason": "完美优化时间复杂度，正确实现哈希表解法。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_033": {
+    "score": 10,
+    "reason": "完美优化，将递归改为迭代，空间复杂度降为O(1)。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_034": {
+    "score": 10,
+    "reason": "完美修复，使用Counter高效且简洁。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_035": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_036": {
+    "score": 10,
+    "reason": "完美修复，优化为简洁高效的切片操作。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_037": {
+    "score": 10,
+    "reason": "完美修复，使用Kadane算法将时间复杂度优化至O(n)。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_038": {
+    "score": 10,
+    "reason": "完美优化，效率大幅提升，逻辑正确。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_039": {
+    "score": 10,
+    "reason": "完美用DP优化，修复递归低效，正确实现LCS。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_040": {
+    "score": 10,
+    "reason": "使用集合优化了查找和去重，大幅提升效率，且逻辑正确。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_041": {
+    "score": 10,
+    "reason": "完美修复递归低效问题，使用迭代优化，结果正确。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_042": {
+    "score": 10,
+    "reason": "原代码无bug，优化后更简洁高效，完全符合要求。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_043": {
+    "score": 10,
+    "reason": "完全正确的修复，使用zip和set更高效简洁。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_044": {
+    "score": 10,
+    "reason": "使用Counter高效等价比较，完全正确且优化。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_045": {
+    "score": 10,
+    "reason": "修复n为负数的bug，并采用快速幂优化效率，代码正确简洁。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_046": {
+    "score": 10,
+    "reason": "使用数学公式高效正确，无bug并优化性能",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_047": {
+    "score": 10,
+    "reason": "用动态规划替代回溯，效率大幅提升，无bug，完美优化。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_048": {
+    "score": 10,
+    "reason": "使用数学公式正确修复，效率更高且逻辑简洁。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_049": {
+    "score": 10,
+    "reason": "完美优化，动态规划实现O(n)，代码简洁高效。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_050": {
+    "score": 10,
+    "reason": "完美优化，使用zip(*)实现转置，简洁高效。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_051": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_052": {
+    "score": 10,
+    "reason": "使用栈完美修复原代码无法处理交错嵌套的bug，逻辑正确且高效。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_053": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_054": {
+    "score": 10,
+    "reason": "完美优化，原地交换零元素，O(1)额外空间，正确率与性能",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_055": {
+    "score": 10,
+    "reason": "完美优化为O(n)双指针，正确高效",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_056": {
+    "score": 10,
+    "reason": "完美修复并优化，使用摩尔投票法降时间复杂度至O(n)，正确性验证无bug。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_057": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_058": {
+    "score": 5,
+    "reason": "裁判解析失败，使用默认中分",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_059": {
+    "score": 10,
+    "reason": "正确修复了低效问题，采用线性时间解法，代码简洁高效。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  },
+  "BugFix_060": {
+    "score": 10,
+    "reason": "代码完全正确修复，处理了k取模和空数组，时间复杂度优化到O(n)。",
+    "dim": "错误修复",
+    "judge": "deepseek"
+  }
+}
